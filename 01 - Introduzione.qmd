@@ -2,22 +2,18 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
     theme: metropolis
     keep-tex: true
-incremental: true
+incremental: false
 header-includes:
   - \setbeamerfont{title}{size=\large}
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
-
-::: {.content-visible when-format="beamer"}
 ```{=latex}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{Introduzione}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -29,20 +25,7 @@ header-includes:
 \date{\today}
 \maketitle
 ```
-:::
 
-<!-- the section below is shown only if rendering is reveal js (and all part for rendering in beamer is commented) -->
-
-::: {.content-visible when-format="revealjs"}
-## Metodi Statistici\\ per la Neuropsicologia Forense
-
-<br><br> Giorgio Arcara\
-Università di Padova\
-IRCCS San Camillo, Venezia
-
-![Logo](Figures/LogoSanCamilloIRCCS_Unipd_alpha.png){width="200px"}\
-![License](Figures/CC_license_3_0.png){width="150px"}
-:::
 
 ## Lezione di oggi
 
@@ -181,8 +164,77 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 *Questo si contrappone ad un approccio dominante alla valutazione forense come semplice giudizio clinico, magari da fonte autorevole, o i test proiettivi, etc.)*
 
+## 5 principi basilari di questo corso (3)
 
-## Valutazione qualitativa
+3. la valutazione neuropsicologica non è solo somministrazione di test ma raccolta di evidenze e stesura di una relazione.
+
+\vspace{3em}
+
+*Il concetto di raccolta di evidenze sarà un tema ricorrente di questo scorso e gli aspetti statistici saranno presentati come alcune delle possibili evidenze.*
+
+## 5 principi basilari di questo corso (4)
+
+4. Rispetto alla valutazione neuropsicologica puramente clinica, nella valutazione forense ci sono possibili problemi aggiuntivi (es. simulazione).
+\vspace{3em}
+
+*Non è richiesta solo competenza clinica, ma anche competenze aggiuntive specifiche per valutazione forense.*
+
+## 5 principi basilari di questo corso (5)
+
+5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un' altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
+\vspace{2em}
+
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
+\end{figure}
+
+## Alcune domande a cui risponderete
+*Come posso dimostrare che I test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
+
+*Come posso dimostrare che nell’interpretare I test, l’altra parte ha commesso un errore?*
+
+## Focus sui test neuropsicologici
+Anche se la metodologia della valutazione neuropsicologica forense in genere include vari aspetti, Il focus sulla lezione è sui test neuropsicologici, su cosa sono, come si creano, come si interpretano i risultati. 
+
+Questo perché l’utilizzo dei test rappresenta una fase fondamentale
+della valutazione neuropsicologica.
+
+\pause
+(altre fasi che non sono trattate sono l’intervista, il colloquio con i familiari, anche se sarà accennato il perché della loro rilevanza.)
+
+##
+
+*Perché si utilizzano i test in neuropsicologia clinica e in neuropsicologia forense?*
+
+\pause
+Per ottenere informazioni rilevanti alla fine degli scopi della valutazione e per superare i limiti di una valutazione soggettiva basata solo su giudizi clinici.
+
+## Perché non fornire direttamente la lista dei test migliori?
+
+I test esistenti in neuropsicologia clinica sono innumervoli (centinaia). Ogni elenco sarebbe parziale.
+
+Il loro utilizzo dipende anche dalle circostanze e dalla domanda per cui viene effettuata la valutazione.
+
+I test moderni (e migliori) oggi, saranno potenzialmente superati l’anno prossimo.
+
+## Scegliere i test
+```{=latex}
+\setlength{\fboxrule}{1mm}
+\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt} Alcuni test sono meglio degli altri\hspace{2pt}}, ma la scelta dei test dipende anche  dalle circostanze: dal motivo della valutazione, dal contesto clinico, dalla patologia trattata, dal tempo a disposizione, dalle risorse economiche a disposizione, dai gusti del
+neuropsicologo, etc.
+```
+
+
+## Perché sono importanti statistica e metodologia?
+
+Non basta che un test sia “pubblicato” o “validato” perché sia utilizzabile senza una riflessione critica. 
+
+\vspace{2em}
+Grazie alle conoscenze metodologiche possiamo scegliere quale test è meglio di un altro.
+
+\pause
+\vspace{2em}
+
 ```{=latex}
 \begin{center}
 \begin{tikzpicture}[baseline=(current bounding box.center)]
@@ -203,7 +255,5 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 \end{tikzpicture}
 \end{center}
 ```
-
-
 
 
