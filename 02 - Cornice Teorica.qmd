@@ -26,10 +26,19 @@ header-includes:
 \includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
 \hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
 }
-\date{\today}
 \maketitle
 ```
 :::
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{La cornice teorica}
+
+\maketitle
+```
+:::
+
 
 <!-- the section below is shown only if rendering is reveal js (and all part for rendering in beamer is commented) -->
 

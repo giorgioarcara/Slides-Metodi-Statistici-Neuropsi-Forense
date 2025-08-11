@@ -1,0 +1,383 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+#format: revealjs
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+    pdf-engine: lualatex  # or xelatex
+    mathfont: "Latin Modern Math"
+incremental: true
+header-includes:
+  - \setbeamerfont{title}{size=\large}
+---
+
+<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{La cornice teorica}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+```
+:::
+
+## Misurazione
+
+_“We may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or event, according to rules.”_
+
+*Stevens (1946)*
+\pause
+\vspace{2em}
+
+Questa è stata una definizione estremamente popolare che tuttora domina la neuropsicologia
+
+## Una definizione di misurazione da filosofia e fisica
+
+Non si misurano oggetti ma \emph{proprietà} di oggetti:
+
+"Sia $O$ un certo insieme di oggetti caratterizzati dall’avere la proprietà P e sia $\mathbb{R}$ l’insieme dei numeri Reali i quali possono essere ordinati in accordo al criterio “essere maggiore o uguale a”, si definisce misurazione:
+
+Chiamiamo $O_p$ l’insieme di oggetti tali che si crei un “omomorfismo” tra $(O_p, \succcurlyeq)$ e $(\mathbb{R}, \geq)$.
+
+Dove $\succcurlyeq$ indicano \emph{relazioni d’ordine empirico} (oggetti fisici) e $\geq$ \emph{relazioni d’ordine numerico}"
+
+\begin{flushright}
+\emph{Boniolo e Vidali, Filosofia della scienza, p. 321}
+\end{flushright}
+
+## Limiti della definizione di Stevens
+
+```{=latex}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    \includegraphics[scale=0.5]{Figures/MOCA.png}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    \textbf{Esaminiamo il MoCa:}
+    \pause
+    \vspace{2em}
+    
+    Cosa notate nei punteggi delle parti che lo compongono?
+    
+    \vspace{2em}
+    Cosa notate nei compiti?
+  \end{column}
+\end{columns}
+```
+
+## Limiti della definizione di Stevens
+
+Supponiamo di avere un tavolo che sia lungo 40 cm, mentre un’altro tavolo è lungo 20 cm. 
+Concludereste che il tavolo è lungo il doppio dell’altro?
+\pause
+\vspace{2em}
+Supponiamo ad un test di memoria una persona ottiene 40, mentre un’altra 20. 
+Vi sentireste di concludere che quella persona ha il doppio della memoria dell’altra.
+\pause
+\vspace{2em}
+Spesso la misurazione in psicologia/neuropsicologia non rispetta alcuni principi di misurazioni più rigide (es. fisica)
+
+## Oggettività
+
+Un concetto che emerge spesso quando si parla di misurazione, di test, di statistica è quello di oggettività.
+\pause
+\vspace{2em}
+I test infatti vengo spesso considerati più “oggettivi”. Vale la pena quindi approfondire questo concetto
+\pause
+\vspace{2em}
+Definiamo qui oggettività come una proprietà che si applica ad una valutazione, ad un test, o come *l’indipedenza dell’esaminatore dal risultato*
+
+## Oggettività
+
+\footnotesize"L’esame neuropsicologico forense viene spesso considerato un esame oggettivo del funzionamento cognitivo. In un’ideale gerarchia delle sorgenti d’evidenza, tale esame si collocherebbe molto più in alto rispetto alle evidenze cliniche più o meno sofisticate (self-reports, informant-based reports, interviste cliniche, rating scales, ecc.), e dovrebbe pertanto essere “promosso” a rango più elevato (al pari degli esami biochimici, radiologici, ecc.). Dopo che il clinico ha esaminato il soggetto e ha formulato le sua ipotesi preliminari, chiede agli esami strumentali di confermarle, confutarle o correggerle attraverso dati oggettivi, indipendenti sia dal giudizio dell’esaminatore e dalle sue distorsioni, sia da ogni variabile estranea all’oggetto d’indagine, in particolare dalle contaminazioni dovute alla soggettività dell’esaminato."
+
+\begin{flushright}
+\emph{Copia verbatim da  Stracciari, Bianchi, Sartori (2010); Neuropsicologia Forense}
+\end{flushright}
+
+Il concetto di oggettività verrà ripreso più avanti, specie con *inter-rater agreement*
+
+## Cosa sono i test
+
+“Un test è una \textbf{procedura sistematica} per \textbf{l’osservazione del comportamento} di una persona e per la sua \textbf{descrizione con l’aiuto di una scala numerica} o un sistema di categorie” 
+
+\begin{flushright}
+  \emph{(Cronbach, 1990, p.32)}
+\end{flushright}
+\pause
+
+\begin{flushright}
+  \begin{figure}
+    \includegraphics[scale=0.05]{Figures/triangle.png}
+  \end{figure}
+\end{flushright}
+
+L’interesse non è mai nel comportamento in sé ma nel \textbf{costrutto} misurato da quel comportamento.
+\pause
+
+*Costrutto*: un concetto psicologico non osservabile 
+
+## Cosa sono i test
+
+I test cognitivi/neuropsicologi utilizzati in forense,  sono test di performance massima (o prestazione massima) 
+\begin{flushright}
+  \emph{(Cronbach, 1990)}
+\end{flushright}
+\pause
+\vspace{2em}
+
+Essi presentano alcune caratteristiche (che discuteremo nel corso). Sono diversi da questionari o test di *risposta tipica*.
+\pause
+\vspace{2em}
+
+\begin{center}
+La maggior parte dei test a cui ci faremo riferimento sono quelli di performance massima perché ritenuti più rilevanti recentemente nella valutazione forense
+\end{center}
+
+## Cosa sono i test
+
+\begin{center}
+  \textbf{Esempio:}
+\end{center}
+\vspace{2em}
+
+\emph{Consideriamo il test Linguaggio Figurato 1.} 
+
+\emph{Il paziente un punteggio finale di 10.}
+
+\emph{Cosa indica questo numero?}
+\pause
+\vspace{2em}
+
+Il comportamento è l’*indicatore di un costrutto* (con costrutto indico genericamente un concetto psicologico non direttamente osservabile)
+
+## Cosa sono i test
+```{=latex}
+\begin{figure}
+  \includegraphics[scale=0.3]{Figures/measurement_diagramma.png}
+\end{figure}
+
+\begin{flushright}
+  (Da Mondini, Cappelletti, Arcara, 2022)
+\end{flushright}
+
+\textbf{Costrutto}: Concetto psicologico non osservabile direttamente
+
+```
+
+## Cosa sono i test
+
+Un esempio di test. Rivediamo l’esempio di Linguaggio Figurato 1
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory}
+\end{center}
+
+La \textbf{Teoria Classica dei test (Classical Test Theory, CTT)} È un insieme di concetti di teoria di psicometria legati allo sviluppo di test psicologici. Spesso si basa su principi di misurazione come quello di Stevens
+\pause
+
+Fanno parte della CTT, concetti come Validità e Affidabilità.
+\pause
+
+La maggior parte dei test neuropsicologici (clinici e forensi), implicitamente o esplicitamente utilizzano principi e assunti di CTT.
+\pause
+
+[[https://en.wikipedia.org/wiki/Classical_test_theory]{.underline}](https://en.wikipedia.org/wiki/Classical_test_theory)
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory}
+\end{center}
+
+Il principio cardine della CTT è la seguente formula:
+\begin{center}
+$X = T + E$
+\end{center}
+\pause
+
+$X$ = punteggio osservato
+
+$T$ = punteggio vero
+
+$E$ = errore
+\pause
+\vspace{1.5em}
+
+L'errore è indipendente dal punteggio vero.
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{I Limiti della Classical Test Theory}
+\end{center}
+
+La Teoria classica dei test ha dei problemi intrinseci. Ne citiamo alcuni:
+\pause
+
+- Abilità del soggetto e complessità/difficoltà del test sono confuse
+
+- Errore e punteggio vero non sono spesso realmente indipendenti
+
+- Problemi nella definizione di forme parallele (studieremo questo quando vedremo cambiamenti nel tempo)
+
+*Consideriamo il possibile errore in un punteggio di Linguaggio Figurato 1 pari a 8, 0, oppure di 15. L’errore è veramente indipendente dal punteggio vero?*
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Esempio script CTT}
+\end{center}
+
+Vedi esempio da link
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Item Response Theory}
+\end{center}
+
+La Item Response Theory è una famiglia di metodi più avanzati che cercano di modellare in maniera indipendente la difficoltà del task e le abilità del soggetto.
+
+Tra I modelli di IRT I più famosi (storicamente) sono I modelli di Rasch, che permettono I modellare test in cui gli item hanno risposta sì/no. 
+\pause
+
+I modelli di IRT hanno un’importante assunzione che spesso è critica per test neuropsicologici e cioè l’unidimensionalità del costrutto.
+\pause
+
+Si assume che il costrutto misurato dal test sia rappresentabile lungo un’unica dimensione (non sia la combinazione di più costrutti).
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Item Response Theory}
+\end{center}
+
+Esempio formula Modelli di Rasch (la cito per completezza):
+\vspace{2em}
+
+\begin{figure}
+  \includegraphics[width=0.8\textwidth]{Figures/Rasch.png}
+\end{figure}
+\vspace{2em}
+
+[[https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory]{.underline}](https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory)
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Item Response Theory – Rasch models}
+\end{center}
+
+\begin{figure}
+  \includegraphics[width=0.7\textwidth]{Figures/Rasch_matrix.png}
+\end{figure}
+
+Per costruire modelli di Rasch/IRT si parte spesso da matrici di questo tipo.
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory vs Item Response Theory}
+\end{center}
+\vspace{2em}
+
+Sebbene I modelli di IRT siano psicometricamente più rigorosi, in questo corso parlerò praticamente sempre di CTT perché la quasi totalità. Di test disponibili per Neuropsicologia Clinica e forense sono sviluppati secondo questo principio (e non con IRT).
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory vs Item Response Theory}
+\end{center}
+
+*Perché non ci sono test sviluppati IRT, se sono più rigorosi?*
+\pause
+
+Un misto di aspetti teorici e praticità
+\pause
+
+- Sviluppare test con IRT è più costoso (e può andare più facilmente male)
+- spesso I costrutti neuropsiclologici per forense violano quasi per definizione l’unidimensionalità.
+- talvolta ad una diversa procedura, comunque IRT e CTT possono portare a risultati molto simili ([Hula et al., 2006](https://doi.org/10.1044/1092-4388(2006/003)))
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory vs Item Response Theory}
+\end{center}
+
+L’assunto di undimensionalità, assume che:
+
+\begin{itemize}[<*>] % the <*> removes pause
+\item gli Item possano essere ordinati secondo la loro difficoltà e che
+\item la probabilità di rispondere correttamente ad un Item rifletta (più o meno) alla sua difficoltà: più un item è difficile meno probabile è rispondere correttamente.
+\end{itemize}
+
+Questo è facile pensarlo per test che includano item in cui è facile gradare la difficoltà (es. esercizi di matematica), ma con un test neuropsicologico?
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory vs Item Response Theory}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    \includegraphics[scale=0.5]{Figures/MOCA.png}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    È facile gradare gli item del moca per difficoltà?
+  \end{column}
+\end{columns}
+```
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Classical Test Theory vs Item Response Theory}
+\end{center}
+\vspace{1.5em}
+
+\begin{figure}
+  \includegraphics[scale=0.5]{Figures/ENB2_cit.png}
+\end{figure}
+
+\footnotesize
+\begin{flushright}
+*da ENB-2 p. 25, Mondini et al. 2011 *
+\end{flushright}
+
+## Costrutti
+
+\begin{center}
+  \textbf{I costrutti misurati tramite i test neuropsicologici}
+\end{center}
+
+\textbf{Costrutto}: Concetto psicologico non osservabile direttamente
+
+*Quali sono i tipici costrutti misurati dai test neuropsicologici?*
+
+\begin{figure}
+  \includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+
+I test neuropsicologici misurano costrutti di diverso tipo
