@@ -7,8 +7,8 @@ format:
   beamer:
     theme: metropolis
     keep-tex: true
-    pdf-engine: lualatex  # or xelatex
-    mathfont: "Latin Modern Math"
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
 incremental: true
 header-includes:
   - \setbeamerfont{title}{size=\large}
