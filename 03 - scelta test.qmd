@@ -1,0 +1,135 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+#format: revealjs
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+    pdf-engine: lualatex  # or xelatex
+    mathfont: "Latin Modern Math"
+incremental: true
+header-includes:
+  - \setbeamerfont{title}{size=\large}
+  - \usepackage{setspace}
+---
+
+<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{3. La scelta dei test per la propria cassetta degli attrezzi}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+```
+:::
+
+## La scelta dei test
+
+Due momenti di scelta dei test:
+
+1) \underline{Scelta dei test da inserire nella propria «cassetta degli attrezzi»}
+
+2) Scelta dei test da utilizzare con un determinato paziente
+
+## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+
+*Regole generali da seguire*
+
+Test che abbiano caratteristiche psicometriche soddisfacenti(validità, affidabilità, dati normativi adeguati, \underline{vedi slides successive})
+
+Dipende molto da fattori pratici: il tipo di realtà clinica influenza quali sono i test da utilizzare potenzialmente.
+
+## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+
+*Come selezionare i test?*
+
+\underline{Possibili fonti:}
+
+**Kit del Neuropsicologo**: un libro prodotto dalla Società Italiana di Neuropsicologia (per i Soci) che contiene riferimenti a quasi tutti I test disponibili in Italiano (non è però aggiornatissimo ed è difficile da trovare). 
+
+**Libro “L’esame neuropsicologico dell’Adulto”** (a cura di Bianchi A.): contiene un capitolo che inlcude una lista piuttosto ampia di test neuropsicologici adattati in Italiano.
+
+**Corso: Valutazione delle funzioni cognitive in ambito forense**: Presso il vostro corso di laurea.
+
+## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+
+*Come selezionare i test?*
+
+\underline{Possibili fonti:}
+
+**Case editrici di test (Organizzazioni Speciali, Eriksson)**: sono test a pagamento che garantiscono un certo standard di qualità.
+
+\begin{center}
+  \textbf{METODI CHE PREFERISCO}
+\end{center}
+
+**Docenti universitari, futuri colleghi ed esperti di un certo settore/patologia**: è il modo migliore (se trovate qualcuno disponibile a condividere le informazioni).
+
+**Articoli scientifici/consensus specifici per patologia**: Cercate (es. su scholar o pubmed, se ci sono linee guida o criteri e cercate se I test sono validati/standardizzati in Italiano).
+
+## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+
+**Articoli scientifici/consensus**
+
+Avere l’articolo scientifico spesso non basta. Serve anche avere il manuale di istruzioni e di somministrazione (e attribuzione dei punteggi) e i materiali del test, eventuali tabelle dei dati normativi
+
+Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere modifiche “custom”, che  alterano il test)
+
+\underline{Contattate gli autori del test (la mail è presente nell’articolo) e chiedete se è disponibile.}
+
+## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+
+*Cosa evitare nella selezione dei test?*
+
+\begin{itemize}[<*>] 
+  \item Evitare test troppo datati (se i dati normativi sono troppo vecchi potrebbero non essere utilizzabili) –     \emph{approfondiremo questo}.
+  \item Evitare test “fatti in casa”: un test passato da un collega senza dati normativi (magari tradotti da un test in inglese) può essere accattivante (e talvolta utile) ma è limitato nelle informazioni che può fornire. - \emph{approfondiremo questo}.
+\end{itemize}
+
+## I criteri per cui scegliere i test per valutazioni in ambito forense
+
+```{=latex}
+\begin{columns}
+\column{0.7\textwidth}
+
+\textbf{1) Test adeguati alle potenziali domande della valutazioni che dovrete fare}
+
+\column{0.3\textwidth}
+
+\begin{figure}
+    \includegraphics[scale=0.04]{Figures/triangle.png}
+\end{figure}
+
+\end{columns}
+```
+\pause
+
+```{=latex}
+\begin{columns}
+\column{1\textwidth}
+
+\textbf{2)Test con buone capacità psicometriche}
+\begin{itemize}[<*>] 
+  \item Test con buona validità
+  \item Test con buona affidabilità
+  \item Test con buone proprietà di altro tipo (es. Valori di cambiamento)
+  \item Test con dati normativi adeguati.
+\end{itemize}
+
+\column{0\textwidth}
+\end{columns}
+
+```
+\vspace{2em}
+
+In generale non dimenticate il razionale: I test ci forniscono informazioni e parte di queste informazioni derivano dalle caratteristiche dei test.
