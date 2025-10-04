@@ -8,7 +8,8 @@ format:
     keep-tex: true
 incremental: false
 header-includes:
-  - \setbeamerfont{title}{size=\large}
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
 ---
 
 ```{=latex}
@@ -39,11 +40,11 @@ header-includes:
 
 \footnotesize
 
--   Laurea in Psicologia presso Unipd 2005)
+-   Laurea in Psicologia presso Unipd (2005)
 
 -   Master in Neuropsicologia dei disturbi cognitivi acquisiti (2006)
 
--   vari post-doc presso dipartimenti di psicologia, neuroscienze, ingegneria <br>
+-   Vari post-doc presso dipartimenti (psicologia, ingegneria, neuroscienze) <br>
 
 -   Dal 2016 Ricercatore presso IRCCS San Camillo di Venezia.
 
@@ -63,11 +64,11 @@ header-includes:
 
 ## Aspetti organizzativi - Lezioni
 
--   Lezioni online principalmente il giovedì e il venerdì (dalle 11.30 alle 13.00 circa)
+-   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa)
 -   Le lezioni prevedono didattica frontale (interattiva), esercitazioni in classe.
--   Saranno trattate poche formule, molto approfonditamente.
+-   Saranno trattate poche formule.
 -   Sono benvenute le domande (in qualsiasi momento).
--   Sarà utilizzato il software R, che è raccomandato. Saranno forniti script di R e sarà spiegato come utilizzarli, ma non è necessario conoscere R per il corso.
+-   Sarà in alcuni casi mostrato del codice in R, ma non è richiesto per l'esame.
 
 ## Aspetti organizzativi - Materiali
 
@@ -77,7 +78,7 @@ I materiali principali sono le slides e materiali aggiuntivi che vi saranno forn
 
 [[https://github.com/giorgioarcara/stat_forensic_neuropsy]{.underline}](%5Bhttps://github.com/giorgioarcara/stat_forensic_neuropsy)
 
-Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso.
+Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso (utili, non necessari).
 
 ## Aspetti organizzativi - Materiali
 
@@ -97,9 +98,13 @@ Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per 
 ```
 ## Aspetti organizzativi - Materiali aggiuntivi
 
--   Libro gratuito su statistica base ed R {\underline{https://learningstatisticswithr.com/}
+-   Libro gratuito su statistica base ed R \href{https://learningstatisticswithr.com/}{\underline{https://learningstatisticswithr.com/}}
 
--   Libro gratuito su psicometria (più avanzato) \underline{https://personality-project.org/r/book/}
+-   Libro gratuito su psicometria (più avanzato) 
+\href{https://personality-project.org/r/book/}{\underline{https://personality-project.org/r/book/}}
+
+-   Libro in corso di scrittura
+\href{https://giorgioarcara.github.io/oip-book/}{\underline{https://giorgioarcara.github.io/oip-book/}}
 
 ## Aspetti organizzativi - Esami
 
