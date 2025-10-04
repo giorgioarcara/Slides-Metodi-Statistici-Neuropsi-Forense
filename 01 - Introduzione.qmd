@@ -10,6 +10,8 @@ incremental: false
 header-includes:
   \setbeamerfont{title}{size=\large}
   \usepackage{hyperref}
+  %\setbeamertemplate{footline}[frame number]
+  %\addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}\vspace{1em}}{}
 ---
 
 ```{=latex}
@@ -353,6 +355,35 @@ Conoscere quando queste avvengono porta ad una maggiore controllo di ci
 L’Interpretative approach nasce da esperienza di insegnamento di neuropsicologia clinica  (condiviso con Sara Mondini, Unipd e Marinella Cappelletti, Goldsmiths London)
 
 Spesso studentesse e studenti sono attratti dalla neuropsicologia proprio per il rigore dei test rispetto, ad esempio, ad un semplice colloquio o valutazione qualitativa. Questo può portare ad un’ eccessiva fiducia verso questi strumenti, oppure al dimenticarsi l’effettivo ruolo più importante del neuropsicologo in vari aspetti del’utilizzo dei test.
+
+## Valutazione neuropsicologica come raccolta di informazioni
+
+![](Figures/Active_collection.png)
+
+## Valutazione Neuropsicologica come raccolta di informazioni
+La raccolta di informazioni  è un processo **attivo** del neuropsicologo e dipende dalle sue conoscenze. 
+
+La stessa osservazione dipende dalle conoscenze, visto che I comportamenti che notiamo o osserviamo 
+_(“teoreticità dell’osservazione”)_
+
+Così come tra queste conoscenze ci sono le conoscenze relative alle caratteristiche dei test e alle informazioni che, realmente, possiamo trarne.
+
+
+## Valutazione neuropsicologica e forense
+
+Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei quali molto complessi (es. giudicare la _capacità di intendere e volere_). In questo corso ci concentreremo su esempi sul concetto di **danno**, ma anticipo che la definizione di danno è diversa in ambito giuridico e in ambito clinico.
+
+
+
+
+
+## Un esempio che ci accompagnerà 
+GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione.
+Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L'unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto.
+
+Nell'anamnesi di GH c'è però un evento rilevante. Quando era più giovane (a 30 anni) sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie.
+
+La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all'incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente.
 
 
 
