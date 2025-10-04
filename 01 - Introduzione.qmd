@@ -37,7 +37,7 @@ header-includes:
 
 -   Presentazione del docente e del corso.
 -   Aspetti organizzativi del corso.
--   Obiettivi formativi.
+-   Obiettivi formativi e "spirito" del corso.
 
 # Introduzione
 
@@ -75,6 +75,26 @@ header-includes:
 -   Sono benvenute le domande (in qualsiasi momento).
 -   Sarà in alcuni casi mostrato del codice in R, ma non è richiesto per l'esame.
 
+## Orari lezioni (dettaglio)
+
+:::{.small}
+\scriptsize
+- Mercoledì 8 Ottobre: 9.00 - 11.30
+- Giovedì 9 Ottobre: 9.00 - 11.30
+- Mercoledì 15 Ottobre: 9.00 - 11.30
+- Giovedì 16 Ottobre: 9.00 - 11.30
+- Mercoledì 22 Ottobre: 9.00 - 11.30
+- Giovedì 23 Ottobre: 9.00 - 11.30
+- Mercoledì 5 Novembre: 9.00 - 11.30
+- Giovedì 6 Novembre: 9.00 - 11.30
+- Mercoledì 12 Novembre: 9.00 - 11.30
+- Giovedì 13 Novembre: 9.00 - 11.30
+- Mercoledì 19 Novembre: 9.00 - 11.30
+- Giovedì 20 Novembre: 9.00 - 11.30
+- Mercoledì 26 Novembre: 9.00 - 11.30
+- Giovedì 27 Novembre: 9.00 - 11.30
+:::
+
 ## Aspetti organizzativi - Materiali
 
 **Condividerò tutto il materiale utilizzato e mostrato**
@@ -90,8 +110,10 @@ Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per 
 ```{=latex}
 \begin{columns}
 \column{0.5\textwidth}
+\small
+\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
 
-\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}
+testo di approfondimento, \textbf{non necessario}.
 
 \column{0.5\textwidth}
 
@@ -160,7 +182,7 @@ Partiamo dalla fine:
 
 \vspace{3em}
 
-*Per una buona perizia, bisogna avere competenze cliniche 
+*Per una buona perizia/consulenza, bisogna avere competenze cliniche 
 (in particolare sono rilevanti le capacità diagnostiche)*
 
 ## 5 principi basilari di questo corso (2)
