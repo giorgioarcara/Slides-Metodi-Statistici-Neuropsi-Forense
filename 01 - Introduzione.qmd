@@ -10,8 +10,8 @@ incremental: false
 header-includes:
   \setbeamerfont{title}{size=\large}
   \usepackage{hyperref}
-  %\setbeamertemplate{footline}[frame number]
-  %\addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber\hspace{2em}\vspace{1em}}{}
+  \setbeamertemplate{footline}[frame number]
+
 ---
 
 ```{=latex}
@@ -21,9 +21,12 @@ header-includes:
 
 \titlegraphic{
 
- \vspace*{7cm}
+\vspace*{7cm}
 \includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+\begin{center}
+\vspace{-2.2em}
+\includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+\end{center}
 }
 \date{\today}
 \maketitle
@@ -323,8 +326,8 @@ Il neuropsicologo svolge un ruolo attivo in ogni aspetto della valutazione neuro
 La valutazione neuropsicologica è un processo razionale di raccolta di informazioni sullo stato cognitivo di un soggetto esaminato e di elaborazione di una conclusione.
 
 ## Interpretative Approach - Principio 3
- In ogni valutazione neuropsicologica, il neuropsicologo deve integrare e interpretare tutte le informazioni disponibili per trarre una conclusione.
- 
+In ogni valutazione neuropsicologica, il neuropsicologo deve integrare e interpretare tutte le informazioni disponibili per trarre una conclusione.
+
 ## Interpretative Approach - Principio 4
 L'uso dei risultati dei test neuropsicologici implica sempre un'interpretazione attiva da parte del neuropsicologo.
 
@@ -348,8 +351,8 @@ A volte potrebbe sembrare che l’Interpretative approach “giustifichi” alcu
 Questo è un errore. L’Interpretative approach, piuttosto, ha come obiettivo far _rendere consapevoli di una serie di intepretazioni_ da parte del Neuropsicologo, che comunque avvengono durante la valutazione neuropsicologica e l’utilizzo dei test.
 
 Conoscere quando queste avvengono porta ad una maggiore controllo di ci
- che avviene nella valutazione e quindi a fare migliori valutazioni.
- 
+che avviene nella valutazione e quindi a fare migliori valutazioni.
+
 ## L’Interpretative Approach alla neuropsicologia clinica e forense
 
 L’Interpretative approach nasce da esperienza di insegnamento di neuropsicologia clinica  (condiviso con Sara Mondini, Unipd e Marinella Cappelletti, Goldsmiths London)
@@ -378,12 +381,38 @@ Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei q
 
 
 ## Un esempio che ci accompagnerà 
-GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione.
-Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L'unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto.
 
-Nell'anamnesi di GH c'è però un evento rilevante. Quando era più giovane (a 30 anni) sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie.
+:::{.smaller}
+\scriptsize
+_GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione.Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L'unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto._
 
-La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all'incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente.
+_Nell'anamnesi di GH c'è però un evento rilevante. Quando era più giovane (a 30 anni) sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie._
 
+_La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all'incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente._
+:::
+
+## Un esempio che ci accompagnerà (APACS)
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/APACS_test.png}
+\end{figure}
+
+\column{0.5\textwidth}
+6 task: 2 per produzione e 4 per comprensione
+
+\emph{(Arcara \& Bambini, 2016)}
+
+3 punteggi globali
+
+\end{columns}
+```
+
+## Un esempio che ci accompagnerà (Linguaggio Figurato 1)
+
+![](Figures/APACS_Fig_lang_1.png)
 
 
