@@ -61,7 +61,6 @@
 \usetheme[]{metropolis}
 \ifPDFTeX\else
   % xetex/luatex font selection
-  \setmathfont[]{Latin Modern Math}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -119,7 +118,6 @@
 
 
 \setbeamerfont{title}{size=\large}
-\usepackage{setspace}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -198,7 +196,8 @@ Due momenti di scelta dei test:
 \begin{enumerate}[<+->]
 [1)]
 \item
-  \underline{Scelta dei test da inserire nella propria «cassetta degli attrezzi»}
+  \textbf{Scelta dei test da inserire nella propria ``cassetta degli
+  attrezzi''}
 \item
   Scelta dei test da utilizzare con un determinato paziente
 \end{enumerate}
@@ -272,7 +271,8 @@ punteggi) e i materiali del test, eventuali tabelle dei dati normativi
 Utilizzate con cautela test di cui non avete referenze ufficiali
 (possono avere modifiche ``custom'', che alterano il test)
 
-\underline{Contattate gli autori del test (la mail è presente nell’articolo) e chiedete se è disponibile.}
+\emph{Contattate gli autori del test (la mail è presente nell'articolo)
+e chiedete se è disponibile.}
 \end{frame}
 
 \begin{frame}{La scelta dei test da inserire nella propria «cassetta

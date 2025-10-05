@@ -484,9 +484,19 @@ un'unica dimensione (non sia la combinazione di più costrutti).
 
 Esempio formula Modelli di Rasch (la cito per completezza): \vspace{2em}
 
-\begin{figure}
-  \includegraphics[width=0.8\textwidth]{Figures/Rasch.png}
-\end{figure}
+\small
+\begin{align}
+  \Pr(X_{ni}=1 \mid \theta_n, \beta_i)
+  &= \frac{\exp(\theta_n - \beta_i)}{1 + \exp(\theta_n - \beta_i)}
+  \label{eq:rasch_prob}
+  \\
+  \Pr(X_{ni}=0 \mid \theta_n, \beta_i) &= \frac{1}{1 + \exp(\theta_n - \beta_i)}
+  \label{eq:rasch_prob0}
+\end{align}
+
+$\theta$ = ability
+$\beta$ = difficulty parameter
+
 \vspace{2em}
 
 \href{https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory}{\ul{https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory}}

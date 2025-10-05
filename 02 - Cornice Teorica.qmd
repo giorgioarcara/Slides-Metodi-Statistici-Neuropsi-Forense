@@ -11,7 +11,9 @@ format:
     # mathfont: "Latin Modern Math"
 incremental: true
 header-includes:
-  - \setbeamerfont{title}{size=\large}
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
 ---
 
 <!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
