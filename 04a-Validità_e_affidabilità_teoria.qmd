@@ -1,0 +1,199 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+#format: revealjs
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
+header-includes:
+  - \setbeamerfont{title}{size=\large}
+---
+
+<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \small \emph{4a. Validità e affidabilità (teoria)}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+```
+:::
+
+# Validità e affidabilità
+
+## Validità e Affidabilità
+
+```{=latex}
+\small
+\begin{columns}
+\column{0.8\textwidth}
+Validità e affidabilità sono due qualità fondamentali dei test (non solo didatticamente).
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+
+\vfill
+
+```
+Nelle prossime slides farà una panoramica generale senza scendere nei dettagli delle formule che vedremo in un passo successivo.
+
+## Validità e affidabilità
+Usare un test senza conoscerne validità e affidabilità può portare a grossi errori:
+
+
+Per dare un'analogia (estrema) usare un test con bassa affidabilità e nessuna validità per un interpretazione per un’interpretazione e potrebbe portare a misurare l’altezza di una persona con una bilancia che ha un margine di errore di 10 kg.
+
+**Dal momento che i test sono strumenti di misurazione non possiamo prescindere dal conoscerne le loro qualità.**
+
+
+## Validità e affidabilità (brevi definizioni)
+
+La **validità** è la qualità di un test di misurare effettivamente il costrutto che vuole misurare.
+
+L’ **affidabilità** indica la precisione di un test.
+
+
+
+
+## Come vorremmo fossero Validità e Affidabilità (ma non sono)
+**Validità**: il mio test misura il mio costrutto in maniera nota e quantificabile. Es.:
+
+- l’80% del punteggio osservato è riconducibile al construtto di interesse
+- il punteggio riconducibile al costrutto di interesse mentre +/-5% ad altri costrutti.
+
+\vfill
+\pause
+
+**Affidabilità**: il mio test misura il mio costrutto con precisione quantificabile. Es.:
+
+- il mio punteggio finale può essere sbagliato di +/-3
+- il punteggio finale puà essere sbagliato di +/-5%
+
+## Come vorremmo fossero Validità e Affidabilità (ma non sono)
+Anche se ci sono dei criteri talvolta di soglia minima (di affidabilità o validità) non c'è una unanimità. 
+éer considerare un test adeguato, spesso questi valori ci aiutano a distinguere test tra di loro, per scegliere il migliore (o il meno peggiore)
+
+\vfill
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+
+
+% : peggio - meglio
+\node[anchor=west] at (0, 1) {\small \parbox{3cm}{\emph{Peggiore Affidabilità \\e/o Validità}}};
+\node[anchor=east] at (10, 1) {\small \parbox{3cm}{\emph{Migliore Affidabilità \\e/o Validità}}};
+
+
+\node[anchor=west] at (0, -1.2) {\textbf{Peggio}};
+\node[anchor=east] at (10, -1.2) {\textbf{Meglio}};
+\draw[thick] (1.5, -1.2) -- (8.5, -1.2);
+
+\end{tikzpicture}
+\end{center}
+```
+
+## Parlare correttamente di validità
+
+La validità è la qualità di un test di misurare ciò che effettivamente vuole misurare. Il termine validità è sempre riferito ad un’**utilizzo** che si fa dei punteggi.
+\vfill \pause
+Non ha senso dire che **un test è valido**
+\vfill \pause
+
+```{=latex}
+\begin{center}
+\tikz[baseline=(t.base)]{
+  \node[inner sep=0pt, outer sep=0pt, anchor=base] (t)
+    {\emph{"usa questo test! è stato validato!"}};
+  \draw[red, thick] ([yshift=0.4em]t.south west) -- ([yshift=0.4em]t.south east);
+}
+\end{center}
+```
+
+## La Validità
+Un test può avere validità per una certa utilizzo o per più utilizzi.
+
+La validità non è una qualità tutto-o-nulla, ma una qualità lungo un continuum
+
+Ad esempio ci sono evidenze che il _”Free and Cued Selective Reminding Test-it”_ (Clerici et al., 2017) è un test con buona validità per misurare le capacità di memoria.
+
+## La Validità (non dimostrata)
+
+talvolta, alcuni test non riportano nessun evidenza di validità. Si tratta di strumenti in cui non abbiamo la certezza di cosa stiano misurando.
+
+## Tipi di validità
+
+- Validità di facciata
+- Validità di contenuto
+- Validità convergente/divergente (validità di costrutto) 
+- Validità di criterio
+- Validità ecologica
+
+<br>
+Esistono diverse classificazioni di validità e affidabilità (vedi Urbina, 2004, Essentials of Psychological Testing, per un approfondimento). Quelle che segue è solo una delle possibili classificazioni.
+
+## Validità di contenuto 1/2
+
+Validità di contenuto : la proprietà degli item di essere sufficienti ed adeguati per valutare il costrutto di interesse. Può essere valutata qualitativamente o quantitativamente (Lawshe, 1975).
+
+\vfill
+
+Spesso non è riportata nei test o c’è solo una valutazione qualitativa. Due test che riportano validità di contenuto quantitativamente sono Abaco (Sacco et al., 2008) e APACS (Arcara & Bambini, 2016), ma non usano statistiche inferenziali.
+
+## Validità di contenuto 2/2
+
+_Esempio di test con scarsa validità di contenuto_:
+
+Un test che vuole misurare l’abilità di lettura nella vita quotidiana e utilizza solamente parole in isolamento.
+
+\vfill
+_Esempio di test con buona validità di contenuto:_
+
+Un test che vuole misurare le abilità di guida. E simula le abilità di guida tramite un sorta di videogioco in numerose condizioni.
+
+## Validità di costrutto (convergente/divergente) 1/3
+Validità convergente-divergente (o validità di costrutto): indaga quanto il test misura effettivamente il costrutto che intende misurare valutando corenza interna degli item, oppure correlazione con altri test.
+Si parla anche di validità “divergente” perché valuta anche la qualità di non correlare con test con cui non dovrebbe correlare (ad esempio un test specifico per memoria visuospaziale, dovrebbe non correlare troppo con memoria verbale).
+
+## Validità di costrutto (convergente/divergente) 2/3
+A livello di analisi di dati.
+Per la coerenza degli items di un test tra loro si usa l’analisi fattoriale o l’alpha di Cronbach (per quest’ultima analisi vedi sezione affidabilità).
+
+\vfill
+
+Per la relazione dei punteggi totali con quelli di altri test si usano spesso correlazioni.
+Non esistono delle regole su che valori (nell’analisi fattoriale, o nelle correlazioni) siano accettabili. Dipende dal costrutto misurato e dalle relazioni attese.
+
+## Validità di costrutto (convergente/divergente) 3/3
+
+Un test con buona validità di costrutto correla con test che misurano lo stesso costrutto o correla con test che misurano altri costrutti in maniera coerente con le aspettative.
+
+
+_Ad esempio_, un test di memoria di lavoro con buona validità di costrutto, correla con altri test di memoria di lavoro. 
+
+Un test di comprensione di linguaggio figurato (costrutto più ampio), dovrebbe correlare con altri test che misurano lo stesso costrutto, ma in maniera moderata, potrebbe correlare anche con attenzione o altre funzioni cognitive legate.
+
+## Validità di costrutto (convergente/divergente) 3/4
+
+La validità di costrutto è da un lato forse la validità più importante, ma dall’altro quella più difficile da valutare se adeguata quando si indaga in relazione ad altri test che misurano lo stesso costrutto. Questo perché non esistono indicazioni di “correlazione minima” che dovrebbe avere un test con un altro per avere supporto alla sua validità di costrutto.
+
+
+_Ad esempio_: se sviluppo un nuovo test di memoria, non è detto che ci sia un valore minimo di correlazione con un altro test di memoria che sia considerato come sufficiente.
+
+
+Per l’analisi fattoriale o il Cronbach’s alpha esistono invece principi più chiari: l’analisi deve mostrare che gli item si comportano in maniera statisticamente adeguata relativamente al costrutto (questo sarà più chiaro nella sezione di approfondimento psicometrico di queste analisi).
+
