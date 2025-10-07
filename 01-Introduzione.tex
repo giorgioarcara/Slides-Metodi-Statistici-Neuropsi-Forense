@@ -190,7 +190,7 @@
 
 \begin{frame}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{Introduzione}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{1. Introduzione}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -206,6 +206,8 @@
 \maketitle
 \end{frame}
 
+\section{Introduzione}\label{introduzione}
+
 \begin{frame}{Lezione di oggi}
 \phantomsection\label{lezione-di-oggi}
 \begin{itemize}
@@ -218,8 +220,6 @@
   Obiettivi formativi e ``spirito'' del corso.
 \end{itemize}
 \end{frame}
-
-\section{Introduzione}\label{introduzione}
 
 \begin{frame}{CV Giorgio Arcara}
 \phantomsection\label{cv-giorgio-arcara}
@@ -318,11 +318,7 @@ personale unipd}}
 \phantomsection\label{aspetti-organizzativi---materiali}
 \textbf{Condividerò tutto il materiale utilizzato e mostrato}
 
-I materiali principali sono le slides e materiali aggiuntivi che vi
-saranno forniti durante il corso. I materiali li troverete anche al
-link:
-
-\href{\%5Bhttps://github.com/giorgioarcara/stat_forensic_neuropsy}{\ul{https://github.com/giorgioarcara/stat\_forensic\_neuropsy}}
+I materiali principali sono le slides e materiali aggiuntivi che vi saranno forniti durante il corso. I materiali li troverete anche a questo link \href{https://github.com/giorgioarcara/Slides-Metodi-Statistici-Neuropsi-Forense}{\underline{github}}
 
 Condividerò anche script di R e sarà dato risalto a ``simulazioni'' di
 dati per comprensione dei concetti, con script sviluppati durante il
@@ -335,8 +331,8 @@ corso (utili, non necessari).
 \column{0.5\textwidth}
 \small
 \emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
-
-testo di approfondimento, \textbf{non necessario}.
+\vspace{1em}
+Testo di approfondimento, \textbf{non indispensabile}.
 
 \column{0.5\textwidth}
 
@@ -369,7 +365,7 @@ Gli esami saranno scritti con:
 \begin{itemize}
 \tightlist
 \item
-  domande aperte su aspetti teorici.
+  4 domande aperte su aspetti teorici.
 \item
   domande su scenari applicativi in cui ragionare per applicare le
   conoscenze sviluppate.
@@ -378,6 +374,33 @@ Gli esami saranno scritti con:
 Gli esami saranno poco nozionistici e più di ragionamento
 
 \underline{Non sarà necessario ricordare a memoria nessuna formula}
+\end{frame}
+
+\begin{frame}{Utilizzo critico di LLM (es. ChatGPT) per il corso 1/2}
+\phantomsection\label{utilizzo-critico-di-llm-es.-chatgpt-per-il-corso-12}
+I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi
+di intelligenza artificiale sono una grande opportunità di innovazione
+tecnologica che merita di essere discussa. Di seguito alcune
+raccomandazioni per un utilizzo appropriato per il corso.
+\end{frame}
+
+\begin{frame}{Utilizzo critico di LLM (es. ChatGPT) per il corso 2/2}
+\phantomsection\label{utilizzo-critico-di-llm-es.-chatgpt-per-il-corso-22}
+\begin{itemize}
+\item
+  Non cercate risposte, ma cercate \emph{una guida} per trovare
+  informazioni. Gli LLM funzionano come motori di ricerca avanzati
+  soprattutto se la domanda è vaga.
+\item
+  Utilizzatele per capire meglio alcuni concetti. Se qualcosa non è
+  chiaro, potete esplicitamente chiedere di spiegarlo in altri termini o
+  con altri esempi.
+\item
+  \textbf{Non vi fidate ciecamente di ciò che dicono} ma cercate
+  conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti
+  detti \emph{hallucinations} danno risposte verosimili o credibili ma
+  che si rivelano sbagliate o completamente inventate.
+\end{itemize}
 \end{frame}
 
 \begin{frame}{Obiettivi del corso}
@@ -413,7 +436,7 @@ forense?}
 \end{figure}
 \tiny{Non serve conoscere come funziona un motore per guidare una macchina. Basta sapere cosa è giusto o sbagliato fare con pedali, cambio e volante. (Aforisma approssimativo di H. R. Baayen, 2008 circa)}
 
-
+\pause
 \column{0.5\textwidth}
 
 \begin{figure}
@@ -458,7 +481,7 @@ argomentazioni.}
 
 \emph{Questo si contrappone ad un approccio dominante alla valutazione
 forense come semplice giudizio clinico, magari da fonte autorevole, o i
-test proiettivi, etc.)}
+test proiettivi, etc.}
 \end{frame}
 
 \begin{frame}{5 principi basilari di questo corso (3)}
@@ -506,6 +529,7 @@ aggiuntive specifiche per valutazione forense.}
   (su basi argomentative e oggettive) dell'altra parte. \vspace{2em}
 \end{enumerate}
 
+\pause
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
 \end{figure}
@@ -568,8 +592,19 @@ prossimo.
 neuropsicologo, etc.
 \end{frame}
 
-\begin{frame}{Perché sono importanti statistica e metodologia?}
-\phantomsection\label{perchuxe9-sono-importanti-statistica-e-metodologia}
+\begin{frame}{Statistica e Psicometria}
+\phantomsection\label{statistica-e-psicometria}
+La \textbf{statistica} è quella disciplina che si occupa di come
+possiamo trarre delle conclusione a partire da dati empirici e si occupa
+di ogni fase (pianificazione, raccolta, analisi, interpretazione).
+\pause
+
+La \textbf{psicometria} è quella disciplina che si occupa di misurazione
+in psicologia e di inferenze statistiche di concetti psicologici.
+\end{frame}
+
+\begin{frame}{Perché sono importanti psicometria e statistica?}
+\phantomsection\label{perchuxe9-sono-importanti-psicometria-e-statistica}
 Non basta che un test sia ``pubblicato'' o ``validato'' perché sia
 utilizzabile senza una riflessione critica.
 
@@ -648,7 +683,7 @@ psicometrica e statistica. Molti di questi limiti derivano direttamente
 dalla neuropsicologia clinica.
 
 Ci sono numerose pratiche problematiche (es. uso non consapevole dei
-punti z
+punti-z)
 \end{frame}
 
 \begin{frame}{L'Interpretative Approach}

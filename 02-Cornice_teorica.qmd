@@ -14,6 +14,7 @@ header-includes:
   \setbeamerfont{title}{size=\large}
   \usepackage{hyperref}
   \setbeamertemplate{footline}[frame number]
+  
 ---
 
 <!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
@@ -21,7 +22,7 @@ header-includes:
 ::: {.content-visible when-format="beamer"}
 ```{=latex}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. La cornice teorica}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. Cornice teorica}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -33,6 +34,8 @@ header-includes:
 \maketitle
 ```
 :::
+
+# Cornice Teorica
 
 ## Misurazione
 

@@ -16,7 +16,7 @@ header-includes:
 
 ```{=latex}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{Introduzione}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{1. Introduzione}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -32,6 +32,7 @@ header-includes:
 \maketitle
 ```
 
+# Introduzione
 
 ## Lezione di oggi
 
@@ -39,7 +40,6 @@ header-includes:
 -   Aspetti organizzativi del corso.
 -   Obiettivi formativi e "spirito" del corso.
 
-# Introduzione
 
 ## CV Giorgio Arcara
 
@@ -99,9 +99,10 @@ header-includes:
 
 **Condividerò tutto il materiale utilizzato e mostrato**
 
-I materiali principali sono le slides e materiali aggiuntivi che vi saranno forniti durante il corso. I materiali li troverete anche al link:
+```{=latex}
+I materiali principali sono le slides e materiali aggiuntivi che vi saranno forniti durante il corso. I materiali li troverete anche a questo link \href{https://github.com/giorgioarcara/Slides-Metodi-Statistici-Neuropsi-Forense}{\underline{github}}
+```
 
-[[https://github.com/giorgioarcara/stat_forensic_neuropsy]{.underline}](%5Bhttps://github.com/giorgioarcara/stat_forensic_neuropsy)
 
 Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso (utili, non necessari).
 
@@ -112,8 +113,8 @@ Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per 
 \column{0.5\textwidth}
 \small
 \emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
-\vfill
-testo di approfondimento, \textbf{non indispensabile}.
+\vspace{1em}
+Testo di approfondimento, \textbf{non indispensabile}.
 
 \column{0.5\textwidth}
 
@@ -137,12 +138,26 @@ testo di approfondimento, \textbf{non indispensabile}.
 
 Gli esami saranno scritti con:
 
--   domande aperte su aspetti teorici.
+-   4 domande aperte su aspetti teorici.
 -   domande su scenari applicativi in cui ragionare per applicare le conoscenze sviluppate.
 
 Gli esami saranno poco nozionistici e più di ragionamento
 
 \underline{Non sarà necessario ricordare a memoria nessuna formula}
+
+## Utilizzo critico di LLM (es. ChatGPT) per il corso 1/2
+
+I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi di intelligenza artificiale sono una grande opportunità di innovazione tecnologica che merita di essere discussa. Di seguito alcune raccomandazioni per un utilizzo appropriato per il corso.
+
+
+## Utilizzo critico di LLM (es. ChatGPT) per il corso 2/2
+
+- Non cercate risposte, ma cercate _una guida_ per trovare informazioni. Gli LLM funzionano come motori di ricerca avanzati soprattutto se la domanda è vaga.
+
+- Utilizzatele per capire meglio alcuni concetti. Se qualcosa non è chiaro, potete esplicitamente chiedere di spiegarlo in altri termini o con altri esempi.
+
+- **Non vi fidate ciecamente di ciò che dicono** ma cercate conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti detti _hallucinations_ danno risposte verosimili o credibili ma che si rivelano sbagliate o completamente inventate.
+
 
 ## Obiettivi del corso
 
@@ -165,7 +180,7 @@ Partiamo dalla fine:
 \end{figure}
 \tiny{Non serve conoscere come funziona un motore per guidare una macchina. Basta sapere cosa è giusto o sbagliato fare con pedali, cambio e volante. (Aforisma approssimativo di H. R. Baayen, 2008 circa)}
 
-
+\pause
 \column{0.5\textwidth}
 
 \begin{figure}
@@ -194,7 +209,7 @@ Partiamo dalla fine:
 *Un approccio che si sta imponendo in ambito forense è quello 
 Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argomentazioni.*
 
-*Questo si contrappone ad un approccio dominante alla valutazione forense come semplice giudizio clinico, magari da fonte autorevole, o i test proiettivi, etc.)*
+*Questo si contrappone ad un approccio dominante alla valutazione forense come semplice giudizio clinico, magari da fonte autorevole, o i test proiettivi, etc.*
 
 ## 5 principi basilari di questo corso (3)
 
@@ -216,6 +231,7 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un' altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
 \vspace{2em}
 
+\pause
 \begin{figure}
 \includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
 \end{figure}
@@ -259,6 +275,7 @@ neuropsicologo, etc.
 ## Statistica e Psicometria
 La **statistica** è quella disciplina che si occupa di come possiamo trarre delle conclusione a partire da dati empirici e si occupa di ogni fase (pianificazione, raccolta, analisi, interpretazione).
 \pause
+
 La **psicometria** è quella disciplina che si occupa di misurazione in psicologia e di inferenze statistiche di concetti psicologici.
 
 ## Perché sono importanti psicometria e statistica?
@@ -311,7 +328,7 @@ _(è stato il test a dirlo, non io!)_
 ## La situazione attuale
 In neuropsicologia forense non c’è (ad oggi) una forte cultura psicometrica e statistica. Molti di questi limiti derivano direttamente dalla neuropsicologia clinica.
 
-Ci sono numerose pratiche problematiche (es. uso non consapevole dei punti z
+Ci sono numerose pratiche problematiche (es. uso non consapevole dei punti-z)
 
 ## L'Interpretative Approach
 

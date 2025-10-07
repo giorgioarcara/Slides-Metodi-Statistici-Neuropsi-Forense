@@ -124,6 +124,9 @@ Non ha senso dire che **un test è valido**
 \end{center}
 ```
 
+## Un concetto da ribadire
+![](Figures/Usa_questo_test.png){width="50%" fig-align="center"}
+
 ## La Validità
 Un test può avere validità per una certa utilizzo o per più utilizzi.
 
@@ -141,10 +144,27 @@ talvolta, alcuni test non riportano nessun evidenza di validità. Si tratta di s
 - Validità di contenuto
 - Validità convergente/divergente (validità di costrutto) 
 - Validità di criterio
+- Validità concorrente
 - Validità ecologica
 
 <br>
 Esistono diverse classificazioni di validità e affidabilità (vedi Urbina, 2004, Essentials of Psychological Testing, per un approfondimento). Quelle che segue è solo una delle possibili classificazioni.
+
+## Validità di facciata 1/2
+
+Validità di facciata: si riferisce alla qualità di un test di esssere chiaramente riconducibile al costrutto che vuole misurare. Es. un test di memoria che richiede di ricordare gli items.
+
+Talvolta è l'unico tipo di validità che abbiamo a disposizione (ma di cui non dovremmo accontentarci.)
+
+Data la natura prettamente qualitativa non esistono analisi per verificarla.
+
+## Validità di facciata 2/2
+
+La plausibilità di una misurazione non è sufficiente per giudicare se effettivamente stiamo misurando quello che ci interessa.
+
+
+![](Figures/QMP.png)
+
 
 ## Validità di contenuto 1/2
 
@@ -165,11 +185,11 @@ _Esempio di test con buona validità di contenuto:_
 
 Un test che vuole misurare le abilità di guida. E simula le abilità di guida tramite un sorta di videogioco in numerose condizioni.
 
-## Validità di costrutto (convergente/divergente) 1/3
+## Validità di costrutto (convergente/divergente) 1/4
 Validità convergente-divergente (o validità di costrutto): indaga quanto il test misura effettivamente il costrutto che intende misurare valutando corenza interna degli item, oppure correlazione con altri test.
 Si parla anche di validità “divergente” perché valuta anche la qualità di non correlare con test con cui non dovrebbe correlare (ad esempio un test specifico per memoria visuospaziale, dovrebbe non correlare troppo con memoria verbale).
 
-## Validità di costrutto (convergente/divergente) 2/3
+## Validità di costrutto (convergente/divergente) 2/4
 A livello di analisi di dati.
 Per la coerenza degli items di un test tra loro si usa l’analisi fattoriale o l’alpha di Cronbach (per quest’ultima analisi vedi sezione affidabilità).
 
@@ -178,7 +198,7 @@ Per la coerenza degli items di un test tra loro si usa l’analisi fattoriale o 
 Per la relazione dei punteggi totali con quelli di altri test si usano spesso correlazioni.
 Non esistono delle regole su che valori (nell’analisi fattoriale, o nelle correlazioni) siano accettabili. Dipende dal costrutto misurato e dalle relazioni attese.
 
-## Validità di costrutto (convergente/divergente) 3/3
+## Validità di costrutto (convergente/divergente) 3/4
 
 Un test con buona validità di costrutto correla con test che misurano lo stesso costrutto o correla con test che misurano altri costrutti in maniera coerente con le aspettative.
 
@@ -187,7 +207,7 @@ _Ad esempio_, un test di memoria di lavoro con buona validità di costrutto, cor
 
 Un test di comprensione di linguaggio figurato (costrutto più ampio), dovrebbe correlare con altri test che misurano lo stesso costrutto, ma in maniera moderata, potrebbe correlare anche con attenzione o altre funzioni cognitive legate.
 
-## Validità di costrutto (convergente/divergente) 3/4
+## Validità di costrutto (convergente/divergente) 4/4
 
 La validità di costrutto è da un lato forse la validità più importante, ma dall’altro quella più difficile da valutare se adeguata quando si indaga in relazione ad altri test che misurano lo stesso costrutto. Questo perché non esistono indicazioni di “correlazione minima” che dovrebbe avere un test con un altro per avere supporto alla sua validità di costrutto.
 
@@ -197,3 +217,88 @@ _Ad esempio_: se sviluppo un nuovo test di memoria, non è detto che ci sia un v
 
 Per l’analisi fattoriale o il Cronbach’s alpha esistono invece principi più chiari: l’analisi deve mostrare che gli item si comportano in maniera statisticamente adeguata relativamente al costrutto (questo sarà più chiaro nella sezione di approfondimento psicometrico di queste analisi).
 
+## Validità di criterio 1/2
+
+Validità di criterio: La proprietà di unt test di fornire risultati legati ad un criterio esterno. Quest criterio è spesso l’appartenenza ad una patologia, oppure un aspetto prognostico (lo sviluppare una patologia in futuro, il migliorare dopo un trattamento, etc.) o il punteggio ad un altro test.  
+
+La validità di criterio, se riferita ad una classificazione con un altro punteggio, è spesso espressa in termini di correlazione. Se riferita ad una classificazione in categorie è spesso espressa da valori di sensibilità/specificità (vedremo questo in maniera approfondita).
+
+Può essere distinta in **concorrente** se il criterio è misurato nello stesso momento, o **predittiva** se lo scopo è predire.
+
+
+## Validità di criterio 2/2
+
+In generale sono fornite percentuali che esprimono l’accuratezza del test nel predire il criterio.
+Esistono diversi standard riportati per considerare accettabile la validità di criterio, ma dovrebbe essere alta (sens/spec superiore all’80% o correlazione > 0.80)
+
+## Validità ecologica 1/2
+
+Validità ecologica: si riferisce alla qualità di un test di riflettere effettivamente delle abilità che hanno ripercussioni nella vita quotidiana.
+
+(Ad esempio, che la performance deficitaria ad un test di memoria rifletta difficoltà di memoria nella vita quotidiana).
+
+Può essere valutata tramite diverse analisi, es. Correlazioni con altri questionari o scale riferite alla vita quotidiana.
+
+Non esistono valori soglia condivisi che un test deve avere. Nota che la validità ecologica è raramente disponibile vista la difficoltà nell’essere verificata.
+
+## Validità ecologica 2/2
+
+Nota che **la validità ecologica è spesso trascurata** ma particolarmente importante perché spesso nelle valutazioni sono fatte inferenze implicite sull’impatto del deficit sulla vita quotidiana. Identificare un deficit di memoria è infatti relativamente importante _in sé_: quello che è rilevante è spesso capire che impatto ha questo deficit nella vita del paziente
+
+Questo è particolarmente rilevante nel caso di valutazioni del danno subito dal paziente. Avere un deficit cognitivo che sia particolarmente invalidante è ovviamente diverso da avere un deficit che però non ha impatto sulla vita quotidiana.
+
+Un test con dati su validità ecologica ci aiuterebbe a fare queste interpretazioni perché ci sarebbe supporto scientifico sulla relazione tra performance al test e comportamento di vita quotidiana.
+
+## Come conoscere validità di uno strumento?
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+\begin{itemize}
+\itemsep1em 
+
+\item Per conoscere la validità di un test occorre documentarsi (manuale, articolo scientifico).
+
+\item Per comprendere gli effetti della validità occorre conoscere degli aspetti (veramente base) di statistica.
+
+\item In italia e nei test neuropsicologici c’è spesso poca attenzione alla validità. Pochi test riportano dati su validità. Il termine \emph{validato} viene in certi casi usato per indicare che sono stati raccolti i dati normativi, un aspetto completamente diverso.
+\end{itemize}
+\column{0.2\textwidth}
+\vspace{7em}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Validità nei test italiani.
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\vspace{2em}
+
+\begin{figure}
+\includegraphics[scale=0.4]{Figures/Aiello_table.png}
+\end{figure}
+
+\column{0.5\textwidth}
+Validità nei test di screening italiani (somministrazione dal vivo).
+Aiello et al., 2022. Una cella senza quadratino indica che quel dato non è disponibile.
+
+\vspace{2em}
+
+CV=concurrent validity
+CrV=criterion validity
+DV=divergent validity
+
+\end{columns}
+```
+
+## Un aspetto importante di validità 
+
+La validità non è qualità “immutabile” e data di un test, ma dipende da come lo si utilizza.
+Se il test viene utilizzato in maniera inappropriata, allora può non diventare più valido.
+
+L’appropriatezza dell’utilizzo di un test è determinata dall’adesione alle procedure legate all’utilizzo del test stesso. Quanto più devio dalle procedure iniziali e quanto meno valido è il test.
