@@ -99,10 +99,11 @@ Spesso la misurazione in psicologia/neuropsicologia non rispetta alcuni principi
 
 Un concetto che emerge spesso quando si parla di misurazione, di test, di statistica è quello di oggettività.
 \pause
-\vspace{2em}
-I test infatti vengo spesso considerati più “oggettivi”. Vale la pena quindi approfondire questo concetto
+I test infatti vengo spesso considerati più “oggettivi”. Vale la pena quindi approfondire questo concetto.
+
 \pause
-\vspace{2em}
+\vfill
+
 Definiamo qui oggettività come una proprietà che si applica ad una valutazione, ad un test, o come *l’indipedenza dell’esaminatore dal risultato*
 
 ## Oggettività
@@ -200,9 +201,10 @@ Fanno parte della CTT, concetti come Validità e Affidabilità.
 \pause
 
 La maggior parte dei test neuropsicologici (clinici e forensi), implicitamente o esplicitamente utilizzano principi e assunti di CTT.
-\pause
 
-[[https://en.wikipedia.org/wiki/Classical_test_theory]{.underline}](https://en.wikipedia.org/wiki/Classical_test_theory)
+```{=latex}
+\url{https://en.wikipedia.org/wiki/Classical_test_theory}
+```
 
 ## Teoria dei test
 
@@ -246,10 +248,8 @@ La Teoria classica dei test ha dei problemi intrinseci. Ne citiamo alcuni:
 ## Teoria dei test
 
 \begin{center}
-  \textbf{Esempio script CTT}
+  \href{https://github.com/giorgioarcara/stat_forensic_neuropsy/blob/main/code/02_True_score.R}{\underline{Esempio script CTT}}
 \end{center}
-
-Vedi esempio da link
 
 ## Teoria dei test
 
@@ -520,7 +520,7 @@ Si assume che ci sia una **validità ecologica**[^1] di uno specifico test (il f
 
 Assumere che i risultati del test ci dicano qualcosa sulla vita quotidiana non è sbagliato in sé, ma non dimentichiamo che (a meno che di validità ecologica comprovata da dati scientifici) questa è un’interpretazione.
 
-## Recap
+## Riassunto
 
 ```{=latex}
 \begin{figure}
