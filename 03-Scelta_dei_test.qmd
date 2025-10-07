@@ -7,12 +7,11 @@ format:
   beamer:
     theme: metropolis
     keep-tex: true
-    pdf-engine: lualatex  # or xelatex
-    mathfont: "Latin Modern Math"
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
 incremental: true
 header-includes:
   - \setbeamerfont{title}{size=\large}
-  - \usepackage{setspace}
 ---
 
 <!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
@@ -37,7 +36,7 @@ header-includes:
 
 Due momenti di scelta dei test:
 
-1) \underline{Scelta dei test da inserire nella propria «cassetta degli attrezzi»}
+1) **Scelta dei test da inserire nella propria "cassetta degli attrezzi"**
 
 2) Scelta dei test da utilizzare con un determinato paziente
 
@@ -85,7 +84,7 @@ Avere l’articolo scientifico spesso non basta. Serve anche avere il manuale di
 
 Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere modifiche “custom”, che  alterano il test)
 
-\underline{Contattate gli autori del test (la mail è presente nell’articolo) e chiedete se è disponibile.}
+*Contattate gli autori del test (la mail è presente nell’articolo) e chiedete se è disponibile.*
 
 ## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
 

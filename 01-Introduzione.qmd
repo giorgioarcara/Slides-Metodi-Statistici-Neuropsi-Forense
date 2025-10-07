@@ -1,0 +1,461 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+incremental: false
+header-includes:
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+
+---
+
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{1. Introduzione}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\begin{center}
+\vspace{-2.2em}
+\includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+\end{center}
+}
+\date{\today}
+\maketitle
+```
+
+# Introduzione
+
+## Lezione di oggi
+
+-   Presentazione del docente e del corso.
+-   Aspetti organizzativi del corso.
+-   Obiettivi formativi e "spirito" del corso.
+
+
+## CV Giorgio Arcara
+
+\footnotesize
+
+-   Laurea in Psicologia presso Unipd (2005)
+
+-   Master in Neuropsicologia dei disturbi cognitivi acquisiti (2006)
+
+-   Vari post-doc presso dipartimenti (psicologia, ingegneria, neuroscienze) <br>
+
+-   Dal 2016 Ricercatore presso IRCCS San Camillo di Venezia.
+
+-   Dal 2025 Professore Associato in Psicometria - Università di Padova.
+
+\pause
+![](Figures/NADL_F.png){width="60%" fig-align="right"}
+
+## Contatti e riferimenti
+\centering
+
+[[https://giorgioarcara.github.io]{.underline}](https://giorgioarcara.github.io)
+
+[[pagina personale unipd]{.underline}](https://www.dpg.unipd.it/category/ruoli/personale-docente?key=4D0707A2DD6FCCD50B90E4C9F316A625)
+
+[giorgio.arcara\@unipd.it](mailto:giorgio.arcara@unipd.it){.underline}
+
+## Aspetti organizzativi - Lezioni
+
+-   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa)
+-   Le lezioni prevedono didattica frontale (interattiva), esercitazioni in classe.
+-   Saranno trattate poche formule.
+-   Sono benvenute le domande (in qualsiasi momento).
+-   Sarà in alcuni casi mostrato del codice in R, ma non è richiesto per l'esame.
+
+## Orari lezioni (dettaglio)
+
+:::{.small}
+\scriptsize
+- Mercoledì 8 Ottobre: 9.00 - 11.30
+- Giovedì 9 Ottobre: 9.00 - 11.30
+- Mercoledì 15 Ottobre: 9.00 - 11.30
+- Giovedì 16 Ottobre: 9.00 - 11.30
+- Mercoledì 22 Ottobre: 9.00 - 11.30
+- Giovedì 23 Ottobre: 9.00 - 11.30
+- Mercoledì 5 Novembre: 9.00 - 11.30
+- Giovedì 6 Novembre: 9.00 - 11.30
+- Mercoledì 12 Novembre: 9.00 - 11.30
+- Giovedì 13 Novembre: 9.00 - 11.30
+- Mercoledì 19 Novembre: 9.00 - 11.30
+- Giovedì 20 Novembre: 9.00 - 11.30
+- Mercoledì 26 Novembre: 9.00 - 11.30
+- Giovedì 27 Novembre: 9.00 - 11.30
+:::
+
+## Aspetti organizzativi - Materiali
+
+**Condividerò tutto il materiale utilizzato e mostrato**
+
+```{=latex}
+I materiali principali sono le slides e materiali aggiuntivi che vi saranno forniti durante il corso. I materiali li troverete anche a questo link \href{https://github.com/giorgioarcara/Slides-Metodi-Statistici-Neuropsi-Forense}{\underline{github}}
+```
+
+
+Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso (utili, non necessari).
+
+## Aspetti organizzativi - Materiali
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+\small
+\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
+\vspace{1em}
+Testo di approfondimento, \textbf{non indispensabile}.
+
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.5]{Figures/Methodology_book.png}
+\end{figure}
+
+\end{columns}
+```
+## Aspetti organizzativi - Materiali aggiuntivi
+
+-   Libro gratuito su statistica base ed R \href{https://learningstatisticswithr.com/}{\underline{https://learningstatisticswithr.com/}}
+
+-   Libro gratuito su psicometria (più avanzato) 
+\href{https://personality-project.org/r/book/}{\underline{https://personality-project.org/r/book/}}
+
+-   Libro in corso di scrittura
+\href{https://giorgioarcara.github.io/oip-book/}{\underline{https://giorgioarcara.github.io/oip-book/}}
+
+## Aspetti organizzativi - Esami
+
+Gli esami saranno scritti con:
+
+-   4 domande aperte su aspetti teorici.
+-   domande su scenari applicativi in cui ragionare per applicare le conoscenze sviluppate.
+
+Gli esami saranno poco nozionistici e più di ragionamento
+
+\underline{Non sarà necessario ricordare a memoria nessuna formula}
+
+## Utilizzo critico di LLM (es. ChatGPT) per il corso 1/2
+
+I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi di intelligenza artificiale sono una grande opportunità di innovazione tecnologica che merita di essere discussa. Di seguito alcune raccomandazioni per un utilizzo appropriato per il corso.
+
+
+## Utilizzo critico di LLM (es. ChatGPT) per il corso 2/2
+
+- Non cercate risposte, ma cercate _una guida_ per trovare informazioni. Gli LLM funzionano come motori di ricerca avanzati soprattutto se la domanda è vaga.
+
+- Utilizzatele per capire meglio alcuni concetti. Se qualcosa non è chiaro, potete esplicitamente chiedere di spiegarlo in altri termini o con altri esempi.
+
+- **Non vi fidate ciecamente di ciò che dicono** ma cercate conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti detti _hallucinations_ danno risposte verosimili o credibili ma che si rivelano sbagliate o completamente inventate.
+
+
+## Obiettivi del corso
+
+Partiamo dalla fine:
+
+-   Fornire elementi di conoscenza statistica e ragionamento critico utili per la neuropsicologia forense
+-   Fornire conoscenze sia per la pratica di psicologia forense, sia per chi vuole fare ricerca in ambito forense.
+-   Fornire conoscenze sull'elemento cardine per la valutazione forense: il test cognitivo o neuropsicologico, con le sue potenzialità e limiti.
+
+\emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
+
+## Perché è utile la statistica per il neuropsicologo forense?
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{Figures/Motore.png}
+\end{figure}
+\tiny{Non serve conoscere come funziona un motore per guidare una macchina. Basta sapere cosa è giusto o sbagliato fare con pedali, cambio e volante. (Aforisma approssimativo di H. R. Baayen, 2008 circa)}
+
+\pause
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{Figures/F1.png}
+\end{figure}
+\tiny{I piloti di formula 1 hanno conoscenze superiori su come funziona un motore.}
+
+\end{columns}
+```
+
+## 5 principi basilari di questo corso (1)
+
+1. la valutazione neuropsicologica forense è innanzitutto una valutazione clinica
+
+\vspace{3em}
+
+*Per una buona perizia/consulenza, bisogna avere competenze cliniche 
+(in particolare sono rilevanti le capacità diagnostiche)*
+
+## 5 principi basilari di questo corso (2)
+
+2. In questo corso di Laurea (non solo nelle mie lezioni) il leitmotiv sarà che la valutazione forense hanno un ruolo fondamentale valutazioni di tipo cognitivo.
+
+\vspace{3em}
+
+*Un approccio che si sta imponendo in ambito forense è quello 
+Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argomentazioni.*
+
+*Questo si contrappone ad un approccio dominante alla valutazione forense come semplice giudizio clinico, magari da fonte autorevole, o i test proiettivi, etc.*
+
+## 5 principi basilari di questo corso (3)
+
+3. la valutazione neuropsicologica non è solo somministrazione di test ma raccolta di evidenze e stesura di una relazione.
+
+\vspace{3em}
+
+*Il concetto di raccolta di evidenze sarà un tema ricorrente di questo scorso e gli aspetti statistici saranno presentati come alcune delle possibili evidenze.*
+
+## 5 principi basilari di questo corso (4)
+
+4. Rispetto alla valutazione neuropsicologica puramente clinica, nella valutazione forense ci sono possibili problemi aggiuntivi (es. simulazione).
+\vspace{3em}
+
+*Non è richiesta solo competenza clinica, ma anche competenze aggiuntive specifiche per valutazione forense.*
+
+## 5 principi basilari di questo corso (5)
+
+5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un' altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
+\vspace{2em}
+
+\pause
+\begin{figure}
+\includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
+\end{figure}
+
+## Alcune domande a cui risponderete
+*Come posso dimostrare che I test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
+
+*Come posso dimostrare che nell’interpretare I test, l’altra parte ha commesso un errore?*
+
+## Focus sui test neuropsicologici
+Anche se la metodologia della valutazione neuropsicologica forense in genere include vari aspetti, Il focus sulla lezione è sui test neuropsicologici, su cosa sono, come si creano, come si interpretano i risultati. 
+
+Questo perché l’utilizzo dei test rappresenta una fase fondamentale
+della valutazione neuropsicologica.
+
+\pause
+(altre fasi che non sono trattate sono l’intervista, il colloquio con i familiari, anche se sarà accennato il perché della loro rilevanza.)
+
+##
+
+*Perché si utilizzano i test in neuropsicologia clinica e in neuropsicologia forense?*
+
+\pause
+Per ottenere informazioni rilevanti alla fine degli scopi della valutazione e per superare i limiti di una valutazione soggettiva basata solo su giudizi clinici.
+
+## Perché non fornire direttamente la lista dei test migliori?
+
+I test esistenti in neuropsicologia clinica sono innumervoli (centinaia). Ogni elenco sarebbe parziale.
+
+Il loro utilizzo dipende anche dalle circostanze e dalla domanda per cui viene effettuata la valutazione.
+
+I test moderni (e migliori) oggi, saranno potenzialmente superati l’anno prossimo.
+
+## Scegliere i test
+```{=latex}
+\setlength{\fboxrule}{1mm}
+\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt} Alcuni test sono meglio degli altri\hspace{2pt}}, ma la scelta dei test dipende anche  dalle circostanze: dal motivo della valutazione, dal contesto clinico, dalla patologia trattata, dal tempo a disposizione, dalle risorse economiche a disposizione, dai gusti del
+neuropsicologo, etc.
+```
+
+## Statistica e Psicometria
+La **statistica** è quella disciplina che si occupa di come possiamo trarre delle conclusione a partire da dati empirici e si occupa di ogni fase (pianificazione, raccolta, analisi, interpretazione).
+\pause
+
+La **psicometria** è quella disciplina che si occupa di misurazione in psicologia e di inferenze statistiche di concetti psicologici.
+
+## Perché sono importanti psicometria e statistica?
+
+Non basta che un test sia “pubblicato” o “validato” perché sia utilizzabile senza una riflessione critica. 
+
+\vspace{2em}
+Grazie alle conoscenze metodologiche possiamo scegliere quale test è meglio di un altro.
+
+\pause
+\vspace{2em}
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[baseline=(current bounding box.center)]
+
+% Prima riga: sbagliato - giusto
+\node[anchor=west] at (0, 0) {\textbf{Sbagliato}};
+\node[anchor=east] at (10, 0) {\textbf{Giusto}};
+\draw[thick] (1.8, 0) -- (8.5, 0);
+
+% X al centro
+\node[text=red, font=\bfseries\Huge] at (5, 0) {X};
+
+% Seconda riga: peggio - meglio
+\node[anchor=west] at (0, -1.2) {\textbf{Peggio}};
+\node[anchor=east] at (10, -1.2) {\textbf{Meglio}};
+\draw[thick] (1.5, -1.2) -- (8.5, -1.2);
+
+\end{tikzpicture}
+\end{center}
+```
+
+## Perché psicometria/statistica a volte sono tralasciati? (1/3)
+
+- Le abilità cliniche/forensi trascendono le conoscenze metodologiche/psicometriche.
+_si può essere ottimi neuropsicologi clinici/forensi senza conoscere questi aspetti_
+
+## Perché psicometria/statistica a volte sono tralasciati? (2/3)
+- In neuropsicologia clinica non ci sono feedback chiari di un utilizzo inadeguato dei test.
+
+_(cosa succede se sbaglio clamorosamente nell’interpretazione di un test? Non molto)_
+
+
+## Perché psicometria/statistica a volte sono tralasciati? (3/3)
+- È più facile fidarsi “ciecamente” di un test, e delegare la responsabilità al test (invece che prendersela come neuropsicologi) ed è più semplice considerarlo come uno strumento oggettivo.
+
+_(è stato il test a dirlo, non io!)_
+
+## La situazione attuale
+In neuropsicologia forense non c’è (ad oggi) una forte cultura psicometrica e statistica. Molti di questi limiti derivano direttamente dalla neuropsicologia clinica.
+
+Ci sono numerose pratiche problematiche (es. uso non consapevole dei punti-z)
+
+## L'Interpretative Approach
+
+Anche se molto del materiale discusso proviene da testi di metodologia generale, non ci sono (ancora) testi specifici di metodologia nella neuropsicologia, tantomeno di forense.
+
+L’approccio metodologico che descriverò in questa lezione, che abbiamo chiamato “Interpretative Approach”  permette rispondere in maniera coerente a queste e a molte altre domande.
+
+L’approccio che proponiamo mette al centro della valutazione neuropsicologica
+la neuropsicologa/il neuropsicologo, non i test.
+
+## L'Interpretative Approach e la neuropsicologia forense
+
+Per mettere al centro il neuropsicologo si parte da un approfondimento di tutti quegli aspetti medotologici e statistici proprio per vedere fin dove arrivano, dove si fermano e dove è che comincia realmente l’intervento dello psicologo/neuropsicologo e la sua \underline{interpretazione}.
+
+Queste conoscenze vi aiuterannno non solo a conoscere meglio l’utlizzo dei test, ma anche a capire bene tutte le altre evidenze che raccoglierete per giungere ad un’interpretazione degli stessi (e a come farlo attivamente), secondo basi statistiche.
+
+## L’Interpretative Approach
+
+Con la definizione dell’Interpretative approarch abbiamo cercato di mettere ordine e più rigore a quella che è la regolare pratica clinica in neuropsicologia (è applicabile alla pratica comune) e i più diffusi e condivisi principi della psicometria applicati alla neuropsicologia
+
+Attenzione: che ve ne rendiate conto o meno, comunque adotterete dei principi nell’utilizzare i test.
+
+
+## I 6 principi
+
+L’interpretative approach si sviluppa a partire da 6 principi cardine 
+
+Molte delle spiegazioni saranno delle conseguenze logiche (o razionali) a partire da questi principi cardine
+
+Questi principi perlopiù cercando di esplicitare la common knowledge in neuropsicologia clinica.
+
+## Interpretative Approach - Principio 1
+
+Il neuropsicologo svolge un ruolo attivo in ogni aspetto della valutazione neuropsicologica.
+
+## Interpretative Approach - Principio 2
+
+La valutazione neuropsicologica è un processo razionale di raccolta di informazioni sullo stato cognitivo di un soggetto esaminato e di elaborazione di una conclusione.
+
+## Interpretative Approach - Principio 3
+In ogni valutazione neuropsicologica, il neuropsicologo deve integrare e interpretare tutte le informazioni disponibili per trarre una conclusione.
+
+## Interpretative Approach - Principio 4
+L'uso dei risultati dei test neuropsicologici implica sempre un'interpretazione attiva da parte del neuropsicologo.
+
+## Interpretative Approach - Principio 5
+Il neuropsicologo deve essere consapevole delle inferenze implicite quando interpreta le prove disponibili.
+
+## Interpretative Approach - Principio 6
+Una valutazione neuropsicologica può essere considerata tale solo quando c'è stata un'osservazione diretta (di persona o a distanza) del comportamento degli esaminati e un'\underline{interazione} diretta con loro.
+
+## Perchè è importante la consapevolezza dell’approccio?
+
+Analogia con posizione filosofica
+<br>
+
+![](Figures/Ross_Twitter.png){height=70% fig-align="center"}
+
+## L’ “Interpretative Approach” alla neuropsicologia clinica e forense
+
+A volte potrebbe sembrare che l’Interpretative approach “giustifichi” alcune arbitrarietà perchè deleghi inferenze e interpretazioni al Neuropsicologo. 
+
+Questo è un errore. L’Interpretative approach, piuttosto, ha come obiettivo far _rendere consapevoli di una serie di intepretazioni_ da parte del Neuropsicologo, che comunque avvengono durante la valutazione neuropsicologica e l’utilizzo dei test.
+
+Conoscere quando queste avvengono porta ad una maggiore controllo di ci
+che avviene nella valutazione e quindi a fare migliori valutazioni.
+
+## L’Interpretative Approach alla neuropsicologia clinica e forense
+
+L’Interpretative approach nasce da esperienza di insegnamento di neuropsicologia clinica  (condiviso con Sara Mondini, Unipd e Marinella Cappelletti, Goldsmiths London)
+
+Spesso studentesse e studenti sono attratti dalla neuropsicologia proprio per il rigore dei test rispetto, ad esempio, ad un semplice colloquio o valutazione qualitativa. Questo può portare ad un’ eccessiva fiducia verso questi strumenti, oppure al dimenticarsi l’effettivo ruolo più importante del neuropsicologo in vari aspetti del’utilizzo dei test.
+
+## Valutazione neuropsicologica come raccolta di informazioni
+
+![](Figures/Active_collection.png)
+
+## Valutazione Neuropsicologica come raccolta di informazioni
+La raccolta di informazioni  è un processo **attivo** del neuropsicologo e dipende dalle sue conoscenze. 
+
+La stessa osservazione dipende dalle conoscenze, visto che I comportamenti che notiamo o osserviamo 
+_(“teoreticità dell’osservazione”)_
+
+Così come tra queste conoscenze ci sono le conoscenze relative alle caratteristiche dei test e alle informazioni che, realmente, possiamo trarne.
+
+
+## Valutazione neuropsicologica e forense
+
+Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei quali molto complessi (es. giudicare la _capacità di intendere e volere_). In questo corso ci concentreremo su esempi sul concetto di **danno**, ma anticipo che la definizione di danno è diversa in ambito giuridico e in ambito clinico.
+
+
+
+
+
+## Un esempio che ci accompagnerà 
+
+:::{.smaller}
+\scriptsize
+_GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione.Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L'unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto._
+
+_Nell'anamnesi di GH c'è però un evento rilevante. Quando era più giovane (a 30 anni) sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie._
+
+_La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all'incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente._
+:::
+
+## Un esempio che ci accompagnerà (APACS)
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{Figures/APACS_test.png}
+\end{figure}
+
+\column{0.5\textwidth}
+6 task: 2 per produzione e 4 per comprensione
+
+\emph{(Arcara \& Bambini, 2016)}
+
+3 punteggi globali
+
+\end{columns}
+```
+
+## Un esempio che ci accompagnerà (Linguaggio Figurato 1)
+
+![](Figures/APACS_Fig_lang_1.png)
+
+

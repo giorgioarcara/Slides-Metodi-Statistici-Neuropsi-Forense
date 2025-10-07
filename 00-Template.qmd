@@ -1,0 +1,91 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+incremental: false
+header-includes:
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+
+---
+
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{Introduzione}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\begin{center}
+\vspace{-2.2em}
+\includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+\end{center}
+}
+\date{\today}
+\maketitle
+```
+
+
+## Prima slide
+
+-   Presentazione del docente e del corso.
+-   Aspetti organizzativi del corso.
+-   Obiettivi formativi e "spirito" del corso.
+
+## Seconda slides (due colonne)
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+\small
+\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
+
+testo di approfondimento, \textbf{non necessario}.
+
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## slide 3 figura e box
+
+```{=latex}
+
+\begin{tikzpicture}
+    % Include your image
+    \node[anchor=south west, inner sep=0] (image) at (0,0)
+        {\includegraphics[width=0.8\textwidth]{Figures/Test_Methodology_transp.png}};
+
+    % Set coordinate system to match the image
+    \begin{scope}[x={(image.south east)}, y={(image.north west)}]
+        
+        % Draw a red rectangle (thin border)
+        %\draw[red, thick, rounded corners] (0.25,0.3) rectangle (0.45,0.5);
+        % Optional label
+        %\node[red, font=\bfseries, above] at (0.35,0.5) {Region 1};
+        
+        %\pause
+        % a red rectangle (thicker border)
+        \draw[red, ultra thick] (0.605,0.65) rectangle (0.905,0.85);
+        
+        % text (with fine control)
+        \node[anchor=west, xshift=-8mm, yshift=20mm] at (image.east)
+        {\parbox{4cm}{\parbox{3cm}{\scriptsize \textbf{Minacce alla validità}\\ (il test non misura quello che vorrebbe misurare)}}};
+
+
+        
+    \end{scope}
+\end{tikzpicture}
+
+```
+

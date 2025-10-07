@@ -61,7 +61,6 @@
 \usetheme[]{metropolis}
 \ifPDFTeX\else
   % xetex/luatex font selection
-  \setmathfont[]{Latin Modern Math}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -131,7 +130,7 @@
  
 
 
-\setbeamerfont{title}{size=\large}
+\setbeamerfont{title}{size=\large} \usepackage{hyperref} \setbeamertemplate{footline}[frame number]
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -191,7 +190,7 @@
 
 \begin{frame}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. La cornice teorica}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. Cornice teorica}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -202,6 +201,8 @@
 }
 \maketitle
 \end{frame}
+
+\section{Cornice Teorica}\label{cornice-teorica}
 
 \begin{frame}{Misurazione}
 \phantomsection\label{misurazione}
@@ -485,9 +486,19 @@ un'unica dimensione (non sia la combinazione di più costrutti).
 
 Esempio formula Modelli di Rasch (la cito per completezza): \vspace{2em}
 
-\begin{figure}
-  \includegraphics[width=0.8\textwidth]{Figures/Rasch.png}
-\end{figure}
+\small
+\begin{align}
+  \Pr(X_{ni}=1 \mid \theta_n, \beta_i)
+  &= \frac{\exp(\theta_n - \beta_i)}{1 + \exp(\theta_n - \beta_i)}
+  \label{eq:rasch_prob}
+  \\
+  \Pr(X_{ni}=0 \mid \theta_n, \beta_i) &= \frac{1}{1 + \exp(\theta_n - \beta_i)}
+  \label{eq:rasch_prob0}
+\end{align}
+
+$\theta$ = ability
+$\beta$ = difficulty parameter
+
 \vspace{2em}
 
 \href{https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory}{\ul{https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory}}

@@ -7,11 +7,14 @@ format:
   beamer:
     theme: metropolis
     keep-tex: true
-    pdf-engine: lualatex  # or xelatex
-    mathfont: "Latin Modern Math"
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
 incremental: true
 header-includes:
-  - \setbeamerfont{title}{size=\large}
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+  
 ---
 
 <!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
@@ -19,7 +22,7 @@ header-includes:
 ::: {.content-visible when-format="beamer"}
 ```{=latex}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. La cornice teorica}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. Cornice teorica}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -31,6 +34,8 @@ header-includes:
 \maketitle
 ```
 :::
+
+# Cornice Teorica
 
 ## Misurazione
 
@@ -271,9 +276,21 @@ Si assume che il costrutto misurato dal test sia rappresentabile lungo un’unic
 Esempio formula Modelli di Rasch (la cito per completezza):
 \vspace{2em}
 
-\begin{figure}
-  \includegraphics[width=0.8\textwidth]{Figures/Rasch.png}
-\end{figure}
+```{=latex}
+\small
+\begin{align}
+  \Pr(X_{ni}=1 \mid \theta_n, \beta_i)
+  &= \frac{\exp(\theta_n - \beta_i)}{1 + \exp(\theta_n - \beta_i)}
+  \label{eq:rasch_prob}
+  \\
+  \Pr(X_{ni}=0 \mid \theta_n, \beta_i) &= \frac{1}{1 + \exp(\theta_n - \beta_i)}
+  \label{eq:rasch_prob0}
+\end{align}
+
+$\theta$ = ability
+$\beta$ = difficulty parameter
+```
+
 \vspace{2em}
 
 [[https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory]{.underline}](https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory)
