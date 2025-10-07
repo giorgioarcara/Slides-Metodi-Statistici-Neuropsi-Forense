@@ -271,11 +271,16 @@ rispetta alcuni principi di misurazioni più rigide (es. fisica)
 \begin{frame}{Oggettività}
 \phantomsection\label{oggettivituxe0}
 Un concetto che emerge spesso quando si parla di misurazione, di test,
-di statistica è quello di oggettività. \pause \vspace{2em} I test
-infatti vengo spesso considerati più ``oggettivi''. Vale la pena quindi
-approfondire questo concetto \pause \vspace{2em} Definiamo qui
-oggettività come una proprietà che si applica ad una valutazione, ad un
-test, o come \emph{l'indipedenza dell'esaminatore dal risultato}
+di statistica è quello di oggettività. \pause I test infatti vengo
+spesso considerati più ``oggettivi''. Vale la pena quindi approfondire
+questo concetto.
+
+\pause
+\vfill
+
+Definiamo qui oggettività come una proprietà che si applica ad una
+valutazione, ad un test, o come \emph{l'indipedenza dell'esaminatore dal
+risultato}
 \end{frame}
 
 \begin{frame}{Oggettività}
@@ -302,32 +307,39 @@ Il concetto di oggettività verrà ripreso più avanti, specie con
 \emph{inter-rater agreement}
 \end{frame}
 
-\begin{frame}{Cosa sono i test}
-\phantomsection\label{cosa-sono-i-test}
-``Un test è una \textbf{procedura sistematica} per
-\textbf{l’osservazione del comportamento} di una persona e per la sua
-\textbf{descrizione con l’aiuto di una scala numerica} o un sistema di
-categorie''
+\begin{frame}{Definizione di test}
+\phantomsection\label{definizione-di-test}
+\setlength{\fboxrule}{1.5pt}
+
+``Un test è una
+\only<2->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}procedura sistematica\hspace{2pt}}}
+\only<1>{procedura sistematica} per
+\only<3->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}l’osservazione del comportamento\hspace{2pt}}}
+\only<1-2>{l’osservazione del comportamento} di una persona e per la sua
+\only<4->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}descrizione con l’aiuto di una scala numerica\hspace{2pt}}}
+\only<1-3>{descrizione con l’aiuto di una scala numerica} o un sistema
+di categorie.''
 
 \begin{flushright}
   \emph{(Cronbach, 1990, p.32)}
 \end{flushright}
 \pause
 
+\onslide<5->{
 \begin{flushright}
   \begin{figure}
     \includegraphics[scale=0.05]{Figures/triangle.png}
   \end{figure}
 \end{flushright}
 
-L'interesse non è mai nel comportamento in sé ma nel \textbf{costrutto}
-misurato da quel comportamento. \pause
+L’interesse non è mai nel comportamento in sé ma nel \textbf{costrutto} misurato da quel comportamento.
 
-\emph{Costrutto}: un concetto psicologico non osservabile
+*Costrutto*: un concetto psicologico non osservabile 
+}
 \end{frame}
 
 \begin{frame}{Cosa sono i test}
-\phantomsection\label{cosa-sono-i-test-1}
+\phantomsection\label{cosa-sono-i-test}
 I test cognitivi/neuropsicologi utilizzati in forense, sono test di
 performance massima (o prestazione massima)
 
@@ -347,7 +359,7 @@ La maggior parte dei test a cui ci faremo riferimento sono quelli di performance
 \end{frame}
 
 \begin{frame}{Cosa sono i test}
-\phantomsection\label{cosa-sono-i-test-2}
+\phantomsection\label{cosa-sono-i-test-1}
 \begin{center}
   \textbf{Esempio:}
 \end{center}
@@ -365,7 +377,7 @@ osservabile)
 \end{frame}
 
 \begin{frame}{Cosa sono i test}
-\phantomsection\label{cosa-sono-i-test-3}
+\phantomsection\label{cosa-sono-i-test-2}
 \begin{figure}
   \includegraphics[scale=0.3]{Figures/measurement_diagramma.png}
 \end{figure}
@@ -378,7 +390,7 @@ osservabile)
 \end{frame}
 
 \begin{frame}{Cosa sono i test}
-\phantomsection\label{cosa-sono-i-test-4}
+\phantomsection\label{cosa-sono-i-test-3}
 Un esempio di test. Rivediamo l'esempio di Linguaggio Figurato 1
 \end{frame}
 
@@ -397,9 +409,8 @@ Fanno parte della CTT, concetti come Validità e Affidabilità. \pause
 
 La maggior parte dei test neuropsicologici (clinici e forensi),
 implicitamente o esplicitamente utilizzano principi e assunti di CTT.
-\pause
 
-\href{https://en.wikipedia.org/wiki/Classical_test_theory}{\ul{https://en.wikipedia.org/wiki/Classical\_test\_theory}}
+\url{https://en.wikipedia.org/wiki/Classical_test_theory}
 \end{frame}
 
 \begin{frame}{Teoria dei test}
@@ -451,10 +462,8 @@ dal punteggio vero?}
 \begin{frame}{Teoria dei test}
 \phantomsection\label{teoria-dei-test-3}
 \begin{center}
-  \textbf{Esempio script CTT}
+  \href{https://github.com/giorgioarcara/stat_forensic_neuropsy/blob/main/code/02_True_score.R}{\underline{Esempio script CTT}}
 \end{center}
-
-Vedi esempio da link
 \end{frame}
 
 \begin{frame}{Teoria dei test}
@@ -784,8 +793,8 @@ di validità ecologica comprovata da dati scientifici) questa è
 un'interpretazione.
 \end{frame}
 
-\begin{frame}{Recap}
-\phantomsection\label{recap}
+\begin{frame}{Riassunto}
+\phantomsection\label{riassunto}
 \begin{figure}
   \includegraphics[scale=0.3]{Figures/measurement_diagramma.png}
 \end{figure}

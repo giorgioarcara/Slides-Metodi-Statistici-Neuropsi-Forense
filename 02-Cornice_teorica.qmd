@@ -116,15 +116,26 @@ Definiamo qui oggettività come una proprietà che si applica ad una valutazione
 
 Il concetto di oggettività verrà ripreso più avanti, specie con *inter-rater agreement*
 
-## Cosa sono i test
+## Definizione di test
+\setlength{\fboxrule}{1.5pt}
 
-“Un test è una \textbf{procedura sistematica} per \textbf{l’osservazione del comportamento} di una persona e per la sua \textbf{descrizione con l’aiuto di una scala numerica} o un sistema di categorie” 
+“Un test è una 
+\only<2->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}procedura sistematica\hspace{2pt}}}
+\only<1>{procedura sistematica}
+per 
+\only<3->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}l’osservazione del comportamento\hspace{2pt}}}
+\only<1-2>{l’osservazione del comportamento}
+di una persona e per la sua 
+\only<4->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}descrizione con l’aiuto di una scala numerica\hspace{2pt}}}
+\only<1-3>{descrizione con l’aiuto di una scala numerica}
+o un sistema di categorie.”
 
 \begin{flushright}
   \emph{(Cronbach, 1990, p.32)}
 \end{flushright}
 \pause
 
+\onslide<5->{
 \begin{flushright}
   \begin{figure}
     \includegraphics[scale=0.05]{Figures/triangle.png}
@@ -132,18 +143,13 @@ Il concetto di oggettività verrà ripreso più avanti, specie con *inter-rater 
 \end{flushright}
 
 L’interesse non è mai nel comportamento in sé ma nel \textbf{costrutto} misurato da quel comportamento.
-\pause
 
 *Costrutto*: un concetto psicologico non osservabile 
+}
 
 ## Cosa sono i test
 
 I test cognitivi/neuropsicologi utilizzati in forense,  sono test di performance massima (o prestazione massima) 
-\begin{flushright}
-  \emph{(Cronbach, 1990)}
-\end{flushright}
-\pause
-\vspace{2em}
 
 Essi presentano alcune caratteristiche (che discuteremo nel corso). Sono diversi da questionari o test di *risposta tipica*.
 \pause
