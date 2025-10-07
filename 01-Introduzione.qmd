@@ -166,7 +166,9 @@ Partiamo dalla fine:
 -   Fornire elementi di conoscenza statistica e ragionamento critico utili per la neuropsicologia forense
 -   Fornire conoscenze sia per la pratica di psicologia forense, sia per chi vuole fare ricerca in ambito forense.
 -   Fornire conoscenze sull'elemento cardine per la valutazione forense: il test cognitivo o neuropsicologico, con le sue potenzialità e limiti.
+-   Fornire conoscenze base su test statistici applicati al caso singolo.
 
+\pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
 
 ## Perché è utile la statistica per il neuropsicologo forense?
@@ -228,7 +230,7 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 ## 5 principi basilari di questo corso (5)
 
-5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un' altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
+5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un'altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
 \vspace{2em}
 
 \pause
@@ -238,7 +240,7 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 ## Alcune domande a cui risponderete
 *Come posso dimostrare che I test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
-
+\pause
 *Come posso dimostrare che nell’interpretare I test, l’altra parte ha commesso un errore?*
 
 ## Focus sui test neuropsicologici
@@ -250,7 +252,14 @@ della valutazione neuropsicologica.
 \pause
 (altre fasi che non sono trattate sono l’intervista, il colloquio con i familiari, anche se sarà accennato il perché della loro rilevanza.)
 
-##
+## Focus sui test statistici per caso singolo
+
+Il più delle volte in ambito forense, l'interesse è dare delle risposte su un singolo individuo.
+
+Da un punto di vista statistico questo significa utilizzare metodi che permettono di rispondere non a campioni, ma a singoli individui (ed è qualcosa di particolarmente rilevante)
+
+
+## Ruolo dei test
 
 *Perché si utilizzano i test in neuropsicologia clinica e in neuropsicologia forense?*
 
