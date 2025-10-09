@@ -1,0 +1,35 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+incremental: false
+header-includes:
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+
+---
+
+## Indice dei contenuti del corso (A.A. 2025/2026)
+\scriptsize
+
+1. Introduzione
+2. Cornice Teorica (Misurazione, Cosa sono i test, teorie dei test).
+3. La scelta dei test per la propria cassetta degli attrezzi.
+4. Le principali qualità dei test: Validità e Affidabilità
+5. Utilizzare i test per identificare deficit/danni cognitivi (l’utilizzo di dati normativi)
+6. Capacità di identificare condizioni di interesse (sensibilità e specificità)
+7. Simulazione e altri casi specifici di uso dei test in forense
+8. Altri utilizzi dei test (cambiamenti nel tempo e confrontare test diversi)
+9. La scelta dei test nella valutazione neuropsicologica.
+10. L’interpretazione dei test
+
+_Saranno svolte delle esercitazioni con la **Dott.ssa Sara Lago**_.
+Le esercitazioni saranno principalmente simulazioni di esame e approfondimenti sugli aspetti un po' più complessi.
+
+
+
