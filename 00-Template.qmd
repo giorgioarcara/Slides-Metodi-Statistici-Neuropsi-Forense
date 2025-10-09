@@ -41,21 +41,22 @@ header-includes:
 
 ## Seconda slides (due colonne)
 
+
 ```{=latex}
 \begin{columns}
-\column{0.5\textwidth}
+\column{0.8\textwidth}
 \small
-\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
-
-testo di approfondimento, \textbf{non necessario}.
-
-\column{0.5\textwidth}
+\textbf{L'aspetto da ricordare è che nei test neuropsicologici, il più delle volte in maniera implicita, è assunta la definizione di misurazione di Stevens e che sia possibile assumere una misura in una scala ad intervalli.} 
+\column{0.2\textwidth}
 
 \begin{figure}
 \includegraphics[scale=0.05]{Figures/triangle.png}
 \end{figure}
 \end{columns}
 ```
+
+
+
 
 ## slide 3 figura e box
 

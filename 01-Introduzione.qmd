@@ -69,8 +69,9 @@ header-includes:
 
 ## Aspetti organizzativi - Lezioni
 
--   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa)
--   Le lezioni prevedono didattica frontale (interattiva), esercitazioni in classe.
+-   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa). 1 pausa in mezzo.
+-   Le lezioni saranno videoregistrate e rese disponibile sul moodle.
+-   Le lezioni prevedono didattica frontale (interattiva) ed esercitazioni in classe.
 -   Saranno trattate poche formule.
 -   Sono benvenute le domande (in qualsiasi momento).
 -   Sarà in alcuni casi mostrato del codice in R, ma non è richiesto per l'esame.
@@ -158,6 +159,18 @@ I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi di inte
 
 - **Non vi fidate ciecamente di ciò che dicono** ma cercate conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti detti _hallucinations_ danno risposte verosimili o credibili ma che si rivelano sbagliate o completamente inventate.
 
+## Neuropsicologia Forense
+
+![](Figures/Valutazione_Neuropsi_ChatGPT.png){width="50%" fig-align="center"}
+\pause
+
+**Valutazione neuropsicologica**: esame clinico per indagare il funzionamento cognitivo a fine descrittivo o diagnostico. In genere sono somministrati una serie di _test neuropsicologici_ ad un individuo per indagare il suo funzionamento cognitivo.
+
+Sono ottenuti punteggi e questi sono confrontati con valori di riferimento per trarre conclusioni (es. è presente un deficit cognitivo.)
+
+## Neuropsicologia Forense
+
+Dietro la semplicità di quanto descritto ci sono tanti aspetti metodologici (psicometrici e statistici) che saranno approfonditi in questo corso.
 
 ## Obiettivi del corso
 
@@ -404,6 +417,12 @@ Questo è un errore. L’Interpretative approach, piuttosto, ha come obiettivo f
 
 Conoscere quando queste avvengono porta ad una maggiore controllo di ci
 che avviene nella valutazione e quindi a fare migliori valutazioni.
+
+## L’ “Interpretative Approach” alla neuropsicologia clinica e forense
+
+**Alcune interpretazioni sono migliori di altre**
+
+Sottolineare interpretazioni non significa che ogni interpretazione va bene. Le interpretazioni maggiormente supportate da evidenze (test, aspetti qualitativi, anamnesi, etc.) sono migliori di quelle che non sono supportate. 
 
 ## L’Interpretative Approach alla neuropsicologia clinica e forense
 
