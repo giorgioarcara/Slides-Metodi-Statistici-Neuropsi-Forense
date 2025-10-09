@@ -9,7 +9,7 @@ format:
     keep-tex: true
     pdf-engine: xelatex  # or xelatex
     # mathfont: "Latin Modern Math"
-incremental: true
+incremental: false
 header-includes:
   \setbeamerfont{title}{size=\large}
   \usepackage{hyperref}
@@ -94,11 +94,11 @@ Per stevens, quello che è importante è definire poi quale è la scala di misur
 ## Considerazioni sulla definizione di Stevens 1/2
 
 Supponiamo di avere un tavolo quadrato che abbia il lato di 40 cm, mentre un’altro tavolo abbia il lato di 42 cm. 
-Concludereste che il primo tavolo è lungo 2 cm più dell'altro? (il cm è qui usata come unità di lunghezza)
+Concludereste che il primo tavolo è lungo 2 cm più dell'altro? (il cm è qui usata come unità di misura)
 \pause
-\vspace{2em}
-Supponiamo ad un test di memoria una persona ottiene 40, mentre un’altra 42 
-Vi sentireste di concludere che quella persona ha due unità di memoria in più dell'altra?
+
+Supponiamo che ad un test di memoria una persona ottenga 40, mentre un’altra 42, 
+vi sentireste di concludere che quella persona ha due unità di misura (di memoria) in più dell'altra?
 \pause
 o semplicemente che ha più memoria?
 
@@ -321,6 +321,7 @@ La Teoria classica dei test ha dei problemi intrinseci. Ne citiamo alcuni:
 
 - Problemi nella definizione di forme parallele (studieremo questo quando vedremo cambiamenti nel tempo)
 
+\pause
 *Consideriamo il possibile errore in un punteggio di Linguaggio Figurato 1 pari a 8, 0, oppure di 15. L’errore è veramente indipendente dal punteggio vero?*
 
 ## Teoria dei test
