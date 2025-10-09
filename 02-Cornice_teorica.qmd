@@ -45,29 +45,37 @@ _“We may say that measurement, in the broadest sense, is defined as the assign
 \pause
 \vspace{2em}
 
-Questa è stata una definizione estremamente popolare che tuttora domina la neuropsicologia
+Questa è una definizione estremamente popolare che tuttora domina la neuropsicologia
 
-## Una definizione di misurazione da filosofia e fisica
+## Scale di misura secondo Stevens
 
-Non si misurano oggetti ma \emph{proprietà} di oggetti:
+:::{.small}
+\scriptsize
+Per stevens, quello che è importante è definire poi quale è la scala di misura, che mette in relazione oggetti con i numeri.
 
-"Sia $O$ un certo insieme di oggetti caratterizzati dall’avere la proprietà P e sia $\mathbb{R}$ l’insieme dei numeri Reali i quali possono essere ordinati in accordo al criterio “essere maggiore o uguale a”, si definisce misurazione:
+\tiny
+| Scala        | Descrizione                                                                 | Esempio                         | Operazioni possibili                                   |
+|--------------|------------------------------------------------------------------------------|---------------------------------|--------------------------------------------------------|
+| **Nominale** | Classificazione in categorie senza ordine implicito                         | Sesso (M/F), Colori, Nazionalità | Conteggio, moda, verifica uguaglianza/differenza      |
+| **Ordinale** | Classificazione con ordine, ma le distanza tra categorie non hanno significato   | Posizione in una classifica, Titolo di studio | Ordinamento, mediane, percentili                     |
+| **Intervallo** | Misura con ordine e intervalli uguali, ma senza zero assoluto significativo | Temperatura in °C, IQ           | Addizione, Sottrazione,Media, Deviazione standard, z-score                |
+| **Rapporto** | Misura con ordine, intervalli uguali e lo zero ha un significato          |  Età, Scolarità in anni, tempi di reazione | Tutte le operazioni aritmetiche (×, ÷, +, −), z-score, rapporti|
 
-Chiamiamo $O_p$ l’insieme di oggetti tali che si crei un “omomorfismo” tra $(O_p, \succcurlyeq)$ e $(\mathbb{R}, \geq)$.
+**Legenda**  
+- *Scala*: tipo di misura secondo la classificazione di Stevens.  
+- *Descrizione*: caratteristiche principali della scala.  
+- *Esempio*: variabili reali che rientrano in quella scala.  
+- *Operazioni possibili*: trasformazioni matematiche e statistiche consentite dai dati.
+:::
 
-Dove $\succcurlyeq$ indicano \emph{relazioni d’ordine empirico} (oggetti fisici) e $\geq$ \emph{relazioni d’ordine numerico}"
 
-\begin{flushright}
-\emph{Boniolo e Vidali, Filosofia della scienza, p. 321}
-\end{flushright}
-
-## Limiti della definizione di Stevens
+## Considerazioni su definizione di Stevens
 
 ```{=latex}
 \begin{columns}
   \begin{column}{0.5\textwidth}
     \begin{figure}
-    \includegraphics[scale=0.5]{Figures/MOCA.png}
+    \includegraphics[scale=0.1]{Figures/MoCA-Test-Italian.png}
     \end{figure}
   \end{column}
   \begin{column}{0.5\textwidth}
@@ -83,17 +91,81 @@ Dove $\succcurlyeq$ indicano \emph{relazioni d’ordine empirico} (oggetti fisic
 \end{columns}
 ```
 
-## Limiti della definizione di Stevens
+## Considerazioni sulla definizione di Stevens 1/2
 
-Supponiamo di avere un tavolo che sia lungo 40 cm, mentre un’altro tavolo è lungo 20 cm. 
-Concludereste che il tavolo è lungo il doppio dell’altro?
+Supponiamo di avere un tavolo quadrato che abbia il lato di 40 cm, mentre un’altro tavolo abbia il lato di 42 cm. 
+Concludereste che il primo tavolo è lungo 2 cm più dell'altro? (il cm è qui usata come unità di lunghezza)
 \pause
 \vspace{2em}
-Supponiamo ad un test di memoria una persona ottiene 40, mentre un’altra 20. 
-Vi sentireste di concludere che quella persona ha il doppio della memoria dell’altra.
+Supponiamo ad un test di memoria una persona ottiene 40, mentre un’altra 42 
+Vi sentireste di concludere che quella persona ha due unità di memoria in più dell'altra?
 \pause
-\vspace{2em}
-Spesso la misurazione in psicologia/neuropsicologia non rispetta alcuni principi di misurazioni più rigide (es. fisica)
+o semplicemente che ha più memoria?
+
+
+## Considerazioni sulla definizione di Stevens 2/2
+Nell'esempio appena utilizzato, inoltre, nel test di memoria, la variazione in punti sembra essere molto legata allo strumento utilizzato per valutare la memoria. Ogni test ha punteggi ottenibili diversi (es. il MoCA da 0 a 30, GEMS, un altro test per funzionamento cognitivo generale da 0 a 100). 
+
+\pause
+
+**in questi esempi "+2" potrebbe avere significati molto diversi.**
+
+
+## Misurazione e neuropsicologia
+La misurazione in neuropsicologia clinica (e forense) praticamente sempre _assume_ che ci sia una misura in **scala ad intervalli**. Ma, ad un'analisi approfondita, spesso sembrerebbe più appropriata una **scala ordinale**. 
+
+
+## Misurazione e neuropsicologia
+
+Nella scala ordinale si assume che sia solo possibile ordinare valori dal più alto al più basso ma non che si possano fare altre operazioni. 
+
+Nella scala ad intervalli si assume siano possibili operazioni come somma, sottrazione e ogni intervallo ha lo stesso significato (indipendentemente dal valore di partenza o dal range della scala). (Un'analogia è i gradi Celsius).
+
+
+## Misurazione e arbitrarietà della misura
+
+L'esempio mostrato sopra illustra come nei test neuropsicologici la scala arbitraria sembra essere critico.
+Immaginate due test di memoria: uno ha un punteggio da 0 a 50 Un altro da 0 a 10. In entrambi i casi il valore +2 ha un significato potenzialmente diverso.
+
+Un modo per "aggirare" questo problema (di scala arbitraria) è quello di riportare ad altre scale comparabili, come la deviazione standard oppure la percentuale di persone che ottengono quel punteggio. Queste due possibilità saranno trattate nelle lezioni su "dati normativi" e su "confrontare punteggi a test diversi".
+
+## Un'altra possibile definizione di misurazione da filosofia e fisica
+
+Non si misurano oggetti ma \emph{proprietà} di oggetti:
+
+"Sia $O$ un certo insieme di oggetti caratterizzati dall’avere la proprietà P e sia $\mathbb{R}$ l’insieme dei numeri Reali i quali possono essere ordinati in accordo al criterio “essere maggiore o uguale a”, si definisce misurazione:
+
+Chiamiamo $O_p$ l’insieme di oggetti tali che si crei un “omomorfismo” tra $(O_p, \succcurlyeq)$ e $(\mathbb{R}, \geq)$.
+
+Dove $\succcurlyeq$ indicano \emph{relazioni d’ordine empirico} (oggetti fisici) e $\geq$ \emph{relazioni d’ordine numerico}"
+
+\begin{flushright}
+\emph{Boniolo e Vidali, Filosofia della scienza, p. 321}
+\end{flushright}
+
+## Considerazioni conclusive su misurazione 1/2
+Queste considerazioni mostrano come un atto così semplice e naturale (come ottenere e utilizzare un punteggio), nasconde delle riflessioni che meritano approfondimento e che hanno influenza sul signigicato che assumeranno questi punteggi.
+
+La definizione di misurazione che usiamo è un po' più permissiva rispetto a definizioni più rigide (es. quella usata fisica riportata nella slide precedente) e lascia aperte alcune riflessioni. 
+
+## Considerazioni conclusive su misurazione 2/2
+
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+\small
+\textbf{L'aspetto da ricordare è che nei test neuropsicologici, il più delle volte in maniera implicita, è assunta la definizione di misurazione di Stevens e che sia possibile assumere una misura in una scala ad intervalli.} 
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+
+
 
 ## Oggettività
 
@@ -117,18 +189,17 @@ Definiamo qui oggettività come una proprietà che si applica ad una valutazione
 Il concetto di oggettività verrà ripreso più avanti, specie con *inter-rater agreement*
 
 ## Definizione di test
+
+```{=latex}
 \setlength{\fboxrule}{1.5pt}
 
-“Un test è una 
-\only<2->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}procedura sistematica\hspace{2pt}}}
-\only<1>{procedura sistematica}
-per 
-\only<3->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}l’osservazione del comportamento\hspace{2pt}}}
-\only<1-2>{l’osservazione del comportamento}
-di una persona e per la sua 
-\only<4->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}descrizione con l’aiuto di una scala numerica\hspace{2pt}}}
-\only<1-3>{descrizione con l’aiuto di una scala numerica}
-o un sistema di categorie.”
+"Un test è una
+\alt<2->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}procedura sistematica\hspace{2pt}}}{procedura sistematica}
+per\\
+\alt<3->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}l’osservazione del comportamento\hspace{2pt}}}{l’osservazione del comportamento}
+di una persona e per la sua
+\alt<4->{\fcolorbox{red}{white}{\rule{0pt}{12pt}\hspace{2pt}descrizione con l’aiuto di una scala numerica\hspace{2pt}}}{descrizione con l’aiuto di una scala numerica}
+o un sistema di categorie.
 
 \begin{flushright}
   \emph{(Cronbach, 1990, p.32)}
@@ -144,9 +215,10 @@ o un sistema di categorie.”
 
 L’interesse non è mai nel comportamento in sé ma nel \textbf{costrutto} misurato da quel comportamento.
 
-*Costrutto*: un concetto psicologico non osservabile 
+\textbf{Costrutto}: un concetto psicologico non osservabile 
 }
 
+```
 ## Cosa sono i test
 
 I test cognitivi/neuropsicologi utilizzati in forense,  sono test di performance massima (o prestazione massima) 
@@ -364,7 +436,7 @@ Questo è facile pensarlo per test che includano item in cui è facile gradare l
 \begin{columns}
   \begin{column}{0.5\textwidth}
     \begin{figure}
-    \includegraphics[scale=0.5]{Figures/MOCA.png}
+    \includegraphics[scale=0.1]{Figures/MoCA-Test-Italian.png}
     \end{figure}
   \end{column}
   \begin{column}{0.5\textwidth}
@@ -534,7 +606,7 @@ Assumere che i risultati del test ci dicano qualcosa sulla vita quotidiana non �
 \end{figure}
 
 \begin{flushright}
-  (Da Mondini, Cappelletti, Arcara, 2022)
+  {\scriptsize (Da Mondini, Cappelletti, Arcara, 2022)}
 \end{flushright}
 
 \textbf{Costrutto}: Concetto psicologico non osservabile direttamente
