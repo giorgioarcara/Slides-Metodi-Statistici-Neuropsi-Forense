@@ -47,8 +47,8 @@ header-includes:
 \column{0.8\textwidth}
 \small
 \textbf{L'aspetto da ricordare è che nei test neuropsicologici, il più delle volte in maniera implicita, è assunta la definizione di misurazione di Stevens e che sia possibile assumere una misura in una scala ad intervalli.} 
-\column{0.2\textwidth}
 
+\column{0.2\textwidth}
 \begin{figure}
 \includegraphics[scale=0.05]{Figures/triangle.png}
 \end{figure}
