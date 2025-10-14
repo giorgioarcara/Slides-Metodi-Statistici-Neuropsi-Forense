@@ -19,7 +19,7 @@ header-includes:
 ::: {.content-visible when-format="beamer"}
 ```{=latex}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{3. La scelta dei test per la propria cassetta degli attrezzi}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{\small 3. La scelta dei test per la propria cassetta degli attrezzi}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -112,10 +112,9 @@ Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere
 \end{figure}
 
 \end{columns}
-```
 \pause
+\vfill
 
-```{=latex}
 \begin{columns}
 \column{1\textwidth}
 
@@ -130,7 +129,11 @@ Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere
 \column{0\textwidth}
 \end{columns}
 
-```
-\vspace{2em}
+\vfill
 
 In generale non dimenticate il razionale: I test ci forniscono informazioni e parte di queste informazioni derivano dalle caratteristiche dei test.
+```
+
+## Scelta dei test 
+
+![](Figures/Active_collection.png)
