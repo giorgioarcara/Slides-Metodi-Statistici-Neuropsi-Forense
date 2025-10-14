@@ -62,6 +62,7 @@ Nelle prossime slide userò spesso i termini deficit e danni. **Non sono sinonim
 **Danno (cognitivo)**: un peggioramento di un'abilità cognitiva rispetto ad una condizione precedentemente raggiunta, in seguito ad un evento (può essere puntuale nel tempo, come un ictus, o non localizzabile, es. degenerazione rispetto ad Alzheimer).
 \vspace{2em}
 
+\footnotesize
 NOTA: questa non è necessariamente una terminologia condivisa. L’aspetto importante è però distinguere concettualmente questi due tipi di possibilità
 
 ## Valutare i deficit cognitivi
@@ -122,8 +123,9 @@ Spesso i cut-off sono riportati in tabelle, indipendentemente dal metodo usato p
 \begin{center}
   \textbf{Esempio di cut-off riportati in tabelle}
 \end{center}
+\vspace{2em}
 
-![](Figures/cutoff_humor.png){width="50%" fig-align="center"}
+![](Figures/cutoff_humor.png){width="90%" fig-align="center"}
 \begin{flushright}
   Da APACS (Arcara \& Bambini, 2016)
 \end{flushright}
@@ -223,7 +225,7 @@ Quando utilizziamo compariamo un punteggio con i dati normativi e concludiamo ch
 Spesso in neuropsicologia si fa riferimento alla curva normale (o gaussiana) che è una distribuzione con certe proprietà statistiche note molto utili.
 
 \begin{center}
-  **Sono tre diversi concetti di «normalità»**
+  \textbf{Sono tre diversi concetti di «normalità»}
 \end{center}
 
 ## Valutare i deficit cognitivi
@@ -428,7 +430,7 @@ Se voglio **capire se GH ha sviluppato un danno** in seguito all'incidente, allo
 
 A livello di operazioni da svolgere, la stima un deficit vs la stima di un danno sono simili a livello statistico: entrambe implicano il confrontare la prestazione con i dati normativi (vedi slides precedente per scelta appropriata del confronto).
 
-Quello che cambia è l’\textbf{interpretazione} (vedi slides su interpretazione) che in un caso può essere quella di un deficit, in un caso quella di un danno.
+Quello che cambia è l’\textbf{interpretazione} (vedi slides su Interpretazione) che in un caso può essere quella di un deficit, in un caso quella di un danno.
 
 \column{0.2\textwidth}
 
@@ -474,7 +476,7 @@ Ad esempio è possibile dire se la persona ha una performance più bassa del 20%
 
 L’assenza di soglie ci porta però (da un punto di vista concettuale) ad un rischio del [[paradosso del mucchio]{.underline}](https://it.wikipedia.org/wiki/Paradosso_del_sorite). 
 
-Non è possibile definire chiaramente quando si passa da normalità a quando si passa alla presenza di un “deficit/danno”. Il paradosso del mucchio ci insegna che le categorie a partire da una variabile continua sono e saranno sempre arbitrarie.
+Non è possibile definire chiaramente quando si passa da normalità a quando si passa alla presenza di un “deficit/danno”. Il paradosso del mucchio ci insegna che **le categorie a partire da una variabile continua sono e saranno sempre arbitrarie**.
 
 ## Valutare i deficit cognitivi
 
@@ -629,9 +631,10 @@ $$
 \begin{center}
   \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
 \end{center}
-\vspace{2em}
+\vspace{1em}
 
-![](Figures/gaussiana.png){width="50%" fig-align="center"}
+![](Figures/gaussiana.png){width="80%" fig-align="center"}
+\small
 *NOTA*: riferirci alla curva normale e alla trasformazione in punti $Z$ ci aiuta ad identificare percentili, cioè valori che delimitano percentuali di dati.
 
 *I metodi parametrici ossono essere usati con sicurezza solo se la distribuzione è normale (gaussiana)*
@@ -643,7 +646,9 @@ $$
 \begin{columns}
 \column{0.5\textwidth}
 
+\begin{center}
 \textbf{distribuzione normale}
+\end{center}
 \vspace{1em}
 \begin{figure}
 \includegraphics[scale=0.25]{Figures/distr_norm.png}
@@ -652,12 +657,17 @@ $$
 
 \column{0.5\textwidth}
 
+\begin{center}
 \textbf{distribuzione non-normale}
+\end{center}
 \vspace{1em}
 \begin{figure}
 \includegraphics[scale=0.25]{Figures/distr_nonnorm.png}
 \end{figure}
+
+\begin{center}
 test con \textbf{effetto soffitto}
+\end{center}
 
 \end{columns}
 ```
@@ -808,6 +818,7 @@ Attenzione ai test che usano metodi basati su regressioni. Talvolta possono port
 \end{center}
 \vspace{1em}
 
+\small
 - I dati normativi servono per stimare la prestazione che ci aspetterebbe da un certo individuo tramite i dati di persone che sono simili all’individuo da valutare.
 
 - Il confronto con dati normativi è fatto per effettuare un’inferenza su un possibile deficit cognitvo (disturbo funzioanle, che sia legato a danno o sviluppo o pre- esistente) o danno (peggioramento) dello stato cognitivo del paziente. Spesso i metodi usati sono uguali, quello che cambia e l’interpretazione
