@@ -599,6 +599,12 @@ Si assume che ci sia una **validità ecologica**[^1] di uno specifico test (il f
 
 Assumere che i risultati del test ci dicano qualcosa sulla vita quotidiana non è sbagliato in sé, ma non dimentichiamo che (a meno che di validità ecologica comprovata da dati scientifici) questa è un’interpretazione.
 
+## Costrutti propri della neuropsicologia forense
+
+Quasi sempre i test che sono utilizzati in neuropsicologia forense sono costrutti che provengono dalla neuropsicologia cognitiva/clinica e sono usati per fare inferenze su costrutti forensi.
+
+Ad esempio, non esiste un test per misurare la **capacità di intendere e volere**, ma questa è inferita a partire risultati ad altri test che misurano aspetti del funzionamento cognitivo (es. memoria, attenzione, inibizione. etc.)
+
 ## Riassunto
 
 ```{=latex}
