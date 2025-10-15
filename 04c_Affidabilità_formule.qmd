@@ -35,6 +35,8 @@ header-includes:
 ```
 :::
 
+# 4c. Affidabilità (formule)
+
 ## Affidabilità
 
 \begin{center}
