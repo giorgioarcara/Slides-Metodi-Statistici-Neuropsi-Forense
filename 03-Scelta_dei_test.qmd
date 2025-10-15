@@ -40,7 +40,7 @@ Due momenti di scelta dei test:
 
 1) **Scelta dei test da inserire nella propria "cassetta degli attrezzi"**
 
-2) Scelta dei test da utilizzare con un determinato paziente
+2) Scelta dei test da utilizzare con uno specifico individuo per uno specifico scopo.
 
 ## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
 
