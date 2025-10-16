@@ -408,7 +408,7 @@ Un misto di aspetti teorici e praticità
 \pause
 
 - Sviluppare test con IRT è più costoso (e può andare più facilmente male)
-- spesso I costrutti neuropsiclologici per forense violano quasi per definizione l’unidimensionalità.
+- spesso i costrutti neuropsicologici violano quasi per definizione l’unidimensionalità.
 - talvolta ad una diversa procedura, comunque IRT e CTT possono portare a risultati molto simili ([Hula et al., 2006](https://doi.org/10.1044/1092-4388(2006/003)))
 
 ## Teoria dei test
@@ -481,7 +481,7 @@ I test neuropsicologici misurano costrutti di diverso tipo
 ## Costrutti
 
 \begin{center}
-  \textbf{fI costrutti misurati tramite i test neuropsicologici sono a diversi livelli}
+  \textbf{I costrutti misurati tramite i test neuropsicologici sono a diversi livelli}
   \vspace{2em}
 
   Abilità funzionali
@@ -541,7 +541,7 @@ NADL-F (Arcara et al., 2017) [[https://osf.io/d9jng/]{.underline}](https://osf.i
 
 *I test ecologici molto utili per risposte concrete sulla vita quotidiana ma possono essere lunghi o poco disponibili*
 
-## Costrutti
+## Costrutti a diversi livelli
 
 \begin{center}
   \textbf{I costrutti misurati tramite i test neuropsicologici sono a diversi livelli}
@@ -558,14 +558,14 @@ NADL-F (Arcara et al., 2017) [[https://osf.io/d9jng/]{.underline}](https://osf.i
   
 \end{center}
 
-## Costrutti
+## Costrutti a diversi livelli
 
 \begin{center}
   \textbf{I costrutti misurati tramite i test neuropsicologici sono a diversi livelli}
 \end{center}
 \vspace{2em}
 
-Il fatto che I costrutti siano a gerarchie diverse implica che il costrutto misurato da un test potrebbe essere incluso all’interno di un costrutto misurato da un altro test
+Il fatto che i costrutti siano a gerarchie diverse implica che il costrutto misurato da un test potrebbe essere incluso all’interno di un costrutto misurato da un altro test.
 
 Questo aspetto verrà ripreso nel punto in cui discuteremo dell’interpretazione dei test.
 
