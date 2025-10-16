@@ -533,7 +533,7 @@ In generale, una volta che abbiamo identificato cosa dobbiamo misurare, dovremmo
 
 ## Considerazioni conclusive 2/2
 
-Queste due qualità non ci dicono però necessariamente, l’**utilità clinica/forense** del test **per una specifica valutazione**.
+Queste due qualità non ci dicono però necessariamente, l’**utilità clinica/forense** del test **per una specifica valutazione*04a0.
 
 Un test potrebbe essere eccellente per misurare un certo costrutto, ma poi, in fin dei conti, non aiutarci nella diagnosi dei disturbi di uno specifico individuo, a fini clinici (es. per diagnosi o lo stabilire il piano riabilitativo), o rispondere alla nostra specifica domanda forense.
 
