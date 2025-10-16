@@ -42,15 +42,15 @@ Due momenti di scelta dei test:
 
 2) Scelta dei test da utilizzare con uno specifico individuo per uno specifico scopo.
 
-## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+## \small La scelta dei test da inserire nella propria «cassetta degli attrezzi»
 
 *Regole generali da seguire*
 
-Test che abbiano caratteristiche psicometriche soddisfacenti(validità, affidabilità, dati normativi adeguati, \underline{vedi slides successive})
+Test che abbiano caratteristiche psicometriche soddisfacenti (validità, affidabilità, dati normativi adeguati, \underline{vedi slides successive})
 
-Dipende molto da fattori pratici: il tipo di realtà clinica influenza quali sono i test da utilizzare potenzialmente.
+Dipende molto da fattori pratici: il tipo di realtà clinica o forense nella quali si utilizzano i test influenza quali sono i test da utilizzare potenzialmente.
 
-## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+## \small La scelta dei test da inserire nella propria «cassetta degli attrezzi»
 
 *Come selezionare i test?*
 
@@ -62,7 +62,7 @@ Dipende molto da fattori pratici: il tipo di realtà clinica influenza quali son
 
 **Corso: Valutazione delle funzioni cognitive in ambito forense**: Presso il vostro corso di laurea.
 
-## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+## \small La scelta dei test da inserire nella propria «cassetta degli attrezzi»
 
 *Come selezionare i test?*
 
@@ -70,19 +70,24 @@ Dipende molto da fattori pratici: il tipo di realtà clinica influenza quali son
 
 **Case editrici di test (Organizzazioni Speciali, Eriksson)**: sono test a pagamento che garantiscono un certo standard di qualità.
 
+
+## \small La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+
 \begin{center}
-  \textbf{METODI CHE PREFERISCO}
+  \textbf{METODI CHE SUGGERISCO}
 \end{center}
 
 **Docenti universitari, futuri colleghi ed esperti di un certo settore/patologia**: è il modo migliore (se trovate qualcuno disponibile a condividere le informazioni).
 
 **Articoli scientifici/consensus specifici per patologia**: Cercate (es. su scholar o pubmed, se ci sono linee guida o criteri e cercate se I test sono validati/standardizzati in Italiano).
 
-## La scelta dei test da inserire nella propria «cassetta degli attrezzi»
+**Attese da mondo forense**: è possibile che nel mondo forense ci si attenda determinati test. Per quanto il messaggio di usare i test migliori possibili permane, bisogna anche tenere conto che ci si potrebbe aspettare certi test (es. WAIS per Q.I.) e potrebber non essere strategico selezionarne alcuni che la/il giudice non capisce/a cui non è familiare.
+
+## \small La scelta dei test da inserire nella propria «cassetta degli attrezzi»
 
 **Articoli scientifici/consensus**
 
-Avere l’articolo scientifico spesso non basta. Serve anche avere il manuale di istruzioni e di somministrazione (e attribuzione dei punteggi) e i materiali del test, eventuali tabelle dei dati normativi
+Ricordate che avere l’articolo scientifico spesso non basta. Serve anche avere il manuale di istruzioni e di somministrazione (e attribuzione dei punteggi) e i materiali del test, eventuali tabelle dei dati normativi
 
 Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere modifiche “custom”, che  alterano il test)
 
@@ -95,6 +100,7 @@ Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere
 \begin{itemize}[<*>] 
   \item Evitare test troppo datati (se i dati normativi sono troppo vecchi potrebbero non essere utilizzabili) –     \emph{approfondiremo questo}.
   \item Evitare test “fatti in casa”: un test passato da un collega senza dati normativi (magari tradotti da un test in inglese) può essere accattivante (e talvolta utile) ma è limitato nelle informazioni che può fornire. - \emph{approfondiremo questo}.
+  \item Evitare test che sono semplici traduzioni da test stranieri, non "adattati" all'italiano tramite opportune prove di validità, affidabilità e dati normativi.
 \end{itemize}
 
 ## I criteri per cui scegliere i test per valutazioni in ambito forense
