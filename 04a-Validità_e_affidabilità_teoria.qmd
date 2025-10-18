@@ -529,18 +529,27 @@ Che effetti ha su validità ed affidabilità?
 \end{figure}
 ```
 
-## Considerazioni conclusive 1/2
+## Considerazioni conclusive 1/3
 
 Affidabilità e validità sono due qualità importanti che ci permettono di valutare un test.
 
 In generale, una volta che abbiamo identificato cosa dobbiamo misurare, dovremmo scegliere test con elevata affidabilità e validità per le interpretazioni che ci servono
 
 
-## Considerazioni conclusive 2/2
+## Considerazioni conclusive 2/3
 
 Queste due qualità non ci dicono però necessariamente, l’**utilità clinica/forense** del test **per una specifica valutazione*04a0.
 
 Un test potrebbe essere eccellente per misurare un certo costrutto, ma poi, in fin dei conti, non aiutarci nella diagnosi dei disturbi di uno specifico individuo, a fini clinici (es. per diagnosi o lo stabilire il piano riabilitativo), o rispondere alla nostra specifica domanda forense.
 
 Ad esempio, se la domanda forense è quantificare un danno di memoria, un test eccellente per il linguaggio potrebbe non essere utile.
+
+## Considerazioni conclusive 3/3
+
+Validità e affidabilità vanno sempre considerate come proprietà di un test _in condizioni ideali_.
+Anche se un test ha ottimi valori, potrebbe dare comunque risultati completamente inesatti se usato in maniera inappropriata o se ci sono circostanze esterne negative (es. chi è esaminato non è collaborante).
+
+Una delle critiche della definizione fornita di Validità è infatti non stressare il fatto che è la misurazione ad essere valida o meno (più che il test).
+
+In ambito forense l'identificazione di "simulatori" (capitolo separato di questo corso) si focalizza proprio sull'identificare la validità _di specifiche valutazioni_.
 

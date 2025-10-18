@@ -227,6 +227,7 @@ item è correlato ad un determinato fattore.
 
 ## Validità di costrutto
 
+
 \begin{center}
   \textbf{Analisi fattoriale}
 \end{center}
@@ -239,15 +240,49 @@ In questo esempio gli item caricano su 2 fattori
 \begin{columns}
   \column{0.3\textwidth}
     \begin{figure}
-      \includegraphics[scale=0.25]{Figures/fattoriale3.png}
+      \includegraphics[scale=0.4]{Figures/fattoriale3.png}
     \end{figure}
 
   \column{0.7\textwidth}
           
-      \small
-      Un primo fattore cattura una correlazione positiva tra gli item 2,3,4,5, che tendono avere punteggi tutti correlati tra loro.
-      
-Un secondo fattore cattura una correlazione negativa di item 1 e 4 rispetto ad item 9. In sostanza quando sono alti i punteggi di 1 e 4 son obassi quelli di 5, e viceversa.
+      \scriptsize
+      Un primo fattore cattura una correlazione positiva tra gli item 1,2,3 che tendono avere punteggi correlati tra loro.\\
+\vspace{1em}      
+Un secondo fattore cattura una correlazione positiva tra gli item 4,5, che tendono ad avere punteggi correlati tra loro. \\
+\vspace{1em}      
+Questo è uno scenario ideale, in cui items "caricano" chiaramente in maniera distinta in specifici fattori.
+
+
+\end{columns}
+```
+
+
+
+## Validità di costrutto
+
+\begin{center}
+  \textbf{Analisi fattoriale}
+\end{center}
+\vspace{1em}
+
+In questo esempio gli item caricano su 2 fattori
+\vspace{1em}
+
+```{=latex}
+\begin{columns}
+  \column{0.3\textwidth}
+    \begin{figure}
+      \includegraphics[scale=0.25]{Figures/fattoriale4.png}
+    \end{figure}
+
+  \column{0.7\textwidth}
+          
+      \scriptsize
+      Un primo fattore cattura una correlazione positiva tra gli item 2,3,4,5, che tendono avere punteggi tutti correlati tra loro.\\
+\vspace{1em}
+Un secondo fattore cattura una correlazione negativa di item 1 e 4 rispetto ad item 9. In sostanza quando sono alti i punteggi di 1 e 4 son obassi quelli di 5, e viceversa.\\
+\vspace{1em}
+Questo è uno scenario più complesso (e comune), il fatto che un item carichi su pià fattori ("cross loadings") può essere indice che l'item non è adeguato o che il modello teorico va rivisto.
 
 \end{columns}
 ```
@@ -304,7 +339,7 @@ Altre metriche sono il **RMSEA** (root Mean squared error of Approximation) che 
 
   \column{0.6\textwidth}
     \begin{figure}
-      \includegraphics[scale=0.4]{Figures/fattoriale4.png}
+      \includegraphics[scale=0.4]{Figures/fattoriale5.png}
     \end{figure}
     
     \small

@@ -605,6 +605,13 @@ Quasi sempre i test che sono utilizzati in neuropsicologia forense sono costrutt
 
 Ad esempio, non esiste un test per misurare la **capacità di intendere e volere**, ma questa è inferita a partire risultati ad altri test che misurano aspetti del funzionamento cognitivo (es. memoria, attenzione, inibizione. etc.)
 
+## Alcuni test NON misurano costrutti
+
+Alcuni test neuropsicologici non misurano (strettamente parlando) costrutti psicologici, ma quantificano altre informazioni rilevanti, ad esempio la probabilità di avere una certa malattia, o la probabilità di recuperare, etc.
+
+In questi casi non si può parlare di "costrutto" così come alcuni concetti (es. memoria, attenzione, etc.), ma valgono gran parte delle considerazioni fatte per i costrutti. Ad esempio, questi test se basati su aspetti cognitivi possono risentire di effetti motivazione, ansia, etc.
+
+
 ## Riassunto
 
 ```{=latex}
