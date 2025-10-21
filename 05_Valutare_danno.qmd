@@ -39,18 +39,20 @@ header-includes:
 
 ## Esempio
 
-\small
-GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione.
-Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. 
-L’unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto.
-Nell’anamnesi di GH c’è però un evento rilevante. Quando era più giovane (a 30 anni), sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie.
-La neuropsicologia forense entra in gioco per due motivi. I consulenti per l’assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all’incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente.
+:::{.smaller}
+\scriptsize
+_GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione.Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L'unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto._
+
+_Nell'anamnesi di GH c'è però un evento rilevante. Quando era più giovane (a 30 anni) sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie._
+
+_La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all'incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente._
+:::
 
 ## Valutare i deficit cognitivi
 
 *Quale sarebbe il primo scopo di una valutazione neuropsicologica forense di GH?*
 \vspace{2em}
-
+\pause
 La maggior parte delle volte lo scopo di una valutazione neuropsicologica ha come obiettivo valutare la presenza di un deficit/danno cognitivo.
 
 ## Valutare i deficit cognitivi
@@ -64,6 +66,12 @@ Nelle prossime slide userò spesso i termini deficit e danni. **Non sono sinonim
 
 \footnotesize
 NOTA: questa non è necessariamente una terminologia condivisa. L’aspetto importante è però distinguere concettualmente questi due tipi di possibilità
+
+## Danno in contesto forense
+
+In ambito forense (Italiano) il danno psichico è tradizionalmente considerato come una sottospecie del danno biologico, ossia della lesione dell’integrità psicofisica, medicalmente accertabile.
+
+Nel danno in ambito forense, è fondamentale identificare non solo che sia avvenuto un peggioramento, ma che il danno sia anche _causato_ dal fatto esaminato.
 
 ## Valutare i deficit cognitivi
 
