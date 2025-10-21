@@ -420,7 +420,7 @@ Correggere per la media ha però un grosso limite intrinseco: con che media corr
   \textbf{Stimare il punteggio vero: alcune note}
 \end{center}
 
-Questo tipo di limiti rende complessa l’applicazione di formule per stimare il punteggio vero. Vedremo in futuro comunque in utilizzi clinici e pratici (es. cut-off, valori di cambiamento), **\underline{quasi sempre non sono usati i punteggi veri ma i punteggi osservati}**.
+Questo tipo di limiti rende complessa l’applicazione di formule per stimare il punteggio vero. Vedremo in futuro comunque in utilizzi clinici e pratici (es. cut-off, valori di cambiamento), **quasi sempre non sono usati i punteggi veri ma i punteggi osservati**.
 
 ## Affidabilità e varianza
 

@@ -561,7 +561,7 @@ Se l’analisi fattoriale mostra che gli item si comportano come se catturassero
 
 La **validità di criterio** valuta quanto un test è associato o predice un altra variabile di outcome (osservabile), detta gold-standard.
 
-Le analisi che si possono utilizzare (e come valutare i risultati) dipendono da se il criterio è una variabile continua (es. Il punteggio ad un altro test) oppure una variabile categoriale (es. L’appartenza ad un gruppo, es MCI vs Controlli).
+Le analisi che si possono utilizzare e come valutare i risultati cambiano a seconda che il criterio sia una variabile continua (es. Il punteggio ad un altro test) oppure una variabile categoriale (es. l’appartenza ad un gruppo, es MCI vs Controlli).
 
 ## Validità di criterio
 
