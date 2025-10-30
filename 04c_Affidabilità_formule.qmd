@@ -47,6 +47,7 @@ header-includes:
 
 - Affidabilità test-retest
 - Affidabilità inter-rater
+- Affidabilità split-half
 - Consistenza interna
 
 \vspace{2em}
@@ -59,7 +60,7 @@ Esistono diverse classificazioni di affidabilità. Questa è principalmente basa
 
 **Affidabilità test-retest**: è un indice che rappresenta la consistenza nel tempo di due misurazioni assumendo che non è avvenuto nessun cambiamento sistematico.
 
-La formula standard e più diffusa quella della correlazione di Pearson (vedi anche l'Appendice di queste slides):
+Una formula molto diffusa per calcolare affidabilità test-retest, soprattuto nei test sviluppati in Italiano, è quella della correlazione di _Pearson_ (vedi anche l'Appendice di queste slides):
 
 $$
 r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}
@@ -67,7 +68,7 @@ r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}
 $$
 
 $$
-\small
+\scriptsize
 \begin{aligned}
 r & = \text{correlation coefficient} \\
 x_i & = \text{values of the x-variable in a sample} \\
@@ -77,9 +78,13 @@ y_i & = \text{values of the y-variable in a sample} \\
 \end{aligned}
 $$
 
-## Affidabilità test-retest
+## Affidabilità test-retest ed effetti sistematici
+\small 
+Il più grande problema dell’affidabilità test-retest quando misurata tramite coefficiente di correlazione è che essa non cattura eventuali _effetti sistematici_ di differenza tra i punteggi. Il valore infatti ci dice quanto due valori sono correlati o consistenti, ma non se sono più o meno gli stessi.
 
-Il più grande problema dell’affidabilità test retest è che essa non cattura eventuali effetti sistematici di differenza tra i punteggi. Il valore infatti ci dice quanto due valori sono correlati o consistenti, ma non se sono più o meno gli stessi.
+Definiamo _effetto sistematico_ una variazione non casuale nei punteggi tra test e retest presente in ogni individuo (es. effetto pratica)
+
+## Affidabilità test-retest (correlazione)
 
 Immaginiamo un caso in cui ad ogni osservazione si aggiunga una quantità fissa $k$.
 Conseguirà che anche la media sarà aumentata di $k$:
@@ -88,15 +93,16 @@ $$
 r = \frac{\sum (x_i - \bar{x})(y_i + k - (\bar{y} + k))}
 {\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i + k - (\bar{y} + k))^2}}
 $$
-Segue da semplice algebra che le “k” si cancellano e quindi si ritorna alla formula iniziale: un aumento sistematico non cambia il valore della correlazione (vedi anche slides su Correlazione nell’Appendice concetti base di statistica)
+
+Segue da semplice algebra che le $k$ si cancellano e quindi si ritorna alla formula iniziale: un aumento sistematico non cambia il valore della correlazione (vedi anche slides su Correlazione nell’Appendice concetti base di statistica)
 
 ## Affidabilità test-retest
 
 Nei test cognitivi l’effetto sistematico più comune è riconducibile all’effetto pratica, l’etichetta utilizzata per indigare quei cambiamenti (spesso sistematici) che si osservano nella somministrazione del test e che sono associati ad una migliore performance.
 
-Attenzione dunque all’utilizzo e all’interpretazione dei valori di test-retest relaibility che sono spesso (nei compiti cogntivi) solo parziali per indicare la stabilità di una performance.
+Attenzione dunque all’utilizzo e all’interpretazione dei valori di test-retest relibility se misurata tramite correlazione. 
 
-Sarebbero infatti da accompagnare da analisi (es. t-tests) che permattano di vedere se c’è una differenza sistematica tra prima e seconda valutazione.
+Se usata correlazione, sarebbe infatti necessario accompagnare da analisi (es. t-tests) che permattano di vedere se c’è una differenza sistematica tra prima e seconda valutazione.
 
 ## Affidabilità test-retest
 
@@ -142,12 +148,16 @@ Per ogni test verrà fatta una sola valutazione e non c’è interesse nella riv
 
 ## Affidabilità test-retest
 
-Perché viene usato il coefficiente di correlazione di Pearson ($r$) se non è adeguato?
+Perché viene spesso usato il coefficiente di correlazione di Pearson ($r$) se non è adeguato?
 \vspace{2em}
 
 Probabilmente per semplice convenzione e per semplicità (il coefficiente r di pearson può esprimere facilmente la varianza condivisa tra le variabili, semplicemente calcolando $r^2$).
 
 Non è completamente sbagliato e può fornire un quadro abbastanza completo se accompagnato da t-tests (per indagare differenze sistematiche).
+
+## Affidabilità test-retest
+
+Esistono però diversi modi di misurare affidabilità test-retest e sempre più di recente, sono però utilizzate formule più appropriate (es. quelle di Intraclass correlation che saranno trattate per affidabilità inter-rater)
 
 # Affidabilità inter-rater
 
@@ -214,19 +224,23 @@ $$
   \textbf{Alcune considerazioni su ICC}
 \end{center}
 
-**Perché non è usata ICC anche per test-retest visto che tiene conto anche di differenze sistematiche?**
+**Perché non è sempre usata ICC anche per test-retest visto che tiene conto anche di differenze sistematiche?**
 
-Probabilmente più per prassi e convenzione. In letteratura è possibile trovare alcuni studi che la utilizzano anche per test-retest. In caso di effetto pratica sarebbe infatti più adeguata.
+Probabilmente per prassi e convenzione (che si osserva soprattutto nei test in Italino). In letteratura è però possibile trovare alcuni studi che la utilizzano anche per test-retest e nel corso degli anni sempre più seguono la più appropriata formula di ICC. In caso di effetto pratica sarebbe infatti più adeguata.
+
+# Affidabilità split-half
+
+## Affidabilità split-half
+
+Un approccio tradizionale per calcolare la consistenza di item di un test, è quella di dividere in due il test e indagare misure di somiglianza (es. correlazione) tra i punteggi delle due metà nei vari partecipanti. **Questo metodo è detto split-half reliability (o affidabilità split-half)**.
+
+Il grosso limite di questo approccio è che il risultato dipende da come dividiamo a metà il test (potremmo sovrastimare o sottostimare).
 
 # Consistenza interna
 
 ## Consistenza interna
 
 **Consistenza interna**: rappresenta la consistenza tra gli item di un test.
-
-Un approccio tradizionale per calcolare la consistenza di item di un test, è quella di dividere in due il test e indagare misure di somiglianza (es. correlazione) tra i punteggi delle due metà nei vari partecipanti. **Questo metodo è detto split-half reliability (o affidabilità split-half)**.
-
-Il grosso limite di questo approccio è che il risultato dipende da come dividiamo a metà il test (potremmo sovrastimare o sottostimare).
 
 Da un punto di vista concettuale le misure di consistenza interna vanno ad indagare invece quale sarebbe la correlazione usando tutte le possibili divisioni split-half.
 
@@ -316,7 +330,7 @@ con altri item e per affidabilità globale.
 \small
 Ogni sorgente di affidabilità può essere usata per stimare l’errore di misura del test.
 
-Il coefficiente di affidabilità (indipendente dalla formula) può infatti essere intrepretato come la percentuale di variabili riconducibile al punteggio vero, trasformando semplicemente il coefficiente in percentuale. Questo segue la definizione che viene fatta a priori di cosa è l’affidabilità.
+Il coefficiente di affidabilità (indipendente dalla formula) può infatti essere intrepretato come la percentuale di variabilità riconducibile al punteggio vero, trasformando semplicemente il coefficiente in percentuale. Questo segue la definizione che viene fatta a priori di cosa è l’affidabilità.
 
 Ad esempio:
 
@@ -351,7 +365,7 @@ Es. supponiamo di avere un test che ha le seguenti caratteristiche:
 
 - Affidabilità test-retest = 0.85 ($r$ di pearson)
 - Affidabilità inter-rater = 0.70 ($ICC(2,1)$)
-- Consistenza interna = 0.95 (alpha di Cronbach)
+- Consistenza interna = 0.97 (alpha di Cronbach)
 
 ## Affidabilità ed errore
 
@@ -363,12 +377,12 @@ Errore test-retest: $(1-0.85) * 100 = 15%$
 
 Errore inter-rater: $(1-0.7) * 100 = 30%$
 
-Errore consistenza interna: $(1-0.95) = 5%$
+Errore consistenza interna: $(1-0.97)*100 = 3%$
 
-Errore totale: $15 + 30 + 5 = 50%$
+Errore totale: $15 + 30 + 3 = 48%$
 \vspace{2em}
 
-A livello di test il 48% della varianza è riconducibile ad errore, e il 52% (100 – 48) della varianza è riconducibile al punteggio vero (è anche l’affidabilità complessiva del test).
+A livello di test il 48% della varianza è riconducibile ad errore, e il 52% (100 – 48) della varianza è riconducibile al punteggio vero (è anche l’affidabilità complessiva del test). (Vedi Urbina, 2004, per esempio simile)
 
 
 ## Affidabilità ed errore
@@ -404,6 +418,12 @@ anche Appendice)
 
 ## Affidabilità ed errore
 
+Nota che nell'approccio prima descritto (di stimare l'affidabilità globale a partire dalle diverse affidabilità), più informazioni abbiamo più bassa sarà la percentuale riconducibile alla varianza del punteggio vero.
+
+Un altro modo per pensare il problema è che stimare la varianza riconducibile a punteggio vero a partire da un solo indice sarà inevitabilmente una sovrastima della stessa.
+
+## Affidabilità ed errore
+
 \begin{center}
   \textbf{Stimare il punteggio vero: alcune note}
 \end{center}
@@ -428,7 +448,7 @@ Questo tipo di limiti rende complessa l’applicazione di formule per stimare il
   \textbf{Come considerare i coefficienti di affidabilità}
 \end{center}
 
-Ogni coefficiente di affidabilità, in generale stimare la variabilità riconducibile al punteggio vero, rispetto alla variabilità totale (cioè quella che si rileva nei osservati), utilizzando diverse formule (es. $r$ di pearson, $ICC(2,1)$, etc.).
+Ogni coefficiente di affidabilità, in generale stimare la varianza riconducibile al punteggio vero, rispetto alla variabilità totale (cioè quella che si rileva nei osservati), utilizzando diverse formule (es. $r$ di pearson, $ICC(2,1)$, etc.).
 
 L’idea generale può essere espressa da questa formula.
 

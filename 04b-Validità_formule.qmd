@@ -146,7 +146,7 @@ $$
 
 ## Validità di contenuto
 
-Note al Metodo di Lawshe (1975)
+Note sul metodo di Lawshe (1975)
 
 È interessante notare come il metodo risponde solo in parte alla domanda di validità di contenuto.
 
@@ -171,11 +171,11 @@ La validità di costrutto è valutata in due maniere:
 ## Validità di costrutto
 
 \begin{center}
-  \textbf{Alpha di Cronbach}
+  \textbf{Consistenza interna}
 \end{center}
 \vspace{2em}
 
-Uno dei classici modi per vedere su tutti gli item di un test si comportano in maniera coerente è tramite l’utilizzo di metriche come l’alpha di Cronbach. 
+Uno dei classici modi per vedere su tutti gli item di un test si comportano in maniera coerente è valutando la consistenza interna, tramite l’utilizzo di metriche come l’alpha di Cronbach. 
 
 Questa però è spesso associata più all’affidabilità (vedi quindi slides su formule affidabilità).
 
@@ -555,6 +555,15 @@ Un altro ipotetico esempio su come combinare analisi per validità di costrutto:
 
 Se l’analisi fattoriale mostra che gli item si comportano come se catturassero due variabili latenti, una associata ad attenzione ed una a memoria, sarebbe utile e a supporto di validità di costrutto se i punteggi ottenuti sommando queste due parti correlassero rispettivamente con un altro test di attenzione ed un altro test di memoria.
 
+## Considerazione in interim
+
+Un potenziale modo di risolvere questo problema della flessibilità nelle analisi di validità di costrutto potrebbe essere quello di *pre-registrare* le analisi e i risultati attesi per considerare una buona validità di costrutto. Vedi questo [link](https://en.wikipedia.org/wiki/Preregistration_(science)) per approfondimenti.
+
+Nota che pre-registrare risolve _in generale_ problemi di flessibilità o non chiarezza delle analisi.
+
+
+
+
 # Validità di criterio
 
 ## Validità di criterio
@@ -562,6 +571,12 @@ Se l’analisi fattoriale mostra che gli item si comportano come se catturassero
 La **validità di criterio** valuta quanto un test è associato o predice un altra variabile di outcome (osservabile), detta gold-standard.
 
 Le analisi che si possono utilizzare e come valutare i risultati cambiano a seconda che il criterio sia una variabile continua (es. Il punteggio ad un altro test) oppure una variabile categoriale (es. l’appartenza ad un gruppo, es MCI vs Controlli).
+
+
+## Validità di criterio
+
+La validità di criterio può essere divisa in concorrente o predittiva (vedi slides Validità e affidabilità (teoria), ma questo non cambia il modo in cui vengono fatte generalmente le analisi, che dipendono solo dal fatto che il criterio sia variabile continua o categoriale.
+
 
 ## Validità di criterio
 
@@ -599,6 +614,17 @@ In questa fase diciamo solo che esistono 4 tipi di possibili risultati quando si
 
 Tutte le metriche legate a questo fanno parte dei concetti di Sensibilità/Specificità che saranno trattate in apposite lezioni (dopo i cut-off)
 
+## Validità di criterio o di costrutto?
+
+Nota che se l'interesse è nel misurare un costrutto psicologico (es. memoria, attenzione) sarebbe più pertinente parlare di **validità di costrutto** e usare per valutarla i metodi discussi. La misurazione è su un concetto inosservabile.
+
+In ambito neuropsicologico/psicologico raramente il punteggio ad un altro test è da considerare un criterio ma ci sono eccezioni comuni:
+
+- si vuole mostrare che un test breve è equivalente ad uno lungo/dispendioso (quello lungo è il "criterio")
+
+- si vuole mostrare che un test online è equivalente ad uno in presenza (valutazoini in presenza sono di norme considerate gold standard)
+
+
 # Validità di facciata
 
 ## Validità di facciata
@@ -621,6 +647,13 @@ Talvolta la sola informazione che si ha a disposizione di un test è proprio la 
 \end{columns}
 ```
 
+## Validità di facciata in ambito forense
+
+La validità di facciata può essere importante per assicurarsi collaborazione del paziente e, in contesto forense, anche che non psicologi (es. il giudice) accettino le conclusioni tratte.
+
+I test per identificare potenziali simulatori ovviamente non devono avere validità di facciata (anzi, il fatto che abbiano questo scopo non dovrebbe essere evidente).
+
+
 # Validità ecologica
 
 ## Validità ecologica
@@ -630,3 +663,7 @@ La **validità ecologica** valuta quanto un test è in grado di prevedere compor
 Spesso è studiata tramite correlazioni con altre scale riferite a comportamenti della vita quotidiana (diversamente da molti test l’interesse non è in costrutti ma in *altri comportamenti*).
 
 Può essere anche essere valutata tramite altre analisi, purché mostrino che i punteggi al test siano associati al fenomeno di vita quotidiana di interesse.
+
+## Validità ecologica
+
+Ad esempio un test potrebbe indagare la correlazione tra il punteggio ad un test di funzioni esecutive e il numero di comportamenti antisociali che un paziente ha mostrato durante un ricovero, per supportare che le informazioni del test sono associati a comportamenti legati alle funzioni esecutive nella vita quotidiana.
