@@ -1,0 +1,1055 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+#format: revealjs
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
+incremental: false
+header-includes:
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+  
+---
+
+<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{5. Valutare i deficit e danni cognitivi - Formule}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+```
+:::
+
+# 5. Valutare i deficit e danni cognitivi - Formule
+
+## Valutare i deficit e danni cognitivi
+
+1. Il concetto di soglie per percentuali o probabilità
+2. Punti z e probabilità
+3. Percentili
+4. Campione vs Popolazione
+5. test per il caso singolo (t di Crawford)
+6. Metodi di regressione per correzione punteggi
+7. Metodo dei Punteggi equivalenti
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Il cut-off clinico e i valori soglia}
+\end{center}
+\vspace{1em}
+
+Il concetto di cut-off clinico (o in generale di valori soglia o valori che delimitano certe percentuali) sono fondamentali nella statistica applicata alla neuropsicologia clinica e forense.
+
+L’idea di fondo, nel loro utilizzo, è trovare un valore che  aiuti a classificare la prestazione del paziente o, più in generale, a determinare quanto è probabile/improbabile.
+
+L’improbabilità è strettamente legata al concetto di deficit o presumibile danno cognitivo, che di fatto viene operazionalizzato come una prestazione insolita, mprobabile, assumendo che si sia normali.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Il cut-off clinico e i valori soglia}
+\end{center}
+\vspace{2em}
+
+L’utilizzo delle probabilità che viene fatto in ambito clinico è però insidiosa perché è facile sbagliare nel loro utilizzo e nella loro interpretazione.
+
+Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una terminologia vaga.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Il cut-off clinico}
+\end{center}
+\vspace{1em}
+
+![](Figures/Healthy_vs_Pathological.png){width="50%" fig-align="center"}
+
+*Non sapendo dove sono popolazioni patologiche (deficit o danno), mettiamo una soglia arbitrariamente che delimita 5% più basso (area grigia). Assumendo che deficit e patologia siano da qualche parte a sinistra.*
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{I valori utili per la clinica}
+\end{center}
+\vspace{1em}
+
+Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale che c’è una probabilità nota k che un punteggio osservato o abbia un valore uguale o inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
+
+$$
+x:P(o<x) = k
+$$
+
+es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $p(O < x ) = 0.05$ (c’è il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un danno).
+
+La soglia del 5% è completamente arbitraria.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{I percentili}
+\end{center}
+\vspace{2em}
+
+Questa definizione è sovrapponibile a quella che si usa in statistica di “percentili”, in riferimento a una distribuzione.
+
+L’utilizzo della curva normale o di percentili non parametrici rappresentano diversi metodi per identificare queste percentuali.
+
+L’uso di punti z non è altro che un metodo che semplifica l’identificazione di questi percentili.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{I percentili}
+\end{center}
+\vspace{1em}
+
+Ricordiamo che l’utilizzo della curva normale (e **della trasformazione in punti z**) ha senso in quanto ci aiuta ad identificare percentili e cioè valori che delimitano porzioni note della distribuzione.
+
+![](Figures/gaussiana.png){width="80%" fig-align="center"}
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Trasformazione in punti z}
+\end{center}
+
+\small
+Quando si trasformano dei punteggi in punti z ci sono alcuni punti che risultano di importanza.
+
+Se i punteggi sono **standardizzati** (punti z con Media = 0 e SD = 1):
+
+- 1.64 delimita il 5% dei punteggi più bassi
+- 1.96 delimita il 2.5% dei punteggi più bassi
+
+Se i punteggi **non** sono standardizzati.
+
+- Media – 1.64 * SD delimita il 5% dei punteggi più bassi
+- Media - 1.96 * SD delimita il 2.5% dei punteggi più bassi
+
+A volte si trova “2 deviazioni standard”. Non è altro che un altro numero (sempre arbitrario) per delimitare preformance bassa.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{I percentili}
+\end{center}
+\vspace{2em}
+
+E nel caso di distribuzione non normali?
+
+Si possono utilizzare **percentili non parametrici**.
+
+(per esempi vedere codice R associato per potenziale impatto di non normalità, specie con un marcato effetto soffitto.)
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{La distribuzione di riferimento}
+\end{center}
+\vspace{1em}
+
+Questa definizione di percentili può essere però approfondita concentrandoci su un punto critico su cui in precedenza abbiamo glissato e cioè che i valori sono **relativi alla distribuzione di riferimento**.
+
+Possiamo quindi specificare meglio la formula così
+$$
+x : P(o< x∣N )=k
+$$
+$x$ è il valore per cui ci si attende un probabilità $k$ che un punteggio O sia inferiore a $x$, assumendo che la persona provenga da una popolazione di persone “sane” (cioè senza deficit cognitivo).
+
+Infatti se la persona venisse da altre popolazioni (es. pazienti con Alzheimer) i valori attesi potrebbero essere diversi.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Analogia con ipotesi nulla in test statistico}
+\end{center}
+
+\small
+Da notare che questa formulazione è del tutto analoga a quella del p-value in realazione dell’ipotesi nulla e all’identificazione dei valori critici della statistica  (es. il t-value critico oltre il quale considero il risultato significativo).
+$$
+x : P (t_{obs}<t_{crit}∣H_0)=q
+$$
+\begin{center}
+\begin{footnotesize}
+Questa formula è semplificata, e non sono considerati i gradi di libertà
+\end{footnotesize}
+\end{center}
+
+$x$ è il valore per cui ci si attende un probabilità $q$ che la statistica osservata ($t_{obs}$ in questo caso) sia inferiore al $t$ critico, assumendo che $H_0$ sia vera.
+
+$H_0$ dipende dal tipo di test, ma nel caso di un confronto fra campioni indica che i due campioni che sono stati confrontati con il t-test provengono dalla stessa popolazione.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Esperimento mentale}
+\end{center}
+\vspace{1em}
+
+Supponiamo di avere dei dati normativi e di sapere che la soglia che delimita il punto $z$ -1.64 (5%) è 4, oppure che il percentile 5% è 4.
+
+Supponiamo di osservare una prestazione di 3.
+
+La consideremmo come deficitaria?
+
+Se vi dicessi che ho calcolato questa soglia da un campione con 20 soggetti o con 200 soggetti, ci fideremmo alla stessa maniera della soglia?
+
+**Considerare una soglia per inferenze di tipo clinico non può prescindere dal fare riflessioni sulla rappresentatività del mio campione rispetto alla popolazione e su quanto i risultati sono generalizzabili.**
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Campione o popolazione}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o popolazione, nel contesto della valutazione neuropsicologica l’interesse è sempre (impliciamente) alla popolazione
+
+\textbf{Non mi interessa classificare il mio paziente rispetto al mio specifico campione (es. ai miei 10, 100, 1000 soggetti sani), ma come il mio paziente si classificherebbe in generale rispetto alla popolazione di sani.}
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Campione o popolazione}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Un altro modo di vedere il problema è che la mia classificazione non dovrebbe dipendere dallo specifico campione normativo, ma dovrebbe valere per tutti i possibili campioni normativi.
+\vspace{1em}
+
+Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed è quindi poco rappresentativo della popopolazione).
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Percentile o probabilità?}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Notare che il percentile non mi dice nulla di probabilità, ma mi dice il valore che delimita una certa percentuale di osservazioni del campione.
+\vspace{1em}
+
+Avere una ercentuale non significa necessariamente che sto controllando la probabilità di errore, usare percentili o z-scores si approssima a probabilità (in termini di popolazione) solo quando I campioni sono grandi e sono rispettati assunti (Es. Normalità distribuzione della popolazione).
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Campione o popolazione}
+\end{center}
+\vspace{1em}
+
+![](Figures/normativi_percentili.png){width="50%" fig-align="center"}
+
+La figura mostra tre ipotetici campioni (n=25) estratti dalla stessa popolazione.
+
+Il numero sopra indica il cut-off vero (5%) e quello ottenuto nei campioni.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Campione o popolazione}
+\end{center}
+\vspace{1em}
+
+Usare una soglia calcolata sul 5% del campione (es. tramite punti z) ha dunque dei limiti: non mi garantisce che delimiti nella popolazione la soglia del 5.
+
+Ma possiamo stimare un valore della popolazione a partire da ciò che abbiamo? (e cioè del campione)
+
+Sì, e questa stima (associata ad errori) è alla base dei concetti di **statistica inferenziale**. La statistica inferenziale è (proprio per definizione) quella branca della statistica che ci permette di fare inferenze sulla popolazione a partire dai dati del campione, associando a certe percentuali di errori.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Confronti con valori soglia e statistica inferenziale}
+\end{center}
+\vspace{1em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Una statistica inferenziale è caratterizzata dal poter fare dei precisi enunciati sulla probabilità di errore riferiti alla popolazione da cui il campione da cui è estratta e non al campione stesso.
+\vspace{1em}
+
+In senso generale, non utilizzare un test statistico per fare un inferenza, può essere visto come una strategia qualitativa e meno robusta perchè non è nota la probabilità di commettere errori e la generalizzabilità dei risultati al di là dal campione usato per il confronto.
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Confronti con valori soglia e statistica inferenziale}
+\end{center}
+\vspace{1em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Più concretamente, Se calcolo il cut-off usando la soglia -1.64 del punteggio standardizzato:
+\vspace{1em}
+
+1) non so quanto la mia classificazione si generalizzerebbe ad altri campioni.
+
+2) non so quale è la probabilità di errore della mia classificazione (assumendo che la persona sia sana), immaginando infinite ripetizioni.
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Confronti con valori soglia e statistica inferenziale}
+\end{center}
+\vspace{1em}
+
+Nota statistica:
+
+Usare il confronto con punti z come test statistico è noto come **test-z** e può essere un test statistico, ma assume:
+
+- di **stare confrontando una media campionaria con una popolazione di riferimento**
+- di conoscere la **varianza della popolazione** (non del campione).
+
+Con varianza non nota si dovrebbe usare il t-test (con la distribuzione t che si approssima a normale per campioni grandi).
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Confronti con valori soglia e statistica inferenziale}
+\end{center}
+\vspace{1em}
+
+Usare il confronto con punti z come test statistico implica dunque due errori:
+
+1) sto trattando il mio *singolo individuo come una media campionaria*
+2) sto trattando i dati normativi (che sono un campione) come se fossero una popolazione.
+
+Al di là di correttezza formale e teorica, questo implica possibili differenze nella nostra possibilità di errore di classificare, che in assenza di statistica appropriata, non è nota.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{Nota confortante}
+\end{center}
+\vspace{2em}
+
+In realtà è da riconoscere che con campioni sufficientemente ampi (>100) e se la distribuzione è realmente normale e con deviazione standard non troppo elevate, gli errori non sono drammatici.
+
+(Questa è una considerazione da prendere *cum granu salis*, a partire da simulazioni dello script 10 associato a queste slides)
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+  \textbf{t-test di Crawford e Howell}
+\end{center}
+\vspace{1em}
+
+Il t-test di Crawford & Howell (1998)[^1] è una modificazione del t-test che permette di confrontare un caso singolo rispetto con una media di un campione.
+
+Il t-test di Crawford è una modificazione del t-test che permette di confrontare un caso singolo rispetto ad un campione, ma con inferenza rispetto a una popolazione, con errore noto.
+
+\underline{Il test funziona anche con campioni piccoli (~10 soggetti).}
+
+[^1]: in realtà il test è di Sokhal e Rohlf (1995). Crawford & Howell hanno avuto il merito di diffonderlo per I
+single-case in contesto di neuropsicologia.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{t-test di Crawford}
+\end{center}
+\vspace{1em}
+
+$$
+t = \frac{X_1 - X_2}{s_2\sqrt{\frac{N_2+1}{N_2}}}
+$$
+
+\vspace{1em}
+
+Confrontando con distribuzione con $N_2-1$ gradi di libertà il risultato da la probabilità (data ipotesi nulla vera) di ottenere valori di $t$ uguali o inferiori (vedi codice di esempio)
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Confronto con i dati normativi}
+\end{center}
+\vspace{1em}
+
+Il test di Crawford, così come utilizzo di z-score e utilizzo di percentili, necessita però identificare un campione di riferimento.
+
+I dati dovrebbero essere di soggetti sani (quindi normali) simili alla persona testa. Ma come definire questo?
+  
+**Spesso per un confronto normativo, ci si riferisce a persone con stesso sesso e con età, scolarità simili.**
+
+La scelta di queste variabili è pragmatica: sono variabili che sappiamo influenzare performance cognitiva e sono facili da raccogliere (al momento di creazione del test).
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Note su t-test di crawford (1/2)}
+\end{center}
+\vspace{1em}
+
+Il t-test di Crawford si comporta in maniera più appropriata dello z-test o di percentili non parametrici (vedi anche script con simulazioni).
+
+Il t-test di Crawford è anche più robusto in caso di violazione di normalità. Questo significa che anche se una delle assunzioni è violata, tutto sommato il comportamento del test è adeguato.
+
+Il test di Crawford funziona bene (a livello di Errore di 1° tipo) anche per campioni piccoli suggerendo un potenziale utilizzo anche per campioni raccolti ad-hoc (ma attenzione ad Affidabilità e Validità, dovrebbero essere disponibili).
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Note su t-test di crawford (2/2)}
+\end{center}
+\vspace{1em}
+
+\small
+Il t-test di Crawford mantiene un errore di primo tipo costante al 5% anche per campioni molto piccoli (n=5).
+
+**Questo non vuol dire che bastano campioni piccoli, in realtà è sempre meglio avere campioni numerosi, perchè porteranno cut-off più reali a quelli della popolazione**
+  
+(Si veda simulazione in script 11_C&H_test)
+
+La cosa importante è che il t-test di crawford anche con campioni piccoli mantiene un errore di 1° tipo a livello del 5% (concretamente, per dare un esempio se una persona viene dalla popolazione dei sani, otterremo un valore sotto “cut-off” il 5% delle volte, proprio come è atteso. Nel caso del z-score la percentuale potrebbe essere 10% o più).
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Confronto con i dati normativi}
+\end{center}
+
+\small
+Finora abbiamo fatto riferimento a formule che confrontano **con un singolo gruppo di dati**, denominato “campione normativo” o “dati normativi” che ci permette di ottenere una distribuzione di dati.
+
+![](Figures/normative_data.png){width="40%" fig-align="center"}
+
+Questo gruppo sarà fatto di individui con una certa età, una certa scolarità, etc. e abbiamo sempre sottolineato che 
+I dati normativi dovrebbero essere simili all’individuo da valutare.
+
+Ma come facciamo a definire se il campione è adeguatamente simile?
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Confronto con i dati normativi}
+\end{center}
+
+\small
+Come facciamo a scegliere un campione di riferimento come simile?
+
+Es. se il mio paziente ha 68 anni e 5 anni di scolarità (come GH), quale è un gruppo adeguato?
+
+Esempi:
+
+- persone da 65 a 75 anni con scolarità tra 3 e 5 anni.
+- persone con esattamente 68 anni e esattamente 5 anni di scolarità.
+
+In genere i test riportano tabelle predefinite e, a livello di raccolta di dati è possibile che alcune combinazioni siano poco rappresentate. Al di là di questo, spesso non è possibile avere accesso agli interi dati e “comporre” il dato normativo di riferimento, ma occorre basarsi sulle tabelle disponibili.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Appropriatezza del campione di riferimento}
+\end{center}
+\vspace{1em}
+
+\small
+È un aspetto metodologico importante e di impatto. Se nel mio campione di riferimento sto usando persone che non sono simili alla persona di cui sto osservando la performance, le mie inferenze (su deficit o su danno) sarebbero distorte.
+
+Es. supponiamo che il mio test fornisce un cut-off che si riferisce all’intervallo 70-80 anni di età.
+
+Supponiamo debba testare un paziente con 70 anni. Vuol dire che nella distribuzione di dati ci saranno persone di 80 anni di età (la cui performance potrebbe essere molto più bassa).
+
+**La stratificazione arbitraria in campioni per le variabili rilevanti (età, scolarità, sesso), ha sempre problemi sulla composizione del campione normativo e la sua rappresentatività.**
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Metodi di regressione}
+\end{center}
+\vspace{1em}
+
+In alternativa ai metodi che usano un semplice campione di riferimento, esistono metodi che invece usano metodi basati su regressione.
+
+Il razionale di questi metodi è il seguente:
+
+1) A partire da alcune variabili posso prevedere la performance attesa del partecipante date le varaibili osservate, secondo un modello di regressione lineare
+2) Una volta che ho questo modello di regressione posso stabilire se la performance osservata è sufficientemente improbabile dati i valori osservati.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Metodi di regressione}
+\end{center}
+\vspace{1em}
+
+Una potenziale formalizzazione dei cut-off ottenuti tramite I metodi di regressione è la seguente. 
+
+Il cut-off $x$ è il punteggio tale che il paziente i-esimo (con specifici valori per le variabili aggiuntive V1, V2, …, Vn), tale che la probabilità di osservare quella performance è $k$ (con $k$ critico normalmente 0.05)
+
+$$
+x : P(oi< x∣ V 1i , V 2i , ... , Vni , N )=k
+$$
+
+Classicamente i modelli di regressione includono età, scolarità e sesso come variabili predittori della performance
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Metodi di regressione: variabili da considerare}
+\end{center}
+
+Quali variabili da considerare nella regressione?
+
+Esistono molti modi per selezionare le variabili da considerare e quali includere. Approfondire questo è oltre gli scopi di questo corso.
+
+I metodi di regressione più raffinati includono anche metodi per tenere conto di eventuali “non-linearità” (relazioni descrivibili tra funzioni non lineari, es. Esponenziale, iperbole, e la variabile osservata).
+
+![](Figures/metodi_regressione.png){width="60%" fig-align="center"}
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Metodi di regressione: variabili da considerare}
+\end{center}
+\vspace{1em}
+
+![](Figures/tele_gems.png){width="100%" fig-align="center"}
+
+\begin{center}
+  \footnotesize
+  Esempio da Montemurro et al., 2023
+\end{center}
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Metodi di regressione}
+\end{center}
+\vspace{1em}
+
+Nelle slides che seguono viene mostrato un popolare metodo basato su regressioni che è alla base della maggior parte dei test neuropsicologici sviluppati in Italiano, il metodo dei Punteggi Equivalenti.
+
+Questo metodo contiene due parti principali:
+
+- una parte per ottenere punteggi “corretti” tramite regressioni.
+- una parte per ottenere delle soglie che tengano conto della differenza campione/popolazione
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+Introdotti da Erminio Capitani nella raccolta di taratura di test di Spinnler e Tognoni (1987)
+
+Tre aspetti chiave:
+
+- Correggono per età e scolarità tramite regressioni.
+- Tengono conto di differenza campione/popolazione
+- Permettono il confronto tra diversi test
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{2em}
+
+Il calcolo dei Punteggi equivalenti è suddiviso in vari step:
+
+1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità.
+2) Calcolo limite di tollerenza (PE = 0).
+3) Calcolo dei rimanenti PE.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+La distribuzione dei punteggi grezzi include persone di diversa età.
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/raw_scores_distr_normative_data.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+Effetto dell'età
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/age_effect.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+Effetto dell'età e retta di regressione
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/age_effect_regr_line.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+Differenza tra punteggio previsto e punteggio osservato
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/age_effect_regr_line_residual.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+Calcolo residui di tutti i soggetti dei dati normativi
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/age_effect_regr_line_allresidual.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+I residui potrebbero essere considerati già punteggi «aggiustati» perché sono ciò che rimane del punteggio tolta l’influenza dei predittori (in questo caso ripulito dell’effetto di età)
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/residual_distr_normative_data.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+Nel metodo dei PE, i punteggi aggiustati sono riportati in una scala simile a quella originale (tecnicamente, aggiungendo l’intercetta al residuo)
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/adj_scores_distr_normative_data.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**1) Calcolo di punteggi aggiustati, a cui è rimosso l’effetto di età e scolarità (e sesso).**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+Si calcola il PE = 0 come \textbf{limite di tolleranza interno unidirezionale non parametrico (5\%)}
+
+Indica il punteggio che non verrà ottenuto da più del 5% della popolazione. (quindi il cut-off, a livello di popolazione)
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/limiti_tolleranza.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**2) Calcolo limite di tolleranza (PE = 0)**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+In riferimento all’ipotetica distribuzione dell’abilità sottostante, si trova anche il PE=4 e poi si divide lo spazio tra PE = 0 e PE = 4 in intervalli equispaziati. (equispaziati rispetto all’abilità sottostante)
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/PE_distr.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{I Punteggi Equivalenti}
+\end{center}
+\vspace{1em}
+
+**2) Calcolo limite di tolleranza (PE = 0)**
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+1) Calcoliamo il \textbf{punteggio aggiustato} tramite confronto con tabella o applicazione della formula di regressione
+
+2) Confronto con tabella di corrispondenza punteggio aggiustato – Punteggio equivalente
+
+Non si correggono risultati che ottengono il punteggio massimo o minimo.
+
+\textbf{Se punteggio corretto è < soglia PE = 0, allora prestazione deficitaria.}
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/adj_score.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Esempio di Punteggi Equivalenti}
+\end{center}
+\vspace{2em}
+
+Proviamo insieme a fare un ipotetico utilizzo di punteggi equivalenti.
+
+(vedere da articolo)
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Considerazioni su metodi di regressione}
+\end{center}
+\vspace{2em}
+
+I metodi di regressioni possono sembrare una soluzione perfetta al problema sollevato per i test più semplici di confronto con dati normativi (es. T-test di Crawford). In particolare **evitano gradini arbitrari** e permettono una stima più corretta del paziente.
+
+Non sono però privi di problemi. In particolare una stima non corretta del modello di regressione che porta ai punteggi finali può portare a stime distorte.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Considerazioni su metodi di regressione}
+\end{center}
+\vspace{2em}
+
+In generale ci aspettiamo effetti di distorsione maggioramente per valori estremi nelle variabili predittori, esempio scolarità o età molto alte o molto basse (sono i punti in cui eventuali imprecisioni del modello darebbero effetti più accentuati).
+
+I modelli di regressione possono inoltre dare l’illusione di avere delle buone predizioni per alcuni punti (nello spazio dei valori possibili) per cui in realtà potrebbero esserci poche osservazioni e stime imprecise.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Limiti dei metodi di regressione (1/2)}
+\end{center}
+\vspace{2em}
+
+I modelli di regressione possono inoltre dare l’illusione di avere delle buone predizioni per alcuni punti (nello spazio dei valori) per cui in realtà potrebbero esserci poche osservazioni e stime imprecise.
+
+Ad esempio, supponiamo di avere dati normativi di 1000 soggetti con un metodo di regressione. Supponiamo però di dovere testare un soggetto particolare (es. Donna con 80 anni e 23 anni di scolarità).
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Limiti dei metodi di regressione (1/2)}
+\end{center}
+\vspace{2em}
+
+È possibile che in realtà nel mio campione ci siano pochissimi (o addirittura nessuna, in tal caso parliamo di *estrapolazione*) persona che rispecchi questa combinazione di valori.
+
+Sarebbe più opportuno avere un piccolo campione (es. anche 15 persone) che però siano veramente rappresentative rispetto all’individuo che voglio valutare e un test appropriato (es. T-test di Crawford).
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Considerazioni su errore di I e II tipo}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+In generale abbiamo visto come usare metodi che tengono conto di differenza tra campione e popolazione sia meglio.
+
+Il metodo t di Crawford (e metodi di regressioni di Crawford) mostrano anche che sono in grado di mantenere l’errore di I tipo (cioè avere un soggetto sotto cut-off, quando è sano), a livello atteso (cioè 0.05 o 5%) quando ci sono un numero elevato (in realtà infinito) di ripetizioni.
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Considerazioni su errore di I e II tipo}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perchè noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
+
+Per calcolare quindi errore di primo tipo, si studiano in genere diversi possibili scenari \textbf{ipotetici}.
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Considerazioni su errore di I e II tipo}
+\end{center}
+\vspace{2em}
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+
+Errore di I e II tipo inoltre si applicano non ad uno specifico campione, ma immaginando \textbf{infiniti} campioni. 
+
+Si veda simulazione per vedere quanto è più variabile la stima del cut-off con campioni piccoli.
+
+Viste questi aspetti sarebbe sempre desiderabile (laddove possibile) avere campioni ampi.
+
+\column{0.2\textwidth}
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Riassunto finale (1/2)}
+\end{center}
+\vspace{2em}
+
+Siamo partiti dal problema di definire deficit e danno.
+
+Il metodo più diffuso è basato sull’improbabilità di osservare quella prestazione se si è sani (ragionamento contorto, ma necessario, vedi slides). 
+
+Spesso c’è necessità di una soglia, ed essa è arbitrariamente messa al 5% delle prestazioni più basse. Da notare che entrambe le scelte ricordano il rifiuto dell’ipotesi nulla che c’è per i test statistici.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Riassunto finale (1/2)}
+\end{center}
+\vspace{1em}
+
+\begin{center}
+PROBLEMA: cosa si intende per 5%? 
+\end{center}
+
+Non avrebbe senso riferirsi alla distribuzione del campione, ma sarebbe meglio riferirsi alla popolazione.
+
+In generale esistono vari metodi per calcolare soglie e probabilità, e sarebbe meglio:
+
+a) usare quelli che tengono effettivamente conto di distinzione campione/popolazione
+
+b) avere campioni numerosi (almeno n > 100).
+
+Anche usando metodi non ottimali, avere campioni ampi migliora.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Riassunto finale (2/2)}
+\end{center}
+\vspace{2em}
+
+I metodi che si basano su campioni hanno però problemi dei “gradini” che si vengono a creare per ogni gruppo in cui abbiamo trasformato una variabile continua (es. Età) in gruppi separati.
+
+I metodi che si basano su regressione risolvono il problema dei “gradini”, ma attenzione a rappresentatività nei metodi con regressione e attenzione a valori estremi nei predittori (es. Scolarità, età). Sono I valori in cui la stima potrebbe essere più imprecisa.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Torniamo al nostro esempio (slide 2 blocco 5. Valutare i deficit e danni cognitivi)}
+\end{center}
+
+## Valutare i deficit e danni cognitivi
+
+\small
+GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione. Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L’unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto. Nell’anamnesi di GH c’è però un evento rilevante. Quando era più giovane (a 30 anni), sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie. La neuropsicologia forense entra in gioco per due motivi. I consulenti per l’assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all’incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Torniamo al nostro esempio}
+\end{center}
+\vspace{1em}
+
+Supponiamo di usare il test Linguaggio Figurato 1 di APACS (comprovate Validità e Affidabilità e che misuri capacità di valutare Linguaggio Figurato).
+
+Per questo test abbiamo una consistenza interna sufficiente (0.65), una buona affidabilità test-retest ad un mese r = 0.94 e basso effetto pratica. 
+
+C’è qualche evidenza di validità di costrutto, da analisi fattoriale e una buona validità contenuto a partire da valutazione di alcuni esperti.
+
+## Valutare i deficit e danni cognitivi
+
+\begin{center}
+\textbf{Torniamo al nostro esempio}
+\end{center}
+\vspace{1em}
+
+Il cut-off per una persona con 68 anni di età e 5 di scolarità è 12. Considerando che il metodo usato da APACS per i cut-offs considera la distinizone tra campione e popolazione questo significa che un punteggio al di sotto del cut-off è atteso da meno del 5% della popolazione (di sani).
+
+Se GH ottenesse meno 12 potremmo concludere che è una prestazione insolita se fosse sano, ma non possiamo dire se è un deficit pre-esistente, o un danno legato al trauma cranico (I metodi per calcolare deficit o danno, sono analoghi).
+
+Andando a vedere le tabelle di APACS, possiamo vedere che però nel gruppo di sani usati, sono 40 rientrano nel gruppo di età e scolarità di GH. Le stime sono quindi abbastanza solide.
