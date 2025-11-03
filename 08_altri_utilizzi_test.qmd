@@ -1,0 +1,321 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+#format: revealjs
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
+incremental: false
+header-includes:
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+  
+---
+
+<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{8. Altri utilizzi dei punteggi dei test}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+```
+:::
+
+# 8. Altri utilizzi dei punteggi dei test
+
+## Esempio
+
+\small
+Testiamo un paziente tramite il test di Linguaggio Figurato 1. 
+
+Il paziente ottiene un punteggio di 12. Dopo 6 mesi viene valuato nuovamente e ottiene un punteggio di 10. Cosa possiamo dire del paziente?
+
+![](Figures/Figure_true_obs_4.png){width="50%" fig-align="center"}
+
+
+\footnotesize
+Ricordiamo (vedi slides affidabilità) che in caso di ripetizioni di una misurazione ci aspettiamo comunque delle oscillazioni nel punteggio osservato. Il punto è capire: la variazione che ho osservato è riconducibile a queste oscillazioni (dovute a imprecisione?) oppure ad un cambiamento “vero”?
+
+## Valutare i cambiamenti nel tempo
+
+La valutazione dei cambiamenti nel tempo è una questione spinosa in neuropsicologia clinica ed è molto comune.
+
+Perché valutare lo stesso soggetto/paziente più volte?
+
+- per indagare se è cambiato in seguito ad un trattamento di neuroriabilitazione.
+
+- per indagare se presenta un declino nel funzionamento cognitivo, possibilmente segnale di un deterioramento progressivo.
+
+- Per indagare ha subito alterazioni cognitive in seguito ad un evento, come un’operazione neurochirurgica per rimuovere un tumore.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Il problema della valutazione nel tempo}
+\end{center}
+\vspace{2em}
+
+È assolutamente normale che un soggetto non ottenga esattamente lo stesso punteggio in due diverse valutazioni.
+
+- *Effetti casuali*: legati alla precisione del test e catturati dall’affidabilità test-retest
+
+- *Effetti sistematici*: il più comune è l’**effetto pratica**
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{L'effetto pratica}
+\end{center}
+\vspace{1em}
+
+È l’effetto per cui una seconda valutazione ha un punteggio migliore della precedente. Ci sono varie ragioni alla base dell’effetto pratica.
+
+- Maggiore familirità con la situazione testistica (meno ansia)
+
+- Possibilità di utilizzare strategie scoperte nella prestazione precedente.
+
+L’utilizzo di forme parallele o la lunga distanza tra le due valutazioni non garantisce una protezione dall’effetto pratica (Mondini e Arcara, 2008)
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Come valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{1em}
+
+L’unico modo (rigoroso) è utilizzare **metodi statistici per valutare un cambiamento** (es. Chelune et al., 1993; Crawford & Garwhaite, 2006)
+
+A mia conoscenza gli unici lavori in Italia che riportano tali dati non sono molti. Ad esempio:
+
+- l’**ENB-2** (Mondini et al., 2011)
+- **APACS** (Arcara & Bambini, 2016)
+- **NADL-F** (Arcara et al., 2019)
+- **GEMS** (Mondini et al., 2023)
+- **Tele-GEMS** (Montemurro et al. 2023).
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Come valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{2em}
+
+![](Figures/thresholds_significant_changes_figlang1apacs.png){width="100%" fig-align="center"}
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Come valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{2em}
+
+![](Figures/schermata_ENB2.png){width="100%" fig-align="center"}
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Metodi per valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{2em}
+
+Esistono numerosi metodi per valutare i cambiamenti significativi nel tempo (si veda Collie 2002). In tutti questi metodi l’obiettivo è costruire delle soglie (una superiore e una inferiore) suparate le quali inferiamo che la variazione non è riconducibile al caso e, pertanto, è da considerare come signficativa.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Metodi per valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{2em}
+
+Per farlo quasi tutti i metodi si basano su questa metodologia: 
+
+si prende un **gruppo di individui e li si testa due volte (t0 e t1) in un lasso di tempo entro cui si assume che non sia avvenuto un cambiamento**. Ad esempio soggetti sani testati a t0 e a t1 dopo un mese. Questi soggetti non devono avere fatto training o altro che potrebbe spiegare differenze tra i punteggi.
+
+Ogni differenza tra t0 e t1 sarà dunque riconducibile a imprecisioni del test. A partire da questo (tramite metodi statistici diversi) si costruisce un’intervallo con un limite superiore o inferiore di cambiamento significativo.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+  \textbf{Metodi per valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{1em}
+
+Il principio di questi metodi è spesso analogo a quanto già visto per identificazione di deficit/danno. 
+
+Si costruisce una sorta di distribuzione che ci dice i valori attesi assumendo che non c’è cambiamento (H0) e si va a vedere se il punteggio osservato (o la variazione di punteggio osservata) è così estrema da non essere riconducibile al caso. Se è così allora si inferisce cambiamento (peggioramento/miglioramento) significativo.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Reliable Change Index (RCI)}
+\end{center}
+\vspace{2em}
+
+L’RCI è il metodo più famoso per calcolo di differenze significative nel tempo.
+
+$$
+  RCI = \frac{X_{i1} -X_{i0}}{SE_{diff}}
+$$
+
+\small
+$$ SE_{DIFF} = \sqrt{2SE^2} $$
+$$SE = s_0\sqrt{1-r} $$
+$$s_0 = sd(X_0)r_0 = cor(X_0,X_1)$$
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Reliable Change Index (RCI)}
+\end{center}
+\vspace{2em}
+
+Una volta ottenuto l’RCI può essere trattato come uno z-score.
+
+Se > 1.64, indica un miglioramento significativo (5%), mentre se < -1.,64, indica un peggioramento significativo (5%).
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Modified Reliable Change Index (mRCI)}
+\end{center}
+\vspace{2em}
+
+Il mRCI è una variazione del RCI, che tiene conto di effetto pratica.
+
+$$
+mRCI = \frac{(X_{i1}-X_{i0})-m}{SE_{diff}}
+$$
+
+\small
+$$m = \bar{X}_1 - \bar{X}_0$$ 
+$$SE_{diff} = \sqrt{2SE^2}$$
+$$SE = s_0\sqrt{1-r_{01}}$$
+$$s_0 = sd(X_0)r_{01} = cor(X_0, X_1)$$
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Modified Reliable Change Index (mRCI)}
+\end{center}
+\vspace{2em}
+
+Di nuovo, una volta ottenuto il mRCI può essere trattato come uno z-score.
+
+Se > 1.64, indica un miglioramento significativo (5%), mentre se < -1.,64, indica un peggioramento significativo (5%).
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Regression Method Crawford \& Garthwaithe, 2006}
+\end{center}
+\vspace{2em}
+
+Anche se mRCI tiene conto di effetto pratica, non tiene conto di regressione verso la media (i.e., punteggi estremi a t0 tenderanno a essere più vicini alla media a t1).
+
+Essi inoltre non tengono conto di differenze che ci potrebbero essere a seconda del punteggio alla baseline (a t0), l’effetto pratica è corretto sempre nella stessa maniera.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Regression Method Crawford \& Garthwaithe, 2006}
+\end{center}
+\vspace{2em}
+
+Il metodo di Crawford & Garthwaite, tiene invece conto di tutti questi aspetti e inoltre fornisce una statistica che tiene conto della differenza tra campione e popolazione (e funziona anche con campioni piccoli n~5).
+
+RCI e MRCI invece non tengono conto di distinzione campione e popolazione (come z-score).
+
+Approfondire la formula va al di là degli scopi di questo corso.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Come valutare i cambiamenti nel tempo}
+\end{center}
+\vspace{2em}
+
+Cosa fare se il test non ha valori di cambiemanto significativo?
+  
+Fare MOLTA attenzione nell’utilizzo per inferire cambimento (evitarlo se possibile).
+
+Vedere i valori di affidabilità test-restest e selezionare test in cui sono alti, ma ricordando che non è incluso l’effetto pratica.
+
+## Valutare i cambiamenti nel tempo
+
+\begin{center}
+\textbf{Da ricordare}
+\end{center}
+\vspace{1em}
+
+È da ricordare che come per l'affidabilità test-retest anche gli intervalli di cambiamento significativo si riferiscono allo specifico intervallo temporale con cui sono stati costruiti (es. 1 mese) ed esistono infinite distanze temporali (tra t0 e t1) per cui calcolare intervalli di cambiamento.
+
+In genere queste sono fatte a tempi relativamente corti (es. 1 mese) perché altrimenti diventa difficile assumere che non c’è stato un cambiamento.
+
+In alternativa si usano gli stessi intervalli di rilevanza clinica. (es. 2 settimane per una operazione chirurgica, 6 mesi per Sclerosi Multipla).
+
+## Confrontare punteggi di test diversi
+
+\begin{center}
+  \textbf{Confrontare punteggi di test diversi}
+\end{center}
+\vspace{2em}
+
+In certi casi può essere utile confrontare test diversi.
+
+Possono essere confrontati:
+
+- test diversi che misurano lo stesso costrutto (per approfondire se la prestazione deficitaria è legata ad un test specifico).
+
+- test che misurano cose diverse (per inferire deficit selettivi)
+
+## Confrontare punteggi di test diversi
+
+\begin{center}
+  \textbf{Confrontare punteggi di test diversi}
+\end{center}
+
+Per permettere il confronto tra test diversi bisogna che i punteggi siano trasformati in modo da essere confrontabili.
+
+La strategia più diffusa è trasformare il punteggio sulla base della percentuale di campione o popolazione che ha ottenuto quel punteggio (o un punteggio inferiore; ad esempio, il 20%, il 30%, il 40%, etc.).
+
+Questo è spesso fatto tramite:
+
+- Conversione in **punti–z** (ma le distribuzioni dei test devono essere simili)
+- Utilizzo dei **punteggi equivalenti** (Capitani e Laiacona, 2007)
+- (esistono altri metodi, es. Crawford, Howell & Garthwaite, 1998)
+
+## Confrontare punteggi di test diversi
+
+\begin{center}
+  \textbf{Limiti del confronto di test diversi}
+\end{center}
+\vspace{2em}
+
+È importante ricordarsi alcuni aspetti nell’utilizzo di strategie di confronto di test diversi tramite trasformazioni.
+
+In particolare dobbiamo ricordarci che il confronto è spesso da considerarsi come descrittivo (e non legato ad una inferenza statistica).
+
+## Confrontare punteggi di test diversi
+
+\begin{center}
+  \textbf{Limiti del confronto di test diversi}
+\end{center}
+\vspace{2em}
+
+Supponiamo di traformare dei punteggi e di vedere che la persona si colloca al 70% nei test di memoria, mentre al 20% per i test di funzioni esecutive. Si potrebbe interpretare che c’è un declino selettivo delle funzioni esecutive.
+
+Questo è possibile (e ragionevole), ma è importante ricordare che non sappiamo quanto *improbabile* è osservare questo pattern nei sani. Molte delle inferenze che abbiamo fatto erano basate su improbabilità, ma in questo caso noi non sappiamo se è un pattern effettivamente molto improbabile da suggerire un danno selettivo (lo stiamo *assumendo implicitamente*).
