@@ -22,7 +22,7 @@ header-includes:
 ::: {.content-visible when-format="beamer"}
 ```{=latex}
 % TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{4c. Affidabilità (formule)}}
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{4c. Affidabilità - Formule}}
 \author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
 
 \titlegraphic{
@@ -35,15 +35,9 @@ header-includes:
 ```
 :::
 
-# 4c. Affidabilità (formule)
+# 4c. Affidabilità - Formule
 
-## Affidabilità
-
-\begin{center}
-  \textbf{Tipi di affidabilità}
-\end{center}
-\vspace{2em}
-
+## Tipi di affidabilità
 
 - Affidabilità test-retest
 - Affidabilità inter-rater
@@ -104,11 +98,7 @@ Attenzione dunque all’utilizzo e all’interpretazione dei valori di test-rete
 
 Se usata correlazione, sarebbe infatti necessario accompagnare da analisi (es. t-tests) che permattano di vedere se c’è una differenza sistematica tra prima e seconda valutazione.
 
-## Affidabilità test-retest
-
-\begin{center}
-  \textbf{Considerazioni su affidabilità test-retest}
-\end{center}
+## Considerazioni su affidabilità test-retest
 
 Spesso l’affidabilità test-retest viene (erroneamente) considerata utile solo nel caso in cui avvengano misurazioni ripetute.
 
@@ -118,11 +108,7 @@ In un test ad elevata affidabilità, non ci aspettiamo tante possibili variazion
 
 La nostra fotografia sarà una stima “puntuale”, ma potrebbe essere lontana da quella che consideriamo il punteggio vero (che ricordiamo è un’entità teorica).
 
-## Affidabilità test-retest
-
-\begin{center}
-  \textbf{Considerazioni su affidabilità test-retest}
-\end{center}
+## Considerazioni su affidabilità test-retest
 
 Nella slide successiva si mostra questo concetto, ipotizzando delle singole misurazioni m$_a$ ed m$_b$ in due test (uno a bassa affidabilità test-retest e uno ad alta affidabilità test-retest).
 
@@ -218,11 +204,7 @@ $$
 ```
 
 
-## Affidabilità inter-rater
-
-\begin{center}
-  \textbf{Alcune considerazioni su ICC}
-\end{center}
+## Alcune considerazioni su ICC
 
 **Perché non è sempre usata ICC anche per test-retest visto che tiene conto anche di differenze sistematiche?**
 
@@ -244,11 +226,7 @@ Il grosso limite di questo approccio è che il risultato dipende da come dividia
 
 Da un punto di vista concettuale le misure di consistenza interna vanno ad indagare invece quale sarebbe la correlazione usando tutte le possibili divisioni split-half.
 
-## Consistenza interna
-
-\begin{center}
-  \textbf{Formula di Kuder-Richardson (K-R 20)}
-\end{center}
+## Formula di Kuder-Richardson (K-R 20)
 
 È una formula che viene usata quando gli item sono dicotomici (0/1)
 
@@ -267,11 +245,7 @@ q & = \text{proporzione delle persone che non passano l’item (o risposta 0)}
 \end{aligned}
 $$
 
-## Consistenza interna
-
-\begin{center}
-  \textbf{Cronbach's alpha}
-\end{center}
+## Cronbach's alpha
 
 È una generalizzazione della formula KR-20, nel caso di items non dicotomici
 
@@ -288,11 +262,7 @@ s_i^2 & = \text{varianza di ogni item al test} \\
 \end{aligned}
 $$
 
-## Consistenza interna
-
-\begin{center}
-  \textbf{Altri metodi per consistenza interna}
-\end{center}
+## Altri metodi per calcolare la consistenza interna
 
 Anche se i metodi KR-20 e alpha sono i più comuni essi hanno dei limiti intrinseci (Es. Assumono unidimensionalità).
 
@@ -303,11 +273,7 @@ In caso di multidimensionalità puà essere meglio usare il metodo **omega ($\om
 Nota che GLB e omega sono legati ad analisi fattoriali (vedi slides su validità)
 e sono computazionalmente più complessi.
 
-## Consistenza interna
-
-\begin{center}
-  \textbf{Item selection}
-\end{center}
+## Item selection 
 
 \small
 Un concetto associato a KR-20, Cronbach’s alpha, e altre misure di consistenza interna è quello dell’item selection e cioè quella procedura nella creazione di un test di identificazione degli item da mantenere nel test finale.
@@ -321,11 +287,7 @@ Esempi che vengono dall’alpha di Cronbach:
 - **r-cor**: indica la correlazione tra l’item e il test totale controllando per overlap
 con altri item e per affidabilità globale.
 
-## Affidabilità ed errore
-
-\begin{center}
-  \textbf{Interpretare l'affidabilità a livello del test}
-\end{center}
+## Interpretare l'affidabilità a livello del test
 
 \small
 Ogni sorgente di affidabilità può essere usata per stimare l’errore di misura del test.
@@ -339,11 +301,7 @@ Una correlatione test-retest 0.8, vuol dire che 80% di variabilità test-retest 
 Una consistenza interna di 0.9, vuol dire che 90% di variabilità nella
 consistenza interna pè riconducibile alla variabilità del punteggio vero, etc.
 
-## Affidabilità ed errore
-
-\begin{center}
-  \textbf{Interpretare l'affidabilità a livello del test}
-\end{center}
+## Interpretare l'affidabilità a livello del test
 
 L’errore associato ad ogni sorgente di affidabilità è pertanto calcolabile come:
 
@@ -353,11 +311,8 @@ $$
 Dove $C_a$ è il coefficiente di affidabilità in questione (es. Affidabilità test retest,
 affidabilità inter rater, etc).
 
-## Affidabilità ed errore
+## Combinare diversi tipi di errore
 
-\begin{center}
-  \textbf{Combinare diversi tipi di errore}
-\end{center}
 
 Calcolando diverse sorgenti di errore è possibile sommarle (assumendo la loro indipendenza) per ottenere un errore totale e calcolare quindi la variabilità del punteggio che si presume sia riconducibile al punteggio vero
 
@@ -367,11 +322,7 @@ Es. supponiamo di avere un test che ha le seguenti caratteristiche:
 - Affidabilità inter-rater = 0.70 ($ICC(2,1)$)
 - Consistenza interna = 0.97 (alpha di Cronbach)
 
-## Affidabilità ed errore
-
-\begin{center}
-  \textbf{Combinare diversi tipi di errore}
-\end{center}
+## Combinare diversi tipi di errore
 
 Errore test-retest: $(1-0.85) * 100 = 15%$
 
@@ -385,11 +336,7 @@ Errore totale: $15 + 30 + 3 = 48%$
 A livello di test il 48% della varianza è riconducibile ad errore, e il 52% (100 – 48) della varianza è riconducibile al punteggio vero (è anche l’affidabilità complessiva del test). (Vedi Urbina, 2004, per esempio simile)
 
 
-## Affidabilità ed errore
-
-\begin{center}
-  \textbf{Stimare il punteggio vero}
-\end{center}
+## Stimare il punteggio vero
 
 Le formule di affidabilità ci permettono inoltre di stimare il punteggio vero
 
@@ -406,11 +353,7 @@ M & = \text{media del campione di riferimento} \\
 \end{aligned}
 $$
 
-## Affidabilità ed errore
-
-\begin{center}
-  \textbf{Stimare il punteggio vero: alcune note}
-\end{center}
+## Stimare il punteggio vero: alcune note
 
 1) La stima del punteggio vero è spesso accompagnata anche dalla creazione di intervalli
 di confidenza attorno alla stima (riprenderemo questo quando parleremo di cut-offs, vedi
@@ -434,19 +377,11 @@ Questo permette di tenere in consdierazione un fenomeno detto **regressione vers
 
 Correggere per la media ha però un grosso limite intrinseco: con che media correggere? Ad esempio, se ho un paziente con TBI è corretto usare (per M), la media del gruppo di sani con cui è stato sviluppato il test?
 
-## Affidabilità ed errore
-
-\begin{center}
-  \textbf{Stimare il punteggio vero: alcune note}
-\end{center}
+## Stimare il punteggio vero: alcune note
 
 Questo tipo di limiti rende complessa l’applicazione di formule per stimare il punteggio vero. Vedremo in futuro comunque in utilizzi clinici e pratici (es. cut-off, valori di cambiamento), **quasi sempre non sono usati i punteggi veri ma i punteggi osservati**.
 
-## Affidabilità e varianza
-
-\begin{center}
-  \textbf{Come considerare i coefficienti di affidabilità}
-\end{center}
+## Come considerare i coefficienti di affidabilità
 
 Ogni coefficiente di affidabilità, in generale stimare la varianza riconducibile al punteggio vero, rispetto alla variabilità totale (cioè quella che si rileva nei osservati), utilizzando diverse formule (es. $r$ di pearson, $ICC(2,1)$, etc.).
 
