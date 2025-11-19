@@ -72,7 +72,8 @@ Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una termin
 Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale che c’è una probabilità nota k che un punteggio osservato o abbia un valore uguale o inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
 
 $$
-x:P(o<x) = k
+\small
+\text{definiamo}\ x\ \text{in modo tale che}\ P(o<x) = k
 $$
 
 es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $p(O < x ) = 0.05$ (c’è il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un danno).
@@ -85,7 +86,7 @@ Questa definizione è sovrapponibile a quella che si usa in statistica di “per
 
 L’utilizzo della curva normale o di percentili non parametrici rappresentano diversi metodi per identificare queste percentuali.
 
-L’uso di punti z non è altro che un metodo che semplifica l’identificazione di questi percentili.
+L’uso di punti z non è altro che un metodo (parametrico) che semplifica l’identificazione di questi percentili.
 
 ## I percentili
 
@@ -95,22 +96,36 @@ Ricordiamo che l’utilizzo della curva normale (e **della trasformazione in pun
 
 ## Trasformazione in punti z
 
+$$
+Z = \frac{X - M}{SD}
+$$
+Ricordiamo che questa formula è utile perchè ci aiuta a definire percentili (parametrici). 
+
+Possiamo usarla in due modi: 
+
+- calcoliamo valori z soglia, a partire da media e deviazione standard (di solito, a quale punteggio grezzo corrisponde il punteggio $$z = - 1.64$$, che corrisponde al 5% percentile).
+
+- trasformiamo il punteggio grezzo in punteggio z e da questo determiniamo a che percentile corrisponde.
+
+
+## Punti z (altro modo di vedere)
+
 \small
 Quando si trasformano dei punteggi in punti z ci sono alcuni punti che risultano di importanza.
+
+Se i punteggi **non** sono standardizzati (non trasformo in punti z prima).
+
+- Media – 1.64 * SD delimita il 5% dei punteggi più bassi
+- Media - 1.96 * SD delimita il 2.5% dei punteggi più bassi
 
 Se i punteggi sono **standardizzati** (punti z con Media = 0 e SD = 1):
 
 - 1.64 delimita il 5% dei punteggi più bassi
 - 1.96 delimita il 2.5% dei punteggi più bassi
 
-Se i punteggi **non** sono standardizzati.
+A volte si trova “2 deviazioni standard”. Non è altro che un altro numero (sempre arbitrario) per delimitare preformance bassa, sempre arbitraria (ma più facile da ricordare).
 
-- Media – 1.64 * SD delimita il 5% dei punteggi più bassi
-- Media - 1.96 * SD delimita il 2.5% dei punteggi più bassi
-
-A volte si trova “2 deviazioni standard”. Non è altro che un altro numero (sempre arbitrario) per delimitare preformance bassa.
-
-## I percentili
+## I percentili non parametrici
 
 E nel caso di distribuzione non normali?
 
@@ -118,18 +133,14 @@ Si possono utilizzare **percentili non parametrici**.
 
 (per esempi vedere codice R associato per potenziale impatto di non normalità, specie con un marcato effetto soffitto.)
 
-## Valutare i deficit e danni cognitivi
-
-\begin{center}
-  \textbf{La distribuzione di riferimento}
-\end{center}
-\vspace{1em}
+## La distribuzione di riferimento
 
 Questa definizione di percentili può essere però approfondita concentrandoci su un punto critico su cui in precedenza abbiamo glissato e cioè che i valori sono **relativi alla distribuzione di riferimento**.
 
 Possiamo quindi specificare meglio la formula così
 $$
-x : P(o< x∣N )=k
+\small
+\text{definiamo}\ x\ \text{in modo tale che}\ P(o< x∣N )=k
 $$
 $x$ è il valore per cui ci si attende un probabilità $k$ che un punteggio O sia inferiore a $x$, assumendo che la persona provenga da una popolazione di persone “sane” (cioè senza deficit cognitivo).
 
@@ -311,22 +322,13 @@ single-case in contesto di neuropsicologia.
 ## t-test di Crawford & Howell
 
 $$
-t = \frac{X_1 - X_2}{s_2\sqrt{\frac{N_2+1}{N_2}}}
+t = \frac{X_i - \bar{X_2}}{s_2\sqrt{\frac{N_2+1}{N_2}}}
 $$
 
 \vspace{1em}
+Dove $X_i$ è il punteggio del singolo individuo da testare. $\bar{X_2}$ è la media del campione normativo. $S_2$ è la Deviazione standard del campione normativo ed $N_2$ è la numerosità del campione normativo.
+Confrontando con distribuzione con $N_2-1$ gradi di libertà il risultato restituisce la probabilità (data ipotesi nulla vera) di ottenere valori di $t$ uguali o inferiori a quelli osservati (vedi codice di esempio per dettagli).
 
-Confrontando con distribuzione con $N_2-1$ gradi di libertà il risultato da la probabilità (data ipotesi nulla vera) di ottenere valori di $t$ uguali o inferiori (vedi codice di esempio)
-
-## Confronto con i dati normativi
-
-Il test di Crawford, così come utilizzo di z-score e utilizzo di percentili, necessita però identificare un campione di riferimento.
-
-I dati dovrebbero essere di soggetti sani (quindi normali) simili alla persona testa. Ma come definire questo?
-  
-**Spesso per un confronto normativo, ci si riferisce a persone con stesso sesso e con età, scolarità simili.**
-
-La scelta di queste variabili è pragmatica: sono variabili che sappiamo influenzare performance cognitiva e sono facili da raccogliere (al momento di creazione del test).
 
 ## Note su t-test di crawford (1/2)
 
@@ -347,11 +349,18 @@ Il t-test di Crawford mantiene un errore di primo tipo costante al 5% anche per 
 
 La cosa importante è che il t-test di crawford anche con campioni piccoli mantiene un errore di 1° tipo a livello del 5% (concretamente, per dare un esempio se una persona viene dalla popolazione dei sani, otterremo un valore sotto “cut-off” il 5% delle volte, proprio come è atteso. Nel caso del z-score la percentuale potrebbe essere 10% o più).
 
-## Valutare i deficit e danni cognitivi
+## Confronto con i dati normativi
 
-\begin{center}
-\textbf{Confronto con i dati normativi}
-\end{center}
+Il test di Crawford, così come utilizzo di z-score e utilizzo di percentili, necessita però identificare un campione di riferimento.
+
+I dati dovrebbero essere di soggetti sani (quindi normali) simili alla persona testa. Ma come definire questo?
+  
+**Spesso per un confronto normativo, ci si riferisce a persone con stesso sesso e con età, scolarità simili.**
+
+La scelta di queste variabili è pragmatica: sono variabili che sappiamo influenzare performance cognitiva e sono facili da raccogliere (al momento di creazione del test).
+
+
+## Confronto con i dati normativi
 
 \small
 Finora abbiamo fatto riferimento a formule che confrontano **con un singolo gruppo di dati**, denominato “campione normativo” o “dati normativi” che ci permette di ottenere una distribuzione di dati.
@@ -404,9 +413,11 @@ Una potenziale formalizzazione dei cut-off ottenuti tramite I metodi di regressi
 Il cut-off $x$ è il punteggio tale che il paziente i-esimo (con specifici valori per le variabili aggiuntive V1, V2, …, Vn), tale che la probabilità di osservare quella performance è $k$ (con $k$ critico normalmente 0.05)
 
 $$
-x : P(oi< x∣ V 1i , V 2i , ... , Vni , N )=k
+\small
+\text{definiamo}\ x\ \text{in modo tale che}\  P(o_i< x∣ V1_i , V2_i , ... , Vn_i , N )=k
 $$
 
+Dove $_i$ indica l'indice per una specifica combinazione di punteggio osservato data una specifica combinazione di valori di variabili $(V1, ... V_n)$ che possono influenzare performance
 Classicamente i modelli di regressione includono età, scolarità e sesso come variabili predittori della performance
 
 ## Metodi di regressione: variabili da considerare
@@ -588,7 +599,7 @@ Nel metodo dei PE, i punteggi aggiustati sono riportati in una scala simile a qu
 
 Si calcola il PE = 0 come \textbf{limite di tolleranza interno unidirezionale non parametrico (5\%)}
 
-Indica il punteggio che non verrà ottenuto da più del 5% della popolazione. (quindi il cut-off, a livello di popolazione)
+Indica il punteggio che non verrà ottenuto da più del 5\% della popolazione. (quindi il cut-off, a livello di popolazione)
 
 \column{0.5\textwidth}
 \begin{figure}
@@ -692,7 +703,7 @@ Il metodo t di Crawford (e metodi di regressioni di Crawford) mostrano anche che
 
 Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perchè noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
 
-Per calcolare quindi errore di primo tipo, si studiano in genere diversi possibili scenari \textbf{ipotetici}.
+Per calcolare quindi errore di primo tipo, si studiano in genere diversi possibili scenari \textbf{ipotetici} con diverse gravità di deficit. In genere però questo \underline{non è mai fatto} per test neuropsicologici. E ci si concentra solo sul cut-off e sull'errore di I tipo.
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -720,6 +731,21 @@ Viste questi aspetti sarebbe sempre desiderabile (laddove possibile) avere campi
 \end{columns}
 ```
 
+## Considerazione
+\pause
+\Large
+\center
+Che fine hanno fatto affidabilità e validità?
+
+## Affidabilità, Validità e cut-off
+
+Come anticipato, per convenzione spesso nel calcolo dei valori soglia affidabilità e validità non sono considerate.
+\pause
+
+Questo è un problema perchè test con affidabilità diversa sono trattati allo stesso modo (ho work-in-progress su questo). 
+
+Affidabilità, Validità e cut-off/trasformazioni in percentili sono dunque combinate solo tramite interpretazione dei risultati e non tramite formule matematiche che tengono in considerazione entrambe.
+
 ## Riassunto finale (1/2)
 
 Siamo partiti dal problema di definire deficit e danno.
@@ -731,7 +757,7 @@ Spesso c’è necessità di una soglia, ed essa è arbitrariamente messa al 5% d
 ## Riassunto finale (1/2)
 
 \begin{center}
-PROBLEMA: cosa si intende per 5%? 
+PROBLEMA: cosa si intende per 5\%? 
 \end{center}
 
 Non avrebbe senso riferirsi alla distribuzione del campione, ma sarebbe meglio riferirsi alla popolazione.
@@ -753,9 +779,10 @@ I metodi che si basano su regressione risolvono il problema dei “gradini”, m
 
 
 ## Torniamo al nostro esempio
-
-\small
+```{=latex}
+\scriptsize
 GH è un uomo di 68 anni, vedovo al centro di un contenzioso con una compagnia di assicurazione. Al momento critico della nostra valutazione ha appena avuto un trauma cranico in seguito ad un piccolo incidente stradale, in cui però ha battuto la testa e perso conoscenza. L’unico figlio sostiene che come conseguenza suo padre ha avuto un importante peggioramento nel funzionamento cognitivo che si manifesta in incapacità di comprendere bene ciò che gli viene detto. Nell’anamnesi di GH c’è però un evento rilevante. Quando era più giovane (a 30 anni), sistemando il tetto di un garage, GH è caduto da una scala e ha battuto la testa. Andato in ospedale non è stato diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e ha divorziato con la moglie. La neuropsicologia forense entra in gioco per due motivi. I consulenti per l’assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all’incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente.
+`````
 
 ## Torniamo al nostro esempio
 

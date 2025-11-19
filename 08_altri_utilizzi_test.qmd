@@ -88,7 +88,13 @@ Perché valutare lo stesso soggetto/paziente più volte?
 
 - Possibilità di utilizzare strategie scoperte nella prestazione precedente.
 
-L’utilizzo di forme parallele o la lunga distanza tra le due valutazioni non garantisce una protezione dall’effetto pratica (Mondini e Arcara, 2008)
+## Forme parallele
+A volte alcuni test potrebbero avere delle **forme parallele** e cioè una versione uguale del test in cui però gli item sono diversi. 
+
+Nelle forme parallele si introduce inoltre un'ulteriore problema è cioè quello di dimostrare che i due test siano da considerare equivalenti.
+
+Inoltre l’utilizzo di forme parallele non garantisce una protezione dall’effetto pratica (Mondini e Arcara, 2008, si veda anche il test GEMS, Mondini et al., 2022 per un esempio in cui forme parallele hanno comunque effetto pratica).
+
 
 ## Valutare i cambiamenti nel tempo
 

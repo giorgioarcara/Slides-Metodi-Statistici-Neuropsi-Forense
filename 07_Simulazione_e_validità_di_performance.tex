@@ -1,0 +1,753 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+
+\usetheme[]{metropolis}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\setbeamerfont{title}{size=\large} \usepackage{hyperref} \setbeamertemplate{footline}[frame number] \usepackage{tikz}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={Giorgio Arcara},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{Giorgio Arcara}
+\date{}
+
+\begin{document}
+
+
+\begin{frame}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{7. Simulazione e validità di performance}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+\end{frame}
+
+\section{\texorpdfstring{\large 7. Simulazione e validità di
+performance}{7. Simulazione e validità di performance}}\label{simulazione-e-validituxe0-di-performance}
+
+\begin{frame}{Validità di performance}
+\phantomsection\label{validituxe0-di-performance}
+Nel contesto degli studi di forense si parla spesso di validità di
+performance per valutare se una specifica valutazione è da considerare
+valida
+
+Nota che abbiamo parlato di Validità come una proprietà dei test, mentre
+questa è una proprietà della valutazione
+
+\emph{In questa specifica istanza di misurazione, sto valutando ciò che
+intendo valutare?}
+\end{frame}
+
+\begin{frame}{Performance Validity Testing}
+\phantomsection\label{performance-validity-testing}
+\small
+
+Esistono strumenti (pratici e concettuali) per valutare se una
+performance è da considerarsi valida. Queste procedure sono note come
+\textbf{Performance Validity Test (PVT)}.
+
+Test che usano queste procedure sono anche noti come \textbf{Effort
+Tests} (test dello sforzo): si indaga se il partecipante si sta
+``sforzando a sufficienza''.
+
+Ricordiamo che I test cognitivi sono test di performance massima (Vedi
+slides 02. Cornice Teorica). Basta impegnarsi di meno (o ``sforzarsi di
+meno'' e si invalida il risultato del test).
+\end{frame}
+
+\begin{frame}{Validità di una performance}
+\phantomsection\label{validituxe0-di-una-performance}
+
+\begin{tikzpicture}
+    % Include your image
+    \node[anchor=south west, inner sep=0] (image) at (0,0)
+        {\includegraphics[width=0.8\textwidth]{Figures/Test_Methodology_transp.png}};
+
+    % Set coordinate system to match the image
+    \begin{scope}[x={(image.south east)}, y={(image.north west)}]
+        
+        % Draw a red rectangle (thin border)
+        %\draw[red, thick, rounded corners] (0.25,0.3) rectangle (0.45,0.5);
+        % Optional label
+        %\node[red, font=\bfseries, above] at (0.35,0.5) {Region 1};
+        
+        %\pause
+        % a red rectangle (thicker border)
+        \draw[red, ultra thick] (0.605,0.65) rectangle (0.905,0.85);
+        
+        % text (with fine control)
+        %\node[anchor=west, xshift=-8mm, yshift=20mm] at (image.east)
+        %{\parbox{4cm}{\parbox{3cm}{\scriptsize \textbf{Minacce alla validità}\\ (il test non misura quello che %vorrebbe misurare)}}};
+    \end{scope}
+\end{tikzpicture}
+
+\small \emph{non impegnarsi adeguatamente inficia la relazione tra costrutto da misurare, comportamento e punteggio finale}
+\end{frame}
+
+\begin{frame}{Una nota su simulazione}
+\phantomsection\label{una-nota-su-simulazione}
+\small
+
+Nota che considerare la simulazione come una condizione si/no (o sto
+simulando o non sto simulando) è probabilmente una semplificazione (Nies
+\& Sweet, 1994)
+
+È più ragionevole pensare che si la performance possa essere lungo un
+continuum tra la performance genuina e qualle con simulazione.
+
+Entrano inoltre in gioco alcuni aspetti (es. aspetti psicologici
+inconsci) che potrebbero portare a performance deficitarie in assenza di
+deficit cognitivo/danno.
+
+Nelle slides non approfondiremo questi aspetti (molto importanti) perché
+più teorici e ci concentreremo sugli aspetti statistici.
+\end{frame}
+
+\begin{frame}{Definizioni}
+\phantomsection\label{definizioni}
+\small
+
+Ci sono dei concetti importanti legati che è bene esplicitare e termini
+che torneranno nelle slides successive.
+
+\textbf{Malingering (Simulazione)}: la produzione intenzionale di
+problemi fisici o psicologici falsi o grossolanamente esagerati. La
+motivazione del malingering è solitamente esterna (ad esempio, evitare
+il servizio militare o il lavoro, ottenere un compenso finanziario,
+eludere un'azione penale o procurarsi farmaci).
+
+\textbf{Symptom Validity Assessment (SVA)}: l'insieme di tecniche
+(interviste, test, raccolta evidenze) per valutare la credibilità di
+sintomi (cognitivi e fisici) manifestati da un individuo.
+
+\textbf{Performance Validity Testing (PVT)}: l'insieme di tecniche
+statistiche e metodologiche per assicurarsi che il paziente stia
+affrontando in maniera adeguata la situazione di valutazione (sforzo
+adeguato, motivazione adeguata).
+\end{frame}
+
+\begin{frame}{Come identificare un simulatore?}
+\phantomsection\label{come-identificare-un-simulatore}
+Come principio generale, Si costruisicono test in maniera tale che la
+performance mi dimostri che è probabile che la persona stia mentendo.
+\end{frame}
+
+\begin{frame}{Principali strategie per identificare simulatori}
+\phantomsection\label{principali-strategie-per-identificare-simulatori}
+\small
+
+\textbf{1) Pattern di risposte inverosimili anche rispondendo in maniera
+casuale.} Si possono usare in test a scelta forzata e vedendo se la
+performance osservata è poco probabile anche rispondendo in maniera
+random (e quindi suggerendo menzogna intenzionale)
+
+\textbf{2) Test molto facili persino per pazienti deteriorati.} Valori
+normativi ottenuti da popolazioni cliniche per mostrare che persino in
+popolazioni clinche anche molto gravi, la performance attesa non è così
+bassa.
+
+\textbf{3) Test sviluppati con validità di criterio}: con gruppi di
+persone a cui era chiesto esplicitamente di fingere un deficit, per
+avere una condizione di interesse di ``simulazione''. Queste persone
+possono essere sani oppure pazienti/categoria target (es. popolazioni
+psichiatriche).
+\end{frame}
+
+\begin{frame}{\small 1) Pattern di risposte inverosimili, anche
+rispondendo casualmente.}
+\phantomsection\label{pattern-di-risposte-inverosimili-anche-rispondendo-casualmente.}
+\vfill
+{\center
+$\text{si trovi}\ x\ \text{tale che}\ P(o < x | R) = k_s$
+\vfill
+}
+
+Questa strategia può essere applicata solo nel caso di test a scelta
+forzata (es. Immagine di destra o immagine di sinistra?). In questo caso
+la probabilità di ottenere il pattern osservato se la scelta fosse
+random (50\% per ciascuna possibilità) \(k_s\) indica un valore soglia
+di probabilità molto piccolo (in genere è il solito 5\%).
+\end{frame}
+
+\begin{frame}{1) Il Test of Memory Malingering (TOMM)}
+\phantomsection\label{il-test-of-memory-malingering-tomm}
+Il test of Memory Malingering è il test più comune con cui è possibile
+identificare questo tipo di disturbi. Si basa su un assunto molto
+semplice. Nel caso di una scelta multipla a due possibilità è molto
+facile modellare la probabilità di un certo numero di risposte casuali.
+
+Consiste di due fasi: in una fase di fanno riconoscere degli item per
+ricordarli (questa viene ripetuta due volte nella versione originale del
+TOMM).
+
+Nella fase test una gli item presentati nella fase di test sono
+presentati in coppia con un distrattore. Per ogni coppia l'esaminato
+deve indicare quale era l'item che aveva visto in precedenza.
+\end{frame}
+
+\begin{frame}{1) Il Test of Memory Malingering (TOMM)}
+\phantomsection\label{il-test-of-memory-malingering-tomm-1}
+\begin{center}
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{Figures/TOMM.png}
+\end{center}
+\center Un esempio di stimoli del TOMM
+\end{frame}
+
+\begin{frame}{1) Il Test of Memory Malingering (TOMM)}
+\phantomsection\label{il-test-of-memory-malingering-tomm-2}
+\small
+
+L'assunto è semplice. Un simulatore tenderà ad indicare volontariamente
+più spesso del caso l'immagine sbagliata. Questo però di fatto
+suggerisce che ha riconosciuto quale è l'immagine giusta.
+
+In caso di scelta multiple è semplice modellare la probabilità attesa di
+un certo pattern di risposte (dato un certo numero di trial) usando come
+riferimento la distribuzione binomiale.
+
+es. su 50 item anche rispondendo in manira totalmente casuale ci sono
+meno del 5\% di probabilità di rispondere a meno di 19 item assumendo
+che c'è il 50\% di probabilità di selezionare l'item corretto anche
+casualmente.
+
+\emph{Vedi codice per esempio}
+\end{frame}
+
+\begin{frame}{1) Il Test of Memory Malingering (TOMM)}
+\phantomsection\label{il-test-of-memory-malingering-tomm-3}
+\small
+
+\textbf{Vantaggi}
+
+\begin{itemize}
+\tightlist
+\item
+  Il TOMM è un test molto semplice e di fatto non richiede dati
+  normativi. Ma solo modellare la probabilità di risposte casuali.
+\item
+  Si è mostra molto efficace anche nell'identificare simulatori definiti
+  tramite altra procedura (buona sensibilità e specificità, vedi anche
+  esempi 3) ).
+\end{itemize}
+
+\textbf{Svantaggi}
+
+\begin{itemize}
+\tightlist
+\item
+  Se si conosce o si intuisce come funziona il TOMM è facile aggirarlo,
+  rispondendo in maniera mista o corretta e poi andare male in altri
+  test.
+\item
+  Un cliente potrebbe essere preparato dai propri consulenti alla
+  risposta a test di questo tipo.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{2) Test molto facili per pazienti deteriorati}
+\phantomsection\label{test-molto-facili-per-pazienti-deteriorati}
+\vfill
+{\center
+$\text{si trovi}\ x\ \text{tale che}\ P(o < x | D) = k_s$
+\vfill
+}
+
+Dove \(k_s\) indica un valore di probabilità molto piccolo (es. 5\%)
+persino in pazienti molto deterioriorati (\(D\)).
+\end{frame}
+
+\begin{frame}{2) Il Word Memory Test}
+\phantomsection\label{il-word-memory-test}
+\small
+
+Il Word Memory Test è un test di memoria di coppie di parole (Green et
+al., 1999)
+
+È divisto in più fasi.
+
+Nella fase 1 sono presentate 20 coppie di parole (cane/gatto,
+pesce/pinna) Presentate per 6 secondi nello schermo a coppia per due
+volte.
+
+Immediatamente dopo sono presentate 40 coppie, di cui una sola parola
+era presentata originariamente e l'altra è un distrattore (es.
+cane/coniglio; gatto/topo).
+
+Dopo 30 min, senza che fosse stato detto, sono presentate altre 40
+coppie con altre 40 distrattori (es. cane/ratto, etc.)
+
+\emph{Spesso in questi test (così come per ogni test di malingering) si
+stressa che il test è difficile, per indurre la persona a credere che
+una persona con deficit avrebbe una performance bassa (quando in realtà
+non è vero).}
+\end{frame}
+
+\begin{frame}{Il Word Memory Test}
+\phantomsection\label{il-word-memory-test-1}
+\textbf{Vantaggi}
+
+\begin{itemize}
+\tightlist
+\item
+  è relativamente facile ottenere cut-off in questa maniera
+\end{itemize}
+
+\textbf{Svantaggi} - Soffre dello stesso problema di tutti I cut-off di
+normalità: si fa un ragionamento inverso, ma non c'è sensibilità o
+specificità nell'identificare un \emph{vero simulatore}. Per questa
+ragione praticamente tutti i test, (incluso il WMT) sono anche
+sviluppati utilizzando validità di criterio (vedi slides successive).
+\end{frame}
+
+\begin{frame}{3) Test sviluppati con validità di criterio}
+\phantomsection\label{test-sviluppati-con-validituxe0-di-criterio}
+Molti test per identificare simulatori in ambito forense seguono
+principi di validità di criterio. Dove la condizione di interesse è
+\emph{essere verosimilmente un simulatore}.
+
+\(\text{Sensibilità}: P(o < y | S)\)
+
+\(\text{Specificità}: P(o \geq  y | NS)\)
+
+dove \(S\) indica l'essere un simulatore secondo gold standard, mentre
+\(NS\) indica l'essere un non simulatore secondo gold-standard.
+\end{frame}
+
+\begin{frame}{come definire un ``simulatore''? 1/2}
+\phantomsection\label{come-definire-un-simulatore-12}
+\small
+
+\begin{enumerate}
+\tightlist
+\item
+  si creano gruppi per condizione di interesse chiedendo a persone sane
+  di simulare (anche dando incentivo economico in caso di successo per
+  aumentare realismo) e sono confrontati con altri sani o con pazienti
+  che è inverosimile che simulino. \pause
+\item
+  si identifica presenza condizione di interesse (simulatori vs non
+  simulatori) sulla base di applicazione di altri strumenti di PVT
+  (anche combinazione di più strumenti). In tal caso il risultato agli
+  altri strumenti di PVT diventa il gold-standard.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{come definire un ``simulatore''? 2/2}
+\phantomsection\label{come-definire-un-simulatore-22}
+\small
+
+\begin{enumerate}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  si usano gruppi in cui è estremamente verosimile che ci sia
+  simulazione probable malingering cioè gruppi patologici per cui c'è
+  già forte sospetto di simulazione rispetto ad altri in cui questo non
+  c'è. Un classico esempio è confrontare pazienti che stanno facendo
+  riabilitazione (bassa probabilità di essere simulatori) con pazienti
+  che hanno chiesto valutazione per riscuotere assicurazione e che hanno
+  deficit cognitivi lamentatai molto gravi rispetto a funzionamento
+  quotidiano apparentemente alto (altra probabilità di essere
+  simulatori). In tal caso, l'appartenza a un gruppo rispetto a questi
+  criteri è il gold standard.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{definizione di ``verosimile simulatore''}
+\phantomsection\label{definizione-di-verosimile-simulatore}
+\small
+
+Da punto 3) di slide precedente
+
+Slick et al.~(1999), definisce dei criteri per identificare diverse
+probabilità di simulatori (franco, probabile, possibile) sulla base di
+presenza di uno o più dei seguenti criteri:
+
+\scriptsize
+\emph{In determining the presence of MND (Malingered Neurocognitive Dysfunction), the case must be evaluated on the basis of four criteria: 
+\begin{itemize}
+\item[(A)] presence of substantial external incentive, 
+\item[(B)] evidence from neuropsychological testing, 
+\item[(C)] evidence from self-report, and 
+\item[(D)] behaviors meeting the necessary B and C criteria are not fully accounted for by psychiatric, neurological, or developmental factors.
+\end{itemize}
+
+All diagnoses of malingering require the presence of an external incentive (Criterion A).}
+\vfill
+Slick, Sherman, Iverson (1999) Diagnostic Criteria for Malingered Neurocognitive
+Dysfunction: Proposed Standards for Clinical Practice
+and Research. \emph{The Clinical Neuropsychologist}.
+\end{frame}
+
+\begin{frame}{3) Il Reliable Digit Span}
+\phantomsection\label{il-reliable-digit-span}
+Il Reliable Digit Span non è altro che la somma del Digit Span Avanti e
+Digit Span Indietro.
+
+La sua utilità in ambito forense basa sul fatto che le persone possono
+sovrastimare la difficoltà di questo test e avere una performance di
+fatto molto (troppo bassa). Spesso però è sono riportare validità di
+criterio rispetto alla possibilità di distinguere tra gruppi di
+pazienti.
+\end{frame}
+
+\begin{frame}{Reliable Digit Span}
+\phantomsection\label{reliable-digit-span}
+\href{Figures/Sim_sens.png}{}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.35]{Figures/Sim_sens.png}
+\end{figure}
+
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.35]{Figures/Sim_sens_PPV.png}
+\end{figure}
+\end{columns}
+
+\small
+
+Mathias et al.~(2002) Detecting Malingered Neurocognitive Dysfunction
+Using the Reliable Digit Span in Traumatic Brain Injury.
+\emph{Assesment}.
+\end{frame}
+
+\begin{frame}{Reliable Digit Span}
+\phantomsection\label{reliable-digit-span-1}
+\begin{columns}
+\column{0.7\textwidth}
+
+\begin{tikzpicture}
+    % Include your image
+    \node[anchor=south west, inner sep=0] (image) at (0,0)
+        {\includegraphics[width=0.9\textwidth]{Figures/Sim_sens_PPV.png}};
+
+    % Set coordinate system to match the image
+    \begin{scope}[x={(image.south east)}, y={(image.north west)}]
+        
+        % Draw a red rectangle (thin border)
+        %\draw[red, thick, rounded corners] (0.25,0.3) rectangle (0.45,0.5);
+        % Optional label
+        %\node[red, font=\bfseries, above] at (0.35,0.5) {Region 1};
+        
+        
+        % a red rectangle (thicker border)
+        \only<2>{\draw[red, ultra thick] (0,0.38) rectangle (0.98,0.42)};
+        
+
+    \end{scope}
+\end{tikzpicture}
+
+\column{0.5\textwidth}
+\scriptsize
+Ricordiamo che Positive Predictive Power (o Value) indica:
+Quale percentuale dei positivi sarà effettivamente un simulatore?\\
+\vspace{2em}
+Questo dipende da quanti “simulatori” ci aspettiamo ci siano nella popolazione.
+Avere questi valori può aiutarci nell’interpretare i risultati.
+
+\end{columns}
+\pause
+\scriptsize
+Es. se individuo ottiene valore < 5. Potremmo dire “anche ipotizzando un base rate basso pari a .1 (cioè 10\% di simulatori nella popolazione). Una performance inferiore a 5  ha 100\% sensibilità e 92\% specificità)"
+\end{frame}
+
+\begin{frame}{3) Test sviluppati con validità di criterio.}
+\phantomsection\label{test-sviluppati-con-validituxe0-di-criterio.}
+\small
+
+\textbf{Vantaggi}:
+
+\begin{itemize}
+\tightlist
+\item
+  Test sviluppati con validità di criterio permettono di avere valori di
+  sensibilità/specificità PPV e NPV che aiutano molto
+  nell'interpretazione dei risultati.
+\end{itemize}
+
+\textbf{Svantaggi}: - In questi test il limite principale è
+l'adeguatezza del gruppo di ``Simulatori''. In alcuni casi si assume
+siano simulatori, es da altri test. In caso in cui si chiede
+explicitamente di simulare, può essere una scelta poco ecologica: nella
+simulazione legata allo sviluppo del test la posta in gioco sarà
+inevitabilmente più bassa (Es. Uno studente che vince 10 € in più se
+finge bene non può essere paragonato ad un paziente che finge un deficit
+per avere un maggiore incasso da assicurazione).
+\end{frame}
+
+\begin{frame}{Altri test usati per identificare simulatori}
+\phantomsection\label{altri-test-usati-per-identificare-simulatori}
+Esistono anche altri test utilizzati per identificare simultari che non
+sono test di performance massima.
+\end{frame}
+
+\begin{frame}{Lo Structured Inventory of Malingered Symptoms (SIMS) 1/4}
+\phantomsection\label{lo-structured-inventory-of-malingered-symptoms-sims-14}
+Esistono anche altri test che non sono di performance massima che sono
+legati allo studio della simulazione. Un esempio è lo Structured
+Inventory of Malingered Symptoms (SIMS) che è un questionario con
+risposta si/no.
+
+È diviso in vari item raggruppati in scale che aiutano ad identificare
+simulazione di disabilità intellettive, di disturbi fisici, oppure di
+disturbi psichiatrici. Si ottiene anche un punteggio totale.
+\end{frame}
+
+\begin{frame}{Lo Structured Inventory of Malingered Symptoms (SIMS) 2/4}
+\phantomsection\label{lo-structured-inventory-of-malingered-symptoms-sims-24}
+\vfill
+\small
+Negli ultimi giorni faccio fatica a dormire \hfill \textbf{SI/NO}\\
+\vspace{3em}
+La mia memoria è talmente  peggiorata che per\\ alcuni giorni non riesco a ricordare nulla \hfill \textbf{SI/NO}
+
+\pause
+
+\emph{Quale è la differenza tra questi due item?}
+\end{frame}
+
+\begin{frame}{Lo Structured Inventory of Malingered Symptoms (SIMS) 3/4}
+\phantomsection\label{lo-structured-inventory-of-malingered-symptoms-sims-34}
+La caratteristica di alcuni items del SIMS è che definiscono alcuni
+sintomi ``impossibili''.
+\end{frame}
+
+\begin{frame}{Lo Structured Inventory of Malingered Symptoms (SIMS) 4/4}
+\phantomsection\label{lo-structured-inventory-of-malingered-symptoms-sims-44}
+Bello studio originale SIMS ha evidenza di validità di criterio usando
+una serie di gruppi di partecipanti a cui era chiesto di fingere
+specifici deficit (es. Psichiatrici, cognitivi, etc.)
+
+In particolare elevata sensibilità, specificità etc. (Smith \& Burger
+1997)
+
+\includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{Figures/SIMS.png}
+\end{frame}
+
+\begin{frame}{Considerazioni conclusive 1/4}
+\phantomsection\label{considerazioni-conclusive-14}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+\small L'identificazione di simulatori si basa sugli stessi principi
+statistici utilizzati per identificare deficit/danno o altre condizioni
+di interesse (patologia).
+
+In questo caso il test è spesso costruito in maniera da indurre chi è
+malintenzionato ad avere un certo pattern di risposte che è improbabile
+e che un paziente con un reale deficit (anche grave) non commetterebbe.
+\end{frame}
+
+\begin{frame}{Considerazioni conclusive 2/4}
+\phantomsection\label{considerazioni-conclusive-24}
+\small
+
+Molto spesso I test di simulazione sono associati a sensibilità e
+specificità nell'identificare I simulatori e anche a PPV (Positive
+Predicitive value) o NPV (Negative Predictive Value) secondo vari
+scenari.
+
+Il tema della simulazione è complesso anche perché (a fini statistici)
+spesso si usa la distinzione netta simulazione/non simulazione, quando è
+verosimile che siano diversi gradi di simulazione.
+\end{frame}
+
+\begin{frame}{Considerazioni conclusive 3/4}
+\phantomsection\label{considerazioni-conclusive-34}
+\small
+
+Anche per I test specifici per le simulazioni le stesse considerazioni
+fatte per ogni altro aspetto statistico.
+
+Sono preferibili campioni ampi per avere delle stime più solide dei
+cut-off (campioni più rappresentativi della popolazione)
+\end{frame}
+
+\begin{frame}{Considerazioni conclusive 4/4}
+\phantomsection\label{considerazioni-conclusive-44}
+\small
+
+Sono presenti I limiti del confronto con un singolo campione normativo
+che potrebbe non essere adeguato per i nostri scopi (es. Per età,
+scolarità). Sarebbe ideale avere sempre solo persone il più simili
+possibili all'individuo da valutare.
+
+Ogni altra considerazione rimane pertinente (es. meglio norme
+paese-specifiche, norme recenti, etc.)
+\end{frame}
+
+
+
+
+\end{document}

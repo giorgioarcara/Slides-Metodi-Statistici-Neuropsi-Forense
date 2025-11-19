@@ -37,6 +37,17 @@ header-includes:
 
 # 5. Valutare i deficit e danni cognitivi
 
+## Misurazioni 1/2
+\center
+![](Figures/thermometer_1.png){width="80%"}
+
+## Misurazioni 2/2
+
+\center
+![](Figures/thermometer_2.png){width="80%"}
+
+
+
 ## Esempio
 
 :::{.smaller}
@@ -48,7 +59,7 @@ _Nell'anamnesi di GH c'è però un evento rilevante. Quando era più giovane (a 
 _La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'assicurazione sostengono che il problema di GH è legato al trauma cranico subito molti anni prima e quindi non legato all'incidente stradale. Secondo i consulenti incaricati da GH invece il danno non è riconducibile al precedente (e non documentato) trauma, ma solo a quello più recente._
 :::
 
-## Valutare i deficit cognitivi
+## Un caso di valutazione neuropsicologica forense
 
 *Quale sarebbe il primo scopo di una valutazione neuropsicologica forense di GH?*
 \pause
@@ -100,11 +111,7 @@ In altre parola, in questo caso l'interesse è capire se la persona ha un distur
 
 ## Significato dei punteggi
 
-\begin{center}
-  \textbf{Punteggi ai test}
-\end{center}
-
-Supponiamo di somministrare il test di Linguaggio Figurato 1 di APACS (perché siamo soddisfatti di sue Validità e Affidabilità) e supponiamo di ottenere il punteggio 10/15 (quindi 75% di risposte corrette). Cosa ci dice questo punteggio?
+Supponiamo di somministrare il test di Linguaggio Figurato 1 di APACS (perché siamo soddisfatti di sue Validità e Affidabilità) e supponiamo di ottenere il punteggio 10/15 (quindi 75\% di risposte corrette). Cosa ci dice questo punteggio?
 \pause
 \begin{center}
   \textbf{I punteggi ai test in sé sono poco informativi}
@@ -121,7 +128,9 @@ Supponiamo di somministrare il test di Linguaggio Figurato 1 di APACS (perché s
 \end{center}
 ```
 
-I punteggi grezzi sono poco informativi non solo perché i valori dipendono dal range dei punteggi (che spesso è arbitrario), ma anche perché un punteggio alto o basso dipende molto da quanto il test è difficile (o facile). \textbf{Per trarre informazioni utili, in neuropsicologia i punteggi si confrontano spesso con dei dati di riferimento che ci aiutano a classificare la prestazione}. 
+I punteggi grezzi sono poco informativi non solo perché i valori dipendono dal range dei punteggi (che spesso è arbitrario), ma anche perché un punteggio alto o basso dipende molto da quanto il test è difficile (o facile). 
+
+\textbf{Per trarre informazioni utili, in neuropsicologia i punteggi si confrontano spesso con dei dati di riferimento che ci aiutano a classificare la prestazione}. 
 
 ## Trasformazione punteggi e cut-off 2/2
 ```{=latex}
@@ -132,34 +141,28 @@ I punteggi grezzi sono poco informativi non solo perché i valori dipendono dal 
 \end{center}
 ```
 
-Per trasformare il punteggi ad un test cognitivo come qualcosa di interpretabile e utile spesso avviene una trasformazione rispetto alla percentuale di popolazione che ottiene quel punteggio.
+Per trasformare i punteggi ad un test cognitivo in qualcosa di interpretabile e utile spesso si effettua una trasformazione dal punteggio grezzo \underline{alla percentuale di popolazione} \underline{che ottiene quel punteggio}.
 
-Tra questi dati spesso rivestono particolare rilevanza delle soglie specifiche, chiamate **cut-off**, che sono spesso il 5% delle prestazioni peggiori.
+Tra i punteggi trasformati dati spesso rivestono particolare rilevanza delle soglie specifiche, chiamate **cut-off**, che nella versione più diffusa, delimita il 5% delle prestazioni peggiori.
 
 
 ## Cut-off e statistica
 
-Anche se spesso non è chiaro, il confronto di un punteggio con un cut-off si configura come l'applicazione di un **test statistico** per arrivare ad una decisione. Questo test statistico è spesso un test particolare perché _applicato al caso singolo_.
+Anche se spesso non è chiaro, il confronto di un punteggio con un cut-off si configura come l'applicazione di un **test statistico** per arrivare ad una decisione (inferenza satistica).
+
+I test test statistici utilizzati in contesto clinico e forense sono spesso non convenzionali perché _applicati al caso singolo_ (mentre gran parte della statistica inferenziale stima effetti medi riferiti a gruppi).
 
 
-## Valutare i deficit/danni cognitivi
+## Dati normativi e cut-off
 
-\begin{center}
-  \textbf{Cut-off e dati normativi}
-\end{center}
 
-I cut-off sono un punteggio-soglia al di sotto del quale la prestazione è considerata deficitaria e (a seconda del contesto) il riflesso di un danno cognitivo.
+I cut-off sono un punteggi-soglia al di sotto del quale la prestazione è considerata deficitaria e (a seconda del contesto) il riflesso di un danno cognitivo.
 
-I cut-off vengono calcolati a partire dai dati normativi.
+I cut-off vengono calcolati a partire dai dati normativi e spesso corrisponde al **5% dei punteggi peggiori**
 
-Spesso i cut-off sono riportati in tabelle, indipendentemente dal metodo usato per calcolarli.
+Spesso i cut-off solitamente riportati in tabelle, indipendentemente dal metodo usato per calcolarli. Di recente sono sempre più diffusi software che trasformano i punteggi e confrontano in maniera automatica con i cut-offs.
 
-## Valutare i deficit/danni cognitivi
-
-\begin{center}
-  \textbf{Esempio di cut-off riportati in tabelle}
-\end{center}
-\vspace{2em}
+## Esempio di cut-off riportati in tabelle
 
 ![](Figures/cutoff_humor.png){width="90%" fig-align="center"}
 \begin{flushright}
@@ -198,7 +201,7 @@ Esempio:
 
 Ci viene chiesto (in contesto clinico o forense) di effettuare una valutazione neuropsicologica di un paziente con autismo grave coinvolto in un reato.
 
-*Qual è in questo caso lo scopo della valutazione neuropsicologica?*
+*Qual potrebbe essere in questo caso lo scopo della valutazione neuropsicologica?*
 \pause
 
 Valutare se c’è deficit cognitivo che può avere influito sul commettere il reato o, in generale classificare la sua performance e valutare le sue abilità.
@@ -230,15 +233,13 @@ Ci viene chiesto (in contesto clinico o forense) di effettuare una valutazione n
 
 Valutare se è avvenuto un **cambiamento** (un danno cognitivo), non valutare le abilità del soggetto in sè.
 
-## Valutare i danni cognitivi
+## Utilizzo dei dati normativi per inferire danni cognitivi
 
-\begin{center}
-  \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
-\end{center}
+![](Figures/triangle.png){width="15%" fig-align="center"}
 
 *Nel caso di un ipotetico danno, se avessimo i punteggi ai test neuropsicologici prima dell’evento lesivo, potremmo confrontarli con quelli del nostro paziente e vedere se c’è stato un peggioramento (quindi un danno cognitivo in seguito al trauma).*
 
-Dal momento che questa informazione non è praticamente mai disponibile, stimiamo il punteggio atteso nel/lla paziente da persone che siano simili a lui/lei.
+Dal momento che questa informazione non è praticamente mai disponibile, stimiamo il punteggio atteso nel/lla paziente da persone che siano simili a lui/lei (quindi con i dati normativi).
 
 ## Valutare i deficit/danni cognitivi
 
@@ -256,7 +257,7 @@ Per convenzione (e semplicità) definiamo le persone simili a lui sulla base di 
   \textbf{Diversi concetti di normalità}
 \end{center}
 
-I soggetti che fanno parte dei dati normativi assumiamo che siano normali, nel senso di autonomi nella vita quotidiana e in assenza di deficit cognitivi.
+I soggetti che fanno parte dei dati normativi assumiamo che siano normali, nel senso di autonomi nella vita quotidiana e in assenza di deficit cognitivi conclamati.
 
 Quando utilizziamo compariamo un punteggio con i dati normativi e concludiamo che sono nella norma, facciamo un’inferenza statistica a partire dai punteggi.
 
@@ -266,16 +267,12 @@ Spesso in neuropsicologia si fa riferimento alla curva normale (o gaussiana) che
   \textbf{Sono tre diversi concetti di «normalità»}
 \end{center}
 
-## Normalità nei dati normativi
-
-\begin{center}
-  \textbf{Il concetto di normalità nei dati normativi}
-\end{center}
+## Il concetto di normalità nei dati normativi
 
 \small
-Da slides precedente “*I soggetti che fanno parte dei dati normativi assumiamo che siano **normali**, nel senso di autonomi nella vita quotidiana e in assenza di deficit cognitivi.*” Ma come definiamo se sono normali?
+Da slides precedente “*I soggetti che fanno parte dei dati normativi assumiamo che siano **normali**, nel senso di autonomi nella vita quotidiana e in assenza di deficit cognitivi conclamati.*” Ma cosa significa esattamente e in che senso "normali"?
 
-Teoricamente è riportato con estremo dettaglio cosa si è inteso per normali. Spesso si intende: autonomi nella vita quotidiana, privi di patologie conclamate che possono influenzare la cognizione (es. malattie neurodegenerative).
+Teoricamente è riportato con estremo dettaglio cosa si è inteso per normali. Spesso si intende: autonomi nella vita quotidiana, privi di patologie conclamate che possono influenzare la cognizione (es. malattie neurodegenerative o schizofrenia, o disturbi nel neurosviluppo).
 
 In certi casi possono essere più stringenti (es. sopra i 65 anni vengono richiesti esami medici che escludano segni demenza, es. risonanza, etc.).
 A volte anche si riporta testing cognitivo (es. MoCA > 20). Quest’ultimo però è un aspetto un po’ insidioso, perché i test usati potrebbero a loro volta sbagliare e quindi creare bias nei dati normativi o circolarità. D'altra parte senza test il rischio è inserire nel dataset persone che hanno patologie degenerative in corso.
@@ -302,13 +299,13 @@ A volte anche si riporta testing cognitivo (es. MoCA > 20). Quest’ultimo però
 \begin{columns}
 \column{0.8\textwidth}
 
-\textbf{Il fatto che una prestazione sia deficitaria o normale può avere significato o importanza diversa a seconda del contesto e della domanda.}
+\textbf{Il fatto che una prestazione sia al di sotto del cut-off di normalità può avere significato o importanza diversa a seconda del contesto e della domanda.}
 \vspace{1em}
 
 \small
-a) Nel caso di indagine di un disturbo dello sviluppo una performance al di sotto del cut-off è interessante in sé, indicandoci un deficit.
+a) Nel caso di indagine di un disturbo dello sviluppo una performance al di sotto del cut-off è interessante in sé, indicandoci un \textbf{deficit}.
 
-b) nel caso di sospetto di malattia o disturbo acuto nell’adulto viene usata per fare un’inferenza su un peggioramento dello stato cognitivo del paziente rispetto ad un evento che può avere una precisa collocazione temporale (es. ictus) oppure no (es. un deterioramento con un decorso legato alla malattia di Alzheimer).
+b) nel caso di sospetto di malattia o disturbo acuto nell’adulto viene usata in genere per fare un’inferenza su un peggioramento, quindi un \textbf{danno}, nello stato cognitivo del paziente rispetto ad un evento che può avere una precisa collocazione temporale (es. ictus) oppure no (es. un deterioramento con un decorso legato alla malattia di Alzheimer).
 \column{0.2\textwidth}
 
 \begin{figure}
@@ -364,12 +361,13 @@ b) in caso di valutazioni per valutare il lvello del paziente indipendentemente 
 % Bottom-right
 \only<1-4>{\fill[white] (-0.2,0) rectangle (3,-3);}
 
-\onslide<5> % <-- forces slide 5 to exist
 
 \end{tikzpicture}
 \end{center}
-\pause
+\onslide<5> % <-- forces slide 5 to exist
 La linea verticale indica il \textbf{cut-off di normalità}.
+
+\pause
 ```
 
 
@@ -382,7 +380,7 @@ La linea verticale indica il \textbf{cut-off di normalità}.
 Il cut-off è un punteggio particolarmente basso che osserviamo in pochi soggetti normali e che pertanto inferiamo sia segno di un deficit/danno cognitivo.
 \vspace{1em}
 
-In genere il cut-off è definito (arbitrariamente) come il valore che delimita il 5% dei punteggi più bassi.
+In genere il cut-off è definito (arbitrariamente) come il valore che delimita il 5\% dei punteggi più bassi.
 \vspace{1em}
 
 NOTA: Il cut-off NON ci indica la probabilità che il soggetto sia normale o abbia un danno cognitivo (vedi slides Valutare i deficit cognitivi e vedi Bayes, è una differenza un po’ sottile)
@@ -491,17 +489,17 @@ Non è possibile definire chiaramente quando si passa da normalità a quando si 
 Il fatto di avere una soglia decisionale, per quanto arbitraria, ha però delle utilità euristiche. 
 Dovremo decidere ad un certo punto se c'è un problema oppure no e questo tendenzialmente ci porta ad utilizzare soglie categoriali.
 
-Si veda per esempio [questo articolo](https://journals.sagepub.com/doi/full/10.1177/09593543231160112) per un approfondimento sul valore epistemico di scelte dicotomiche, che ben si applica a questo caso.
+Si veda per esempio [\underline{questo articolo}](https://journals.sagepub.com/doi/full/10.1177/09593543231160112) per un approfondimento sul valore epistemico di scelte dicotomiche, che ben si applica a questo caso.
 
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 1/3
+## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
 
 
 Il modo in cui definiamo danno e deficit (a partire da soggetti normali) potrebbe sembrare contorto. Perchè dobbiamo basarci su questo metodo?
 
 Se avessimo un criterio oggettivo (es. danno cerebrale) su cui basarci, sarebbe concettualmente più semplice. Potremmo usare quello e usare i test neuropsicologici come strumenti per identificare questo tipo di danno (entreremmo nel reame della validità di criterio, sensibilità, specificità, etc. vedi slides su Validità e slides su Sensibilità e Specificità).
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 2/3
+## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
 
 Il problema è metodologico/epistemologico. Come possiamo definire un deficit?
 
@@ -509,23 +507,13 @@ Come possiamo essere certi che ci sia un deficit cognitivo?
 
 Il problema è che non è possibile definire in maniera non circolare il deficit cognitivo e per tale ragione usiamo questo metodo *alla rovescia*. Definiamo cosa è l’**assenza di deficit cognitivo** (su base normativa), e inferiamo la presenza di deficit a partire da questo.
 
-## Valutare i deficit cognitivi
-
-\begin{center}
-  \textbf{Perché questo modo “contorto” di definire il deficit cognitivo e il danno? (2)}
-\end{center}
-\vspace{2em}
+## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
 
 Il problema è in questo caso di assenza di dati precedenti che mi possano aiutare a capire se c’è stato un peggioramento o un effettivo danno cognitivo.
 
 Usare un dato osservabile (es. danno cerebrale) sarebbe rischioso e limitante. In molti casi può esserci danno cognitivo senza apparente danno cerebrale o viceversa (es. nel trauma cranico).
 
-## Valutare i deficit cognitivi
-
-\begin{center}
-  \textbf{Perché questo modo “contorto” di definire il deficit cognitivo e il danno? (2)}
-\end{center}
-\vspace{2em}
+## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
 
 In tal caso stimiamo la presenza di un danno se la persona ha un punteggio anomalo rispetto al campione normativo. In questo caso il passaggio è doppio: 
 
@@ -533,23 +521,13 @@ a) Sto assumendo che la persona è ben rappresentata dal campione normativo
 
 b) sto inferendo che se la sue performance è bassa, probabilmente c’è stato un danno/peggioramento.
 
-## Valutare i deficit cognitivi
-
-\begin{center}
-  \textbf{Una nota sul definire il danno}
-\end{center}
-\vspace{2em}
+## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
 
 Il fatto di definire un **danno** (quindi un peggioramento) a partire dal confronto con i dati normativi è una strategia per compensare il fatto che non abbiamo dati precedenti al sospetto evento che potrebbe avere causato il peggioramento.
 
 Ma attenzione a ricordare che l’uso è solo una strategia con i suoi limiti, basata su una stima attesa della performance del paziente.
 
-## Valutare i deficit cognitivi
-
-\begin{center}
-  \textbf{Una nota sul definire il danno: Esempio 1}
-\end{center}
-\vspace{2em}
+## Una nota sul definire il danno: Esempio 1
 
 Supponiamo di avere un test in cui il cut-off è 10 (5%) con elevata affidabilità e nessun effetto pratica. Supponiamo di testare un paziente con trauma cranico per valutare il danno.
 
@@ -557,12 +535,7 @@ Il paziente ha ottenuto 14 (sopra il cut-off).
 
 Potrebbe essere che prima dell’evento aveva un punteggio di 20 e il punteggio di 14 potrebbe riflettere un cambiamento non colto dal confronto con il cut-off di 10 (vedi anche slides valutare il cambiamento nel tempo).
 
-## Valutare i deficit cognitivi
-
-\begin{center}
-  \textbf{Una nota sul definire il danno: Esempio 2}
-\end{center}
-\vspace{2em}
+## Una nota sul definire il danno: Esempio 2
 
 Supponiamo di avere un test in cui il cut-off è 10 (5%) con elevata affidabilità e nessun effetto pratica. Supponiamo di testare un paziente con trauma cranico per valutare il danno.
 
@@ -571,11 +544,7 @@ Il paziente ha ottenuto 8 (sotto il cut-off).
 
 Il paziente aveva 8 anche prima del trauma cranico, in realtà non è peggiorato (vedi anche slides valutare il cambiamento nel tempo).
 
-## Valutare i deficit cognitivi
-
-\begin{center}
-  \textbf{Una nota sul definire il danno}
-\end{center}
+## Una nota sul definire il danno
 
 \small
 Il cut-off non era adeguato perché il nostro paziente testato era un paziente con prestazione presumibilmente già estrema (molto alta o bassa) rispetto ai dati normativi.
@@ -610,6 +579,12 @@ Per questo motivo e per motivi di praticità spesso il fatto di concludere che c
 Per un neuropsicologo clinico forense, laddove sia possibile a partire dai metodi statistici a disposizione è comunque utile sapere la classificazione esatta (es. 20%, 14% della popolazione di riferimento e non semplicemenete sopra/sotto cut-off) perchè potrebbe essere comunque utile e informativa.
 
 Es. una performance che delimita è al 5.1% del campione/popolazione di riferimento, sarebbe comunque sopra cut-off (esattamente come una al 95%). 
+
+## Come si calcolano i cut-offs?
+
+- Metodi parametrici (Media, deviazione standard e Z score)
+- Metodi non parametrici
+- Altri metodi (regressioni)
 
 ## Valutare i deficit cognitivi
 
@@ -687,7 +662,7 @@ test con \textbf{effetto soffitto}
 Se si usano i punti z con distribuzioni non normali, la corrispondenza tra specifici punteggi z e percentuali può non essere rispettata.
 \vspace{2em}
 
-Ad esempio -1.64 può non corrispondere al valore che delimita 5% dei punteggi più bassi, portando al calcolo di cut-off sbagliati.
+Ad esempio -1.64 può non corrispondere al valore che delimita 5\% dei punteggi più bassi, portando al calcolo di cut-off sbagliati.
 \column{0.2\textwidth}
 
 \begin{figure}
@@ -701,7 +676,7 @@ Ad esempio -1.64 può non corrispondere al valore che delimita 5% dei punteggi p
 \begin{center}
   \textbf{PARENTESI}
   
-  \textbf{Standardizzare (trasformare in z-score) non rende la distribuzione normale!}
+  \textbf{Standardizzare (trasformare in z-score) a volte è anche detto "normalizzare", ma non rende la distribuzione \textit{normale}!}
 \end{center}
 
 ![](Figures/distribuzioni_normalizzate.png){width="100%" fig-align="center"}

@@ -1,0 +1,1120 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+
+\usetheme[]{metropolis}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\setbeamerfont{title}{size=\large} \usepackage{hyperref} \setbeamertemplate{footline}[frame number] \usepackage{tikz}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={Giorgio Arcara},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{Giorgio Arcara}
+\date{}
+
+\begin{document}
+
+
+\begin{frame}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{6. Identificare condizioni di interesse - Teoria e Formule}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+\end{frame}
+
+\section{6. Identificare condizioni di
+interesse}\label{identificare-condizioni-di-interesse}
+
+\begin{frame}{Breve riepilogo}
+\phantomsection\label{breve-riepilogo}
+Nelle slides precedenti abbiamo visto la metodologia che si usa per
+identificare un deficit (o un danno) cognitivo.
+
+Data la difficoltà metodologica/epistemologica per definire il deficit e
+danno, si usa un ragionamento inverso, partendo da una definizione di
+\emph{assenza di deficit}, e usando, per definire i valori soglia
+(\textbf{cut-off di normalità}) solo dati di persone che non hanno
+deficit.
+\end{frame}
+
+\begin{frame}{Recap su cut-off clinico}
+\phantomsection\label{recap-su-cut-off-clinico}
+\begin{center}
+\textbf{Cut-off clinico}
+\end{center}
+\begin{figure}
+\includegraphics[scale=0.15]{Figures/Healthy_vs_Pathological.png}
+\end{figure}
+
+\tiny
+\emph{Non sapendo dove si situano i punteggi di una popolazione patologica (deficit o danno), la nostra soglia corrisponde, arbitrariamente, al punteggio che delimita 5\% più basso (area grigia). Assumendo che deficit e patologia siano associato a prestazioni peggiori}.
+\end{frame}
+
+\begin{frame}{Recap su percentuali e probabilità 1/2}
+\phantomsection\label{recap-su-percentuali-e-probabilituxe0-12}
+Nelle prossime slides spesso si tratterà di \emph{percentuali (basate su
+campioni)} (e cioè i percentili) e \emph{probabilità} (che non sono
+necessariamente la stessa cosa).
+
+Ricordiamo che spesso usiamo \emph{percentuali ottenute su campioni} per
+\textbf{stimare} le probabilità, ma che la probabilità sono le
+percentuali attese se avessimo accesso all'intera \emph{popolazione}.
+\end{frame}
+
+\begin{frame}{Recap su percentuali e probabilità 2/2}
+\phantomsection\label{recap-su-percentuali-e-probabilituxe0-22}
+Un altro modo per pensare a questa differenza è che percentili (e
+percentuali) sono riferite al passato, mentre le probabilità sono
+riferite a ciò che ci attenderemmo \emph{nel futuro}.
+
+Un'ulteriore modo, più tecnico, è che la probabilità si riferisce alla
+percentuale attesa se potessimo fare infinite ripetizioni del
+campionamento.
+\end{frame}
+
+\begin{frame}{la Condizione di interesse}
+\phantomsection\label{la-condizione-di-interesse}
+Esistono però situazioni in cui è possibile identificare la
+\emph{condizione di interesse} (Condition of Interest, COI), tramite
+delle procedure, magari costose o invasive, che però permettero di avere
+una classificazione che riteniamo il nostro riferimento di
+correttezza/errore.
+
+la condizione di interesse è, in contesto clinico, spesso la presenza di
+una patologia, oppure la classificazione ottenuta tramite un test
+costoso. In ambito forense, anche la classificazione come ``essere un
+potenziale simulatore'' è una condizione di interesse.
+
+Il test/metodo/procedura diagnostica utilizzati per ottenere la nostra
+classificazione di riferimento è detto \textbf{gold-standard}.
+\end{frame}
+
+\begin{frame}{Identificare una condizione di interesse}
+\phantomsection\label{identificare-una-condizione-di-interesse}
+Nel caso in cui sia possibile distinguere
+due\footnote{è possibile anche pensare a casi con tre o più categorie, ma spesso sono ricondotti a confronti fra due. Nelle slides che seguono ci si concentrerà sulla più comune discriminazione tra due gruppi}
+categorie, l'obiettivo di un test diventa identificare una soglia che ci
+permetta di discriminare correttamente tra le due categorie, in accordo
+al gold-standard.
+
+Per distinguere dal \emph{cut-off di normalità} chiameremo questa soglia
+\textbf{cut-off di discriminazione}.
+\end{frame}
+
+\begin{frame}{Nota su terminologia}
+\phantomsection\label{nota-su-terminologia}
+Spesso negli esempi che seguono useremo ``soggetto/individuo
+patologico'' come esempio in cui la condizione di interesse è presente e
+per semplicità. Tutti i ragionamenti si possono estendere ad altre
+condizioni di interesse.
+
+Nelle prossime slides faremo alcuni esempi delle classificazioni
+\emph{dopo che la soglia è stata ottenuta}. Spiegheremo in seguito come
+ottenere questa soglia che ci permette la discriminazione.
+\end{frame}
+
+\begin{frame}{cut-off di normalità}
+\phantomsection\label{cut-off-di-normalituxe0}
+\pandocbounded{\includegraphics[keepaspectratio]{Figures/cut-off_normalità.png}}
+\end{frame}
+
+\begin{frame}{cut-off di discriminazione}
+\phantomsection\label{cut-off-di-discriminazione}
+\pandocbounded{\includegraphics[keepaspectratio]{Figures/cut-off_discriminazione.png}}
+\end{frame}
+
+\begin{frame}{Terminologia}
+\phantomsection\label{terminologia}
+\small
+
+\textbf{VP}: \emph{Vero Positivo} (es. soggetto patologico,
+correttamente identificato come patologico)
+
+\textbf{FP}: \emph{Falso Positivo} (es. soggetto sano, identificato
+erroneamente come patologico)
+
+\textbf{FN}: \emph{Falso Negativo} (es. soggetto patologico,
+identificato erroneamente come sano)
+
+\textbf{VN}: \emph{Vero Negativo} (es. soggetto sano, identificato
+correttamente come sano)
+\end{frame}
+
+\begin{frame}{Matrice di confusione}
+\phantomsection\label{matrice-di-confusione}
+I possibili risultati di una classificazione sono spesso riportati in
+quella che è nota come \textbf{matrice di confusione}
+
+\pandocbounded{\includegraphics[keepaspectratio]{Figures/matrice_confusione.png}}
+\end{frame}
+
+\begin{frame}{Sensibilità e Specificità}
+\phantomsection\label{sensibilituxe0-e-specificituxe0}
+\begin{center}
+\includegraphics[width=0.2\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+
+A partire dai risultati della matrice di confusione possiamo calcolare
+delle importanti misure.
+
+\textbf{Sensibilità (Recall)}: VP / VP + FN
+
+È la stima della probabilità di identificare correttamente un caso
+positivo, se la persona è positiva al gold standard.
+
+\textbf{Specificità}: VN / VN + FP
+
+È la stima della probabilità di identificare correttamente un caso
+negativo, se se la persona è negativa al gold standard.
+\end{frame}
+
+\begin{frame}{Sensibilità e Specificità (Un esempio neuropsicologico)}
+\phantomsection\label{sensibilituxe0-e-specificituxe0-un-esempio-neuropsicologico}
+\textbf{Sensibilità (Recall)}: VP / VP + FN
+
+È la stima probabilità di identificare correttamente un paziente con
+demenza, se la persona ha la demenza secondo il gold-standard.
+
+\textbf{Specificità}: VN / VN + FP
+
+È la stima probabilità di identificare correttamente un sano se la
+persona è sana (i.e.~no demenza) secondo il gold standard.
+\end{frame}
+
+\begin{frame}{Sensibilità e Specificità (Un esempio forense)}
+\phantomsection\label{sensibilituxe0-e-specificituxe0-un-esempio-forense}
+\textbf{Sensibilità (Recall)}: VP / VP + FN
+
+È la probabilità di identificare correttamente un simulatore, se la
+persona è un simulatore secondo il gold-standard.
+
+\textbf{Specificità (Recall)}: VN / VN + FP
+
+È la probabilità di identificare correttamente un NON simulatore, se la
+persona è un NON simulatore secondo il gold-standard.
+\end{frame}
+
+\begin{frame}{Sensibilità, Specificità e campioni.}
+\phantomsection\label{sensibilituxe0-specificituxe0-e-campioni.}
+\pandocbounded{\includegraphics[keepaspectratio]{Figures/matrice_confusione.png}}
+
+\textbf{Sensibilità}: VP / VP + FN
+
+\textbf{Specificità}: VN / VN + FP
+
+\small
+\pause
+
+\emph{Sensibilità è influenzata dai risultati dei soggetti patologici?\\ (Condizione di Interesse PRESENTE)}
+\pause
+
+\emph{Specificità è influenzata dai risultati dei soggetti patologici?\\ (Condizione di Interesse ASSENTE)}
+\end{frame}
+
+\begin{frame}{Stabilire il cut-off di discriminazione}
+\phantomsection\label{stabilire-il-cut-off-di-discriminazione}
+Anche se dipendono da campioni diversi i risultati di sensibilità e
+specificità sono interconnessi quando le due distribuzioni di dati (di
+soggetti patologici e non, sono sovrapposte)
+
+Idealmente un test dovrebbe avere sia un'alta sensibilità e alta
+specificità, ma spesso aumentare una è a scapito dell'altra.
+\end{frame}
+
+\begin{frame}{Stabilire il cut-off di discriminazione}
+\phantomsection\label{stabilire-il-cut-off-di-discriminazione-1}
+Immaginate di spostare a sinistra o a destra la linea che indica il
+cut-off di discriminazione, ovviamente si modificherebbero tutte le
+classificazioni: VP, VN, FP ed FN.
+
+Per esempio spostando a sinistra la linea (cioè rendendo il cut-off di
+discriminazione più basso, si diminuiscono I FP, ma anche I VP! E
+aumentano I VN e FN.
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.5\textheight,keepaspectratio]{Figures/cut-off_discriminazione.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Stabilire il cut-off di discriminazione}
+\phantomsection\label{stabilire-il-cut-off-di-discriminazione-2}
+Per un esplorazione dinamica di come cambiare la soglia cambi la
+classificazione si invita ad utilizzare questa app.
+
+\begin{center}
+\underline{\url{https://app.hsancamillo.it/app/sens-spec}}
+\end{center}
+\end{frame}
+
+\begin{frame}{Specificità e cut-off di normalità}
+\phantomsection\label{specificituxe0-e-cut-off-di-normalituxe0}
+È interessante notare come l'utilizzo di un cut-off di normalità (vedi
+slides valutare I deficit cognitivi), può essere immaginata come una
+condizione in cui \textbf{non conosciamo la distribuzione dei punteggi
+di chi ha un deficit/danno}, ma sappiamo che verosimilmente saranno più
+a sinistra (o in generale, peggiori) di quelli che non hanno un
+deficit/danno
+
+Non sapendo dove mettere la soglia, la mettiamo nel punto che delimita
+5\% di campione/popolazione per i sani.
+\end{frame}
+
+\begin{frame}{Receiver Operating Characteristic (ROC) Curve 1/2}
+\phantomsection\label{receiver-operating-characteristic-roc-curve-12}
+\small
+
+I possibili risultati di sensibilità e specificità al cambiare di
+diverse ipotetiche soglie sono indagati (e rappresentati graficamente)
+tramite la cosiddetta \textbf{curva ROC}.
+
+Nella curva ROC, nell'asse y è in genere riportata la
+\emph{Sensibilità}, mentre nell'asse x è riportato \emph{1 -
+Specificità} .
+
+Ogni punto della curva ROC rappresenta la combinazione di Sensibilità e
+Specificità data la scelta di una specifica soglia.
+
+Una ROC curve ottimale con queste caratteristiche dovrebbe avvicinarsi
+il più possibile all'angolo in alto a sinistra. Quanto più la curva ROC
+si avvicina alla una diagonale, quanto più si comporta come un ``random
+classifier'', indipendentemente dal valore di soglia, la classificazione
+corrisponde al lanciare una moneta e decidere l'appartenenza ad uno dei
+due gruppi.
+\end{frame}
+
+\begin{frame}{Un esempio di curva ROC 1/2}
+\phantomsection\label{un-esempio-di-curva-roc-12}
+Un esempio di due curve ROC.
+
+\pandocbounded{\includegraphics[keepaspectratio]{Figures/ROC_example.png}}
+\end{frame}
+
+\begin{frame}{Un esempio di curva ROC 2/2}
+\phantomsection\label{un-esempio-di-curva-roc-22}
+\includegraphics[width=0.7\linewidth,height=\textheight,keepaspectratio]{Figures/ROC_example2.png}
+\end{frame}
+
+\begin{frame}{Identificare la soglia ottimale 1/3}
+\phantomsection\label{identificare-la-soglia-ottimale-13}
+La soglia ottimale è spesso definita tramite indici che cercano un
+bilancio tra sensibilità e specificità. In genere una soglia ottimale è
+il punto più in alto a sinistra e cioè con più alta sensibilità e
+specificità, oppure il valore in cui la somma di sensibilità e
+specificità è massimo. Questo è chiamato il \textbf{Youden's index} o
+Youden's J statistics, calcolato come: \center
+
+J = Sensibilità + Specificità - 1
+\end{frame}
+
+\begin{frame}{Identificare la soglia ottimale 2/3}
+\phantomsection\label{identificare-la-soglia-ottimale-23}
+Ci sono casi (non rari) in cui le soglie ottimali potrebbero essere due.
+
+Es.
+
+\begin{itemize}
+\tightlist
+\item
+  Una soglia con 0.92 sensibilità e 0.93 specificità
+\item
+  Una soglia con 0.93 sensibilità e 0.92 specificità.
+\end{itemize}
+
+In tal caso ad esempio il Youden's index (J) sarebbe identico
+(ricordiamo J = Sensibilità + Specificità -1). In questi casi la soglia
+migliore viene scelta rispetto alle necessità del test (privilegiando
+sensibilità o specificità).
+\end{frame}
+
+\begin{frame}{Identificare la soglia ottimale 3/3}
+\phantomsection\label{identificare-la-soglia-ottimale-33}
+Nota che in generale, la soglia ottimale potrebbe non essere scelta su
+base statistica, ma sulla base del rischio di una classificazione
+sbagliata.
+
+Ad esempio per un test rapido per la demenza a cui si intende fare
+sempre seguire una valutazione più estesa, potrebbe essere utile
+massimizzare la sensibilità, a scapito della specificità. Farò più
+errori classificando come possibili pazienti con demenza persone che non
+lo sono, ma potrebbe essere uno scenario preferibile all'opposto
+(classificare erroneamente un paziente con rischio demenza come un
+sano).
+\end{frame}
+
+\begin{frame}{Sovraposizione delle distribuzioni dei dati dei due
+gruppi}
+\phantomsection\label{sovraposizione-delle-distribuzioni-dei-dati-dei-due-gruppi}
+È da notare che quanto più le distribuzioni di dati saranno separate,
+tanto migliore saranno sensibilità e specificità del mio test.
+
+In sostanza, sarà possibile calcolare una soglia che mi discrimina bene
+(\textbf{cut-off di discriminazione})
+
+Se invece le distribuzioni dei due gruppi sono troppo sovrapposte è
+possibile che sia impossibile trovare Sensibilità e Specificità
+soddisfacenti, indipendentemente dalla soglia selezionata.
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.15]{Figures/non_overlap.png}
+\caption*{\tiny distribuzioni non sovrapposte}
+\end{figure}
+
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.15]{Figures/overlap.png}
+\caption*{\tiny distribuzioni sovrapposte}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Una nota importante}
+\phantomsection\label{una-nota-importante}
+È da notare anche che a differenza dei test che si basano su cut-off di
+normalità, per I test che mirano ad avere un cut-off di discriminazione
+\textbf{potrebbe non esistere una soglia adeguata alla discriminazione}.
+
+Questo problema non c'è per I test con cut-off di normalità perché lì
+potremo sempre delimitare il 5\% delle prestazione peggiori (la verità è
+che non sappiamo dove si trova la distribuzione con deficit o danno,
+anzi abbiamo definito come soglia del danno, proprio quella del 5\%
+delle prestazioni peggiori).
+\end{frame}
+
+\begin{frame}{\small Sensibilità/Specificità sono proprietà del test,
+non della valutazione 1/3}
+\phantomsection\label{sensibilituxe0specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-13}
+Come per altre proprietà studiate finora, è importante notare che
+Sensibilità e Specificità sono caratteristiche dei test (date specifiche
+condizioni) e non della proprietà della specifica valutazione. Quella
+infatti dipenda dalle realtà (che non è datto possiamo conoscere) della
+situazione.
+\end{frame}
+
+\begin{frame}{\small Sensibilità/Specificità sono proprietà del test,
+non della valutazione 2/3}
+\phantomsection\label{sensibilituxe0specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-23}
+Spesso parlare di probabilità può portare a confusione, specie quando
+(almeno in teoria), potremmo sapere quale è la verità.Potrebbe avere
+senso se si parlasse del futuro (es. probabilità di sviluppare
+l'alzheimer entro 5 anni), ma spesso la realtà c'è già (solo che non
+sappiamo quale è).
+
+Es. Non sappiamo se la persona sta sviluppando l'Alzheimer, ma è
+possibile immaginare che cìè una risposta corretta: o ce l'ha o non ce
+l'ha.
+
+\begin{block}{\small Sensibilità/Specificità sono proprietà del test,
+non della valutazione 3/3}
+\phantomsection\label{sensibilituxe0specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-33}
+Strettamente parlando, non avrebbe senso dire questo individuo 90\% di
+Probabilità di avere Alzheimer (se avessimo la possibilità di conoscere
+la verità: o ce l'ha o non ce l'ha). Occorre sempre trattare
+correttamente le probabilità restituite dai test. Il test mi dice il
+90\% di persone con Alzheimer hanno questa prestazione. L'esempio è più
+semplice se si usano condizioni di interesse come ``presenza di tumore''
+(o c'è oppure no e si può capire con esame istologico, che è la nostra
+``verità'').
+\end{block}
+\end{frame}
+
+\begin{frame}{Condizioni di interesse e validità}
+\phantomsection\label{condizioni-di-interesse-e-validituxe0}
+È da notare che nei test in cui è possibile valutare
+sensibilità/specificità (cioè c'è un gold-standard), l'interesse è in
+genere sulla \textbf{validità di criterio} (vedi anche slides su
+validità).
+
+In questo caso, spesso il concetto di validità di costrutto può essere
+rilevante. L'importante è infatti non tanto cosa si sta misurando, ma
+l'efficacia che risulta nella classificazione data da quei numeri.
+
+Questa però è una riflessione delicata, perché un test poco valido è
+anche più suscettibile a problemi (Es. influenza di costrutti non di
+interesse nel punteggio finale)
+\end{frame}
+
+\begin{frame}{Limiti Sensibilità e Specificità 1/3}
+\phantomsection\label{limiti-sensibilituxe0-e-specificituxe0-13}
+Sensibilità e Specificità ci aiutano a stimare delle cose importanti:
+
+\begin{itemize}
+\small
+\item \emph{Assumendo che l'individuo sia veramente positivo}, quale è la probabilità di essere sotto soglia al test? (Sensibilità)
+\item \emph{Assumendo che l'individuo sia veramente negativo}, quale è la probabilità di essere sopra soglia al test? (Specificità) 
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Limiti Sensibilità e Specificità 2/3}
+\phantomsection\label{limiti-sensibilituxe0-e-specificituxe0-23}
+Le informazioni di Sensibilità e Specificità sono utili, ma hanno limiti
+analoghi a quelli che avevamo per I cut-off di normalità, Ci costringono
+ad un ragionamento ``al contrario'', assumendo cosa siamo e vedere se
+siamo sotto soglia.
+
+\textbf{P(test sotto cut-off \textbar{} Patologico)}
+
+\textbf{P(test sopra cut-off \textbar{} Sano)}
+\end{frame}
+
+\begin{frame}{Limiti Sensibilità e Specificità 3/3}
+\phantomsection\label{limiti-sensibilituxe0-e-specificituxe0-33}
+Idealmente sarebbe meglio avere una situazione al contrario:
+
+\vfill
+
+\textbf{P(Patologico \textbar{} test sotto-cut-off)}
+
+\vfill
+\small
+
+\emph{Questa però è molto più difficile da calcolare (vedi slide successive)}
+\end{frame}
+
+\begin{frame}{Positive e Negative Predictive Value}
+\phantomsection\label{positive-e-negative-predictive-value}
+Altre due misure molto rilevanti che si possono ottenere dalla matrice
+di confusione sono: \textbf{Positive Predictive Value} e
+\textbf{Negative Predictive Value} (vedi anche
+\href{https://epidemiology.sruc.ac.uk/shiny/apps/predictive_values/}{\underline{qui}})
+\vfill
+
+\textbf{Positive Predictive Value (PPV)} = TP / (TP + FP)
+
+\textbf{Negative Predictive Value (NPV)} = TN / (TN + FN) \pause
+\emph{Riflessione: su che campioni sono ottenuti PPV ed NPV?}
+\end{frame}
+
+\begin{frame}{Positive Predictive Value}
+\phantomsection\label{positive-predictive-value}
+Il \textbf{PPV} indica la proporzione di persone realmente positive (al
+gold-standard), tra tutte quelle che risultano positive al test.
+
+\emph{Es. il numero di reali persone con Alzheimer (secondo
+gold-standard), che risutano positive al test, cioè che vengono
+classificate come Alzheimer nel test che dovrebbe distinguere Alzheimer
+da Sani,}
+\end{frame}
+
+\begin{frame}{Negative Predictive Value}
+\phantomsection\label{negative-predictive-value}
+Il \textbf{NPV} indica invece le proporzione di persone realmente
+negative (al gold-standard), tra tutte quelle che risultano negative al
+test.
+
+\emph{Es. il numero di reali persone Sane (secondo gold-standard), che
+risutano negative al test, cioè che vengono classificate come Sane nel
+test che dovrebbe distinguere Alzheimer da Sani,}
+\end{frame}
+
+\begin{frame}{Nota su intepretazione PPV e NPV}
+\phantomsection\label{nota-su-intepretazione-ppv-e-npv}
+Come per Sensibilità e Specificità, PPV e NPV sono concetti che si
+riferiscono al test e che si riferiscono ad una specifica soglia (cioè
+ad uno specifico cut-off).
+
+Cambiando la soglia o altri paremetri cambieranno anche PPV e NPV.
+
+Prova a vedere l'app disegnata e cambiare anche le numerosità dei gruppi
+(patologici/sani) e vedi come cambia Sensibilità/Specificità e come
+cambia PPV e NPV.
+
+\begin{center}
+\underline{\url{https://app.hsancamillo.it/app/sens-spec}}
+\end{center}
+\end{frame}
+
+\begin{frame}{PPV e NPV - approfondimento}
+\phantomsection\label{ppv-e-npv---approfondimento}
+Le formule di PPV e PPN possono (tramite semplice algebra rispetto a
+formule precedente, riscritte nella seguente maniera
+
+\textbf{Positive Predictive Value} = Sensibilità x prevalenza /
+(Sensibilità x Prevalenza) + (1-Specificità) x (1- Prevalenza)
+
+\textbf{Negative Predictive Value} = Specificità x (1 - Prevalenza) /
+Specificità x (1 -- Prevalenza) + (1 - Sensibilità) x Prevalenza
+
+\emph{dove}
+
+\textbf{Prevalenza (o base rate)} = Veri Positivi / Popolazione Totale =
+
+(TP + FN) / (TP + FP + TN + FN)
+\end{frame}
+
+\begin{frame}{Altre misure}
+\phantomsection\label{altre-misure}
+Esistono anche misure che potreste trovare e che sono a volte rilevanti.
+
+\textbf{Accuratezza}: (TN + TP) / (TN+TP+FN+FP)
+
+\textbf{Precision}: TP / (TP+FP)
+
+La precision è spesso considerata particolarmente utile quando Positivi
+e Negativi sono sbilanciati nella popolazione (vedi anche
+\href{https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432}{\underline{questo articolo}})
+\end{frame}
+
+\begin{frame}{Alcune app utili}
+\phantomsection\label{alcune-app-utili}
+Potete anche usare queste app per approfondire con altre visualizzazioni
+di questi concetti.
+
+\color{blue}
+
+\url{https://epidemiology.sruc.ac.uk/shiny/apps/predictive_values/}
+
+\url{https://neurotroph.shinyapps.io/Sensitivity-Specificity/}
+
+\url{https://micncltools.shinyapps.io/TestAccuracy/}
+
+\url{https://micncltools.shinyapps.io/TestAccuracy/}
+\end{frame}
+
+\begin{frame}{Esperimento mentale 1/2}
+\phantomsection\label{esperimento-mentale-12}
+\emph{AT è un professionista di 60 anni che coordina uno studio di
+commercialisti. Da circa un anno I colleghi si lamentano di alcuni
+errori a lavoro. AT si dimentica a volta di appuntamenti importanti o di
+clienti. Il CdA cerca di togliergli il suo ruolo sostenendo di non avere
+le capacità cognitive per potere ricoprire questo ruolo, ma AT non vuole
+cederlo. In questa disputa il CdA richiede una valutazione cognitiva in
+cui. Il primo consulente di parte somministra il MoCA.}
+
+\emph{Supponiamo che un cut-off di 18 al Moca ha 95\% di Sensibilità e
+92\% Specificità per identificare Alzheimer da Controlli.}
+
+\pause
+
+\emph{AT ottiene 16.}
+
+\emph{Cosa concludereste?}
+\end{frame}
+
+\begin{frame}{Esperimento mentale 2/2}
+\phantomsection\label{esperimento-mentale-22}
+\emph{Siete consulenti di parte per AT, un professionista di 55 anni che
+coordina uno studio di commercialisti. In seguito ad un incidente
+stradale con trauma cranico, la sua capacità di concentrarsi si riduce
+drammatiamente e non è più in grado di seguire lo studio. Dopo circa due
+mesi dall'incidente l'assicurazione manda un perito che somministra il
+MoCA.}
+
+\emph{Supponiamo che un cut-off di 18 al Moca ha 95\% di Sensibilità e
+92\% Specificità per identificare Alzheimer da Controlli.}
+
+\pause
+
+\emph{AT ottiene 16.}
+
+\emph{Cosa concludereste?} \pause \emph{Che probabilmente ha
+l'Alzheimer?}
+\end{frame}
+
+\begin{frame}{Riflessioni su questo esperimento mentale}
+\phantomsection\label{riflessioni-su-questo-esperimento-mentale}
+L'esempio di prima mostra come sensibilità e specificità non considerino
+alcuni aspetti di base, che sono relativi alla probabilità, in partenza,
+che l'individuo avesse l'alzheimer.
+
+Non è possibile calcolare questa probabilità per un caso specifico (e
+avrebbe anche poco senso), ma è possibile calcolarla per un certo
+contesto.
+
+In tali casi tutte le valutazione condotte in un certo contesto
+potrebbero essere caratterizzate da una diversa prevalenza, con
+implicazioni sull'intepretazione della valutazione.
+\end{frame}
+
+\begin{frame}{Riflessioni su questo esperimento mentale}
+\phantomsection\label{riflessioni-su-questo-esperimento-mentale-1}
+La probabilità di avere Alzheimer di persone che sono visitate in un
+Centro per i Disturbi Cognitivi e le Demenze (CDCD) è diversa dalla
+probabilità di avere l'Alzheimer in un contesto che valuta disturbi
+cognitivi in seguito ad un incidente stradale a fini assicurativi.
+
+La probabilità di simulazione in un contesto di valutare a fini
+assicurativi, è diverso della probabilità di simulazione in un contesto
+di valutazione in un centro Valutazione Alzheimer, perchè
+verosimilmente, cambia la prevalenza della patologia \emph{degli
+individui testati}.
+\end{frame}
+
+\begin{frame}{Esempio Covid}
+\phantomsection\label{esempio-covid}
+Esempio COVID
+
+\begin{itemize}
+\tightlist
+\item
+  tamponi routinari in struttura non a rischio speciale (es. Ospedale di
+  riabilitazione)
+\item
+  tamponi in farmacia \pause Anche con test con altissima sensibilità e
+  specificità in caso di test massivi c'è un certo rischio di veri
+  positivi (con conseguenti problemi), che varia a seconda del contesto.
+\end{itemize}
+
+È probabilmente più facile che un tampone sia un falso positivo in
+ospedale rispetto che in farmacia. Questo perché in ospedale ci sono
+numerosi test fatti senza un quesito diagnostico, mentre chi arriva a
+fare valutazione in farmacia verosimilmente ha sintomi o ha avuto
+contatto con persone positive al COVID.
+\end{frame}
+
+\begin{frame}{Considerazioni su Sensibilità e Specificità}
+\phantomsection\label{considerazioni-su-sensibilituxe0-e-specificituxe0}
+Ricordate che Sensibilità e Specificità esprimono stime di probabilità
+ma ben specifiche:
+
+\begin{itemize}
+\small
+\item \emph{Assumendo che l'individuo sia veramente positivo}, quale è la probabilità di essere sotto soglia al test? (Sensibilità)
+\item \emph{Assumendo che l'individuo sia veramente negativo}, quale è la probabilità di essere sopra soglia al test? (Specificità) 
+\end{itemize}
+
+Ragionare tramite formule e non tramite intuito ci aiuta a comprendere
+meglio questi aspetti.
+\end{frame}
+
+\begin{frame}{Importanza PPV e NPV in contesto forense}
+\phantomsection\label{importanza-ppv-e-npv-in-contesto-forense}
+In ambito forense molti test \emph{per identificare simulatori}
+riportano I valori di PPV per diversi valori di prevalenza.
+
+Questo permette di esplorare vari scenari (realistici) e vedere come si
+classifica il nostro paziente.
+
+Questo approccio è sensato, ma assume che i valori di prevalenza
+esplorati siano adeguati. Potrebbe però dare informazioni importanti:
+es. Che qualsiasi sia il valore di prevalenza esplorato non ci sono
+grosse differenze rispetto alle conclusioni da trarre (es. che il
+paziente è verosimilmente un simulatore).
+\end{frame}
+
+\begin{frame}{PPV in contesto forense}
+\phantomsection\label{ppv-in-contesto-forense}
+\href{Figures/Sim_sens.png}{}
+
+\begin{columns}
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.35]{Figures/Sim_sens.png}
+\end{figure}
+
+
+\column{0.5\textwidth}
+\begin{figure}
+\includegraphics[scale=0.35]{Figures/Sim_sens_PPV.png}
+\end{figure}
+\end{columns}
+
+Esempio da Mathias et al., 2002 , \emph{Assessment}
+
+Notare come un cut-off di 5 per una serie di scenari di prevalence (base
+rate) realistici su base di letteratura ha un PPV di 1. questo significa
+che persone che sono positive al test sono verosimilmente positive.
+\end{frame}
+
+\begin{frame}{Da non dimenticare}
+\phantomsection\label{da-non-dimenticare}
+È importante notare che queste considerazioni (così come per Sensibilità
+e Specificità) si applicano al gruppo e al test, ma mai alla specifica
+misurazione
+
+Sono probabilità riferite al test (Sensibilità e Specificità) o al test
+in combinazione al contesto (PPV e PPN).
+
+Infatti per una specifica misurazione, a meno che non si voglia indagare
+qualcosa che avverrà nel futuro (es. probabilità di sviluppare entro 1
+anno l'Alzheimer) , per una specifica persona c'è una verità (es. per
+l'Alzheimer quella persona o ce l'ha, o non ce l'ha).
+
+Le probabilità sono nel test di essere corretto quando sviluppato e
+immaginando un suo utilizzo ripetuto, ma \textbf{non} nel darci
+un'informazione corretta nella specifa misurazione.
+\end{frame}
+
+\begin{frame}{Sensibilità, Specificità e probabilità}
+\phantomsection\label{sensibilituxe0-specificituxe0-e-probabilituxe0}
+Se volessimo esprimenre le soglie associate a specifiche sensibilità e
+specificità in termini di probabilità (come fatto per il cut-off di
+normalità). Potremmo usare una denotazione come quella che segue.
+
+\(\text{Sensibilità}: P(o < y | C)\)
+
+\(\text{Specificità}: P(o \geq  y | NC)\)
+
+Dove \(y\) è il cut-off di discriminazione, \(o\) è il punteggio
+osservato. \(C\) è l'appartenenza al gruppo di persone con Condizione di
+interesse (es. patologia) e \(H\) appartenza al gruppo di persone senza
+condizione di interesse (es. sani)..
+\end{frame}
+
+\begin{frame}{Un rischio di interpretazione}
+\phantomsection\label{un-rischio-di-interpretazione}
+I PPV e NPV (si vedano anche simulazioni del codice allegato), mostrano
+come l'intuizione su queste probabilità possano portare a degli errori.
+In particolare potrebbe essere spontaneo cercare di interpretare come se
+esse ci indichino questo:
+
+\(P(C | o < y)\)
+
+NOTA: la formula è diversa da quella usata per definire la Sensibilità!
+Vedi slide precedente)
+
+Nelle prossime slides vedremo quale è il problema nell'ottenere questa
+probabilità.
+\end{frame}
+
+\begin{frame}{Il teorema di Bayes}
+\phantomsection\label{il-teorema-di-bayes}
+Il teorema di Bayes è un teorema molto importante che mette in relazione
+diverse probabilità. È importante perchè esprime in maniera chiara la
+relazione tra probabilità che (intuitivamente) potrebbero essere confuse
+per identiche.
+\end{frame}
+
+\begin{frame}{Formula del teorema di Bayes}
+\phantomsection\label{formula-del-teorema-di-bayes}
+\center
+$\textbf P(A | B) = \frac{P(B | A)\,P(A)}{P(B)}$
+\vfill
+o, per un esempio pratico
+\vfill
+\scriptsize
+$P(\text{patologia} | \text{punteggio sotto cut-off}) = \frac{P(\text{punteggio sotto cut-off} | \text{patologia})\,P(\text{patologia})}{P(\text{punteggio sotto cut-off})}$
+\end{frame}
+
+\begin{frame}{Probabilità condizionali e teorema di Bayes}
+\phantomsection\label{probabilituxe0-condizionali-e-teorema-di-bayes}
+Il teorema di Bayes è un teorema molto importante che mette in relazione
+diverse probabilità. È importante perchè esprime in maniera chiara la
+relazione tra probabilità che (intuitivamente) potrebbero essere confuse
+per identiche.
+
+\vfill
+\center
+${\color{red} P(A|B)}\neq {\color{blue} P(B|A)}$\\
+\vspace{1em}
+oppure \\
+\scriptsize
+\vspace{1em}
+{\color{red}P(Patologia | punteggio sotto cut-off)} $\neq$ {\color{blue}P(punteggio sotto cut-off | Patologia)}\\
+\vspace{1em}
+Ci sarebbe utile la probabilità in rosso, ma abbiamo quella in blu.
+\end{frame}
+
+\begin{frame}{Considerazioni su Teorema di Bayes}
+\phantomsection\label{considerazioni-su-teorema-di-bayes}
+\small
+
+Al di là dell'aspetto matematico, il teorema di Bayes ci dice in
+sostanza una cosa: Per calcolare le probabilità che a noi veramente
+interessa dovremmo conoscere altre Probabilità che di fatto non potremo
+sapere mai (cioè Probabilità a Priori, che è anche associata a
+Prevalenza, se si far riferimento ai concetti di PPV e PPN).
+
+Per questa ragione I test ci danno informazioni ``indicative'' sulle
+probabilità di avere una malattia o presenza di una condizione di
+interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi,
+anche ignorando il risultato di un test, se ci sono elementi che
+suggeriscono che probabilità a priori (o base rate) possano alterare I
+valori. Questo verrà approfondito nella sezione sull'
+\emph{interpretazione}.
+\end{frame}
+
+\begin{frame}{Variabili demografiche e condizioni di interesse.}
+\phantomsection\label{variabili-demografiche-e-condizioni-di-interesse.}
+Anche per test che usano condizioni di interesse, idealmente vorremmo
+che il gruppo di sani e di pazienti sia composto da persone il più
+simili possibili all'individuo che vogliamo valutare, perchè solo in
+quella maniera il punteggio atteso (sia nello scenario che abbia la
+condizione di interesse, sia nel caso non l'abbia) sia possibile.
+
+Esistono anche metodi che permettono di calcolare curve ROC includendo
+covariate (cioè altre variabili che possono influenzare la soglia e
+quindi Sensibilità e Specificità. Questo è una cosa del tutto analaoga
+ai metodi di regressione per calcolare I cut-off di normalità. Questi
+metodi però non sono state praticamente mai usate in neuropsicologia
+clinica e forense e non saranno approfonditi.
+\end{frame}
+
+\begin{frame}{Cut-off di normalità da campione di dati normativi}
+\phantomsection\label{cut-off-di-normalituxe0-da-campione-di-dati-normativi}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Figures/recap_normality_cut_off.png}
+\end{figure}
+\center
+\small
+\emph{Nota che il cut-off di normalità è definito solo dalla performance dei sani.}
+\end{frame}
+
+\begin{frame}{Cut-off di discriminazione}
+\phantomsection\label{cut-off-di-discriminazione-1}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Figures/recap_discrimination_cut_off.png}
+\end{figure}
+\center
+\scriptsize
+\emph{Nota che quando si determinano i cut-off di discriminazione è chi raccoglie i dati che determina la numerosità dei due campioni. (Rivedere Sensibilità e Specificità)}
+\end{frame}
+
+\begin{frame}{Una nuova valutazione}
+\phantomsection\label{una-nuova-valutazione}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Figures/recap_cut_off_individual.png}
+\end{figure}
+\center
+\scriptsize
+\emph{Nel caso di una nuova valutazione, lo scopo è capire quale è la classificazione verosimile di questo paziente, per cui \textbf{non sappiamo} se è sano patologico (o con condizione di interesse)}
+\end{frame}
+
+\begin{frame}{Importanza di prevalenza 1/2}
+\phantomsection\label{importanza-di-prevalenza-12}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Figures/recap_PPV_1.png}
+\end{figure}
+\center
+\scriptsize
+\emph{In questo caso, la maggior parte dei patologici va sotto cut.-off, ma siccome globalmente patologici sono pochi. Immaginando di pescare a caso una persona tra quelle sotto cut-off, rimane più probabile essere un sano (e un falso positivo)}
+\end{frame}
+
+\begin{frame}{Importanza di prevalenza 2/2}
+\phantomsection\label{importanza-di-prevalenza-22}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Figures/recap_PPV_2.png}
+\end{figure}
+\center
+\scriptsize
+\emph{Anche in questo caso la maggior parte va sotto cut-off, ma immaginando di “pescare” a caso tra quelli sotto cut-off, è più probabile in questo caso che sia un patologico. Non è cambiata la percentuale di patologici sotto cut-.off, ma è cambiata globalmente la proporzione di patologici rispetto ai sani nella popolazione.
+Questa differenza, spiegata nelle ultime due slide è catturata dai concetti di PPV, NPV, e dal Teorema di Bayes.}
+\end{frame}
+
+\begin{frame}{Un' ulteriore complicazione}
+\phantomsection\label{un-ulteriore-complicazione}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Figures/recap_cut_off_individual.png}
+\end{figure}
+\center
+\scriptsize
+\emph{Ulteriori informazioni contestuali potrebbero cambiare l’ipotetica “popolazione” in cui è pescato. Es. È una persona con sospetta demenza? È una persona che ha avuto un trauma cranico. É la terza volta che l apersona viene valutata? I dati di prevalenza, assumono che peschiamo in maniera random dalla popolazione generale, ma questo non avviene realmente.}
+\end{frame}
+
+\begin{frame}{Considerazioni conclusive 1/2}
+\phantomsection\label{considerazioni-conclusive-12}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+\small
+
+In quanto riportato sull'identificazione di condizioni di interesse
+valgono molte delle considerazioni già fatte nel contesto di
+deficit/danno.
+
+Anche per Sensibilità, Specificità PPV, etc. vale il fatto che sono
+tanto più precise quanto più alta è la numerosità campionaria (perchè
+più rappresentativa della popolazione).
+
+I mio cut-off di discriminazione potrebbe essere diverso da quello della
+popolazione (che è quello che mi interessa), e tanto più grande è il mio
+campione tanto più sicuro sono che il mio cut-off sarà simile a quello
+della popolazione.
+
+Per questa ragione è sempre meglio ``interpretare'' questi valori
+integrando anche con altre informazioni.
+\end{frame}
+
+\begin{frame}{Considerazioni conclusive 2/2}
+\phantomsection\label{considerazioni-conclusive-22}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+\small
+
+È da considerare che spesso nel caso di test con condizione di interesse
+non sono disponibili cut-off che tengono conto di variabili (es. Età,
+scolarità, sesso, etc.) perchè I metodi più comunemente usati per le
+analisi ROC non le considerano.
+
+Per tali ragione valgono tutta una serie di limiti legati alla
+rappresentatività del campione considerato, che va considerato quando si
+interpretano I risultati.
+
+Ogni altra considerazione rimane pertinente (es. Meglio norme
+paese-specifiche, norme recenti, etc.)
+\end{frame}
+
+
+
+
+\end{document}
