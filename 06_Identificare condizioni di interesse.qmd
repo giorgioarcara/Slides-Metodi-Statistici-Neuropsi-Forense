@@ -285,20 +285,19 @@ Questo problema non c’è per I test con cut-off di normalità perché lì potr
 (la verità è che non sappiamo dove si trova la distribuzione con deficit o danno, anzi abbiamo definito come soglia del danno, proprio quella del 5% delle prestazioni peggiori).
 
 
-## \small Sensibilità/Specificità sono proprietà del test, non della valutazione 1/3
+## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 1/3
 
 Come per altre proprietà studiate finora, è importante notare che Sensibilità e Specificità sono caratteristiche dei test (date specifiche condizioni) e non della proprietà della specifica valutazione. Quella infatti dipenda dalle realtà (che non è datto possiamo conoscere) della situazione.
 
-## \small Sensibilità/Specificità sono proprietà del test, non della valutazione 2/3
+## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 2/3
 
 Spesso parlare di probabilità può portare a confusione, specie quando (almeno in teoria), potremmo sapere quale è la verità.Potrebbe avere senso se si parlasse del futuro (es. probabilità di sviluppare l’alzheimer entro 5 anni), ma spesso la realtà c’è già (solo che non sappiamo quale è). 
 
 Es. Non sappiamo se la persona sta sviluppando l’Alzheimer, ma è possibile immaginare che cìè una risposta corretta: o ce l'ha o non ce l'ha.
 
-### \small Sensibilità/Specificità sono proprietà del test, non della valutazione 3/3
+## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 3/3
 
-
-Strettamente parlando, non avrebbe senso dire questo individuo 90% di Probabilità di avere Alzheimer (se avessimo la possibilità di conoscere la verità: o ce l’ha o non ce l’ha). Occorre sempre trattare correttamente le probabilità restituite dai test. Il test mi dice il 90% di persone con Alzheimer hanno questa prestazione. L’esempio è più semplice se si usano condizioni di interesse come “presenza di tumore” (o c’è oppure no e si può capire con esame istologico, che è la nostra "verità").
+Occorre ricordare che non è corretto dire questo individuo 90% di Probabilità di avere Alzheimer (se avessimo la possibilità di conoscere la verità: o ce l’ha o non ce l’ha). Occorre sempre trattare correttamente le probabilità restituite dai test. Il test mi dice che il 90% di persone con Alzheimer hanno questa prestazione. L’esempio è più semplice se si usano condizioni di interesse come “presenza di tumore” (o c’è oppure no e si può capire con esame istologico, che è la nostra "verità").
 
 ## Condizioni di interesse e validità
 
@@ -325,7 +324,7 @@ Ci costringono ad un ragionamento “al contrario”, assumendo cosa siamo e ved
 
 **P(test sotto cut-off | Patologico)**
 
-**P(test sopra cut-off | Sano)**
+**P(test sopra o uguale al cut-off | Sano)**
 
 ## Limiti Sensibilità e Specificità 3/3
 
@@ -338,6 +337,46 @@ Idealmente sarebbe meglio avere una situazione al contrario:
 \small
 \emph{Questa però è molto più difficile da calcolare (vedi slide successive)}
 
+## Probabilità condizionali e teorema di Bayes
+
+Il teorema di Bayes è un teorema molto importante che mette in relazione diverse probabilità. È importante perchè esprime in maniera chiara la relazione tra probabilità che (intuitivamente) potrebbero essere confuse per identiche.
+
+```{=latex}
+\vfill
+\center
+${\color{red} P(A|B)}\neq {\color{blue} P(B|A)}$\\
+\vspace{1em}
+oppure \\
+\scriptsize
+\vspace{1em}
+{\color{red}P(Patologia | punteggio sotto cut-off)} $\neq$ {\color{blue}P(punteggio sotto cut-off | Patologia)}\\
+\vspace{1em}
+Ci sarebbe utile la probabilità in rosso, ma abbiamo quella in blu.
+```
+
+
+## Formula del teorema di Bayes
+```{=latex}
+\center
+$\textbf P(A | B) = \frac{P(B | A)\,P(A)}{P(B)}$
+\vfill
+o, per un esempio pratico
+\vfill
+\scriptsize
+$P(\text{patologia} | \text{punteggio sotto cut-off}) = \frac{P(\text{punteggio sotto cut-off} | \text{patologia})\,P(\text{patologia})}{P(\text{punteggio sotto cut-off})}$
+```
+
+
+
+## Considerazioni su Teorema di Bayes
+\small
+
+Al di là dell’aspetto matematico, il teorema di Bayes ci dice in sostanza una cosa:
+Per calcolare le probabilità che a noi veramente interessa dovremmo conoscere altre
+Probabilità che di fatto non potremo sapere mai (cioè Probabilità a Priori, che è anche associata a Prevalenza, se si far riferimento ai concetti di PPV e PPN, si vedano prossime slides).
+
+Per questa ragione I test ci danno informazioni “indicative” sulle probabilità di avere una malattia o presenza di una condizione di interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi, anche ignorando il risultato di un test, se ci sono elementi che suggeriscono che probabilità a priori (o base rate) possano alterare I valori. Questo verrà approfondito nella sezione sull' _interpretazione_.
+
 
 ## Positive e Negative Predictive Value
 
@@ -349,6 +388,7 @@ Altre due misure molto rilevanti che si possono ottenere dalla matrice di confus
 
 **Negative Predictive Value (NPV)** = TN / (TN + FN)
 \pause
+
 \emph{Riflessione: su che campioni sono ottenuti PPV ed NPV?}
 
 ## Positive Predictive Value
@@ -362,6 +402,7 @@ Il **NPV** indica invece le proporzione di persone realmente negative (al gold-s
 
 _Es. il numero di reali persone Sane (secondo gold-standard), che risutano negative al test, cioè  che vengono classificate come Sane nel test che dovrebbe distinguere Alzheimer da Sani,_
 
+
 ## Nota su intepretazione PPV e NPV
 
 Come per Sensibilità e Specificità, PPV e NPV sono concetti che si riferiscono al test e che si riferiscono ad una specifica soglia (cioè ad uno specifico cut-off).
@@ -374,11 +415,19 @@ Prova a vedere l'app disegnata e cambiare anche le numerosità dei gruppi (patol
 \underline{\url{https://app.hsancamillo.it/app/sens-spec}}
 \end{center}
 
+## PPV e teorema di Bayes
+![](Figures/triangle.png){fig-align="center" width="15%"}
+
+La PPV è una stima diretta di **P(Patologico | test sotto cut-off)** ed è direttamente legata al teorema di Bayes. 
+
+La PPV ha però senso solo se la proporzione tra sani e patologici (o tra veri negativi e veri positivi) non è controllata direttamente dallo sperimentatore, ma riflette quella reale che si osserva nella popolazione.
+
+
 ## PPV e NPV - approfondimento
 
 Le formule di PPV e PPN possono (tramite semplice algebra rispetto a formule precedente, riscritte nella seguente maniera
 
-**Positive Predictive Value** = Sensibilità x prevalenza / (Sensibilità x Prevalenza) + (1-Specificità)  x (1- Prevalenza) 
+**Positive Predictive Value** = Sensibilità x Prevalenza / (Sensibilità x Prevalenza) + (1-Specificità)  x (1- Prevalenza) 
 
 **Negative Predictive Value** = Specificità x (1 - Prevalenza) / Specificità x (1 – Prevalenza) + (1 - Sensibilità)  x Prevalenza
 
@@ -433,6 +482,9 @@ _AT ottiene 16._
 _Cosa concludereste?_
 \pause
 _Che probabilmente ha l'Alzheimer?_
+\pause
+
+_La probabilità di avere l'Alzheimer è la stessa dell'esempio prima o diversa?_
 
 ## Riflessioni su questo esperimento mentale
 
@@ -522,7 +574,7 @@ $\text{Sensibilità}: P(o < y | C)$
 
 $\text{Specificità}: P(o \geq  y | NC)$
 
-Dove $y$ è il cut-off di discriminazione, $o$ è il punteggio osservato. $C$ è l’appartenenza al gruppo di persone con Condizione di interesse (es. patologia) e $H$ appartenza al gruppo di persone senza condizione di interesse (es. sani)..
+Dove $y$ è il cut-off di discriminazione, $o$ è il punteggio osservato. $C$ è l’appartenenza al gruppo di persone con Condizione di interesse (es. patologia) e $NC$ appartenza al gruppo di persone senza condizione di interesse (es. sani)..
 
 ## Un rischio di interpretazione
 
@@ -530,52 +582,15 @@ I PPV e NPV (si vedano anche simulazioni del codice allegato), mostrano come l�
 
 $P(C | o < y)$
 
+mentre in realtà indicano
+
+$P(o < y | C)$
+
+\pause
+_come "mnemotecnica" per ricordarvi del teorema di Bayes ricordate: la probabilità di essere laureati, se si è psicologici non è la stessa di essere psicologi se si è laureati!_
 
 NOTA: la formula è diversa da quella usata per definire la Sensibilità! Vedi slide precedente)
 
-Nelle prossime slides vedremo quale è il problema nell’ottenere questa probabilità.
-
-## Il teorema di Bayes
-
-Il teorema di Bayes è un teorema molto importante che mette in relazione diverse probabilità. È importante perchè esprime in maniera chiara la relazione tra probabilità che (intuitivamente) potrebbero essere confuse per identiche.
-
-## Formula del teorema di Bayes
-```{=latex}
-\center
-$\textbf P(A | B) = \frac{P(B | A)\,P(A)}{P(B)}$
-\vfill
-o, per un esempio pratico
-\vfill
-\scriptsize
-$P(\text{patologia} | \text{punteggio sotto cut-off}) = \frac{P(\text{punteggio sotto cut-off} | \text{patologia})\,P(\text{patologia})}{P(\text{punteggio sotto cut-off})}$
-```
-
-
-## Probabilità condizionali e teorema di Bayes
-
-Il teorema di Bayes è un teorema molto importante che mette in relazione diverse probabilità. È importante perchè esprime in maniera chiara la relazione tra probabilità che (intuitivamente) potrebbero essere confuse per identiche.
-
-```{=latex}
-\vfill
-\center
-${\color{red} P(A|B)}\neq {\color{blue} P(B|A)}$\\
-\vspace{1em}
-oppure \\
-\scriptsize
-\vspace{1em}
-{\color{red}P(Patologia | punteggio sotto cut-off)} $\neq$ {\color{blue}P(punteggio sotto cut-off | Patologia)}\\
-\vspace{1em}
-Ci sarebbe utile la probabilità in rosso, ma abbiamo quella in blu.
-```
-
-## Considerazioni su Teorema di Bayes
-\small
-
-Al di là dell’aspetto matematico, il teorema di Bayes ci dice in sostanza una cosa:
-Per calcolare le probabilità che a noi veramente interessa dovremmo conoscere altre
-Probabilità che di fatto non potremo sapere mai (cioè Probabilità a Priori, che è anche associata a Prevalenza, se si far riferimento ai concetti di PPV e PPN).
-
-Per questa ragione I test ci danno informazioni “indicative” sulle probabilità di avere una malattia o presenza di una condizione di interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi, anche ignorando il risultato di un test, se ci sono elementi che suggeriscono che probabilità a priori (o base rate) possano alterare I valori. Questo verrà approfondito nella sezione sull' _interpretazione_.
 
 ## Variabili demografiche e condizioni di interesse.
 

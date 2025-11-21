@@ -216,13 +216,14 @@ $\text{Specificità}: P(o \geq  y | NS)$
 
 dove $S$ indica l'essere un simulatore secondo gold standard, mentre $NS$ indica l'essere un non simulatore secondo gold-standard.
 
-## come definire un "simulatore"? 1/2
+## come definire un "simulatore"? 1/3
 \small
 1. si creano gruppi per condizione di interesse chiedendo a persone sane di simulare (anche dando incentivo economico in caso di successo per aumentare realismo) e sono confrontati con altri sani o con pazienti che è inverosimile che simulino.
-\pause
+
+## come definire un "simulatore"? 2/3
 2. si identifica presenza condizione di interesse (simulatori vs non simulatori)  sulla base di applicazione di altri strumenti di PVT (anche combinazione di più strumenti). In tal caso il risultato agli altri strumenti di PVT diventa il gold-standard.
 
-## come definire un "simulatore"? 2/2
+## come definire un "simulatore"? 3/3
 \small
 3. si usano gruppi in cui è estremamente verosimile che ci sia simulazione probable malingering cioè gruppi patologici per cui c’è già forte sospetto di simulazione rispetto ad altri in cui questo non c’è. Un classico esempio è confrontare pazienti che stanno facendo riabilitazione (bassa probabilità di essere simulatori) con pazienti che hanno chiesto valutazione per riscuotere assicurazione e che hanno deficit cognitivi lamentatai molto gravi rispetto a funzionamento quotidiano apparentemente alto (altra probabilità di essere simulatori).
 In tal caso, l’appartenza a un gruppo rispetto a questi criteri è il gold standard.

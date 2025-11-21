@@ -550,9 +550,9 @@ anzi abbiamo definito come soglia del danno, proprio quella del 5\%
 delle prestazioni peggiori).
 \end{frame}
 
-\begin{frame}{\small Sensibilità/Specificità sono proprietà del test,
+\begin{frame}{\small Sensibilità e Specificità sono proprietà del test,
 non della valutazione 1/3}
-\phantomsection\label{sensibilituxe0specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-13}
+\phantomsection\label{sensibilituxe0-e-specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-13}
 Come per altre proprietà studiate finora, è importante notare che
 Sensibilità e Specificità sono caratteristiche dei test (date specifiche
 condizioni) e non della proprietà della specifica valutazione. Quella
@@ -560,9 +560,9 @@ infatti dipenda dalle realtà (che non è datto possiamo conoscere) della
 situazione.
 \end{frame}
 
-\begin{frame}{\small Sensibilità/Specificità sono proprietà del test,
+\begin{frame}{\small Sensibilità e Specificità sono proprietà del test,
 non della valutazione 2/3}
-\phantomsection\label{sensibilituxe0specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-23}
+\phantomsection\label{sensibilituxe0-e-specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-23}
 Spesso parlare di probabilità può portare a confusione, specie quando
 (almeno in teoria), potremmo sapere quale è la verità.Potrebbe avere
 senso se si parlasse del futuro (es. probabilità di sviluppare
@@ -572,19 +572,19 @@ sappiamo quale è).
 Es. Non sappiamo se la persona sta sviluppando l'Alzheimer, ma è
 possibile immaginare che cìè una risposta corretta: o ce l'ha o non ce
 l'ha.
+\end{frame}
 
-\begin{block}{\small Sensibilità/Specificità sono proprietà del test,
+\begin{frame}{\small Sensibilità e Specificità sono proprietà del test,
 non della valutazione 3/3}
-\phantomsection\label{sensibilituxe0specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-33}
-Strettamente parlando, non avrebbe senso dire questo individuo 90\% di
+\phantomsection\label{sensibilituxe0-e-specificituxe0-sono-proprietuxe0-del-test-non-della-valutazione-33}
+Occorre ricordare che non è corretto dire questo individuo 90\% di
 Probabilità di avere Alzheimer (se avessimo la possibilità di conoscere
 la verità: o ce l'ha o non ce l'ha). Occorre sempre trattare
-correttamente le probabilità restituite dai test. Il test mi dice il
+correttamente le probabilità restituite dai test. Il test mi dice che il
 90\% di persone con Alzheimer hanno questa prestazione. L'esempio è più
 semplice se si usano condizioni di interesse come ``presenza di tumore''
 (o c'è oppure no e si può capire con esame istologico, che è la nostra
 ``verità'').
-\end{block}
 \end{frame}
 
 \begin{frame}{Condizioni di interesse e validità}
@@ -623,7 +623,7 @@ siamo sotto soglia.
 
 \textbf{P(test sotto cut-off \textbar{} Patologico)}
 
-\textbf{P(test sopra cut-off \textbar{} Sano)}
+\textbf{P(test sopra o uguale al cut-off \textbar{} Sano)}
 \end{frame}
 
 \begin{frame}{Limiti Sensibilità e Specificità 3/3}
@@ -640,6 +640,56 @@ Idealmente sarebbe meglio avere una situazione al contrario:
 \emph{Questa però è molto più difficile da calcolare (vedi slide successive)}
 \end{frame}
 
+\begin{frame}{Probabilità condizionali e teorema di Bayes}
+\phantomsection\label{probabilituxe0-condizionali-e-teorema-di-bayes}
+Il teorema di Bayes è un teorema molto importante che mette in relazione
+diverse probabilità. È importante perchè esprime in maniera chiara la
+relazione tra probabilità che (intuitivamente) potrebbero essere confuse
+per identiche.
+
+\vfill
+\center
+${\color{red} P(A|B)}\neq {\color{blue} P(B|A)}$\\
+\vspace{1em}
+oppure \\
+\scriptsize
+\vspace{1em}
+{\color{red}P(Patologia | punteggio sotto cut-off)} $\neq$ {\color{blue}P(punteggio sotto cut-off | Patologia)}\\
+\vspace{1em}
+Ci sarebbe utile la probabilità in rosso, ma abbiamo quella in blu.
+\end{frame}
+
+\begin{frame}{Formula del teorema di Bayes}
+\phantomsection\label{formula-del-teorema-di-bayes}
+\center
+$\textbf P(A | B) = \frac{P(B | A)\,P(A)}{P(B)}$
+\vfill
+o, per un esempio pratico
+\vfill
+\scriptsize
+$P(\text{patologia} | \text{punteggio sotto cut-off}) = \frac{P(\text{punteggio sotto cut-off} | \text{patologia})\,P(\text{patologia})}{P(\text{punteggio sotto cut-off})}$
+\end{frame}
+
+\begin{frame}{Considerazioni su Teorema di Bayes}
+\phantomsection\label{considerazioni-su-teorema-di-bayes}
+\small
+
+Al di là dell'aspetto matematico, il teorema di Bayes ci dice in
+sostanza una cosa: Per calcolare le probabilità che a noi veramente
+interessa dovremmo conoscere altre Probabilità che di fatto non potremo
+sapere mai (cioè Probabilità a Priori, che è anche associata a
+Prevalenza, se si far riferimento ai concetti di PPV e PPN, si vedano
+prossime slides).
+
+Per questa ragione I test ci danno informazioni ``indicative'' sulle
+probabilità di avere una malattia o presenza di una condizione di
+interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi,
+anche ignorando il risultato di un test, se ci sono elementi che
+suggeriscono che probabilità a priori (o base rate) possano alterare I
+valori. Questo verrà approfondito nella sezione sull'
+\emph{interpretazione}.
+\end{frame}
+
 \begin{frame}{Positive e Negative Predictive Value}
 \phantomsection\label{positive-e-negative-predictive-value}
 Altre due misure molto rilevanti che si possono ottenere dalla matrice
@@ -651,6 +701,7 @@ di confusione sono: \textbf{Positive Predictive Value} e
 \textbf{Positive Predictive Value (PPV)} = TP / (TP + FP)
 
 \textbf{Negative Predictive Value (NPV)} = TN / (TN + FN) \pause
+
 \emph{Riflessione: su che campioni sono ottenuti PPV ed NPV?}
 \end{frame}
 
@@ -693,12 +744,27 @@ cambia PPV e NPV.
 \end{center}
 \end{frame}
 
+\begin{frame}{PPV e teorema di Bayes}
+\phantomsection\label{ppv-e-teorema-di-bayes}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+
+La PPV è una stima diretta di \textbf{P(Patologico \textbar{} test sotto
+cut-off)} ed è direttamente legata al teorema di Bayes.
+
+La PPV ha però senso solo se la proporzione tra sani e patologici (o tra
+veri negativi e veri positivi) non è controllata direttamente dallo
+sperimentatore, ma riflette quella reale che si osserva nella
+popolazione.
+\end{frame}
+
 \begin{frame}{PPV e NPV - approfondimento}
 \phantomsection\label{ppv-e-npv---approfondimento}
 Le formule di PPV e PPN possono (tramite semplice algebra rispetto a
 formule precedente, riscritte nella seguente maniera
 
-\textbf{Positive Predictive Value} = Sensibilità x prevalenza /
+\textbf{Positive Predictive Value} = Sensibilità x Prevalenza /
 (Sensibilità x Prevalenza) + (1-Specificità) x (1- Prevalenza)
 
 \textbf{Negative Predictive Value} = Specificità x (1 - Prevalenza) /
@@ -777,7 +843,10 @@ MoCA.}
 \emph{AT ottiene 16.}
 
 \emph{Cosa concludereste?} \pause \emph{Che probabilmente ha
-l'Alzheimer?}
+l'Alzheimer?} \pause
+
+\emph{La probabilità di avere l'Alzheimer è la stessa dell'esempio prima
+o diversa?}
 \end{frame}
 
 \begin{frame}{Riflessioni su questo esperimento mentale}
@@ -916,7 +985,7 @@ normalità). Potremmo usare una denotazione come quella che segue.
 
 Dove \(y\) è il cut-off di discriminazione, \(o\) è il punteggio
 osservato. \(C\) è l'appartenenza al gruppo di persone con Condizione di
-interesse (es. patologia) e \(H\) appartenza al gruppo di persone senza
+interesse (es. patologia) e \(NC\) appartenza al gruppo di persone senza
 condizione di interesse (es. sani)..
 \end{frame}
 
@@ -929,68 +998,18 @@ esse ci indichino questo:
 
 \(P(C | o < y)\)
 
+mentre in realtà indicano
+
+\(P(o < y | C)\)
+
+\pause
+
+\emph{come ``mnemotecnica'' per ricordarvi del teorema di Bayes
+ricordate: la probabilità di essere laureati, se si è psicologici non è
+la stessa di essere psicologi se si è laureati!}
+
 NOTA: la formula è diversa da quella usata per definire la Sensibilità!
 Vedi slide precedente)
-
-Nelle prossime slides vedremo quale è il problema nell'ottenere questa
-probabilità.
-\end{frame}
-
-\begin{frame}{Il teorema di Bayes}
-\phantomsection\label{il-teorema-di-bayes}
-Il teorema di Bayes è un teorema molto importante che mette in relazione
-diverse probabilità. È importante perchè esprime in maniera chiara la
-relazione tra probabilità che (intuitivamente) potrebbero essere confuse
-per identiche.
-\end{frame}
-
-\begin{frame}{Formula del teorema di Bayes}
-\phantomsection\label{formula-del-teorema-di-bayes}
-\center
-$\textbf P(A | B) = \frac{P(B | A)\,P(A)}{P(B)}$
-\vfill
-o, per un esempio pratico
-\vfill
-\scriptsize
-$P(\text{patologia} | \text{punteggio sotto cut-off}) = \frac{P(\text{punteggio sotto cut-off} | \text{patologia})\,P(\text{patologia})}{P(\text{punteggio sotto cut-off})}$
-\end{frame}
-
-\begin{frame}{Probabilità condizionali e teorema di Bayes}
-\phantomsection\label{probabilituxe0-condizionali-e-teorema-di-bayes}
-Il teorema di Bayes è un teorema molto importante che mette in relazione
-diverse probabilità. È importante perchè esprime in maniera chiara la
-relazione tra probabilità che (intuitivamente) potrebbero essere confuse
-per identiche.
-
-\vfill
-\center
-${\color{red} P(A|B)}\neq {\color{blue} P(B|A)}$\\
-\vspace{1em}
-oppure \\
-\scriptsize
-\vspace{1em}
-{\color{red}P(Patologia | punteggio sotto cut-off)} $\neq$ {\color{blue}P(punteggio sotto cut-off | Patologia)}\\
-\vspace{1em}
-Ci sarebbe utile la probabilità in rosso, ma abbiamo quella in blu.
-\end{frame}
-
-\begin{frame}{Considerazioni su Teorema di Bayes}
-\phantomsection\label{considerazioni-su-teorema-di-bayes}
-\small
-
-Al di là dell'aspetto matematico, il teorema di Bayes ci dice in
-sostanza una cosa: Per calcolare le probabilità che a noi veramente
-interessa dovremmo conoscere altre Probabilità che di fatto non potremo
-sapere mai (cioè Probabilità a Priori, che è anche associata a
-Prevalenza, se si far riferimento ai concetti di PPV e PPN).
-
-Per questa ragione I test ci danno informazioni ``indicative'' sulle
-probabilità di avere una malattia o presenza di una condizione di
-interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi,
-anche ignorando il risultato di un test, se ci sono elementi che
-suggeriscono che probabilità a priori (o base rate) possano alterare I
-valori. Questo verrà approfondito nella sezione sull'
-\emph{interpretazione}.
 \end{frame}
 
 \begin{frame}{Variabili demografiche e condizioni di interesse.}
