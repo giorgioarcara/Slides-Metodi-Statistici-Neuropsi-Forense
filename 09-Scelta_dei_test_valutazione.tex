@@ -1,0 +1,360 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+
+\usetheme[]{metropolis}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\setbeamerfont{title}{size=\large} \usepackage{hyperref} \setbeamertemplate{footline}[frame number]
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={Giorgio Arcara},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{Giorgio Arcara}
+\date{}
+
+\begin{document}
+
+
+\begin{frame}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{9. La scelta dei test per la valutazione clinica o forense}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+\end{frame}
+
+\section{La scelta dei test per la valutazione neuropsicologica clinica
+e
+forense}\label{la-scelta-dei-test-per-la-valutazione-neuropsicologica-clinica-e-forense}
+
+\begin{frame}{La scelta dei test}
+\phantomsection\label{la-scelta-dei-test}
+Due momenti di scelta dei test:
+
+\begin{enumerate}
+\item
+  Scelta dei test da inserire nella propria ``cassetta degli attrezzi''
+\item
+  \textbf{Scelta dei test da utilizzare con uno specifico individuo per
+  uno specifico scopo.}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{La scelta dei test per una specifica valutazione}
+\phantomsection\label{la-scelta-dei-test-per-una-specifica-valutazione}
+Per la neuropsicologia clinica esistono tre principali approcci
+(chiamati in molti modi in letteratura)
+
+\begin{itemize}
+\tightlist
+\item
+  Batteria fissa
+\item
+  Batteria flessibile
+\item
+  Batteria fissa di screening più test ad hoc
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approccio a batteria fissa}
+\phantomsection\label{approccio-a-batteria-fissa}
+La batteria di test è la stessa per tutti gli individui valutati. In
+genere è piuttosto ampia e tende a coprire tutti i domini cognitivi.
+
+È molto diffusa specie in ambienti clinici in cui la valutazione tende
+ad essere standardizzata per tutti i pazienti e in quei contesti in cui
+gli individui valutati tendono ad essere abbastanza simili.
+\end{frame}
+
+\begin{frame}{Approccio a batteria fissa}
+\phantomsection\label{approccio-a-batteria-fissa-1}
+\textbf{PRO}
+
+\begin{itemize}
+\tightlist
+\item
+  È un approccio che non è influenzato da preconcetti del valutatore.
+\item
+  Permette una valutazione esaustiva del paziente.
+\end{itemize}
+
+\textbf{CONTRO}
+
+\begin{itemize}
+\tightlist
+\item
+  Richiede molto tempo (spesso più sedute) per completare una sola
+  valutazione.
+\item
+  Può risultare molto faticoso per la persona che effettua i test.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approccio a batteria flessibile}
+\phantomsection\label{approccio-a-batteria-flessibile}
+I test vanno scelti di volta in volta sulla base di ipotesi
+diagnositiche sull'esaminando. É accompagnata dal processo detto di test
+delle ipotesi.
+
+\textbf{È l'approccio più diffuso in ambito forense, anche per via dei
+tempi limitati della valutazione}
+\end{frame}
+
+\begin{frame}{Approccio a batteria flessibile}
+\phantomsection\label{approccio-a-batteria-flessibile-1}
+In genere si parta da un test, selezionato sulla base dei quesiti
+diagnostici. In base al risultato del test si seleziona il test
+successivo e così via.
+
+Spesso è privilegiato un approccio che miri a falsificare (cioè
+smentire) le proprie ipotesi, piuttosto che confermarli, secondo un
+approccio deduttivo.
+
+Es. se suppongo che il paziente abbia un deficit di memoria e ottengo
+che nel test di memoria è nella norma ho falsificato la mia ipotesi e
+posso dunque procedere con un'altra ipotesi, da indagare tramite un
+altro test.
+\end{frame}
+
+\begin{frame}{Approccio a batteria flessibile}
+\phantomsection\label{approccio-a-batteria-flessibile-2}
+\textbf{PRO}
+
+\begin{itemize}
+\tightlist
+\item
+  È un approccio che permette di concentrarsi sulle specifiche richieste
+  diagnostiche.
+\item
+  La durata è contenuta.
+\end{itemize}
+
+\textbf{CONTRO}
+
+\begin{itemize}
+\tightlist
+\item
+  L'esito può essere influenzato da preconcetti del neuropsicologo (es.
+  bias di conferma).
+\item
+  Elementi cruciali dello stato cognitivo del paziente potrebbero essere
+  trascurati.
+\item
+  Un approccio strettamente basato sulla falsificazione non tiene conto
+  di possibili errori di misurazione.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Approccio con batteria fissa di screening più test ad hoc}
+\phantomsection\label{approccio-con-batteria-fissa-di-screening-piuxf9-test-ad-hoc}
+È un approccio intermedio ai due. Si comincia con una valutazione
+sommaria fatta con una batteria di screening a cui segue una valutazione
+approfondita sulla base dei risultati allo screening.
+
+\textbf{PRO} e \textbf{CONTRO} sono intermedi ai due approcci
+precedenti.
+\end{frame}
+
+\begin{frame}{Altre considerazioni su scelta dei test}
+\phantomsection\label{altre-considerazioni-su-scelta-dei-test}
+Un'importante considerazione da fare sulla scelta dei test è che occorre
+ricordarsi che (da un punto di vista statistico), più test si
+somministrano, più è probabile che almeno uno vada al di sotto del
+cut-off.
+
+Una possibilità sarebbe quella di correggere i test con metodi di
+correzione dei confronti multipli (es. Bonferroni). Nel metodo di
+bonferroni per mantenere l'errore di 1° tipo al livello nominale (alpha
+= 0.05, cioè 5\%) per tutti i test si aggiusto il valore critico
+dividendo per il numero di test somministrati.
+
+Supponiamo di avere somministrato 20 test, l'alpha critico diventerebbe
+0.05/20 = 0.0025
+\end{frame}
+
+\begin{frame}{Altre considerazioni su scelta dei test}
+\phantomsection\label{altre-considerazioni-su-scelta-dei-test-1}
+Usare correzioni come il metodo di Bonferroni ha un altro problema:
+assume che tutti i risultati dei test siano indipendenti. Sappiamo
+invece che, venendo dallo stesso individuo, saranno verosimilmente
+legati.
+
+Esistono quindi metodi più corretti e che aumentano meno l'errore di 2°
+tipo, di fatto non controllando completamente il 1°. Es. Benjamini \&
+Yekutieli 2001, False Discovery Rate.
+
+\emph{L'utilizzo di metodi di correzione di test è comunque molto poco
+diffuso e potrebbe essere utilizzati solo con quei metodi che
+restituiscono la probabilità esatta.}
+\end{frame}
+
+
+
+
+\end{document}

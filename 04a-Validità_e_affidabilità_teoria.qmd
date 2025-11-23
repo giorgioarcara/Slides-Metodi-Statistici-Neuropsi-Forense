@@ -230,7 +230,7 @@ Se l'avessimo la validità più appropriata da utilizzare è quella di criterio 
 Il più delle volte non esiste però un test perfetto per un costrutto (es. non esiste un test di memoria che sia considerabile il riferimento), quindi ci si accontenta di evidenze di convergenza. Il mio test di memoria dovrebbe correlare con altre misure di memoria.
 
 
-## Validità di criterio 1/2
+## Validità di criterio 1/3
 
 **Validità di criterio**: La proprietà di unt test di fornire risultati legati ad un criterio esterno. Il criterio è una variabile *osservabile* (a differenza dei costrutti). Un criterio è spesso l’appartenenza ad una patologia, oppure un aspetto prognostico (lo sviluppare una patologia in futuro, il migliorare dopo un trattamento, etc.), oppure il punteggio ad un altro test.  
 
@@ -238,7 +238,7 @@ La validità di criterio, se riferita ad una classificazione con un altro punteg
 
 Può essere distinta in **concorrente** se il criterio è misurato nello stesso momento, o **predittiva** se lo scopo è predire.
 
-## Validità di criterio 2/2
+## Validità di criterio 2/3
 
 Dal momento che l'interesse in neuropsicologia/psicologia è il più delle volte nei costrutti la validità di criterio viene utilizzata solo in alcuni casi specifici.
 
@@ -246,7 +246,7 @@ Dal momento che l'interesse in neuropsicologia/psicologia è il più delle volte
 - il criterio è l'appartenza ad una categoria diagnostica o prognostica o, in generale, a un gruppo che può essere identificato con sufficiente certezza da essere definito "gold-standard".
 
 
-## Validità di criterio 2/2
+## Validità di criterio 3/3
 
 In generale sono fornite percentuali che esprimono l’accuratezza del test nel predire il criterio.
 Esistono diversi standard riportati per considerare accettabile la validità di criterio, ma dovrebbe essere alta (sensibilità/specificità superiore all’80% o correlazione > 0.80).

@@ -1,0 +1,126 @@
+---
+title: ""
+author: "Giorgio Arcara"
+date: ""
+#format: revealjs
+format:
+  beamer:
+    theme: metropolis
+    keep-tex: true
+    pdf-engine: xelatex  # or xelatex
+    # mathfont: "Latin Modern Math"
+incremental: false
+header-includes:
+  \setbeamerfont{title}{size=\large}
+  \usepackage{hyperref}
+  \setbeamertemplate{footline}[frame number]
+  
+---
+
+<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+
+::: {.content-visible when-format="beamer"}
+```{=latex}
+% TITLE SLIDES
+\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{9. La scelta dei test per la valutazione clinica o forense}}
+\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
+
+\titlegraphic{
+
+\vspace*{7cm}
+\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
+\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
+}
+\maketitle
+```
+:::
+
+# La scelta dei test per la valutazione neuropsicologica clinica e forense
+
+## La scelta dei test
+
+Due momenti di scelta dei test:
+
+1. Scelta dei test da inserire nella propria "cassetta degli attrezzi"
+
+2. **Scelta dei test da utilizzare con uno specifico individuo per uno specifico scopo.**
+
+## La scelta dei test per una specifica valutazione
+
+Per la neuropsicologia clinica esistono tre principali approcci (chiamati in molti modi in letteratura)
+
+- Batteria fissa
+- Batteria flessibile
+- Batteria fissa di screening più test ad hoc
+
+## Approccio a batteria fissa
+
+La batteria di test è la stessa per tutti gli individui valutati. In genere è piuttosto ampia e tende a coprire tutti i domini cognitivi.
+
+È molto diffusa specie in ambienti clinici in cui la valutazione tende ad essere standardizzata per tutti i pazienti e in quei contesti in cui gli individui valutati tendono ad essere abbastanza simili.
+
+## Approccio a batteria fissa
+
+**PRO**
+
+- È un approccio che non è influenzato da preconcetti del valutatore.
+- Permette una valutazione esaustiva del paziente.
+
+**CONTRO**
+
+- Richiede molto tempo (spesso più sedute) per completare una sola valutazione.
+- Può risultare molto faticoso per la persona che effettua i test.
+
+## Approccio a batteria flessibile
+
+I test vanno scelti di volta in volta sulla base di ipotesi diagnositiche sull'esaminando. É accompagnata dal processo detto di test delle ipotesi.
+
+**È l'approccio più diffuso in ambito forense, anche per via dei tempi limitati della valutazione**
+
+
+## Approccio a batteria flessibile
+
+In genere si parta da un test, selezionato sulla base dei quesiti diagnostici. In base al risultato del test si seleziona il test successivo e così via.
+
+Spesso è privilegiato un approccio che miri a falsificare (cioè smentire) le proprie ipotesi, piuttosto che confermarli, secondo un approccio deduttivo.
+
+Es. se suppongo che il paziente abbia un deficit di memoria e ottengo che nel test di memoria è nella norma ho falsificato la mia ipotesi e posso dunque procedere con un’altra ipotesi, da indagare tramite un altro test.
+
+## Approccio a batteria flessibile
+
+**PRO**
+
+- È un approccio che permette di concentrarsi sulle specifiche richieste diagnostiche.
+- La durata è contenuta.
+
+**CONTRO**
+
+- L’esito può essere influenzato da preconcetti del neuropsicologo (es. bias di conferma). 
+- Elementi cruciali dello stato cognitivo del paziente potrebbero essere trascurati.
+- Un approccio strettamente basato sulla falsificazione non tiene conto di possibili errori di misurazione.
+
+## Approccio con batteria fissa di screening più test ad hoc
+
+È un approccio intermedio ai due. Si comincia con una valutazione sommaria fatta con una batteria di screening a cui segue una valutazione approfondita sulla base dei risultati allo screening.
+
+**PRO** e **CONTRO** sono intermedi ai due approcci precedenti.
+
+
+## Altre considerazioni su scelta dei test
+
+Un’importante considerazione da fare sulla scelta dei test è che occorre ricordarsi che (da un punto di vista statistico), più test  si somministrano, più è probabile che almeno uno vada al di sotto del cut-off.
+
+Una possibilità sarebbe quella di correggere i test con metodi di correzione dei confronti multipli (es. Bonferroni). Nel metodo di bonferroni per mantenere l’errore di 1° tipo al livello nominale (alpha = 0.05, cioè 5%) per tutti i test si aggiusto il valore critico dividendo per il numero di test somministrati. 
+
+Supponiamo di avere somministrato 20 test, l’alpha critico diventerebbe 0.05/20 = 0.0025 
+
+## Altre considerazioni su scelta dei test
+
+Usare correzioni come il metodo di Bonferroni ha un altro problema: assume che tutti i risultati dei test siano indipendenti. Sappiamo invece che, venendo dallo stesso individuo, saranno verosimilmente legati.
+
+Esistono quindi metodi più corretti e che aumentano meno l’errore di 2° tipo, di fatto non controllando completamente il 1°. Es. Benjamini & Yekutieli 2001, False Discovery Rate.
+
+_L’utilizzo di metodi di correzione di test è comunque molto poco diffuso e potrebbe essere utilizzati solo con quei metodi che restituiscono la probabilità esatta._
+
+
+
