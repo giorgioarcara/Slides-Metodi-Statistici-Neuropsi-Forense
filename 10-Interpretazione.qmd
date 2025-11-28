@@ -96,9 +96,9 @@ Quello che si intende è dunque che non si può usare una serie di sillogismi pe
 
 ## Interpretazioni
 
-Alcune interpretazioni sono migliori delle altre
+Alcune interpretazioni sono migliori di altre.
 
-Le interepretazioni più corrette sono quelle che integrano tutte le informazioni disponibili.
+Le interpretazioni più adeguate sono quelle che integrano tutte le informazioni disponibili.
 
 
 ## Perché «interpretazione» e non "lettura" dei risultati? 
@@ -169,7 +169,7 @@ Il neuropsicologo sta assumendo:
 - Che eventuali danni ad altre funzioni cognitive non hanno avuto un ruolo 	cruciale. \pause
 - Che i dati normativi erano adeguati per stimare la prestazione del soggetto. \pause
 
-Molte di queste assunzioni sono “implicite” e un buon neuropsicologo (si veda principio 5 Interpretative Approach) , ne è consapevole
+Molte di queste assunzioni sono “implicite” e un buon neuropsicologo (si veda principio 5 Interpretative Approach, in 1.Introduzione), ne è consapevole
 
 ## \normalsize Interpretazione di un risultato sotto cut-off come deficit cognitivo
 \small
@@ -180,7 +180,7 @@ Significa non sottovalutare quelle assunzioni che sono particolarmente critiche 
 
 Esempi: \pause
 
-- in forense non possiamo dare per scontato che il paziente non stia simulando.\pause
+- in contesto forense non possiamo dare per scontato che il paziente non stia simulando.\pause
 - in vari casi non possiamo dare per scontato che i dati normativi siano adeguati.\pause
 - non possiamo dare per scontato che altre funzioni cogntive non di interesse non abbiamo influenzato la performance in un paziente con sospetto danno cerebrale.
 
@@ -198,7 +198,7 @@ Più test deficitari possono essere legati ad un singolo deficit cognitivo (es. 
 
 È difficile trovare dei principi logici per rispondere a come interpretare queste situazioni. \pause
 
-Il neuropsicologo deve integrare le informazioni a sua disposizione in maniera sensata.
+La/Il neuropsicologa/o deve integrare le informazioni a sua disposizione in maniera sensata.
 
 ## \normalsize Integrare l’interpretazione di risultati a test su costrutti a diversi livelli
 
@@ -248,7 +248,42 @@ Caso 2: Soggetto che ha età o scolarità al limite tra due fasce.
 
 _Come interpretare questi risultati, con che fascia confrontare?_
 
-Il confronto con i dati normativi ci serve per stimare la prestazione del soggetto. Se il soggetto ha età o scolarità (o altre variabili) a cavallo tra due fasce probabilmente la cosa migliore è confrontare la prestazione con entrambi i cut-off. Il neuropsicologo dovrà integrare questare informazione con le altre disponibili per giungere ad una conclusione.
+Il confronto con i dati normativi ci serve per stimare la prestazione del soggetto. Se il soggetto ha età o scolarità (o altre variabili) a cavallo tra due fasce probabilmente la cosa migliore è confrontare la prestazione con entrambi i cut-off. La/Il neuropsicologa/o dovrà integrare questare informazione con le altre disponibili per giungere ad una conclusione.
+
+## Esempio (1/2)
+\scriptsize
+Siete consulenti tecnici per il caso di un individuo che lamenta un deficit cognitivo in seguito ad un incidente sul lavoro che gli impedisce di continuare a lavorare. Lamenta un'importante invalidità e vorrebbe essere risarcito dall'assicurazione. Siete consulenti per l'assicurazione per valutare rischio di simulazione. 
+
+Il protagonista è un uomo di 26 anni che lavorava come magazziniere. Mentre lavorava su un muletto, una grossa scatola è caduta e lo ha colpito alla testa. Nell'impatto è caduto, ha perso il casco di protezione e battuto la testa a terra, perdendo conoscenza. Portato al pronto soccorso è stato confermato un trauma cranico e una serie di fratture. Il paziente è stato sotto osservazione per alcuni giorni per le fratture e poi dimesso.
+
+Nei giorni successivi ha cominciato a lamentare disturbi di memoria e si è rivolto alla sua assicurazione (che aveva stipulato 3 mesi prima) per un risarcimento per potenziale invalidità.
+
+## Risultati Valutazione Forense
+\tiny
+
+
+| Test Neuropsicologico                     | Dominio Valutato                  | Punteggio | Cut-off | Interpretazione                    |
+|-----------------------------------------------------|-----------------------------------|------------------------|-----------------------|------------------------------------|
+| Trail Making Test – Parte B        | Flessibilità cognitiva            | 240 sec                |  180 sec             |  deficitario                  |
+| WCST – Errori perseverativi              | Problem solving / astrazione      | 32                     |  20                  |  deficitario                    |
+| Torre di Londra – Totale       | Pianificazione                    | 5                     |  18                  | Deficitario              |
+| RAVLT – Rich. immed.               | Memoria verbale                   | 47                     |  38                  | Nella norma                        |
+| Boston Naming Test (BNT)                 | Linguaggio                        | 49/60                  |  48/60               | deficitario              |
+| SIMS – Totale                  | Validità del profilo              | 15                     |  16                  | No rischio simulazione |
+
+
+
+## 
+
+_Quali altre informazioni raccogliereste?_
+
+
+## Approfondimenti vari nell'esempio
+
+Il paziente da quando ha smesso di lavorare ha cominciato a passare gran parte del tempo a giocare a videogiochi e a giocare d'azzardo (online) in camera. Soprattutto sembra passare gran parte del tempo giocando a poker, vincendo e perdendo a seconda delle giornate.
+
+Il paziente ha punteggi molto bassi anche quando corretti per età e scolarità.
+
 
 # Conclusioni
 

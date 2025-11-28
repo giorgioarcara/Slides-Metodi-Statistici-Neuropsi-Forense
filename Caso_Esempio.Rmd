@@ -1,0 +1,34 @@
+---
+title: "Caso esempio"
+output: pdf_document
+date: "2025-11-26"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Un possibile caso forense
+
+Siete consulenti tecnici per il caso di un individuo che lamenta un deficit cognitivo in seguito ad un incidente sul lavoro che gli impedisce di continuare a lavorare. Lamenta un'importante invalidità e vorrebbe essere risarcito dall'assicurazione. Siete consulenti per l'assicurazione per valutare rischio di simulazione. 
+
+Il protagonista è un uomo di 26 anni che lavorava come magazziniere. Mentre lavorava su un muletto, una grossa scatola è caduta e lo ha colpito alla testa. Nell'impatto è caduto, ha perso il casco di protezione e battuto la testa a terra, perdendo conoscenza. Portato al pronto soccorso è stato confermato un trauma cranico e una serie di fratture. Il paziente è stato sotto osservazione per alcuni giorni per le fratture e poi dimesso.
+
+Nei giorni successivi ha cominciato a lamentare disturbi di memoria e si è rivolto alla sua assicurazione (che aveva stipulato 3 mesi prima) per un risarcimento per potenziale invalidità.
+
+## Esempio (un possibile caso forense)
+
+
+### Risultati Valutazione Forense
+
+| Test Neuropsicologico                     | Dominio Valutato                  | Punteggio (ipotetico) | Cut-off (indicativo) | Interpretazione                    |
+|-----------------------------------------------------|-----------------------------------|------------------------|-----------------------|------------------------------------|
+| Trail Making Test – Parte B      | Flessibilità cognitiva            | 240 sec                |  180 sec             |  deficitario                  |
+| WCST – Errori perseverativi              | Problem solving / astrazione      | 32                     |  20                  |  deficitario                    |
+| Torre di Londra – Totale       | Pianificazione                    | 5                     |  18                  | Deficitario              |
+| RAVLT – Rich. immed.               | Memoria verbale                   | 47                     |  38                  | Nella norma                        |
+| Boston Naming Test (BNT)                 | Linguaggio                        | 49/60                  |  48/60               | deficitario              |
+| SIMS – Totale                  | Validità del profilo              | 15                     |  16                  | No rischio simulazione |
+
+
+_Quali altre informazioni raccogliereste?_
