@@ -589,7 +589,7 @@ $P(o < y | C)$
 \pause
 _come "mnemotecnica" per ricordarvi del teorema di Bayes ricordate: la probabilità di essere laureati, se si è psicologici non è la stessa di essere psicologi se si è laureati!_
 
-NOTA: la formula è diversa da quella usata per definire la Sensibilità! Vedi slide precedente)
+NOTA: le due formule sono diverse! (vedi anche slide precedente)
 
 
 ## Variabili demografiche e condizioni di interesse.
