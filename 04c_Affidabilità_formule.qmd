@@ -165,9 +165,9 @@ Le formule più recenti per intraclass correlation si basano su scomposizione di
 ## Affidabilità inter-rater
 
 \small
-La versione di ICC più utilizzata per calcolare l’affidabilità inter-rater è la **ICC(2,1) agreement**.
+Una versione di ICC spesso utilizzata per calcolare l’affidabilità inter-rater è la **ICC(2,1) agreement**.
 
-Nel contesto di test con questa versione di ICC si assume che \underline{più rater vedano la stessa prestazione dello stesso soggetto} e fornisce una stima che tiene conto dell’agreement in termini assoluti (se il punteggio è lo stesso, non se il punteggio è correlato).
+Nel contesto di test con questa versione di ICC si assume che \underline{diversi rater vedano la stessa prestazione dello stesso soggetto} e fornisce una stima che tiene conto dell’agreement in termini assoluti (se il punteggio è lo stesso, non se il punteggio è correlato).
 
 $$
 ICC(2,1) = \frac{(MSB - MSE)}
@@ -184,6 +184,9 @@ n_c & = \text{number of judges (raters)} \\
 n_j & = \text{number of cases (observations)}
 \end{aligned}
 $$
+
+
+
 
 ## Affidabilità inter-rater
 
