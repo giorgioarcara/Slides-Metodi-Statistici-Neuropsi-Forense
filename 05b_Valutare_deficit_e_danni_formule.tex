@@ -382,24 +382,53 @@ Alzheimer) i valori attesi potrebbero essere diversi.
 
 Da notare che questa formulazione è del tutto analoga a quella del
 p-value in realazione dell'ipotesi nulla e all'identificazione dei
-valori critici della statistica (es. il t-value critico oltre il quale
-considero il risultato significativo). \[
-x : P (t_{obs}<t_{crit}∣H_0)=q
+valori critici della statistica.
+\end{frame}
+
+\begin{frame}{Analogia con i test statistici}
+\phantomsection\label{analogia-con-i-test-statistici}
+Il valore critico di una statistica test è un \textbf{quantile della sua
+distribuzione sotto l'ipotesi nulla}.
+
+Per un test a una coda inferiore:
+
+\[
+P(T \leq t_{\mathrm{crit}} \mid H_0) = \alpha
 \]
 
-\begin{center}
-\begin{footnotesize}
-Questa formula è semplificata, e non sono considerati i gradi di libertà
-\end{footnotesize}
-\end{center}
+\begin{itemize}
+\tightlist
+\item
+  Se il valore osservato soddisfa
+\end{itemize}
 
-\(x\) è il valore per cui ci si attende un probabilità \(q\) che la
-statistica osservata (\(t_{obs}\) in questo caso) sia inferiore al \(t\)
-critico, assumendo che \(H_0\) sia vera.
+\[
+t_{\mathrm{obs}} \geq t_{\mathrm{crit}},
+\]
 
-\(H_0\) dipende dal tipo di test, ma nel caso di un confronto fra
-campioni indica che i due campioni che sono stati confrontati con il
-t-test provengono dalla stessa popolazione.
+il risultato cade nella \textbf{regione critica} e si rifiuta (H\_0).
+
+\begin{itemize}
+\tightlist
+\item
+  Il p-value è invece la probabilità, assumendo vera (H\_0), di ottenere
+  un valore almeno altrettanto estremo di quello osservato:
+\end{itemize}
+
+\[
+p = P(T \geq t_{\mathrm{obs}} \mid H_0)
+\]
+
+Nel t-test per due campioni indipendenti, l'ipotesi nulla è
+generalmente:
+
+\[
+H_0:\mu_1=\mu_2
+\]
+
+Le formule si riferiscono a un test a una coda inferiore. La
+distribuzione di (T) e il valore critico dipendono anche dai gradi di
+libertà.
 \end{frame}
 
 \begin{frame}{Esperimento mentale}
