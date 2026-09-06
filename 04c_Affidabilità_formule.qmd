@@ -54,7 +54,7 @@ Esistono diverse classificazioni di affidabilità. Questa è principalmente basa
 
 **Affidabilità test-retest**: è un indice che rappresenta la consistenza nel tempo di due misurazioni assumendo che non è avvenuto nessun cambiamento sistematico.
 
-Una formula molto diffusa per calcolare affidabilità test-retest, soprattuto nei test sviluppati in Italiano, è quella della correlazione di _Pearson_ (vedi anche l'Appendice di queste slides):
+Una formula molto diffusa per calcolare affidabilità test-retest, soprattutto nei test sviluppati in Italiano, è quella della correlazione di _Pearson_ (vedi anche l'Appendice di queste slides):
 
 $$
 r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}
@@ -92,11 +92,11 @@ Segue da semplice algebra che le $k$ si cancellano e quindi si ritorna alla form
 
 ## Affidabilità test-retest
 
-Nei test cognitivi l’effetto sistematico più comune è riconducibile all’effetto pratica, l’etichetta utilizzata per indigare quei cambiamenti (spesso sistematici) che si osservano nella somministrazione del test e che sono associati ad una migliore performance.
+Nei test cognitivi l’effetto sistematico più comune è riconducibile all’effetto pratica, l’etichetta utilizzata per indicare quei cambiamenti (spesso sistematici) che si osservano nella somministrazione del test e che sono associati ad una migliore performance.
 
-Attenzione dunque all’utilizzo e all’interpretazione dei valori di test-retest relibility se misurata tramite correlazione. 
+Attenzione dunque all’utilizzo e all’interpretazione dei valori di test-retest reliability se misurata tramite correlazione.
 
-Se usata correlazione, sarebbe infatti necessario accompagnare da analisi (es. t-tests) che permattano di vedere se c’è una differenza sistematica tra prima e seconda valutazione.
+Se usata la correlazione, sarebbe infatti necessario accompagnarla con analisi (es. t-tests) che permettano di vedere se c’è una differenza sistematica tra prima e seconda valutazione.
 
 ## Considerazioni su affidabilità test-retest
 
@@ -150,7 +150,7 @@ Esistono però diversi modi di misurare affidabilità test-retest e sempre più 
 ## Affidabilità inter-rater
 
 \small
-**Affidabilità inter-rater**: è un’indice che rappresenta la coerenza dei punteggi di piùrater.
+**Affidabilità inter-rater**: è un indice che rappresenta la coerenza dei punteggi di più rater.
 
 La formula più utilizzata per l’affidabilità inter-rater è l’**Intra Class Correlation (ICC)**.
 
@@ -211,7 +211,7 @@ $$
 
 **Perché non è sempre usata ICC anche per test-retest visto che tiene conto anche di differenze sistematiche?**
 
-Probabilmente per prassi e convenzione (che si osserva soprattutto nei test in Italino). In letteratura è però possibile trovare alcuni studi che la utilizzano anche per test-retest e nel corso degli anni sempre più seguono la più appropriata formula di ICC. In caso di effetto pratica sarebbe infatti più adeguata.
+Probabilmente per prassi e convenzione (che si osserva soprattutto nei test in Italiano). In letteratura è però possibile trovare alcuni studi che la utilizzano anche per test-retest e nel corso degli anni sempre più autori seguono la più appropriata formula di ICC. In caso di effetto pratica sarebbe infatti più adeguata.
 
 # Affidabilità split-half
 
@@ -234,7 +234,7 @@ Da un punto di vista concettuale le misure di consistenza interna vanno ad indag
 È una formula che viene usata quando gli item sono dicotomici (0/1)
 
 $$
-r_k-R20 = (\frac{n}{n-1})\frac{s_t^2 - \sum{pq}}{s_t^2}
+r_{KR20} = \left(\frac{n}{n-1}\right)\frac{s_t^2 - \sum{pq}}{s_t^2}
 $$
 
 $$
@@ -253,7 +253,7 @@ $$
 È una generalizzazione della formula KR-20, nel caso di items non dicotomici
 
 $$
-alpha = (\frac{n}{n-1})\frac{s_t^2 - \sum{s_i^2}}{s_t^2}
+\alpha = \left(\frac{n}{n-1}\right)\frac{s_t^2 - \sum{s_i^2}}{s_t^2}
 $$
 
 $$
@@ -271,7 +271,7 @@ Anche se i metodi KR-20 e alpha sono i più comuni essi hanno dei limiti intrins
 
 In alcuni quindi da preferire altri metodi. Esempio: se i punteggi degli item non sono normali meglio il metodo **GLB (Greatest Lower Bound)**.
 
-In caso di multidimensionalità puà essere meglio usare il metodo **omega ($\omega$)**.
+In caso di multidimensionalità può essere meglio usare il metodo **omega ($\omega$)**.
 
 Nota che GLB e omega sono legati ad analisi fattoriali (vedi slides su validità)
 e sono computazionalmente più complessi.
@@ -295,21 +295,21 @@ con altri item e per affidabilità globale.
 \small
 Ogni sorgente di affidabilità può essere usata per stimare l’errore di misura del test.
 
-Il coefficiente di affidabilità (indipendente dalla formula) può infatti essere intrepretato come la percentuale di variabilità riconducibile al punteggio vero, trasformando semplicemente il coefficiente in percentuale. Questo segue la definizione che viene fatta a priori di cosa è l’affidabilità.
+Il coefficiente di affidabilità (indipendente dalla formula) può infatti essere interpretato come la percentuale di variabilità riconducibile al punteggio vero, trasformando semplicemente il coefficiente in percentuale. Questo segue la definizione che viene fatta a priori di cosa è l’affidabilità.
 
 Ad esempio:
 
-Una correlatione test-retest 0.8, vuol dire che 80% di variabilità test-retest è riconducibile alla variabilità del punteggio vero.
+Una correlazione test-retest 0.8 vuol dire che l’80% di variabilità test-retest è riconducibile alla variabilità del punteggio vero.
 
-Una consistenza interna di 0.9, vuol dire che 90% di variabilità nella
-consistenza interna pè riconducibile alla variabilità del punteggio vero, etc.
+Una consistenza interna di 0.9 vuol dire che il 90% di variabilità nella
+consistenza interna è riconducibile alla variabilità del punteggio vero, etc.
 
 ## Interpretare l'affidabilità a livello del test
 
 L’errore associato ad ogni sorgente di affidabilità è pertanto calcolabile come:
 
 $$
-Errore = (1-C_a)*100
+Errore = (1-C_a) \times 100
 $$
 Dove $C_a$ è il coefficiente di affidabilità in questione (es. Affidabilità test retest,
 affidabilità inter rater, etc).
@@ -327,13 +327,13 @@ Es. supponiamo di avere un test che ha le seguenti caratteristiche:
 
 ## Combinare diversi tipi di errore
 
-Errore test-retest: $(1-0.85) * 100 = 15%$
+Errore test-retest: $(1-0.85) \times 100 = 15\%$
 
-Errore inter-rater: $(1-0.7) * 100 = 30%$
+Errore inter-rater: $(1-0.7) \times 100 = 30\%$
 
-Errore consistenza interna: $(1-0.97)*100 = 3%$
+Errore consistenza interna: $(1-0.97) \times 100 = 3\%$
 
-Errore totale: $15 + 30 + 3 = 48%$
+Errore totale: $15 + 30 + 3 = 48\%$
 \vspace{2em}
 
 A livello di test il 48% della varianza è riconducibile ad errore, e il 52% (100 – 48) della varianza è riconducibile al punteggio vero (è anche l’affidabilità complessiva del test). (Vedi Urbina, 2004, per esempio simile)
@@ -386,7 +386,7 @@ Questo tipo di limiti rende complessa l’applicazione di formule per stimare il
 
 ## Come considerare i coefficienti di affidabilità
 
-Ogni coefficiente di affidabilità, in generale stimare la varianza riconducibile al punteggio vero, rispetto alla variabilità totale (cioè quella che si rileva nei osservati), utilizzando diverse formule (es. $r$ di pearson, $ICC(2,1)$, etc.).
+Ogni coefficiente di affidabilità, in generale, stima la varianza riconducibile al punteggio vero rispetto alla variabilità totale (cioè quella che si rileva nei punteggi osservati), utilizzando diverse formule (es. $r$ di Pearson, $ICC(2,1)$, etc.).
 
 L’idea generale può essere espressa da questa formula.
 
