@@ -37,24 +37,40 @@ header-includes:
 
 # 4c. Affidabilità - Formule
 
-## Tipi di affidabilità
+## Affidabilità/precisione
+
+Gli _Standards for Educational and Psychological Testing_ (AERA, APA, & NCME, 2014) trattano l'affidabilità come un **principio unitario** (termine ombrello: _affidabilità/precisione_): non un'unica proprietà, ma un insieme di stime di precisione, ciascuna specifica a una **fonte di errore**.
 
 - Affidabilità test-retest
-- Affidabilità inter-rater
-- Affidabilità split-half
-- Consistenza interna
+- Consistenza interna (e affidabilità split-half)
+- Inter-rater agreement
 
-\vspace{2em}
+\vspace{0.5em}
 
-Esistono diverse classificazioni di affidabilità. Questa è principalmente basata su Urbina, 2004, Essentials of Psychological Testing.
+\footnotesize La terminologia è quella della Teoria Classica dei Test (il modello dominante per i test neuropsicologici); _Generalizability Theory_ e _Item Response Theory_ usano termini diversi. Per le classificazioni: Urbina, 2004.
+
+## Quanto deve essere alta l'affidabilità?
+
+\small
+Non esistono soglie universali. Riferimento orientativo, valido per tutti i tipi di affidabilità (Slick, cap. 1 in Spreen & Strauss, 2006):
+
+| Coefficiente | Interpretazione |
+|:--|:--|
+| $\geq 0.90$ | molto alta |
+| $0.80 - 0.89$ | alta |
+| $0.70 - 0.79$ | adeguata |
+| $0.60 - 0.69$ | marginale |
+| $< 0.60$ | bassa |
+
+Per le **decisioni cliniche sul singolo individuo** Sattler (2001) raccomanda soglie più stringenti: $\geq 0.80$; per decisioni ad alto impatto (es. QI, diagnosi) $0.90$ è il minimo, $0.95$ l'ottimale. In pratica: approccio _comparativo_ (scegliere il test con affidabilità migliore).
 
 # Affidabilità test-retest
 
 ## Affidabilità test-retest
 
-**Affidabilità test-retest**: è un indice che rappresenta la consistenza nel tempo di due misurazioni assumendo che non è avvenuto nessun cambiamento sistematico.
+**Affidabilità test-retest**: consistenza dei punteggi quando lo stesso test è somministrato alle stesse persone in due momenti diversi, assumendo che nell'intervallo non ci siano stati cambiamenti reali nel costrutto.
 
-Una formula molto diffusa per calcolare affidabilità test-retest, soprattutto nei test sviluppati in Italiano, è quella della correlazione di _Pearson_ (vedi anche l'Appendice di queste slides):
+Una formula molto diffusa (specie nei test in Italiano) è la correlazione di _Pearson_:
 
 $$
 r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}
@@ -64,19 +80,18 @@ $$
 $$
 \scriptsize
 \begin{aligned}
-r & = \text{correlation coefficient} \\
-x_i & = \text{values of the x-variable in a sample} \\
-\bar{x} & = \text{mean of the values of the x-variable} \\
-y_i & = \text{values of the y-variable in a sample} \\
-\bar{y} & = \text{mean of the values of the y-variable}
+x_i, y_i & = \text{punteggi al test e al retest} \\
+\bar{x}, \bar{y} & = \text{medie dei punteggi al test e al retest}
 \end{aligned}
 $$
 
 ## Affidabilità test-retest ed effetti sistematici
-\small 
-Il più grande problema dell’affidabilità test-retest quando misurata tramite coefficiente di correlazione è che essa non cattura eventuali _effetti sistematici_ di differenza tra i punteggi. Il valore infatti ci dice quanto due valori sono correlati o consistenti, ma non se sono più o meno gli stessi.
+\small
+Il coefficiente di correlazione esprime la _consistenza relativa_ tra le due misurazioni (quanto le persone mantengono lo stesso ordinamento), ma non cattura eventuali _effetti sistematici_ di differenza tra i punteggi: può essere molto alto anche quando i punteggi al retest sono sistematicamente più alti.
 
-Definiamo _effetto sistematico_ una variazione non casuale nei punteggi tra test e retest presente in ogni individuo (es. effetto pratica)
+Definiamo _effetto sistematico_ una variazione non casuale nei punteggi tra test e retest presente in ogni individuo (es. effetto pratica).
+
+Per questo, quando l'affidabilità test-retest è espressa con una correlazione, il coefficiente andrebbe accompagnato dall'analisi dei cambiamenti sistematici (es. confronto tra le medie, distribuzione delle differenze; es. Arcara & Bambini, 2016).
 
 ## Affidabilità test-retest (correlazione)
 
@@ -143,52 +158,57 @@ Non è completamente sbagliato e può fornire un quadro abbastanza completo se a
 
 ## Affidabilità test-retest
 
-Esistono però diversi modi di misurare affidabilità test-retest e sempre più di recente, sono però utilizzate formule più appropriate (es. quelle di Intraclass correlation che saranno trattate per affidabilità inter-rater)
+Esistono diversi modi di misurare l'affidabilità test-retest e sempre più spesso si usano formule più appropriate, in particolare l'**Intraclass Correlation (ICC)** basata sull'_accordo assoluto_, che tiene conto anche degli effetti sistematici (le formule della ICC saranno trattate per l'inter-rater agreement).
 
-# Affidabilità inter-rater
-
-## Affidabilità inter-rater
+\vspace{1em}
 
 \small
-**Affidabilità inter-rater**: è un indice che rappresenta la coerenza dei punteggi di più rater.
+Nel tipico disegno test-retest (due occasioni prestabilite, uguali per tutti) si raccomanda un modello ICC a due vie, a effetti misti, basato sull'accordo assoluto e riferito a una singola misurazione — spesso indicato come ICC(2,1) o ICC(A,1) (Shrout & Fleiss, 1979; McGraw & Wong, 1996; Koo & Li, 2016).
 
-La formula più utilizzata per l’affidabilità inter-rater è l’**Intra Class Correlation (ICC)**.
+_Soglie indicative_: $\geq 0.70$ per ricerca/confronti tra gruppi; per decisioni sul singolo individuo spesso $\geq 0.90$, idealmente $\sim 0.95$ (Nunnally & Bernstein, 1994).
 
-A differenza della correlazione (che può essere usata solo per 2 variabili), l’ICC invece può essere usata per $k$ variabili (dove $k$ è il numero di raters).
+# Inter-rater agreement
 
-Esistono diverse formule di Intraclass correlation, che sostanzialmente rispondono a diverse domande e che assumono una diversa relazione tra gruppi e osservazioni (nel nostro caso raters e pazienti osservati).
-Le formule più recenti per intraclass correlation si basano su scomposizione di varianza fatta tramite ANOVA o tramite mixed effect models (utile da sapere ma non approfondiamo).
+## Inter-rater agreement
+
+\small
+**Inter-rater agreement** (o _affidabilità inter-rater_): quanto è consistente il punteggio assegnato da valutatori diversi che osservano la stessa prestazione. È praticamente per definizione legato all'_oggettività_ del test (l'indipendenza del risultato dall'osservatore).
+
+È tendenzialmente più basso nei test in cui la risposta non è univoca o è graduata (es. disegno, descrizione, interpretazione di proverbi), più alto quando la risposta corretta è univoca e dicotomica (es. digit span). Al di là della complessità del comportamento, l'elemento cruciale e trasversale è la **chiarezza delle regole di attribuzione dei punteggi**, comprese le indicazioni per i casi ambigui.
+
+## Inter-rater agreement
+
+\small
+La formula più utilizzata è l'**Intraclass Correlation (ICC)**. A differenza della correlazione (solo 2 variabili), l'ICC può essere usata per $k$ raters.
+
+L'ICC non è un singolo coefficiente ma una **famiglia** di coefficienti, che assumono relazioni diverse tra gruppi e osservazioni e si basano su scomposizione della varianza (ANOVA / mixed-effects). Per l'inter-rater agreement sono rilevanti le ICC basate sull'**accordo assoluto** (valori alti solo se i raters assegnano più o meno lo stesso punteggio, non solo se i punteggi sono correlati).
 
 [[https://en.wikipedia.org/wiki/Intraclass_correlation]{.underline}](https://en.wikipedia.org/wiki/Intraclass_correlation)
 
 
-## Affidabilità inter-rater
+## Inter-rater agreement
 
 \small
-Una versione di ICC spesso utilizzata per calcolare l’affidabilità inter-rater è la **ICC(2,1) agreement**.
-
-Nel contesto di test con questa versione di ICC si assume che \underline{diversi rater vedano la stessa prestazione dello stesso soggetto} e fornisce una stima che tiene conto dell’agreement in termini assoluti (se il punteggio è lo stesso, non se il punteggio è correlato).
+Una versione spesso utilizzata è la **ICC(2,1) agreement**: si assume che diversi rater vedano la stessa prestazione dello stesso soggetto e si ottiene una stima dell'agreement in termini assoluti.
 
 $$
-ICC(2,1) = \frac{(MSB - MSE)}
-{(MSB + (n_j - 1)MSE + \frac{n_j(MSJ - MSE)}{n_c})}
+ICC(2,1) = \frac{MSB - MSE}
+{MSB + (n_j - 1)MSE + \frac{n_j(MSJ - MSE)}{n_c}}
 $$
 
 $$
-\small
+\scriptsize
 \begin{aligned}
-MSB & = \text{variance between subjects} \\
-MSJ & = \text{variance between judges (raters)} \\
-MSE & = \text{variance of interaction judges by subjects} \\
-n_c & = \text{number of judges (raters)} \\
-n_j & = \text{number of cases (observations)}
+MSB, MSJ & = \text{varianza tra soggetti, tra giudici (rater)} \\
+MSE & = \text{varianza dell'interazione giudici} \times \text{soggetti} \\
+n_c, n_j & = \text{numero di giudici, di casi}
 \end{aligned}
 $$
 
 
 
 
-## Affidabilità inter-rater
+## Inter-rater agreement
 
 ```{=latex}
 \begin{columns}
@@ -213,21 +233,25 @@ $$
 
 Probabilmente per prassi e convenzione (che si osserva soprattutto nei test in Italiano). In letteratura è però possibile trovare alcuni studi che la utilizzano anche per test-retest e nel corso degli anni sempre più autori seguono la più appropriata formula di ICC. In caso di effetto pratica sarebbe infatti più adeguata.
 
-# Affidabilità split-half
+\vspace{1em}
+
+\small _Soglie indicative_ per l'inter-rater agreement (ICC): $< 0.40$ scarso, $0.40 - 0.59$ discreto, $0.60 - 0.74$ buono, $\geq 0.75$ eccellente (Cicchetti & Sparrow, 1981); con classificazione simile, Fastenau et al. (1996) considerano $0.60$ la soglia per un accordo "sostanziale" e $0.75 - 0.80$ per uno "quasi perfetto".
+
+# Consistenza interna (e split-half)
 
 ## Affidabilità split-half
 
-Un approccio tradizionale per calcolare la consistenza di item di un test, è quella di dividere in due il test e indagare misure di somiglianza (es. correlazione) tra i punteggi delle due metà nei vari partecipanti. **Questo metodo è detto split-half reliability (o affidabilità split-half)**.
+Un approccio tradizionale per calcolare la consistenza degli item di un test è dividere in due il test (tipicamente item pari da un lato, dispari dall'altro) e calcolare la correlazione tra i punteggi delle due metà nei vari partecipanti. **Questo metodo è detto split-half reliability (o affidabilità split-half)**.
 
-Il grosso limite di questo approccio è che il risultato dipende da come dividiamo a metà il test (potremmo sovrastimare o sottostimare).
+Poiché ciascuna metà è più corta dell'intero test, la correlazione tra le due metà **sottostima** l'affidabilità del test completo: si applica quindi la correzione di **Spearman-Brown**.
 
-# Consistenza interna
+Limite principale: il risultato dipende, almeno in parte, da come si divide il test. Per questo si preferisce la sua estensione, la _consistenza interna_. _Soglia indicativa_: $\geq 0.70 - 0.80$ (Slick, 2006).
 
 ## Consistenza interna
 
-**Consistenza interna**: rappresenta la consistenza tra gli item di un test.
+**Consistenza interna**: rappresenta quanto gli item di un test siano tra loro coerenti, cioè quanto misurino (almeno in parte) la stessa cosa.
 
-Da un punto di vista concettuale le misure di consistenza interna vanno ad indagare invece quale sarebbe la correlazione usando tutte le possibili divisioni split-half.
+Concettualmente stima quale sarebbe la correlazione media considerando _tutte_ le possibili divisioni split-half. È un concetto a cavallo tra affidabilità e validità (struttura fattoriale del test).
 
 ## Formula di Kuder-Richardson (K-R 20)
 
@@ -250,7 +274,7 @@ $$
 
 ## Cronbach's alpha
 
-È una generalizzazione della formula KR-20, nel caso di items non dicotomici
+È l'indice più diffuso, una generalizzazione della formula KR-20 al caso di item non dicotomici
 
 $$
 \alpha = \left(\frac{n}{n-1}\right)\frac{s_t^2 - \sum{s_i^2}}{s_t^2}
@@ -265,16 +289,19 @@ s_i^2 & = \text{varianza di ogni item al test} \\
 \end{aligned}
 $$
 
+\footnotesize $\alpha$ è un _limite inferiore_ dell'affidabilità e assume item (essenzialmente) tau-equivalenti e unidimensionali.
+
 ## Altri metodi per calcolare la consistenza interna
 
-Anche se i metodi KR-20 e alpha sono i più comuni essi hanno dei limiti intrinseci (Es. Assumono unidimensionalità).
+\small
+Sebbene KR-20 e $\alpha$ siano i più comuni, hanno limiti intrinseci (es. assumono unidimensionalità).
 
-In alcuni quindi da preferire altri metodi. Esempio: se i punteggi degli item non sono normali meglio il metodo **GLB (Greatest Lower Bound)**.
+- **omega di McDonald ($\omega$)**: alternativa più recente e considerata **più robusta**, adatta anche in caso di multidimensionalità; oggi spesso raccomandata come default.
+- **GLB (Greatest Lower Bound)**: preferibile se i punteggi degli item non sono normali.
 
-In caso di multidimensionalità può essere meglio usare il metodo **omega ($\omega$)**.
+$\omega$ e GLB sono legati alle analisi fattoriali (vedi slides su validità) e computazionalmente più complessi. Per i **test di velocità** la consistenza interna non è una misura appropriata.
 
-Nota che GLB e omega sono legati ad analisi fattoriali (vedi slides su validità)
-e sono computazionalmente più complessi.
+_Soglie indicative_: $< 0.70$ inaccettabile, $0.70 - 0.79$ discreto, $0.80 - 0.89$ buono, $\geq 0.90$ eccellente (Slick, 2006); nei test neuropsicologici spesso $\sim 0.60$.
 
 ## Item selection 
 
@@ -334,9 +361,13 @@ Errore inter-rater: $(1-0.7) \times 100 = 30\%$
 Errore consistenza interna: $(1-0.97) \times 100 = 3\%$
 
 Errore totale: $15 + 30 + 3 = 48\%$
-\vspace{2em}
+\vspace{1em}
 
-A livello di test il 48% della varianza è riconducibile ad errore, e il 52% (100 – 48) della varianza è riconducibile al punteggio vero (è anche l’affidabilità complessiva del test). (Vedi Urbina, 2004, per esempio simile)
+A livello di test il 48% della varianza è riconducibile ad errore, e il 52% (100 – 48) al punteggio vero (che è anche l’affidabilità complessiva del test). (Vedi Urbina, 2004, per un esempio simile)
+
+\vspace{0.5em}
+
+\footnotesize \textbf{Attenzione}: questa scomposizione additiva assume che le sorgenti di errore siano _indipendenti_ ed è un artificio grossolano. Nella pratica psicometrica la precisione complessiva è espressa più propriamente tramite l'errore standard di misurazione (_SEM_) e i relativi intervalli di confidenza (non approfonditi qui).
 
 
 ## Stimare il punteggio vero
@@ -376,7 +407,7 @@ Un altro modo per pensare il problema è che stimare la varianza riconducibile a
 
 \small
 2) Per stimare il punteggio vero entra due volte in gioco la media del campione di riferimento (denotata con M). 
-Questo permette di tenere in consdierazione un fenomeno detto **regressione verso la media**: in ogni misura con errore è sempre più probabile che una misura successiva sia più vicina alla media del campione di riferimento. Questo perché, specie se l’errore dello strumento è grande, ogni deviazione della media ha probabilità di essere dovuta al caso.
+Questo permette di tenere in considerazione un fenomeno detto **regressione verso la media**: in ogni misura con errore è sempre più probabile che una misura successiva sia più vicina alla media del campione di riferimento. Questo perché, specie se l’errore dello strumento è grande, ogni deviazione della media ha probabilità di essere dovuta al caso.
 
 Correggere per la media ha però un grosso limite intrinseco: con che media correggere? Ad esempio, se ho un paziente con TBI è corretto usare (per M), la media del gruppo di sani con cui è stato sviluppato il test?
 
@@ -393,3 +424,20 @@ L’idea generale può essere espressa da questa formula.
 $$
 r_{xx} = \frac{\sigma_{true}}{\sigma_{tot}}
 $$
+
+# Riferimenti
+
+## Riferimenti
+
+\footnotesize
+
+- AERA, APA, & NCME (2014). _Standards for Educational and Psychological Testing_.
+- Cicchetti, D. V., & Sparrow, S. A. (1981). _American Journal of Mental Deficiency_.
+- Fastenau, P. S., et al. (1996).
+- Koo, T. K., & Li, M. Y. (2016). _Journal of Chiropractic Medicine_.
+- McGraw, K. O., & Wong, S. P. (1996). _Psychological Methods_.
+- Nunnally, J. C., & Bernstein, I. H. (1994). _Psychometric Theory_ (3rd ed.).
+- Sattler, J. M. (2001). _Assessment of Children_.
+- Shrout, P. E., & Fleiss, J. L. (1979). _Psychological Bulletin_.
+- Slick, D. J. (2006). Psychometrics in neuropsychological assessment. In Spreen & Strauss (cap. 1).
+- Urbina, S. (2004). _Essentials of Psychological Testing_.
