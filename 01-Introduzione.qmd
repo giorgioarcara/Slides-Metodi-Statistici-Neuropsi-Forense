@@ -184,7 +184,7 @@ Partiamo dalla fine:
 \pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
 
-## Perché è utile la statistica per il neuropsicologo forense?
+## Perché è utile la statistica per il neuropsicologo forense? (1/2)
 
 ```{=latex}
 \begin{columns}
@@ -193,7 +193,7 @@ Partiamo dalla fine:
 \begin{figure}
 \includegraphics[width=0.8\textwidth]{Figures/Motore.png}
 \end{figure}
-\tiny{Non serve conoscere come funziona un motore per guidare una macchina. Basta sapere cosa è giusto o sbagliato fare con pedali, cambio e volante. (Aforisma approssimativo di H. R. Baayen, 2008 circa)}
+\tiny{Non serve conoscere come funziona un motore per guidare una macchina. Basta sapere cosa è giusto o sbagliato fare con pedali, cambio e volante. (Aforisma di H. Baayen, corso di statistica, Edmonton 2008 circa)}
 
 \pause
 \column{0.5\textwidth}
@@ -203,6 +203,22 @@ Partiamo dalla fine:
 \end{figure}
 \tiny{I piloti di formula 1 hanno conoscenze superiori su come funziona un motore.}
 
+\end{columns}
+```
+
+## Perché è utile la statistica per il neuropsicologo forense? (2/2)
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{Figures/Mechanic_ChatGPT_BN.png}
+\end{figure}
+\tiny{Un pilota di F1 non è però un ingegnere o un meccanico: ne conosce bene il funzionamento per accorgersi di problemi (es. vibrazioni o rumori insoliti) e comunicare con il team, ma resta un utilizzatore, che deve concentrarsi sulle proprie abilità di guida.}
+
+\column{0.5\textwidth}
+Lo stesso vale per la/il neuropsicologa/o: non è necessario essere "psicometriste/i" o "statiste/i" per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
 \end{columns}
 ```
 
