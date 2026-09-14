@@ -204,6 +204,38 @@
 
 \section{Cornice Teorica}\label{cornice-teorica}
 
+\begin{frame}{Perché è importante misurare?}
+\phantomsection\label{perchuxe9-uxe8-importante-misurare}
+La misurazione è considerata una delle basi del metodo scientifico: un
+approccio scientifico e basato sull'evidenza non può che passare dalla
+misurazione.
+
+\pause
+\vspace{1em}
+
+Un celebre aforisma (probabilmente apocrifo) di Galileo Galilei recita:
+
+\emph{``misura ciò che puoi misurare, rendi misurabile ciò che non lo
+è''}
+\end{frame}
+
+\begin{frame}{Perché è importante misurare? (2/2)}
+\phantomsection\label{perchuxe9-uxe8-importante-misurare-22}
+Alla fine degli anni '40 una commissione di fisici e psicologi si chiese
+se gli oggetti di interesse della psicologia potessero davvero essere
+misurati (e quindi se la psicologia potesse essere considerata una
+scienza).
+
+Secondo una definizione rigorosa di misurazione, la risposta della
+commissione fu \emph{no}.
+
+\pause
+\vspace{1em}
+
+Fu proprio per rispondere a questo problema che S.S. Stevens propose una
+definizione di misurazione più permissiva.
+\end{frame}
+
 \begin{frame}{Misurazione}
 \phantomsection\label{misurazione}
 \emph{``We may say that measurement, in the broadest sense, is defined
@@ -346,10 +378,12 @@ due possibilità saranno trattate nelle lezioni su ``dati normativi'' e
 su ``confrontare punteggi a test diversi''.
 \end{frame}
 
-\begin{frame}{Un'altra possibile definizione di misurazione da filosofia
-e fisica}
-\phantomsection\label{unaltra-possibile-definizione-di-misurazione-da-filosofia-e-fisica}
-Non si misurano oggetti ma \emph{proprietà} di oggetti:
+\begin{frame}{Un'altra definizione di misurazione: Suppes e Zinnes
+(1963)}
+\phantomsection\label{unaltra-definizione-di-misurazione-suppes-e-zinnes-1963}
+Non si misurano oggetti ma \emph{proprietà} di oggetti. Suppes e Zinnes
+(1963) propongono una definizione di misurazione più rigorosa e formale
+di quella di Stevens:
 
 ``Sia \(O\) un certo insieme di oggetti caratterizzati dall'avere la
 proprietà P e sia \(\mathbb{R}\) l'insieme dei numeri Reali i quali
@@ -363,8 +397,15 @@ Dove \(\succcurlyeq\) indicano \emph{relazioni d’ordine empirico}
 (oggetti fisici) e \(\geq\) \emph{relazioni d’ordine numerico}''
 
 \begin{flushright}
-\emph{Boniolo e Vidali, Filosofia della scienza, p. 321}
+\emph{Suppes \& Zinnes (1963); presentazione tratta da Boniolo e Vidali, Filosofia della scienza, p. 321}
 \end{flushright}
+
+\vspace{1em}
+
+\((O_p,\succcurlyeq)\) è il \textbf{Sistema Relazionale Empirico},
+\((\mathbb{R},\geq)\) il \textbf{Sistema Relazionale Numerico}: misurare
+significa trovare un omomorfismo (una corrispondenza che preserva le
+relazioni) tra i due.
 \end{frame}
 
 \begin{frame}{Considerazioni conclusive su misurazione 1/2}
@@ -428,6 +469,11 @@ dell'esaminato.''
 \emph{Copia verbatim da  Stracciari, Bianchi, Sartori (2010); Neuropsicologia Forense}
 \end{flushright}
 
+\textbf{Nota:} i test non sono mai completamente oggettivi.
+L'oggettività è una proprietà graduale (test più o meno oggettivi), non
+un attributo assoluto, e può essere quantificata tramite indici come
+l'\emph{inter-rater agreement}.
+
 Il concetto di oggettività verrà ripreso più avanti, specie con
 \emph{inter-rater agreement}
 \end{frame}
@@ -458,8 +504,23 @@ o un sistema di categorie.
 
 L’interesse non è mai nel comportamento in sé ma nel \textbf{costrutto} misurato da quel comportamento.
 
-\textbf{Costrutto}: un concetto psicologico non osservabile 
+\textbf{Costrutto}: un concetto psicologico non osservabile
 }
+\end{frame}
+
+\begin{frame}{Definizione di test: una nota importante}
+\phantomsection\label{definizione-di-test-una-nota-importante}
+Un test è una \textbf{procedura sistematica}: per somministrarlo
+correttamente occorre attenersi scrupolosamente alla procedura originale
+(istruzioni, tempi, modalità di attribuzione dei punteggi).
+
+\pause
+\vspace{1em}
+
+Anche una deviazione apparentemente piccola (es. dare più tempo,
+semplificare le istruzioni) può alterare il significato del confronto
+con i \textbf{dati normativi} (lo vedremo nel capitolo su dati normativi
+e cut-off).
 \end{frame}
 
 \begin{frame}{Cosa sono i test}
@@ -582,12 +643,33 @@ dal punteggio vero?}
 \begin{frame}{Teoria dei test}
 \phantomsection\label{teoria-dei-test-3}
 \begin{center}
+  \textbf{Perché l'indipendenza tra $T$ ed $E$ si rompe ai valori estremi}
+\end{center}
+
+Se il punteggio vero di una persona è vicino al massimo del test (es.
+\(T=30\) su 30), l'errore non può mai essere positivo: il punteggio
+osservato non può superare il massimo.
+
+Allo stesso modo, se \(T\) è vicino al minimo, l'errore non può mai
+essere negativo.
+
+\pause
+\vspace{1em}
+
+In entrambi i casi l'errore è limitato in una sola direzione: dipende
+quindi da dove si trova \(T\) nella scala, violando l'assunzione di
+indipendenza.
+\end{frame}
+
+\begin{frame}{Teoria dei test}
+\phantomsection\label{teoria-dei-test-4}
+\begin{center}
   \href{https://github.com/giorgioarcara/stat_forensic_neuropsy/blob/main/code/02_True_score.R}{\underline{Esempio script CTT}}
 \end{center}
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-4}
+\phantomsection\label{teoria-dei-test-5}
 \begin{center}
   \textbf{Item Response Theory}
 \end{center}
@@ -608,7 +690,7 @@ un'unica dimensione (non sia la combinazione di più costrutti).
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-5}
+\phantomsection\label{teoria-dei-test-6}
 \begin{center}
   \textbf{Item Response Theory}
 \end{center}
@@ -634,7 +716,7 @@ $\beta$ = difficulty parameter
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-6}
+\phantomsection\label{teoria-dei-test-7}
 \begin{center}
   \textbf{Item Response Theory – Rasch models}
 \end{center}
@@ -648,7 +730,7 @@ tipo.
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-7}
+\phantomsection\label{teoria-dei-test-8}
 \begin{center}
   \textbf{Classical Test Theory vs Item Response Theory}
 \end{center}
@@ -661,7 +743,7 @@ secondo questo principio (e non con IRT).
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-8}
+\phantomsection\label{teoria-dei-test-9}
 \begin{center}
   \textbf{Classical Test Theory vs Item Response Theory}
 \end{center}
@@ -688,7 +770,7 @@ Un misto di aspetti teorici e praticità \pause
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-9}
+\phantomsection\label{teoria-dei-test-10}
 \begin{center}
   \textbf{Classical Test Theory vs Item Response Theory}
 \end{center}
@@ -706,7 +788,7 @@ neuropsicologico?
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-10}
+\phantomsection\label{teoria-dei-test-11}
 \begin{center}
   \textbf{Classical Test Theory vs Item Response Theory}
 \end{center}
@@ -725,7 +807,7 @@ neuropsicologico?
 \end{frame}
 
 \begin{frame}{Teoria dei test}
-\phantomsection\label{teoria-dei-test-11}
+\phantomsection\label{teoria-dei-test-12}
 \begin{center}
   \textbf{Classical Test Theory vs Item Response Theory}
 \end{center}
@@ -941,15 +1023,39 @@ etc.
 
 \begin{frame}{Riassunto}
 \phantomsection\label{riassunto}
+\footnotesize
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Costrutto} (concetto psicologico non osservabile)
+  vs.~\textbf{indicatore} (comportamento osservabile che assumiamo
+  esserne manifestazione): la relazione tra i due non è mai perfetta.
+\item
+  Due definizioni di misurazione: quella permissiva di \textbf{Stevens
+  (1946)}, con le sue 4 scale di misura, e quella più rigorosa di
+  \textbf{Suppes e Zinnes (1963)} (omomorfismo tra Sistema Relazionale
+  Empirico e Numerico).
+\item
+  I test neuropsicologici assumono quasi sempre, implicitamente, una
+  \textbf{scala ad intervalli} --- un'assunzione discutibile ma diffusa.
+\item
+  \textbf{Test} (Cronbach, 1990): procedura sistematica per
+  l'osservazione del comportamento e la sua descrizione con una scala
+  numerica o categorie.
+\item
+  \textbf{Teoria Classica dei Test}: \(X = T + E\), con due limiti
+  principali (abilità/difficoltà confuse; indipendenza \(T\)-\(E\)
+  violata ai valori estremi).
+\end{itemize}
+
 \begin{figure}
-  \includegraphics[scale=0.3]{Figures/measurement_diagramma.png}
+  \includegraphics[scale=0.25]{Figures/measurement_diagramma.png}
 \end{figure}
 
 \begin{flushright}
   {\scriptsize (Da Mondini, Cappelletti, Arcara, 2022)}
 \end{flushright}
-
-\textbf{Costrutto}: Concetto psicologico non osservabile direttamente
 \end{frame}
 
 

@@ -19,7 +19,7 @@ i capitoli 4–11 sono ancora abbozzati o assenti in `oltre-i-punteggi-elementi/
 | Fatto | Deck | Capitolo libro | File libro | Note |
 |---|---|---|---|---|
 | [x] | `04c_Affidabilità_formule.qmd` | Cap.2, parte Affidabilità (formule) | `chapters/Validita-Affidabilita.qmd` §Affidabilità (L356–537) | Fatto in sessione precedente (commit `4ef7ff7` + `8af72f4`). Changelog: `review/04c-changelog.md` — usare come modello di riferimento. |
-| [ ] | `02-Cornice_teorica.qmd` | Cap.1 Misurazione | `chapters/Misurazione.qmd` | Misurazione, scale di Stevens, definizione di test, CTT, costrutti |
+| [x] | `02-Cornice_teorica.qmd` | Cap.1 Misurazione | `chapters/Misurazione.qmd` | Fatto: framing "perché misurare", attribuzione Suppes e Zinnes corretta, caveat procedura/oggettività, riassunto ampliato. Changelog: `review/02-Cornice_teorica-changelog.md` |
 | [ ] | `04a-Validità_e_affidabilità_teoria.qmd` | Cap.2 Validità e Affidabilità (teoria) | `chapters/Validita-Affidabilita.qmd` §Validità + §Affidabilità (intro) | Companion teorico di 04b/04c; oggi non ha slide "Riferimenti" né citazioni-standard dense come 04c |
 | [ ] | `04b-Validità_formule.qmd` | Cap.2, parte Validità (formule) | `chapters/Validita-Affidabilita.qmd` §Validità | CVR di Lawshe, costrutto/criterio/ecologica — versione quantitativa |
 | [ ] | `05a_Valutare_deficit_e_danni.qmd` | Cap.3 Dati normativi/deficit/peggioramento (teoria) | `chapters/Dati-Normativi.qmd` | Verificare cosa è effettivamente scritto nel capitolo (solo parziale) prima di riscrivere tutto il deck |
