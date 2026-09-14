@@ -76,9 +76,9 @@ Un'ulteriore modo, più tecnico, è che la probabilità si riferisce alla percen
 
 ## la Condizione di interesse
 
-Esistono però situazioni in cui è possibile identificare la *condizione di interesse* (Condition of Interest, COI), tramite delle procedure, magari costose o invasive, che però permettero di avere una classificazione che riteniamo il nostro riferimento di correttezza/errore.
+Esistono però situazioni in cui è possibile identificare la *condizione di interesse* (Condition of Interest, COI), tramite delle procedure, magari costose o invasive, che però permetteranno di avere una classificazione che riteniamo il nostro riferimento di correttezza/errore.
 
-la condizione di interesse è, in contesto clinico, spesso la presenza di una patologia, oppure la classificazione ottenuta tramite un test costoso. In ambito forense, anche la classificazione come "essere un potenziale simulatore" è una condizione di interesse.
+La condizione di interesse è, in contesto clinico, spesso la presenza di una patologia, oppure la classificazione ottenuta tramite un test costoso. In ambito forense, anche la classificazione come "essere un potenziale simulatore" è una condizione di interesse.
 
 Il test/metodo/procedura diagnostica utilizzati per ottenere la nostra classificazione di riferimento è detto **gold-standard**.
 
@@ -132,7 +132,7 @@ A partire dai risultati della matrice di confusione possiamo calcolare delle imp
 
 **Specificità**: VN / VN + FP
 
-È la stima della probabilità di identificare correttamente un caso negativo, se se la persona è negativa al gold standard.
+È la stima della probabilità di identificare correttamente un caso negativo, se la persona è negativa al gold standard.
 
 ## Sensibilità e Specificità (Un esempio neuropsicologico)
 
@@ -150,7 +150,7 @@ A partire dai risultati della matrice di confusione possiamo calcolare delle imp
 
 È la probabilità di identificare correttamente un simulatore, se la persona è un simulatore secondo il gold-standard.
 
-**Specificità (Recall)**: VN / VN + FP
+**Specificità**: VN / VN + FP
 
 È la probabilità di identificare correttamente un NON simulatore, se la persona è un NON simulatore secondo il gold-standard.
 
@@ -182,7 +182,7 @@ Idealmente un test dovrebbe avere sia un’alta sensibilità e alta specificità
 
 Immaginate di spostare a sinistra o a destra la linea che indica il cut-off di discriminazione, ovviamente si modificherebbero tutte le classificazioni: VP, VN, FP ed FN.
 
-Per esempio spostando a sinistra la linea (cioè rendendo il cut-off di discriminazione più basso, si diminuiscono I FP, ma anche I VP! E aumentano I VN e FN.
+Per esempio spostando a sinistra la linea (cioè rendendo il cut-off di discriminazione più basso), si diminuiscono i FP, ma anche i VP! E aumentano i VN e FN.
 
 ![](Figures/cut-off_discriminazione.png){height="50%" fig-align="center"}
 
@@ -198,7 +198,7 @@ Per un esplorazione dinamica di come cambiare la soglia cambi la classificazione
 
 ## Specificità e cut-off di normalità
 
-È interessante notare come l’utilizzo di un cut-off di normalità (vedi slides valutare I deficit cognitivi), può essere immaginata come una condizione in cui **non conosciamo la distribuzione dei punteggi di chi ha un deficit/danno**, ma sappiamo che verosimilmente saranno più a sinistra (o in generale, peggiori) di quelli che non hanno un deficit/danno
+È interessante notare come l’utilizzo di un cut-off di normalità (vedi slides valutare i deficit cognitivi), può essere immaginata come una condizione in cui **non conosciamo la distribuzione dei punteggi di chi ha un deficit/danno**, ma sappiamo che verosimilmente saranno più a sinistra (o in generale, peggiori) di quelli che non hanno un deficit/danno
 
 Non sapendo dove mettere la soglia, la mettiamo nel punto che delimita 5% di campione/popolazione per i sani.
 
@@ -279,25 +279,25 @@ Se invece le distribuzioni dei due gruppi sono troppo sovrapposte è possibile c
 
 ## Una nota importante
 
-È da notare anche che a differenza dei test che si basano su cut-off di normalità, per I  test che mirano ad avere un cut-off di discriminazione **potrebbe non esistere una soglia adeguata alla discriminazione**.
+È da notare anche che a differenza dei test che si basano su cut-off di normalità, per i test che mirano ad avere un cut-off di discriminazione **potrebbe non esistere una soglia adeguata alla discriminazione**.
 
-Questo problema non c’è per I test con cut-off di normalità perché lì potremo sempre delimitare il 5% delle prestazione peggiori
+Questo problema non c’è per i test con cut-off di normalità perché lì potremo sempre delimitare il 5% delle prestazione peggiori
 (la verità è che non sappiamo dove si trova la distribuzione con deficit o danno, anzi abbiamo definito come soglia del danno, proprio quella del 5% delle prestazioni peggiori).
 
 
 ## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 1/3
 
-Come per altre proprietà studiate finora, è importante notare che Sensibilità e Specificità sono caratteristiche dei test (date specifiche condizioni) e non della proprietà della specifica valutazione. Quella infatti dipenda dalle realtà (che non è datto possiamo conoscere) della situazione.
+Come per altre proprietà studiate finora, è importante notare che Sensibilità e Specificità sono caratteristiche dei test (date specifiche condizioni) e non della proprietà della specifica valutazione. Quella infatti dipende dalla realtà (che non è dato possiamo conoscere) della situazione.
 
 ## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 2/3
 
-Spesso parlare di probabilità può portare a confusione, specie quando (almeno in teoria), potremmo sapere quale è la verità.Potrebbe avere senso se si parlasse del futuro (es. probabilità di sviluppare l’alzheimer entro 5 anni), ma spesso la realtà c’è già (solo che non sappiamo quale è). 
+Spesso parlare di probabilità può portare a confusione, specie quando (almeno in teoria), potremmo sapere quale è la verità. Potrebbe avere senso se si parlasse del futuro (es. probabilità di sviluppare l’alzheimer entro 5 anni), ma spesso la realtà c’è già (solo che non sappiamo quale è).
 
-Es. Non sappiamo se la persona sta sviluppando l’Alzheimer, ma è possibile immaginare che cìè una risposta corretta: o ce l'ha o non ce l'ha.
+Es. Non sappiamo se la persona sta sviluppando l’Alzheimer, ma è possibile immaginare che c'è una risposta corretta: o ce l'ha o non ce l'ha.
 
 ## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 3/3
 
-Occorre ricordare che non è corretto dire questo individuo 90% di Probabilità di avere Alzheimer (se avessimo la possibilità di conoscere la verità: o ce l’ha o non ce l’ha). Occorre sempre trattare correttamente le probabilità restituite dai test. Il test mi dice che il 90% di persone con Alzheimer hanno questa prestazione. L’esempio è più semplice se si usano condizioni di interesse come “presenza di tumore” (o c’è oppure no e si può capire con esame istologico, che è la nostra "verità").
+Occorre ricordare che non è corretto dire che questo individuo ha il 90% di probabilità di avere l'Alzheimer (se avessimo la possibilità di conoscere la verità: o ce l’ha o non ce l’ha). Occorre sempre trattare correttamente le probabilità restituite dai test. Il test mi dice che il 90% di persone con Alzheimer hanno questa prestazione. L’esempio è più semplice se si usano condizioni di interesse come “presenza di tumore” (o c’è oppure no e si può capire con esame istologico, che è la nostra "verità").
 
 ## Condizioni di interesse e validità
 
@@ -319,7 +319,7 @@ Sensibilità e Specificità ci aiutano a stimare delle cose importanti:
 
 ## Limiti Sensibilità e Specificità 2/3
 
-Le informazioni  di Sensibilità e Specificità sono utili, ma hanno limiti analoghi a quelli che avevamo per I cut-off di normalità, 
+Le informazioni  di Sensibilità e Specificità sono utili, ma hanno limiti analoghi a quelli che avevamo per i cut-off di normalità,
 Ci costringono ad un ragionamento “al contrario”, assumendo cosa siamo e vedere se siamo sotto soglia.
 
 **P(test sotto cut-off | Patologico)**
@@ -339,7 +339,7 @@ Idealmente sarebbe meglio avere una situazione al contrario:
 
 ## Probabilità condizionali e teorema di Bayes
 
-Il teorema di Bayes è un teorema molto importante che mette in relazione diverse probabilità. È importante perchè esprime in maniera chiara la relazione tra probabilità che (intuitivamente) potrebbero essere confuse per identiche.
+Il teorema di Bayes è un teorema molto importante che mette in relazione diverse probabilità. È importante perché esprime in maniera chiara la relazione tra probabilità che (intuitivamente) potrebbero essere confuse per identiche.
 
 ```{=latex}
 \vfill
@@ -375,7 +375,7 @@ Al di là dell’aspetto matematico, il teorema di Bayes ci dice in sostanza una
 Per calcolare le probabilità che a noi veramente interessa dovremmo conoscere altre
 Probabilità che di fatto non potremo sapere mai (cioè Probabilità a Priori, che è anche associata a Prevalenza, se si far riferimento ai concetti di PPV e PPN, si vedano prossime slides).
 
-Per questa ragione I test ci danno informazioni “indicative” sulle probabilità di avere una malattia o presenza di una condizione di interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi, anche ignorando il risultato di un test, se ci sono elementi che suggeriscono che probabilità a priori (o base rate) possano alterare I valori. Questo verrà approfondito nella sezione sull' _interpretazione_.
+Per questa ragione i test ci danno informazioni “indicative” sulle probabilità di avere una malattia o presenza di una condizione di interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi, anche ignorando il risultato di un test, se ci sono elementi che suggeriscono che probabilità a priori (o base rate) possano alterare i valori. Questo verrà approfondito nella sezione sull' _interpretazione_.
 
 
 ## Positive e Negative Predictive Value
@@ -394,16 +394,16 @@ Altre due misure molto rilevanti che si possono ottenere dalla matrice di confus
 ## Positive Predictive Value
 Il **PPV** indica  la proporzione di persone realmente positive (al gold-standard), tra tutte quelle che risultano positive al test.
 
-_Es. il numero di reali persone con Alzheimer (secondo gold-standard), che risutano positive al test, cioè  che vengono classificate come Alzheimer nel test che dovrebbe distinguere Alzheimer da Sani,_
+_Es. il numero di reali persone con Alzheimer (secondo gold-standard), che risultano positive al test, cioè  che vengono classificate come Alzheimer nel test che dovrebbe distinguere Alzheimer da Sani,_
 
 ## Negative Predictive Value
 
 Il **NPV** indica invece le proporzione di persone realmente negative (al gold-standard), tra tutte quelle che risultano negative al test.
 
-_Es. il numero di reali persone Sane (secondo gold-standard), che risutano negative al test, cioè  che vengono classificate come Sane nel test che dovrebbe distinguere Alzheimer da Sani,_
+_Es. il numero di reali persone Sane (secondo gold-standard), che risultano negative al test, cioè  che vengono classificate come Sane nel test che dovrebbe distinguere Alzheimer da Sani,_
 
 
-## Nota su intepretazione PPV e NPV
+## Nota su interpretazione PPV e NPV
 
 Come per Sensibilità e Specificità, PPV e NPV sono concetti che si riferiscono al test e che si riferiscono ad una specifica soglia (cioè ad uno specifico cut-off).
 
@@ -425,7 +425,7 @@ La PPV ha però senso solo se la proporzione tra sani e patologici (o tra veri n
 
 ## PPV e NPV - approfondimento
 
-Le formule di PPV e PPN possono (tramite semplice algebra rispetto a formule precedente, riscritte nella seguente maniera
+Le formule di PPV e PPN possono (tramite semplice algebra rispetto a formule precedenti) essere riscritte nella seguente maniera
 
 **Positive Predictive Value** = Sensibilità x Prevalenza / (Sensibilità x Prevalenza) + (1-Specificità)  x (1- Prevalenza) 
 
@@ -472,7 +472,7 @@ _AT ottiene 16._
 _Cosa concludereste?_
 
 ## Esperimento mentale 2/2
-_Siete consulenti di parte per AT, un professionista di 55 anni che coordina uno studio di commercialisti. In seguito ad un incidente stradale con trauma cranico, la sua capacità di concentrarsi si riduce drammatiamente e non è più in grado di seguire lo studio. Dopo circa due mesi dall’incidente l’assicurazione manda un perito che somministra il MoCA._
+_Siete consulenti di parte per AT, un professionista di 55 anni che coordina uno studio di commercialisti. In seguito ad un incidente stradale con trauma cranico, la sua capacità di concentrarsi si riduce drammaticamente e non è più in grado di seguire lo studio. Dopo circa due mesi dall’incidente l’assicurazione manda un perito che somministra il MoCA._
 
 _Supponiamo che un cut-off di 18 al Moca ha 95% di Sensibilità e 92% Specificità per identificare Alzheimer da Controlli._
 
@@ -492,13 +492,13 @@ L’esempio di prima mostra come sensibilità e specificità non considerino alc
 
 Non è possibile calcolare questa probabilità per un caso specifico (e avrebbe anche poco senso), ma è possibile calcolarla per un certo contesto.
 
-In tali casi tutte le valutazione condotte in un certo contesto potrebbero essere caratterizzate da una diversa prevalenza, con implicazioni sull'intepretazione della valutazione.
+In tali casi tutte le valutazione condotte in un certo contesto potrebbero essere caratterizzate da una diversa prevalenza, con implicazioni sull'interpretazione della valutazione.
 
 ## Riflessioni su questo esperimento mentale
 
 La probabilità di avere Alzheimer di persone che sono visitate in un Centro per i Disturbi Cognitivi e le Demenze (CDCD) è diversa dalla probabilità di avere l’Alzheimer in un contesto che valuta disturbi cognitivi in seguito ad un incidente stradale a fini assicurativi.
 
-La probabilità di simulazione in un contesto di valutare a fini assicurativi, è diverso della probabilità di simulazione in un contesto di valutazione in un centro Valutazione Alzheimer, perchè verosimilmente, cambia la prevalenza della patologia _degli individui testati_.
+La probabilità di simulazione in un contesto di valutare a fini assicurativi, è diverso dalla probabilità di simulazione in un contesto di valutazione in un centro Valutazione Alzheimer, perché verosimilmente, cambia la prevalenza della patologia _degli individui testati_.
 
 ## Esempio Covid
 
@@ -525,7 +525,7 @@ Ragionare tramite formule e non tramite intuito ci aiuta a comprendere meglio qu
 
 ## Importanza PPV e NPV in contesto forense
 
-In ambito forense molti test _per identificare simulatori_ riportano I valori di PPV per diversi valori di prevalenza.
+In ambito forense molti test _per identificare simulatori_ riportano i valori di PPV per diversi valori di prevalenza.
 
 Questo permette di esplorare vari scenari (realistici) e vedere come si classifica il nostro paziente.
 
@@ -534,7 +534,6 @@ Potrebbe però dare informazioni importanti: es. Che qualsiasi sia il valore di 
 
 
 ## PPV in contesto forense
-[](Figures/Sim_sens.png)
 
 ```{=latex}
 \begin{columns}
@@ -551,9 +550,9 @@ Potrebbe però dare informazioni importanti: es. Che qualsiasi sia il valore di 
 \end{columns}
 ```
 
-Esempio da Mathias et al., 2002 , \emph{Assessment}
+Esempio da Mathias et al., 2002, \emph{Assessment}
 
-Notare come un cut-off di 5 per una serie di scenari di prevalence (base rate) realistici su base di letteratura ha un PPV di 1. questo significa che persone che sono positive al test sono verosimilmente positive.
+Notare come un cut-off di 5 per una serie di scenari di prevalence (base rate) realistici su base di letteratura ha un PPV di 1. Questo significa che persone che sono positive al test sono verosimilmente positive.
 
 ## Da non dimenticare
 
@@ -563,18 +562,18 @@ Sono probabilità riferite al test (Sensibilità e Specificità) o al test in co
 
 Infatti per una specifica misurazione, a meno che non si voglia indagare qualcosa che avverrà nel futuro (es. probabilità di sviluppare entro 1 anno l’Alzheimer) , per una specifica persona c’è una verità (es. per l’Alzheimer quella persona o ce l’ha, o non ce l’ha). 
 
-Le probabilità sono nel test di essere corretto quando sviluppato e immaginando un suo utilizzo ripetuto, ma **non** nel darci un’informazione corretta nella specifa misurazione.
+Le probabilità sono nel test di essere corretto quando sviluppato e immaginando un suo utilizzo ripetuto, ma **non** nel darci un’informazione corretta nella specifica misurazione.
 
 ## Sensibilità, Specificità e probabilità
 
-Se volessimo esprimenre le soglie associate a specifiche sensibilità e specificità in termini di probabilità (come fatto per il cut-off di normalità). Potremmo usare una denotazione come quella che segue.
+Se volessimo esprimere le soglie associate a specifiche sensibilità e specificità in termini di probabilità (come fatto per il cut-off di normalità). Potremmo usare una denotazione come quella che segue.
 
 
 $\text{Sensibilità}: P(o < y | C)$
 
 $\text{Specificità}: P(o \geq  y | NC)$
 
-Dove $y$ è il cut-off di discriminazione, $o$ è il punteggio osservato. $C$ è l’appartenenza al gruppo di persone con Condizione di interesse (es. patologia) e $NC$ appartenza al gruppo di persone senza condizione di interesse (es. sani)..
+Dove $y$ è il cut-off di discriminazione, $o$ è il punteggio osservato. $C$ è l’appartenenza al gruppo di persone con Condizione di interesse (es. patologia) e $NC$ l'appartenenza al gruppo di persone senza condizione di interesse (es. sani).
 
 ## Un rischio di interpretazione
 
@@ -596,7 +595,7 @@ NOTA: le due formule sono diverse! (vedi anche slide precedente)
 
 Anche per test che usano condizioni di interesse, idealmente vorremmo che il gruppo di sani e di pazienti sia composto da persone il più simili possibili all’individuo che vogliamo valutare, perchè solo in quella maniera il punteggio atteso (sia nello scenario che abbia la condizione di interesse, sia nel caso non l’abbia) sia possibile. 
 
-Esistono anche metodi che permettono di calcolare curve ROC includendo covariate (cioè altre variabili che possono influenzare la soglia e quindi Sensibilità e Specificità. Questo è una cosa del tutto analaoga ai metodi di regressione per calcolare I cut-off di normalità. Questi metodi però non sono state praticamente mai usate in neuropsicologia clinica e forense e non saranno approfonditi.
+Esistono anche metodi che permettono di calcolare curve ROC includendo covariate (cioè altre variabili che possono influenzare la soglia e quindi Sensibilità e Specificità). Questo è una cosa del tutto analoga ai metodi di regressione per calcolare i cut-off di normalità. Questi metodi però non sono state praticamente mai usate in neuropsicologia clinica e forense e non saranno approfonditi.
 
 ## Cut-off di normalità da campione di dati normativi
 ```{=latex}
@@ -661,7 +660,7 @@ Questa differenza, spiegata nelle ultime due slide è catturata dai concetti di 
 \end{figure}
 \center
 \scriptsize
-\emph{Ulteriori informazioni contestuali potrebbero cambiare l’ipotetica “popolazione” in cui è pescato. Es. È una persona con sospetta demenza? È una persona che ha avuto un trauma cranico. É la terza volta che l apersona viene valutata? I dati di prevalenza, assumono che peschiamo in maniera random dalla popolazione generale, ma questo non avviene realmente.}
+\emph{Ulteriori informazioni contestuali potrebbero cambiare l’ipotetica “popolazione” in cui è pescato. Es. È una persona con sospetta demenza? È una persona che ha avuto un trauma cranico. È la terza volta che la persona viene valutata? I dati di prevalenza, assumono che peschiamo in maniera random dalla popolazione generale, ma questo non avviene realmente.}
 ```
 
 ## Considerazioni conclusive 1/2
@@ -670,7 +669,7 @@ Questa differenza, spiegata nelle ultime due slide è catturata dai concetti di 
 
 In quanto riportato sull’identificazione di condizioni di interesse valgono molte delle considerazioni già fatte nel contesto di deficit/danno.
 
-Anche per Sensibilità, Specificità PPV, etc. vale il fatto che sono tanto più precise quanto più alta è la numerosità campionaria (perchè più rappresentativa della popolazione).
+Anche per Sensibilità, Specificità PPV, etc. vale il fatto che sono tanto più precise quanto più alta è la numerosità campionaria (perché più rappresentativa della popolazione).
 
 I mio cut-off di discriminazione potrebbe essere diverso da quello della popolazione (che è quello che mi interessa), e tanto più grande è il mio campione tanto più sicuro sono che il mio cut-off sarà simile a quello della popolazione.
 
@@ -680,9 +679,9 @@ Per questa ragione è sempre meglio “interpretare” questi valori integrando 
 ![](Figures/triangle.png){fig-align="center" width="15%"}
 \small
 
-È da considerare che spesso nel caso di test con condizione di interesse non sono disponibili cut-off che tengono conto di variabili (es. Età,  scolarità, sesso, etc.) perchè I metodi più comunemente usati per le analisi ROC non le considerano.
+È da considerare che spesso nel caso di test con condizione di interesse non sono disponibili cut-off che tengono conto di variabili (es. Età,  scolarità, sesso, etc.) perché i metodi più comunemente usati per le analisi ROC non le considerano.
 
-Per tali ragione valgono tutta una serie di limiti legati alla rappresentatività del campione considerato, che va considerato quando si interpretano I risultati.
+Per tali ragioni valgono tutta una serie di limiti legati alla rappresentatività del campione considerato, che va considerato quando si interpretano i risultati.
 
 Ogni altra considerazione rimane pertinente (es. Meglio norme paese-specifiche, norme recenti, etc.)
 
