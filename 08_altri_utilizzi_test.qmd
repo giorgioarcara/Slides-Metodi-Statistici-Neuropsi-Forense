@@ -42,7 +42,7 @@ header-includes:
 \small
 Testiamo un paziente tramite il test di Linguaggio Figurato 1. 
 
-Il paziente ottiene un punteggio di 12. Dopo 6 mesi viene valuato nuovamente e ottiene un punteggio di 10. Cosa possiamo dire del paziente?
+Il paziente ottiene un punteggio di 12. Dopo 6 mesi viene valutato nuovamente e ottiene un punteggio di 10. Cosa possiamo dire del paziente?
 
 ![](Figures/Figure_true_obs_4.png){width="50%" fig-align="center"}
 
@@ -60,7 +60,7 @@ Perché valutare lo stesso soggetto/paziente più volte?
 
 - per indagare se presenta un declino nel funzionamento cognitivo, possibilmente segnale di un deterioramento progressivo.
 
-- Per indagare ha subito alterazioni cognitive in seguito ad un evento, come un’operazione neurochirurgica per rimuovere un tumore.
+- Per indagare se ha subito alterazioni cognitive in seguito ad un evento, come un’operazione neurochirurgica per rimuovere un tumore.
 
 ## Valutare i cambiamenti nel tempo
 
@@ -84,14 +84,14 @@ Perché valutare lo stesso soggetto/paziente più volte?
 
 È l’effetto per cui una seconda valutazione ha un punteggio migliore della precedente. Ci sono varie ragioni alla base dell’effetto pratica.
 
-- Maggiore familirità con la situazione testistica (meno ansia)
+- Maggiore familiarità con la situazione testistica (meno ansia)
 
 - Possibilità di utilizzare strategie scoperte nella prestazione precedente.
 
 ## Forme parallele
 A volte alcuni test potrebbero avere delle **forme parallele** e cioè una versione uguale del test in cui però gli item sono diversi. 
 
-Nelle forme parallele si introduce inoltre un'ulteriore problema è cioè quello di dimostrare che i due test siano da considerare equivalenti.
+Nelle forme parallele si introduce inoltre un ulteriore problema, cioè quello di dimostrare che i due test siano da considerare equivalenti.
 
 Inoltre l’utilizzo di forme parallele non garantisce una protezione dall’effetto pratica (Mondini e Arcara, 2008, si veda anche il test GEMS, Mondini et al., 2022 per un esempio in cui forme parallele hanno comunque effetto pratica).
 
@@ -103,7 +103,7 @@ Inoltre l’utilizzo di forme parallele non garantisce una protezione dall’eff
 \end{center}
 \vspace{1em}
 
-L’unico modo (rigoroso) è utilizzare **metodi statistici per valutare un cambiamento** (es. Chelune et al., 1993; Crawford & Garwhaite, 2006)
+L’unico modo (rigoroso) è utilizzare **metodi statistici per valutare un cambiamento** (es. Chelune et al., 1993; Crawford & Garthwaite, 2006)
 
 A mia conoscenza gli unici lavori in Italia che riportano tali dati non sono molti. Ad esempio:
 
@@ -138,7 +138,7 @@ A mia conoscenza gli unici lavori in Italia che riportano tali dati non sono mol
 \end{center}
 \vspace{2em}
 
-Esistono numerosi metodi per valutare i cambiamenti significativi nel tempo (si veda Collie 2002). In tutti questi metodi l’obiettivo è costruire delle soglie (una superiore e una inferiore) suparate le quali inferiamo che la variazione non è riconducibile al caso e, pertanto, è da considerare come signficativa.
+Esistono numerosi metodi per valutare i cambiamenti significativi nel tempo (si veda Collie 2002). In tutti questi metodi l’obiettivo è costruire delle soglie (una superiore e una inferiore) superate le quali inferiamo che la variazione non è riconducibile al caso e, pertanto, è da considerare come significativa.
 
 ## Valutare i cambiamenti nel tempo
 
@@ -151,7 +151,7 @@ Per farlo quasi tutti i metodi si basano su questa metodologia:
 
 si prende un **gruppo di individui e li si testa due volte (t0 e t1) in un lasso di tempo entro cui si assume che non sia avvenuto un cambiamento**. Ad esempio soggetti sani testati a t0 e a t1 dopo un mese. Questi soggetti non devono avere fatto training o altro che potrebbe spiegare differenze tra i punteggi.
 
-Ogni differenza tra t0 e t1 sarà dunque riconducibile a imprecisioni del test. A partire da questo (tramite metodi statistici diversi) si costruisce un’intervallo con un limite superiore o inferiore di cambiamento significativo.
+Ogni differenza tra t0 e t1 sarà dunque riconducibile a imprecisioni del test. A partire da questo (tramite metodi statistici diversi) si costruisce un intervallo con un limite superiore o inferiore di cambiamento significativo.
 
 ## Valutare i cambiamenti nel tempo
 
@@ -180,7 +180,7 @@ $$
 \small
 $$ SE_{DIFF} = \sqrt{2SE^2} $$
 $$SE = s_0\sqrt{1-r} $$
-$$s_0 = sd(X_0)r_0 = cor(X_0,X_1)$$
+$$s_0 = sd(X_0), \quad r_0 = cor(X_0,X_1)$$
 
 ## Valutare i cambiamenti nel tempo
 
@@ -191,7 +191,7 @@ $$s_0 = sd(X_0)r_0 = cor(X_0,X_1)$$
 
 Una volta ottenuto l’RCI può essere trattato come uno z-score.
 
-Se > 1.64, indica un miglioramento significativo (5%), mentre se < -1.,64, indica un peggioramento significativo (5%).
+Se > 1.64, indica un miglioramento significativo (5%), mentre se < -1.64, indica un peggioramento significativo (5%).
 
 ## Valutare i cambiamenti nel tempo
 
@@ -210,7 +210,7 @@ $$
 $$m = \bar{X}_1 - \bar{X}_0$$ 
 $$SE_{diff} = \sqrt{2SE^2}$$
 $$SE = s_0\sqrt{1-r_{01}}$$
-$$s_0 = sd(X_0)r_{01} = cor(X_0, X_1)$$
+$$s_0 = sd(X_0), \quad r_{01} = cor(X_0, X_1)$$
 
 ## Valutare i cambiamenti nel tempo
 
@@ -221,12 +221,12 @@ $$s_0 = sd(X_0)r_{01} = cor(X_0, X_1)$$
 
 Di nuovo, una volta ottenuto il mRCI può essere trattato come uno z-score.
 
-Se > 1.64, indica un miglioramento significativo (5%), mentre se < -1.,64, indica un peggioramento significativo (5%).
+Se > 1.64, indica un miglioramento significativo (5%), mentre se < -1.64, indica un peggioramento significativo (5%).
 
 ## Valutare i cambiamenti nel tempo
 
 \begin{center}
-\textbf{Regression Method Crawford \& Garthwaithe, 2006}
+\textbf{Regression Method Crawford \& Garthwaite, 2006}
 \end{center}
 \vspace{2em}
 
@@ -237,13 +237,13 @@ Essi inoltre non tengono conto di differenze che ci potrebbero essere a seconda 
 ## Valutare i cambiamenti nel tempo
 
 \begin{center}
-\textbf{Regression Method Crawford \& Garthwaithe, 2006}
+\textbf{Regression Method Crawford \& Garthwaite, 2006}
 \end{center}
 \vspace{2em}
 
 Il metodo di Crawford & Garthwaite, tiene invece conto di tutti questi aspetti e inoltre fornisce una statistica che tiene conto della differenza tra campione e popolazione (e funziona anche con campioni piccoli n~5).
 
-RCI e MRCI invece non tengono conto di distinzione campione e popolazione (come z-score).
+RCI e mRCI invece non tengono conto di distinzione campione e popolazione (come z-score).
 
 Approfondire la formula va al di là degli scopi di questo corso.
 
@@ -254,11 +254,11 @@ Approfondire la formula va al di là degli scopi di questo corso.
 \end{center}
 \vspace{2em}
 
-Cosa fare se il test non ha valori di cambiemanto significativo?
-  
-Fare MOLTA attenzione nell’utilizzo per inferire cambimento (evitarlo se possibile).
+Cosa fare se il test non ha valori di cambiamento significativo?
 
-Vedere i valori di affidabilità test-restest e selezionare test in cui sono alti, ma ricordando che non è incluso l’effetto pratica.
+Fare MOLTA attenzione nell’utilizzo per inferire cambiamento (evitarlo se possibile).
+
+Vedere i valori di affidabilità test-retest e selezionare test in cui sono alti, ma ricordando che non è incluso l’effetto pratica.
 
 ## Valutare i cambiamenti nel tempo
 
@@ -322,6 +322,6 @@ In particolare dobbiamo ricordarci che il confronto è spesso da considerarsi co
 \end{center}
 \vspace{2em}
 
-Supponiamo di traformare dei punteggi e di vedere che la persona si colloca al 70% nei test di memoria, mentre al 20% per i test di funzioni esecutive. Si potrebbe interpretare che c’è un declino selettivo delle funzioni esecutive.
+Supponiamo di trasformare dei punteggi e di vedere che la persona si colloca al 70% nei test di memoria, mentre al 20% per i test di funzioni esecutive. Si potrebbe interpretare che c’è un declino selettivo delle funzioni esecutive.
 
 Questo è possibile (e ragionevole), ma è importante ricordare che non sappiamo quanto *improbabile* è osservare questo pattern nei sani. Molte delle inferenze che abbiamo fatto erano basate su improbabilità, ma in questo caso noi non sappiamo se è un pattern effettivamente molto improbabile da suggerire un danno selettivo (lo stiamo *assumendo implicitamente*).
