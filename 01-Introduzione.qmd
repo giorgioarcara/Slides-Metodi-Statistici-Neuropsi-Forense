@@ -157,7 +157,7 @@ I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi di inte
 
 - Utilizzatele per capire meglio alcuni concetti. Se qualcosa non è chiaro, potete esplicitamente chiedere di spiegarlo in altri termini o con altri esempi.
 
-- **Non vi fidate ciecamente di ciò che dicono** ma cercate conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti detti _hallucinations_ danno risposte verosimili o credibili ma che si rivelano sbagliate o completamente inventate.
+- **Non vi fidate ciecamente di ciò che dicono** ma cercate conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti detti _hallucinations_, che danno risposte verosimili o credibili ma che si rivelano sbagliate o completamente inventate.
 
 ## Neuropsicologia Forense
 
@@ -233,12 +233,12 @@ Lo stesso vale per la/il neuropsicologa/o: non è necessario essere "psicometris
 
 ## 5 principi basilari di questo corso (2)
 
-2. In questo corso di Laurea (non solo nelle mie lezioni) il leitmotiv sarà che la valutazione forense hanno un ruolo fondamentale valutazioni di tipo cognitivo.
+2. In questo corso di Laurea (non solo nelle mie lezioni) il leitmotiv sarà che nella valutazione forense hanno un ruolo fondamentale le valutazioni di tipo cognitivo.
 
 \vspace{3em}
 
-*Un approccio che si sta imponendo in ambito forense è quello 
-Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argomentazioni.*
+*Un approccio che si sta imponendo in ambito forense è quello
+di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argomentazioni.*
 
 *Questo si contrappone ad un approccio dominante alla valutazione forense come semplice giudizio clinico, magari da fonte autorevole, o i test proiettivi, etc.*
 
@@ -248,7 +248,7 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 \vspace{3em}
 
-*Il concetto di raccolta di evidenze sarà un tema ricorrente di questo scorso e gli aspetti statistici saranno presentati come alcune delle possibili evidenze.*
+*Il concetto di raccolta di evidenze sarà un tema ricorrente di questo corso e gli aspetti statistici saranno presentati come alcune delle possibili evidenze.*
 
 ## 5 principi basilari di questo corso (4)
 
@@ -268,9 +268,9 @@ Di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 \end{figure}
 
 ## Alcune domande a cui risponderete
-*Come posso dimostrare che I test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
+*Come posso dimostrare che i test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
 \pause
-*Come posso dimostrare che nell’interpretare I test, l’altra parte ha commesso un errore?*
+*Come posso dimostrare che nell’interpretare i test, l’altra parte ha commesso un errore?*
 
 ## Focus sui test neuropsicologici
 Anche se la metodologia della valutazione neuropsicologica forense in genere include vari aspetti, Il focus sulla lezione è sui test neuropsicologici, su cosa sono, come si creano, come si interpretano i risultati. 
@@ -381,7 +381,7 @@ la neuropsicologa/il neuropsicologo, non i test.
 
 Per mettere al centro il neuropsicologo si parte da un approfondimento di tutti quegli aspetti medotologici e statistici proprio per vedere fin dove arrivano, dove si fermano e dove è che comincia realmente l’intervento dello psicologo/neuropsicologo e la sua \underline{interpretazione}.
 
-Queste conoscenze vi aiuterannno non solo a conoscere meglio l’utlizzo dei test, ma anche a capire bene tutte le altre evidenze che raccoglierete per giungere ad un’interpretazione degli stessi (e a come farlo attivamente), secondo basi statistiche.
+Queste conoscenze vi aiuteranno non solo a conoscere meglio l’utilizzo dei test, ma anche a capire bene tutte le altre evidenze che raccoglierete per giungere ad un’interpretazione degli stessi (e a come farlo attivamente), secondo basi statistiche.
 
 ## L’Interpretative Approach
 
@@ -444,7 +444,7 @@ Sottolineare interpretazioni non significa che ogni interpretazione va bene. Le 
 
 L’Interpretative approach nasce da esperienza di insegnamento di neuropsicologia clinica  (condiviso con Sara Mondini, Unipd e Marinella Cappelletti, Goldsmiths London)
 
-Spesso studentesse e studenti sono attratti dalla neuropsicologia proprio per il rigore dei test rispetto, ad esempio, ad un semplice colloquio o valutazione qualitativa. Questo può portare ad un’ eccessiva fiducia verso questi strumenti, oppure al dimenticarsi l’effettivo ruolo più importante del neuropsicologo in vari aspetti del’utilizzo dei test.
+Spesso studentesse e studenti sono attratti dalla neuropsicologia proprio per il rigore dei test rispetto, ad esempio, ad un semplice colloquio o valutazione qualitativa. Questo può portare ad un’eccessiva fiducia verso questi strumenti, oppure al dimenticarsi l’effettivo ruolo più importante del neuropsicologo in vari aspetti dell’utilizzo dei test.
 
 ## Valutazione neuropsicologica come raccolta di informazioni
 
@@ -453,7 +453,7 @@ Spesso studentesse e studenti sono attratti dalla neuropsicologia proprio per il
 ## Valutazione Neuropsicologica come raccolta di informazioni
 La raccolta di informazioni  è un processo **attivo** del neuropsicologo e dipende dalle sue conoscenze. 
 
-La stessa osservazione dipende dalle conoscenze, visto che I comportamenti che notiamo o osserviamo 
+La stessa osservazione dipende dalle conoscenze, visto che i comportamenti che notiamo o osserviamo 
 _(“teoreticità dell’osservazione”)_
 
 Così come tra queste conoscenze ci sono le conoscenze relative alle caratteristiche dei test e alle informazioni che, realmente, possiamo trarne.
