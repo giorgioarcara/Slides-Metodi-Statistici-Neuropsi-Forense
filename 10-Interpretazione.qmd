@@ -44,7 +44,7 @@ Quando si studiano gli aspetti statistici dei test in neuropsicologia forense, e
 
 Molto spesso aspetti statistici (es. Validità, Affidabilità, ma anche Errore di 1° Tipo, 2° Tipo), ci dicono informazioni sui test in generale oppure su che percentuali di errore ci aspetteremmo se facessimo infinite ripetizioni e con specifiche assunzioni. 
 
-Nella pratica di neurpsicologia clinica e forense, l’interesse è però nel dare una risposta specifica, spesso puntuale relativamente ad uno specifico individuo, con il massimo di accuratezza o precisione possibile: ha un deficit cognitivo? Sta simulando un deficit?
+Nella pratica di neuropsicologia clinica e forense, l’interesse è però nel dare una risposta specifica, spesso puntuale relativamente ad uno specifico individuo, con il massimo di accuratezza o precisione possibile: ha un deficit cognitivo? Sta simulando un deficit?
 
 L’aspetto chiave che tratteremo è che rispondere a queste domande non può prescindere da un’interpretazione del dato, che tenga conto non solo delle evidenze del test, ma dalle altre evidenze a disposizione. 
 
@@ -90,7 +90,7 @@ Si potrebbe pensare che un accento sull’ “interpretazione” vuol dire un ac
 \pause
 \normalsize
 Per interpretazione si intende \underline{integrazione di tutte le evidenze disponibili} per raggiungere una conclusione sullo stato cognitivo del paziente.
-Quello che si intende è dunque che non si può usare una serie di sillogismi per desumere deficit (se punteggio sotto cut-off → deficit), ma che anche il concludere un deficit è un interpretazione delle evidenze. I punteggi ai test rappresentano parte delle evidenze.
+Quello che si intende è dunque che non si può usare una serie di sillogismi per desumere deficit (se punteggio sotto cut-off → deficit), ma che anche il concludere un deficit è un'interpretazione delle evidenze. I punteggi ai test rappresentano parte delle evidenze.
 
 ```
 
@@ -130,7 +130,7 @@ L'accento sull’interpretazione indica che bisogna considerare le evidenze a di
 
 Nello scenario 2 difficilmente un’interpretazione sensata potrà suggerire che ci sono evidenze di simulazione. Lo scenario 1 invece sembra in qualche modo suggerirlo. È compito del neuropsicologo raccogliere in maniera attiva le evidenze rilevanti e raggiungere una conclusione. 
 
-Spesso (se non sempre)  conclusione comporterà l’aggiungere qualcosa, non il dedurre, che rappresenta appunto l’ _interpretazione_ fatta dalla/dal neuropsicologa/o.
+Spesso (se non sempre) la conclusione comporterà l’aggiungere qualcosa, non il dedurre, che rappresenta appunto l’ _interpretazione_ fatta dalla/dal neuropsicologa/o.
 
 ## Non tutte le evidenze sono uguali
 ![](Figures/triangle.png){fig-align="center" width="15%"}
@@ -147,7 +147,7 @@ Per ogni insieme di evidenze sono possibili più interpretazioni.
 
 Non esiste una formula matematica per dire come combinarle, ma esistono interpretazioni peggiori ed interpretazioni migliori che dipendono da come sono correttamente considerate le evidenze disponibili.
 
-In molti casi (specie forensI) non sarà facile dire che si ha un’interpretazione “giusta” in mano, ma solo un’interpretazione supportata dalle evidenze.
+In molti casi (specie forensi) non sarà facile dire che si ha un’interpretazione “giusta” in mano, ma solo un’interpretazione supportata dalle evidenze.
 
 ## Alcune interpretazioni
 
@@ -159,14 +159,14 @@ Nelle slides che seguono saranno portati alcuni esempi di interpretazioni di asp
 
 ## \normalsize Interpretazione di un risultato sotto cut-off come deficit cognitivo
 \small
-Se il mio soggetto va sotto cut-off i in un test di memoria a breve termine e concludo che è presente di un danno cognitivo non è semplice «lettura» dei risultati, ma è già **diagnosi descrittiva**. 
+Se il mio soggetto va sotto cut-off in un test di memoria a breve termine e concludo che è presente un danno cognitivo non è semplice «lettura» dei risultati, ma è già **diagnosi descrittiva**.
 
 Il neuropsicologo sta assumendo:
 
 - Che il test abbia misurato ciò che intendeva misurare \pause
 - Che l’ansia abbia avuto un ruolo trascurabile \pause
 - Che il soggetto era sufficientemente motivato e non ha finto un deficit. \pause
-- Che eventuali danni ad altre funzioni cognitive non hanno avuto un ruolo 	cruciale. \pause
+- Che eventuali danni ad altre funzioni cognitive non hanno avuto un ruolo cruciale. \pause
 - Che i dati normativi erano adeguati per stimare la prestazione del soggetto. \pause
 
 Molte di queste assunzioni sono “implicite” e un buon neuropsicologo (si veda principio 5 Interpretative Approach, in 1.Introduzione), ne è consapevole
@@ -182,11 +182,11 @@ Esempi: \pause
 
 - in contesto forense non possiamo dare per scontato che il paziente non stia simulando.\pause
 - in vari casi non possiamo dare per scontato che i dati normativi siano adeguati.\pause
-- non possiamo dare per scontato che altre funzioni cogntive non di interesse non abbiamo influenzato la performance in un paziente con sospetto danno cerebrale.
+- non possiamo dare per scontato che altre funzioni cognitive non di interesse non abbiano influenzato la performance in un paziente con sospetto danno cerebrale.
 
 ## \normalsize Interpretazione di un risultato sotto cut-off come deficit cognitivo
 
-L’interpretazione di un test dorebbe essere fatta al termine della valutazione, quando tutte le altre informazioni (anche provenienti da altri test) sono disponibili
+L’interpretazione di un test dovrebbe essere fatta al termine della valutazione, quando tutte le altre informazioni (anche provenienti da altri test) sono disponibili
 
 Uno degli errori più comuni è quello di interpretare già come _definitiva_, l’evidenza di un deficit già al primo risultato ottenuto. Questo non vale solo per deficit, ma per qualsiasi altro tipo di informazione raccolta. 
 
@@ -205,7 +205,7 @@ La/Il neuropsicologa/o deve integrare le informazioni a sua disposizione in mani
 Attenzione all’integrazione di costrutti su diversi livelli.
 Devono essere fatte in maniera sensata, tenendo conto della diversa gerarchia dei costrutti misurati.
 
-Può non avere senso concludere che il soggetto abbia un deficit in un costrutto più generico e si hanno altre informazioni più dettagliate.
+Può non avere senso concludere che il soggetto abbia un deficit in un costrutto più generico se si hanno altre informazioni più dettagliate.
 
 \pause
 
@@ -223,13 +223,13 @@ I punteggi ai test, il risultato del confronto con dati normativi e cut-off sono
 - Dati qualitativi emersi durante la valutazione
 - Informazioni dai familiari
 
-Sono tutti elementi da integrare per raggiungere una **diagnosi descrittiva** (quali deficit) sullo stato cogntivo del paziente e la **diagnosi di compatibilità con un’eziologia** (quale eziologia) dell’eventuale disturbo neuropsicologico.
+Sono tutti elementi da integrare per raggiungere una **diagnosi descrittiva** (quali deficit) sullo stato cognitivo del paziente e la **diagnosi di compatibilità con un’eziologia** (quale eziologia) dell’eventuale disturbo neuropsicologico.
 
 In ambito forense occorre inoltre fare ipotesi su presunta **causalità** rispetto all'evento rilevante.
 
 ## Informazioni nella valutazione neuropsicologica
 
-Considerando tutte le evidenze raccolte nella valutazioni informazioni che possono aiutare nella diagnosi sia i test, sia l’ _osservazione clinica_ hanno grande rilevanza e devono essere integrate per raggiungere conclusioni sensate.
+Considerando tutte le evidenze raccolte nella valutazione, informazioni che possono aiutare nella diagnosi sia i test, sia l’ _osservazione clinica_ hanno grande rilevanza e devono essere integrate per raggiungere conclusioni sensate.
 Aspetti psicometrici dei test (loro affidabilità, validità, etc.)
 
 ## Interpretare casi ambigui
@@ -240,7 +240,7 @@ _Come interpretare questi risultati?_
 \pause
 
 Dipende. Non esiste una regola per interpretare i risultati ai limiti della norma. 
-L’interpretazione dipende dall’integrazione con tutte le altre informazioni disponbili. Ricordarsi che i cut-off ci servono per stimare la prestazione del soggetto
+L’interpretazione dipende dall’integrazione con tutte le altre informazioni disponibili. Ricordarsi che i cut-off ci servono per stimare la prestazione del soggetto
 
 ## Interpretare casi ambigui
 
@@ -248,7 +248,7 @@ Caso 2: Soggetto che ha età o scolarità al limite tra due fasce.
 
 _Come interpretare questi risultati, con che fascia confrontare?_
 
-Il confronto con i dati normativi ci serve per stimare la prestazione del soggetto. Se il soggetto ha età o scolarità (o altre variabili) a cavallo tra due fasce probabilmente la cosa migliore è confrontare la prestazione con entrambi i cut-off. La/Il neuropsicologa/o dovrà integrare questare informazione con le altre disponibili per giungere ad una conclusione.
+Il confronto con i dati normativi ci serve per stimare la prestazione del soggetto. Se il soggetto ha età o scolarità (o altre variabili) a cavallo tra due fasce probabilmente la cosa migliore è confrontare la prestazione con entrambi i cut-off. La/Il neuropsicologa/o dovrà integrare questa informazione con le altre disponibili per giungere ad una conclusione.
 
 ## Esempio (1/2)
 \scriptsize
