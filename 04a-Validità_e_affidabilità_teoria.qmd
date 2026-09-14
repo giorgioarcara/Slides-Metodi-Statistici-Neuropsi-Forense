@@ -141,14 +141,16 @@ talvolta, alcuni test non riportano nessun evidenza di validità. Si tratta di s
 
 ## Tipi di validità
 
-- Validità di facciata
+Il libro adotta la cornice più recente e autorevole, quella degli _Standards for Educational and Psychological Testing_ (AERA, APA, & NCME, 2014): la validità è un **concetto unitario**, valutato attraverso 5 fonti di evidenza. Manteniamo però le etichette classiche, più diffuse nei manuali e articoli di test neuropsicologici:
+
 - Validità di contenuto
-- Validità convergente/divergente (validità di costrutto) 
+- Validità convergente/divergente (validità di costrutto)
 - Validità di criterio
 - Validità ecologica
+- (+ validità di facciata: concetto storico, vedi slide a parte)
 
 <br>
-Esistono diverse classificazioni di validità e affidabilità (vedi Urbina, 2004, Essentials of Psychological Testing, per un approfondimento). Quelle che segue è solo una delle possibili classificazioni.
+Per un approfondimento sulle classificazioni più classiche vedi Urbina (2004), Essentials of Psychological Testing.
 
 ## Validità a priori e a posteriori
 
@@ -156,11 +158,11 @@ La validità è distinta anche in _a priori_ e _a posteriori_
 La validità a priori è quella che si può esaminare prima che si abbiano dati empirici sul test.
 (lo sono, la validità di facciata e la validità di contenuto). La validità a posteriori è invece quella che si può valutare solo quando sono disponibili dati sul test (lo sono la validità di costrutto, la validità di criterio e la validità ecologica.)
 
-## Validità di facciata 1/2
+## Validità di facciata 1/2 (nota storica)
 
-**Validità di facciata**: si riferisce alla qualità di un test di esssere chiaramente riconducibile al costrutto che vuole misurare. Es. un test di memoria che richiede di ricordare gli items.
+**Validità di facciata**: la qualità di un test di apparire chiaramente riconducibile al costrutto che vuole misurare, sulla base di un giudizio qualitativo. Es. un test di memoria che richiede di ricordare gli items.
 
-Talvolta è l'unico tipo di validità che abbiamo a disposizione (ma di cui non dovremmo accontentarci.)
+Il termine non compare nemmeno una volta negli _Standards_ (AERA, APA, & NCME, 2014, oltre 230 pagine): è trattato qui come un concetto storico, non come un'evidenza tecnica di validità.
 
 Data la natura prettamente qualitativa non esistono analisi per verificarla.
 
@@ -190,6 +192,15 @@ Un test che vuole misurare l’abilità di lettura nella vita quotidiana e utili
 _Esempio di test con buona validità di contenuto:_
 
 Un test che vuole misurare le abilità di guida. E simula le abilità di guida tramite un sorta di videogioco in numerose condizioni.
+
+## Evidenze basate sui processi di risposta
+
+Una fonte di evidenza poco nota nei test neuropsicologici riguarda i **processi** con cui si arriva a un risultato, non solo il risultato stesso.
+
+_Esempio_: in un test di memoria di parole il paziente usa una _mnemotecnica_ non prevista — la performance può essere buona, ma non riflette più il costrutto che il test intende misurare.
+
+\vfill
+Si investiga tramite interviste, tempi di risposta, movimenti oculari. Storicamente collegata al _Boston Process Approach_ (Kaplan, 1988).
 
 ## Validità di costrutto (convergente/divergente) 1/5
 **Validità convergente-divergente (o validità di costrutto)**: indaga quanto il test misura effettivamente il costrutto che intende misurare valutando corenza interna degli item, oppure correlazione con altri test.
@@ -230,9 +241,18 @@ Se l'avessimo la validità più appropriata da utilizzare è quella di criterio 
 Il più delle volte non esiste però un test perfetto per un costrutto (es. non esiste un test di memoria che sia considerabile il riferimento), quindi ci si accontenta di evidenze di convergenza. Il mio test di memoria dovrebbe correlare con altre misure di memoria.
 
 
+## Costrutto vs criterio: una nota terminologica
+
+Secondo gli _Standards_ (AERA, APA, & NCME, 2014), "costrutto" è una nozione ampia che include anche ciò che qui chiamiamo _criterio_.
+
+Come nel libro, in questo corso si preferisce mantenere la distinzione classica: **costrutto** = concetto psicologico inosservabile; **criterio** = variabile osservabile, stabilita indipendentemente dal test (Cronbach & Meehl, 1955).
+
+\vfill
+Anche struttura fattoriale e correlazioni convergenti/divergenti, presentate insieme finora come "validità di costrutto", sono in realtà due fonti di evidenza distinte secondo gli _Standards_.
+
 ## Validità di criterio 1/3
 
-**Validità di criterio**: La proprietà di unt test di fornire risultati legati ad un criterio esterno. Il criterio è una variabile *osservabile* (a differenza dei costrutti). Un criterio è spesso l’appartenenza ad una patologia, oppure un aspetto prognostico (lo sviluppare una patologia in futuro, il migliorare dopo un trattamento, etc.), oppure il punteggio ad un altro test.  
+**Validità di criterio**: La proprietà di un test di fornire risultati legati ad un criterio esterno. Il criterio è una variabile *osservabile* (a differenza dei costrutti). Un criterio è spesso l’appartenenza ad una patologia, oppure un aspetto prognostico (lo sviluppare una patologia in futuro, il migliorare dopo un trattamento, etc.), oppure il punteggio ad un altro test.  
 
 La validità di criterio, se riferita ad una classificazione con un altro punteggio, è spesso espressa in termini di correlazione. Se riferita ad una classificazione in categorie è spesso espressa da valori di sensibilità/specificità (vedremo questo in maniera approfondita in un capitolo dedicato).
 
@@ -248,8 +268,12 @@ Dal momento che l'interesse in neuropsicologia/psicologia è il più delle volte
 
 ## Validità di criterio 3/3
 
-In generale sono fornite percentuali che esprimono l’accuratezza del test nel predire il criterio.
-Esistono diversi standard riportati per considerare accettabile la validità di criterio, ma dovrebbe essere alta (sensibilità/specificità superiore all’80% o correlazione > 0.80).
+In generale sono fornite percentuali che esprimono l’accuratezza del test nel predire il criterio. Non esiste una soglia universale, ma come riferimento indicativo:
+
+- criterio continuo (correlazione): $\geq$ 0.70-0.80
+- criterio categoriale (sensibilità/specificità/AUC): $\geq$ 0.80
+
+L'interpretazione dipende sempre da scopo del test, prevalenza della condizione e costi di falsi positivi/negativi.
 
 ## Validità ecologica 1/2
 
@@ -268,6 +292,15 @@ Nota che **la validità ecologica è spesso trascurata** ma particolarmente impo
 Questo è particolarmente rilevante nel caso di valutazioni del danno subito dal paziente. Avere un deficit cognitivo che sia particolarmente invalidante è ovviamente diverso da avere un deficit che però non ha impatto sulla vita quotidiana.
 
 Un test con dati su validità ecologica ci aiuterebbe a fare queste interpretazioni perché ci sarebbe supporto scientifico sulla relazione tra performance al test e comportamento di vita quotidiana.
+
+## Evidenze basate sulle conseguenze del testing
+
+Una fonte di evidenza, spesso trascurata, riguarda le **conseguenze**, soprattutto non intenzionali, dell'uso di un test.
+
+_Esempio_: un test che classifica sistematicamente in modo diverso persone di diverso stato socioeconomico, penalizzandone alcune nell'accesso a servizi di supporto.
+
+\vfill
+Una conseguenza negativa conta come problema di validità solo se è riconducibile a un limite nell'interpretazione dei punteggi (contenuto insufficiente o varianza non legata al costrutto) — non ogni conseguenza negativa implica scarsa validità.
 
 ## Come conoscere validità di uno strumento?
 
@@ -396,9 +429,11 @@ Validità del test ABaCo\\ (Sacco et al., 2008)
 
 # Affidabilità
 
-## Affidabilità
+## Affidabilità/precisione
 
-L’**Affidabilità** (o **Attendibilità**) è la qualità di un test di fornire punteggi consistenti in diverse misurazioni, e può essere quindi intesa come la precisione di un test.
+L'**Affidabilità** è la qualità di un test di fornire punteggi consistenti in diverse misurazioni: può essere intesa come la **precisione** di un test.
+
+Come per la validità, gli _Standards_ (AERA, APA, & NCME, 2014) trattano l'affidabilità come un **principio unitario** — l'ombrello "affidabilità/precisione" — di cui i "tipi" che seguono sono sfaccettature diverse, non categorie separate.
 
 ## Tipi Affidabilità
 
@@ -416,22 +451,21 @@ Spesso le misure di affidabilità sono associate a numeri. Le slide seguenti ipo
 
 È importante che questi sono valori "indicativi" e non esistono reali valori considerati come standard nella letteratura. Per tale ragione spesso circolano test con valori ben più bassi di quelli desiderabili.
 
-## Affidabilità Inter-rater
+## Inter-rater agreement
 
-**Affidabilità inter-rater**: è una misura della consistenza con cui diversi esaminatori valutano la stessa prestazione dello stesso paziente. É legata alla chiarezza istruzioni su come attribuire i punteggi e alla complessità dei comportamenti osservati nel test.
+**Inter-rater agreement** (affidabilità inter-rater): è una misura della consistenza con cui diversi esaminatori valutano la stessa prestazione dello stesso paziente. É legata alla chiarezza delle istruzioni su come attribuire i punteggi e alla complessità dei comportamenti osservati nel test — ed è collegata al concetto di **oggettività** del test (vedi Cornice teorica).
 
-Esistono vari modi di calcolarla. Nel metodo più diffuso è espressa da un coefficiente, l’intraclass correlation, che varia tra 0 e 1, dove 0 indica completa inconsistenza tra i punteggi e 1 indica assoluta consistenza tra i punteggi di due o più esaminatori. 
+Esistono vari modi di calcolarla. Nel metodo più diffuso è espressa da un coefficiente, l'intraclass correlation (ICC) — una **famiglia** di coefficienti — che varia tra 0 e 1, dove 0 indica completa inconsistenza tra i punteggi e 1 indica assoluta consistenza tra i punteggi di due o più esaminatori.
 
-Valori maggiori a 0.60 sono desiderabili.
+Valori maggiori a 0.60 sono desiderabili (Cicchetti & Sparrow, 1981; Fastenau et al., 1996).
 
 ## Affidabilità test-retest 1/4
 
-**Affidabilità test-retest**: rappresenta la consistenza di due misure con lo stesso test effettuato dallo stesso esaminatore e sullo stesso individuo dopo un intervallo di tempo _in cui si assume che non sia avvenuto nessun cambiamento._
+**Affidabilità test-retest**: la consistenza dei punteggi ottenuti dalle stesse persone in due occasioni diverse, assumendo che non ci sia stato un cambiamento _reale_ nel costrutto misurato e che le condizioni di somministrazione siano comparabili.
 
+In genere è espressa da un coefficiente di correlazione che varia tra -1 e 1, ma può essere anche espressa dal coefficiente ICC (lo stesso usato per Inter-rater agreement).
 
-In genere è espressa da un coefficiente di correlazione che varia tra -1 e 1, Ma può essere anche espressa dal coefficiente ICC (lo stesso usato per Inter-rater).
-
-valori maggiori a 0.70 sono desiderabili 
+valori maggiori a 0.70 sono desiderabili
 
 ## Affidabilità test-retest 2/4
 
@@ -455,6 +489,8 @@ Generalmente. Più corto è l’intervallo, più è probabile sia alta l’affid
 \end{columns}
 ```
 
+La correlazione cattura infatti solo la **consistenza relativa** (l'ordine relativo delle persone si mantiene), non un accordo assoluto sui valori — per questo va sempre affiancata da un'analisi dei cambiamenti sistematici (es. confronto delle medie; vedi Arcara \& Bambini, 2016).
+
 ## Affidabilità test-retest 4/4
 
 Quanto è usata la correlazione come misura, punteggi potrebbero avere una affidabilità test-retest (correlazione) di 0.98, ma essere poco stabili perché soggetti a _variazioni sistematiche_.
@@ -465,9 +501,9 @@ Più nello specifico. L’affidabilità test retest misurata tramite correlazion
 
 ## Affidabilità Split-Half
 
-L'affidabilità split-half stima l'affidabilità di un test misurando la correlazioni tra due metà del test.
+L'affidabilità split-half stima l'affidabilità di un test misurando la correlazione tra due metà del test (tipicamente item pari vs item dispari).
 
-Il test viene diviso in due (metà degli item in una parte, metà nell'altra) e viene calcolata una correlazione.
+Poiché ciascuna metà è più corta del test intero, la correlazione tra le metà sottostima l'affidabilità del test completo: si applica quindi la **correzione di Spearman-Brown**.
 
 Valori maggiori a 0.70-0.80 sono desiderabili.
 
@@ -479,11 +515,9 @@ Il principale limite è che il risultato dipende molto dalla divisione nelle met
 
 ## Consistenza interna
 
-**Consistenza interna**: rappresenta la consistenza tra gli item di un test
+**Consistenza interna**: rappresenta la consistenza tra gli item di un test — quanto gli item sono coerenti tra loro, cioè misurano in parte la stessa cosa.
 
-In genere è calcolata tramite l’alpha di Cronbach, un indice che varia da 0 a 1.
-Può essere considerata come il valore medio di tutte le possibili split-half reliability.
-
+In genere è calcolata tramite l'alpha di Cronbach (media di tutte le possibili split-half reliability), ma l'**omega di McDonald** è oggi considerato un'alternativa più robusta (assume meno vincoli sugli item). L'alpha resta un **limite inferiore** della reale consistenza interna. Nessuna delle due è indicata per test a tempo (_speed tests_).
 
 valori maggiori a 0.70 sono desiderabili, ma spesso in test neuropsicologici sono intorno a 0.60.
 
@@ -575,4 +609,20 @@ Anche se un test ha ottimi valori, potrebbe dare comunque risultati completament
 Una delle critiche della definizione fornita di Validità è infatti non stressare il fatto che è la misurazione ad essere valida o meno (più che il test).
 
 In ambito forense l'identificazione di "simulatori" (capitolo separato di questo corso) si focalizza proprio sull'identificare la validità _di specifiche valutazioni_.
+
+# Riferimenti
+
+## Riferimenti
+
+\footnotesize
+
+- AERA, APA, & NCME (2014). *Standards for Educational and Psychological Testing.*
+- Cicchetti, D. V., & Sparrow, S. S. (1981). Developing criteria for establishing interrater reliability of specific items.
+- Cronbach, L. J., & Meehl, P. E. (1955). Construct validity in psychological tests.
+- Fastenau, P. S., et al. (1996). Interrater reliability of standard and alternate versions of the Complex Figure Test.
+- Kaplan, E. (1988). A process approach to neuropsychological assessment.
+- Lawshe, C. H. (1975). A quantitative approach to content validity.
+- Slick, D. J. (2006). Psychometrics in neuropsychological assessment (cap. 1 in Spreen & Strauss, 2006).
+- Urbina, S. (2004). *Essentials of Psychological Testing.*
+- Arcara, G., & Bambini, V. (2016). A test for the assessment of pragmatic abilities and cognitive substrates (APACS).
 
