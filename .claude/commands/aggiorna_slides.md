@@ -109,12 +109,31 @@ Procedi al passo 6 solo se l'utente conferma di voler applicare (eventualmente d
    deliberatamente", stato del render).
 4. In `Piano_Allineamento_Libro.md`, spunta `[x]` la riga di questo deck nella tabella corrispondente
    (Livello 1 o Verifica leggera) — non toccare altre righe.
-5. **Non fare commit.** Lascia le modifiche (deck `.qmd`/`.tex`/`.pdf` rigenerati + tracker aggiornato)
-   pronte per la review dell'utente; il commit resta una decisione esplicita dell'utente.
+## 7. Commit (nessun push)
 
-## 7. Riepilogo finale
+Se il branch corrente è `main` (o comunque il branch di default), crea prima un nuovo branch
+topic (es. `book-alignment-<nome-deck>`) prima di committare — non committare direttamente su `main`.
+Altrimenti resta sul branch corrente.
+
+Fai **un solo commit** che copre esclusivamente questo allineamento:
+
+1. `git add` solo di: il deck `.qmd`/`.tex`/`.pdf` appena rigenerato, eventuali nuove figure aggiunte
+   in `Figures/` per questo deck, e `Piano_Allineamento_Libro.md` (la riga appena spuntata).
+   **Non aggiungere altro** — in particolare non toccare file `ENG-*` o altri file non tracciati già
+   presenti nella working tree che non fanno parte di questo allineamento (verifica con
+   `git status --short` prima di `git add` cosa stai effettivamente includendo).
+2. Messaggio nello stile dei commit già presenti nella storia del repo (es. `refactor(<nn>): align
+   <argomento> framing/terminology/thresholds with the book`), con un elenco puntato delle modifiche
+   principali (stesso livello di detaglio del changelog in `review/`).
+3. **Non fare `git push`.** Il push resta una decisione esplicita dell'utente.
+
+Se il piano non è stato applicato (ci si è fermati prima, o l'utente ha scelto di lasciarlo solo come
+proposta), non c'è nulla da committare in questo passo.
+
+## 8. Riepilogo finale
 
 Riporta: quale deck è stato allineato (o perché ci si è fermati prima, se non applicato), quante slide
-sono state modificate, esito del render, che il tracker è stato aggiornato, e — se il piano è stato solo
-proposto senza applicazione — dove si trova il file di piano in `review/`. Se questo deck era in
-Livello 1, suggerisci il prossimo deck non spuntato in quella tabella come possibile prossimo passo.
+sono state modificate, esito del render, che il tracker è stato aggiornato, l'hash del commit creato
+(se fatto), e — se il piano è stato solo proposto senza applicazione — dove si trova il file di piano
+in `review/`. Se questo deck era in Livello 1, suggerisci il prossimo deck non spuntato in quella
+tabella come possibile prossimo passo.
