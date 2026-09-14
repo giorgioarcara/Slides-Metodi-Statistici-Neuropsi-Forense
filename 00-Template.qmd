@@ -39,7 +39,7 @@ header-includes:
 -   Aspetti organizzativi del corso.
 -   Obiettivi formativi e "spirito" del corso.
 
-## Seconda slides (due colonne)
+## Seconda slide (due colonne)
 
 
 ```{=latex}
