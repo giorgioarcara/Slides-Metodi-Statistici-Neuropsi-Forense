@@ -63,7 +63,7 @@ Per un approfondimento sulle classificazioni più classiche vedi Urbina (2004), 
 **Validità di contenuto**: la proprietà degli item di essere sufficienti ed adeguati per valutare il costrutto di interesse.
 \vspace{2em}
 
-Calcolabile con il Metodo di Lawshe (1975). è un metodo per ottenere validità di contenuto di item e test totale, caratterizzato da 3 step:
+Calcolabile con il Metodo di Lawshe (1975). È un metodo per ottenere validità di contenuto di item e test totale, caratterizzato da 3 step:
 
 **STEP 1)**: Si chiede degli esperti (panelist) di valutare ciascun item secondo queste possibilità:
 
@@ -169,7 +169,7 @@ intende misurare, valutando la coerenza interna degli item oppure la correlazion
 
 La validità di costrutto è valutata in due maniere:
 
-- valutando sei gli **item** misurano in maniera appropriata il costrutto.
+- valutando se gli **item** misurano in maniera appropriata il costrutto.
 
 - valutando se il **punteggio totale del test**[^1] misuri in maniera appropriata il costrutto (rappresenta correttamente il costrutto?).
 
@@ -183,7 +183,7 @@ La validità di costrutto è valutata in due maniere:
 \end{center}
 \vspace{2em}
 
-Uno dei classici modi per vedere su tutti gli item di un test si comportano in maniera coerente è valutando la consistenza interna, tramite l’utilizzo di metriche come l’alpha di Cronbach. 
+Uno dei classici modi per vedere se tutti gli item di un test si comportano in maniera coerente è valutando la consistenza interna, tramite l’utilizzo di metriche come l’alpha di Cronbach. 
 
 Questa però è spesso associata più all’affidabilità (vedi quindi slides su formule affidabilità).
 
@@ -196,7 +196,7 @@ Questa però è spesso associata più all’affidabilità (vedi quindi slides su
 \small
 L’analisi statistica più comunemente utilizzata per valutare gli item è l’analisi fattoriale.
 
-L’analisi fattoriale (nel contesto della teoria dei test) indaga se gli item di un test si comportano in maniera coerente, dimostrando che essi misurano uno stessa variabile latente (detto fattore).
+L’analisi fattoriale (nel contesto della teoria dei test) indaga se gli item di un test si comportano in maniera coerente, dimostrando che essi misurano una stessa variabile latente (detto fattore).
 
 Operativamente e per questi scopi l’analisi fattoriale viene condotta in una matrice $m x n$, dove $m$ sono gli item (in riga) ed $n$ sono i partecipanti (in colonna).
 
@@ -254,8 +254,8 @@ In questo esempio gli item caricano su 2 fattori
   \column{0.7\textwidth}
           
       \scriptsize
-      Un primo fattore cattura una correlazione positiva tra gli item 1,2,3 che tendono avere punteggi correlati tra loro.\\
-\vspace{1em}      
+      Un primo fattore cattura una correlazione positiva tra gli item 1,2,3 che tendono ad avere punteggi correlati tra loro.\\
+\vspace{1em}
 Un secondo fattore cattura una correlazione positiva tra gli item 4,5, che tendono ad avere punteggi correlati tra loro. \\
 \vspace{1em}      
 Questo è uno scenario ideale, in cui items "caricano" chiaramente in maniera distinta in specifici fattori.
@@ -286,11 +286,11 @@ In questo esempio gli item caricano su 2 fattori
   \column{0.7\textwidth}
           
       \scriptsize
-      Un primo fattore cattura una correlazione positiva tra gli item 2,3,4,5, che tendono avere punteggi tutti correlati tra loro.\\
+      Un primo fattore cattura una correlazione positiva tra gli item 2,3,4,5, che tendono ad avere punteggi tutti correlati tra loro.\\
 \vspace{1em}
-Un secondo fattore cattura una correlazione negativa di item 1 e 4 rispetto ad item 9. In sostanza quando sono alti i punteggi di 1 e 4 son obassi quelli di 5, e viceversa.\\
+Un secondo fattore cattura una correlazione negativa di item 1 e 4 rispetto ad item 9. In sostanza quando sono alti i punteggi di 1 e 4 sono bassi quelli di 5, e viceversa.\\
 \vspace{1em}
-Questo è uno scenario più complesso (e comune), il fatto che un item carichi su pià fattori ("cross loadings") può essere indice che l'item non è adeguato o che il modello teorico va rivisto.
+Questo è uno scenario più complesso (e comune), il fatto che un item carichi su più fattori ("cross loadings") può essere indice che l'item non è adeguato o che il modello teorico va rivisto.
 
 \end{columns}
 ```
@@ -402,7 +402,7 @@ PCA e analisi fattoriale sono concettualmente simili e i risultati (una matrice 
 Questa differenza si riflette in una diversità a livello della formula e nei risultati che si
 otterranno.
 
-Quindi potreste trovare in un test una PCA invece di un’analisi fattoriale. Potete interpretarle in maniera analoga, anche se sarebbe più corretto utilizzare l’analisi fattoriale perchè assume l’esistenza di variabili latenti, cosa che è spesso implicita quando si tratta di item o punteggi totali di test psicologici.
+Quindi potreste trovare in un test una PCA invece di un’analisi fattoriale. Potete interpretarle in maniera analoga, anche se sarebbe più corretto utilizzare l’analisi fattoriale perché assume l’esistenza di variabili latenti, cosa che è spesso implicita quando si tratta di item o punteggi totali di test psicologici.
 
 ## Validità di costrutto
 
@@ -461,7 +461,7 @@ I test neuropsicologici (specie nei sani) tendono sempre ad essere **molto corre
 
 L’aspetto critico dell’interpretare valori “soglia” di correlazioni tra due diversi test è che i valori sono anche legati ai rispettivi errori dei test (quindi ad aspetti legati a numerosità campionarie e affidabilità, vedi future slides).
 
-Inoltre è sempre possibile “giustificare” a posteriori un’eventuale differenza o valore basso (es. La correlazione è bassa presumibilmente perchè questo test implica di più le funzioni esecutive rispetto all’altro).
+Inoltre è sempre possibile “giustificare” a posteriori un’eventuale differenza o valore basso (es. La correlazione è bassa presumibilmente perché questo test implica di più le funzioni esecutive rispetto all’altro).
 
 ## Validità di costrutto
 
@@ -494,7 +494,7 @@ Dimostrare che stiamo isolando bene la specifica funzione cognitiva è a sostegn
   \small
    Questa figura riporta le correlazioni tra alcuni test di vario tipo e il NADL-F (Arcara et al., 2019).
    
-   Notate che non correla con GDS (geriatric Depression Scales), a sostegno della sua validità di costrutto.
+   Notate che non correla con GDS (Geriatric Depression Scale), a sostegno della sua validità di costrutto.
 
 \end{columns}
 ```
@@ -550,7 +550,7 @@ Ad esempio Montemurro et al. (2023) per dimostrare che il test Tele-GEMS era uti
 
 2) fatto PCA su questi test e ottenuto un punteggio globale (prima componente) che catturava il 60% della varianza.
 
-3) visto se punteggio Tele-GEMS correlava con questo punteggio. La correlazione era 0.50 (moderata/alta) e interepretata a supporto di una buona validità di costrutto del test.
+3) visto se punteggio Tele-GEMS correlava con questo punteggio. La correlazione era 0.50 (moderata/alta) e interpretata a supporto di una buona validità di costrutto del test.
 
 ## Validità di costrutto
 
@@ -578,12 +578,12 @@ Nota che pre-registrare risolve _in generale_ problemi di flessibilità o non ch
 
 La **validità di criterio** valuta quanto un test è associato o predice un altra variabile di outcome (osservabile), detta gold-standard.
 
-Le analisi che si possono utilizzare e come valutare i risultati cambiano a seconda che il criterio sia una variabile continua (es. Il punteggio ad un altro test) oppure una variabile categoriale (es. l’appartenza ad un gruppo, es MCI vs Controlli).
+Le analisi che si possono utilizzare e come valutare i risultati cambiano a seconda che il criterio sia una variabile continua (es. Il punteggio ad un altro test) oppure una variabile categoriale (es. l’appartenenza ad un gruppo, es MCI vs Controlli).
 
 
 ## Validità di criterio
 
-La validità di criterio può essere divisa in concorrente o predittiva (vedi slides Validità e affidabilità (teoria), ma questo non cambia il modo in cui vengono fatte generalmente le analisi, che dipendono solo dal fatto che il criterio sia variabile continua o categoriale.
+La validità di criterio può essere divisa in concorrente o predittiva (vedi slides Validità e affidabilità (teoria)), ma questo non cambia il modo in cui vengono fatte generalmente le analisi, che dipendono solo dal fatto che il criterio sia variabile continua o categoriale.
 
 
 ## Validità di criterio
@@ -630,7 +630,7 @@ In ambito neuropsicologico/psicologico raramente il punteggio ad un altro test �
 
 - si vuole mostrare che un test breve è equivalente ad uno lungo/dispendioso (quello lungo è il "criterio")
 
-- si vuole mostrare che un test online è equivalente ad uno in presenza (valutazoini in presenza sono di norme considerate gold standard)
+- si vuole mostrare che un test online è equivalente ad uno in presenza (valutazioni in presenza sono di norma considerate gold standard)
 
 
 # Validità di facciata (nota storica)
@@ -646,7 +646,7 @@ La **validità di facciata** valuta quanto un test *sembra* misurare ciò che in
 \small
 Spesso è valutata tramite domande ad hoc ad esperti o tramite confronto con test gold standard esistenti, ma solo tramite confronto qualitativo.
 
-Talvolta la sola informazione che si ha a disposizione di un test è proprio la validità di facciata. Non ci sono altre prove che il test misuri ciò che vuole misurare se non il fatto che sia costruito da item che plausibilimente misurano proprio quel costrutto. 
+Talvolta la sola informazione che si ha a disposizione di un test è proprio la validità di facciata. Non ci sono altre prove che il test misuri ciò che vuole misurare se non il fatto che sia costruito da item che plausibilmente misurano proprio quel costrutto.
 
 \column{0.2\textwidth}
 \begin{figure}
