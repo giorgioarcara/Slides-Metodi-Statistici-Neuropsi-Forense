@@ -73,7 +73,7 @@ La batteria di test è la stessa per tutti gli individui valutati. In genere è 
 
 ## Approccio a batteria flessibile
 
-I test vanno scelti di volta in volta sulla base di ipotesi diagnositiche sull'esaminando. É accompagnata dal processo detto di test delle ipotesi.
+I test vanno scelti di volta in volta sulla base di ipotesi diagnostiche sull'esaminando. È accompagnata dal processo detto di test delle ipotesi.
 
 **È l'approccio più diffuso in ambito forense, anche per via dei tempi limitati della valutazione**
 
@@ -82,7 +82,7 @@ I test vanno scelti di volta in volta sulla base di ipotesi diagnositiche sull'e
 
 In genere si parta da un test, selezionato sulla base dei quesiti diagnostici. In base al risultato del test si seleziona il test successivo e così via.
 
-Spesso è privilegiato un approccio che miri a falsificare (cioè smentire) le proprie ipotesi, piuttosto che confermarli, secondo un approccio deduttivo.
+Spesso è privilegiato un approccio che miri a falsificare (cioè smentire) le proprie ipotesi, piuttosto che confermarle, secondo un approccio deduttivo.
 
 Es. se suppongo che il paziente abbia un deficit di memoria e ottengo che nel test di memoria è nella norma ho falsificato la mia ipotesi e posso dunque procedere con un’altra ipotesi, da indagare tramite un altro test.
 
@@ -110,7 +110,7 @@ Es. se suppongo che il paziente abbia un deficit di memoria e ottengo che nel te
 
 Un’importante considerazione da fare sulla scelta dei test è che occorre ricordarsi che (da un punto di vista statistico), più test  si somministrano, più è probabile che almeno uno vada al di sotto del cut-off.
 
-Una possibilità sarebbe quella di correggere i test con metodi di correzione dei confronti multipli (es. Bonferroni). Nel metodo di bonferroni per mantenere l’errore di 1° tipo al livello nominale (alpha = 0.05, cioè 5%) per tutti i test si aggiusto il valore critico dividendo per il numero di test somministrati. 
+Una possibilità sarebbe quella di correggere i test con metodi di correzione dei confronti multipli (es. Bonferroni). Nel metodo di Bonferroni per mantenere l’errore di 1° tipo al livello nominale (alpha = 0.05, cioè 5%) per tutti i test si aggiusta il valore critico dividendo per il numero di test somministrati.
 
 Supponiamo di avere somministrato 20 test, l’alpha critico diventerebbe 0.05/20 = 0.0025 
 
@@ -120,7 +120,7 @@ Usare correzioni come il metodo di Bonferroni ha un altro problema: assume che t
 
 Esistono quindi metodi più corretti e che aumentano meno l’errore di 2° tipo, di fatto non controllando completamente il 1°. Es. Benjamini & Yekutieli 2001, False Discovery Rate.
 
-_L’utilizzo di metodi di correzione di test è comunque molto poco diffuso e potrebbe essere utilizzati solo con quei metodi che restituiscono la probabilità esatta._
+_L’utilizzo di metodi di correzione di test è comunque molto poco diffuso e potrebbe essere utilizzato solo con quei metodi che restituiscono la probabilità esatta._
 
 
 
