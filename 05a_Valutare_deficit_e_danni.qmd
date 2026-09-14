@@ -73,11 +73,20 @@ Nelle prossime slide userò spesso i termini deficit e danni. **Non sono sinonim
 **Deficit (cognitivo)**: una mancanza/difetto funzionale sul piano cognitivo quando paragonato con un gruppo di riferimento (spesso i pari) o una traiettoria di sviluppo attesa. Es. una persona che non è in grado di leggere (con vista integra) ha un deficit cognitivo.
 
 \pause
-**Danno (cognitivo)**: un peggioramento di un'abilità cognitiva rispetto ad una condizione precedentemente raggiunta, in seguito ad un evento (può essere puntuale nel tempo, come un ictus, o non localizzabile, es. degenerazione rispetto ad Alzheimer).
+**Danno (cognitivo)**: un peggioramento di un'abilità cognitiva rispetto ad una condizione precedentemente raggiunta, in seguito ad un evento. Si distinguono due sottotipi: **compromissione** (non progressiva, dovuta ad un evento puntuale come un ictus o un trauma cranico; può essere reversibile) e **declino** (progressiva, dovuta tipicamente ad una malattia neurodegenerativa; di solito non reversibile).
 \vspace{2em}
 
 \footnotesize
 NOTA: questa non è necessariamente una terminologia condivisa. L’aspetto importante è però distinguere concettualmente questi due tipi di possibilità
+
+## Una nota sulla letteratura
+
+La stessa ambiguità esiste in letteratura: Muriel Lezak usa spesso il termine "deficit" per indicare quello che qui chiamiamo "peggioramento" ("the amount of deficit the patient has sustained", Lezak, 2014).
+
+L'_International Classification of Functioning_ (ICF; World Health Organization, 2013) usa invece "impairment" per indicare sia la deviazione (il nostro "deficit") che la perdita (il nostro "peggioramento").
+
+\vspace{1em}
+Non esiste quindi una terminologia condivisa: l'importante è essere chiari su cosa si intende, in ogni singolo caso.
 
 ## Danno in contesto forense
 
@@ -128,9 +137,13 @@ Supponiamo di somministrare il test di Linguaggio Figurato 1 di APACS (perché s
 \end{center}
 ```
 
-I punteggi grezzi sono poco informativi non solo perché i valori dipendono dal range dei punteggi (che spesso è arbitrario), ma anche perché un punteggio alto o basso dipende molto da quanto il test è difficile (o facile). 
+I punteggi grezzi sono poco informativi non solo perché i valori dipendono dal range dei punteggi (che spesso è arbitrario), ma anche perché un punteggio alto o basso dipende molto da quanto il test è difficile (o facile).
 
-\textbf{Per trarre informazioni utili, in neuropsicologia i punteggi si confrontano spesso con dei dati di riferimento che ci aiutano a classificare la prestazione}. 
+\textbf{Per trarre informazioni utili, in neuropsicologia i punteggi si confrontano spesso con dei dati di riferimento che ci aiutano a classificare la prestazione}.
+
+\vspace{1em}
+\footnotesize
+È lo stesso motivo per cui un 25 ad un esame universitario può essere un voto molto alto per un esame difficile, ma piuttosto basso per un esame facile: lo stesso numero, a seconda del "gruppo di riferimento" (la difficoltà dell'esame/test), ha un significato molto diverso.
 
 ## Trasformazione punteggi e cut-off 2/2
 ```{=latex}
@@ -178,7 +191,7 @@ Spesso i cut-off solitamente riportati in tabelle, indipendentemente dal metodo 
 I dati normativi sono dati raccolti su soggetti che assumiamo siano normali. Servono a stabilire quali prestazioni possiamo considerare normali e quali no.
 \vspace{2em}
 
-Chiamiamo i cut-off calcolato sui dati normativi **cut-off di normalità**.
+Chiamiamo **cut-off di normalità** la soglia che divide i punteggi considerati "nella norma" da quelli considerati "deficitari" (Mondini, Mapelli, \& Arcara, 2022).
 
 ## Valutare i deficit/danni cognitivi
 
@@ -393,6 +406,18 @@ NOTA: Il cut-off NON ci indica la probabilità che il soggetto sia normale o abb
 \end{columns}
 ```
 
+## Prestazione deficitaria: una precisazione importante
+
+Per come è definita la soglia, una certa percentuale di soggetti **sani** (compresi alcuni del campione normativo) otterrà, per definizione, punteggi classificati come "prestazione deficitaria".
+
+\pause
+\vspace{1em}
+
+Non è un'anomalia, ma una conseguenza inevitabile del criterio usato per stabilire la soglia (circa il 5%, se quella è la soglia scelta).
+
+\vspace{1em}
+"Prestazione deficitaria" non implica quindi automaticamente un vero deficit — un termine più neutro sarebbe "prestazione al di sotto della soglia di normalità"; se sia un deficit o no è una questione di **interpretazione** (vedi capitolo su Interpretazione).
+
 ## Un fondamentale aspetto sull'utilizzo dei dati normativi.
 
 ```{=latex}
@@ -431,6 +456,15 @@ Se voglio **classificare GH rispetto ai suoi pari** (es. il suo deficit non dipe
 Se voglio **capire se GH ha sviluppato un danno** in seguito all'incidente, allora dovrei usare i dati normativi quanto più simili al suo stato nel momento in cui ha subito l’ipotetica lesione, per capire se è avvenuto un cambiamento
 
 *Spesso, nonostante le diverse possibilità teoriche nel confronto si sceglie il dato normativo più simile possibile all’individuo valutato.*
+
+## Deficit e danno sono indipendenti
+
+Deficit e danno (peggioramento) sono concetti distinti: si può avere un peggioramento **senza** che raggiunga la soglia del deficit (es. un trauma cranico lieve che fa scendere il punteggio, ma resta sopra soglia), oppure un deficit **senza** un vero peggioramento (es. un disturbo presente da sempre, come un disturbo dello sviluppo).
+
+\pause
+\vspace{1em}
+
+**Attenzione a non confondere deficit con peggioramento**: un danno cerebrale o una malattia degenerativa potrebbero causare un peggioramento senza che questo raggiunga il livello da poter essere considerato un deficit.
 
 ## Valutare i deficit cognitivi
 
@@ -850,3 +884,18 @@ C’è un **deficit cognitivo** o dobbiamo stimare il livello di abilità cognit
 C’è stato un **danno cognitivo**?, cioè un peggioramento? Anche questo viene fatto con i dati normativi, ma con una serie di assunzioni aggiuntive nell’\underline{interpretazione}.
 
 Ci sono vari metodi matematici (con pro e contro e più o meno robusti), per definire i cut-off ed eventuali altre soglie.
+
+# Riferimenti
+
+## Riferimenti
+
+\footnotesize
+
+- Capitani, E., \& Laiacona, M. (2007). I Punteggi Equivalenti.
+- Crawford, J. R., \& Garthwaite, P. H. (2006). Comparing single case with normative samples.
+- Crawford, J. R., \& Howell, D. C. (1998). Comparing an individual's test score with normative samples.
+- Flynn, J. R. (1987). Massive IQ gains in 14 nations (Flynn effect).
+- Lezak, M. D., et al. (2014). *Neuropsychological Assessment.*
+- Mondini, S., Mapelli, D., \& Arcara, G. (2022). *Semeiotica e diagnosi neuropsicologica.*
+- Williams, J. (2013). Secular trends in cognitive test performance.
+- World Health Organization (2013). *ICF: A practical manual.*
