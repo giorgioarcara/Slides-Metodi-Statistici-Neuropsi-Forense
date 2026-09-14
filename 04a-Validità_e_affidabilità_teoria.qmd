@@ -55,7 +55,7 @@ Nelle prossime slides farà una panoramica generale senza scendere nei dettagli 
 Usare un test senza conoscerne validità e affidabilità può portare a grossi errori:
 
 
-Per dare un'analogia (estrema) usare un test con bassa affidabilità e nessuna validità per un interpretazione per un’interpretazione e potrebbe portare a misurare l’altezza di una persona con una bilancia che ha un margine di errore di 10 kg.
+Per dare un'analogia (estrema): usare un test con bassa affidabilità e nessuna validità per un'interpretazione potrebbe portare a misurare l’altezza di una persona con una bilancia che ha un margine di errore di 10 kg.
 
 **Dal momento che i test sono strumenti di misurazione non possiamo prescindere dal conoscerne le loro qualità.**
 
@@ -72,7 +72,7 @@ L’ **affidabilità** indica la precisione di un test.
 ## Come vorremmo fossero Validità e Affidabilità (ma non sono)
 **Validità**: il mio test misura il mio costrutto in maniera nota e quantificabile. Es.:
 
-- l’80% del punteggio osservato è riconducibile al construtto di interesse. 
+- l’80% del punteggio osservato è riconducibile al costrutto di interesse.
 - Altri costrutti non di interesse possono contribuire facendo variare di +5% o -5% del punteggio.
 
 \vfill
@@ -81,10 +81,10 @@ L’ **affidabilità** indica la precisione di un test.
 **Affidabilità**: il mio test misura il mio costrutto con precisione quantificabile. Es.:
 
 - il mio punteggio finale può essere sbagliato di +/-3
-- il punteggio finale puà essere sbagliato di +/-5%
+- il punteggio finale può essere sbagliato di +/-5%
 
 ## Come vorremmo fossero Validità e Affidabilità (ma non sono)
-Anche se ci sono dei criteri talvolta di soglia minima (di affidabilità o validità) non c'è una unanimità sui criteri per considerare un test adeguato, spesso questi valori ci aiutano a distinguere test tra di loro, per scegliere il migliore (o il meno peggiore)
+Anche se ci sono dei criteri talvolta di soglia minima (di affidabilità o validità) non c'è un'unanimità sui criteri per considerare un test adeguato, spesso questi valori ci aiutano a distinguere test tra di loro, per scegliere il migliore (o il meno peggiore)
 
 \vfill
 
@@ -110,7 +110,7 @@ Anche se ci sono dei criteri talvolta di soglia minima (di affidabilità o valid
 
 ## Parlare correttamente di validità
 
-La validità è la qualità di un test di misurare ciò che effettivamente vuole misurare. Il termine validità è sempre riferito ad un’**utilizzo** che si fa dei punteggi.
+La validità è la qualità di un test di misurare ciò che effettivamente vuole misurare. Il termine validità è sempre riferito ad un **utilizzo** che si fa dei punteggi.
 \vfill \pause
 Non ha senso dire che **un test è valido**
 \vfill \pause
@@ -129,7 +129,7 @@ Non ha senso dire che **un test è valido**
 ![](Figures/Usa_questo_test.png){width="50%" fig-align="center"}
 
 ## La Validità
-Un test può avere validità per una certa utilizzo o per più utilizzi.
+Un test può avere validità per un certo utilizzo o per più utilizzi.
 
 La validità non è una qualità tutto-o-nulla, ma una qualità lungo un continuum
 
@@ -137,7 +137,7 @@ Ad esempio ci sono evidenze che il _”Free and Cued Selective Reminding Test-it
 
 ## La Validità (non dimostrata)
 
-talvolta, alcuni test non riportano nessun evidenza di validità. Si tratta di strumenti in cui non abbiamo la certezza di cosa stiano misurando.
+talvolta, alcuni test non riportano nessuna evidenza di validità. Si tratta di strumenti in cui non abbiamo la certezza di cosa stiano misurando.
 
 ## Tipi di validità
 
@@ -203,7 +203,7 @@ _Esempio_: in un test di memoria di parole il paziente usa una _mnemotecnica_ no
 Si investiga tramite interviste, tempi di risposta, movimenti oculari. Storicamente collegata al _Boston Process Approach_ (Kaplan, 1988).
 
 ## Validità di costrutto (convergente/divergente) 1/5
-**Validità convergente-divergente (o validità di costrutto)**: indaga quanto il test misura effettivamente il costrutto che intende misurare valutando corenza interna degli item, oppure correlazione con altri test.
+**Validità convergente-divergente (o validità di costrutto)**: indaga quanto il test misura effettivamente il costrutto che intende misurare valutando coerenza interna degli item, oppure correlazione con altri test.
 Si parla anche di validità “divergente” perché valuta anche la qualità di non correlare con test con cui non dovrebbe correlare (ad esempio un test specifico per memoria visuospaziale, dovrebbe non correlare troppo con memoria verbale).
 
 ## Validità di costrutto (convergente/divergente) 2/5
@@ -263,7 +263,7 @@ Può essere distinta in **concorrente** se il criterio è misurato nello stesso 
 Dal momento che l'interesse in neuropsicologia/psicologia è il più delle volte nei costrutti la validità di criterio viene utilizzata solo in alcuni casi specifici.
 
 - il criterio è un test più lungo/dispendioso rispetto a quello da valutare (questo avviene per esempio quando si vuole dimostrare che un test breve di screening).
-- il criterio è l'appartenza ad una categoria diagnostica o prognostica o, in generale, a un gruppo che può essere identificato con sufficiente certezza da essere definito "gold-standard".
+- il criterio è l'appartenenza ad una categoria diagnostica o prognostica o, in generale, a un gruppo che può essere identificato con sufficiente certezza da essere definito "gold-standard".
 
 
 ## Validità di criterio 3/3
@@ -364,7 +364,7 @@ Esempio da immagine del test "Descrizione di Scene" - APACS
 
 ![](Figures/APACS_scene1.png){width="60%" fig-align="center"}
 
-è un test che misura l'efficacia comunicative, utilizzando come punto di partenza la descrizione di una fotografia.
+è un test che misura l'efficacia comunicativa, utilizzando come punto di partenza la descrizione di una fotografia.
 Viene chiesto di dire dove si è, chi c'è nella figura e cosa si sta facendo.
 
 ## Perdita di Validità 2/3
@@ -389,11 +389,11 @@ Il neuropsicologo forense dovrebbe essere attento a identificare se ci sono situ
 _Per che cosa è valido il MoCA?_
 
 \
-Nell'identificare su cosa si basa un test, è comune fare l'errore di bassarsi sull'intuito o solo sulla validità di facciata e non su altre prove di validità.
+Nell'identificare su cosa si basa un test, è comune fare l'errore di basarsi sull'intuito o solo sulla validità di facciata e non su altre prove di validità.
 
 \pause
 Nel paper originale Nasreddine et al., 2005. 
-Il MoCA era valido per discriminare tra MCI, AD e, controlli.
+Il MoCA era valido per discriminare tra MCI, AD e controlli.
 
 Anche il MMSE (Folstein et al., 1975), nasceva per distinguere Demenze da Depressione, ma è comunemente utilizzato come test generale di funzionamento cognitivo.
 
@@ -402,7 +402,7 @@ Anche il MMSE (Folstein et al., 1975), nasceva per distinguere Demenze da Depres
 ![](Figures/FAB_validity.png){width="50%"}
 
 
-Nell’articolo originale del 2005 (Appollonio et al. 2005) in realtà non ci sono effettive prove di validità Questo non significa che il  FAB-it non abbia prove di validità per misurare funzioni esecutive(le versioni di altre lingue del FAB le hanno), ma che di fatto non ci sono prove per quella italiana. 
+Nell’articolo originale del 2005 (Appollonio et al. 2005) in realtà non ci sono effettive prove di validità. Questo non significa che il FAB-it non abbia prove di validità per misurare funzioni esecutive (le versioni di altre lingue del FAB le hanno), ma che di fatto non ci sono prove per quella italiana.
 
 ## Esempio 2: Frontal Assessment Battery (FAB) 2/2
 
@@ -453,7 +453,7 @@ Spesso le misure di affidabilità sono associate a numeri. Le slide seguenti ipo
 
 ## Inter-rater agreement
 
-**Inter-rater agreement** (affidabilità inter-rater): è una misura della consistenza con cui diversi esaminatori valutano la stessa prestazione dello stesso paziente. É legata alla chiarezza delle istruzioni su come attribuire i punteggi e alla complessità dei comportamenti osservati nel test — ed è collegata al concetto di **oggettività** del test (vedi Cornice teorica).
+**Inter-rater agreement** (affidabilità inter-rater): è una misura della consistenza con cui diversi esaminatori valutano la stessa prestazione dello stesso paziente. È legata alla chiarezza delle istruzioni su come attribuire i punteggi e alla complessità dei comportamenti osservati nel test — ed è collegata al concetto di **oggettività** del test (vedi Cornice teorica).
 
 Esistono vari modi di calcolarla. Nel metodo più diffuso è espressa da un coefficiente, l'intraclass correlation (ICC) — una **famiglia** di coefficienti — che varia tra 0 e 1, dove 0 indica completa inconsistenza tra i punteggi e 1 indica assoluta consistenza tra i punteggi di due o più esaminatori.
 
@@ -471,7 +471,7 @@ valori maggiori a 0.70 sono desiderabili
 
 Nota che l’affidabilità test-retest è sempre valutate con uno specifico intervallo (es. 1 mese). Per tale ragioni esistono infinite possibili affidabilità test-retest, dal momento che questo valore potrebbe variare a seconda dell’intervallo.
 
-Generalmente. Più corto è l’intervallo, più è probabile sia alta l’affidabilità test-retest.
+Generalmente, più corto è l’intervallo, più è probabile sia alta l’affidabilità test-retest.
 
 ## Affidabilità test-retest 3/4
 
@@ -493,10 +493,10 @@ La correlazione cattura infatti solo la **consistenza relativa** (l'ordine relat
 
 ## Affidabilità test-retest 4/4
 
-Quanto è usata la correlazione come misura, punteggi potrebbero avere una affidabilità test-retest (correlazione) di 0.98, ma essere poco stabili perché soggetti a _variazioni sistematiche_.
+Quando è usata la correlazione come misura, i punteggi potrebbero avere un'affidabilità test-retest (correlazione) di 0.98, ma essere poco stabili perché soggetti a _variazioni sistematiche_.
 
 \pause
-Più nello specifico. L’affidabilità test retest misurata tramite correlazione non tiene conto dell’effetto pratica (trattata in slides successive), visto che assume (anche matematicamente) che non ci siano cambiamenti nel tempo. Questo aspetto sarà chiaro, studiando la formula con cui è  calcolato il test-retest, sia tramite simulazioni.
+Più nello specifico. L’affidabilità test retest misurata tramite correlazione non tiene conto dell’effetto pratica (trattata in slides successive), visto che assume (anche matematicamente) che non ci siano cambiamenti nel tempo. Questo aspetto sarà chiaro, sia studiando la formula con cui è calcolato il test-retest, sia tramite simulazioni.
 
 
 ## Affidabilità Split-Half
@@ -571,7 +571,7 @@ Esistono una serie di analisi dette di **invarianza di misura** che vanno a valu
 
 ## Effetto di perturbazioni su Validità e Affidabilità.
 
-Provate ad immaginare di perturbare una relazione ipoteticamente perfetto.
+Provate ad immaginare di perturbare una relazione ipoteticamente perfetta.
 Che effetti ha su validità ed affidabilità _di una specifica misura_?
 
 ```{=latex}
@@ -599,7 +599,7 @@ Ad esempio, se la domanda forense è quantificare un danno di memoria, un test e
 
 Oltre a questo, Validità e Affidabilità in genere esprimono delle qualità del test ma non è detto che il test mantenga le stesse qualità nella specifica misurazione.
 
-Ad esempio se un test ha molte evidenza di validità nel misurare la memoria, potrebbe poi non farlo più nel corso di una misurazione specifica (es. perché il paziente non è collaborativo, cerca di simulare un deficit, non ha compreso le istruzioni, etc.)
+Ad esempio se un test ha molte evidenze di validità nel misurare la memoria, potrebbe poi non farlo più nel corso di una misurazione specifica (es. perché il paziente non è collaborativo, cerca di simulare un deficit, non ha compreso le istruzioni, etc.)
 
 ## Considerazioni conclusive 4/4
 
