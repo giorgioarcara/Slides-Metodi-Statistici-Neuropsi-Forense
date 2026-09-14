@@ -52,7 +52,7 @@ Esistono strumenti (pratici e concettuali) per valutare se una performance è da
 
 Test che usano queste procedure sono anche noti come **Effort Tests** (test dello sforzo): si indaga se il partecipante si sta "sforzando a sufficienza".
 
-Ricordiamo che I test cognitivi sono test di performance massima (Vedi slides 02. Cornice Teorica). Basta impegnarsi di meno (o “sforzarsi di meno” e si invalida il risultato del test).
+Ricordiamo che i test cognitivi sono test di performance massima (Vedi slides 02. Cornice Teorica). Basta impegnarsi di meno (o “sforzarsi di meno” e si invalida il risultato del test).
 
 ## Validità di una performance
 
@@ -87,10 +87,10 @@ Ricordiamo che I test cognitivi sono test di performance massima (Vedi slides 02
 
 ## Una nota su simulazione
 \small
-Nota che considerare la simulazione come una condizione si/no (o sto simulando o non sto simulando) è probabilmente una semplificazione 
+Nota che considerare la simulazione come una condizione sì/no (o sto simulando o non sto simulando) è probabilmente una semplificazione
 (Nies & Sweet, 1994)
 
-È più ragionevole pensare che si la performance possa essere lungo un continuum tra la performance genuina e qualle con simulazione.
+È più ragionevole pensare che la performance possa essere lungo un continuum tra la performance genuina e quella con simulazione.
 
 Entrano inoltre in gioco alcuni aspetti (es. aspetti psicologici inconsci) che potrebbero portare a performance deficitarie in assenza di deficit cognitivo/danno.
 
@@ -110,7 +110,7 @@ Ci sono dei concetti importanti legati che è bene esplicitare e termini che tor
 ## Come identificare un simulatore?
 
 
-Come principio generale, Si costruisicono test in maniera tale che la performance mi dimostri che è probabile che la persona stia mentendo.
+Come principio generale, si costruiscono test in maniera tale che la performance mi dimostri che è probabile che la persona stia mentendo.
 
 
 ## Principali strategie per identificare simulatori
@@ -118,7 +118,7 @@ Come principio generale, Si costruisicono test in maniera tale che la performanc
 
 **1) Pattern di risposte inverosimili anche rispondendo in maniera casuale.** Si possono usare in test a scelta forzata e vedendo se la performance osservata è poco probabile anche rispondendo in maniera random  (e quindi suggerendo menzogna intenzionale) 
 
-**2) Test molto facili persino per pazienti deteriorati.** Valori normativi ottenuti da popolazioni cliniche per mostrare che persino in popolazioni clinche anche molto gravi, la performance attesa non è così bassa.
+**2) Test molto facili persino per pazienti deteriorati.** Valori normativi ottenuti da popolazioni cliniche per mostrare che persino in popolazioni cliniche anche molto gravi, la performance attesa non è così bassa.
 
 **3) Test sviluppati con validità di criterio**: con gruppi di persone a cui era chiesto esplicitamente di fingere un deficit, per avere una condizione di interesse di “simulazione”. Queste persone possono essere sani oppure pazienti/categoria target (es. popolazioni psichiatriche).
 
@@ -138,9 +138,9 @@ Questa strategia può essere applicata solo nel caso di test a scelta forzata (e
 
 Il test of Memory Malingering è il test più comune con cui è possibile identificare questo tipo di disturbi. Si basa su un assunto molto semplice. Nel caso di una scelta multipla a due possibilità è molto facile modellare la probabilità di un certo numero di risposte casuali.
 
-Consiste di due fasi: in una fase di fanno riconoscere degli item per ricordarli (questa viene ripetuta due volte nella versione originale del TOMM).
+Consiste di due fasi: in una fase si fanno riconoscere degli item per ricordarli (questa viene ripetuta due volte nella versione originale del TOMM).
 
-Nella fase test una gli item presentati nella fase di test sono presentati in coppia con un distrattore. Per ogni coppia l’esaminato deve indicare quale era l’item che aveva visto in precedenza.
+Nella fase di test, gli item presentati nella fase di studio sono presentati in coppia con un distrattore. Per ogni coppia l’esaminato deve indicare quale era l’item che aveva visto in precedenza.
 
 ## 1) Il Test of Memory Malingering (TOMM)
 ![](Figures/TOMM.png){fig-align="center" width="80%"}
@@ -153,7 +153,7 @@ L’assunto è semplice. Un simulatore tenderà ad indicare volontariamente più
 
 In caso di scelta multiple è semplice modellare la probabilità attesa di un certo pattern di risposte (dato un certo numero di trial) usando come riferimento la distribuzione binomiale.
 
-es. su 50 item anche rispondendo in manira totalmente casuale ci sono meno del 5% di probabilità di rispondere  a meno di 19 item assumendo che c’è il 50% di probabilità di selezionare l’item corretto anche casualmente.
+es. su 50 item anche rispondendo in maniera totalmente casuale ci sono meno del 5% di probabilità di rispondere  a meno di 19 item assumendo che c’è il 50% di probabilità di selezionare l’item corretto anche casualmente.
 
 \emph{Vedi codice per esempio}
 
@@ -162,7 +162,7 @@ es. su 50 item anche rispondendo in manira totalmente casuale ci sono meno del 5
 **Vantaggi**
 
 - Il TOMM è un test molto semplice e di fatto non richiede dati normativi. Ma solo modellare la probabilità di risposte casuali.
-- Si è mostra molto efficace anche nell’identificare simulatori definiti tramite altra procedura (buona sensibilità e specificità, vedi anche esempi 3) ).
+- Si è mostrato molto efficace anche nell’identificare simulatori definiti tramite altra procedura (buona sensibilità e specificità, vedi anche esempi 3) ).
 
 **Svantaggi**
 
@@ -178,20 +178,20 @@ $\text{si trovi}\ x\ \text{tale che}\ P(o < x | D) = k_s$
 \vfill
 }
 ```
-Dove $k_s$ indica un valore di probabilità molto piccolo (es. 5%) persino in pazienti molto deterioriorati ($D$).
+Dove $k_s$ indica un valore di probabilità molto piccolo (es. 5%) persino in pazienti molto deteriorati ($D$).
 
 ## 2) Il Word Memory Test
 \small
 Il Word Memory Test è un test di memoria di coppie di parole (Green et al., 1999)
 
-È divisto in più fasi. 
+È diviso in più fasi.
 
 Nella fase 1 sono presentate 20 coppie di parole (cane/gatto, pesce/pinna)
-Presentate per 6 secondi nello schermo a coppia per due volte.
+Presentate per 6 secondi nello schermo a coppie per due volte.
 
 Immediatamente dopo sono presentate 40 coppie, di cui una sola parola era presentata originariamente  e l’altra è un distrattore (es. cane/coniglio; gatto/topo).
 
-Dopo 30 min, senza che fosse stato detto, sono presentate altre 40 coppie con altre 40 distrattori (es. cane/ratto, etc.)
+Dopo 30 min, senza che fosse stato detto, sono presentate altre 40 coppie con altri 40 distrattori (es. cane/ratto, etc.)
 
 _Spesso in questi test (così come per ogni test di malingering) si stressa che il test è difficile, per indurre la persona a credere che una persona con deficit avrebbe una performance bassa (quando in realtà non è vero)._
 
@@ -203,7 +203,7 @@ _Spesso in questi test (così come per ogni test di malingering) si stressa che 
 - è relativamente facile ottenere cut-off in questa maniera
 
 **Svantaggi**
-- Soffre dello stesso problema di tutti I cut-off di normalità: si fa un ragionamento inverso, ma non c’è sensibilità o specificità nell’identificare un _vero simulatore_. Per questa ragione praticamente tutti i test, (incluso il WMT) sono anche sviluppati utilizzando validità di criterio (vedi slides successive).
+- Soffre dello stesso problema di tutti i cut-off di normalità: si fa un ragionamento inverso, ma non c’è sensibilità o specificità nell’identificare un _vero simulatore_. Per questa ragione praticamente tutti i test, (incluso il WMT) sono anche sviluppati utilizzando validità di criterio (vedi slides successive).
 
 ## 3) Test sviluppati con validità di criterio
 
@@ -225,8 +225,8 @@ dove $S$ indica l'essere un simulatore secondo gold standard, mentre $NS$ indica
 
 ## come definire un "simulatore"? 3/3
 \small
-3. si usano gruppi in cui è estremamente verosimile che ci sia simulazione probable malingering cioè gruppi patologici per cui c’è già forte sospetto di simulazione rispetto ad altri in cui questo non c’è. Un classico esempio è confrontare pazienti che stanno facendo riabilitazione (bassa probabilità di essere simulatori) con pazienti che hanno chiesto valutazione per riscuotere assicurazione e che hanno deficit cognitivi lamentatai molto gravi rispetto a funzionamento quotidiano apparentemente alto (altra probabilità di essere simulatori).
-In tal caso, l’appartenza a un gruppo rispetto a questi criteri è il gold standard.
+3. si usano gruppi in cui è estremamente verosimile che ci sia simulazione (probable malingering), cioè gruppi patologici per cui c’è già forte sospetto di simulazione rispetto ad altri in cui questo non c’è. Un classico esempio è confrontare pazienti che stanno facendo riabilitazione (bassa probabilità di essere simulatori) con pazienti che hanno chiesto valutazione per riscuotere assicurazione e che hanno deficit cognitivi lamentati molto gravi rispetto a funzionamento quotidiano apparentemente alto (altra probabilità di essere simulatori).
+In tal caso, l’appartenenza a un gruppo rispetto a questi criteri è il gold standard.
 
 ## definizione di "verosimile simulatore"
 \small
@@ -257,11 +257,9 @@ and Research. \emph{The Clinical Neuropsychologist}.
 Il Reliable Digit Span non è altro che la somma del Digit Span Avanti e Digit Span Indietro.
 
  
-La sua utilità in ambito forense basa sul fatto che le persone possono sovrastimare la difficoltà di questo test e avere una performance di fatto molto (troppo bassa). Spesso però è sono riportare validità di criterio rispetto alla possibilità di distinguere tra gruppi di pazienti.
+La sua utilità in ambito forense si basa sul fatto che le persone possono sovrastimare la difficoltà di questo test e avere una performance di fatto molto (troppo bassa). Spesso però si riporta validità di criterio rispetto alla possibilità di distinguere tra gruppi di pazienti.
 
 ## Reliable Digit Span
-
-[](Figures/Sim_sens.png)
 
 ```{=latex}
 \begin{columns}
@@ -278,7 +276,7 @@ La sua utilità in ambito forense basa sul fatto che le persone possono sovrasti
 \end{columns}
 ```
 \small
-Mathias et al. (2002) Detecting Malingered Neurocognitive Dysfunction Using the Reliable Digit Span in Traumatic Brain Injury. \emph{Assesment}.
+Mathias et al. (2002) Detecting Malingered Neurocognitive Dysfunction Using the Reliable Digit Span in Traumatic Brain Injury. \emph{Assessment}.
 
 ## Reliable Digit Span
 
@@ -318,7 +316,7 @@ Avere questi valori può aiutarci nell’interpretare i risultati.
 \end{columns}
 \pause
 \scriptsize
-Es. se individuo ottiene valore < 5. Potremmo dire “anche ipotizzando un base rate basso pari a .1 (cioè 10\% di simulatori nella popolazione). Una performance inferiore a 5  ha 100\% sensibilità e 92\% specificità)"
+Es. se individuo ottiene valore < 5. Potremmo dire “anche ipotizzando un base rate basso pari a .1 (cioè 10\% di simulatori nella popolazione). Una performance inferiore a 5  ha 100\% sensibilità e 92\% specificità”
 
 ```
 
@@ -330,15 +328,15 @@ Es. se individuo ottiene valore < 5. Potremmo dire “anche ipotizzando un base 
 
 **Svantaggi**:
 - In questi test il limite principale è l’adeguatezza del gruppo di “Simulatori”.
-In alcuni casi si assume siano simulatori, es da altri test. In caso in cui si chiede explicitamente di simulare, può essere una scelta poco ecologica: nella simulazione legata allo sviluppo del test la posta in gioco sarà inevitabilmente più bassa (Es. Uno studente che vince 10 € in più se finge bene non può essere paragonato ad un paziente che finge un deficit per avere un maggiore incasso da assicurazione).
+In alcuni casi si assume siano simulatori, es da altri test. In caso in cui si chiede esplicitamente di simulare, può essere una scelta poco ecologica: nella simulazione legata allo sviluppo del test la posta in gioco sarà inevitabilmente più bassa (Es. Uno studente che vince 10 € in più se finge bene non può essere paragonato ad un paziente che finge un deficit per avere un maggiore incasso da assicurazione).
 
 ## Altri test usati per identificare simulatori
 
-Esistono anche altri test utilizzati per identificare simultari che non sono test di performance massima.
+Esistono anche altri test utilizzati per identificare simulatori che non sono test di performance massima.
 
 ## Lo Structured Inventory of Malingered Symptoms (SIMS) 1/4
 
-Esistono anche altri test che non sono di performance massima che sono legati allo studio della simulazione. Un esempio è lo Structured Inventory of Malingered Symptoms (SIMS) che è un questionario con risposta si/no.
+Esistono anche altri test che non sono di performance massima che sono legati allo studio della simulazione. Un esempio è lo Structured Inventory of Malingered Symptoms (SIMS) che è un questionario con risposta sì/no.
 
 È diviso in vari item raggruppati in scale che aiutano ad identificare simulazione di disabilità intellettive, di disturbi fisici, oppure di disturbi psichiatrici. Si ottiene anche un punteggio totale.
 
@@ -362,7 +360,7 @@ La caratteristica di alcuni items del SIMS è che definiscono alcuni sintomi "im
 
 ## Lo Structured Inventory of Malingered Symptoms (SIMS) 4/4
 
-Bello studio originale SIMS ha evidenza di validità di criterio usando una serie di gruppi di partecipanti a cui era chiesto di fingere specifici deficit (es. Psichiatrici, cognitivi, etc.)
+Nello studio originale SIMS ha evidenza di validità di criterio usando una serie di gruppi di partecipanti a cui era chiesto di fingere specifici deficit (es. Psichiatrici, cognitivi, etc.)
 
 In particolare elevata sensibilità, specificità etc. (Smith & Burger 1997)
 
@@ -378,19 +376,19 @@ In questo caso il test è spesso costruito in maniera da indurre chi è malinten
 
 ## Considerazioni conclusive 2/4
 \small
-Molto spesso I test di simulazione sono associati a sensibilità e specificità nell’identificare I simulatori e anche a PPV (Positive Predicitive value) o NPV (Negative Predictive Value) secondo vari scenari.
+Molto spesso i test di simulazione sono associati a sensibilità e specificità nell’identificare i simulatori e anche a PPV (Positive Predicitive value) o NPV (Negative Predictive Value) secondo vari scenari.
 
 Il tema della simulazione è complesso anche perché (a fini statistici) spesso si usa la distinzione netta simulazione/non simulazione, quando è verosimile che siano diversi gradi di simulazione.
 
 ## Considerazioni conclusive 3/4
 \small
-Anche per I test specifici per le simulazioni le stesse considerazioni fatte per ogni altro aspetto statistico.
+Anche per i test specifici per le simulazioni valgono le stesse considerazioni fatte per ogni altro aspetto statistico.
 
 Sono preferibili campioni ampi per avere delle stime più solide dei cut-off (campioni più rappresentativi della popolazione)
 
 ## Considerazioni conclusive 4/4
 \small
-Sono presenti I limiti del confronto con un singolo campione normativo che potrebbe non essere adeguato per i nostri scopi (es. Per età, scolarità). Sarebbe ideale avere sempre solo persone il più simili possibili all’individuo da valutare.
+Sono presenti i limiti del confronto con un singolo campione normativo che potrebbe non essere adeguato per i nostri scopi (es. Per età, scolarità). Sarebbe ideale avere sempre solo persone il più simili possibili all’individuo da valutare.
 
 Ogni altra considerazione rimane pertinente (es. meglio norme paese-specifiche, norme recenti, etc.)
 
