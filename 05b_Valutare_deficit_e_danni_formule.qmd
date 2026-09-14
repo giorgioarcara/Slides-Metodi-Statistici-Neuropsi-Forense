@@ -57,7 +57,7 @@ L’improbabilità è strettamente legata al concetto di deficit o presumibile d
 
 ## Il cut-off clinico e i valori soglia
 
-L’utilizzo delle probabilità che viene fatto in ambito clinico è però insidiosa perché è facile sbagliare nel loro utilizzo e nella loro interpretazione.
+L’utilizzo delle probabilità che viene fatto in ambito clinico è però insidioso perché è facile sbagliare nel loro utilizzo e nella loro interpretazione.
 
 Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una terminologia vaga.
 
@@ -65,11 +65,11 @@ Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una termin
 
 ![](Figures/Healthy_vs_Pathological.png){width="50%" fig-align="center"}
 
-*Non sapendo dove sono popolazioni patologiche (deficit o danno), mettiamo una soglia arbitrariamente che delimita 5% più basso (area grigia). Assumendo che deficit e patologia siano da qualche parte a sinistra.*
+*Non sapendo dove sono popolazioni patologiche (deficit o danno), mettiamo una soglia arbitrariamente che delimita il 5% più basso (area grigia). Assumendo che deficit e patologia siano da qualche parte a sinistra.*
 
 ## I valori utili per la clinica
 
-Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale che c’è una probabilità nota k che un punteggio osservato o abbia un valore uguale o inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
+Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale c’è una probabilità nota k che un punteggio osservato abbia un valore uguale o inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
 
 $$
 \small
@@ -99,11 +99,11 @@ Ricordiamo che l’utilizzo della curva normale (e **della trasformazione in pun
 $$
 Z = \frac{X - M}{SD}
 $$
-Ricordiamo che questa formula è utile perchè ci aiuta a definire percentili (parametrici). 
+Ricordiamo che questa formula è utile perché ci aiuta a definire percentili (parametrici).
 
 Possiamo usarla in due modi: 
 
-- calcoliamo valori z soglia, a partire da media e deviazione standard (di solito, a quale punteggio grezzo corrisponde il punteggio $$z = - 1.64$$, che corrisponde al 5% percentile).
+- calcoliamo valori z soglia, a partire da media e deviazione standard (di solito, a quale punteggio grezzo corrisponde il punteggio $z = -1.64$, che corrisponde al 5% percentile).
 
 - trasformiamo il punteggio grezzo in punteggio z e da questo determiniamo a che percentile corrisponde.
 
@@ -123,7 +123,7 @@ Se i punteggi sono **standardizzati** (punti z con Media = 0 e SD = 1):
 - 1.64 delimita il 5% dei punteggi più bassi
 - 1.96 delimita il 2.5% dei punteggi più bassi
 
-A volte si trova “2 deviazioni standard”. Non è altro che un altro numero (sempre arbitrario) per delimitare preformance bassa, sempre arbitraria (ma più facile da ricordare).
+A volte si trova “2 deviazioni standard”. Non è altro che un altro numero (sempre arbitrario) per delimitare una performance bassa, sempre arbitraria (ma più facile da ricordare).
 
 ## I percentili non parametrici
 
@@ -149,7 +149,7 @@ Infatti se la persona venisse da altre popolazioni (es. pazienti con Alzheimer) 
 ## Analogia con ipotesi nulla in test statistico
 
 \small
-Da notare che questa formulazione è del tutto analoga a quella del p-value in realazione dell’ipotesi nulla e all’identificazione dei valori critici della statistica.
+Da notare che questa formulazione è del tutto analoga a quella del p-value in relazione all’ipotesi nulla e all’identificazione dei valori critici della statistica.
 
 ## Analogia con i test statistici
 
@@ -168,9 +168,9 @@ $$
 t_{\mathrm{obs}} \geq t_{\mathrm{crit}},
 $$
 
-il risultato cade nella **regione critica** e si rifiuta (H_0).
+il risultato cade nella **regione critica** e si rifiuta ($H_0$).
 
-* Il p-value è invece la probabilità, assumendo vera (H_0), di ottenere un valore almeno altrettanto estremo di quello osservato:
+* Il p-value è invece la probabilità, assumendo vera ($H_0$), di ottenere un valore almeno altrettanto estremo di quello osservato:
 
 $$
 p = P(T \geq t_{\mathrm{obs}} \mid H_0)
@@ -183,7 +183,7 @@ H_0:\mu_1=\mu_2
 $$
 
 ::: {.small}
-Le formule si riferiscono a un test a una coda inferiore. La distribuzione di (T) e il valore critico dipendono anche dai gradi di libertà.
+Le formule si riferiscono a un test a una coda inferiore. La distribuzione di $T$ e il valore critico dipendono anche dai gradi di libertà.
 :::
 
 
@@ -206,7 +206,7 @@ Se vi dicessi che ho calcolato questa soglia da un campione con 20 soggetti o co
 \begin{columns}
 \column{0.8\textwidth}
 
-Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o popolazione, nel contesto della valutazione neuropsicologica l’interesse è sempre (impliciamente) alla popolazione
+Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o popolazione, nel contesto della valutazione neuropsicologica l’interesse è sempre (implicitamente) alla popolazione
 
 \textbf{Non mi interessa classificare il mio paziente rispetto al mio specifico campione (es. ai miei 10, 100, 1000 soggetti sani), ma come il mio paziente si classificherebbe in generale rispetto alla popolazione di sani.}
 
@@ -226,7 +226,7 @@ Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o p
 Un altro modo di vedere il problema è che la mia classificazione non dovrebbe dipendere dallo specifico campione normativo, ma dovrebbe valere per tutti i possibili campioni normativi.
 \vspace{1em}
 
-Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed è quindi poco rappresentativo della popopolazione).
+Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed è quindi poco rappresentativo della popolazione).
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -244,7 +244,7 @@ Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed 
 Notare che il percentile non mi dice nulla di probabilità, ma mi dice il valore che delimita una certa percentuale di osservazioni del campione.
 \vspace{1em}
 
-Avere una percentuale non significa necessariamente che sto controllando la probabilità di errore, usare percentili o z-scores si approssima a probabilità (in termini di popolazione) solo quando I campioni sono grandi e sono rispettati assunti (Es. Normalità distribuzione della popolazione).
+Avere una percentuale non significa necessariamente che sto controllando la probabilità di errore, usare percentili o z-scores si approssima a probabilità (in termini di popolazione) solo quando i campioni sono grandi e sono rispettati assunti (Es. Normalità distribuzione della popolazione).
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -278,7 +278,7 @@ Sì, e questa stima (associata ad errori) è alla base dei concetti di **statist
 Una statistica inferenziale è caratterizzata dal poter fare dei precisi enunciati sulla probabilità di errore riferiti alla popolazione da cui il campione da cui è estratta e non al campione stesso.
 \vspace{1em}
 
-In senso generale, non utilizzare un test statistico per fare un inferenza, può essere visto come una strategia qualitativa e meno robusta perchè non è nota la probabilità di commettere errori e la generalizzabilità dei risultati al di là dal campione usato per il confronto.
+In senso generale, non utilizzare un test statistico per fare un inferenza, può essere visto come una strategia qualitativa e meno robusta perché non è nota la probabilità di commettere errori e la generalizzabilità dei risultati al di là dal campione usato per il confronto.
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -341,7 +341,7 @@ Il t-test di Crawford è una modificazione del t-test che permette di confrontar
 
 \underline{Il test funziona anche con campioni piccoli (~10 soggetti).}
 
-[^1]: in realtà il test è di Sokhal e Rohlf (1995). Crawford & Howell hanno avuto il merito di diffonderlo per I
+[^1]: in realtà il test è di Sokal e Rohlf (1995). Crawford & Howell hanno avuto il merito di diffonderlo per i
 single-case in contesto di neuropsicologia.
 
 ## t-test di Crawford & Howell
@@ -368,7 +368,7 @@ Il test di Crawford funziona bene (a livello di Errore di 1° tipo) anche per ca
 \small
 Il t-test di Crawford mantiene un errore di primo tipo costante al 5% anche per campioni molto piccoli (n=5).
 
-**Questo non vuol dire che bastano campioni piccoli, in realtà è sempre meglio avere campioni numerosi, perchè porteranno cut-off più reali a quelli della popolazione**
+**Questo non vuol dire che bastano campioni piccoli, in realtà è sempre meglio avere campioni numerosi, perché porteranno cut-off più reali a quelli della popolazione**
   
 (Si veda simulazione in script 11_C&H_test)
 
@@ -433,7 +433,7 @@ Il razionale di questi metodi è il seguente:
 
 ## Metodi di regressione
 
-Una potenziale formalizzazione dei cut-off ottenuti tramite I metodi di regressione è la seguente. 
+Una potenziale formalizzazione dei cut-off ottenuti tramite i metodi di regressione è la seguente.
 
 Il cut-off $x$ è il punteggio tale che il paziente i-esimo (con specifici valori per le variabili aggiuntive V1, V2, …, Vn), tale che la probabilità di osservare quella performance è $k$ (con $k$ critico normalmente 0.05)
 
@@ -726,7 +726,7 @@ Il metodo t di Crawford (e metodi di regressioni di Crawford) mostrano anche che
 \begin{columns}
 \column{0.8\textwidth}
 
-Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perchè noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
+Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perché noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
 
 Per calcolare quindi errore di primo tipo, si studiano in genere diversi possibili scenari \textbf{ipotetici} con diverse gravità di deficit. In genere però questo \underline{non è mai fatto} per test neuropsicologici. E ci si concentra solo sul cut-off e sull'errore di I tipo.
 
@@ -767,7 +767,7 @@ Che fine hanno fatto affidabilità e validità?
 Come anticipato, per convenzione spesso nel calcolo dei valori soglia affidabilità e validità non sono considerate.
 \pause
 
-Questo è un problema perchè test con affidabilità diversa sono trattati allo stesso modo (ho work-in-progress su questo). 
+Questo è un problema perché test con affidabilità diversa sono trattati allo stesso modo (ho work-in-progress su questo).
 
 Affidabilità, Validità e cut-off/trasformazioni in percentili sono dunque combinate solo tramite interpretazione dei risultati e non tramite formule matematiche che tengono in considerazione entrambe.
 
@@ -799,7 +799,7 @@ Anche usando metodi non ottimali, avere campioni ampi migliora.
 
 I metodi che si basano su campioni hanno però problemi dei “gradini” che si vengono a creare per ogni gruppo in cui abbiamo trasformato una variabile continua (es. Età) in gruppi separati.
 
-I metodi che si basano su regressione risolvono il problema dei “gradini”, ma attenzione a rappresentatività nei metodi con regressione e attenzione a valori estremi nei predittori (es. Scolarità, età). Sono I valori in cui la stima potrebbe essere più imprecisa.
+I metodi che si basano su regressione risolvono il problema dei “gradini”, ma attenzione a rappresentatività nei metodi con regressione e attenzione a valori estremi nei predittori (es. Scolarità, età). Sono i valori in cui la stima potrebbe essere più imprecisa.
 
 
 

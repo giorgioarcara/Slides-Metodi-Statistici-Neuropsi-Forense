@@ -35,7 +35,7 @@ i capitoli 4–11 sono ancora abbozzati o assenti in `oltre-i-punteggi-elementi/
 | Deck | Capitolo libro previsto | Stato capitolo |
 |---|---|---|
 | `03-Scelta_dei_test.qmd` | Cap.8 Scegliere i test neuropsicologici | outline + bozza in `Diario di Sviluppo/APPROFONDIMENTI-TECNICI/PARAGRAPHS/CAP 8...qmd`, non definitivo |
-| `05b_Valutare_deficit_e_danni_formule.qmd` | Cap.3, parte formule (percentili, z-score, t-test di Crawford, regressioni, Punteggi Equivalenti) | verificato leggendo `Dati-Normativi.qmd` per intero: da "L'utilità pragmatica delle soglie" in avanti sono **solo titoli di sezione vuoti**, nessuna prosa pubblicata — spostato qui da Livello 1 il 2026-09-14. Refuso noto da correggere quando il capitolo sarà scritto: "Sokhal e Rohlf (1995)" → Sokal & Rohlf |
+| `05b_Valutare_deficit_e_danni_formule.qmd` | Cap.3, parte formule (percentili, z-score, t-test di Crawford, regressioni, Punteggi Equivalenti) | verificato leggendo `Dati-Normativi.qmd` per intero: da "L'utilità pragmatica delle soglie" in avanti sono **solo titoli di sezione vuoti**, nessuna prosa pubblicata — spostato qui da Livello 1 il 2026-09-14. (Refuso "Sokhal e Rohlf" → Sokal e Rohlf già corretto nel giro di pulizia typo del 2026-09-14.) |
 | `06_Identificare condizioni di interesse.qmd` | Cap.4 (gold standard/sensibilità-specificità/ROC) + Cap.9 (Bayes) | da scrivere |
 | `07_Simulazione_e_validità_di_performance.qmd` | Cap.7 Valutazioni forensi e simulazione | da scrivere |
 | `08_altri_utilizzi_test.qmd` | Cap.5 (cambiamenti nel tempo) + Cap.6 (confronto punteggi) | outline + bozza Cap.5 in `Diario di Sviluppo/...CAP 5...qmd`; Cap.6 da scrivere |

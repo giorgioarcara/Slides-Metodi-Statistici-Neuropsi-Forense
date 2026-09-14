@@ -231,7 +231,7 @@ una prestazione insolita, improbabile, assumendo che si sia normali.
 \begin{frame}{Il cut-off clinico e i valori soglia}
 \phantomsection\label{il-cut-off-clinico-e-i-valori-soglia-1}
 L'utilizzo delle probabilità che viene fatto in ambito clinico è però
-insidiosa perché è facile sbagliare nel loro utilizzo e nella loro
+insidioso perché è facile sbagliare nel loro utilizzo e nella loro
 interpretazione.
 
 Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una
@@ -245,7 +245,7 @@ terminologia vaga.
 \end{center}
 
 \emph{Non sapendo dove sono popolazioni patologiche (deficit o danno),
-mettiamo una soglia arbitrariamente che delimita 5\% più basso (area
+mettiamo una soglia arbitrariamente che delimita il 5\% più basso (area
 grigia). Assumendo che deficit e patologia siano da qualche parte a
 sinistra.}
 \end{frame}
@@ -253,9 +253,9 @@ sinistra.}
 \begin{frame}{I valori utili per la clinica}
 \phantomsection\label{i-valori-utili-per-la-clinica}
 Definiamo in generale valori utili alla classificazione clinica quei
-punteggi x al di sotto del quale che c'è una probabilità nota k che un
-punteggio osservato o abbia un valore uguale o inferiore a x (nei test
-in cui un punteggio basso indica una performance peggiore).
+punteggi x al di sotto del quale c'è una probabilità nota k che un
+punteggio osservato abbia un valore uguale o inferiore a x (nei test in
+cui un punteggio basso indica una performance peggiore).
 
 \[
 \small
@@ -298,7 +298,7 @@ distribuzione.
 \phantomsection\label{trasformazione-in-punti-z}
 \[
 Z = \frac{X - M}{SD}
-\] Ricordiamo che questa formula è utile perchè ci aiuta a definire
+\] Ricordiamo che questa formula è utile perché ci aiuta a definire
 percentili (parametrici).
 
 Possiamo usarla in due modi:
@@ -307,7 +307,7 @@ Possiamo usarla in due modi:
 \item
   calcoliamo valori z soglia, a partire da media e deviazione standard
   (di solito, a quale punteggio grezzo corrisponde il punteggio
-  \[z = - 1.64\], che corrisponde al 5\% percentile).
+  \(z = -1.64\), che corrisponde al 5\% percentile).
 \item
   trasformiamo il punteggio grezzo in punteggio z e da questo
   determiniamo a che percentile corrisponde.
@@ -344,7 +344,7 @@ Se i punteggi sono \textbf{standardizzati} (punti z con Media = 0 e SD =
 \end{itemize}
 
 A volte si trova ``2 deviazioni standard''. Non è altro che un altro
-numero (sempre arbitrario) per delimitare preformance bassa, sempre
+numero (sempre arbitrario) per delimitare una performance bassa, sempre
 arbitraria (ma più facile da ricordare).
 \end{frame}
 
@@ -381,8 +381,8 @@ Alzheimer) i valori attesi potrebbero essere diversi.
 \small
 
 Da notare che questa formulazione è del tutto analoga a quella del
-p-value in realazione dell'ipotesi nulla e all'identificazione dei
-valori critici della statistica.
+p-value in relazione all'ipotesi nulla e all'identificazione dei valori
+critici della statistica.
 \end{frame}
 
 \begin{frame}{Analogia con i test statistici}
@@ -406,13 +406,13 @@ P(T \leq t_{\mathrm{crit}} \mid H_0) = \alpha
 t_{\mathrm{obs}} \geq t_{\mathrm{crit}},
 \]
 
-il risultato cade nella \textbf{regione critica} e si rifiuta (H\_0).
+il risultato cade nella \textbf{regione critica} e si rifiuta (\(H_0\)).
 
 \begin{itemize}
 \tightlist
 \item
-  Il p-value è invece la probabilità, assumendo vera (H\_0), di ottenere
-  un valore almeno altrettanto estremo di quello osservato:
+  Il p-value è invece la probabilità, assumendo vera (\(H_0\)), di
+  ottenere un valore almeno altrettanto estremo di quello osservato:
 \end{itemize}
 
 \[
@@ -427,7 +427,7 @@ H_0:\mu_1=\mu_2
 \]
 
 Le formule si riferiscono a un test a una coda inferiore. La
-distribuzione di (T) e il valore critico dipendono anche dai gradi di
+distribuzione di \(T\) e il valore critico dipendono anche dai gradi di
 libertà.
 \end{frame}
 
@@ -456,7 +456,7 @@ generalizzabili.}
 \begin{columns}
 \column{0.8\textwidth}
 
-Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o popolazione, nel contesto della valutazione neuropsicologica l’interesse è sempre (impliciamente) alla popolazione
+Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o popolazione, nel contesto della valutazione neuropsicologica l’interesse è sempre (implicitamente) alla popolazione
 
 \textbf{Non mi interessa classificare il mio paziente rispetto al mio specifico campione (es. ai miei 10, 100, 1000 soggetti sani), ma come il mio paziente si classificherebbe in generale rispetto alla popolazione di sani.}
 
@@ -475,7 +475,7 @@ Un aspetto cruciale è che sebbene percentili siano calcolabili per campione o p
 Un altro modo di vedere il problema è che la mia classificazione non dovrebbe dipendere dallo specifico campione normativo, ma dovrebbe valere per tutti i possibili campioni normativi.
 \vspace{1em}
 
-Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed è quindi poco rappresentativo della popopolazione).
+Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed è quindi poco rappresentativo della popolazione).
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -492,7 +492,7 @@ Questo vale soprattutto se il mio campione normativo ha dimensioni limitate (ed 
 Notare che il percentile non mi dice nulla di probabilità, ma mi dice il valore che delimita una certa percentuale di osservazioni del campione.
 \vspace{1em}
 
-Avere una percentuale non significa necessariamente che sto controllando la probabilità di errore, usare percentili o z-scores si approssima a probabilità (in termini di popolazione) solo quando I campioni sono grandi e sono rispettati assunti (Es. Normalità distribuzione della popolazione).
+Avere una percentuale non significa necessariamente che sto controllando la probabilità di errore, usare percentili o z-scores si approssima a probabilità (in termini di popolazione) solo quando i campioni sono grandi e sono rispettati assunti (Es. Normalità distribuzione della popolazione).
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -538,7 +538,7 @@ a certe percentuali di errori.
 Una statistica inferenziale è caratterizzata dal poter fare dei precisi enunciati sulla probabilità di errore riferiti alla popolazione da cui il campione da cui è estratta e non al campione stesso.
 \vspace{1em}
 
-In senso generale, non utilizzare un test statistico per fare un inferenza, può essere visto come una strategia qualitativa e meno robusta perchè non è nota la probabilità di commettere errori e la generalizzabilità dei risultati al di là dal campione usato per il confronto.
+In senso generale, non utilizzare un test statistico per fare un inferenza, può essere visto come una strategia qualitativa e meno robusta perché non è nota la probabilità di commettere errori e la generalizzabilità dei risultati al di là dal campione usato per il confronto.
 
 \column{0.2\textwidth}
 \begin{figure}
@@ -621,8 +621,8 @@ partire da simulazioni dello script 10 associato a queste slides)
 \begin{frame}{t-test di Crawford e Howell}
 \phantomsection\label{t-test-di-crawford-e-howell}
 Il t-test di Crawford \& Howell (1998)\footnote<.->[frame]{in realtà il
-  test è di Sokhal e Rohlf (1995). Crawford \& Howell hanno avuto il
-  merito di diffonderlo per I single-case in contesto di
+  test è di Sokal e Rohlf (1995). Crawford \& Howell hanno avuto il
+  merito di diffonderlo per i single-case in contesto di
   neuropsicologia.} è una modificazione del t-test che permette di
 confrontare un caso singolo rispetto con una media di un campione.
 
@@ -674,7 +674,7 @@ Il t-test di Crawford mantiene un errore di primo tipo costante al 5\%
 anche per campioni molto piccoli (n=5).
 
 \textbf{Questo non vuol dire che bastano campioni piccoli, in realtà è
-sempre meglio avere campioni numerosi, perchè porteranno cut-off più
+sempre meglio avere campioni numerosi, perché porteranno cut-off più
 reali a quelli della popolazione}
 
 (Si veda simulazione in script 11\_C\&H\_test)
@@ -791,7 +791,7 @@ Il razionale di questi metodi è il seguente:
 
 \begin{frame}{Metodi di regressione}
 \phantomsection\label{metodi-di-regressione-1}
-Una potenziale formalizzazione dei cut-off ottenuti tramite I metodi di
+Una potenziale formalizzazione dei cut-off ottenuti tramite i metodi di
 regressione è la seguente.
 
 Il cut-off \(x\) è il punteggio tale che il paziente i-esimo (con
@@ -1145,7 +1145,7 @@ Il metodo t di Crawford (e metodi di regressioni di Crawford) mostrano anche che
 \begin{columns}
 \column{0.8\textwidth}
 
-Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perchè noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
+Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perché noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
 
 Per calcolare quindi errore di primo tipo, si studiano in genere diversi possibili scenari \textbf{ipotetici} con diverse gravità di deficit. In genere però questo \underline{non è mai fatto} per test neuropsicologici. E ci si concentra solo sul cut-off e sull'errore di I tipo.
 
@@ -1188,7 +1188,7 @@ Che fine hanno fatto affidabilità e validità?
 Come anticipato, per convenzione spesso nel calcolo dei valori soglia
 affidabilità e validità non sono considerate. \pause
 
-Questo è un problema perchè test con affidabilità diversa sono trattati
+Questo è un problema perché test con affidabilità diversa sono trattati
 allo stesso modo (ho work-in-progress su questo).
 
 Affidabilità, Validità e cut-off/trasformazioni in percentili sono
@@ -1242,7 +1242,7 @@ variabile continua (es. Età) in gruppi separati.
 I metodi che si basano su regressione risolvono il problema dei
 ``gradini'', ma attenzione a rappresentatività nei metodi con
 regressione e attenzione a valori estremi nei predittori (es. Scolarità,
-età). Sono I valori in cui la stima potrebbe essere più imprecisa.
+età). Sono i valori in cui la stima potrebbe essere più imprecisa.
 \end{frame}
 
 \begin{frame}{Torniamo al nostro esempio}
