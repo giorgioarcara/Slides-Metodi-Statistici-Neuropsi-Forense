@@ -78,6 +78,27 @@ Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il 
 \end{center}
 ```
 
+## Metodi statistici e neuropsicologia forense
+
+```{=latex}
+\begin{center}
+\begin{tikzpicture}[
+  blocco/.style={draw, thick, rounded corners, fill=gray!10, align=center,
+                 text width=4.2cm, minimum height=2.6cm}]
+
+\node[blocco] (ricerca) at (-2.8, 0)
+  {Metodi statistici per la \textbf{ricerca} in \mbox{neuropsicologia} forense};
+\node[blocco] (valutazione) at (2.8, 0)
+  {Metodi statistici per la \textbf{clinica forense} e le \textbf{valutazioni}\\[0.5em]
+   \small (consulenze/perizie)};
+
+\draw<2->[red, ultra thick] (valutazione.center) ellipse (3.1cm and 2cm);
+\node<2->[text=red, font=\bfseries] at (2.8, -2.4) {Focus di questo corso};
+
+\end{tikzpicture}
+\end{center}
+```
+
 ## Aspetti organizzativi - Lezioni
 
 -   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa). 1 pausa in mezzo.
