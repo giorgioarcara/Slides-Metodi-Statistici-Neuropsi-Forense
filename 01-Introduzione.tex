@@ -430,6 +430,27 @@ Gli esami saranno poco nozionistici e più di ragionamento
 \underline{Non sarà necessario ricordare a memoria nessuna formula}
 \end{frame}
 
+\begin{frame}{Stile di insegnamento}
+\phantomsection\label{stile-di-insegnamento}
+\begin{center}
+\begin{tikzpicture}
+% piramide della Tassonomia di Bloom (dal basso verso l'alto)
+\foreach \i/\lab/\c/\t in {0/Ricordare/15/black, 1/Comprendere/30/black, 2/Applicare/45/black,
+                           3/Analizzare/60/white, 4/Valutare/75/white, 5/Creare/90/white} {
+  \pgfmathsetmacro{\ya}{\i*0.9}
+  \pgfmathsetmacro{\yb}{(\i+1)*0.9}
+  \pgfmathsetmacro{\ym}{(\i+0.5)*0.9}
+  \pgfmathsetmacro{\wa}{4.5*(1-\ya/6.6)}
+  \pgfmathsetmacro{\wb}{4.5*(1-\yb/6.6)}
+  \fill[mDarkTeal!\c!white, draw=white, line width=1.5pt]
+    (-\wa,\ya) -- (\wa,\ya) -- (\wb,\yb) -- (-\wb,\yb) -- cycle;
+  \node[text=\t, font=\small\bfseries] at (0,\ym) {\lab};
+}
+\node[font=\scriptsize] at (0,-0.45) {Tassonomia di Bloom (rivista; Anderson \& Krathwohl, 2001)};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
 \begin{frame}{Utilizzo critico di LLM (es. ChatGPT) per il corso 1/2}
 \phantomsection\label{utilizzo-critico-di-llm-es.-chatgpt-per-il-corso-12}
 I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi
