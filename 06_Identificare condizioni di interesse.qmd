@@ -2,39 +2,22 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-  \usepackage{tikz}
-  
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{6. Identificare condizioni di interesse - Teoria e Formule}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{6 · Identificare condizioni di interesse - Teoria e Formule}
 ```
-:::
 
 # 6. Identificare condizioni di interesse
 
@@ -156,8 +139,11 @@ A partire dai risultati della matrice di confusione possiamo calcolare delle imp
 
 ## Sensibilità, Specificità e campioni.
 
+:::: {.columns}
+::: {.column width="58%"}
 ![](Figures/matrice_confusione.png)
-
+:::
+::: {.column width="40%"}
 **Sensibilità**: VP / VP + FN
 
 **Specificità**: VN / VN + FP
@@ -168,6 +154,8 @@ A partire dai risultati della matrice di confusione possiamo calcolare delle imp
 \pause
 
 \emph{Specificità è influenzata dai risultati dei soggetti patologici?\\ (Condizione di Interesse ASSENTE)}
+:::
+::::
 
 
 
