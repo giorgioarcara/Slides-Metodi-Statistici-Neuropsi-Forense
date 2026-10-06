@@ -379,6 +379,14 @@ Il più delle volte in ambito forense, l'interesse è dare delle risposte su un 
 Da un punto di vista statistico questo significa utilizzare metodi che permettono di rispondere non a campioni, ma a singoli individui (ed è qualcosa di particolarmente rilevante)
 
 
+## Attività: perché si usano i test in neuropsicologia forense?
+
+```{=latex}
+\begin{center}
+\includegraphics[height=0.65\textheight]{Figures/padlet_qr_code.png}
+\end{center}
+```
+
 ## Ruolo dei test
 
 *Perché si utilizzano i test in neuropsicologia clinica e in neuropsicologia forense?*
