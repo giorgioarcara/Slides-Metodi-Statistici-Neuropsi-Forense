@@ -2,38 +2,22 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-  
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. Cornice teorica}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{2 · Cornice teorica}
 ```
-:::
 
 # Cornice Teorica
 
@@ -152,6 +136,8 @@ Immaginate due test di memoria: uno ha un punteggio da 0 a 50. Un altro da 0 a 1
 Un modo per "aggirare" questo problema (di scala arbitraria) è quello di riportare ad altre scale comparabili, come la deviazione standard oppure la percentuale di persone che ottengono quel punteggio. Queste due possibilità saranno trattate nelle lezioni su "dati normativi" e su "confrontare punteggi a test diversi".
 
 ## Un'altra definizione di misurazione: Suppes e Zinnes (1963)
+
+\small
 
 Non si misurano oggetti ma \emph{proprietà} di oggetti. Suppes e Zinnes (1963) propongono una definizione di misurazione più rigorosa e formale di quella di Stevens:
 
@@ -423,7 +409,7 @@ $\beta$ = difficulty parameter
 
 \vspace{2em}
 
-[[https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory]{.underline}](https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory)
+[[publichealth.columbia.edu — Item Response Theory]{.underline}](https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory)
 
 ## Teoria dei test
 
@@ -665,20 +651,26 @@ In questi casi non si può parlare di "costrutto" così come alcuni concetti (es
 
 ## Riassunto
 
+:::: {.columns}
+::: {.column width="64%"}
 \footnotesize
+
 - **Costrutto** (concetto psicologico non osservabile) vs. **indicatore** (comportamento osservabile che assumiamo esserne manifestazione): la relazione tra i due non è mai perfetta.
 - Due definizioni di misurazione: quella permissiva di **Stevens (1946)**, con le sue 4 scale di misura, e quella più rigorosa di **Suppes e Zinnes (1963)** (omomorfismo tra Sistema Relazionale Empirico e Numerico).
 - I test neuropsicologici assumono quasi sempre, implicitamente, una **scala ad intervalli** — un'assunzione discutibile ma diffusa.
 - **Test** (Cronbach, 1990): procedura sistematica per l'osservazione del comportamento e la sua descrizione con una scala numerica o categorie.
 - **Teoria Classica dei Test**: $X = T + E$, con due limiti principali (abilità/difficoltà confuse; indipendenza $T$-$E$ violata ai valori estremi).
 
+:::
+::: {.column width="34%"}
 ```{=latex}
 \begin{figure}
-  \includegraphics[scale=0.25]{Figures/measurement_diagramma.png}
+  \includegraphics[width=\linewidth]{Figures/measurement_diagramma.png}
 \end{figure}
 
 \begin{flushright}
   {\scriptsize (Da Mondini, Cappelletti, Arcara, 2022)}
 \end{flushright}
-
 ```
+:::
+::::
