@@ -196,6 +196,16 @@ Testo di approfondimento, \textbf{non indispensabile}.
 -   *Oltre i punteggi* (libro in corso di scrittura)
 \href{https://giorgioarcara.github.io/oip-book/}{\underline{https://giorgioarcara.github.io/oip-book/}}
 
+## Aspetti organizzativi - Moodle
+
+Il Moodle del corso è organizzato in due parti separate:
+
+-   una sezione con le **lezioni** (registrazioni e materiali di ogni lezione);
+-   una sezione con gli **argomenti** del corso.
+
+\vspace{1em}
+La corrispondenza tra lezioni e argomenti non è fissa: dipende da interazioni e domande che possono emergere durante la lezione.
+
 ## Aspetti organizzativi - Esami
 
 Gli esami saranno scritti con:
