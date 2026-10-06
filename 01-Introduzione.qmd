@@ -161,6 +161,13 @@ I materiali principali sono le slides e materiali aggiuntivi che vi saranno forn
 
 Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso (utili, non necessari).
 
+## Aspetti organizzativi - Slides e handouts
+
+Il materiale del corso è costituito da:
+
+-   **slides** delle lezioni;
+-   **handouts** (dispense di approfondimento) su argomenti specifici, se ritenuti necessari.
+
 ## Aspetti organizzativi - Materiali
 
 ```{=latex}
