@@ -67,6 +67,17 @@ header-includes:
 
 [giorgio.arcara\@unipd.it](mailto:giorgio.arcara@unipd.it){.underline}
 
+## Una domanda per iniziare
+
+```{=latex}
+\begin{center}
+Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}
+
+\vspace{1em}
+\includegraphics[height=0.6\textheight]{Figures/wooclap_qr_code.png}
+\end{center}
+```
+
 ## Aspetti organizzativi - Lezioni
 
 -   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa). 1 pausa in mezzo.
