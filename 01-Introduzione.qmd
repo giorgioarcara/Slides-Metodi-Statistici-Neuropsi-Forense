@@ -277,11 +277,14 @@ Partiamo dalla fine:
 \pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
 
-## Attività: perché la statistica è utile per il neuropsicologo forense?
+## Attività (Padlet)
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=0.65\textheight]{Figures/padlet_qr_code.png}
+\textbf{Perché la statistica è utile per il neuropsicologo forense?}
+
+\vspace{1em}
+\includegraphics[height=0.6\textheight]{Figures/padlet_qr_code.png}
 \end{center}
 ```
 
@@ -389,11 +392,14 @@ Il più delle volte in ambito forense, l'interesse è dare delle risposte su un 
 Da un punto di vista statistico questo significa utilizzare metodi che permettono di rispondere non a campioni, ma a singoli individui (ed è qualcosa di particolarmente rilevante)
 
 
-## Attività: perché si usano i test in neuropsicologia forense?
+## Attività (Padlet)
 
 ```{=latex}
 \begin{center}
-\includegraphics[height=0.65\textheight]{Figures/padlet_qr_code.png}
+\textbf{Perché si usano i test in neuropsicologia forense?}
+
+\vspace{1em}
+\includegraphics[height=0.6\textheight]{Figures/padlet_qr_code.png}
 \end{center}
 ```
 
