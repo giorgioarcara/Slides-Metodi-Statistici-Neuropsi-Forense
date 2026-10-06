@@ -193,14 +193,14 @@ Testo di approfondimento, \textbf{non indispensabile}.
 -   Libro gratuito su psicometria (più avanzato) 
 \href{https://personality-project.org/r/book/}{\underline{https://personality-project.org/r/book/}}
 
--   *Oltre i punteggi* (libro in corso di scrittura)
-\href{https://giorgioarcara.github.io/oip-book/}{\underline{https://giorgioarcara.github.io/oip-book/}}
+-   Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice\\
+\href{https://www.routledge.com/Methodology-in-Neuropsychological-Assessment-An-Interpretative-Approach-to-Guide-Clinical-Practice/Mondini-Cappelletti-Arcara/p/book/9781032049298?source=shoppingads&locale=en-EUR&gad_source=1&gad_campaignid=23990380031&gbraid=0AAAAACWuhHVwtsdxPX8pdph-igFJa2sOA&gclid=Cj0KCQjwuJLWBhD_ARIsAIBcRUyKbLgdxacvmxbw6-SJ6mFfJaza7spswGIKbigbDEISDFoE86GrHT0aAoEqEALw_wcB}{\underline{Official Link}}
 
 ## Aspetti organizzativi - Moodle
 
 Il Moodle del corso è organizzato in due parti separate:
 
--   una sezione con le **lezioni** (registrazioni e materiali di ogni lezione);
+-   una sezione con le **registrazioni sincrone**;
 -   una sezione con gli **argomenti** del corso.
 
 \vspace{1em}
@@ -254,9 +254,9 @@ I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi di inte
 
 ## Disclaimer: utilizzo dell'AI in questo corso
 
--   Strumenti di intelligenza artificiale (LLM) sono stati utilizzati per la **revisione** delle slides.
+-   Strumenti di intelligenza artificiale (LLM) sono stati utilizzati per la **revisione** delle slides. (ChatGPT - OpenAI, Cladue, Anthropic).
 
--   Saranno inoltre utilizzati per prepararvi alcuni **handouts** di approfondimento.
+-   Saranno inoltre utilizzati per prepararvi più rapidamente gli **handouts** a partire dalle slides.
 
 \vspace{1em}
 Tutto il materiale è comunque verificato e ricontrollato da me: \underline{la responsabilità di eventuali errori resta mia}.
