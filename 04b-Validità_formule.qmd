@@ -45,14 +45,16 @@ header-includes:
 \end{center}
 \vspace{2em}
 
+Il libro adotta la cornice degli _Standards for Educational and Psychological Testing_ (AERA, APA, & NCME, 2014): la validità è un **concetto unitario**, valutato attraverso 5 fonti di evidenza. Qui vediamo la versione quantitativa delle etichette classiche più diffuse:
+
 -  Validità di contenuto
 - Validità convergente/divergente (validità di costrutto)
 - Validità di criterio
-- Validità di facciata
 - Validità ecologica
+- (+ validità di facciata: concetto storico, vedi slide a parte)
 \vspace{2em}
 
-Esistono diverse classificazioni di validità. Questa che sto utilizzando è principalmente basata su Urbina, 2004, Essentials of Psychological Testing.
+Per un approfondimento sulle classificazioni più classiche vedi Urbina (2004), Essentials of Psychological Testing.
 
 # Validità di contenuto
 
@@ -110,7 +112,7 @@ Metodo di Lawshe (1975)
 \end{columns}
 ```
 
-In alternativa si mantengono gli item in cui CVR>=0.78 (Polit, Becl, Owen, 2007)
+In alternativa si mantengono gli item in cui CVR>=0.78 (Polit, Beck, \& Owen, 2007)
 
 ## Validità di contenuto
 
@@ -153,6 +155,12 @@ Note sul metodo di Lawshe (1975)
 Il metodo di Lawshe mi dice se un dato item è appropriato per il test, ma non se il test contiene tutti gli item necessari per i suoi scopi (nell’articolo originale di Lawshe sono discussi alcuni esempi in cui gli item da cui si parte sono già stati definiti e il problema è identificare se sono appropriati).
 
 La validità di contenuto, spesso non è considerata né riportata nei test (non è molto di moda).
+
+## Dalla teoria alle formule: due fonti distinte
+
+Le tecniche quantitative che seguono (analisi fattoriale/PCA e correlazione) corrispondono, secondo gli _Standards_ (AERA, APA, & NCME, 2014), a **due fonti di evidenza distinte**: struttura interna (fattoriale/PCA) e relazioni con altre variabili (correlazione).
+
+Per comodità, e come nei manuali di test neuropsicologici, qui restano entrambe sotto l'etichetta classica "validità di costrutto".
 
 ## Validità di costrutto
 
@@ -418,7 +426,7 @@ Il test potrebbe essere stato costruito in maniera sbagliata e gli item essere c
 
 Lo strumento più comune per verificare la validità di costrutto di un test è indagare la correlazione del punteggio totale al test con correlazione dei punteggi ad altri test.
 
-Non esiste una regola di quanto dovrebbe essere almeno questa correlazione, ma è ragionevole pensare che debba essere almeno moderata (> 0.3), ma verosimilmente anche di più.
+Non esiste una soglia universale (il libro è chiaro su questo): quello che conta è che la correlazione con test dello stesso costrutto sia più alta di quella con test di costrutti diversi. Come regola pratica è ragionevole pensare che debba essere almeno moderata (> 0.3), ma verosimilmente anche di più.
 
 I test neuropsicologici (specie nei sani) tendono sempre ad essere **molto correlati fra di loro** e correlazioni più alte sono attese (di fatto queste correlazioni hanno portato ad ipotizzare al cosiddetto fattore g dell’intelligenza)
 
@@ -584,7 +592,7 @@ La validità di criterio può essere divisa in concorrente o predittiva (vedi sl
   \textbf{Variabile continua}
 \end{center}
 
-Se il gold standard è una variabile continua, allora si può vedere tramite una correlazione. In tal caso la correlazione dovrebbe essere molto alta (> 0.9).
+Se il gold standard è una variabile continua, allora si può vedere tramite una correlazione. Come riferimento indicativo, valori pari o superiori a 0.70-0.80 sono considerati elevati in molti contesti applicativi (non è comunque un requisito universale).
 
 A partire dalla correlazione possiamo calcolare la varianza spiegata (nota anche come $r^2$) che non è altro che il coefficiente di correlazione al quadrato.
 
@@ -616,7 +624,7 @@ Tutte le metriche legate a questo fanno parte dei concetti di Sensibilità/Speci
 
 ## Validità di criterio o di costrutto?
 
-Nota che se l'interesse è nel misurare un costrutto psicologico (es. memoria, attenzione) sarebbe più pertinente parlare di **validità di costrutto** e usare per valutarla i metodi discussi. La misurazione è su un concetto inosservabile.
+Nota che se l'interesse è nel misurare un costrutto psicologico (es. memoria, attenzione) sarebbe più pertinente parlare di **validità di costrutto** e usare per valutarla i metodi discussi. La misurazione è su un concetto inosservabile (costrutto vs criterio osservabile: Cronbach \& Meehl, 1955).
 
 In ambito neuropsicologico/psicologico raramente il punteggio ad un altro test è da considerare un criterio ma ci sono eccezioni comuni:
 
@@ -625,11 +633,11 @@ In ambito neuropsicologico/psicologico raramente il punteggio ad un altro test �
 - si vuole mostrare che un test online è equivalente ad uno in presenza (valutazoini in presenza sono di norme considerate gold standard)
 
 
-# Validità di facciata
+# Validità di facciata (nota storica)
 
-## Validità di facciata
+## Validità di facciata (nota storica)
 
-La **validità di facciata** valuta quanto un test *sembra* misurare ciò che intende misurare.
+La **validità di facciata** valuta quanto un test *sembra* misurare ciò che intende misurare. Il termine non compare negli _Standards_ (AERA, APA, \& NCME, 2014): è qui trattata come concetto storico, non come fonte tecnica di evidenza.
 \vspace{2em}
 
 ```{=latex}
@@ -667,3 +675,19 @@ Può essere anche essere valutata tramite altre analisi, purché mostrino che i 
 ## Validità ecologica
 
 Ad esempio un test potrebbe indagare la correlazione tra il punteggio ad un test di funzioni esecutive e il numero di comportamenti antisociali che un paziente ha mostrato durante un ricovero, per supportare che le informazioni del test sono associati a comportamenti legati alle funzioni esecutive nella vita quotidiana.
+
+# Riferimenti
+
+## Riferimenti
+
+\footnotesize
+
+- AERA, APA, \& NCME (2014). *Standards for Educational and Psychological Testing.*
+- Arcara, G., et al. (2019). NADL-F.
+- Cronbach, L. J., \& Meehl, P. E. (1955). Construct validity in psychological tests.
+- Kershaw, M. M., \& Webber, L. S. (2008). Assessment of financial competence (FCAI).
+- Lawshe, C. H. (1975). A quantitative approach to content validity.
+- Montemurro, S., et al. (2023). Tele-GEMS.
+- Polit, D. F., Beck, C. T., \& Owen, S. V. (2007). Is the CVI an acceptable indicator of content validity?
+- Semenza, C., et al. (2014). NADL.
+- Urbina, S. (2004). *Essentials of Psychological Testing.*

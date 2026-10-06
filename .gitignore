@@ -52,3 +52,5 @@ rsconnect/
 
 # .DS_store
 .DS_Store
+# review artifacts (latexdiff PDFs, change-logs)
+review/

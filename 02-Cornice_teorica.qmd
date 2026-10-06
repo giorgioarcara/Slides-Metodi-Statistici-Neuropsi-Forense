@@ -37,6 +37,28 @@ header-includes:
 
 # Cornice Teorica
 
+## Perché è importante misurare?
+
+La misurazione è considerata una delle basi del metodo scientifico: un approccio scientifico e basato sull'evidenza non può che passare dalla misurazione.
+
+\pause
+\vspace{1em}
+
+Un celebre aforisma (probabilmente apocrifo) di Galileo Galilei recita:
+
+_"misura ciò che puoi misurare, rendi misurabile ciò che non lo è"_
+
+## Perché è importante misurare? (2/2)
+
+Alla fine degli anni '40 una commissione di fisici e psicologi si chiese se gli oggetti di interesse della psicologia potessero davvero essere misurati (e quindi se la psicologia potesse essere considerata una scienza).
+
+Secondo una definizione rigorosa di misurazione, la risposta della commissione fu \emph{no}.
+
+\pause
+\vspace{1em}
+
+Fu proprio per rispondere a questo problema che S.S. Stevens propose una definizione di misurazione più permissiva.
+
 ## Misurazione
 
 _“We may say that measurement, in the broadest sense, is defined as the assignment of numerals to objects or event, according to rules.”_
@@ -129,9 +151,9 @@ Immaginate due test di memoria: uno ha un punteggio da 0 a 50 Un altro da 0 a 10
 
 Un modo per "aggirare" questo problema (di scala arbitraria) è quello di riportare ad altre scale comparabili, come la deviazione standard oppure la percentuale di persone che ottengono quel punteggio. Queste due possibilità saranno trattate nelle lezioni su "dati normativi" e su "confrontare punteggi a test diversi".
 
-## Un'altra possibile definizione di misurazione da filosofia e fisica
+## Un'altra definizione di misurazione: Suppes e Zinnes (1963)
 
-Non si misurano oggetti ma \emph{proprietà} di oggetti:
+Non si misurano oggetti ma \emph{proprietà} di oggetti. Suppes e Zinnes (1963) propongono una definizione di misurazione più rigorosa e formale di quella di Stevens:
 
 "Sia $O$ un certo insieme di oggetti caratterizzati dall’avere la proprietà P e sia $\mathbb{R}$ l’insieme dei numeri Reali i quali possono essere ordinati in accordo al criterio “essere maggiore o uguale a”, si definisce misurazione:
 
@@ -140,8 +162,11 @@ Chiamiamo $O_p$ l’insieme di oggetti tali che si crei un “omomorfismo” tra
 Dove $\succcurlyeq$ indicano \emph{relazioni d’ordine empirico} (oggetti fisici) e $\geq$ \emph{relazioni d’ordine numerico}"
 
 \begin{flushright}
-\emph{Boniolo e Vidali, Filosofia della scienza, p. 321}
+\emph{Suppes \& Zinnes (1963); presentazione tratta da Boniolo e Vidali, Filosofia della scienza, p. 321}
 \end{flushright}
+
+\vspace{1em}
+$(O_p,\succcurlyeq)$ è il \textbf{Sistema Relazionale Empirico}, $(\mathbb{R},\geq)$ il \textbf{Sistema Relazionale Numerico}: misurare significa trovare un omomorfismo (una corrispondenza che preserva le relazioni) tra i due.
 
 ## Considerazioni conclusive su misurazione 1/2
 Queste considerazioni mostrano come un atto così semplice e naturale (come ottenere e utilizzare un punteggio), nasconde delle riflessioni che meritano approfondimento e che hanno influenza sul signigicato che assumeranno questi punteggi.
@@ -186,6 +211,8 @@ Definiamo qui oggettività come una proprietà che si applica ad una valutazione
 \emph{Copia verbatim da  Stracciari, Bianchi, Sartori (2010); Neuropsicologia Forense}
 \end{flushright}
 
+**Nota:** i test non sono mai completamente oggettivi. L'oggettività è una proprietà graduale (test più o meno oggettivi), non un attributo assoluto, e può essere quantificata tramite indici come l'*inter-rater agreement*.
+
 Il concetto di oggettività verrà ripreso più avanti, specie con *inter-rater agreement*
 
 ## Definizione di test
@@ -215,10 +242,20 @@ o un sistema di categorie.
 
 L’interesse non è mai nel comportamento in sé ma nel \textbf{costrutto} misurato da quel comportamento.
 
-\textbf{Costrutto}: un concetto psicologico non osservabile 
+\textbf{Costrutto}: un concetto psicologico non osservabile
 }
 
 ```
+
+## Definizione di test: una nota importante
+
+Un test è una \textbf{procedura sistematica}: per somministrarlo correttamente occorre attenersi scrupolosamente alla procedura originale (istruzioni, tempi, modalità di attribuzione dei punteggi).
+
+\pause
+\vspace{1em}
+
+Anche una deviazione apparentemente piccola (es. dare più tempo, semplificare le istruzioni) può alterare il significato del confronto con i \textbf{dati normativi} (lo vedremo nel capitolo su dati normativi e cut-off).
+
 ## Cosa sono i test
 
 I test cognitivi/neuropsicologi utilizzati in forense,  sono test di performance massima (o prestazione massima) 
@@ -323,6 +360,20 @@ La Teoria classica dei test ha dei problemi intrinseci. Ne citiamo alcuni:
 
 \pause
 *Consideriamo il possibile errore in un punteggio di Linguaggio Figurato 1 pari a 8, 0, oppure di 15. L’errore è veramente indipendente dal punteggio vero?*
+
+## Teoria dei test
+
+\begin{center}
+  \textbf{Perché l'indipendenza tra $T$ ed $E$ si rompe ai valori estremi}
+\end{center}
+
+Se il punteggio vero di una persona è vicino al massimo del test (es. $T=30$ su 30), l'errore non può mai essere positivo: il punteggio osservato non può superare il massimo.
+
+Allo stesso modo, se $T$ è vicino al minimo, l'errore non può mai essere negativo.
+
+\pause
+\vspace{1em}
+In entrambi i casi l'errore è limitato in una sola direzione: dipende quindi da dove si trova $T$ nella scala, violando l'assunzione di indipendenza.
 
 ## Teoria dei test
 
@@ -614,15 +665,20 @@ In questi casi non si può parlare di "costrutto" così come alcuni concetti (es
 
 ## Riassunto
 
+\footnotesize
+- **Costrutto** (concetto psicologico non osservabile) vs. **indicatore** (comportamento osservabile che assumiamo esserne manifestazione): la relazione tra i due non è mai perfetta.
+- Due definizioni di misurazione: quella permissiva di **Stevens (1946)**, con le sue 4 scale di misura, e quella più rigorosa di **Suppes e Zinnes (1963)** (omomorfismo tra Sistema Relazionale Empirico e Numerico).
+- I test neuropsicologici assumono quasi sempre, implicitamente, una **scala ad intervalli** — un'assunzione discutibile ma diffusa.
+- **Test** (Cronbach, 1990): procedura sistematica per l'osservazione del comportamento e la sua descrizione con una scala numerica o categorie.
+- **Teoria Classica dei Test**: $X = T + E$, con due limiti principali (abilità/difficoltà confuse; indipendenza $T$-$E$ violata ai valori estremi).
+
 ```{=latex}
 \begin{figure}
-  \includegraphics[scale=0.3]{Figures/measurement_diagramma.png}
+  \includegraphics[scale=0.25]{Figures/measurement_diagramma.png}
 \end{figure}
 
 \begin{flushright}
   {\scriptsize (Da Mondini, Cappelletti, Arcara, 2022)}
 \end{flushright}
-
-\textbf{Costrutto}: Concetto psicologico non osservabile direttamente
 
 ```
