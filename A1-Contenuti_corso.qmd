@@ -4,14 +4,13 @@ author: "Giorgio Arcara"
 date: ""
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-
 ---
 
 ## Indice dei contenuti del corso (A.A. 2025/2026)
