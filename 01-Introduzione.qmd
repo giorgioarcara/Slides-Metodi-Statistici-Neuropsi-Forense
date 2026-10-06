@@ -80,20 +80,20 @@ header-includes:
 
 :::{.small}
 \scriptsize
-- Mercoledì 8 Ottobre: 9.00 - 11.30
-- Giovedì 9 Ottobre: 9.00 - 11.30
-- Mercoledì 15 Ottobre: 9.00 - 11.30
-- Giovedì 16 Ottobre: 9.00 - 11.30
-- Mercoledì 22 Ottobre: 9.00 - 11.30
-- Giovedì 23 Ottobre: 9.00 - 11.30
-- Mercoledì 5 Novembre: 9.00 - 11.30
-- Giovedì 6 Novembre: 9.00 - 11.30
-- Mercoledì 12 Novembre: 9.00 - 11.30
-- Giovedì 13 Novembre: 9.00 - 11.30
-- Mercoledì 19 Novembre: 9.00 - 11.30
-- Giovedì 20 Novembre: 9.00 - 11.30
-- Mercoledì 26 Novembre: 9.00 - 11.30
-- Giovedì 27 Novembre: 9.00 - 11.30
+- Mercoledì 7 ottobre 2026, 9:00–12:00
+- Giovedì 8 ottobre 2026, 9:00–12:00
+- Mercoledì 14 ottobre 2026, 9:00–12:00
+- Mercoledì 21 ottobre 2026, 9:00–12:00
+- Giovedì 22 ottobre 2026, 9:00–12:00
+- Mercoledì 4 novembre 2026, 9:00–12:00
+- Giovedì 5 novembre 2026, 9:00–12:00
+- Venerdì 6 novembre 2026, 9:00-12:00 _*(lezione che recupera Giovedì 15)_
+- Mercoledì 11 novembre 2026, 9:00–12:00
+- Giovedì 12 novembre 2026, 9:00–12:00
+- Mercoledì 18 novembre 2026, 9:00–12:00
+- Giovedì 19 novembre 2026, 9:00–12:00
+- Mercoledì 25 novembre 2026, 9:00–12:00
+- Giovedì 26 novembre 2026, 9:00–12:00
 :::
 
 ## Aspetti organizzativi - Materiali
