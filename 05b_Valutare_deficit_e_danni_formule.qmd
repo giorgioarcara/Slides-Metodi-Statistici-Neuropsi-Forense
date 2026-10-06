@@ -2,38 +2,22 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-  
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{5. Valutare i deficit e danni cognitivi - Formule}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{5 · Valutare i deficit e danni cognitivi - Formule}
 ```
-:::
 
 # 5. Valutare i deficit e danni cognitivi - Formule
 
@@ -153,6 +137,8 @@ Da notare che questa formulazione è del tutto analoga a quella del p-value in r
 
 ## Analogia con i test statistici
 
+\footnotesize
+
 Il valore critico di una statistica test è un **quantile della sua distribuzione sotto l’ipotesi nulla**.
 
 Per un test a una coda inferiore:
@@ -162,13 +148,7 @@ $$
 P(T \leq t_{\mathrm{crit}} \mid H_0) = \alpha
 $$
 
-* Se il valore osservato soddisfa
-
-$$
-t_{\mathrm{obs}} \geq t_{\mathrm{crit}},
-$$
-
-il risultato cade nella **regione critica** e si rifiuta ($H_0$).
+* Se il valore osservato soddisfa $t_{\mathrm{obs}} \geq t_{\mathrm{crit}}$, il risultato cade nella **regione critica** e si rifiuta ($H_0$).
 
 * Il p-value è invece la probabilità, assumendo vera ($H_0$), di ottenere un valore almeno altrettanto estremo di quello osservato:
 
