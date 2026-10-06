@@ -252,6 +252,15 @@ I Large Language Models (LLM) come ChatGPT, comunemente chiamati sistemi di inte
 
 - **Non vi fidate ciecamente di ciò che dicono** ma cercate conferma da eventuali fonti. Gli LLM spesso mostrano dei comportamenti detti _hallucinations_, che danno risposte verosimili o credibili ma che si rivelano sbagliate o completamente inventate.
 
+## Disclaimer: utilizzo dell'AI in questo corso
+
+-   Strumenti di intelligenza artificiale (LLM) sono stati utilizzati per la **revisione** delle slides.
+
+-   Saranno inoltre utilizzati per prepararvi alcuni **handouts** di approfondimento.
+
+\vspace{1em}
+Tutto il materiale è comunque verificato e ricontrollato da me: \underline{la responsabilità di eventuali errori resta mia}.
+
 ## Neuropsicologia Forense
 
 ![](Figures/Valutazione_Neuropsi_ChatGPT.png){width="50%" fig-align="center"}
