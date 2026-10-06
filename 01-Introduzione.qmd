@@ -99,6 +99,28 @@ Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il 
 \end{center}
 ```
 
+## Libro di riferimento: *Oltre i punteggi*
+
+```{=latex}
+\begin{columns}
+\column{0.45\textwidth}
+\begin{center}
+\includegraphics[height=0.7\textheight]{Figures/OIP_cover.png}
+\end{center}
+
+\column{0.55\textwidth}
+\textbf{Oltre i punteggi}\\
+\emph{Elementi di psicometria e statistica per la neuropsicologia clinica}
+
+\vspace{1em}
+\small
+Libro gratuito, in corso di scrittura.
+
+\vspace{1em}
+\href{https://giorgioarcara.github.io/oip-book/}{\underline{giorgioarcara.github.io/oip-book}}
+\end{columns}
+```
+
 ## Aspetti organizzativi - Lezioni
 
 -   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa). 1 pausa in mezzo.
@@ -164,7 +186,7 @@ Testo di approfondimento, \textbf{non indispensabile}.
 -   Libro gratuito su psicometria (più avanzato) 
 \href{https://personality-project.org/r/book/}{\underline{https://personality-project.org/r/book/}}
 
--   Libro in corso di scrittura
+-   *Oltre i punteggi* (libro in corso di scrittura)
 \href{https://giorgioarcara.github.io/oip-book/}{\underline{https://giorgioarcara.github.io/oip-book/}}
 
 ## Aspetti organizzativi - Esami
