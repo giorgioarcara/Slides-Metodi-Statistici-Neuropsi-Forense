@@ -97,6 +97,12 @@ Per Stevens, quello che è importante è definire poi quale è la scala di misur
 \end{columns}
 ```
 
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 3)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+```
+
 ## Considerazioni sulla definizione di Stevens 1/2
 
 Supponiamo di avere un tavolo quadrato che abbia il lato di 40 cm, mentre un altro tavolo abbia il lato di 42 cm.
