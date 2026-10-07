@@ -178,10 +178,10 @@ I test infatti vengono spesso considerati più “oggettivi”. Vale la pena qui
 
 Definiamo qui oggettività come una proprietà che si applica ad una valutazione, ad un test, o come *l’indipendenza dell’esaminatore dal risultato*
 
-## Attività (Wooclap)
+## Attività (Padlet)
 
 ```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\padletslot{Attività}{Un test neuropsicologico è oggettivo quanto un esame del sangue?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
 ```
 
 ## Oggettività
@@ -252,7 +252,7 @@ La maggior parte dei test a cui ci faremo riferimento sono quelli di performance
 ## Attività (Wooclap)
 
 ```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 5)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Cosa sono i test
@@ -474,7 +474,7 @@ Questo è facile pensarlo per test che includano item in cui è facile gradare l
 ## Attività (Wooclap)
 
 ```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 6)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 5)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Teoria dei test
