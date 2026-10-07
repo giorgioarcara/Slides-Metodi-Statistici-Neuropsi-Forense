@@ -57,7 +57,7 @@ incremental: false
 ## Una domanda per iniziare
 
 ```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 1)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Metodi statistici e neuropsicologia forense
