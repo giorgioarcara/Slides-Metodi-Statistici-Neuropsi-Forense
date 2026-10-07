@@ -253,10 +253,10 @@ Partiamo dalla fine:
 \pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
 
-## Attività (Padlet)
+## Attività (Wooclap)
 
 ```{=latex}
-\padletslot{Attività}{Perché la statistica è utile per il neuropsicologo forense?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 2)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Perché è utile la statistica per il neuropsicologo forense? (1/2)
