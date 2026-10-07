@@ -23,6 +23,11 @@ incremental: false
 
 ## Perché è importante misurare?
 
+Proviamo a rispondere a questa domanda.
+
+
+## Perché è importante misurare?
+
 La misurazione è considerata una delle basi del metodo scientifico: un approccio scientifico e basato sull'evidenza non può che passare dalla misurazione.
 
 \pause
@@ -74,28 +79,6 @@ Per Stevens, quello che è importante è definire poi quale è la scala di misur
 - *Operazioni possibili*: trasformazioni matematiche e statistiche consentite dai dati.
 :::
 
-
-## Considerazioni su definizione di Stevens
-
-```{=latex}
-\begin{columns}
-  \begin{column}{0.5\textwidth}
-    \begin{figure}
-    \includegraphics[scale=0.1]{Figures/MoCA-Test-Italian.png}
-    \end{figure}
-  \end{column}
-  \begin{column}{0.5\textwidth}
-    \textbf{Esaminiamo il MoCa:}
-    \pause
-    \vspace{2em}
-    
-    Cosa notate nei punteggi delle parti che lo compongono?
-    
-    \vspace{2em}
-    Cosa notate nei compiti?
-  \end{column}
-\end{columns}
-```
 
 ## Attività (Wooclap)
 
@@ -273,19 +256,6 @@ La maggior parte dei test a cui ci faremo riferimento sono quelli di performance
 ```
 
 ## Cosa sono i test
-
-\begin{center}
-  \textbf{Esempio:}
-\end{center}
-\vspace{2em}
-
-\emph{Consideriamo il test Linguaggio Figurato 1.}
-
-\emph{Il paziente ottiene un punteggio finale di 10.}
-
-\emph{Cosa indica questo numero?}
-\pause
-\vspace{2em}
 
 Il comportamento è l’*indicatore di un costrutto* (con costrutto indico genericamente un concetto psicologico non direttamente osservabile)
 
