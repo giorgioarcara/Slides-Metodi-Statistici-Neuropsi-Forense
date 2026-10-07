@@ -195,6 +195,12 @@ I test infatti vengono spesso considerati più “oggettivi”. Vale la pena qui
 
 Definiamo qui oggettività come una proprietà che si applica ad una valutazione, ad un test, o come *l’indipendenza dell’esaminatore dal risultato*
 
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+```
+
 ## Oggettività
 
 \footnotesize"L’esame neuropsicologico forense viene spesso considerato un esame oggettivo del funzionamento cognitivo. In un’ideale gerarchia delle sorgenti d’evidenza, tale esame si collocherebbe molto più in alto rispetto alle evidenze cliniche più o meno sofisticate (self-reports, informant-based reports, interviste cliniche, rating scales, ecc.), e dovrebbe pertanto essere “promosso” a rango più elevato (al pari degli esami biochimici, radiologici, ecc.). Dopo che il clinico ha esaminato il soggetto e ha formulato le sua ipotesi preliminari, chiede agli esami strumentali di confermarle, confutarle o correggerle attraverso dati oggettivi, indipendenti sia dal giudizio dell’esaminatore e dalle sue distorsioni, sia da ogni variabile estranea all’oggetto d’indagine, in particolare dalle contaminazioni dovute alla soggettività dell’esaminato."
