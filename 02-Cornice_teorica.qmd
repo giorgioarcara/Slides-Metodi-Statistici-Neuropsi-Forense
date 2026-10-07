@@ -266,6 +266,12 @@ Essi presentano alcune caratteristiche (che discuteremo nel corso). Sono diversi
 La maggior parte dei test a cui ci faremo riferimento sono quelli di performance massima perché ritenuti più rilevanti recentemente nella valutazione forense
 \end{center}
 
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 5)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+```
+
 ## Cosa sono i test
 
 \begin{center}
