@@ -153,24 +153,6 @@ Il materiale del corso è costituito da:
 -   **slides** delle lezioni;
 -   **handouts** (dispense di approfondimento) su argomenti specifici, se ritenuti necessari.
 
-## Aspetti organizzativi - Materiali
-
-```{=latex}
-\begin{columns}
-\column{0.5\textwidth}
-\small
-\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
-\vspace{1em}
-Testo di approfondimento, \textbf{non indispensabile}.
-
-\column{0.5\textwidth}
-
-\begin{figure}
-\includegraphics[scale=0.5]{Figures/Methodology_book.png}
-\end{figure}
-
-\end{columns}
-```
 ## Aspetti organizzativi - Materiali aggiuntivi
 
 -   Libro gratuito su statistica base ed R \href{https://learningstatisticswithr.com/}{\underline{https://learningstatisticswithr.com/}}
@@ -266,7 +248,7 @@ Partiamo dalla fine:
 -   Fornire elementi di conoscenza statistica e ragionamento critico utili per la neuropsicologia forense
 -   Fornire conoscenze sia per la pratica di psicologia forense, sia per chi vuole fare ricerca in ambito forense.
 -   Fornire conoscenze sull'elemento cardine per la valutazione forense: il test cognitivo o neuropsicologico, con le sue potenzialità e limiti.
--   Fornire conoscenze base su test statistici applicati al caso singolo.
+-   Fornire conoscenze base su metodi statistici applicati al caso singolo.
 
 \pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
@@ -311,7 +293,7 @@ Partiamo dalla fine:
 \tiny{Un pilota di F1 non è però un ingegnere o un meccanico: ne conosce bene il funzionamento per accorgersi di problemi (es. vibrazioni o rumori insoliti) e comunicare con il team, ma resta un utilizzatore, che deve concentrarsi sulle proprie abilità di guida.}
 
 \column{0.5\textwidth}
-Lo stesso vale per la/il neuropsicologa/o: non è necessario essere "psicometriste/i" o "statiste/i" per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
+Lo stesso vale per la neuropsicologia: non è necessario essere esperte/i in psicometria o statistica per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
 \end{columns}
 ```
 
@@ -352,6 +334,8 @@ di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 ## 5 principi basilari di questo corso (5)
 
+_Quale è una caratteristica che distingue la valutazione forense da quella clinica?_ \pause
+
 5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un'altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
 \vspace{2em}
 
@@ -374,7 +358,7 @@ della valutazione neuropsicologica.
 \pause
 (altre fasi che non sono trattate sono l’intervista, il colloquio con i familiari, anche se sarà accennato il perché della loro rilevanza.)
 
-## Focus sui test statistici per caso singolo
+## Focus sui metodi statistici per caso singolo
 
 Il più delle volte in ambito forense, l'interesse è dare delle risposte su un singolo individuo.
 
@@ -482,7 +466,7 @@ Così come tra queste conoscenze ci sono le conoscenze relative alle caratterist
 
 ## Valutazione neuropsicologica e forense
 
-Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei quali molto complessi (es. giudicare la _capacità di intendere e volere_). In questo corso ci concentreremo su esempi sul concetto di **danno**, ma anticipo che la definizione di danno è diversa in ambito giuridico e in ambito clinico.
+Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei quali molto complessi (es. giudicare la _capacità di intendere e volere_). In questo corso ci concentreremo su esempi sul concetto di **peggioramento** e di **danno**, che ha specifiche implicazioni in ambito giuridico.
 
 
 
