@@ -344,9 +344,13 @@ _Quale è una caratteristica che distingue la valutazione forense da quella clin
 \includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
 \end{figure}
 
+## Attività (Padlet)
+
+```{=latex}
+\padletslot{Attività}{Come posso dimostrare che i test utilizzati per la mia perizia sono migliori di quelli dell'altra parte?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+```
+
 ## Alcune domande a cui risponderete
-*Come posso dimostrare che i test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
-\pause
 *Come posso dimostrare che nell’interpretare i test, l’altra parte ha commesso un errore?*
 
 ## Focus sui test neuropsicologici
