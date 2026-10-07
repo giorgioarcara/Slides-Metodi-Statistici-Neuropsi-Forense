@@ -501,6 +501,12 @@ Questo è facile pensarlo per test che includano item in cui è facile gradare l
 \end{columns}
 ```
 
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 6)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+```
+
 ## Teoria dei test
 
 \begin{center}
