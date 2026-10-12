@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{6 · Identificare condizioni di interesse - Teoria e Formule}
+\nftitleslide{5 · Identificare condizioni di interesse - Teoria e Formule}
 ```
 
 # 6. Identificare condizioni di interesse

@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{4b · Validità (formule)}
+\nftitleslide{3b · Validità (formule)}
 ```
 
 # 4b. Validità (formule)

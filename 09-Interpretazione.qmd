@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{10 · Interpretazione dei test}
+\nftitleslide{9 · Interpretazione dei test}
 ```
 
 # Interpretazione dei test

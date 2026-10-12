@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{5 · Valutare i deficit e danni cognitivi - Formule}
+\nftitleslide{4 · Valutare i deficit e danni cognitivi - Formule}
 ```
 
 # 5. Valutare i deficit e danni cognitivi - Formule

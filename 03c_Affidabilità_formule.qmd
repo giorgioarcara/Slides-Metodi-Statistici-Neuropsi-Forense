@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{4c · Affidabilità - Formule}
+\nftitleslide{3c · Affidabilità - Formule}
 ```
 
 # 4c. Affidabilità - Formule

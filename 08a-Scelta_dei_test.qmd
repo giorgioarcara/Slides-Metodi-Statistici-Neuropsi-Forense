@@ -16,7 +16,7 @@ incremental: true
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{3 · La scelta dei test per la propria cassetta degli attrezzi}
+\nftitleslide{8a · La scelta dei test per la propria cassetta degli attrezzi}
 ```
 
 # La scelta dei test per la propria cassetta degli attrezzi

@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{8 · Altri utilizzi dei punteggi dei test}
+\nftitleslide{6 · Altri utilizzi dei punteggi dei test}
 ```
 
 # 8. Altri utilizzi dei punteggi dei test

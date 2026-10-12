@@ -16,7 +16,7 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{4a · Validità e affidabilità (teoria)}
+\nftitleslide{3a · Validità e affidabilità (teoria)}
 ```
 
 # Validità e affidabilità
