@@ -21,6 +21,15 @@ incremental: false
 
 # Cornice Teorica
 
+## Outline della lezione
+
+- Misurazione
+- Test
+- Teorie dei test
+- Costrutti
+
+
+
 ## Perché è importante misurare?
 
 Proviamo a rispondere a questa domanda.
@@ -249,12 +258,6 @@ Essi presentano alcune caratteristiche (che discuteremo nel corso). Sono diversi
 La maggior parte dei test a cui ci faremo riferimento sono quelli di performance massima perché ritenuti più rilevanti recentemente nella valutazione forense
 \end{center}
 
-## Attività (Wooclap)
-
-```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
-```
-
 ## Cosa sono i test
 
 Il comportamento è l’*indicatore di un costrutto* (con costrutto indico genericamente un concetto psicologico non direttamente osservabile)
@@ -474,7 +477,7 @@ Questo è facile pensarlo per test che includano item in cui è facile gradare l
 ## Attività (Wooclap)
 
 ```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 5)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Teoria dei test
@@ -633,7 +636,7 @@ Assumere che i risultati del test ci dicano qualcosa sulla vita quotidiana non �
 ## Attività (Padlet)
 
 ```{=latex}
-\padletslot{Attività}{Da quali test partireste per inferire la capacità di intendere e volere? Cosa quei test NON vi direbbero?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+\padletslot{Attività}{Che test usereste per inferire la capacità di intendere e volere? Cosa quei test NON vi direbbero?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
 ```
 
 ## Costrutti propri della neuropsicologia forense
