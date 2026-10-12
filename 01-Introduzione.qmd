@@ -54,6 +54,12 @@ incremental: false
 
 [giorgio.arcara\@unipd.it](mailto:giorgio.arcara@unipd.it){.underline}
 
+## Statistica e Psicometria
+La **statistica** è quella disciplina che si occupa di come possiamo trarre delle conclusione a partire da dati empirici e si occupa di ogni fase (pianificazione, raccolta, analisi, interpretazione).
+\pause
+
+La **psicometria** è quella disciplina che si occupa di misurazione in psicologia e di inferenze statistiche di concetti psicologici.
+
 ## Una domanda per iniziare
 
 ```{=latex}
@@ -146,12 +152,13 @@ I materiali principali sono le slides e materiali aggiuntivi che vi saranno forn
 
 Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso (utili, non necessari).
 
-## Aspetti organizzativi - Slides e handouts
+## Aspetti organizzativi - Slides, handouts, Esercizi
 
 Il materiale del corso è costituito da:
 
 -   **slides** delle lezioni;
 -   **handouts** (dispense di approfondimento) su argomenti specifici, se ritenuti necessari.
+- **Esercizi** opzionali, ma utili per testare la propria conoscenza
 
 ## Aspetti organizzativi - Materiali aggiuntivi
 
@@ -253,11 +260,6 @@ Partiamo dalla fine:
 \pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
 
-## Attività (Wooclap)
-
-```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 2)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
-```
 
 ## Perché è utile la statistica per il neuropsicologo forense? (1/2)
 
@@ -279,23 +281,11 @@ Partiamo dalla fine:
 \tiny{I piloti di formula 1 hanno conoscenze superiori su come funziona un motore.}
 
 \end{columns}
+\pause
+
+\emph{Vedi slide dopo per una continuazione su questo ragionamento)}
 ```
 
-## Perché è utile la statistica per il neuropsicologo forense? (2/2)
-
-```{=latex}
-\begin{columns}
-\column{0.5\textwidth}
-
-\begin{figure}
-\includegraphics[width=0.7\textwidth]{Figures/Mechanic_ChatGPT_BN.png}
-\end{figure}
-\tiny{Un pilota di F1 non è però un ingegnere o un meccanico: ne conosce bene il funzionamento per accorgersi di problemi (es. vibrazioni o rumori insoliti) e comunicare con il team, ma resta un utilizzatore, che deve concentrarsi sulle proprie abilità di guida.}
-
-\column{0.5\textwidth}
-Lo stesso vale per la neuropsicologia: non è necessario essere esperte/i in psicometria o statistica per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
-\end{columns}
-```
 
 ## 5 principi basilari di questo corso (1)
 
@@ -332,9 +322,14 @@ di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 *Non è richiesta solo competenza clinica, ma anche competenze aggiuntive specifiche per valutazione forense.*
 
-## 5 principi basilari di questo corso (5)
+## Attività (Padlet)
 
-_Quale è una caratteristica che distingue la valutazione forense da quella clinica?_ \pause
+```{=latex}
+\padletslot{Attività}{Quale è una caratteristica che distingue la valutazione forense da quella clinica?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet, o copiate il link sulla chat Zoom}{}{Figures/padlet_qr_code.png}
+```
+
+
+## 5 principi basilari di questo corso (5)
 
 5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un'altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
 \vspace{2em}
@@ -344,14 +339,6 @@ _Quale è una caratteristica che distingue la valutazione forense da quella clin
 \includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
 \end{figure}
 
-## Attività (Padlet)
-
-```{=latex}
-\padletslot{Attività}{Come posso dimostrare che i test utilizzati per la mia perizia sono migliori di quelli dell'altra parte?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
-```
-
-## Alcune domande a cui risponderete
-*Come posso dimostrare che nell’interpretare i test, l’altra parte ha commesso un errore?*
 
 ## Focus sui test neuropsicologici
 Anche se la metodologia della valutazione neuropsicologica forense in genere include vari aspetti, Il focus sulla lezione è sui test neuropsicologici, su cosa sono, come si creano, come si interpretano i risultati. 
@@ -362,18 +349,36 @@ della valutazione neuropsicologica.
 \pause
 (altre fasi che non sono trattate sono l’intervista, il colloquio con i familiari, anche se sarà accennato il perché della loro rilevanza.)
 
-## Focus sui metodi statistici per caso singolo
+## Focus sui metodi statistici per **caso singolo**
 
 Il più delle volte in ambito forense, l'interesse è dare delle risposte su un singolo individuo.
 
 Da un punto di vista statistico questo significa utilizzare metodi che permettono di rispondere non a campioni, ma a singoli individui (ed è qualcosa di particolarmente rilevante)
 
 
-## Attività (Padlet)
+## Attività (Wooclap)
 
 ```{=latex}
-\padletslot{Attività}{Perché si usano i test in neuropsicologia forense?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 2)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
+
+## Perché è utile la statistica per il neuropsicologo forense? (2/2)
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{Figures/Mechanic_ChatGPT_BN.png}
+\end{figure}
+\tiny{Un pilota di F1 non è però un ingegnere o un meccanico: ne conosce bene il funzionamento per accorgersi di problemi (es. vibrazioni o rumori insoliti) e comunicare con il team, ma resta un utilizzatore, che deve concentrarsi sulle proprie abilità di guida.}
+
+\column{0.5\textwidth}
+Lo stesso vale per la neuropsicologia: non è necessario essere esperte/i in psicometria o statistica per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
+\end{columns}
+```
+
+
 
 ## Ruolo dei test
 
@@ -397,11 +402,6 @@ I test moderni (e migliori) oggi, saranno potenzialmente superati l’anno pross
 neuropsicologo, etc.
 ```
 
-## Statistica e Psicometria
-La **statistica** è quella disciplina che si occupa di come possiamo trarre delle conclusione a partire da dati empirici e si occupa di ogni fase (pianificazione, raccolta, analisi, interpretazione).
-\pause
-
-La **psicometria** è quella disciplina che si occupa di misurazione in psicologia e di inferenze statistiche di concetti psicologici.
 
 ## Perché sono importanti psicometria e statistica?
 
