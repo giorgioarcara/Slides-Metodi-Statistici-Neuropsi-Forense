@@ -2,40 +2,38 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-  
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{2. Cornice teorica}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{2 · Cornice teorica}
 ```
-:::
 
 # Cornice Teorica
+
+## Outline della lezione
+
+- Misurazione
+- Test
+- Teorie dei test
+- Costrutti
+
+
+
+## Perché è importante misurare?
+
+Proviamo a rispondere a questa domanda.
+
 
 ## Perché è importante misurare?
 
@@ -91,26 +89,10 @@ Per Stevens, quello che è importante è definire poi quale è la scala di misur
 :::
 
 
-## Considerazioni su definizione di Stevens
+## Attività (Wooclap)
 
 ```{=latex}
-\begin{columns}
-  \begin{column}{0.5\textwidth}
-    \begin{figure}
-    \includegraphics[scale=0.1]{Figures/MoCA-Test-Italian.png}
-    \end{figure}
-  \end{column}
-  \begin{column}{0.5\textwidth}
-    \textbf{Esaminiamo il MoCa:}
-    \pause
-    \vspace{2em}
-    
-    Cosa notate nei punteggi delle parti che lo compongono?
-    
-    \vspace{2em}
-    Cosa notate nei compiti?
-  \end{column}
-\end{columns}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 3)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Considerazioni sulla definizione di Stevens 1/2
@@ -152,6 +134,8 @@ Immaginate due test di memoria: uno ha un punteggio da 0 a 50. Un altro da 0 a 1
 Un modo per "aggirare" questo problema (di scala arbitraria) è quello di riportare ad altre scale comparabili, come la deviazione standard oppure la percentuale di persone che ottengono quel punteggio. Queste due possibilità saranno trattate nelle lezioni su "dati normativi" e su "confrontare punteggi a test diversi".
 
 ## Un'altra definizione di misurazione: Suppes e Zinnes (1963)
+
+\small
 
 Non si misurano oggetti ma \emph{proprietà} di oggetti. Suppes e Zinnes (1963) propongono una definizione di misurazione più rigorosa e formale di quella di Stevens:
 
@@ -202,6 +186,12 @@ I test infatti vengono spesso considerati più “oggettivi”. Vale la pena qui
 \vfill
 
 Definiamo qui oggettività come una proprietà che si applica ad una valutazione, ad un test, o come *l’indipendenza dell’esaminatore dal risultato*
+
+## Attività (Padlet)
+
+```{=latex}
+\padletslot{Attività}{Un test neuropsicologico è oggettivo quanto un esame del sangue?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+```
 
 ## Oggettività
 
@@ -269,19 +259,6 @@ La maggior parte dei test a cui ci faremo riferimento sono quelli di performance
 \end{center}
 
 ## Cosa sono i test
-
-\begin{center}
-  \textbf{Esempio:}
-\end{center}
-\vspace{2em}
-
-\emph{Consideriamo il test Linguaggio Figurato 1.}
-
-\emph{Il paziente ottiene un punteggio finale di 10.}
-
-\emph{Cosa indica questo numero?}
-\pause
-\vspace{2em}
 
 Il comportamento è l’*indicatore di un costrutto* (con costrutto indico genericamente un concetto psicologico non direttamente osservabile)
 
@@ -423,7 +400,7 @@ $\beta$ = difficulty parameter
 
 \vspace{2em}
 
-[[https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory]{.underline}](https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory)
+[[publichealth.columbia.edu — Item Response Theory]{.underline}](https://www.publichealth.columbia.edu/research/population-health-methods/item-response-theory)
 
 ## Teoria dei test
 
@@ -495,6 +472,12 @@ Questo è facile pensarlo per test che includano item in cui è facile gradare l
     È facile gradare gli item del moca per difficoltà?
   \end{column}
 \end{columns}
+```
+
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Teoria dei test
@@ -650,6 +633,12 @@ Si assume che ci sia una **validità ecologica**[^1] di uno specifico test (il f
 
 Assumere che i risultati del test ci dicano qualcosa sulla vita quotidiana non è sbagliato in sé, ma non dimentichiamo che (a meno che non ci sia una validità ecologica comprovata da dati scientifici) questa è un’interpretazione.
 
+## Attività (Padlet)
+
+```{=latex}
+\padletslot{Attività}{Che test usereste per inferire la capacità di intendere e volere? Cosa quei test NON vi direbbero?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+```
+
 ## Costrutti propri della neuropsicologia forense
 
 Quasi sempre i test che sono utilizzati in neuropsicologia forense sono costrutti che provengono dalla neuropsicologia cognitiva/clinica e sono usati per fare inferenze su costrutti forensi.
@@ -665,20 +654,26 @@ In questi casi non si può parlare di "costrutto" così come alcuni concetti (es
 
 ## Riassunto
 
+:::: {.columns}
+::: {.column width="64%"}
 \footnotesize
+
 - **Costrutto** (concetto psicologico non osservabile) vs. **indicatore** (comportamento osservabile che assumiamo esserne manifestazione): la relazione tra i due non è mai perfetta.
 - Due definizioni di misurazione: quella permissiva di **Stevens (1946)**, con le sue 4 scale di misura, e quella più rigorosa di **Suppes e Zinnes (1963)** (omomorfismo tra Sistema Relazionale Empirico e Numerico).
 - I test neuropsicologici assumono quasi sempre, implicitamente, una **scala ad intervalli** — un'assunzione discutibile ma diffusa.
 - **Test** (Cronbach, 1990): procedura sistematica per l'osservazione del comportamento e la sua descrizione con una scala numerica o categorie.
 - **Teoria Classica dei Test**: $X = T + E$, con due limiti principali (abilità/difficoltà confuse; indipendenza $T$-$E$ violata ai valori estremi).
 
+:::
+::: {.column width="34%"}
 ```{=latex}
 \begin{figure}
-  \includegraphics[scale=0.25]{Figures/measurement_diagramma.png}
+  \includegraphics[width=\linewidth]{Figures/measurement_diagramma.png}
 \end{figure}
 
 \begin{flushright}
   {\scriptsize (Da Mondini, Cappelletti, Arcara, 2022)}
 \end{flushright}
-
 ```
+:::
+::::

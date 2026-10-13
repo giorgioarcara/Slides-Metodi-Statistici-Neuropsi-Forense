@@ -1,0 +1,247 @@
+% unipdwarsawstyle.sty
+% Beamer presentation style — UniPD (Università degli Studi di Padova)
+% Based on beamerstyle.sty, Warsaw theme with UniPD color scheme.
+%
+% Color palette extracted from the official UniPD identity:
+%   unipdCrimson : #9B1B1B  (exact UniPD bordeaux red — primary color)
+%   unipdLight   : #B52525  (slightly lighter red — gradient highlight end)
+%   unipdGold    : #C8A96E  (warm gold — seal, accents, highlighted text)
+%   unipdCream   : #F5ECD7  (light cream — body text on dark backgrounds)
+%
+% The frametitle uses a left-to-right TikZ gradient:
+%   unipdCrimson (left) → unipdLight (right)
+% a subtle brightening that mirrors the gentle shading in the official banner.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{unipdwarsawstyle}[2026/03/21 UniPD Warsaw Beamer Style]
+
+% ---------------------------------------------------------
+% PACKAGES (same as beamerstyle.sty)
+% ---------------------------------------------------------
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{animate}
+\usepackage{caption}
+\usepackage{fancyvrb}
+\usetikzlibrary{shapes,arrows,positioning,fadings}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{transparent}
+\usepackage{amsmath}
+\usepackage[backend=bibtex,style=verbose-trad2]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+
+% ---------------------------------------------------------
+% UNIPD COLOR DEFINITIONS
+% ---------------------------------------------------------
+\definecolor{unipdCrimson}{HTML}{9B1B1B}   % exact UniPD bordeaux red (primary)
+\definecolor{unipdLight}{HTML}{B52525}      % slightly lighter red for gradient end
+\definecolor{unipdGold}{HTML}{C8A96E}       % warm gold accent
+\definecolor{unipdCream}{HTML}{F5ECD7}      % light cream / off-white
+\definecolor{unipdWhite}{HTML}{FFFFFF}      % pure white
+
+% ---------------------------------------------------------
+% THEME & BASE COLOR THEME
+% ---------------------------------------------------------
+\mode<presentation>{
+  \usetheme{Warsaw}
+  \setbeamercovered{invisible}
+  \setbeamertemplate{navigation symbols}{}
+
+  % --- Structure colors (drives most of Warsaw's palette) ---
+  \setbeamercolor{structure}{fg=unipdCrimson}
+
+  % --- Header / navigation bars ---
+  \setbeamercolor{section in head/foot}{bg=unipdCrimson,  fg=unipdWhite}
+  \setbeamercolor{subsection in head/foot}{bg=unipdLight,  fg=unipdWhite}
+
+  % --- Frametitle (bg must be empty — gradient is drawn entirely by TikZ below) ---
+  \setbeamercolor{frametitle}{bg=unipdCrimson, fg=unipdWhite}
+  \setbeamercolor{framesubtitle}{fg=unipdGold}
+
+  % --- Title page ---
+  \setbeamercolor{title}{bg=unipdCrimson, fg=unipdWhite}
+  \setbeamercolor{subtitle}{fg=unipdWhite}
+  \setbeamercolor{author}{fg=black}
+  \setbeamercolor{institute}{fg=black}
+  \setbeamercolor{date}{fg=black}
+  \setbeamercolor{titlegraphic}{fg=unipdGold}
+
+  % --- Footer ---
+  \setbeamercolor{author in head/foot}{bg=unipdCrimson,  fg=unipdWhite}
+  \setbeamercolor{title in head/foot}{bg=unipdLight,     fg=unipdWhite}
+  \setbeamercolor{date in head/foot}{bg=unipdCrimson,    fg=unipdWhite}
+  \setbeamercolor{page number in head/foot}{fg=black}
+
+  % --- Block environments ---
+  \setbeamercolor{block title}{bg=unipdCrimson,  fg=unipdWhite}
+  \setbeamercolor{block body}{bg=unipdCream!30,  fg=black}
+  \setbeamercolor{block title alerted}{bg=unipdLight,    fg=unipdGold}
+  \setbeamercolor{block body alerted}{bg=unipdCream!20,  fg=black}
+  \setbeamercolor{block title example}{bg=unipdGold!80!black, fg=unipdCrimson}
+  \setbeamercolor{block body example}{bg=unipdGold!15,   fg=black}
+
+  % --- Bullets & items ---
+  \setbeamercolor{itemize item}{fg=unipdCrimson}
+  \setbeamercolor{itemize subitem}{fg=unipdGold}
+  \setbeamercolor{itemize subsubitem}{fg=unipdLight}
+  \setbeamercolor{enumerate item}{fg=unipdCrimson}
+  \setbeamercolor{enumerate subitem}{fg=unipdGold}
+
+  % --- Alerted text ---
+  \setbeamercolor{alerted text}{fg=unipdGold}
+
+  % --- Separator lines ---
+  \setbeamercolor{separation line}{bg=unipdGold}
+  \setbeamercolor{fine separation line}{bg=unipdGold}
+
+  % --- Table of contents ---
+  \setbeamercolor{section in toc}{fg=unipdCrimson}
+  \setbeamercolor{subsection in toc}{fg=unipdLight}
+}
+
+% ---------------------------------------------------------
+% FRAMETITLE WITH LEFT→RIGHT GRADIENT (TikZ)
+% Gradient: unipdCrimson (left, exact UniPD red) → unipdLight (right, gentle lift)
+%
+% FIX: We avoid the "stray solid band" that occurs when beamercolorbox paints
+% its own background before TikZ draws. The solution is to:
+%   1. Set the colorbox to zero height (ht=0pt, dp=0pt) so it reserves the
+%      vertical space without painting any visible background.
+%   2. Use a TikZ `overlay` picture anchored at the colorbox top-left corner
+%      to draw the gradient rectangle at the exact required dimensions,
+%      completely independent of the colorbox clipping region.
+% ---------------------------------------------------------
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  % Reserve vertical space (ht + dp = total band height) but paint nothing.
+  % The leftskip=0pt ensures the tikzpicture origin sits at the left edge.
+  \begin{beamercolorbox}[wd=\paperwidth, ht=2.5ex, dp=1.25ex,
+                         left, leftskip=0pt]{frametitle}%
+    % overlay=true lets the picture draw outside its own bounding box,
+    % covering the full band area without being clipped by the colorbox.
+    \begin{tikzpicture}[overlay, remember picture]
+      % Coordinate (0,0) is at the baseline of the colorbox content area.
+      % We offset upward by dp (1.25ex) to reach the bottom edge of the band,
+      % and draw up by ht+dp (3.75ex) to cover the full band height.
+      \fill[left color=unipdLight, right color=unipdCrimson]
+        (0,-1.25ex) rectangle (\paperwidth, 2.5ex);
+      % Thin gold rule at the very bottom of the band
+      \fill[unipdGold]
+        (0,-1.25ex) rectangle (\paperwidth, -1.25ex+0.4pt);
+      % Frame title text
+      \node[anchor=west, text=unipdWhite,
+            font=\usebeamerfont{frametitle},
+            inner xsep=5mm, inner ysep=0pt]
+        at (0, 0.6ex) {\insertframetitle};
+      % Frame subtitle (if present)
+      \ifx\insertframesubtitle\@empty\else
+        \node[anchor=west, text=unipdGold,
+              font=\usebeamerfont{framesubtitle}\small,
+              inner xsep=5mm, inner ysep=0pt]
+          at (0, -0.55ex) {\insertframesubtitle};
+      \fi
+    \end{tikzpicture}%
+  \end{beamercolorbox}%
+}
+
+% ---------------------------------------------------------
+% SLIDE MARGINS
+% ---------------------------------------------------------
+\setbeamersize{text margin left=5mm, text margin right=5mm}
+
+% ---------------------------------------------------------
+% MULTICOLUMN TOC — section/subsection navigation in header
+% (identical logic to beamerstyle.sty, colors inherited from definitions above)
+% ---------------------------------------------------------
+\makeatletter
+\def\insertsectionnavigation#1{%
+  \hbox to #1{\vbox{{\usebeamerfont{section in head/foot}%
+     \usebeamercolor[fg]{section in head/foot}%
+     \def\slideentry##1##2##3##4##5##6{}%
+     \def\sectionentry##1##2##3##4##5{%
+       \ifnum##5=\c@part%
+       \def\insertsectionhead{##2\hskip1em}%
+       \def\insertsectionheadnumber{##1}%
+       \def\insertpartheadnumber{##5}%
+         \hyperlink{Navigation##3}{%
+             \ifnum\c@section=##1%
+               {\usebeamertemplate{section in head/foot}}%
+             \else%
+               {\usebeamertemplate{section in head/foot shaded}}%
+             \fi%
+         }\par
+       \fi}%
+       \parbox[c][0.25cm][c]{.5\paperwidth}{%
+       \begin{multicols}{2}
+       \dohead
+       \end{multicols}}\space}
+     }%
+  \hfil}%
+}
+
+\def\insertsubsectionnavigation#1{%
+  \hbox to #1{%
+    \vbox{{%
+      \usebeamerfont{subsection in head/foot}\usebeamercolor[fg]{subsection in head/foot}%
+      \vskip0.5625ex% %      \vskip0.5625ex%
+      \beamer@currentsubsection=0%
+      \def\sectionentry##1##2##3##4##5{}%
+      \def\slideentry##1##2##3##4##5##6{\ifnum##6=\c@part\ifnum##1=\c@section%
+        \ifnum##2>\beamer@currentsubsection%
+        \beamer@currentsubsection=##2%
+        \def\insertsubsectionhead{##5}%
+        \def\insertsectionheadnumber{##1}%
+        \def\insertsubsectionheadnumber{##2}%
+        \def\insertpartheadnumber{##6}%
+        \beamer@link(##4){%
+              \ifnum\c@subsection=##2%
+                {\usebeamertemplate{subsection in head/foot}}%
+              \else%
+                {\usebeamertemplate{subsection in head/foot shaded}}%
+              \fi\hfill}\par
+        \fi\fi\fi}%
+       \hspace*{0.5em}\parbox[c][0cm][c]{\dimexpr.5\paperwidth-1em\relax}{%
+       \begin{multicols}{2}
+       \dohead\vskip0.5625ex\end{multicols}
+       }\space
+   }\hfil
+}}}
+
+\setbeamertemplate{headline}
+{%
+  \leavevmode\@tempdimb=3.3375ex%
+  \ifnum\beamer@subsectionmax<\beamer@sectionmax%
+    \multiply\@tempdimb by\beamer@sectionmax%
+  \else%
+    \multiply\@tempdimb by\beamer@subsectionmax%
+  \fi%
+  \ifdim\@tempdimb>0pt%
+    \advance\@tempdimb by 1.125ex%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=0.5\@tempdimb,dp=2ex]{section in head/foot}%
+      \vbox to0.5\@tempdimb{\vfill\insertsectionnavigation{.5\paperwidth}\vfill}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.5\paperwidth,ht=0.5\@tempdimb,dp=2ex]{subsection in head/foot}%
+      \vbox to0.5\@tempdimb{\vfill\insertsubsectionnavigation{.5\paperwidth}\vfill}%
+    \end{beamercolorbox}%
+  \fi%
+}
+\makeatother
+
+% ---------------------------------------------------------
+% CUSTOM COMMANDS
+% ---------------------------------------------------------
+\newcommand{\boldred}[1]{\textcolor{unipdGold}{\boldsymbol{#1}}}
+\newcommand{\ac}{\`}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\erpR}{\texttt{erpR }}
+\newcommand{\oq}{``}
+\newcommand{\cq}{''}
+\newcommand{\btVFill}{\vskip0pt plus 1filll}
+
+% ---------------------------------------------------------
+% CAPTION SETTINGS
+% ---------------------------------------------------------
+\captionsetup[figure]{labelformat=empty}

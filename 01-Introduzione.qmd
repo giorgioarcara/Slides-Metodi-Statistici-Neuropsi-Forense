@@ -4,32 +4,19 @@ author: "Giorgio Arcara"
 date: ""
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-
 ---
 
+## {.plain}
+
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{1. Introduzione}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\begin{center}
-\vspace{-2.2em}
-\includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-\end{center}
-}
-\date{\today}
-\maketitle
+\nftitleslide{1 · Introduzione}
 ```
 
 # Introduzione
@@ -67,15 +54,16 @@ header-includes:
 
 [giorgio.arcara\@unipd.it](mailto:giorgio.arcara@unipd.it){.underline}
 
+## Statistica e Psicometria
+La **statistica** è quella disciplina che si occupa di come possiamo trarre delle conclusione a partire da dati empirici e si occupa di ogni fase (pianificazione, raccolta, analisi, interpretazione).
+\pause
+
+La **psicometria** è quella disciplina che si occupa di misurazione in psicologia e di inferenze statistiche di concetti psicologici.
+
 ## Una domanda per iniziare
 
 ```{=latex}
-\begin{center}
-Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}
-
-\vspace{1em}
-\includegraphics[height=0.6\textheight]{Figures/wooclap_qr_code.png}
-\end{center}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 1)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
 
 ## Metodi statistici e neuropsicologia forense
@@ -83,7 +71,7 @@ Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il 
 ```{=latex}
 \begin{center}
 \begin{tikzpicture}[
-  blocco/.style={draw, thick, rounded corners, fill=gray!10, align=center,
+  blocco/.style={draw=nfInk, thick, rounded corners, fill=unipdCream!50, align=center,
                  text width=4.2cm, minimum height=2.6cm}]
 
 \node[blocco] (ricerca) at (-2.8, 0)
@@ -92,8 +80,8 @@ Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il 
   {Metodi statistici per la \textbf{clinica forense} e le \textbf{valutazioni}\\[0.5em]
    \small (consulenze/perizie)};
 
-\draw<2->[red, ultra thick] (valutazione.center) ellipse (3.1cm and 2cm);
-\node<2->[text=red, font=\bfseries] at (2.8, -2.4) {Focus di questo corso};
+\draw<2->[unipdCrimson, ultra thick] (valutazione.center) ellipse (3.1cm and 2cm);
+\node<2->[text=unipdCrimson, font=\bfseries] at (2.8, -2.4) {Focus di questo corso};
 
 \end{tikzpicture}
 \end{center}
@@ -123,12 +111,15 @@ Libro gratuito, in corso di scrittura.
 
 ## Aspetti organizzativi - Lezioni
 
--   Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa). 1 pausa in mezzo.
--   Le lezioni saranno videoregistrate e rese disponibile sul moodle.
--   Le lezioni prevedono didattica frontale (interattiva) ed esercitazioni in classe.
--   Saranno trattate poche formule.
--   Sono benvenute le domande (in qualsiasi momento).
--   Sarà in alcuni casi mostrato del codice in R, ma non è richiesto per l'esame.
+```{=latex}
+\vspace{4pt}
+\iconrow{\faLaptop}{Lezioni online principalmente il mercoledì e il giovedì (dalle 9.00 alle 11.30 circa). 1 pausa in mezzo.}
+\iconrow{\faVideo}{Le lezioni saranno videoregistrate e rese disponibili sul Moodle.}
+\iconrow{\faChalkboardTeacher}{Le lezioni prevedono didattica frontale (interattiva) ed esercitazioni in classe.}
+\iconrow{\faCalculator}{Saranno trattate poche formule.}
+\iconrow{\faQuestion}{Sono benvenute le domande (in qualsiasi momento).}
+\iconrow{\faCode}{Sarà in alcuni casi mostrato del codice in R, ma non è richiesto per l'esame.}
+```
 
 ## Orari lezioni (dettaglio)
 
@@ -161,31 +152,14 @@ I materiali principali sono le slides e materiali aggiuntivi che vi saranno forn
 
 Condividerò anche script di R e sarà dato risalto a "simulazioni" di dati per comprensione dei concetti, con script sviluppati durante il corso (utili, non necessari).
 
-## Aspetti organizzativi - Slides e handouts
+## Aspetti organizzativi - Slides, handouts, Esercizi
 
 Il materiale del corso è costituito da:
 
 -   **slides** delle lezioni;
 -   **handouts** (dispense di approfondimento) su argomenti specifici, se ritenuti necessari.
+- **Esercizi** opzionali, ma utili per testare la propria conoscenza
 
-## Aspetti organizzativi - Materiali
-
-```{=latex}
-\begin{columns}
-\column{0.5\textwidth}
-\small
-\emph{Mondini, S., Cappelletti, M., \& Arcara, G. (2022). Methodology in Neuropsychological Assessment: An Interpretative Approach to Guide Clinical Practice. Taylor \& Francis.}\\
-\vspace{1em}
-Testo di approfondimento, \textbf{non indispensabile}.
-
-\column{0.5\textwidth}
-
-\begin{figure}
-\includegraphics[scale=0.5]{Figures/Methodology_book.png}
-\end{figure}
-
-\end{columns}
-```
 ## Aspetti organizzativi - Materiali aggiuntivi
 
 -   Libro gratuito su statistica base ed R \href{https://learningstatisticswithr.com/}{\underline{https://learningstatisticswithr.com/}}
@@ -230,7 +204,7 @@ Gli esami saranno poco nozionistici e più di ragionamento
   \pgfmathsetmacro{\ym}{(\i+0.5)*0.9}
   \pgfmathsetmacro{\wa}{4.5*(1-\ya/6.6)}
   \pgfmathsetmacro{\wb}{4.5*(1-\yb/6.6)}
-  \fill[mDarkTeal!\c!white, draw=white, line width=1.5pt]
+  \fill[unipdCrimson!\c!white, draw=white, line width=1.5pt]
     (-\wa,\ya) -- (\wa,\ya) -- (\wb,\yb) -- (-\wb,\yb) -- cycle;
   \node[text=\t, font=\small\bfseries] at (0,\ym) {\lab};
 }
@@ -263,7 +237,7 @@ Tutto il materiale è comunque verificato e ricontrollato da me: \underline{la r
 
 ## Neuropsicologia Forense
 
-![](Figures/Valutazione_Neuropsi_ChatGPT.png){width="50%" fig-align="center"}
+![](Figures/Valutazione_Neuropsi_ChatGPT.png){width="38%" fig-align="center"}
 \pause
 
 **Valutazione neuropsicologica**: esame clinico per indagare il funzionamento cognitivo a fine descrittivo o diagnostico. In genere sono somministrati una serie di _test neuropsicologici_ ad un individuo per indagare il suo funzionamento cognitivo.
@@ -281,21 +255,11 @@ Partiamo dalla fine:
 -   Fornire elementi di conoscenza statistica e ragionamento critico utili per la neuropsicologia forense
 -   Fornire conoscenze sia per la pratica di psicologia forense, sia per chi vuole fare ricerca in ambito forense.
 -   Fornire conoscenze sull'elemento cardine per la valutazione forense: il test cognitivo o neuropsicologico, con le sue potenzialità e limiti.
--   Fornire conoscenze base su test statistici applicati al caso singolo.
+-   Fornire conoscenze base su metodi statistici applicati al caso singolo.
 
 \pause
 \emph{Obiettivo bonus}: superare alcuni traumi che vi ha dato la statistica a Psicologia
 
-## Attività (Padlet)
-
-```{=latex}
-\begin{center}
-\textbf{Perché la statistica è utile per il neuropsicologo forense?}
-
-\vspace{1em}
-\includegraphics[height=0.6\textheight]{Figures/padlet_qr_code.png}
-\end{center}
-```
 
 ## Perché è utile la statistica per il neuropsicologo forense? (1/2)
 
@@ -317,23 +281,11 @@ Partiamo dalla fine:
 \tiny{I piloti di formula 1 hanno conoscenze superiori su come funziona un motore.}
 
 \end{columns}
+\pause
+
+\emph{Vedi slide dopo per una continuazione su questo ragionamento)}
 ```
 
-## Perché è utile la statistica per il neuropsicologo forense? (2/2)
-
-```{=latex}
-\begin{columns}
-\column{0.5\textwidth}
-
-\begin{figure}
-\includegraphics[width=0.7\textwidth]{Figures/Mechanic_ChatGPT_BN.png}
-\end{figure}
-\tiny{Un pilota di F1 non è però un ingegnere o un meccanico: ne conosce bene il funzionamento per accorgersi di problemi (es. vibrazioni o rumori insoliti) e comunicare con il team, ma resta un utilizzatore, che deve concentrarsi sulle proprie abilità di guida.}
-
-\column{0.5\textwidth}
-Lo stesso vale per la/il neuropsicologa/o: non è necessario essere "psicometriste/i" o "statiste/i" per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
-\end{columns}
-```
 
 ## 5 principi basilari di questo corso (1)
 
@@ -370,6 +322,13 @@ di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 
 *Non è richiesta solo competenza clinica, ma anche competenze aggiuntive specifiche per valutazione forense.*
 
+## Attività (Padlet)
+
+```{=latex}
+\padletslot{Attività}{Quale è una caratteristica che distingue la valutazione forense da quella clinica?}{Inquadrate il QR code e scrivete la vostra risposta sul Padlet, o copiate il link sulla chat Zoom}{}{Figures/padlet_qr_code.png}
+```
+
+
 ## 5 principi basilari di questo corso (5)
 
 5. In molti casi di forense (es. consulenze tecniche/perizie), a dispetto della valutazione neuropsicologica puramente clinica, è possibile che ci sia anche un'altra parte che farà un'altra valutazione e relazione, e l'obiettivo è anche creare una relazione più convincente (su basi argomentative e oggettive) dell'altra parte.
@@ -380,10 +339,6 @@ di sostanziare in maniera il più obiettiva/oggettiva possibile le vostre argome
 \includegraphics[width=0.4\textwidth]{Figures/F1_2.jpg}
 \end{figure}
 
-## Alcune domande a cui risponderete
-*Come posso dimostrare che i test utilizzati per la mia perizia sono migliori di quelli dell’altra parte?*
-\pause
-*Come posso dimostrare che nell’interpretare i test, l’altra parte ha commesso un errore?*
 
 ## Focus sui test neuropsicologici
 Anche se la metodologia della valutazione neuropsicologica forense in genere include vari aspetti, Il focus sulla lezione è sui test neuropsicologici, su cosa sono, come si creano, come si interpretano i risultati. 
@@ -394,23 +349,36 @@ della valutazione neuropsicologica.
 \pause
 (altre fasi che non sono trattate sono l’intervista, il colloquio con i familiari, anche se sarà accennato il perché della loro rilevanza.)
 
-## Focus sui test statistici per caso singolo
+## Focus sui metodi statistici per **caso singolo**
 
 Il più delle volte in ambito forense, l'interesse è dare delle risposte su un singolo individuo.
 
 Da un punto di vista statistico questo significa utilizzare metodi che permettono di rispondere non a campioni, ma a singoli individui (ed è qualcosa di particolarmente rilevante)
 
 
-## Attività (Padlet)
+## Attività (Wooclap)
 
 ```{=latex}
-\begin{center}
-\textbf{Perché si usano i test in neuropsicologia forense?}
-
-\vspace{1em}
-\includegraphics[height=0.6\textheight]{Figures/padlet_qr_code.png}
-\end{center}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 2)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
 ```
+
+## Perché è utile la statistica per il neuropsicologo forense? (2/2)
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{Figures/Mechanic_ChatGPT_BN.png}
+\end{figure}
+\tiny{Un pilota di F1 non è però un ingegnere o un meccanico: ne conosce bene il funzionamento per accorgersi di problemi (es. vibrazioni o rumori insoliti) e comunicare con il team, ma resta un utilizzatore, che deve concentrarsi sulle proprie abilità di guida.}
+
+\column{0.5\textwidth}
+Lo stesso vale per la neuropsicologia: non è necessario essere esperte/i in psicometria o statistica per usare bene i test, ma conoscerne meglio il funzionamento aiuta a notare possibili problemi e a sfruttarne meglio le potenzialità.
+\end{columns}
+```
+
+
 
 ## Ruolo dei test
 
@@ -434,11 +402,6 @@ I test moderni (e migliori) oggi, saranno potenzialmente superati l’anno pross
 neuropsicologo, etc.
 ```
 
-## Statistica e Psicometria
-La **statistica** è quella disciplina che si occupa di come possiamo trarre delle conclusione a partire da dati empirici e si occupa di ogni fase (pianificazione, raccolta, analisi, interpretazione).
-\pause
-
-La **psicometria** è quella disciplina che si occupa di misurazione in psicologia e di inferenze statistiche di concetti psicologici.
 
 ## Perché sono importanti psicometria e statistica?
 
@@ -507,7 +470,7 @@ Così come tra queste conoscenze ci sono le conoscenze relative alle caratterist
 
 ## Valutazione neuropsicologica e forense
 
-Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei quali molto complessi (es. giudicare la _capacità di intendere e volere_). In questo corso ci concentreremo su esempi sul concetto di **danno**, ma anticipo che la definizione di danno è diversa in ambito giuridico e in ambito clinico.
+Esistono vari obiettivi che potrebbe avere una valutazione forense, alcuni dei quali molto complessi (es. giudicare la _capacità di intendere e volere_). In questo corso ci concentreremo su esempi sul concetto di **peggioramento** e di **danno**, che ha specifiche implicazioni in ambito giuridico.
 
 
 

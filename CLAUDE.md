@@ -21,7 +21,7 @@ quarto render                                   # all decks
 ```
 
 - Toolchain: Quarto ≥ 1.7, `pdf-engine: xelatex`, a LaTeX install (TeX Live / TinyTeX) with
-  `beamer` and the **metropolis** theme.
+  `beamer`, TikZ, `FiraSans` and `fontawesome5`.
 - `keep-tex: true` is set, so rendering (re)writes both `Name.tex` and `Name.pdf`.
 - **`.qmd`, `.tex`, and `.pdf` are all committed.** After editing a `.qmd`, re-render and commit the
   regenerated `.tex` and `.pdf` together with it.
@@ -30,16 +30,24 @@ quarto render                                   # all decks
 
 ## Per-deck structure (conventions to follow when editing or adding slides)
 
-The YAML front matter is near-identical across decks: `format: beamer` with `theme: metropolis`,
-`keep-tex: true`, `pdf-engine: xelatex`, `incremental: false`, and a `header-includes` block
-(`\setbeamerfont{title}`, `hyperref`, `\setbeamertemplate{footline}[frame number]`). Copy it verbatim
-from a neighbouring deck rather than reinventing it. `00-Template.qmd` is the starting point for a new
-deck.
+The YAML front matter is identical across decks: `format: beamer` with `keep-tex: true`,
+`aspectratio: 169`, `section-titles: false`, `pdf-engine: xelatex`, `include-in-header: nf-macros.tex`,
+and `incremental` (false everywhere except deck 03). Copy it verbatim from a neighbouring deck rather
+than reinventing it. `00-Template.qmd` is the starting point for a new deck.
 
-- **Title slide**: a raw ` ```{=latex} ` block wrapped in `::: {.content-visible when-format="beamer"}`,
-  containing `\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{N. Section}}`,
-  a `\titlegraphic` with logos from `Figures/`, and `\maketitle`.
-- **`#` heading** = section divider frame; **`##` heading** = a slide/frame.
+- **Style**: `nf-macros.tex` loads `unipdwarsawstyle.sty` (UniPD crimson/gold Warsaw style, copied
+  unchanged from the "Time Management" course) and defines the palette (`unipdCrimson`, `unipdGold`,
+  `unipdCream`, `nfInk`, `nfGrey`) and the slide macros:
+  - `\nftitleslide{N · Titolo}` on a `## {.plain}` frame — the title slide;
+  - `\wooclapslot{tipo}{domanda}{istruzioni}{minuti}{Figures/qr.png}{codice}` and
+    `\padletslot{tipo}{domanda}{istruzioni}{minuti}{Figures/qr.png}` — activity slides with QR;
+  - `\iconrow{\faIcon}{testo}` — bullet with an icon in a crimson disc;
+  - `\takeaway{...}` — "In sintesi" strip at the bottom of a slide.
+- **Image height cap**: `nf-macros.tex` scales any image taller than `\nfmaxheight`
+  (0.74 `\textheight`) down, so width-based sizes cannot run off the shorter 16:9 frame. If a slide
+  still overflows (image + text), reduce that image's size on the slide.
+- **`#` heading** = section divider frame (drawn by `\AtBeginSection` in `nf-macros.tex`);
+  **`##` heading** = a slide/frame.
 - **Layout, figures, overlays** are done with raw ` ```{=latex} ` blocks: `\begin{columns}` /
   `\begin{column}{0.5\textwidth}`, `\begin{tikzpicture}` for image annotations, `\begin{figure}` /
   `\includegraphics[scale=...]{Figures/xxx.png}`. Plain markdown is used for prose, bullets, and math.

@@ -5,6 +5,7 @@
 %
 \documentclass[
   ignorenonframetext,
+  aspectratio=169,
 ]{beamer}
 \newif\ifbibliography
 \usepackage{pgfpages}
@@ -34,18 +35,6 @@
 % Prevent slide breaks in the middle of a paragraph
 \widowpenalties 1 10000
 \raggedbottom
-\AtBeginPart{
-  \frame{\partpage}
-}
-\AtBeginSection{
-  \ifbibliography
-  \else
-    \frame{\sectionpage}
-  \fi
-}
-\AtBeginSubsection{
-  \frame{\subsectionpage}
-}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -58,7 +47,6 @@
 \fi
 \usepackage{lmodern}
 
-\usetheme[]{metropolis}
 \ifPDFTeX\else
   % xetex/luatex font selection
 \fi
@@ -117,7 +105,165 @@
  
 
 
-\setbeamerfont{title}{size=\large} \usepackage{hyperref} \setbeamertemplate{footline}[frame number]
+% nf-macros.tex — visual building blocks for "Metodi Statistici per la Neuropsicologia Forense"
+% Adapted from the Time Management deck (tm-macros.tex); loads unipdwarsawstyle.sty first.
+
+% ---------------------------------------------------------
+% FONTS, ICONS, LIBRARIES
+% ---------------------------------------------------------
+\usepackage{unipdwarsawstyle}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{fontawesome5}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds,shapes.geometric}
+
+% ---------------------------------------------------------
+% IMAGE HEIGHT CAP — 16:9 frames are shorter than the old 4:3 ones, so images sized
+% by width can run off the bottom. Every \includegraphics taller than \nfmaxheight
+% is scaled down (aspect ratio kept); unsized markdown images use the same limit.
+% ---------------------------------------------------------
+\newlength{\nfmaxheight}
+\AtBeginDocument{\setlength{\nfmaxheight}{0.74\textheight}}
+\makeatletter
+\newsavebox\nf@imgbox
+\let\nf@includegraphics\includegraphics
+\renewcommand*\includegraphics[2][]{%
+  \sbox\nf@imgbox{\nf@includegraphics[#1]{#2}}%
+  \ifdim\dimexpr\ht\nf@imgbox+\dp\nf@imgbox\relax>\nfmaxheight
+    \resizebox{!}{\nfmaxheight}{\usebox\nf@imgbox}%
+  \else\usebox\nf@imgbox\fi}
+% unsized markdown images: fit within \linewidth and \nfmaxheight
+\renewcommand*\pandocbounded[1]{%
+  \sbox\nf@imgbox{#1}%
+  \Gscale@div\@tempa{\nfmaxheight}{\dimexpr\ht\nf@imgbox+\dp\nf@imgbox\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\nf@imgbox}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\nf@imgbox}\else\usebox\nf@imgbox\fi}
+\makeatother
+
+% ---------------------------------------------------------
+% PALETTE — structure is UniPD crimson/gold (from the style file)
+% ---------------------------------------------------------
+\definecolor{nfInk}{HTML}{243447}      % dark text
+\definecolor{nfPoll}{HTML}{5B3F9E}     % Wooclap
+\definecolor{nfPadlet}{HTML}{B8860B}   % Padlet
+\definecolor{nfGrey}{HTML}{8A94A0}
+
+% ---------------------------------------------------------
+% GLOBAL LOOK
+% ---------------------------------------------------------
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\setbeamertemplate{headline}{}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=nfInk}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{footline}{%
+  \hfill{\color{nfGrey}\tiny\insertframenumber}\hspace*{4mm}\vspace*{2mm}}
+\setbeamertemplate{itemize item}{\color{unipdCrimson}\raisebox{0.15ex}{\scriptsize\faCircle}}
+
+% ---------------------------------------------------------
+% ICON ROW — icon in a crimson disc + text
+%   \iconrow{\faVideo}{Text}
+% ---------------------------------------------------------
+\newcommand{\iconrow}[2]{%
+  \par\noindent
+  \begin{minipage}[c]{0.9cm}\centering
+    \tikz\node[circle, fill=unipdCrimson, text=white, minimum size=7mm, inner sep=0pt]{\small #1};
+  \end{minipage}%
+  \begin{minipage}[c]{\dimexpr\linewidth-0.9cm\relax}\small #2\end{minipage}\par\vspace{5pt}}
+
+% ---------------------------------------------------------
+% ACTIVITIES — real QR code and join code
+% ---------------------------------------------------------
+\newcommand{\timer}[1]{%
+  \tikz[baseline=(t.base)]\node[fill=unipdCrimson, text=white, rounded corners=6pt,
+    font=\scriptsize\bfseries, inner sep=3pt] (t) {\faIcon{stopwatch}\ #1};}
+
+%   \qrbox{colour}{Figures/qr.png}{code or empty}
+\newcommand{\qrbox}[3]{%
+  \begin{tikzpicture}
+    \node[draw=#1, line width=1.2pt, rounded corners=5pt, inner sep=5pt, fill=white] (q)
+      {\includegraphics[width=3.4cm]{#2}};
+    \if\relax\detokenize{#3}\relax\else
+      \node[below=3pt of q, font=\small\bfseries\color{#1}] {codice: #3};
+    \fi
+  \end{tikzpicture}}
+
+%   \wooclapslot{tipo}{domanda}{istruzioni}{minuti o vuoto}{Figures/qr.png}{codice}
+\newcommand{\wooclapslot}[6]{%
+  \begin{columns}[c]
+    \begin{column}{0.56\textwidth}
+      {\color{nfPoll}\small\faPoll\ \textbf{WOOCLAP}\,·\,#1}%
+      \if\relax\detokenize{#4}\relax\else\hfill\timer{#4}\fi\par\vspace{8pt}
+      {\LARGE\bfseries\color{nfInk}#2\par}\vspace{10pt}
+      {\small\color{nfInk}#3\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering\qrbox{nfPoll}{#5}{#6}\end{column}
+  \end{columns}}
+
+%   \padletslot{tipo}{domanda}{istruzioni}{minuti o vuoto}{Figures/qr.png}
+\newcommand{\padletslot}[5]{%
+  \begin{columns}[c]
+    \begin{column}{0.56\textwidth}
+      {\color{nfPadlet}\small\faStickyNote\ \textbf{PADLET}\,·\,#1}%
+      \if\relax\detokenize{#4}\relax\else\hfill\timer{#4}\fi\par\vspace{8pt}
+      {\LARGE\bfseries\color{nfInk}#2\par}\vspace{10pt}
+      {\small\color{nfInk}#3\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering\qrbox{nfPadlet}{#5}{}\end{column}
+  \end{columns}}
+
+% ---------------------------------------------------------
+% TITLE SLIDE — use on a  ## {.plain}  frame:   \nftitleslide{2 · Cornice teorica}
+% ---------------------------------------------------------
+\newcommand{\nftitleslide}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[unipdCrimson] (current page.north west) rectangle ([xshift=0.58\paperwidth]current page.south west);
+    \fill[unipdGold] ([xshift=0.58\paperwidth]current page.north west) rectangle ([xshift=0.585\paperwidth]current page.south west);
+  \end{tikzpicture}%
+  \begin{columns}[c]
+    \begin{column}{0.55\textwidth}
+      \color{white}
+      {\small\color{unipdGold}\MakeUppercase{#1}\par}\vspace{6pt}
+      {\fontsize{22}{27}\selectfont\bfseries Metodi Statistici per la Neuropsicologia Forense\par}\vspace{22pt}
+      {\small\bfseries Giorgio Arcara\par}
+      {\scriptsize Università di Padova\\ IRCCS San Camillo, Venezia\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering
+      \includegraphics[width=0.85\linewidth]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}\par\vspace{14pt}
+      \includegraphics[height=0.55cm]{Figures/CC_license_3_0.png}
+    \end{column}
+  \end{columns}}
+
+% ---------------------------------------------------------
+% SECTION DIVIDER — built automatically from each "# Section" heading
+% (YAML: section-titles: false, so Quarto does not add its own)
+% ---------------------------------------------------------
+\AtBeginSection{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[unipdCrimson] (current page.north west) rectangle ([xshift=3mm]current page.south west);
+      \fill[unipdGold] ([xshift=3mm]current page.north west) rectangle ([xshift=3.6mm]current page.south west);
+      \node[anchor=north west, font=\scriptsize\color{nfGrey}, inner sep=0pt]
+        at ([xshift=8mm,yshift=-5mm]current page.north west)
+        {METODI STATISTICI PER LA NEUROPSICOLOGIA FORENSE};
+    \end{tikzpicture}
+    \vfill
+    \begin{center}
+      {\fontsize{26}{32}\selectfont\bfseries\color{unipdCrimson}\insertsectionhead\par}
+    \end{center}
+    \vfill
+  \end{frame}}
+
+% ---------------------------------------------------------
+% TAKEAWAY strip at the bottom of the slide
+% ---------------------------------------------------------
+\newcommand{\takeaway}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south west, fill=unipdCream!70, text=nfInk, font=\scriptsize,
+          inner xsep=6pt, inner ysep=3pt, rounded corners=2pt, text width=0.84\paperwidth]
+      at ([xshift=5mm,yshift=4mm]current page.south west)
+      {\textcolor{unipdCrimson}{\faKey}\ \textbf{In sintesi:} #1};
+  \end{tikzpicture}}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -175,18 +321,9 @@
 \begin{document}
 
 
-\begin{frame}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{8. Altri utilizzi dei punteggi dei test}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\begin{frame}[plain]{}
+\phantomsection\label{section}
+\nftitleslide{6 · Altri utilizzi dei punteggi dei test}
 \end{frame}
 
 \section{8. Altri utilizzi dei punteggi dei
@@ -203,7 +340,7 @@ nuovamente e ottiene un punteggio di 10. Cosa possiamo dire del
 paziente?
 
 \begin{center}
-\includegraphics[width=0.5\linewidth,height=\textheight,keepaspectratio]{Figures/Figure_true_obs_4.png}
+\includegraphics[width=0.34\linewidth,height=\textheight,keepaspectratio]{Figures/Figure_true_obs_4.png}
 \end{center}
 
 \footnotesize

@@ -2,34 +2,22 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
-header-includes:
-  - \setbeamerfont{title}{size=\large}
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
+incremental: false
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \small \emph{4a. Validità e affidabilità (teoria)}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{3a · Validità e affidabilità (teoria)}
 ```
-:::
 
 # Validità e affidabilità
 
@@ -362,7 +350,7 @@ L’appropriatezza dell’utilizzo di un test è determinata dall’adesione all
 ## Perdita di Validità 1/3
 Esempio da immagine del test "Descrizione di Scene" - APACS
 
-![](Figures/APACS_scene1.png){width="60%" fig-align="center"}
+![](Figures/APACS_scene1.png){width="40%" fig-align="center"}
 
 è un test che misura l'efficacia comunicativa, utilizzando come punto di partenza la descrizione di una fotografia.
 Viene chiesto di dire dove si è, chi c'è nella figura e cosa si sta facendo.
@@ -558,7 +546,7 @@ Il fatto che un test sia stato pubblicato non ci assicura che sia validato per q
 
 {\small Da APACS (Arcara \& Bambini, 2016)}
 \begin{figure}
-\includegraphics[width=\textwidth]{Figures/APACS_reliability.png}
+\includegraphics[height=0.5\textheight]{Figures/APACS_reliability.png}
 \end{figure}
 ```
 

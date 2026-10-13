@@ -2,35 +2,22 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: true
-header-includes:
-  - \setbeamerfont{title}{size=\large}
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{\small 3. La scelta dei test per la propria cassetta degli attrezzi}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{8a · La scelta dei test per la propria cassetta degli attrezzi}
 ```
-:::
 
 # La scelta dei test per la propria cassetta degli attrezzi
 
@@ -46,7 +33,7 @@ Due momenti di scelta dei test:
 
 *Regole generali da seguire*
 
-Test che abbiano caratteristiche psicometriche soddisfacenti (validità, affidabilità, dati normativi adeguati, \underline{vedi slides successive})
+Test che abbiano caratteristiche psicometriche soddisfacenti (validità, affidabilità, dati normativi adeguati, \underline{visti nei blocchi precedenti})
 
 Dipende molto da fattori pratici: il tipo di realtà clinica o forense nella quale si utilizzano i test influenza quali sono i test da utilizzare potenzialmente.
 
@@ -98,8 +85,8 @@ Utilizzate con cautela test di cui non avete referenze ufficiali  (possono avere
 *Cosa evitare nella selezione dei test?*
 
 \begin{itemize}[<*>] 
-  \item Evitare test troppo datati (se i dati normativi sono troppo vecchi potrebbero non essere utilizzabili) –     \emph{approfondiremo questo}.
-  \item Evitare test “fatti in casa”: un test passato da un collega senza dati normativi (magari tradotti da un test in inglese) può essere accattivante (e talvolta utile) ma è limitato nelle informazioni che può fornire. - \emph{approfondiremo questo}.
+  \item Evitare test troppo datati (se i dati normativi sono troppo vecchi potrebbero non essere utilizzabili) – \emph{come visto nel blocco sui dati normativi}.
+  \item Evitare test “fatti in casa”: un test passato da un collega senza dati normativi (magari tradotti da un test in inglese) può essere accattivante (e talvolta utile) ma è limitato nelle informazioni che può fornire – \emph{come visto nei blocchi su validità, affidabilità e dati normativi}.
   \item Evitare test che sono semplici traduzioni da test stranieri, non "adattati" all'italiano tramite opportune prove di validità, affidabilità e dati normativi.
 \end{itemize}
 

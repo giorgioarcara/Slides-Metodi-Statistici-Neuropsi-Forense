@@ -54,3 +54,6 @@ rsconnect/
 .DS_Store
 # review artifacts (latexdiff PDFs, change-logs)
 review/
+
+# biblatex auxiliary file created by unipdwarsawstyle.sty
+*-blx.bib

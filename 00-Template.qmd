@@ -4,34 +4,20 @@ author: "Giorgio Arcara"
 date: ""
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-
 ---
 
+## {.plain}
+
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{Introduzione}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\begin{center}
-\vspace{-2.2em}
-\includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-\end{center}
-}
-\date{\today}
-\maketitle
+\nftitleslide{Introduzione}
 ```
-
 
 ## Prima slide
 
