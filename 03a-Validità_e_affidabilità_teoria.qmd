@@ -21,6 +21,13 @@ incremental: false
 
 # Validità e affidabilità
 
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 1)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+```
+
+
 ## Validità e Affidabilità
 
 ```{=latex}
@@ -37,13 +44,6 @@ Validità e affidabilità sono due qualità fondamentali dei test (non solo dida
 \vfill
 
 ```
-
-## Attività (Wooclap)
-
-```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 1)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
-```
-
 
 Nelle prossime slides farà una panoramica generale senza scendere nei dettagli delle formule che vedremo in un passo successivo.
 
