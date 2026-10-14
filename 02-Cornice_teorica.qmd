@@ -414,6 +414,31 @@ $\beta$ = difficulty parameter
 
 Per costruire modelli di Rasch/IRT si parte spesso da matrici di questo tipo.
 
+## Gradare la difficoltà degli item di un test
+
+Proviamo a fare quello che viene "empiricamente" fatto su dati di partecipanti e pazienti, ipotizzando un orginamento per difficoltà degli item di un test molto diffuso.
+
+```{=latex}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+    \begin{figure}
+    \includegraphics[scale=0.1]{Figures/MoCA-Test-Italian.png}
+    \end{figure}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+    Ordinate gli item di questo test, secondo la difficoltà nel completarli.
+  \end{column}
+\end{columns}
+```
+
+## Attività (Wooclap)
+
+```{=latex}
+\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+```
+
+
+
 ## Teoria dei test
 
 \begin{center}
