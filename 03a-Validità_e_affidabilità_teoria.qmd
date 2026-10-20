@@ -326,6 +326,12 @@ Questo è particolarmente rilevante nel caso di valutazioni del danno subito dal
 
 Un test con dati su validità ecologica ci aiuterebbe a fare queste interpretazioni perché ci sarebbe supporto scientifico sulla relazione tra performance al test e comportamento di vita quotidiana.
 
+## Attività (Padlet)
+
+```{=latex}
+\padletslot{Attività}{Come valutereste la validità ecologica di questo test?}{Immaginate un nuovo test di inibizione simile allo Stroop: si deve dire il colore dell'inchiostro di parole-colore, ignorando la parola scritta (es. ROSSO scritto in blu). Quali dati raccogliereste per verificare che la prestazione al test rifletta le difficoltà di inibizione nella vita quotidiana? Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+```
+
 ## Evidenze basate sulle conseguenze del testing
 
 Una fonte di evidenza, spesso trascurata, riguarda le **conseguenze**, soprattutto non intenzionali, dell'uso di un test.
