@@ -299,7 +299,23 @@ Validità ecologica: si riferisce alla qualità di un test di riflettere effetti
 
 Può essere valutata tramite diverse analisi, es. Correlazioni con altri questionari o scale riferite alla vita quotidiana.
 
-Non esistono valori soglia condivisi che un test deve avere. Nota che la validità ecologica è raramente disponibile vista la difficoltà nell’essere verificata.
+Non esistono valori soglia condivisi che un test deve avere. 
+
+## Validità ecologica 2/2
+
+Nota che **la validità ecologica è spesso trascurata** ma particolarmente importante perché spesso nelle valutazioni sono fatte inferenze implicite sull’impatto del deficit sulla vita quotidiana. Identificare un deficit di memoria è infatti relativamente importante _in sé_: quello che è rilevante è spesso capire che impatto ha questo deficit nella vita del paziente
+
+Questo è particolarmente rilevante nel caso di valutazioni del danno subito dal paziente. Avere un deficit cognitivo che sia particolarmente invalidante è ovviamente diverso da avere un deficit che però non ha impatto sulla vita quotidiana.
+
+Un test con dati su validità ecologica ci aiuterebbe a fare queste interpretazioni perché ci sarebbe supporto scientifico sulla relazione tra performance al test e comportamento di vita quotidiana.
+
+## Attività (Padlet)
+
+```{=latex}
+\padletslot{Attività}{Come valutereste la validità ecologica di questo test?}{Immaginate un nuovo test di inibizione simile allo Stroop: si deve dire il colore dell'inchiostro di parole-colore, ignorando la parola scritta (es. ROSSO scritto in blu). Quali dati raccogliereste per verificare che la prestazione al test rifletta le difficoltà di inibizione nella vita quotidiana? Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+```
+
+
 
 ## Tipi di validità: riepilogo
 
@@ -316,20 +332,6 @@ Non esistono valori soglia condivisi che un test deve avere. Nota che la validit
 
 ```{=latex}
 \wooclapslot{Domanda}{Domanda Wooclap}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
-```
-
-## Validità ecologica 2/2
-
-Nota che **la validità ecologica è spesso trascurata** ma particolarmente importante perché spesso nelle valutazioni sono fatte inferenze implicite sull’impatto del deficit sulla vita quotidiana. Identificare un deficit di memoria è infatti relativamente importante _in sé_: quello che è rilevante è spesso capire che impatto ha questo deficit nella vita del paziente
-
-Questo è particolarmente rilevante nel caso di valutazioni del danno subito dal paziente. Avere un deficit cognitivo che sia particolarmente invalidante è ovviamente diverso da avere un deficit che però non ha impatto sulla vita quotidiana.
-
-Un test con dati su validità ecologica ci aiuterebbe a fare queste interpretazioni perché ci sarebbe supporto scientifico sulla relazione tra performance al test e comportamento di vita quotidiana.
-
-## Attività (Padlet)
-
-```{=latex}
-\padletslot{Attività}{Come valutereste la validità ecologica di questo test?}{Immaginate un nuovo test di inibizione simile allo Stroop: si deve dire il colore dell'inchiostro di parole-colore, ignorando la parola scritta (es. ROSSO scritto in blu). Quali dati raccogliereste per verificare che la prestazione al test rifletta le difficoltà di inibizione nella vita quotidiana? Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
 ```
 
 ## Evidenze basate sulle conseguenze del testing
