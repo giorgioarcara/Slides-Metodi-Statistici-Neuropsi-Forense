@@ -479,31 +479,6 @@ L’assunto di unidimensionalità, assume che:
 
 Questo è facile pensarlo per test che includano item in cui è facile gradare la difficoltà (es. esercizi di matematica), ma con un test neuropsicologico?
 
-## Teoria dei test
-
-\begin{center}
-  \textbf{Classical Test Theory vs Item Response Theory}
-\end{center}
-\vspace{2em}
-
-```{=latex}
-\begin{columns}
-  \begin{column}{0.5\textwidth}
-    \begin{figure}
-    \includegraphics[scale=0.1]{Figures/MoCA-Test-Italian.png}
-    \end{figure}
-  \end{column}
-  \begin{column}{0.5\textwidth}
-    È facile gradare gli item del moca per difficoltà?
-  \end{column}
-\end{columns}
-```
-
-## Attività (Wooclap)
-
-```{=latex}
-\wooclapslot{Domanda}{Rispondete su Wooclap (Domanda 4)}{Andate su \href{https://www.wooclap.com}{\underline{wooclap.com}} e inserite il codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
-```
 
 ## Teoria dei test
 
