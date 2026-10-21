@@ -36,7 +36,7 @@ Gli _Standards for Educational and Psychological Testing_ (AERA, APA, & NCME, 20
 ## Quanto deve essere alta l'affidabilità?
 
 \small
-Non esistono soglie universali. Riferimento orientativo, valido per tutti i tipi di affidabilità (Slick, cap. 1 in Spreen & Strauss, 2006):
+Non esistono soglie universali. Riferimento orientativo, valido per tutti i tipi di affidabilità (Slick, 2006, cap. 1 in Strauss, Sherman & Spreen, 2006):
 
 | Coefficiente | Interpretazione |
 |:--|:--|
@@ -46,7 +46,7 @@ Non esistono soglie universali. Riferimento orientativo, valido per tutti i tipi
 | $0.60 - 0.69$ | marginale |
 | $< 0.60$ | bassa |
 
-Per le **decisioni cliniche sul singolo individuo** Sattler (2001) raccomanda soglie più stringenti: $\geq 0.80$; per decisioni ad alto impatto (es. QI, diagnosi) $0.90$ è il minimo, $0.95$ l'ottimale. In pratica: approccio _comparativo_ (scegliere il test con affidabilità migliore).
+Per le **decisioni cliniche sul singolo individuo** Sattler (2001, citato in Slick, 2006) raccomanda soglie più stringenti: $\geq 0.80$; per decisioni ad alto impatto (es. QI, diagnosi) $0.90$ è il minimo, $0.95$ l'ottimale. In pratica: approccio _comparativo_ (scegliere il test con affidabilità migliore).
 
 # Affidabilità test-retest
 
@@ -136,7 +136,7 @@ Per ogni test verrà fatta una sola valutazione e non c’è interesse nella riv
 Perché viene spesso usato il coefficiente di correlazione di Pearson ($r$) se non è adeguato?
 \vspace{2em}
 
-Probabilmente per semplice convenzione e per semplicità (il coefficiente r di pearson può esprimere facilmente la varianza condivisa tra le variabili, semplicemente calcolando $r^2$).
+Probabilmente per semplice convenzione e per semplicità (il coefficiente $r$ di Pearson può esprimere facilmente la varianza condivisa tra le variabili, semplicemente calcolando $r^2$).
 
 Non è completamente sbagliato e può fornire un quadro abbastanza completo se accompagnato da t-tests (per indagare differenze sistematiche).
 
@@ -149,7 +149,7 @@ Esistono diversi modi di misurare l'affidabilità test-retest e sempre più spes
 \small
 Nel tipico disegno test-retest (due occasioni prestabilite, uguali per tutti) si raccomanda un modello ICC a due vie, a effetti misti, basato sull'accordo assoluto e riferito a una singola misurazione — spesso indicato come ICC(2,1) o ICC(A,1) (Shrout & Fleiss, 1979; McGraw & Wong, 1996; Koo & Li, 2016).
 
-_Soglie indicative_: $\geq 0.70$ per ricerca/confronti tra gruppi; per decisioni sul singolo individuo spesso $\geq 0.90$, idealmente $\sim 0.95$ (Nunnally & Bernstein, 1994).
+_Soglie indicative_: non esiste una soglia universalmente valida. $\geq 0.70$ è talvolta considerato il minimo per ricerca/confronti tra gruppi; per decisioni importanti sul singolo individuo spesso $\geq 0.90$, idealmente $\sim 0.95$ (Nunnally & Bernstein, 1994).
 
 # Inter-rater agreement
 
@@ -185,7 +185,7 @@ $$
 \begin{aligned}
 MSB, MSJ & = \text{varianza tra soggetti, tra giudici (rater)} \\
 MSE & = \text{varianza dell'interazione giudici} \times \text{soggetti} \\
-n_c, n_j & = \text{numero di giudici, di casi}
+n_j, n_c & = \text{numero di giudici, di casi}
 \end{aligned}
 $$
 
@@ -219,7 +219,7 @@ Probabilmente per prassi e convenzione (che si osserva soprattutto nei test in I
 
 \vspace{1em}
 
-\small _Soglie indicative_ per l'inter-rater agreement (ICC): $< 0.40$ scarso, $0.40 - 0.59$ discreto, $0.60 - 0.74$ buono, $\geq 0.75$ eccellente (Cicchetti & Sparrow, 1981); con classificazione simile, Fastenau et al. (1996) considerano $0.60$ la soglia per un accordo "sostanziale" e $0.75 - 0.80$ per uno "quasi perfetto".
+\small _Soglie indicative_ per l'inter-rater agreement (ICC): $< 0.40$ scarso, $0.40 - 0.59$ discreto, $0.60 - 0.74$ buono, $\geq 0.75$ eccellente (Cicchetti & Sparrow, 1981, citati in Slick, 2006); con classificazione simile, Fastenau et al. (1996) considerano $0.60$ la soglia per un accordo "sostanziale" e $0.75 - 0.80$ per uno "quasi perfetto".
 
 # Consistenza interna (e split-half)
 
@@ -391,7 +391,7 @@ Un altro modo per pensare il problema è che stimare la varianza riconducibile a
 
 \small
 2) Per stimare il punteggio vero entra due volte in gioco la media del campione di riferimento (denotata con M). 
-Questo permette di tenere in considerazione un fenomeno detto **regressione verso la media**: in ogni misura con errore è sempre più probabile che una misura successiva sia più vicina alla media del campione di riferimento. Questo perché, specie se l’errore dello strumento è grande, ogni deviazione della media ha probabilità di essere dovuta al caso.
+Questo permette di tenere in considerazione un fenomeno detto **regressione verso la media**: in ogni misura con errore è sempre più probabile che una misura successiva sia più vicina alla media del campione di riferimento. Questo perché, specie se l’errore dello strumento è grande, ogni deviazione dalla media ha probabilità di essere dovuta al caso.
 
 Correggere per la media ha però un grosso limite intrinseco: con che media correggere? Ad esempio, se ho un paziente con TBI è corretto usare (per M), la media del gruppo di sani con cui è stato sviluppato il test?
 
@@ -406,22 +406,28 @@ Ogni coefficiente di affidabilità, in generale, stima la varianza riconducibile
 L’idea generale può essere espressa da questa formula.
 
 $$
-r_{xx} = \frac{\sigma_{true}}{\sigma_{tot}}
+r_{xx} = \frac{\sigma^2_{true}}{\sigma^2_{tot}}
 $$
 
 # Riferimenti
 
-## Riferimenti
+## Riferimenti (1/2)
 
-\footnotesize
+\scriptsize
 
-- AERA, APA, & NCME (2014). _Standards for Educational and Psychological Testing_.
-- Cicchetti, D. V., & Sparrow, S. A. (1981). _American Journal of Mental Deficiency_.
-- Fastenau, P. S., et al. (1996).
-- Koo, T. K., & Li, M. Y. (2016). _Journal of Chiropractic Medicine_.
-- McGraw, K. O., & Wong, S. P. (1996). _Psychological Methods_.
-- Nunnally, J. C., & Bernstein, I. H. (1994). _Psychometric Theory_ (3rd ed.).
-- Sattler, J. M. (2001). _Assessment of Children_.
-- Shrout, P. E., & Fleiss, J. L. (1979). _Psychological Bulletin_.
-- Slick, D. J. (2006). Psychometrics in neuropsychological assessment. In Spreen & Strauss (cap. 1).
-- Urbina, S. (2004). _Essentials of Psychological Testing_.
+- American Educational Research Association, American Psychological Association, & National Council on Measurement in Education (2014). _Standards for educational and psychological testing_. Washington, DC: AERA.
+- Arcara, G., & Bambini, V. (2016). A test for the assessment of pragmatic abilities and cognitive substrates (APACS): Normative data and psychometric properties. _Frontiers in Psychology, 7_, 70. https://doi.org/10.3389/fpsyg.2016.00070
+- Cicchetti, D. V., & Sparrow, S. S. (1981). Developing criteria for establishing interrater reliability of specific items: Applications to assessment of adaptive behavior. _American Journal of Mental Deficiency, 86_(2), 127–137.
+- Fastenau, P. S., Bennett, J. M., & Denburg, N. L. (1996). Application of psychometric standards to scoring system evaluation: Is "new" necessarily "improved"? _Journal of Clinical and Experimental Neuropsychology, 18_(3), 462–472. https://doi.org/10.1080/01688639608409003
+- Koo, T. K., & Li, M. Y. (2016). A guideline of selecting and reporting intraclass correlation coefficients for reliability research. _Journal of Chiropractic Medicine, 15_(2), 155–163. https://doi.org/10.1016/j.jcm.2016.02.012
+- McGraw, K. O., & Wong, S. P. (1996). Forming inferences about some intraclass correlation coefficients. _Psychological Methods, 1_(1), 30–46. https://doi.org/10.1037/1082-989X.1.1.30
+
+## Riferimenti (2/2)
+
+\scriptsize
+
+- Nunnally, J. C., & Bernstein, I. H. (1994). _Psychometric theory_ (3rd ed.). New York: McGraw-Hill.
+- Sattler, J. M. (2001). _Assessment of children: Cognitive applications_ (4th ed.). San Diego, CA: Jerome M. Sattler.
+- Shrout, P. E., & Fleiss, J. L. (1979). Intraclass correlations: Uses in assessing rater reliability. _Psychological Bulletin, 86_(2), 420–428. https://doi.org/10.1037/0033-2909.86.2.420
+- Slick, D. J. (2006). Psychometrics in neuropsychological assessment. In E. Strauss, E. M. S. Sherman, & O. Spreen, _A compendium of neuropsychological tests: Administration, norms, and commentary_ (3rd ed.). New York: Oxford University Press.
+- Urbina, S. (2004). _Essentials of psychological testing_. Hoboken, NJ: John Wiley & Sons.
