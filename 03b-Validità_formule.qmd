@@ -31,7 +31,7 @@ incremental: false
 Il libro adotta la cornice degli _Standards for Educational and Psychological Testing_ (AERA, APA, & NCME, 2014): la validità è un **concetto unitario**, valutato attraverso 5 fonti di evidenza. Qui vediamo la versione quantitativa delle etichette classiche più diffuse:
 
 -  Validità di contenuto
-- Validità convergente/divergente (validità di costrutto)
+- Validità di costrutto (struttura fattoriale; validità convergente/divergente)
 - Validità di criterio
 - Validità ecologica
 - (+ validità di facciata: concetto storico, vedi slide a parte)
@@ -147,8 +147,7 @@ Per comodità, e come nei manuali di test neuropsicologici, qui restano entrambe
 
 ## Validità di costrutto
 
-**Validità di costrutto**: esprime quanto il test misura effettivamente il costrutto che
-intende misurare, valutando la coerenza interna degli item oppure la correlazione con altri test.
+**Validità di costrutto**: il grado in cui i punteggi di un test si comportano in accordo con la teoria del costrutto che intende misurare. Si valuta tramite la struttura fattoriale degli item oppure le correlazioni con altri test (validità convergente/divergente).
 
 La validità di costrutto è valutata in due maniere:
 
@@ -162,13 +161,13 @@ La validità di costrutto è valutata in due maniere:
 ## Validità di costrutto
 
 \begin{center}
-  \textbf{Consistenza interna}
+  \textbf{Nota: e la consistenza interna?}
 \end{center}
 \vspace{2em}
 
-Uno dei classici modi per vedere se tutti gli item di un test si comportano in maniera coerente è valutando la consistenza interna, tramite l’utilizzo di metriche come l’alpha di Cronbach. 
+La consistenza interna (es. alpha di Cronbach) indica quanto gli item di un test siano coerenti tra loro. È però una stima di **affidabilità** (vedi slides su formule affidabilità), non un'evidenza di validità convergente/divergente.
 
-Questa però è spesso associata più all’affidabilità (vedi quindi slides su formule affidabilità).
+È a cavallo con la validità solo per il legame con la **struttura fattoriale**, che si indaga con l'analisi fattoriale (slide seguenti).
 
 ## Validità di costrutto
 
@@ -407,7 +406,7 @@ Il test potrebbe essere stato costruito in maniera sbagliata e gli item essere c
   \textbf{Correlazione}
 \end{center}
 
-Lo strumento più comune per verificare la validità di costrutto di un test è indagare la correlazione del punteggio totale al test con correlazione dei punteggi ad altri test.
+Lo strumento più comune per verificare la validità di costrutto di un test nella sua componente **convergente/divergente** è indagare la correlazione del punteggio totale al test con i punteggi ad altri test.
 
 Non esiste una soglia universale (il libro è chiaro su questo): quello che conta è che la correlazione con test dello stesso costrutto sia più alta di quella con test di costrutti diversi. Come regola pratica è ragionevole pensare che debba essere almeno moderata (> 0.3), ma verosimilmente anche di più.
 
@@ -453,7 +452,7 @@ Inoltre è sempre possibile “giustificare” a posteriori un’eventuale diffe
 \end{center}
 \vspace{2em}
 
-Anche l’assenza di correlazione o correllazione molto bassa può essere usata a sostegno di una buona validità di costrutto.
+Anche l’assenza di correlazione o una correlazione molto bassa può essere usata a sostegno di una buona validità di costrutto (validità **divergente**).
 
 In generale la validità di costrutto indica quanto bene stiamo misurando lo specifico costrutto. 
 

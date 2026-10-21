@@ -160,7 +160,7 @@ Secondo gli \emph{Standards} (AERA, APA, \& NCME, 2014) la validità è un conce
 Il libro adotta la cornice più recente e autorevole, quella degli _Standards for Educational and Psychological Testing_ (AERA, APA, & NCME, 2014): la validità è un **concetto unitario**, valutato attraverso 5 fonti di evidenza. Manteniamo però le etichette classiche, più diffuse nei manuali e articoli di test neuropsicologici:
 
 - Validità di contenuto
-- Validità convergente/divergente (validità di costrutto)
+- Validità di costrutto (struttura fattoriale; validità convergente/divergente)
 - Validità di criterio
 - Validità ecologica
 - (+ validità di facciata: concetto storico, vedi slide a parte)
@@ -218,20 +218,22 @@ _Esempio_: in un test di memoria di parole il paziente usa una _mnemotecnica_ no
 \vfill
 Si investiga tramite interviste, tempi di risposta, movimenti oculari. Storicamente collegata al _Boston Process Approach_ (Kaplan, 1988).
 
-## Validità di costrutto (convergente/divergente) 1/5
-**Validità convergente-divergente (o validità di costrutto)**: indaga quanto il test misura effettivamente il costrutto che intende misurare valutando coerenza interna degli item, oppure correlazione con altri test.
-Si parla anche di validità “divergente” perché valuta anche la qualità di non correlare con test con cui non dovrebbe correlare (ad esempio un test specifico per memoria visuospaziale, dovrebbe non correlare troppo con memoria verbale).
+## Validità di costrutto 1/5
+**Validità di costrutto**: il grado in cui i punteggi di un test si comportano in accordo con la teoria del costrutto che il test intende misurare. Tradizionalmente comprende:
 
-## Validità di costrutto (convergente/divergente) 2/5
+- **struttura fattoriale**: gli item si raggruppano in modo coerente con il costrutto (evidenza basata sulla _struttura interna_);
+- **validità convergente/divergente**: il punteggio correla con misure dello stesso costrutto (convergente) e poco con misure di costrutti distinti (divergente), es. un test specifico per memoria visuospaziale non dovrebbe correlare troppo con memoria verbale (evidenza basata sulle _relazioni con altre variabili_).
+
+## Validità di costrutto 2/5
 A livello di analisi di dati.
-Per la coerenza degli items di un test tra loro si usa l’analisi fattoriale o indici di consistenza interna (per questi vedi sezione affidabilità).
+Per la coerenza degli items di un test tra loro (struttura fattoriale) si usa l’analisi fattoriale. La consistenza interna (es. alpha di Cronbach) è invece una stima di _affidabilità_, a cavallo con la validità per il legame con la struttura fattoriale (vedi sezione affidabilità): non è un'evidenza di validità convergente/divergente.
 
 \vfill
 
-Per la relazione dei punteggi totali con quelli di altri test si usano spesso correlazioni.
+Per la relazione dei punteggi totali con quelli di altri test (validità convergente/divergente) si usano spesso correlazioni.
 Non esistono delle regole su che valori (nell’analisi fattoriale, o nelle correlazioni) siano accettabili. Dipende dal costrutto misurato e dalle relazioni attese.
 
-## Validità di costrutto (convergente/divergente) 3/5
+## Validità di costrutto 3/5
 
 Un test con buona validità di costrutto correla con test che misurano lo stesso costrutto o correla con test che misurano altri costrutti in maniera coerente con le aspettative.
 
@@ -240,16 +242,16 @@ _Ad esempio_, un test di memoria di lavoro con buona validità di costrutto, cor
 
 Un test di comprensione di linguaggio figurato (costrutto più ampio), dovrebbe correlare con altri test che misurano lo stesso costrutto, ma in maniera moderata, potrebbe correlare anche con attenzione o altre funzioni cognitive legate.
 
-## Validità di costrutto (convergente/divergente) 4/5
+## Validità di costrutto 4/5
 
 La validità di costrutto è da un lato forse la validità più importante, ma dall’altro quella più difficile da valutare se adeguata quando si indaga in relazione ad altri test che misurano lo stesso costrutto. Questo perché non esistono indicazioni di “correlazione minima” che dovrebbe avere un test con un altro per avere supporto alla sua validità di costrutto.
 
 _Ad esempio_: se sviluppo un nuovo test di memoria, non è detto che ci sia un valore minimo di correlazione con un altro test di memoria che sia considerato come sufficiente.
 
 
-Per l’analisi fattoriale o il Cronbach’s alpha esistono invece principi più chiari: l’analisi deve mostrare che gli item si comportano in maniera statisticamente adeguata relativamente al costrutto (questo sarà più chiaro nella sezione di approfondimento psicometrico di queste analisi).
+Per l’analisi fattoriale (struttura fattoriale) esistono invece principi più chiari: l’analisi deve mostrare che gli item si comportano in maniera statisticamente adeguata relativamente al costrutto (questo sarà più chiaro nella sezione di approfondimento psicometrico di queste analisi).
 
-## Validità di costrutto (convergente/divergente) 5/5
+## Validità di costrutto 5/5
 
 Quando si utilizzano metodi su validità di costrutto è spesso perché manca un "gold-standard" e cioè una misura che possiamo considerare la migliore misura (una sorta di misura ideale) a cui riferirci. 
 Se l'avessimo la validità più appropriata da utilizzare è quella di criterio e il gold-standard è il criterio (vedi prossime slides). 
@@ -264,7 +266,7 @@ Secondo gli _Standards_ (AERA, APA, & NCME, 2014), "costrutto" è una nozione am
 Come nel libro, in questo corso si preferisce mantenere la distinzione classica: **costrutto** = concetto psicologico inosservabile; **criterio** = variabile osservabile, stabilita indipendentemente dal test (Cronbach & Meehl, 1955).
 
 \vfill
-Anche struttura fattoriale e correlazioni convergenti/divergenti, presentate insieme finora come "validità di costrutto", sono in realtà due fonti di evidenza distinte secondo gli _Standards_.
+Anche struttura fattoriale e validità convergente/divergente, raccolte sotto l'etichetta classica di "validità di costrutto", sono in realtà due fonti di evidenza distinte secondo gli _Standards_ (struttura interna e relazioni con altre variabili).
 
 ## Validità di criterio 1/3
 
@@ -324,7 +326,7 @@ Un test con dati su validità ecologica ci aiuterebbe a fare queste interpretazi
 - **Validità di facciata**: il test _sembra_ misurare il costrutto (giudizio qualitativo; concetto storico).
 - **Validità di contenuto**: gli item sono sufficienti e adeguati a coprire il costrutto.
 - **Processi di risposta**: il risultato è ottenuto con i processi che il test intende misurare.
-- **Validità di costrutto (convergente/divergente)**: il test correla con misure dello stesso costrutto e non con quelle di costrutti diversi.
+- **Validità di costrutto**: gli item si raggruppano in modo coerente con il costrutto (struttura fattoriale) e il test correla con misure dello stesso costrutto e non con quelle di costrutti diversi (convergente/divergente).
 - **Validità di criterio**: il test predice un criterio esterno osservabile (concorrente o predittiva).
 - **Validità ecologica**: la prestazione al test riflette il funzionamento nella vita quotidiana.
 

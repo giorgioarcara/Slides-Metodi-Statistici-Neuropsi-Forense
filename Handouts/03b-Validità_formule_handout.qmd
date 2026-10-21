@@ -32,8 +32,9 @@ Materiale distribuito con licenza CC BY-NC 3.0, come le slide del corso.
 Il libro di riferimento del corso, *Oltre i punteggi* [@arcara2025oip], adotta la cornice degli *Standards for Educational and
 Psychological Testing* [@aera2014standards], secondo cui la validità è un **concetto unitario**,
 valutato attraverso cinque fonti di evidenza. In questo handout vediamo la versione quantitativa
-delle etichette classiche più diffuse: la validità di contenuto, la validità convergente/divergente
-(cioè la validità di costrutto), la validità di criterio e la validità ecologica. A queste si
+delle etichette classiche più diffuse: la validità di contenuto, la validità di costrutto (che
+comprende la struttura fattoriale e la validità convergente/divergente), la validità di criterio e la
+validità ecologica. A queste si
 aggiunge la validità di facciata, che però è un concetto storico e viene trattata a parte.
 
 Conviene leggere queste etichette come una sequenza di domande diverse rivolte allo stesso test. La
@@ -134,8 +135,9 @@ queste domande bisogna guardare ai dati: è il terreno della validità di costru
 ::: {.callout-tip}
 ## Definizione: validità di costrutto
 
-La **validità di costrutto** esprime quanto il test misura effettivamente il costrutto che intende
-misurare, valutando la coerenza interna degli item oppure la correlazione con altri test.
+La **validità di costrutto** è il grado in cui i punteggi di un test si comportano in accordo con la
+teoria del costrutto che il test intende misurare [@arcara2025oip]. Si valuta tramite la struttura
+fattoriale degli item oppure le correlazioni con altri test (validità convergente/divergente).
 :::
 
 ## Due livelli, due fonti di evidenza
@@ -148,19 +150,20 @@ in maniera appropriata il costrutto, cioè se lo rappresenta correttamente.
 facendone la media).
 
 Questi due livelli corrispondono, secondo gli *Standards*, a **due fonti di
-evidenza distinte**. Il livello degli item riguarda la **struttura interna** del test, e si indaga
-con la consistenza interna, l'analisi fattoriale e la PCA. Il livello del punteggio totale riguarda le
-**relazioni con altre variabili**, e si indaga soprattutto con la correlazione. Per comodità, e come
+evidenza distinte**. Il livello degli item riguarda la **struttura interna** del test (la
+*struttura fattoriale*), e si indaga con l'analisi fattoriale e la PCA. Il livello del punteggio
+totale riguarda le **relazioni con altre variabili** (la validità *convergente/divergente*), e si
+indaga soprattutto con la correlazione. Per comodità, e come
 avviene nei manuali dei test neuropsicologici, qui entrambe restano sotto l'etichetta classica di
 "validità di costrutto". Le sottosezioni che seguono rispettano questo ordine: prima la struttura interna,
 poi le relazioni con altri test.
 
-## Consistenza interna
+## Una nota sulla consistenza interna
 
-Uno dei modi classici per vedere se tutti gli item di un test si comportano in maniera coerente è
-valutarne la consistenza interna, tramite metriche come l'alpha di Cronbach. Questa, però, è spesso
-associata più all'affidabilità, e per questo è trattata nella lezione sulle formule
-dell'affidabilità.
+La consistenza interna (per esempio l'alpha di Cronbach) indica quanto gli item di un test siano
+coerenti tra loro. È però una stima di **affidabilità**, trattata nella lezione sulle formule
+dell'affidabilità, e non un'evidenza di validità convergente/divergente: è a cavallo con la validità
+solo per il suo legame con la struttura fattoriale.
 
 La consistenza interna ci dice se gli item sono coerenti *nel complesso*; per capire *come* gli item
 si raggruppano, e attorno a quali variabili latenti, si usa l'analisi fattoriale.
@@ -304,8 +307,17 @@ che si indaga con la correlazione.
 
 ## Correlazione
 
-Lo strumento più comune per verificare la validità di costrutto di un test è indagare la
-correlazione tra il suo punteggio totale e i punteggi ottenuti ad altri test.
+::: {.callout-tip}
+## Definizione: validità convergente/divergente
+
+La validità **convergente** è la qualità del punteggio al test di correlare con altre misure dello
+stesso costrutto; la validità **divergente** è la qualità di correlare poco con misure di costrutti
+distinti [@arcara2025oip].
+:::
+
+Lo strumento più comune per verificare la validità di costrutto di un test nella sua componente
+convergente/divergente è indagare la correlazione tra il suo punteggio totale e i punteggi ottenuti
+ad altri test.
 
 Non esiste una soglia universale [il libro è chiaro su questo, vedi @arcara2025oip]: ciò che conta è che la correlazione
 con test dello stesso costrutto sia più alta di quella con test di costrutti diversi. Come regola
@@ -325,7 +337,7 @@ basso (ad esempio: "la correlazione è bassa presumibilmente perché questo test
 dell'altro le funzioni esecutive").
 
 Anche l'assenza di correlazione, o una correlazione molto bassa, può essere usata a sostegno di una
-buona validità di costrutto. In generale la validità di costrutto indica quanto bene stiamo misurando
+buona validità di costrutto (è la validità *divergente*). In generale la validità di costrutto indica quanto bene stiamo misurando
 lo specifico costrutto, e dimostrare che stiamo isolando bene la specifica funzione cognitiva va a
 sostegno della validità di costrutto.
 
