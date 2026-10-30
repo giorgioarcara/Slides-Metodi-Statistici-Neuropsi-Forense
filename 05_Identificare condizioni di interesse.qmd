@@ -23,9 +23,9 @@ incremental: false
 
 ## Breve riepilogo
 
-Nelle slides precedenti abbiamo visto la metodologia che si usa per identificare un deficit (o un danno) cognitivo.
+Nelle slides precedenti abbiamo visto la metodologia che si usa per identificare un deficit (o un peggioramento) cognitivo.
 
-Data la difficoltà metodologica/epistemologica per definire il deficit e danno, si usa un ragionamento inverso, partendo da una definizione di _assenza di deficit_, e usando, per definire i valori soglia (**cut-off di normalità**) solo dati di persone che non hanno deficit.
+Data la difficoltà metodologica/epistemologica per definire deficit e peggioramento, si usa un ragionamento inverso, partendo da una definizione di _assenza di deficit_, e usando, per definire i valori soglia (**cut-off di normalità**) solo dati di persone che non hanno deficit.
 
 ## Recap su cut-off clinico
 ```{=latex}
@@ -37,7 +37,7 @@ Data la difficoltà metodologica/epistemologica per definire il deficit e danno,
 \end{figure}
 
 \tiny
-\emph{Non sapendo dove si situano i punteggi di una popolazione patologica (deficit o danno), la nostra soglia corrisponde, arbitrariamente, al punteggio che delimita 5\% più basso (area grigia). Assumendo che deficit e patologia siano associato a prestazioni peggiori}.
+\emph{Non sapendo dove si situano i punteggi di una popolazione patologica (deficit o peggioramento), la nostra soglia corrisponde, arbitrariamente, al punteggio che delimita 5\% più basso (area grigia). Assumendo che deficit e patologia siano associato a prestazioni peggiori}.
 ```
 
 ## Recap su percentuali e probabilità 1/2
@@ -186,7 +186,7 @@ Per un esplorazione dinamica di come cambiare la soglia cambi la classificazione
 
 ## Specificità e cut-off di normalità
 
-È interessante notare come l’utilizzo di un cut-off di normalità (vedi slides valutare i deficit cognitivi), può essere immaginata come una condizione in cui **non conosciamo la distribuzione dei punteggi di chi ha un deficit/danno**, ma sappiamo che verosimilmente saranno più a sinistra (o in generale, peggiori) di quelli che non hanno un deficit/danno
+È interessante notare come l’utilizzo di un cut-off di normalità (vedi slides Confronto con dati normativi), può essere immaginata come una condizione in cui **non conosciamo la distribuzione dei punteggi di chi ha un deficit/peggioramento**, ma sappiamo che verosimilmente saranno più a sinistra (o in generale, peggiori) di quelli che non hanno un deficit/peggioramento
 
 Non sapendo dove mettere la soglia, la mettiamo nel punto che delimita 5% di campione/popolazione per i sani.
 
@@ -270,7 +270,7 @@ Se invece le distribuzioni dei due gruppi sono troppo sovrapposte è possibile c
 È da notare anche che a differenza dei test che si basano su cut-off di normalità, per i test che mirano ad avere un cut-off di discriminazione **potrebbe non esistere una soglia adeguata alla discriminazione**.
 
 Questo problema non c’è per i test con cut-off di normalità perché lì potremo sempre delimitare il 5% delle prestazione peggiori
-(la verità è che non sappiamo dove si trova la distribuzione con deficit o danno, anzi abbiamo definito come soglia del danno, proprio quella del 5% delle prestazioni peggiori).
+(la verità è che non sappiamo dove si trova la distribuzione con deficit o peggioramento, anzi abbiamo definito come soglia del deficit, proprio quella del 5% delle prestazioni peggiori).
 
 
 ## \small Sensibilità e Specificità sono proprietà del test, non della valutazione 1/3
@@ -655,7 +655,7 @@ Questa differenza, spiegata nelle ultime due slide è catturata dai concetti di 
 ![](Figures/triangle.png){fig-align="center" width="15%"}
 \small
 
-In quanto riportato sull’identificazione di condizioni di interesse valgono molte delle considerazioni già fatte nel contesto di deficit/danno.
+In quanto riportato sull’identificazione di condizioni di interesse valgono molte delle considerazioni già fatte nel contesto di deficit/peggioramento.
 
 Anche per Sensibilità, Specificità PPV, etc. vale il fatto che sono tanto più precise quanto più alta è la numerosità campionaria (perché più rappresentativa della popolazione).
 

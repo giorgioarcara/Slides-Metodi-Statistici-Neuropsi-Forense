@@ -16,10 +16,10 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{4 · Valutare i deficit e danni cognitivi}
+\nftitleslide{4 · Confronto con dati normativi}
 ```
 
-# 5. Valutare i deficit e danni cognitivi
+# 5. Confronto con dati normativi
 
 ## Misurazioni 1/2
 \center
@@ -48,16 +48,16 @@ _La neuropsicologia forense entra in gioco per due motivi. I consulenti per l'as
 *Quale sarebbe il primo scopo di una valutazione neuropsicologica forense di GH?*
 \pause
 \vfill
-La maggior parte delle volte lo scopo di una valutazione neuropsicologica ha come obiettivo valutare la presenza di un deficit/danno cognitivo.
+La maggior parte delle volte lo scopo di una valutazione neuropsicologica ha come obiettivo valutare la presenza di un deficit o di un peggioramento cognitivo.
 
-## Valutare i deficit cognitivi
+## Deficit e peggioramento
 
-Nelle prossime slide userò spesso i termini deficit e danni. **Non sono sinonimi**:
+Nelle prossime slide userò spesso i termini deficit e peggioramento. **Non sono sinonimi**:
 
 **Deficit (cognitivo)**: una mancanza/difetto funzionale sul piano cognitivo quando paragonato con un gruppo di riferimento (spesso i pari) o una traiettoria di sviluppo attesa. Es. una persona che non è in grado di leggere (con vista integra) ha un deficit cognitivo.
 
 \pause
-**Danno (cognitivo)**: un peggioramento di un'abilità cognitiva rispetto ad una condizione precedentemente raggiunta, in seguito ad un evento. Si distinguono due sottotipi: **compromissione** (non progressiva, dovuta ad un evento puntuale come un ictus o un trauma cranico; può essere reversibile) e **declino** (progressiva, dovuta tipicamente ad una malattia neurodegenerativa; di solito non reversibile).
+**Peggioramento (cognitivo)**: una diminuzione di un'abilità cognitiva rispetto ad una condizione precedentemente raggiunta, in seguito ad un evento. Si distinguono due sottotipi: **compromissione** (non progressiva, dovuta ad un evento puntuale come un ictus o un trauma cranico; può essere reversibile) e **declino** (progressiva, dovuta tipicamente ad una malattia neurodegenerativa; di solito non reversibile).
 \vspace{2em}
 
 \footnotesize
@@ -78,18 +78,18 @@ In ambito forense (Italiano) il danno psichico è tradizionalmente considerato c
 
 Nel danno in ambito forense, è fondamentale identificare non solo che sia avvenuto un peggioramento, **ma che il danno sia anche _causato_ dal fatto esaminato.**
 
-## Valutare i deficit cognitivi
+## Deficit o peggioramento: dipende dalla domanda
 
-In ambito forense potrebbe essere necessario valutare deficit o danno (o entrambi).
+In ambito forense potrebbe essere necessario valutare un deficit o un peggioramento (o entrambi).
 
 Esempio: se lo scopo è valutare capacità di intendere o volere, potrebbe essere importante valutare la presenza di deficit (non importa tanto quale è l’eziologia, ma se la persona ha un livello che potrebbe spiegare l’incapacità o capacità di intendere o volere).
 
-Se lo scopo è valutare una perizia a fini assicurativi, sarebbe importante valutare la presenza di un danno in seguito all’evento legato all’assicurazione.
+Se lo scopo è valutare una perizia a fini assicurativi, sarebbe importante valutare la presenza di un peggioramento in seguito all’evento legato all’assicurazione (presupposto clinico del danno in senso giuridico).
 
 (la stima di un deficit ha utilità solo se ci dice che c’è stato un peggioramento
 rispetto al livello precedente)
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Valutare i deficit}
@@ -97,7 +97,7 @@ rispetto al livello precedente)
 
 La storia di GH è piuttosto complessa: alcuni elementi sembrano suggerire che i disturbi siano insorti dopo il primo trauma cranico, ma il figlio sostiene che il padre sia peggiorato dopo il recente incidente.
 
-Nel caso l'interesse sia sul deficit, che però ci interessa **non** è quali dei due eventi abbia potuto causare un eventuale deficit o danno cognitivo, ma **se ci sono elementi che possono spiegare il suo comportamento**.
+Nel caso l'interesse sia sul deficit, che però ci interessa **non** è quali dei due eventi abbia potuto causare un eventuale deficit o peggioramento cognitivo, ma **se ci sono elementi che possono spiegare il suo comportamento**.
 
 In altre parola, in questo caso l'interesse è capire se la persona ha un disturbo cognitivo (indipendentemente dalla causa).
 
@@ -153,7 +153,7 @@ I test statistici utilizzati in contesto clinico e forense sono spesso non conve
 ## Dati normativi e cut-off
 
 
-I cut-off sono un punteggio-soglia al di sotto del quale la prestazione è considerata deficitaria e (a seconda del contesto) il riflesso di un danno cognitivo.
+I cut-off sono un punteggio-soglia al di sotto del quale la prestazione è considerata deficitaria e (a seconda del contesto) il riflesso di un peggioramento cognitivo.
 
 I cut-off vengono calcolati a partire dai dati normativi e spesso corrisponde al **5% dei punteggi peggiori**
 
@@ -166,7 +166,7 @@ Spesso i cut-off sono riportati in tabelle, indipendentemente dal metodo usato p
   Da APACS (Arcara \& Bambini, 2016)
 \end{flushright}
 
-## Valutare i deficit/danni cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{I  cut-off e i dati normativi}
@@ -177,7 +177,7 @@ I dati normativi sono dati raccolti su soggetti che assumiamo siano normali. Ser
 
 Chiamiamo **cut-off di normalità** la soglia che divide i punteggi considerati "nella norma" da quelli considerati "deficitari" (Mondini, Mapelli, \& Arcara, 2022).
 
-## Valutare i deficit/danni cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{I  cut-off e i dati normativi}
@@ -188,7 +188,7 @@ Sebbene cut-off e dati normativi siano utilizzati quotidianamente in neuropsicol
 
 Questa superficialità si ripercuote nelle conclusioni tratte dai risultati ai test.
 
-## Valutare i deficit/danni cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
@@ -203,7 +203,7 @@ Ci viene chiesto (in contesto clinico o forense) di effettuare una valutazione n
 
 Valutare se c’è deficit cognitivo che può avere influito sul commettere il reato o, in generale classificare la sua performance e valutare le sue abilità.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Il razionale alla base dell’utilizzo dei dati normativi in caso di interesse al deficit}
@@ -215,7 +215,7 @@ Nel caso di utilizzo di test neuropsicologici per l’età evolutiva o nella ric
 
 Se è troppo bassa inferiamo che ci sia stato un deficit nello sviluppo.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
@@ -228,27 +228,27 @@ Ci viene chiesto (in contesto clinico o forense) di effettuare una valutazione n
 *Quale è in questo caso lo scopo della valutazione neuropsicologica?*
 \pause
 
-Valutare se è avvenuto un **cambiamento** (un danno cognitivo), non valutare le abilità del soggetto in sè.
+Valutare se è avvenuto un **cambiamento** (un peggioramento cognitivo), non valutare le abilità del soggetto in sè.
 
-## Utilizzo dei dati normativi per inferire danni cognitivi
+## Utilizzo dei dati normativi per inferire un peggioramento
 
 ![](Figures/triangle.png){width="15%" fig-align="center"}
 
-*Nel caso di un ipotetico danno, se avessimo i punteggi ai test neuropsicologici prima dell’evento lesivo, potremmo confrontarli con quelli del nostro paziente e vedere se c’è stato un peggioramento (quindi un danno cognitivo in seguito al trauma).*
+*Nel caso di un ipotetico peggioramento, se avessimo i punteggi ai test neuropsicologici prima dell’evento lesivo, potremmo confrontarli con quelli del nostro paziente e vedere se c’è stato un peggioramento in seguito al trauma.*
 
 Dal momento che questa informazione non è praticamente mai disponibile, stimiamo il punteggio atteso nel/lla paziente da persone che siano simili a lui/lei (quindi con i dati normativi).
 
-## Valutare i deficit/danni cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
 \end{center}
 
-In particolare: se il punteggio del paziente è molto più basso di quello che ottengono generalmente persone che sono simili a lui, inferiamo che c’è un deficit oppure che c’è stato un cambiamento nel tempo cioè che il paziente ha subito un danno cognitivo.
+In particolare: se il punteggio del paziente è molto più basso di quello che ottengono generalmente persone che sono simili a lui, inferiamo che c’è un deficit oppure che c’è stato un cambiamento nel tempo cioè che il paziente ha subito un peggioramento cognitivo.
 
 Per convenzione (e semplicità) definiamo le persone simili a lui sulla base di età e scolarità (ma è possibile includere anche altre variabili). In genere questi dati sono già forniti da chi crea il test sotto forma di **dati normativi**.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Diversi concetti di normalità}
@@ -302,7 +302,7 @@ A volte anche si riporta testing cognitivo (es. MoCA > 20). Quest’ultimo però
 \small
 a) Nel caso di indagine di un disturbo dello sviluppo una performance al di sotto del cut-off è interessante in sé, indicandoci un \textbf{deficit}.
 
-b) nel caso di sospetto di malattia o disturbo acuto nell’adulto viene usata in genere per fare un’inferenza su un peggioramento, quindi un \textbf{danno}, nello stato cognitivo del paziente rispetto ad un evento che può avere una precisa collocazione temporale (es. ictus) oppure no (es. un deterioramento con un decorso legato alla malattia di Alzheimer).
+b) nel caso di sospetto di malattia o disturbo acuto nell’adulto viene usata in genere per fare un’inferenza su un \textbf{peggioramento} nello stato cognitivo del paziente rispetto ad un evento che può avere una precisa collocazione temporale (es. ictus) oppure no (es. un deterioramento con un decorso legato alla malattia di Alzheimer).
 \column{0.2\textwidth}
 
 \begin{figure}
@@ -323,11 +323,11 @@ b) nel caso di sospetto di malattia o disturbo acuto nell’adulto viene usata i
 \column{0.8\textwidth}
 \small
 
-\textbf{In Neuropsicologia forense, l’interesse nel deficit o nel danno, dipende dal contesto e dalla domanda:}
+\textbf{In Neuropsicologia forense, l’interesse nel deficit o nel peggioramento, dipende dal contesto e dalla domanda:}
 \vspace{1em}
 
 \small
-a) nel caso di una perizia per valutare un danno in seguito ad un evento (es. perizia per valutare disturbi cognitivi in seguito ad un trauma cranico), il confronto con dati normativi è utili per inferire un danno (inteso come peggioramento rispetto a condizione pre-esistente)
+a) nel caso di una perizia per valutare un danno in seguito ad un evento (es. perizia per valutare disturbi cognitivi in seguito ad un trauma cranico), il confronto con dati normativi è utile per inferire un peggioramento rispetto alla condizione pre-esistente (presupposto clinico del danno)
 
 b) in caso di valutazioni per valutare il livello del paziente indipendentemente dalla causa (es. valutare capacità di intendere e volere) allora è interessante usare i dati normativi per una classificazione della performance in sé.
 \column{0.2\textwidth}
@@ -374,13 +374,13 @@ La linea verticale indica il \textbf{cut-off di normalità}.
 \begin{columns}
 \column{0.8\textwidth}
 
-Il cut-off è un punteggio particolarmente basso che osserviamo in pochi soggetti normali e che pertanto inferiamo sia segno di un deficit/danno cognitivo.
+Il cut-off è un punteggio particolarmente basso che osserviamo in pochi soggetti normali e che pertanto inferiamo sia segno di un deficit (o di un peggioramento) cognitivo.
 \vspace{1em}
 
 In genere il cut-off è definito (arbitrariamente) come il valore che delimita il 5\% dei punteggi più bassi.
 \vspace{1em}
 
-NOTA: Il cut-off NON ci indica la probabilità che il soggetto sia normale o abbia un danno cognitivo (vedi slides Valutare i deficit cognitivi e vedi Bayes, è una differenza un po’ sottile)
+NOTA: Il cut-off NON ci indica la probabilità che il soggetto sia normale o abbia un deficit cognitivo (vedi Bayes, è una differenza un po’ sottile)
 
 \column{0.2\textwidth}
 
@@ -430,27 +430,27 @@ Gli italiani che hanno esattamente 68 anni e che come GH hanno fatto solo le scu
 \end{columns}
 ```
 
-## Deficit o danno?
+## Deficit o peggioramento?
 
 \small
-In questo caso l’adeguatezza del confronto può dipendere dal tipo di domanda: **classificare la prestazione (cioè stimare un deficit) oppure stimare un danno**. 
+In questo caso l’adeguatezza del confronto può dipendere dal tipo di domanda: **classificare la prestazione (cioè stimare un deficit) oppure stimare un peggioramento**. 
 
 Se voglio **classificare GH rispetto ai suoi pari** (es. il suo deficit non dipende dall'incidente) potrei semplicemente usare le persone di 68 anni. Questo perché mi direbbe che, in generale, rispetto alle persone con 68 anni ha prestazioni peggiori.
 
-Se voglio **capire se GH ha sviluppato un danno** in seguito all'incidente, allora dovrei usare i dati normativi quanto più simili al suo stato nel momento in cui ha subito l’ipotetica lesione, per capire se è avvenuto un cambiamento
+Se voglio **capire se GH ha avuto un peggioramento** in seguito all'incidente, allora dovrei usare i dati normativi quanto più simili al suo stato nel momento in cui ha subito l’ipotetica lesione, per capire se è avvenuto un cambiamento
 
 *Spesso, nonostante le diverse possibilità teoriche nel confronto si sceglie il dato normativo più simile possibile all’individuo valutato.*
 
-## Deficit e danno sono indipendenti
+## Deficit e peggioramento sono indipendenti
 
-Deficit e danno (peggioramento) sono concetti distinti: si può avere un peggioramento **senza** che raggiunga la soglia del deficit (es. un trauma cranico lieve che fa scendere il punteggio, ma resta sopra soglia), oppure un deficit **senza** un vero peggioramento (es. un disturbo presente da sempre, come un disturbo dello sviluppo).
+Deficit e peggioramento sono concetti distinti: si può avere un peggioramento **senza** che raggiunga la soglia del deficit (es. un trauma cranico lieve che fa scendere il punteggio, ma resta sopra soglia), oppure un deficit **senza** un vero peggioramento (es. un disturbo presente da sempre, come un disturbo dello sviluppo).
 
 \pause
 \vspace{1em}
 
-**Attenzione a non confondere deficit con peggioramento**: un danno cerebrale o una malattia degenerativa potrebbero causare un peggioramento senza che questo raggiunga il livello da poter essere considerato un deficit.
+**Attenzione a non confondere deficit con peggioramento**: una lesione cerebrale o una malattia degenerativa potrebbero causare un peggioramento senza che questo raggiunga il livello da poter essere considerato un deficit.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Un altro aspetto fondamentale su cut-off e dati normativi}
@@ -461,9 +461,9 @@ Deficit e danno (peggioramento) sono concetti distinti: si può avere un peggior
 \begin{columns}
 \column{0.8\textwidth}
 
-A livello di operazioni da svolgere, la stima un deficit vs la stima di un danno sono simili a livello statistico: entrambe implicano il confrontare la prestazione con i dati normativi (vedi slides precedente per scelta appropriata del confronto).
+A livello di operazioni da svolgere, la stima di un deficit vs la stima di un peggioramento sono simili a livello statistico: entrambe implicano il confrontare la prestazione con i dati normativi (vedi slides precedente per scelta appropriata del confronto).
 
-Quello che cambia è l’\textbf{interpretazione} (vedi slides su Interpretazione) che in un caso può essere quella di un deficit, in un caso quella di un danno.
+Quello che cambia è l’\textbf{interpretazione} (vedi slides su Interpretazione) che in un caso può essere quella di un deficit, in un caso quella di un peggioramento.
 
 \column{0.2\textwidth}
 
@@ -496,11 +496,11 @@ Questo è molto importante a livello forense, perché la performance del test co
 \small
 Una volta che si possiede una distribuzione di dati di riferimento è possibile in generale classificare la presentazione rispetto all’intera distribuzione (questo può dipendere dal metodo con cui sono analizzati i dati).
 
-Ad esempio è possibile dire se la persona ha una performance più bassa del 20% o il 30% rispetto al campione/popolazione di riferimento (approfondimento nella sezione: Valutare il Deficit cognitivo Formule).
+Ad esempio è possibile dire se la persona ha una performance più bassa del 20% o il 30% rispetto al campione/popolazione di riferimento (approfondimento nelle slides: Confronto con dati normativi - Formule).
 
 L’assenza di soglie ci porta però (da un punto di vista concettuale) ad un rischio del [[paradosso del mucchio]{.underline}](https://it.wikipedia.org/wiki/Paradosso_del_sorite). 
 
-Non è possibile definire chiaramente quando si passa da normalità a quando si passa alla presenza di un “deficit/danno”. Il paradosso del mucchio ci insegna che **le categorie a partire da una variabile continua sono e saranno sempre arbitrarie**.
+Non è possibile definire chiaramente quando si passa da normalità a quando si passa alla presenza di un “deficit”. Il paradosso del mucchio ci insegna che **le categorie a partire da una variabile continua sono e saranno sempre arbitrarie**.
 
 ## Uno o più cut-off? 2/2
 
@@ -510,14 +510,14 @@ Dovremo decidere ad un certo punto se c'è un problema oppure no e questo tenden
 Si veda per esempio [\underline{questo articolo}](https://journals.sagepub.com/doi/full/10.1177/09593543231160112) per un approfondimento sul valore epistemico di scelte dicotomiche, che ben si applica a questo caso.
 
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
+## Perché questo modo “contorto” di definire deficit e peggioramento?
 
 
-Il modo in cui definiamo danno e deficit (a partire da soggetti normali) potrebbe sembrare contorto. Perché dobbiamo basarci su questo metodo?
+Il modo in cui definiamo deficit e peggioramento (a partire da soggetti normali) potrebbe sembrare contorto. Perché dobbiamo basarci su questo metodo?
 
-Se avessimo un criterio oggettivo (es. danno cerebrale) su cui basarci, sarebbe concettualmente più semplice. Potremmo usare quello e usare i test neuropsicologici come strumenti per identificare questo tipo di danno (entreremmo nel reame della validità di criterio, sensibilità, specificità, etc. vedi slides su Validità e slides su Sensibilità e Specificità).
+Se avessimo un criterio oggettivo (es. lesione cerebrale) su cui basarci, sarebbe concettualmente più semplice. Potremmo usare quello e usare i test neuropsicologici come strumenti per identificare questo tipo di lesione (entreremmo nel reame della validità di criterio, sensibilità, specificità, etc. vedi slides su Validità e slides su Sensibilità e Specificità).
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
+## Perché questo modo “contorto” di definire deficit e peggioramento?
 
 Il problema è metodologico/epistemologico. Come possiamo definire un deficit?
 
@@ -525,59 +525,59 @@ Come possiamo essere certi che ci sia un deficit cognitivo?
 
 Il problema è che non è possibile definire in maniera non circolare il deficit cognitivo e per tale ragione usiamo questo metodo *alla rovescia*. Definiamo cosa è l’**assenza di deficit cognitivo** (su base normativa), e inferiamo la presenza di deficit a partire da questo.
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
+## Perché questo modo “contorto” di definire deficit e peggioramento?
 
-Il problema è in questo caso di assenza di dati precedenti che mi possano aiutare a capire se c’è stato un peggioramento o un effettivo danno cognitivo.
+Il problema è in questo caso di assenza di dati precedenti che mi possano aiutare a capire se c’è stato un effettivo peggioramento cognitivo.
 
-Usare un dato osservabile (es. danno cerebrale) sarebbe rischioso e limitante. In molti casi può esserci danno cognitivo senza apparente danno cerebrale o viceversa (es. nel trauma cranico).
+Usare un dato osservabile (es. lesione cerebrale) sarebbe rischioso e limitante. In molti casi può esserci un peggioramento cognitivo senza apparente lesione cerebrale o viceversa (es. nel trauma cranico).
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
+## Perché questo modo “contorto” di definire deficit e peggioramento?
 
-In tal caso stimiamo la presenza di un danno se la persona ha un punteggio anomalo rispetto al campione normativo. In questo caso il passaggio è doppio: 
+In tal caso stimiamo la presenza di un peggioramento se la persona ha un punteggio anomalo rispetto al campione normativo. In questo caso il passaggio è doppio: 
 
 a) Sto assumendo che la persona è ben rappresentata dal campione normativo
 
-b) sto inferendo che se la sue performance è bassa, probabilmente c’è stato un danno/peggioramento.
+b) sto inferendo che se la sue performance è bassa, probabilmente c’è stato un peggioramento.
 
-## Perché questo modo “contorto” di definire il deficit cognitivo e il danno? 
+## Perché questo modo “contorto” di definire deficit e peggioramento?
 
-Il fatto di definire un **danno** (quindi un peggioramento) a partire dal confronto con i dati normativi è una strategia per compensare il fatto che non abbiamo dati precedenti al sospetto evento che potrebbe avere causato il peggioramento.
+Il fatto di inferire un **peggioramento** a partire dal confronto con i dati normativi è una strategia per compensare il fatto che non abbiamo dati precedenti al sospetto evento che potrebbe avere causato il peggioramento.
 
 Ma attenzione a ricordare che l’uso è solo una strategia con i suoi limiti, basata su una stima attesa della performance del paziente.
 
-## Una nota sul definire il danno: Esempio 1
+## Una nota sull'inferire un peggioramento: Esempio 1
 
-Supponiamo di avere un test in cui il cut-off è 10 (5%) con elevata affidabilità e nessun effetto pratica. Supponiamo di testare un paziente con trauma cranico per valutare il danno.
+Supponiamo di avere un test in cui il cut-off è 10 (5%) con elevata affidabilità e nessun effetto pratica. Supponiamo di testare un paziente con trauma cranico per valutare un eventuale peggioramento.
 
 Il paziente ha ottenuto 14 (sopra il cut-off).
 
 Potrebbe essere che prima dell’evento aveva un punteggio di 20 e il punteggio di 14 potrebbe riflettere un cambiamento non colto dal confronto con il cut-off di 10 (vedi anche slides valutare il cambiamento nel tempo).
 
-## Una nota sul definire il danno: Esempio 2
+## Una nota sull'inferire un peggioramento: Esempio 2
 
-Supponiamo di avere un test in cui il cut-off è 10 (5%) con elevata affidabilità e nessun effetto pratica. Supponiamo di testare un paziente con trauma cranico per valutare il danno.
+Supponiamo di avere un test in cui il cut-off è 10 (5%) con elevata affidabilità e nessun effetto pratica. Supponiamo di testare un paziente con trauma cranico per valutare un eventuale peggioramento.
 
 
 Il paziente ha ottenuto 8 (sotto il cut-off).
 
 Il paziente aveva 8 anche prima del trauma cranico, in realtà non è peggiorato (vedi anche slides valutare il cambiamento nel tempo).
 
-## Una nota sul definire il danno
+## Una nota sull'inferire un peggioramento
 
 \small
 Il cut-off non era adeguato perché il nostro paziente testato era un paziente con prestazione presumibilmente già estrema (molto alta o bassa) rispetto ai dati normativi.
 
-Per la **valutazione del danno** i dati normativi funzionano bene (per come sono disegnati) se la persona è ben rappresentata da essi e se non aveva (prima dell’ipotetico evento legato al danno), già una prestazione agli estremi (bassa o alta).
+Per la **valutazione di un peggioramento** i dati normativi funzionano bene (per come sono disegnati) se la persona è ben rappresentata da essi e se non aveva (prima dell’ipotetico evento lesivo), già una prestazione agli estremi (bassa o alta).
 
 *In assenza di ogni altra informazione*, questa è un’assunzione ragionevole.
 
-Assumiamo che la nostra persona abbia avuto (prima del danno) una prestazione analoga alla maggior parte delle persone simili a lui.
+Assumiamo che la nostra persona abbia avuto (prima dell'evento) una prestazione analoga alla maggior parte delle persone simili a lui.
 Altre informazioni (es. da anamnesi, da aspetti qualitativi, da storia personale), potrebbero suggerire che invece la persona non è ben rappresentata.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
-  \textbf{Una nota sul definire il danno}
+  \textbf{Una nota sull'inferire un peggioramento}
 \end{center}
 
 Il fatto di avere un punteggio sotto (o sopra) cut-off è solo un’informazione legata ad alcune *probabilità* (poche persone simili al paziente testato ottengono questa performance), ma le conclusioni che ne traiamo sono *interpretazioni*.
@@ -586,13 +586,13 @@ Altre informazioni a disposizione potrebbero farci propendere per una o l’altr
 
 Ovviamente questo ragionamento non delegittima il confronto con i cut-off (che rimane uno strumento solido), ma ne sottolinea alcuni potenziali limiti.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Uno o più cut-off?}
 \end{center}
 
-Per questo motivo e per motivi di praticità spesso il fatto di concludere che c’è un danno è legato al cut-off di normalità citato in precedenza.
+Per questo motivo e per motivi di praticità spesso il fatto di concludere che c’è un deficit o un peggioramento è legato al cut-off di normalità citato in precedenza.
 
 Per un neuropsicologo clinico forense, laddove sia possibile a partire dai metodi statistici a disposizione è comunque utile sapere la classificazione esatta (es. 20%, 14% della popolazione di riferimento e non semplicemente sopra/sotto cut-off) perché potrebbe essere comunque utile e informativa.
 
@@ -604,7 +604,7 @@ Es. una performance che delimita è al 5.1% del campione/popolazione di riferime
 - Metodi non parametrici
 - Altri metodi (regressioni)
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
@@ -626,7 +626,7 @@ SD & = \text{deviazione standard del gruppo di riferimento} \\
 \end{aligned}
 $$
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
@@ -640,7 +640,7 @@ $$
 *I metodi parametrici possono essere usati con sicurezza solo se la distribuzione è normale (gaussiana)*
 
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 ```{=latex}
 \begin{columns}
@@ -672,7 +672,7 @@ test con \textbf{effetto soffitto}
 \end{columns}
 ```
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 ```{=latex}
 \begin{columns}
@@ -689,7 +689,7 @@ Ad esempio -1.64 può non corrispondere al valore che delimita 5\% dei punteggi 
 \end{columns}
 ```
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{PARENTESI}
@@ -699,7 +699,7 @@ Ad esempio -1.64 può non corrispondere al valore che delimita 5\% dei punteggi 
 
 ![](Figures/distribuzioni_normalizzate.png){width="100%" fig-align="center"}
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Metodi non parametrici (base) per il calcolo dei cut-off}
@@ -710,7 +710,7 @@ I **percentili non parametrici** sono il metodo più diffuso di calcolo dei cut-
 
 Lo svantaggio dell’utilizzo di percentili è che non è possibile usare formule rapide per ricavare cut-off a diverse percentili (ad esempio il 20% dei punteggi peggiori) ma è necessario avere a disposizione tutti i dati.
 
-## Valutare i deficit cognitivi
+## Confronto con dati normativi
 
 \begin{center}
   \textbf{Altri metodi (avanzati) per il calcolo dei cut-off}
@@ -789,7 +789,7 @@ Attenzione ai test che usano metodi basati su regressioni. Talvolta possono port
 \small
 - I dati normativi servono per stimare la prestazione che ci aspetterebbe da un certo individuo tramite i dati di persone che sono simili all’individuo da valutare.
 
-- Il confronto con dati normativi è fatto per effettuare un’inferenza su un possibile deficit cognitivo (disturbo funzionale, che sia legato a danno o sviluppo o pre- esistente) o danno (peggioramento) dello stato cognitivo del paziente. Spesso i metodi usati sono uguali, quello che cambia è l’interpretazione
+- Il confronto con dati normativi è fatto per effettuare un’inferenza su un possibile deficit cognitivo (acquisito o evolutivo) o un peggioramento dello stato cognitivo del paziente. Spesso i metodi usati sono uguali, quello che cambia è l’interpretazione
 
 - Il cut-off (in senso generale) è definito come il valore che delimita il 5% dei punteggi più bassi.
 
@@ -809,7 +809,7 @@ Dati normativi raccolti molti anni fa possono non essere adeguati. Questo è leg
 
 ## Aspetti da considerare nell’utilizzo dei dati normativi (2)
 
-**2) Specie per stimare il danno è importante che gli individui dei campioni normativi siano simili all’individuo da valutare. (campione ampio, ma non simile non è utile).**
+**2) Specie per inferire un peggioramento è importante che gli individui dei campioni normativi siano simili all’individuo da valutare. (campione ampio, ma non simile non è utile).**
 \vspace{2em}
 
 Un campione molto numeroso ma poco rappresentativo non è utile.
@@ -865,7 +865,7 @@ In neuropsicologia clinica e forense spesso siamo chiamati valutare due aspetti:
 
 C’è un **deficit cognitivo** o dobbiamo stimare il livello di abilità cognitiva generale del paziente? *Questo è fatto confrontando con dati normativi e classificando (spesso con percentuali o sopra/sotto norma)*
 
-C’è stato un **danno cognitivo**?, cioè un peggioramento? Anche questo viene fatto con i dati normativi, ma con una serie di assunzioni aggiuntive nell’\underline{interpretazione}.
+C’è stato un **peggioramento cognitivo** (compromissione o declino)? Anche questo viene fatto con i dati normativi, ma con una serie di assunzioni aggiuntive nell’\underline{interpretazione}.
 
 Ci sono vari metodi matematici (con pro e contro e più o meno robusti), per definire i cut-off ed eventuali altre soglie.
 

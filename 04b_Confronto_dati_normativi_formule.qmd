@@ -16,12 +16,12 @@ incremental: false
 ## {.plain}
 
 ```{=latex}
-\nftitleslide{4 · Valutare i deficit e danni cognitivi - Formule}
+\nftitleslide{4 · Confronto con dati normativi - Formule}
 ```
 
-# 5. Valutare i deficit e danni cognitivi - Formule
+# 5. Confronto con dati normativi - Formule
 
-## Valutare i deficit e danni cognitivi
+## Confronto con dati normativi: contenuti
 
 1. Il concetto di soglie per percentuali o probabilità
 2. Punti z e probabilità
@@ -37,7 +37,7 @@ Il concetto di cut-off clinico (o in generale di valori soglia o valori che deli
 
 L’idea di fondo, nel loro utilizzo, è trovare un valore che  aiuti a classificare la prestazione del paziente o, più in generale, a determinare quanto è probabile/improbabile.
 
-L’improbabilità è strettamente legata al concetto di deficit o presumibile danno cognitivo, che di fatto viene operazionalizzato come una prestazione insolita, improbabile, assumendo che si sia normali.
+L’improbabilità è strettamente legata al concetto di deficit o di presumibile peggioramento cognitivo, che di fatto viene operazionalizzato come una prestazione insolita, improbabile, assumendo che si sia normali.
 
 ## Il cut-off clinico e i valori soglia
 
@@ -49,7 +49,7 @@ Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una termin
 
 ![](Figures/Healthy_vs_Pathological.png){width="50%" fig-align="center"}
 
-*Non sapendo dove sono popolazioni patologiche (deficit o danno), mettiamo una soglia arbitrariamente che delimita il 5% più basso (area grigia). Assumendo che deficit e patologia siano da qualche parte a sinistra.*
+*Non sapendo dove sono popolazioni patologiche (deficit o peggioramento), mettiamo una soglia arbitrariamente che delimita il 5% più basso (area grigia). Assumendo che deficit e patologia siano da qualche parte a sinistra.*
 
 ## I valori utili per la clinica
 
@@ -60,7 +60,7 @@ $$
 \text{definiamo}\ x\ \text{in modo tale che}\ P(o<x) = k
 $$
 
-es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $p(O < x ) = 0.05$ (c’è il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un danno).
+es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $p(O < x ) = 0.05$ (c’è il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un deficit o un peggioramento).
 
 La soglia del 5% è completamente arbitraria.
 
@@ -394,7 +394,7 @@ In genere i test riportano tabelle predefinite e, a livello di raccolta di dati 
 ## Appropriatezza del campione di riferimento
 
 \small
-È un aspetto metodologico importante e di impatto. Se nel mio campione di riferimento sto usando persone che non sono simili alla persona di cui sto osservando la performance, le mie inferenze (su deficit o su danno) sarebbero distorte.
+È un aspetto metodologico importante e di impatto. Se nel mio campione di riferimento sto usando persone che non sono simili alla persona di cui sto osservando la performance, le mie inferenze (su deficit o su peggioramento) sarebbero distorte.
 
 Es. supponiamo che il mio test fornisce un cut-off che si riferisce all’intervallo 70-80 anni di età.
 
@@ -706,7 +706,7 @@ Il metodo t di Crawford (e metodi di regressioni di Crawford) mostrano anche che
 \begin{columns}
 \column{0.8\textwidth}
 
-Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/danno, questo è difficile da calcolare, perché noi non sappiamo quale è la performance attesa per chi ha deficit/danno (vedere figura in slides iniziali). 
+Esiste anche un altro tipo di errore rilevante che è quello di II tipo, cioè non riuscire ad identificare correttamente un soggetto patologico. Per i test utilizzati per il deficit/peggioramento, questo è difficile da calcolare, perché noi non sappiamo quale è la performance attesa per chi ha deficit/peggioramento (vedere figura in slides iniziali). 
 
 Per calcolare quindi errore di primo tipo, si studiano in genere diversi possibili scenari \textbf{ipotetici} con diverse gravità di deficit. In genere però questo \underline{non è mai fatto} per test neuropsicologici. E ci si concentra solo sul cut-off e sull'errore di I tipo.
 
@@ -753,7 +753,7 @@ Affidabilità, Validità e cut-off/trasformazioni in percentili sono dunque comb
 
 ## Riassunto finale (1/2)
 
-Siamo partiti dal problema di definire deficit e danno.
+Siamo partiti dal problema di definire deficit e peggioramento.
 
 Il metodo più diffuso è basato sull’improbabilità di osservare quella prestazione se si è sani (ragionamento contorto, ma necessario, vedi slides). 
 
@@ -802,6 +802,6 @@ C’è qualche evidenza di validità di costrutto, da analisi fattoriale e una b
 
 Il cut-off per una persona con 68 anni di età e 5 di scolarità è 12. Considerando che il metodo usato da APACS per i cut-offs considera la distinizone tra campione e popolazione questo significa che un punteggio al di sotto del cut-off è atteso da meno del 5% della popolazione (di sani).
 
-Se GH ottenesse meno 12 potremmo concludere che è una prestazione insolita se fosse sano, ma non possiamo dire se è un deficit pre-esistente, o un danno legato al trauma cranico (I metodi per calcolare deficit o danno, sono analoghi).
+Se GH ottenesse meno 12 potremmo concludere che è una prestazione insolita se fosse sano, ma non possiamo dire se è un deficit pre-esistente, o un peggioramento legato al trauma cranico (I metodi per inferire deficit o peggioramento sono analoghi).
 
 Andando a vedere le tabelle di APACS, possiamo vedere che però nel gruppo di sani usati, sono 40 rientrano nel gruppo di età e scolarità di GH. Le stime sono quindi abbastanza solide.
