@@ -391,31 +391,90 @@ una valutazione neuropsicologica ha come obiettivo valutare la presenza
 di un deficit o di un peggioramento cognitivo.
 \end{frame}
 
-\begin{frame}{Deficit e peggioramento}
-\phantomsection\label{deficit-e-peggioramento}
+\begin{frame}{Deficit e peggioramento: una tassonomia}
+\phantomsection\label{deficit-e-peggioramento-una-tassonomia}
+\begin{center}
+\begin{tikzpicture}[
+  cat/.style={fill=unipdCrimson, text=white, rounded corners=4pt, font=\bfseries,
+              minimum width=3.6cm, minimum height=0.8cm},
+  sub/.style={draw=unipdCrimson, line width=0.8pt, fill=white, text=unipdCrimson,
+              rounded corners=4pt, font=\small\bfseries, minimum width=3.2cm, minimum height=0.7cm},
+  desc/.style={text width=3.6cm, align=center, font=\scriptsize, text=nfInk},
+  freccia/.style={-{Stealth}, unipdCrimson, line width=0.8pt}]
+\node[cat] (def) at (-4.2,1.6) {Deficit};
+\node[desc, below=3pt of def] (defd) {\textit{normativo}: confronto con un \textbf{gruppo di riferimento}};
+\node[desc, below=0.9cm of defd, text=nfGrey] {es. un bambino di 7 anni che non sa ancora leggere};
+\node[cat] (peg) at (3,1.6) {Peggioramento};
+\node[desc, below=3pt of peg, text width=4.4cm] (pegd) {\textit{ipsativo}: confronto con \textbf{sé stessi} (livello raggiunto in precedenza)};
+\node[sub] (comp) at (1.1,-1.1) {Compromissione};
+\node[desc, below=3pt of comp] {stabile; evento acuto (trauma cranico, ictus); può essere reversibile};
+\node[sub] (decl) at (4.9,-1.1) {Declino};
+\node[desc, below=3pt of decl] {progressivo; malattia neurodegenerativa; di solito irreversibile};
+\draw[freccia] (pegd.south) -- (comp.north);
+\draw[freccia] (pegd.south) -- (decl.north);
+\draw[nfGrey, dashed] (-1.4,2.1) -- (-1.4,-2.3);
+\node[font=\footnotesize, text=nfInk] at (0,-3.0)
+  {Origine (per entrambi): \textbf{acquisito} (età adulta) \quad · \quad \textbf{evolutivo} (età di sviluppo)};
+\end{tikzpicture}
+\end{center}
+
+\vspace{-0.5em}
+\tiny
+
+Alcune di queste distinzioni sono proposte ad hoc nel libro \emph{Oltre
+i punteggi} proprio per ridurre la confusione terminologica presente in
+letteratura.
+\end{frame}
+
+\begin{frame}{Deficit e peggioramento: definizioni}
+\phantomsection\label{deficit-e-peggioramento-definizioni}
 Nelle prossime slide userò spesso i termini deficit e peggioramento.
 \textbf{Non sono sinonimi}:
 
-\textbf{Deficit (cognitivo)}: una mancanza/difetto funzionale sul piano
-cognitivo quando paragonato con un gruppo di riferimento (spesso i pari)
-o una traiettoria di sviluppo attesa. Es. una persona che non è in grado
-di leggere (con vista integra) ha un deficit cognitivo.
+\textbf{Deficit (cognitivo)}: una mancanza o anomalia funzionale,
+definita rispetto ad un \textbf{gruppo di riferimento} (spesso i pari).
+Es. un bambino di 7 anni che non sa ancora leggere ha un deficit
+rispetto ai coetanei; lo stesso non sarebbe vero rispetto ad un gruppo
+di bambini tra 5 e 9 anni.
 
 \pause
 
-\textbf{Peggioramento (cognitivo)}: una diminuzione di un'abilità
-cognitiva rispetto ad una condizione precedentemente raggiunta, in
-seguito ad un evento. Si distinguono due sottotipi:
-\textbf{compromissione} (non progressiva, dovuta ad un evento puntuale
-come un ictus o un trauma cranico; può essere reversibile) e
-\textbf{declino} (progressiva, dovuta tipicamente ad una malattia
-neurodegenerativa; di solito non reversibile). \vspace{2em}
+\textbf{Peggioramento (cognitivo)}: una diminuzione in un aspetto del
+funzionamento cognitivo, rispetto ad un livello \textbf{precedentemente
+raggiunto} dalla persona stessa, non riconducibile a crescita o
+invecchiamento fisiologico. Due sottotipi:
 
-\footnotesize
+\begin{itemize}
+\tightlist
+\item
+  \textbf{compromissione}: peggioramento che ci si attende stabile, dopo
+  un evento acuto (es. trauma cranico, ictus); può essere reversibile;
+\item
+  \textbf{declino}: peggioramento che ci si attende progressivo,
+  tipicamente per una malattia neurodegenerativa; di solito non
+  reversibile.
+\end{itemize}
+\end{frame}
 
-NOTA: questa non è necessariamente una terminologia condivisa. L'aspetto
-importante è però distinguere concettualmente questi due tipi di
-possibilità
+\begin{frame}{Acquisito ed evolutivo}
+\phantomsection\label{acquisito-ed-evolutivo}
+Due aggettivi indicano l'\textbf{origine} di un deficit (o di un
+peggioramento):
+
+\textbf{Acquisito}: l'alterazione è conseguenza di un evento avvenuto in
+età adulta, dopo che è stata raggiunta la maturità del funzionamento
+cognitivo.
+
+\textbf{Evolutivo}: l'alterazione è conseguenza di un evento avvenuto in
+età di sviluppo, prima che sia stata raggiunta la maturità del
+funzionamento cognitivo.
+
+\vspace{1em}
+
+In età evolutiva si parla quasi sempre di \textbf{deficit}: con un
+funzionamento cognitivo ancora in sviluppo è difficile distinguere un
+leggero peggioramento dalla traiettoria di crescita già in essere per
+quella persona.
 \end{frame}
 
 \begin{frame}{Una nota sulla letteratura}
@@ -436,15 +495,69 @@ Non esiste quindi una terminologia condivisa: l'importante è essere
 chiari su cosa si intende, in ogni singolo caso.
 \end{frame}
 
-\begin{frame}{Danno in contesto forense}
-\phantomsection\label{danno-in-contesto-forense}
-In ambito forense (Italiano) il danno psichico è tradizionalmente
-considerato come una sottospecie del danno biologico, ossia della
-lesione dell'integrità psicofisica, medicalmente accertabile.
+\begin{frame}{Deficit e peggioramento sono indipendenti}
+\phantomsection\label{deficit-e-peggioramento-sono-indipendenti}
+Deficit e peggioramento sono concetti distinti (ortogonali): si può
+avere un peggioramento \textbf{senza} che raggiunga la soglia del
+deficit (es. un trauma cranico lieve che fa scendere il punteggio, ma
+resta sopra soglia), oppure un deficit \textbf{senza} un vero
+peggioramento (es. un disturbo presente da sempre, come un disturbo
+dello sviluppo).
 
-Nel danno in ambito forense, è fondamentale identificare non solo che
-sia avvenuto un peggioramento, \textbf{ma che il danno sia anche
-\emph{causato} dal fatto esaminato.}
+\pause
+\vspace{1em}
+
+\textbf{Attenzione a non confondere deficit con peggioramento}: una
+lesione cerebrale o una malattia degenerativa potrebbero causare un
+peggioramento senza che questo raggiunga il livello da poter essere
+considerato un deficit.
+\end{frame}
+
+\begin{frame}{Peggioramento con e senza deficit}
+\phantomsection\label{peggioramento-con-e-senza-deficit}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Figures/norm_compromissione_declino.png}
+\end{center}
+
+\vspace{-0.5em}
+\scriptsize
+
+Dati simulati: dieci valutazioni ripetute nel tempo. Prima dell'evento
+(linea verticale) tutte le traiettorie coincidono; dopo, un caso scende
+sotto la soglia per il deficit (triangoli), l'altro peggiora ma resta
+sopra soglia (diamanti).
+\end{frame}
+
+\begin{frame}{Quattro combinazioni}
+\phantomsection\label{quattro-combinazioni}
+\begin{center}
+\includegraphics[width=0.78\textwidth]{Figures/norm_tabella_compromissione_declino.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Un solo punteggio sopra soglia \textbf{non esclude} un peggioramento; un
+solo punteggio sotto soglia \textbf{non dimostra} un peggioramento.
+\end{frame}
+
+\begin{frame}{Danno: un concetto giuridico}
+\phantomsection\label{danno-un-concetto-giuridico}
+In ambito forense (italiano) il \textbf{danno} psichico è
+tradizionalmente considerato come una sottospecie del danno biologico,
+ossia della lesione dell'integrità psicofisica, medicalmente
+accertabile.
+
+\pause
+\vspace{0.5em}
+
+Il danno quindi \textbf{non} è una categoria clinica come deficit o
+peggioramento:
+
+\iconrow{\faChartLine}{il \textbf{peggioramento} è il dato clinico: una diminuzione rispetto al livello che la persona aveva raggiunto;}
+\iconrow{\faBalanceScale}{il \textbf{danno} è una qualificazione giuridica: richiede che sia avvenuto un peggioramento \textbf{e} che questo sia \textit{causato} dal fatto esaminato (nesso causale).}
+
+\takeaway{in queste slide usiamo \textit{deficit} e \textit{peggioramento} per descrivere la prestazione; \textit{danno} resta un termine del linguaggio giuridico.}
 \end{frame}
 
 \begin{frame}{Deficit o peggioramento: dipende dalla domanda}
@@ -523,6 +636,21 @@ facile: lo stesso numero, a seconda del ``gruppo di riferimento'' (la
 difficoltà dell'esame/test), ha un significato molto diverso.
 \end{frame}
 
+\begin{frame}{Significato dei punteggi 2/2}
+\phantomsection\label{significato-dei-punteggi-22}
+\begin{center}
+\includegraphics[width=0.88\textwidth]{Figures/norm_punteggio_20.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Lo stesso punteggio (20) in due gruppi di riferimento simulati: a
+sinistra cade nella coda \textbf{bassa} della distribuzione, a destra
+nella coda \textbf{alta}. Il punteggio acquista significato solo nel
+confronto con un gruppo di riferimento.
+\end{frame}
+
 \begin{frame}{Trasformazione punteggi e cut-off 2/2}
 \phantomsection\label{trasformazione-punteggi-e-cut-off-22}
 \begin{center}
@@ -539,6 +667,21 @@ punteggio grezzo \underline{alla percentuale di popolazione}
 Tra i punteggi trasformati dati spesso rivestono particolare rilevanza
 delle soglie specifiche, chiamate \textbf{cut-off}, che nella versione
 più diffusa, delimita il 5\% delle prestazioni peggiori.
+\end{frame}
+
+\begin{frame}{Due vie equivalenti per il confronto con una soglia}
+\phantomsection\label{due-vie-equivalenti-per-il-confronto-con-una-soglia}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Figures/norm_due_vie_soglia.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Trasformare il punteggio in percentuale e confrontarlo con una soglia
+percentuale (via 1), oppure confrontare il punteggio grezzo con una
+soglia espressa sulla stessa scala (via 2), porta alla \textbf{stessa
+classificazione}.
 \end{frame}
 
 \begin{frame}{Cut-off e statistica}
@@ -810,20 +953,21 @@ b) in caso di valutazioni per valutare il livello del paziente indipendentemente
 \begin{center}
 \begin{tikzpicture}
 
-% --- Your figure -------------------------------------------------------
-\node (img) at (0,0) {\includegraphics[width=0.7\textwidth]{Figures/dati_normativi.png}};
+% --- Figura dal libro "Oltre i punteggi" (fig-costruzione-istogramma) ---
+\node[inner sep=0pt] (img) at (0,0) {\includegraphics[height=0.72\textheight]{Figures/norm_costruzione_istogramma.png}};
 
+% i pannelli compaiono uno alla volta (a, b, c, d)
 % Top-left
-\only<1>{\fill[white] (-3.5,3) rectangle (0,0);}
+\only<1>{\fill[white] (img.north west) rectangle (img.center);}
 
 % Top-right
-\only<1-2>{\fill[white] (-0.2,3) rectangle (3,0);}
+\only<1-2>{\fill[white] (img.north) rectangle (img.east);}
 
 % Bottom-left
-\only<1-3>{\fill[white] (-3.5,0) rectangle (0,-3);}
+\only<1-3>{\fill[white] (img.west) rectangle (img.south);}
 
 % Bottom-right
-\only<1-4>{\fill[white] (-0.2,0) rectangle (3,-3);}
+\only<1-4>{\fill[white] (img.center) rectangle (img.south east);}
 
 
 \end{tikzpicture}
@@ -853,6 +997,20 @@ NOTA: Il cut-off NON ci indica la probabilità che il soggetto sia normale o abb
 \includegraphics[scale=0.05]{Figures/triangle.png}
 \end{figure}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Classificare rispetto alla soglia}
+\phantomsection\label{classificare-rispetto-alla-soglia}
+\begin{center}
+\includegraphics[width=0.88\textwidth]{Figures/norm_classificazione_soglia.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Un punteggio sopra la soglia è classificato come ``prestazione nella
+norma'', uno sotto la soglia come ``prestazione deficitaria''. La
+classificazione dipende solo dalla posizione rispetto alla soglia.
 \end{frame}
 
 \begin{frame}{Prestazione deficitaria: una precisazione importante}
@@ -923,23 +1081,6 @@ se è avvenuto un cambiamento
 \emph{Spesso, nonostante le diverse possibilità teoriche nel confronto
 si sceglie il dato normativo più simile possibile all'individuo
 valutato.}
-\end{frame}
-
-\begin{frame}{Deficit e peggioramento sono indipendenti}
-\phantomsection\label{deficit-e-peggioramento-sono-indipendenti}
-Deficit e peggioramento sono concetti distinti: si può avere un
-peggioramento \textbf{senza} che raggiunga la soglia del deficit (es. un
-trauma cranico lieve che fa scendere il punteggio, ma resta sopra
-soglia), oppure un deficit \textbf{senza} un vero peggioramento (es. un
-disturbo presente da sempre, come un disturbo dello sviluppo).
-
-\pause
-\vspace{1em}
-
-\textbf{Attenzione a non confondere deficit con peggioramento}: una
-lesione cerebrale o una malattia degenerativa potrebbero causare un
-peggioramento senza che questo raggiunga il livello da poter essere
-considerato un deficit.
 \end{frame}
 
 \begin{frame}{Confronto con dati normativi}
@@ -1551,6 +1692,10 @@ per definire i cut-off ed eventuali altre soglie.
 \begin{itemize}
 \tightlist
 \item
+  Arcara, G. \emph{Oltre i punteggi. Elementi di psicometria e
+  statistica per la neuropsicologia clinica} (cap. ``Dati normativi,
+  deficit e peggioramento''). https://giorgioarcara.github.io/oip-book/
+\item
   Capitani, E., \& Laiacona, M. (2007). I Punteggi Equivalenti.
 \item
   Crawford, J. R., \& Garthwaite, P. H. (2006). Comparing single case
@@ -1567,6 +1712,10 @@ per definire i cut-off ed eventuali altre soglie.
   diagnosi neuropsicologica.}
 \item
   Williams, J. (2013). Secular trends in cognitive test performance.
+\item
+  World Health Organization (2013). \emph{How to use the ICF: A
+  practical manual for using the International Classification of
+  Functioning, Disability and Health.}
 \item
   World Health Organization (2013). \emph{ICF: A practical manual.}
 \end{itemize}
