@@ -53,14 +53,16 @@ Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una termin
 
 ## I valori utili per la clinica
 
-Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale c’è una probabilità nota k che un punteggio osservato abbia un valore uguale o inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
+Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale c’è una probabilità al massimo pari a k che un punteggio osservato sia inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
 
 $$
 \small
-\text{definiamo}\ x\ \text{in modo tale che}\ P(o<x) = k
+\text{definiamo}\ x\ \text{in modo tale che}\ P(o<x) \leq k
 $$
 
-es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $p(O < x ) = 0.05$ (c’è il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un deficit o un peggioramento).
+es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $P(o < x) \leq 0.05$ (c’è al massimo il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un deficit o un peggioramento).
+
+Si usa $\leq$ perché i punteggi sono in genere discreti: una probabilità esattamente pari a $k$ spesso non esiste, e si sceglie la soglia che non supera $k$.
 
 La soglia del 5% è completamente arbitraria.
 
@@ -124,9 +126,9 @@ Questa definizione di percentili può essere però approfondita concentrandoci s
 Possiamo quindi specificare meglio la formula così
 $$
 \small
-\text{definiamo}\ x\ \text{in modo tale che}\ P(o< x∣N )=k
+\text{definiamo}\ x\ \text{in modo tale che}\ P(o < x \mid N) \leq k
 $$
-$x$ è il valore per cui ci si attende un probabilità $k$ che un punteggio O sia inferiore a $x$, assumendo che la persona provenga da una popolazione di persone “sane” (cioè senza deficit cognitivo).
+$x$ è il valore per cui ci si attende una probabilità al massimo pari a $k$ che un punteggio O sia inferiore a $x$, assumendo che la persona provenga da una popolazione di persone “sane” (cioè senza deficit cognitivo).
 
 Infatti se la persona venisse da altre popolazioni (es. pazienti con Alzheimer) i valori attesi potrebbero essere diversi.
 
@@ -415,11 +417,11 @@ Il razionale di questi metodi è il seguente:
 
 Una potenziale formalizzazione dei cut-off ottenuti tramite i metodi di regressione è la seguente.
 
-Il cut-off $x$ è il punteggio tale che il paziente i-esimo (con specifici valori per le variabili aggiuntive V1, V2, …, Vn), tale che la probabilità di osservare quella performance è $k$ (con $k$ critico normalmente 0.05)
+Il cut-off $x$ è il punteggio tale che il paziente i-esimo (con specifici valori per le variabili aggiuntive V1, V2, …, Vn), tale che la probabilità di osservare quella performance è al massimo $k$ (con $k$ critico normalmente 0.05)
 
 $$
 \small
-\text{definiamo}\ x\ \text{in modo tale che}\  P(o_i< x∣ V1_i , V2_i , ... , Vn_i , N )=k
+\text{definiamo}\ x\ \text{in modo tale che}\  P(o_i< x∣ V1_i , V2_i , ... , Vn_i , N ) \leq k
 $$
 
 Dove $_i$ indica l'indice per una specifica combinazione di punteggio osservato data una specifica combinazione di valori di variabili $(V1, ... V_n)$ che possono influenzare performance
