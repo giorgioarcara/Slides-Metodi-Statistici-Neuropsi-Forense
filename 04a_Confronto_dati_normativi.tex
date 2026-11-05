@@ -641,11 +641,22 @@ peggioramento rispetto al livello precedente)
 \begin{tikzpicture}[
   blocco/.style={draw=nfInk, thick, rounded corners, fill=unipdCream!50, align=center,
                  text width=3.6cm, minimum height=1.6cm, font=\large},
-  freccia/.style={-{Stealth}, unipdCrimson, line width=1.5pt, dashed}]
+  freccia/.style={-{Stealth}, unipdCrimson, line width=1.5pt, dashed},
+  inter/.style={draw=nfInk, thick, rounded corners, fill=unipdCream!50, align=center},
+  punta/.style={-{Stealth}, nfInk, line width=1pt}]
 
+\useasboundingbox (-7,-2.6) rectangle (7,2.6);
 \node[blocco] (punteggio) at (-5, 0) {Punteggio al test};
 \node[blocco] (interpretazione) at (5, 0) {Interpretazione forense};
 \draw[freccia] (punteggio.east) -- (interpretazione.west);
+
+\node<2->[inter, text width=4cm] (confronto) at (0, 1.8) {Confronto con dati normativi};
+\draw<2->[punta] (confronto.south) -- (0, 0.1);
+
+\foreach \x in {-2.5, 0, 2.5} {
+  \node<3->[inter, minimum width=1.6cm, minimum height=0.9cm] (vuoto) at (\x, -1.8) {};
+  \draw<3->[punta] (vuoto.north) -- (\x, -0.1);
+}
 
 \end{tikzpicture}
 \end{center}
