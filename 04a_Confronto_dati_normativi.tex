@@ -651,7 +651,7 @@ peggioramento rispetto al livello precedente)
 \draw[freccia] (punteggio.east) -- (interpretazione.west);
 
 \node<2->[inter, text width=4cm] (confronto) at (0, 1.8) {Confronto con dati normativi};
-\draw<2->[punta] (confronto.south) -- (0, 0.1);
+\draw<2->[punta] ([xshift=-1cm]confronto.south) -- (-1, 0.1);
 
 \foreach \x in {-2.5, 0, 2.5} {
   \node<3->[inter, minimum width=1.6cm, minimum height=0.9cm] (vuoto) at (\x, -1.8) {};
