@@ -228,6 +228,25 @@ rispetto al livello precedente)
 \end{center}
 ```
 
+## Dal punteggio all'interpretazione
+
+```{=latex}
+\vfill
+\begin{center}
+\begin{tikzpicture}[
+  blocco/.style={draw=nfInk, thick, rounded corners, fill=unipdCream!50, align=center,
+                 text width=4.2cm, minimum height=1.6cm, font=\large},
+  freccia/.style={-{Stealth}, unipdCrimson, line width=1.5pt}]
+
+\node[blocco] (punteggio) at (-3.5, 0) {Punteggio al test};
+\node[blocco] (interpretazione) at (3.5, 0) {Interpretazione forense};
+\draw[freccia] (punteggio.east) -- (interpretazione.west);
+
+\end{tikzpicture}
+\end{center}
+\vfill
+```
+
 ## Confronto con dati normativi
 
 \begin{center}
