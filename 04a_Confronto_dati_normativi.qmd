@@ -235,11 +235,11 @@ rispetto al livello precedente)
 \begin{center}
 \begin{tikzpicture}[
   blocco/.style={draw=nfInk, thick, rounded corners, fill=unipdCream!50, align=center,
-                 text width=4.2cm, minimum height=1.6cm, font=\large},
-  freccia/.style={-{Stealth}, unipdCrimson, line width=1.5pt}]
+                 text width=3.6cm, minimum height=1.6cm, font=\large},
+  freccia/.style={-{Stealth}, unipdCrimson, line width=1.5pt, dashed}]
 
-\node[blocco] (punteggio) at (-3.5, 0) {Punteggio al test};
-\node[blocco] (interpretazione) at (3.5, 0) {Interpretazione forense};
+\node[blocco] (punteggio) at (-5, 0) {Punteggio al test};
+\node[blocco] (interpretazione) at (5, 0) {Interpretazione forense};
 \draw[freccia] (punteggio.east) -- (interpretazione.west);
 
 \end{tikzpicture}
