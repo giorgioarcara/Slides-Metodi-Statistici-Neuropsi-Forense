@@ -53,18 +53,18 @@ Formalizzare in maniera più rigorosa aiuta ad evitare gli effetti di una termin
 
 ## I valori utili per la clinica
 
-Definiamo in generale valori utili alla classificazione clinica quei punteggi x al di sotto del quale c’è una probabilità al massimo pari a k che un punteggio osservato sia inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
+Definiamo in generale valori utili alla classificazione clinica e in particolare di **prestazione deficitaria** quei punteggi x al di sotto del quale c’è una probabilità al massimo pari a k che un punteggio osservato sia inferiore a x (nei test in cui un punteggio basso indica una performance peggiore).
 
 $$
 \small
 \text{definiamo}\ x\ \text{in modo tale che}\ P(o<x) \leq k
 $$
 
-es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $P(o < x) \leq 0.05$ (c’è al massimo il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un deficit o un peggioramento).
+es. con il “cut-off di normalità”, $k$ = 0.05 e il valore $x$ è il valore tale che $P(o < x) \leq 0.05$ (c’è al massimo il 5% di probabilità di osservare una prestazione inferiore a x, essendo basso, inferiamo un _deficit_ o un _peggioramento_).
 
 Si usa $\leq$ perché i punteggi sono in genere discreti: una probabilità esattamente pari a $k$ spesso non esiste, e si sceglie la soglia che non supera $k$.
 
-La soglia del 5% è completamente arbitraria.
+\textcolor{red}{La soglia del 5\% è completamente arbitraria.}
 
 ## I percentili
 

@@ -54,16 +54,6 @@ incremental: false
 
 \takeaway{nominare una condizione è già un'interpretazione: scegliamo le parole con la stessa cura con cui scegliamo i test.}
 
-## Misurazioni 1/2
-\center
-![](Figures/thermometer_1.png){width="80%"}
-
-## Misurazioni 2/2
-
-\center
-![](Figures/thermometer_2.png){width="80%"}
-
-
 
 ## Esempio
 
@@ -257,6 +247,17 @@ rispetto al livello precedente)
 \end{center}
 \vfill
 ```
+
+
+## Misurazioni 1/2
+\center
+![](Figures/thermometer_1.png){width="80%"}
+
+## Misurazioni 2/2
+
+\center
+![](Figures/thermometer_2.png){width="80%"}
+
 
 ## Confronto con dati normativi
 
@@ -783,6 +784,63 @@ Altre informazioni a disposizione potrebbero farci propendere per una o l’altr
 
 Ovviamente questo ragionamento non delegittima il confronto con i cut-off (che rimane uno strumento solido), ma ne sottolinea alcuni potenziali limiti.
 
+## Stimare il livello premorboso
+
+In perizia raramente abbiamo punteggi ottenuti **prima** dell'evento. Il confronto con i dati normativi assume allora che la persona fosse come la maggior parte dei suoi pari (vedi Esempi 1 e 2).
+
+Per questo in neuropsicologia forense, quando la domanda riguarda un **peggioramento**, si cerca di stimare il **funzionamento premorboso**: un'aspettativa *individuale*, non la media del gruppo.
+
+La logica: si usano abilità dette \textit{hold}, cioè conoscenze cristallizzate (es. leggere parole irregolari) che sono relativamente resistenti al danno cerebrale e correlate con il QI.
+
+\takeaway{stimare il premorboso significa chiedersi: ``che punteggio ci saremmo aspettati da \textit{questa} persona?''}
+
+## Test di intelligenza premorbosa: NART e TIB
+
+```{=latex}
+\begin{columns}[T]
+\begin{column}{0.48\textwidth}
+\textbf{NART} -- \textit{National Adult Reading Test}
+
+\small
+Lettura ad alta voce di 50 parole inglesi a pronuncia irregolare: non si possono leggere correttamente applicando le regole, bisogna \textit{conoscerle}. Dal numero di errori si stima il QI premorboso.
+
+\vspace{0.5em}
+Il punteggio NART in età avanzata è correlato con il QI misurato nella stessa persona a 11 anni.
+\end{column}
+\begin{column}{0.48\textwidth}
+\textbf{TIB} -- \textit{Test di Intelligenza Breve}
+
+\small
+Versione italiana dello stesso principio: lettura di parole con accento irregolare, da cui si stima il QI premorboso (e attuale).
+
+\vspace{0.5em}
+In Italia è uno degli strumenti di riferimento per stimare il livello premorboso.
+\end{column}
+\end{columns}
+
+\vfill
+\footnotesize
+\begin{flushright}
+\textit{Nelson \& O'Connell (1978); Nelson (1982); Crawford, Deary, Starr \& Whalley (2001);\\
+Sartori, Colombo, Vallar, Rusconi \& Pinarello (1997); Colombo, Sartori \& Brivio (2002)}
+\end{flushright}
+```
+
+## Perché aiutano: una stima migliore dell'atteso
+
+\small
+NART e TIB non rendono più affidabile o valido il test di memoria o di attenzione che usiamo: migliorano il **termine di confronto**, cioè cosa ci aspettiamo da quella persona.
+
+Riprendendo gli Esempi 1 e 2: con una stima premorbosa **alta**, un punteggio di 14 (sopra cut-off) può essere compatibile con un peggioramento; con una stima premorbosa **bassa**, un punteggio di 8 (sotto cut-off) può non esserlo.
+
+```{=latex}
+\iconrow{\faExclamationTriangle}{Anche la stima ha un suo errore}
+\iconrow{\faBrain}{Non è del tutto resistente al danno: demenza moderata-grave, afasia, dislessia, bassa scolarità.}
+\iconrow{\faUserFriends}{Va integrata con anamnesi, scolarità e storia lavorativa (Lezak et al., 2014), e vedi sezione su \textbf{Interpretazione}.}
+```
+
+\takeaway{la stima premorbosa ci aiuta a predire in maniera più accurata quale sarebbe la performance attesa di quella persona.}
+
 ## Confronto con dati normativi
 
 \begin{center}
@@ -1074,11 +1132,16 @@ Ci sono vari metodi matematici (con pro e contro e più o meno robusti), per def
 
 - Arcara, G. *Oltre i punteggi. Elementi di psicometria e statistica per la neuropsicologia clinica* (cap. "Dati normativi, deficit e peggioramento"). https://giorgioarcara.github.io/oip-book/
 - Capitani, E., \& Laiacona, M. (2007). I Punteggi Equivalenti.
+- Colombo, L., Sartori, G., \& Brivio, C. (2002). Stima del quoziente intellettivo tramite l'applicazione del TIB (Test Breve di Intelligenza). *Giornale Italiano di Psicologia, 29*(3), 613--637.
+- Crawford, J. R., Deary, I. J., Starr, J., \& Whalley, L. J. (2001). The NART as an index of prior intellectual functioning: a retrospective validity study covering a 66-year interval. *Psychological Medicine, 31*(3), 451--458.
 - Crawford, J. R., \& Garthwaite, P. H. (2006). Comparing single case with normative samples.
 - Crawford, J. R., \& Howell, D. C. (1998). Comparing an individual's test score with normative samples.
 - Flynn, J. R. (1987). Massive IQ gains in 14 nations (Flynn effect).
 - Lezak, M. D., et al. (2014). *Neuropsychological Assessment.*
 - Mondini, S., Mapelli, D., \& Arcara, G. (2022). *Semeiotica e diagnosi neuropsicologica.*
+- Nelson, H. E. (1982). *National Adult Reading Test (NART): Test manual.* NFER-Nelson.
+- Nelson, H. E., \& O'Connell, A. (1978). Dementia: the estimation of premorbid intelligence levels using the New Adult Reading Test. *Cortex, 14*(2), 234--244.
+- Sartori, G., Colombo, L., Vallar, G., Rusconi, M. L., \& Pinarello, A. (1997). Test di Intelligenza Breve per la valutazione del quoziente intellettivo attuale e pre-morboso. *La Professione di Psicologo, 1*, 2--24.
 - Williams, J. (2013). Secular trends in cognitive test performance.
 - World Health Organization (2013). *How to use the ICF: A practical manual for using the International Classification of Functioning, Disability and Health.*
 - World Health Organization (2013). *ICF: A practical manual.*
