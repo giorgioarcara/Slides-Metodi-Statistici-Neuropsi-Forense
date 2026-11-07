@@ -733,7 +733,7 @@ Usare un dato osservabile (es. lesione cerebrale) sarebbe rischioso e limitante.
 
 In tal caso stimiamo la presenza di un peggioramento se la persona ha un punteggio anomalo rispetto al campione normativo. In questo caso il passaggio è doppio: 
 
-a) Sto assumendo che la persona è ben rappresentata dal campione normativo
+a) Sto assumendo che la persona è *simile* al campione normativo
 
 b) sto inferendo che se la sue performance è bassa, probabilmente c’è stato un peggioramento.
 
@@ -765,12 +765,12 @@ Il paziente aveva 8 anche prima del trauma cranico, in realtà non è peggiorato
 \small
 Il cut-off non era adeguato perché il nostro paziente testato era un paziente con prestazione presumibilmente già estrema (molto alta o bassa) rispetto ai dati normativi.
 
-Per la **valutazione di un peggioramento** i dati normativi funzionano bene (per come sono disegnati) se la persona è ben rappresentata da essi e se non aveva (prima dell’ipotetico evento lesivo), già una prestazione agli estremi (bassa o alta).
+Per la **valutazione di un peggioramento** i dati normativi funzionano bene (per come sono disegnati) se la persona è *simile* a essi e se non aveva (prima dell’ipotetico evento lesivo), già una prestazione agli estremi (bassa o alta).
 
 *In assenza di ogni altra informazione*, questa è un’assunzione ragionevole.
 
 Assumiamo che la nostra persona abbia avuto (prima dell'evento) una prestazione analoga alla maggior parte delle persone simili a lui.
-Altre informazioni (es. da anamnesi, da aspetti qualitativi, da storia personale), potrebbero suggerire che invece la persona non è ben rappresentata.
+Altre informazioni (es. da anamnesi, da aspetti qualitativi, da storia personale), potrebbero suggerire che invece la persona non è *simile* al campione normativo.
 
 ## Confronto con dati normativi
 
@@ -866,7 +866,7 @@ Es. una performance che delimita è al 5.1% del campione/popolazione di riferime
 
 ## Aspetti da considerare nell’utilizzo dei dati normativi
 
-Come principio generale, per stimare correttamente la prestazione del mio soggetto (e rendere sensato il confronto con i dati normativi), i dati normativi devono essere rappresentativi. Di seguito sono esaminate alcune comuni domande.
+Come principio generale, per stimare correttamente la prestazione del mio soggetto (e rendere sensato il confronto con i dati normativi), i dati normativi devono provenire da persone *simili* a quella da valutare. Di seguito sono esaminate alcune comuni domande.
 
 ## Aspetti da considerare nell’utilizzo dei dati normativi (1)
 
@@ -878,10 +878,10 @@ Dati normativi raccolti molti anni fa possono non essere adeguati. Questo è leg
 
 ## Aspetti da considerare nell’utilizzo dei dati normativi (2)
 
-**2) Specie per inferire un peggioramento è importante che gli individui dei campioni normativi siano simili all’individuo da valutare. (campione ampio, ma non simile non è utile).**
+**2) Specie per inferire un peggioramento è importante che gli individui dei campioni normativi siano simili all’individuo da valutare.**
 \vspace{2em}
 
-Un campione molto numeroso ma poco rappresentativo non è utile.
+Un campione molto numeroso ma poco *simile* non è utile.
 
 ## Aspetti da considerare nell’utilizzo dei dati normativi
 

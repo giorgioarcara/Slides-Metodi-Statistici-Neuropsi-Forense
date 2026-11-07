@@ -489,7 +489,7 @@ Es. supponiamo che il mio test fornisce un cut-off che si riferisce all’interv
 
 Supponiamo debba testare un paziente con 70 anni. Vuol dire che nella distribuzione di dati ci saranno persone di 80 anni di età (la cui performance potrebbe essere molto più bassa).
 
-**La stratificazione arbitraria in campioni per le variabili rilevanti (età, scolarità, sesso), ha sempre problemi sulla composizione del campione normativo e la sua rappresentatività.**
+**La stratificazione arbitraria in campioni per le variabili rilevanti (età, scolarità, sesso), ha sempre problemi sulla composizione del campione normativo e su quanto sia davvero \textit{simile} alla persona da valutare.**
 
 ## Come vengono forniti i cut-off: fasce o regressioni
 
@@ -796,7 +796,7 @@ Ad esempio, supponiamo di avere dati normativi di 1000 soggetti con un metodo di
 
 È possibile che in realtà nel mio campione ci siano pochissimi (o addirittura nessuna, in tal caso parliamo di *estrapolazione*) persona che rispecchi questa combinazione di valori.
 
-Sarebbe più opportuno avere un piccolo campione (es. anche 15 persone) che però siano veramente rappresentative rispetto all’individuo che voglio valutare e un test appropriato (es. T-test di Crawford).
+Sarebbe più opportuno avere un piccolo campione (es. anche 15 persone) che però siano veramente *simili* all’individuo che voglio valutare e un test appropriato (es. T-test di Crawford).
 
 ## Considerazioni su errore di I e II tipo
 
@@ -896,7 +896,7 @@ Anche usando metodi non ottimali, avere campioni ampi migliora.
 
 I metodi che si basano su campioni hanno però problemi dei “gradini” che si vengono a creare per ogni gruppo in cui abbiamo trasformato una variabile continua (es. Età) in gruppi separati.
 
-I metodi che si basano su regressione risolvono il problema dei “gradini”, ma attenzione a rappresentatività nei metodi con regressione e attenzione a valori estremi nei predittori (es. Scolarità, età). Sono i valori in cui la stima potrebbe essere più imprecisa.
+I metodi che si basano su regressione risolvono il problema dei “gradini”, ma attenzione a quanto il campione sia davvero *simile* alla persona (combinazioni rare di età/scolarità) e attenzione a valori estremi nei predittori (es. Scolarità, età). Sono i valori in cui la stima potrebbe essere più imprecisa.
 
 
 
