@@ -2,39 +2,22 @@
 title: ""
 author: "Giorgio Arcara"
 date: ""
-#format: revealjs
 format:
   beamer:
-    theme: metropolis
     keep-tex: true
-    pdf-engine: xelatex  # or xelatex
-    # mathfont: "Latin Modern Math"
+    aspectratio: 169
+    section-titles: false
+    pdf-engine: xelatex
+    include-in-header:
+      - file: nf-macros.tex
 incremental: false
-header-includes:
-  \setbeamerfont{title}{size=\large}
-  \usepackage{hyperref}
-  \setbeamertemplate{footline}[frame number]
-  \usepackage{tikz}
-  
 ---
 
-<!-- the section below is shown only if rendering is beamer from latex. (and format:revealjs is commmented) -->
+## {.plain}
 
-::: {.content-visible when-format="beamer"}
 ```{=latex}
-% TITLE SLIDES
-\title{Metodi Statistici per la Neuropsicologia Forense\\ \vspace{1em} \emph{7. Simulazione e validità di performance}}
-\author{Giorgio Arcara,\\ Università di Padova \\ IRCCS San Camillo, Venezia}
-
-\titlegraphic{
-
-\vspace*{7cm}
-\includegraphics[scale=0.15]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}
-\hfill \includegraphics[scale=0.15]{Figures/CC_license_3_0.png}
-}
-\maketitle
+\nftitleslide{7 · Simulazione e validità di performance}
 ```
-:::
 
 # \large 7. Simulazione e validità di performance
 
@@ -282,7 +265,7 @@ Mathias et al. (2002) Detecting Malingered Neurocognitive Dysfunction Using the 
 
 ```{=latex}
 \begin{columns}
-\column{0.7\textwidth}
+\column{0.6\textwidth}
 
 \begin{tikzpicture}
     % Include your image
@@ -305,7 +288,7 @@ Mathias et al. (2002) Detecting Malingered Neurocognitive Dysfunction Using the 
     \end{scope}
 \end{tikzpicture}
 
-\column{0.5\textwidth}
+\column{0.4\textwidth}
 \scriptsize
 Ricordiamo che Positive Predictive Power (o Value) indica:
 Quale percentuale dei positivi sarà effettivamente un simulatore?\\

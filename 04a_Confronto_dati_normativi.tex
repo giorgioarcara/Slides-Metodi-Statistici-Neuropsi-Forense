@@ -1,0 +1,1763 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+\ifLuaTeX
+  \usepackage{luacolor}
+  \usepackage[soul]{lua-ul}
+\else
+  \usepackage{soul}
+  \makeatletter
+  \let\HL\hl
+  \renewcommand\hl{% fix for beamer highlighting
+    \let\set@color\beamerorig@set@color
+    \let\reset@color\beamerorig@reset@color
+    \HL}
+  \makeatother
+\fi
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+% nf-macros.tex — visual building blocks for "Metodi Statistici per la Neuropsicologia Forense"
+% Adapted from the Time Management deck (tm-macros.tex); loads unipdwarsawstyle.sty first.
+
+% ---------------------------------------------------------
+% FONTS, ICONS, LIBRARIES
+% ---------------------------------------------------------
+\usepackage{unipdwarsawstyle}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{fontawesome5}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds,shapes.geometric}
+
+% ---------------------------------------------------------
+% IMAGE HEIGHT CAP — 16:9 frames are shorter than the old 4:3 ones, so images sized
+% by width can run off the bottom. Every \includegraphics taller than \nfmaxheight
+% is scaled down (aspect ratio kept); unsized markdown images use the same limit.
+% ---------------------------------------------------------
+\newlength{\nfmaxheight}
+\AtBeginDocument{\setlength{\nfmaxheight}{0.74\textheight}}
+\makeatletter
+\newsavebox\nf@imgbox
+\let\nf@includegraphics\includegraphics
+\renewcommand*\includegraphics[2][]{%
+  \sbox\nf@imgbox{\nf@includegraphics[#1]{#2}}%
+  \ifdim\dimexpr\ht\nf@imgbox+\dp\nf@imgbox\relax>\nfmaxheight
+    \resizebox{!}{\nfmaxheight}{\usebox\nf@imgbox}%
+  \else\usebox\nf@imgbox\fi}
+% unsized markdown images: fit within \linewidth and \nfmaxheight
+\renewcommand*\pandocbounded[1]{%
+  \sbox\nf@imgbox{#1}%
+  \Gscale@div\@tempa{\nfmaxheight}{\dimexpr\ht\nf@imgbox+\dp\nf@imgbox\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\nf@imgbox}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\nf@imgbox}\else\usebox\nf@imgbox\fi}
+\makeatother
+
+% ---------------------------------------------------------
+% PALETTE — structure is UniPD crimson/gold (from the style file)
+% ---------------------------------------------------------
+\definecolor{nfInk}{HTML}{243447}      % dark text
+\definecolor{nfPoll}{HTML}{5B3F9E}     % Wooclap
+\definecolor{nfPadlet}{HTML}{B8860B}   % Padlet
+\definecolor{nfGrey}{HTML}{8A94A0}
+
+% ---------------------------------------------------------
+% GLOBAL LOOK
+% ---------------------------------------------------------
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\setbeamertemplate{headline}{}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=nfInk}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{footline}{%
+  \hfill{\color{nfGrey}\tiny\insertframenumber}\hspace*{4mm}\vspace*{2mm}}
+\setbeamertemplate{itemize item}{\color{unipdCrimson}\raisebox{0.15ex}{\scriptsize\faCircle}}
+
+% ---------------------------------------------------------
+% ICON ROW — icon in a crimson disc + text
+%   \iconrow{\faVideo}{Text}
+% ---------------------------------------------------------
+\newcommand{\iconrow}[2]{%
+  \par\noindent
+  \begin{minipage}[c]{0.9cm}\centering
+    \tikz\node[circle, fill=unipdCrimson, text=white, minimum size=7mm, inner sep=0pt]{\small #1};
+  \end{minipage}%
+  \begin{minipage}[c]{\dimexpr\linewidth-0.9cm\relax}\small #2\end{minipage}\par\vspace{5pt}}
+
+% ---------------------------------------------------------
+% ACTIVITIES — real QR code and join code
+% ---------------------------------------------------------
+\newcommand{\timer}[1]{%
+  \tikz[baseline=(t.base)]\node[fill=unipdCrimson, text=white, rounded corners=6pt,
+    font=\scriptsize\bfseries, inner sep=3pt] (t) {\faIcon{stopwatch}\ #1};}
+
+%   \qrbox{colour}{Figures/qr.png}{code or empty}
+\newcommand{\qrbox}[3]{%
+  \begin{tikzpicture}
+    \node[draw=#1, line width=1.2pt, rounded corners=5pt, inner sep=5pt, fill=white] (q)
+      {\includegraphics[width=3.4cm]{#2}};
+    \if\relax\detokenize{#3}\relax\else
+      \node[below=3pt of q, font=\small\bfseries\color{#1}] {codice: #3};
+    \fi
+  \end{tikzpicture}}
+
+%   \wooclapslot{tipo}{domanda}{istruzioni}{minuti o vuoto}{Figures/qr.png}{codice}
+\newcommand{\wooclapslot}[6]{%
+  \begin{columns}[c]
+    \begin{column}{0.56\textwidth}
+      {\color{nfPoll}\small\faPoll\ \textbf{WOOCLAP}\,·\,#1}%
+      \if\relax\detokenize{#4}\relax\else\hfill\timer{#4}\fi\par\vspace{8pt}
+      {\LARGE\bfseries\color{nfInk}#2\par}\vspace{10pt}
+      {\small\color{nfInk}#3\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering\qrbox{nfPoll}{#5}{#6}\end{column}
+  \end{columns}}
+
+%   \padletslot{tipo}{domanda}{istruzioni}{minuti o vuoto}{Figures/qr.png}
+\newcommand{\padletslot}[5]{%
+  \begin{columns}[c]
+    \begin{column}{0.56\textwidth}
+      {\color{nfPadlet}\small\faStickyNote\ \textbf{PADLET}\,·\,#1}%
+      \if\relax\detokenize{#4}\relax\else\hfill\timer{#4}\fi\par\vspace{8pt}
+      {\LARGE\bfseries\color{nfInk}#2\par}\vspace{10pt}
+      {\small\color{nfInk}#3\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering\qrbox{nfPadlet}{#5}{}\end{column}
+  \end{columns}}
+
+% ---------------------------------------------------------
+% TITLE SLIDE — use on a  ## {.plain}  frame:   \nftitleslide{2 · Cornice teorica}
+% ---------------------------------------------------------
+\newcommand{\nftitleslide}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[unipdCrimson] (current page.north west) rectangle ([xshift=0.58\paperwidth]current page.south west);
+    \fill[unipdGold] ([xshift=0.58\paperwidth]current page.north west) rectangle ([xshift=0.585\paperwidth]current page.south west);
+  \end{tikzpicture}%
+  \begin{columns}[c]
+    \begin{column}{0.55\textwidth}
+      \color{white}
+      {\small\color{unipdGold}\MakeUppercase{#1}\par}\vspace{6pt}
+      {\fontsize{22}{27}\selectfont\bfseries Metodi Statistici per la Neuropsicologia Forense\par}\vspace{22pt}
+      {\small\bfseries Giorgio Arcara\par}
+      {\scriptsize Università di Padova\\ IRCCS San Camillo, Venezia\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering
+      \includegraphics[width=0.85\linewidth]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}\par\vspace{14pt}
+      \includegraphics[height=0.55cm]{Figures/CC_license_3_0.png}
+    \end{column}
+  \end{columns}}
+
+% ---------------------------------------------------------
+% SECTION DIVIDER — built automatically from each "# Section" heading
+% (YAML: section-titles: false, so Quarto does not add its own)
+% ---------------------------------------------------------
+\AtBeginSection{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[unipdCrimson] (current page.north west) rectangle ([xshift=3mm]current page.south west);
+      \fill[unipdGold] ([xshift=3mm]current page.north west) rectangle ([xshift=3.6mm]current page.south west);
+      \node[anchor=north west, font=\scriptsize\color{nfGrey}, inner sep=0pt]
+        at ([xshift=8mm,yshift=-5mm]current page.north west)
+        {METODI STATISTICI PER LA NEUROPSICOLOGIA FORENSE};
+    \end{tikzpicture}
+    \vfill
+    \begin{center}
+      {\fontsize{26}{32}\selectfont\bfseries\color{unipdCrimson}\insertsectionhead\par}
+    \end{center}
+    \vfill
+  \end{frame}}
+
+% ---------------------------------------------------------
+% TAKEAWAY strip at the bottom of the slide
+% ---------------------------------------------------------
+\newcommand{\takeaway}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south west, fill=unipdCream!70, text=nfInk, font=\scriptsize,
+          inner xsep=6pt, inner ysep=3pt, rounded corners=2pt, text width=0.84\paperwidth]
+      at ([xshift=5mm,yshift=4mm]current page.south west)
+      {\textcolor{unipdCrimson}{\faKey}\ \textbf{In sintesi:} #1};
+  \end{tikzpicture}}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={Giorgio Arcara},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{Giorgio Arcara}
+\date{}
+
+\begin{document}
+
+
+\begin{frame}[plain]{}
+\phantomsection\label{section}
+\nftitleslide{4 · Confronto con dati normativi}
+\end{frame}
+
+\section{5. Confronto con dati
+normativi}\label{confronto-con-dati-normativi}
+
+\begin{frame}{Attività (Wooclap) --- Caso 1}
+\phantomsection\label{attivituxe0-wooclap-caso-1}
+\wooclapslot{Nuvola di parole}{Con una parola: come definireste la condizione del Cliente 1?}{\textbf{Cliente 1}: 45 anni, impiegato. Dopo un grave trauma cranico in un incidente stradale è diventato irritabile, impulsivo, a volte aggressivo. Ha perso il lavoro e non riesce più a gestire da solo la vita quotidiana.\par\vspace{6pt}\footnotesize Domanda 1 su \href{https://www.wooclap.com}{\underline{wooclap.com}}, codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\end{frame}
+
+\begin{frame}{Attività (Wooclap) --- Caso 2}
+\phantomsection\label{attivituxe0-wooclap-caso-2}
+\wooclapslot{Nuvola di parole}{Con una parola: come definireste la condizione del Cliente 2?}{\textbf{Cliente 2}: 45 anni, impiegato. Dopo un trauma cranico lieve è tornato al lavoro ed è autonomo. Dice di sentirsi ``un po' più lento'' e di stancarsi prima. I punteggi ai test sono nella norma, ma un po' più bassi rispetto ad una valutazione fatta due anni prima.\par\vspace{6pt}\footnotesize Domanda 2 su \href{https://www.wooclap.com}{\underline{wooclap.com}}, codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\end{frame}
+
+\begin{frame}{Attività (Wooclap) --- Caso 3}
+\phantomsection\label{attivituxe0-wooclap-caso-3}
+\wooclapslot{Nuvola di parole}{Con una parola: come definireste la condizione del Cliente 3?}{\textbf{Cliente 3}: 45 anni, ha lo stesso quadro del Cliente 2, ma è un \textbf{giudice}: ogni giorno legge e valuta fascicoli complessi e deve cogliere dettagli e incongruenze nelle argomentazioni. Quel ``leggermente peggio'' potrebbe essere cruciale nel suo lavoro.\par\vspace{6pt}\footnotesize Domanda 3 su \href{https://www.wooclap.com}{\underline{wooclap.com}}, codice \textbf{CSEZRQT}, oppure inquadrate il QR code.}{}{Figures/wooclap_qr_code.png}{CSEZRQT}
+\end{frame}
+
+\begin{frame}{Attività (Padlet)}
+\phantomsection\label{attivituxe0-padlet}
+\padletslot{Riflessione}{Che peso hanno le parole che scegliamo?}{Confrontate le tre nuvole di parole. In quali casi avete usato ``deficit''? Cosa cambia tra il Cliente 2 e il Cliente 3: la prestazione o le sue conseguenze? Che effetto può avere, in una perizia, la scelta di una parola invece di un'altra?\par\vspace{6pt}\footnotesize Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
+\end{frame}
+
+\begin{frame}{Le parole contano}
+\phantomsection\label{le-parole-contano}
+\iconrow{\faCloud}{La stessa parola (es. ``deficit'') viene usata per cose diverse: la \textbf{gravità}, il confronto con \textbf{gli altri}, il confronto con \textbf{sé stessi}, le \textbf{conseguenze} nella vita quotidiana.}
+\iconrow{\faUserFriends}{Il Cliente 2 e il Cliente 3 hanno la stessa prestazione: sono peggiorati, ma sono ancora nella norma. Cambiano solo le conseguenze del peggioramento.}
+\iconrow{\faGavel}{In perizia chi decide legge le nostre \textbf{parole}, non i punteggi: ``deficit'', ``peggioramento'' e ``danno'' portano a conclusioni diverse.}
+\iconrow{\faBook}{Serve una terminologia esplicita: la proponiamo tra poco (deficit, peggioramento, compromissione, declino).}
+
+\takeaway{nominare una condizione è già un'interpretazione: scegliamo le parole con la stessa cura con cui scegliamo i test.}
+\end{frame}
+
+\begin{frame}{Misurazioni 1/2}
+\phantomsection\label{misurazioni-12}
+\center
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{Figures/thermometer_1.png}
+\end{frame}
+
+\begin{frame}{Misurazioni 2/2}
+\phantomsection\label{misurazioni-22}
+\center
+
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{Figures/thermometer_2.png}
+\end{frame}
+
+\begin{frame}{Esempio}
+\phantomsection\label{esempio}
+\scriptsize
+
+\emph{GH è un uomo di 68 anni, vedovo al centro di un contenzioso con
+una compagnia di assicurazione. Al momento critico della nostra
+valutazione ha appena avuto un trauma cranico in seguito ad un piccolo
+incidente stradale, in cui però ha battuto la testa e perso conoscenza.
+L'unico figlio sostiene che come conseguenza suo padre ha avuto un
+importante peggioramento nel funzionamento cognitivo che si manifesta in
+incapacità di comprendere bene ciò che gli viene detto.}
+
+\emph{Nell'anamnesi di GH c'è però un evento rilevante. Quando era più
+giovane (a 30 anni) sistemando il tetto di un garage, GH è caduto da una
+scala e ha battuto la testa. Andato in ospedale non è stato
+diagnosticato un trauma cranico, ma poco dopo sono accaduti una serie di
+eventi: ha perso il lavoro che aveva da tempo in una piccola azienda e
+ha divorziato con la moglie.}
+
+\emph{La neuropsicologia forense entra in gioco per due motivi. I
+consulenti per l'assicurazione sostengono che il problema di GH è legato
+al trauma cranico subito molti anni prima e quindi non legato
+all'incidente stradale. Secondo i consulenti incaricati da GH invece il
+danno non è riconducibile al precedente (e non documentato) trauma, ma
+solo a quello più recente.}
+\end{frame}
+
+\begin{frame}{Un caso di valutazione neuropsicologica forense}
+\phantomsection\label{un-caso-di-valutazione-neuropsicologica-forense}
+\emph{Quale sarebbe il primo scopo di una valutazione neuropsicologica
+forense di GH?} \pause \vfill La maggior parte delle volte lo scopo di
+una valutazione neuropsicologica ha come obiettivo valutare la presenza
+di un deficit o di un peggioramento cognitivo.
+\end{frame}
+
+\begin{frame}{Deficit e peggioramento: una tassonomia}
+\phantomsection\label{deficit-e-peggioramento-una-tassonomia}
+\begin{center}
+\begin{tikzpicture}[
+  cat/.style={fill=unipdCrimson, text=white, rounded corners=4pt, font=\bfseries,
+              minimum width=3.6cm, minimum height=0.8cm},
+  sub/.style={draw=unipdCrimson, line width=0.8pt, fill=white, text=unipdCrimson,
+              rounded corners=4pt, font=\small\bfseries, minimum width=3.2cm, minimum height=0.7cm},
+  desc/.style={text width=3.6cm, align=center, font=\scriptsize, text=nfInk},
+  freccia/.style={-{Stealth}, unipdCrimson, line width=0.8pt}]
+\node[cat] (def) at (-4.2,1.6) {Deficit};
+\node[desc, below=3pt of def] (defd) {\textit{normativo}: confronto con un \textbf{gruppo di riferimento}};
+\node[desc, below=0.9cm of defd, text=nfGrey] {es. un bambino di 7 anni che non sa ancora leggere};
+\node[cat] (peg) at (3,1.6) {Peggioramento};
+\node[desc, below=3pt of peg, text width=4.4cm] (pegd) {\textit{ipsativo}: confronto con \textbf{sé stessi} (livello raggiunto in precedenza)};
+\node[sub] (comp) at (1.1,-1.1) {Compromissione};
+\node[desc, below=3pt of comp] {stabile; evento acuto (trauma cranico, ictus); può essere reversibile};
+\node[sub] (decl) at (4.9,-1.1) {Declino};
+\node[desc, below=3pt of decl] {progressivo; malattia neurodegenerativa; di solito irreversibile};
+\draw[freccia] (pegd.south) -- (comp.north);
+\draw[freccia] (pegd.south) -- (decl.north);
+\draw[nfGrey, dashed] (-1.4,2.1) -- (-1.4,-2.3);
+\node[font=\footnotesize, text=nfInk] at (0,-3.0)
+  {Origine (per entrambi): \textbf{acquisito} (età adulta) \quad · \quad \textbf{evolutivo} (età di sviluppo)};
+\end{tikzpicture}
+\end{center}
+
+\vspace{-0.5em}
+\tiny
+
+Alcune di queste distinzioni sono proposte ad hoc nel libro \emph{Oltre
+i punteggi} proprio per ridurre la confusione terminologica presente in
+letteratura.
+\end{frame}
+
+\begin{frame}{Deficit e peggioramento: definizioni}
+\phantomsection\label{deficit-e-peggioramento-definizioni}
+Nelle prossime slide userò spesso i termini deficit e peggioramento.
+\textbf{Non sono sinonimi}:
+
+\textbf{Deficit (cognitivo)}: una mancanza o anomalia funzionale,
+definita rispetto ad un \textbf{gruppo di riferimento} (spesso i pari).
+Es. un bambino di 7 anni che non sa ancora leggere ha un deficit
+rispetto ai coetanei; lo stesso non sarebbe vero rispetto ad un gruppo
+di bambini tra 5 e 9 anni.
+
+\pause
+
+\textbf{Peggioramento (cognitivo)}: una diminuzione in un aspetto del
+funzionamento cognitivo, rispetto ad un livello \textbf{precedentemente
+raggiunto} dalla persona stessa, non riconducibile a crescita o
+invecchiamento fisiologico. Due sottotipi:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{compromissione}: peggioramento che ci si attende stabile, dopo
+  un evento acuto (es. trauma cranico, ictus); può essere reversibile;
+\item
+  \textbf{declino}: peggioramento che ci si attende progressivo,
+  tipicamente per una malattia neurodegenerativa; di solito non
+  reversibile.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Acquisito ed evolutivo}
+\phantomsection\label{acquisito-ed-evolutivo}
+Due aggettivi indicano l'\textbf{origine} di un deficit (o di un
+peggioramento):
+
+\textbf{Acquisito}: l'alterazione è conseguenza di un evento avvenuto in
+età adulta, dopo che è stata raggiunta la maturità del funzionamento
+cognitivo.
+
+\textbf{Evolutivo}: l'alterazione è conseguenza di un evento avvenuto in
+età di sviluppo, prima che sia stata raggiunta la maturità del
+funzionamento cognitivo.
+
+\vspace{1em}
+
+In età evolutiva si parla quasi sempre di \textbf{deficit}: con un
+funzionamento cognitivo ancora in sviluppo è difficile distinguere un
+leggero peggioramento dalla traiettoria di crescita già in essere per
+quella persona.
+\end{frame}
+
+\begin{frame}{Una nota sulla letteratura}
+\phantomsection\label{una-nota-sulla-letteratura}
+La stessa ambiguità esiste in letteratura: Muriel Lezak usa spesso il
+termine ``deficit'' per indicare quello che qui chiamiamo
+``peggioramento'' (``the amount of deficit the patient has sustained'',
+Lezak, 2014).
+
+L'\emph{International Classification of Functioning} (ICF; World Health
+Organization, 2013) usa invece ``impairment'' per indicare sia la
+deviazione (il nostro ``deficit'') che la perdita (il nostro
+``peggioramento'').
+
+\vspace{1em}
+
+Non esiste quindi una terminologia condivisa: l'importante è essere
+chiari su cosa si intende, in ogni singolo caso.
+\end{frame}
+
+\begin{frame}{Deficit e peggioramento sono indipendenti}
+\phantomsection\label{deficit-e-peggioramento-sono-indipendenti}
+Deficit e peggioramento sono concetti distinti (ortogonali): si può
+avere un peggioramento \textbf{senza} che raggiunga la soglia del
+deficit (es. un trauma cranico lieve che fa scendere il punteggio, ma
+resta sopra soglia), oppure un deficit \textbf{senza} un vero
+peggioramento (es. un disturbo presente da sempre, come un disturbo
+dello sviluppo).
+
+\pause
+\vspace{1em}
+
+\textbf{Attenzione a non confondere deficit con peggioramento}: una
+lesione cerebrale o una malattia degenerativa potrebbero causare un
+peggioramento senza che questo raggiunga il livello da poter essere
+considerato un deficit.
+\end{frame}
+
+\begin{frame}{Peggioramento con e senza deficit}
+\phantomsection\label{peggioramento-con-e-senza-deficit}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Figures/norm_compromissione_declino.png}
+\end{center}
+
+\vspace{-0.5em}
+\scriptsize
+
+Dati simulati: dieci valutazioni ripetute nel tempo. Prima dell'evento
+(linea verticale) tutte le traiettorie coincidono; dopo, un caso scende
+sotto la soglia per il deficit (triangoli), l'altro peggiora ma resta
+sopra soglia (diamanti).
+\end{frame}
+
+\begin{frame}{Quattro combinazioni}
+\phantomsection\label{quattro-combinazioni}
+\begin{center}
+\includegraphics[width=0.78\textwidth]{Figures/norm_tabella_compromissione_declino.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Un solo punteggio sopra soglia \textbf{non esclude} un peggioramento; un
+solo punteggio sotto soglia \textbf{non dimostra} un peggioramento.
+\end{frame}
+
+\begin{frame}{Danno: un concetto giuridico}
+\phantomsection\label{danno-un-concetto-giuridico}
+In ambito forense (italiano) il \textbf{danno} psichico è
+tradizionalmente considerato come una sottospecie del danno biologico,
+ossia della lesione dell'integrità psicofisica, medicalmente
+accertabile.
+
+\pause
+\vspace{0.5em}
+
+Il danno quindi \textbf{non} è una categoria clinica come deficit o
+peggioramento:
+
+\iconrow{\faChartLine}{il \textbf{peggioramento} è il dato clinico: una diminuzione rispetto al livello che la persona aveva raggiunto;}
+\iconrow{\faBalanceScale}{il \textbf{danno} è una qualificazione giuridica: richiede che sia avvenuto un peggioramento \textbf{e} che questo sia \textit{causato} dal fatto esaminato (nesso causale).}
+
+\small
+
+Ricordate il Cliente 3, il giudice: un peggioramento
+\textbf{senza deficit} può comunque avere conseguenze rilevanti, anche
+sul piano giuridico.
+
+\takeaway{in queste slide usiamo \textit{deficit} e \textit{peggioramento} per descrivere la prestazione; \textit{danno} resta un termine del linguaggio giuridico.}
+\end{frame}
+
+\begin{frame}{Deficit o peggioramento: dipende dalla domanda}
+\phantomsection\label{deficit-o-peggioramento-dipende-dalla-domanda}
+In ambito forense potrebbe essere necessario valutare un deficit o un
+peggioramento (o entrambi).
+
+Esempio: se lo scopo è valutare capacità di intendere o volere, potrebbe
+essere importante valutare la presenza di deficit (non importa tanto
+quale è l'eziologia, ma se la persona ha un livello che potrebbe
+spiegare l'incapacità o capacità di intendere o volere).
+
+Se lo scopo è valutare una perizia a fini assicurativi, sarebbe
+importante valutare la presenza di un peggioramento in seguito
+all'evento legato all'assicurazione (presupposto clinico del danno in
+senso giuridico).
+
+(la stima di un deficit ha utilità solo se ci dice che c'è stato un
+peggioramento rispetto al livello precedente)
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-1}
+\begin{center}
+  \textbf{Valutare i deficit}
+\end{center}
+
+La storia di GH è piuttosto complessa: alcuni elementi sembrano
+suggerire che i disturbi siano insorti dopo il primo trauma cranico, ma
+il figlio sostiene che il padre sia peggiorato dopo il recente
+incidente.
+
+Nel caso l'interesse sia sul deficit, che però ci interessa \textbf{non}
+è quali dei due eventi abbia potuto causare un eventuale deficit o
+peggioramento cognitivo, ma \textbf{se ci sono elementi che possono
+spiegare il suo comportamento}.
+
+In altre parola, in questo caso l'interesse è capire se la persona ha un
+disturbo cognitivo (indipendentemente dalla causa).
+\end{frame}
+
+\begin{frame}{Significato dei punteggi}
+\phantomsection\label{significato-dei-punteggi}
+Supponiamo di somministrare il test di Linguaggio Figurato 1 di APACS
+(perché siamo soddisfatti di sue Validità e Affidabilità) e supponiamo
+di ottenere il punteggio 10/15 (quindi 75\% di risposte corrette). Cosa
+ci dice questo punteggio? \pause
+
+\begin{center}
+  \textbf{I punteggi ai test in sé sono poco informativi}
+\end{center}
+\pause
+\end{frame}
+
+\begin{frame}{Significato dei punteggi 1/2}
+\phantomsection\label{significato-dei-punteggi-12}
+\begin{center}
+\begin{figure}
+\includegraphics[scale=0.06]{Figures/triangle.png}
+\end{figure}
+\end{center}
+
+I punteggi grezzi sono poco informativi non solo perché i valori
+dipendono dal range dei punteggi (che spesso è arbitrario), ma anche
+perché un punteggio alto o basso dipende molto da quanto il test è
+difficile (o facile).
+
+\textbf{Per trarre informazioni utili, in neuropsicologia i punteggi si confrontano spesso con dei dati di riferimento che ci aiutano a classificare la prestazione}.
+
+\vspace{1em}
+\footnotesize
+
+È lo stesso motivo per cui un 25 ad un esame universitario può essere un
+voto molto alto per un esame difficile, ma piuttosto basso per un esame
+facile: lo stesso numero, a seconda del ``gruppo di riferimento'' (la
+difficoltà dell'esame/test), ha un significato molto diverso.
+\end{frame}
+
+\begin{frame}{Significato dei punteggi 2/2}
+\phantomsection\label{significato-dei-punteggi-22}
+\begin{center}
+\includegraphics[width=0.88\textwidth]{Figures/norm_punteggio_20.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Lo stesso punteggio (20) in due gruppi di riferimento simulati: a
+sinistra cade nella coda \textbf{bassa} della distribuzione, a destra
+nella coda \textbf{alta}. Il punteggio acquista significato solo nel
+confronto con un gruppo di riferimento.
+\end{frame}
+
+\begin{frame}{Trasformazione punteggi e cut-off 2/2}
+\phantomsection\label{trasformazione-punteggi-e-cut-off-22}
+\begin{center}
+\begin{figure}
+\includegraphics[scale=0.06]{Figures/triangle.png}
+\end{figure}
+\end{center}
+
+Per trasformare i punteggi ad un test cognitivo in qualcosa di
+interpretabile e utile spesso si effettua una trasformazione dal
+punteggio grezzo \underline{alla percentuale di popolazione}
+\underline{che ottiene quel punteggio}.
+
+Tra i punteggi trasformati dati spesso rivestono particolare rilevanza
+delle soglie specifiche, chiamate \textbf{cut-off}, che nella versione
+più diffusa, delimita il 5\% delle prestazioni peggiori.
+\end{frame}
+
+\begin{frame}{Due vie equivalenti per il confronto con una soglia}
+\phantomsection\label{due-vie-equivalenti-per-il-confronto-con-una-soglia}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{Figures/norm_due_vie_soglia.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Trasformare il punteggio in percentuale e confrontarlo con una soglia
+percentuale (via 1), oppure confrontare il punteggio grezzo con una
+soglia espressa sulla stessa scala (via 2), porta alla \textbf{stessa
+classificazione}.
+\end{frame}
+
+\begin{frame}{Cut-off e statistica}
+\phantomsection\label{cut-off-e-statistica}
+Anche se spesso non è chiaro, il confronto di un punteggio con un
+cut-off si configura come l'applicazione di un \textbf{test statistico}
+per arrivare ad una decisione (inferenza statistica).
+
+I test statistici utilizzati in contesto clinico e forense sono spesso
+non convenzionali perché \emph{applicati al caso singolo} (mentre gran
+parte della statistica inferenziale stima effetti medi riferiti a
+gruppi).
+\end{frame}
+
+\begin{frame}{Dati normativi e cut-off}
+\phantomsection\label{dati-normativi-e-cut-off}
+I cut-off sono un punteggio-soglia al di sotto del quale la prestazione
+è considerata deficitaria e (a seconda del contesto) il riflesso di un
+peggioramento cognitivo.
+
+I cut-off vengono calcolati a partire dai dati normativi e spesso
+corrisponde al \textbf{5\% dei punteggi peggiori}
+
+Spesso i cut-off sono riportati in tabelle, indipendentemente dal metodo
+usato per calcolarli. Di recente sono sempre più diffusi software che
+trasformano i punteggi e confrontano in maniera automatica con i
+cut-offs.
+\end{frame}
+
+\begin{frame}{Esempio di cut-off riportati in tabelle}
+\phantomsection\label{esempio-di-cut-off-riportati-in-tabelle}
+\begin{center}
+\includegraphics[width=0.9\linewidth,height=\textheight,keepaspectratio]{Figures/cutoff_humor.png}
+\end{center}
+
+\begin{flushright}
+  Da APACS (Arcara \& Bambini, 2016)
+\end{flushright}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-2}
+\begin{center}
+  \textbf{I  cut-off e i dati normativi}
+\end{center}
+
+I dati normativi sono dati raccolti su soggetti che assumiamo siano
+normali. Servono a stabilire quali prestazioni possiamo considerare
+normali e quali no. \vspace{2em}
+
+Chiamiamo \textbf{cut-off di normalità} la soglia che divide i punteggi
+considerati ``nella norma'' da quelli considerati ``deficitari''
+(Mondini, Mapelli, \& Arcara, 2022).
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-3}
+\begin{center}
+  \textbf{I  cut-off e i dati normativi}
+\end{center}
+
+Sebbene cut-off e dati normativi siano utilizzati quotidianamente in
+neuropsicologia clinica, spesso c'è una conoscenza superficiale e
+confusa del loro significato. \vspace{2em}
+
+Questa superficialità si ripercuote nelle conclusioni tratte dai
+risultati ai test.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-4}
+\begin{center}
+  \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
+\end{center}
+
+Esempio:
+
+Ci viene chiesto (in contesto clinico o forense) di effettuare una
+valutazione neuropsicologica di un paziente con autismo grave coinvolto
+in un reato.
+
+\emph{Qual potrebbe essere in questo caso lo scopo della valutazione
+neuropsicologica?} \pause
+
+Valutare se c'è deficit cognitivo che può avere influito sul commettere
+il reato o, in generale classificare la sua performance e valutare le
+sue abilità.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-5}
+\begin{center}
+  \textbf{Il razionale alla base dell’utilizzo dei dati normativi in caso di interesse al deficit}
+\end{center}
+
+Nel caso dell'interesse di valutare il livello funzionale, lo scopo è
+valutare il livello della persona: se troppo basso inferiamo che c'è un
+deficit.
+
+Nel caso di utilizzo di test neuropsicologici per l'età evolutiva o
+nella ricerca di possibili disturbi legati allo sviluppo,
+l'interpretazione è, stimiamo, se la persona sta avendo una prestazione
+che è in linea con il suo sviluppo.
+
+Se è troppo bassa inferiamo che ci sia stato un deficit nello sviluppo.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-6}
+\begin{center}
+  \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
+\end{center}
+
+Esempio:
+
+Ci viene chiesto (in contesto clinico o forense) di effettuare una
+valutazione neuropsicologica di un paziente con trauma cranico.
+
+\emph{Quale è in questo caso lo scopo della valutazione
+neuropsicologica?} \pause
+
+Valutare se è avvenuto un \textbf{cambiamento} (un peggioramento
+cognitivo), non valutare le abilità del soggetto in sè.
+\end{frame}
+
+\begin{frame}{Utilizzo dei dati normativi per inferire un peggioramento}
+\phantomsection\label{utilizzo-dei-dati-normativi-per-inferire-un-peggioramento}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+
+\emph{Nel caso di un ipotetico peggioramento, se avessimo i punteggi ai
+test neuropsicologici prima dell'evento lesivo, potremmo confrontarli
+con quelli del nostro paziente e vedere se c'è stato un peggioramento in
+seguito al trauma.}
+
+Dal momento che questa informazione non è praticamente mai disponibile,
+stimiamo il punteggio atteso nel/lla paziente da persone che siano
+simili a lui/lei (quindi con i dati normativi).
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-7}
+\begin{center}
+  \textbf{Il razionale alla base dell’utilizzo dei dati normativi}
+\end{center}
+
+In particolare: se il punteggio del paziente è molto più basso di quello
+che ottengono generalmente persone che sono simili a lui, inferiamo che
+c'è un deficit oppure che c'è stato un cambiamento nel tempo cioè che il
+paziente ha subito un peggioramento cognitivo.
+
+Per convenzione (e semplicità) definiamo le persone simili a lui sulla
+base di età e scolarità (ma è possibile includere anche altre
+variabili). In genere questi dati sono già forniti da chi crea il test
+sotto forma di \textbf{dati normativi}.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-8}
+\begin{center}
+  \textbf{Diversi concetti di normalità}
+\end{center}
+
+I soggetti che fanno parte dei dati normativi assumiamo che siano
+normali, nel senso di autonomi nella vita quotidiana e in assenza di
+deficit cognitivi conclamati.
+
+Quando utilizziamo compariamo un punteggio con i dati normativi e
+concludiamo che sono nella norma, facciamo un'inferenza statistica a
+partire dai punteggi.
+
+Spesso in neuropsicologia si fa riferimento alla curva normale (o
+gaussiana) che è una distribuzione con certe proprietà statistiche note
+molto utili.
+
+\begin{center}
+  \textbf{Sono tre diversi concetti di «normalità»}
+\end{center}
+\end{frame}
+
+\begin{frame}{Il concetto di normalità nei dati normativi}
+\phantomsection\label{il-concetto-di-normalituxe0-nei-dati-normativi}
+\small
+
+Da slides precedente ``\emph{I soggetti che fanno parte dei dati
+normativi assumiamo che siano \textbf{normali}, nel senso di autonomi
+nella vita quotidiana e in assenza di deficit cognitivi conclamati.}''
+Ma cosa significa esattamente e in che senso ``normali''?
+
+Teoricamente è riportato con estremo dettaglio cosa si è inteso per
+normali. Spesso si intende: autonomi nella vita quotidiana, privi di
+patologie conclamate che possono influenzare la cognizione (es. malattie
+neurodegenerative o schizofrenia, o disturbi nel neurosviluppo).
+
+In certi casi possono essere più stringenti (es. sopra i 65 anni vengono
+richiesti esami medici che escludano segni demenza, es. risonanza,
+etc.). A volte anche si riporta testing cognitivo (es. MoCA
+\textgreater{} 20). Quest'ultimo però è un aspetto un po' insidioso,
+perché i test usati potrebbero a loro volta sbagliare e quindi creare
+bias nei dati normativi o circolarità. D'altra parte senza test il
+rischio è inserire nel dataset persone che hanno patologie degenerative
+in corso.
+\end{frame}
+
+\begin{frame}{Tre aspetti fondamentali sui dati normativi 1/3}
+\phantomsection\label{tre-aspetti-fondamentali-sui-dati-normativi-13}
+\begin{columns}
+\column{0.8\textwidth}
+
+\textbf{I dati normativi servono per stimare e classificare la prestazione che ci aspetterebbe da un certo individuo tramite i dati di persone che sono simili all’individuo da valutare.}
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Tre aspetti fondamentali sui dati normativi 2/3}
+\phantomsection\label{tre-aspetti-fondamentali-sui-dati-normativi-23}
+\begin{columns}
+\column{0.8\textwidth}
+
+\textbf{Il fatto che una prestazione sia al di sotto del cut-off di normalità può avere significato o importanza diversa a seconda del contesto e della domanda.}
+\vspace{1em}
+
+\small
+a) Nel caso di indagine di un disturbo dello sviluppo una performance al di sotto del cut-off è interessante in sé, indicandoci un \textbf{deficit}.
+
+b) nel caso di sospetto di malattia o disturbo acuto nell’adulto viene usata in genere per fare un’inferenza su un \textbf{peggioramento} nello stato cognitivo del paziente rispetto ad un evento che può avere una precisa collocazione temporale (es. ictus) oppure no (es. un deterioramento con un decorso legato alla malattia di Alzheimer).
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Tre aspetti fondamentali sui dati normativi 3/3}
+\phantomsection\label{tre-aspetti-fondamentali-sui-dati-normativi-33}
+\begin{center}
+  \textbf{Tre aspetti fondamentali su cut-off e dati normativi (3)}
+\end{center}
+\vspace{1em}
+
+\begin{columns}
+\column{0.8\textwidth}
+\small
+
+\textbf{In Neuropsicologia forense, l’interesse nel deficit o nel peggioramento, dipende dal contesto e dalla domanda:}
+\vspace{1em}
+
+\small
+a) nel caso di una perizia per valutare un danno in seguito ad un evento (es. perizia per valutare disturbi cognitivi in seguito ad un trauma cranico), il confronto con dati normativi è utile per inferire un peggioramento rispetto alla condizione pre-esistente (presupposto clinico del danno)
+
+b) in caso di valutazioni per valutare il livello del paziente indipendentemente dalla causa (es. valutare capacità di intendere e volere) allora è interessante usare i dati normativi per una classificazione della performance in sé.
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Raccolta di dati normativi}
+\phantomsection\label{raccolta-di-dati-normativi}
+\begin{center}
+\begin{tikzpicture}
+
+% --- Figura dal libro "Oltre i punteggi" (fig-costruzione-istogramma) ---
+\node[inner sep=0pt] (img) at (0,0) {\includegraphics[height=0.72\textheight]{Figures/norm_costruzione_istogramma.png}};
+
+% i pannelli compaiono uno alla volta (a, b, c, d)
+% Top-left
+\only<1>{\fill[white] (img.north west) rectangle (img.center);}
+
+% Top-right
+\only<1-2>{\fill[white] (img.north) rectangle (img.east);}
+
+% Bottom-left
+\only<1-3>{\fill[white] (img.west) rectangle (img.south);}
+
+% Bottom-right
+\only<1-4>{\fill[white] (img.center) rectangle (img.south east);}
+
+
+\end{tikzpicture}
+\end{center}
+\onslide<5> % <-- forces slide 5 to exist
+La linea verticale indica il \textbf{cut-off di normalità}.
+
+\pause
+\end{frame}
+
+\begin{frame}{Il significato di cut-off di normalità}
+\phantomsection\label{il-significato-di-cut-off-di-normalituxe0}
+\begin{columns}
+\column{0.8\textwidth}
+
+Il cut-off è un punteggio particolarmente basso che osserviamo in pochi soggetti normali e che pertanto inferiamo sia segno di un deficit (o di un peggioramento) cognitivo.
+\vspace{1em}
+
+In genere il cut-off è definito (arbitrariamente) come il valore che delimita il 5\% dei punteggi più bassi.
+\vspace{1em}
+
+NOTA: Il cut-off NON ci indica la probabilità che il soggetto sia normale o abbia un deficit cognitivo (vedi Bayes, è una differenza un po’ sottile)
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Classificare rispetto alla soglia}
+\phantomsection\label{classificare-rispetto-alla-soglia}
+\begin{center}
+\includegraphics[width=0.88\textwidth]{Figures/norm_classificazione_soglia.png}
+\end{center}
+
+\vspace{-0.5em}
+\small
+
+Un punteggio sopra la soglia è classificato come ``prestazione nella
+norma'', uno sotto la soglia come ``prestazione deficitaria''. La
+classificazione dipende solo dalla posizione rispetto alla soglia.
+\end{frame}
+
+\begin{frame}{Prestazione deficitaria: una precisazione importante}
+\phantomsection\label{prestazione-deficitaria-una-precisazione-importante}
+Per come è definita la soglia, una certa percentuale di soggetti
+\textbf{sani} (compresi alcuni del campione normativo) otterrà, per
+definizione, punteggi classificati come ``prestazione deficitaria''.
+
+\pause
+\vspace{1em}
+
+Non è un'anomalia, ma una conseguenza inevitabile del criterio usato per
+stabilire la soglia (circa il 5\%, se quella è la soglia scelta).
+
+\vspace{1em}
+
+``Prestazione deficitaria'' non implica quindi automaticamente un vero
+deficit --- un termine più neutro sarebbe ``prestazione al di sotto
+della soglia di normalità''; se sia un deficit o no è una questione di
+\textbf{interpretazione} (vedi capitolo su Interpretazione).
+\end{frame}
+
+\begin{frame}{Un fondamentale aspetto sull'utilizzo dei dati normativi.}
+\phantomsection\label{un-fondamentale-aspetto-sullutilizzo-dei-dati-normativi.}
+\begin{columns}
+\column{0.8\textwidth}
+
+\small
+Nella mia definizione di dati normativi un elemento importante è che il confronto deve essere effettuate con persone simili alla persona che devo testare.
+\vspace{1em}
+
+Ma come definire se sono simili?
+\vspace{1em}
+
+Come potremmo definire la popolazione adeguata per un confronto normativo di GH?
+Per GH sono gli italiani con età tra 65 e 70 anni?
+Gli italiani che hanno esattamente 68 anni e che come GH hanno fatto solo le scuole elementari? Che lavorano come contadini?
+\vspace{1em}
+
+\textbf{Non esiste un criterio univoco per definire cosa significhi essere simili, ma più sono gli elementi di somiglianza migliore sarà il nostro confronto}
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Deficit o peggioramento?}
+\phantomsection\label{deficit-o-peggioramento}
+\small
+
+In questo caso l'adeguatezza del confronto può dipendere dal tipo di
+domanda: \textbf{classificare la prestazione (cioè stimare un deficit)
+oppure stimare un peggioramento}.
+
+Se voglio \textbf{classificare GH rispetto ai suoi pari} (es. il suo
+deficit non dipende dall'incidente) potrei semplicemente usare le
+persone di 68 anni. Questo perché mi direbbe che, in generale, rispetto
+alle persone con 68 anni ha prestazioni peggiori.
+
+Se voglio \textbf{capire se GH ha avuto un peggioramento} in seguito
+all'incidente, allora dovrei usare i dati normativi quanto più simili al
+suo stato nel momento in cui ha subito l'ipotetica lesione, per capire
+se è avvenuto un cambiamento
+
+\emph{Spesso, nonostante le diverse possibilità teoriche nel confronto
+si sceglie il dato normativo più simile possibile all'individuo
+valutato.}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-9}
+\begin{center}
+  \textbf{Un altro aspetto fondamentale su cut-off e dati normativi}
+\end{center}
+\vspace{2em}
+
+\begin{columns}
+\column{0.8\textwidth}
+
+A livello di operazioni da svolgere, la stima di un deficit vs la stima di un peggioramento sono simili a livello statistico: entrambe implicano il confrontare la prestazione con i dati normativi (vedi slides precedente per scelta appropriata del confronto).
+
+Quello che cambia è l’\textbf{interpretazione} (vedi slides su Interpretazione) che in un caso può essere quella di un deficit, in un caso quella di un peggioramento.
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Una riflessione su confronto con dati normativi}
+\phantomsection\label{una-riflessione-su-confronto-con-dati-normativi}
+\begin{columns}
+\column{0.8\textwidth}
+
+Questo è molto importante a livello forense, perché la performance del test confrontata con i cut-off in sé non ci dice se il paziente è peggiorato prima dell’evento rilevante (es. il paziente ha deficit per il TBI) oppure se è un deficit già presente (è un disturbo di neurosviluppo). 
+
+\textbf{Il confronto col cut-off ci dice che osservare quella prestazione è molto improbabile, se il paziente fosse sano (come le persone dei dati normativi).}
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Uno o più cut-off? 1/2}
+\phantomsection\label{uno-o-piuxf9-cut-off-12}
+\small
+
+Una volta che si possiede una distribuzione di dati di riferimento è
+possibile in generale classificare la presentazione rispetto all'intera
+distribuzione (questo può dipendere dal metodo con cui sono analizzati i
+dati).
+
+Ad esempio è possibile dire se la persona ha una performance più bassa
+del 20\% o il 30\% rispetto al campione/popolazione di riferimento
+(approfondimento nelle slides: Confronto con dati normativi - Formule).
+
+L'assenza di soglie ci porta però (da un punto di vista concettuale) ad
+un rischio del
+\href{https://it.wikipedia.org/wiki/Paradosso_del_sorite}{\ul{paradosso
+del mucchio}}.
+
+Non è possibile definire chiaramente quando si passa da normalità a
+quando si passa alla presenza di un ``deficit''. Il paradosso del
+mucchio ci insegna che \textbf{le categorie a partire da una variabile
+continua sono e saranno sempre arbitrarie}.
+\end{frame}
+
+\begin{frame}{Uno o più cut-off? 2/2}
+\phantomsection\label{uno-o-piuxf9-cut-off-22}
+Il fatto di avere una soglia decisionale, per quanto arbitraria, ha però
+delle utilità euristiche. Dovremo decidere ad un certo punto se c'è un
+problema oppure no e questo tendenzialmente ci porta ad utilizzare
+soglie categoriali.
+
+Si veda per esempio
+\href{https://journals.sagepub.com/doi/full/10.1177/09593543231160112}{\underline{questo articolo}}
+per un approfondimento sul valore epistemico di scelte dicotomiche, che
+ben si applica a questo caso.
+\end{frame}
+
+\begin{frame}{Perché questo modo ``contorto'' di definire deficit e
+peggioramento?}
+\phantomsection\label{perchuxe9-questo-modo-contorto-di-definire-deficit-e-peggioramento}
+Il modo in cui definiamo deficit e peggioramento (a partire da soggetti
+normali) potrebbe sembrare contorto. Perché dobbiamo basarci su questo
+metodo?
+
+Se avessimo un criterio oggettivo (es. lesione cerebrale) su cui
+basarci, sarebbe concettualmente più semplice. Potremmo usare quello e
+usare i test neuropsicologici come strumenti per identificare questo
+tipo di lesione (entreremmo nel reame della validità di criterio,
+sensibilità, specificità, etc. vedi slides su Validità e slides su
+Sensibilità e Specificità).
+\end{frame}
+
+\begin{frame}{Perché questo modo ``contorto'' di definire deficit e
+peggioramento?}
+\phantomsection\label{perchuxe9-questo-modo-contorto-di-definire-deficit-e-peggioramento-1}
+Il problema è metodologico/epistemologico. Come possiamo definire un
+deficit?
+
+Come possiamo essere certi che ci sia un deficit cognitivo?
+
+Il problema è che non è possibile definire in maniera non circolare il
+deficit cognitivo e per tale ragione usiamo questo metodo \emph{alla
+rovescia}. Definiamo cosa è l'\textbf{assenza di deficit cognitivo} (su
+base normativa), e inferiamo la presenza di deficit a partire da questo.
+\end{frame}
+
+\begin{frame}{Perché questo modo ``contorto'' di definire deficit e
+peggioramento?}
+\phantomsection\label{perchuxe9-questo-modo-contorto-di-definire-deficit-e-peggioramento-2}
+Il problema è in questo caso di assenza di dati precedenti che mi
+possano aiutare a capire se c'è stato un effettivo peggioramento
+cognitivo.
+
+Usare un dato osservabile (es. lesione cerebrale) sarebbe rischioso e
+limitante. In molti casi può esserci un peggioramento cognitivo senza
+apparente lesione cerebrale o viceversa (es. nel trauma cranico).
+\end{frame}
+
+\begin{frame}{Perché questo modo ``contorto'' di definire deficit e
+peggioramento?}
+\phantomsection\label{perchuxe9-questo-modo-contorto-di-definire-deficit-e-peggioramento-3}
+In tal caso stimiamo la presenza di un peggioramento se la persona ha un
+punteggio anomalo rispetto al campione normativo. In questo caso il
+passaggio è doppio:
+
+\begin{enumerate}
+[a)]
+\item
+  Sto assumendo che la persona è ben rappresentata dal campione
+  normativo
+\item
+  sto inferendo che se la sue performance è bassa, probabilmente c'è
+  stato un peggioramento.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Perché questo modo ``contorto'' di definire deficit e
+peggioramento?}
+\phantomsection\label{perchuxe9-questo-modo-contorto-di-definire-deficit-e-peggioramento-4}
+Il fatto di inferire un \textbf{peggioramento} a partire dal confronto
+con i dati normativi è una strategia per compensare il fatto che non
+abbiamo dati precedenti al sospetto evento che potrebbe avere causato il
+peggioramento.
+
+Ma attenzione a ricordare che l'uso è solo una strategia con i suoi
+limiti, basata su una stima attesa della performance del paziente.
+\end{frame}
+
+\begin{frame}{Una nota sull'inferire un peggioramento: Esempio 1}
+\phantomsection\label{una-nota-sullinferire-un-peggioramento-esempio-1}
+Supponiamo di avere un test in cui il cut-off è 10 (5\%) con elevata
+affidabilità e nessun effetto pratica. Supponiamo di testare un paziente
+con trauma cranico per valutare un eventuale peggioramento.
+
+Il paziente ha ottenuto 14 (sopra il cut-off).
+
+Potrebbe essere che prima dell'evento aveva un punteggio di 20 e il
+punteggio di 14 potrebbe riflettere un cambiamento non colto dal
+confronto con il cut-off di 10 (vedi anche slides valutare il
+cambiamento nel tempo).
+\end{frame}
+
+\begin{frame}{Una nota sull'inferire un peggioramento: Esempio 2}
+\phantomsection\label{una-nota-sullinferire-un-peggioramento-esempio-2}
+Supponiamo di avere un test in cui il cut-off è 10 (5\%) con elevata
+affidabilità e nessun effetto pratica. Supponiamo di testare un paziente
+con trauma cranico per valutare un eventuale peggioramento.
+
+Il paziente ha ottenuto 8 (sotto il cut-off).
+
+Il paziente aveva 8 anche prima del trauma cranico, in realtà non è
+peggiorato (vedi anche slides valutare il cambiamento nel tempo).
+\end{frame}
+
+\begin{frame}{Una nota sull'inferire un peggioramento}
+\phantomsection\label{una-nota-sullinferire-un-peggioramento}
+\small
+
+Il cut-off non era adeguato perché il nostro paziente testato era un
+paziente con prestazione presumibilmente già estrema (molto alta o
+bassa) rispetto ai dati normativi.
+
+Per la \textbf{valutazione di un peggioramento} i dati normativi
+funzionano bene (per come sono disegnati) se la persona è ben
+rappresentata da essi e se non aveva (prima dell'ipotetico evento
+lesivo), già una prestazione agli estremi (bassa o alta).
+
+\emph{In assenza di ogni altra informazione}, questa è un'assunzione
+ragionevole.
+
+Assumiamo che la nostra persona abbia avuto (prima dell'evento) una
+prestazione analoga alla maggior parte delle persone simili a lui. Altre
+informazioni (es. da anamnesi, da aspetti qualitativi, da storia
+personale), potrebbero suggerire che invece la persona non è ben
+rappresentata.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-10}
+\begin{center}
+  \textbf{Una nota sull'inferire un peggioramento}
+\end{center}
+
+Il fatto di avere un punteggio sotto (o sopra) cut-off è solo
+un'informazione legata ad alcune \emph{probabilità} (poche persone
+simili al paziente testato ottengono questa performance), ma le
+conclusioni che ne traiamo sono \emph{interpretazioni}.
+
+Altre informazioni a disposizione potrebbero farci propendere per una o
+l'altra interpretazione, se sono sufficientemente forti per farci
+ritenere che il confronto con i dati normativi non è adeguato o dovrebbe
+essere rivisto.
+
+Ovviamente questo ragionamento non delegittima il confronto con i
+cut-off (che rimane uno strumento solido), ma ne sottolinea alcuni
+potenziali limiti.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-11}
+\begin{center}
+  \textbf{Uno o più cut-off?}
+\end{center}
+
+Per questo motivo e per motivi di praticità spesso il fatto di
+concludere che c'è un deficit o un peggioramento è legato al cut-off di
+normalità citato in precedenza.
+
+Per un neuropsicologo clinico forense, laddove sia possibile a partire
+dai metodi statistici a disposizione è comunque utile sapere la
+classificazione esatta (es. 20\%, 14\% della popolazione di riferimento
+e non semplicemente sopra/sotto cut-off) perché potrebbe essere comunque
+utile e informativa.
+
+Es. una performance che delimita è al 5.1\% del campione/popolazione di
+riferimento, sarebbe comunque sopra cut-off (esattamente come una al
+95\%).
+\end{frame}
+
+\begin{frame}{Come si calcolano i cut-offs?}
+\phantomsection\label{come-si-calcolano-i-cut-offs}
+\begin{itemize}
+\tightlist
+\item
+  Metodi parametrici (Media, deviazione standard e Z score)
+\item
+  Metodi non parametrici
+\item
+  Altri metodi (regressioni)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-12}
+\begin{center}
+  \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
+\end{center}
+
+\begin{enumerate}
+[1)]
+\item
+  \textbf{Media e deviazione standard}. Se la distribuzione è normale
+  possiamo calcolare il cut-off del 5\% dei punteggi più bassi, come
+  1.64 deviazioni standard sotto la media.
+\item
+  \textbf{Z-score}. Metodo analogo al precendete. Se trasformiamo i dati
+  in punti \(Z\), un punteggio pari a -1.64 indica il cut-off dei 5\%
+  dei punteggi più bassi.
+\end{enumerate}
+
+\[
+Z = \frac{X - M}{SD}
+\] \[
+\small
+\begin{aligned}
+X & = \text{punteggio ottenuto dal soggetto} \\
+M & = \text{media del gruppo di riferimento} \\
+SD & = \text{deviazione standard del gruppo di riferimento} \\
+\end{aligned}
+\]
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-13}
+\begin{center}
+  \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
+\end{center}
+\vspace{1em}
+
+\begin{center}
+\includegraphics[width=0.58\linewidth,height=\textheight,keepaspectratio]{Figures/gaussiana.png}
+\end{center}
+\small \emph{NOTA}: riferirci alla curva normale e alla trasformazione
+in punti \(Z\) ci aiuta ad identificare percentili, cioè valori che
+delimitano percentuali di dati.
+
+\emph{I metodi parametrici possono essere usati con sicurezza solo se la
+distribuzione è normale (gaussiana)}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-14}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{center}
+\textbf{distribuzione normale}
+\end{center}
+\vspace{1em}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/distr_norm.png}
+\end{figure}
+\textbf{ }
+
+\column{0.5\textwidth}
+
+\begin{center}
+\textbf{distribuzione non-normale}
+\end{center}
+\vspace{1em}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/distr_nonnorm.png}
+\end{figure}
+
+\begin{center}
+test con \textbf{effetto soffitto}
+\end{center}
+
+\end{columns}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-15}
+\begin{columns}
+\column{0.8\textwidth}
+Se si usano i punti z con distribuzioni non normali, la corrispondenza tra specifici punteggi z e percentuali può non essere rispettata.
+\vspace{2em}
+
+Ad esempio -1.64 può non corrispondere al valore che delimita 5\% dei punteggi più bassi, portando al calcolo di cut-off sbagliati.
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-16}
+\begin{center}
+  \textbf{PARENTESI}
+  
+  \textbf{Standardizzare (trasformare in z-score) a volte è anche detto "normalizzare", ma non rende la distribuzione \textit{normale}!}
+\end{center}
+
+\begin{center}
+\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{Figures/distribuzioni_normalizzate.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-17}
+\begin{center}
+  \textbf{Metodi non parametrici (base) per il calcolo dei cut-off}
+\end{center}
+\vspace{2em}
+
+I \textbf{percentili non parametrici} sono il metodo più diffuso di
+calcolo dei cut-off nel caso di distribuzioni non normali.
+
+Lo svantaggio dell'utilizzo di percentili è che non è possibile usare
+formule rapide per ricavare cut-off a diverse percentili (ad esempio il
+20\% dei punteggi peggiori) ma è necessario avere a disposizione tutti i
+dati.
+\end{frame}
+
+\begin{frame}{Confronto con dati normativi}
+\phantomsection\label{confronto-con-dati-normativi-18}
+\begin{center}
+  \textbf{Altri metodi (avanzati) per il calcolo dei cut-off}
+\end{center}
+\vspace{1em}
+
+Esistono altri metodi per il calcolo dei cut-off. La maggior parte
+prevedono l'uso di regressioni.
+
+Il vantaggio, rispetto a metodi che prevedono la divisione in fasce è
+che con questi metodi \textbf{non avviene una stratificazione
+arbitraria}.
+
+Esempi:
+
+\begin{itemize}
+\item
+  metodo dei Punteggi Equivalenti (Capitani \& Laiacona, 2007)
+\item
+  Alcuni metodi di Crawford (Crawford \& Howell, 1998; Crawford \&
+  Garthwaite, 2006)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Campione e Popolazione nei dati normativi}
+\phantomsection\label{campione-e-popolazione-nei-dati-normativi}
+I dati normativi sono i dati raccolti da un \textbf{campione}
+proveniente da una \textbf{popolazione}.
+
+L'interesse è però sempre confrontare la prestazione osservata con i
+dati della popolazione. Alcuni metodi tengono conto di questa
+differenza, fornendo dei cut-off che sono una stima di quelli che si
+osserverebbero nella popolazione.
+
+\textbf{Questi cut-off sono spesso più bassi} (meno restrittivi).
+
+Il metodo dei \textbf{Punteggi Equivalenti} (Capitani e Laiacona, 2007)
+e il metodo di \textbf{Crawford} (Crawford \& Howell, 1998; Crawford \&
+Garthwaite, 2006) tengono conto di questa differenza. Tali metodi sono
+da considerarsi più corretti.
+\end{frame}
+
+\begin{frame}{Variabili demografiche nei dati normativi}
+\phantomsection\label{variabili-demografiche-nei-dati-normativi}
+I dati normativi sono spesso calcolati separatamente per età e scolarità
+o altre variabili demografiche, per poter confrontare adeguatamente la
+prestazione di un determinato individuo.
+
+I metodi che utilizzano regressioni cercano di modellare l'effetto di
+età e scolarità e tenerne conto.
+\end{frame}
+
+\begin{frame}{Variabili demografiche nei dati normativi}
+\phantomsection\label{variabili-demografiche-nei-dati-normativi-1}
+I metodi «base» descritti di solito dividono il campione in vari
+sotto-campioni e calcolano diversi cut-off per ciascun sotto-campione.
+
+\begin{itemize}
+\item
+  In genere sono forniti valori separati per diverse combinazioni di età
+  e scolarità, suddivise in fasce.
+\item
+  Possono essere fornite (ma raramente) tabelle di correzioni, o a volte
+  singole correzioni (ad esempio +2 per scolarità \textless= 8).
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Variabili demografiche nei dati normativi}
+\phantomsection\label{variabili-demografiche-nei-dati-normativi-2}
+I metodi che utilizzano regressioni non suddividono il campione totale.
+In genere forniscono i cut-off in diverse modalità.
+
+\begin{itemize}
+\item
+  Un singolo cut-off e tabelle di correzione.
+\item
+  Un singolo cut-off e formule incomprensibili per calcolare la
+  correzione.
+\item
+  Tabelle con diversi cut-off, per le varie combinazioni di età,
+  scolarità o sesso.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Variabili demografiche nei dati normativi}
+\phantomsection\label{variabili-demografiche-nei-dati-normativi-3}
+\begin{center}
+\includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{Figures/cutoff_humor.png}
+\end{center}
+
+\[
+\scalebox{0.85}{$
+sd_{Y_i-\hat{Y_i}} = \frac{SE_{Y-\hat{Y}}}{\sqrt{n}}\sqrt{n+1+\frac{z_{i,age}^2}{1-R_{age}^2}+\frac{z_{i,education}^2}{1-R_{i,education}^2}-2\frac{\beta_{education,age}z_{i,age}z_{i,education}}{1-R_{education}^2}}
+$}
+\]
+\end{frame}
+
+\begin{frame}{Quale è il metodo migliore per il calcolo dei cut-off?}
+\phantomsection\label{quale-uxe8-il-metodo-migliore-per-il-calcolo-dei-cut-off}
+\pause
+
+Dipende.
+
+\pause
+
+Metodi che utilizzano distinizione campione/popolazione sono
+preferibili.
+
+Attenzione all'uso indiscriminato dei punti-z (se non è nota la
+distribuzione punteggi)
+
+Attenzione ai test che usano metodi basati su regressioni. Talvolta
+possono portare a stime distorte, specie per valori delle variabili (età
+e scolarità) che sono estremi (es. bassa scolarità o alta età).
+\end{frame}
+
+\begin{frame}{Riepilogo su dati normativi e cut-off}
+\phantomsection\label{riepilogo-su-dati-normativi-e-cut-off}
+\small
+
+\begin{itemize}
+\item
+  I dati normativi servono per stimare la prestazione che ci
+  aspetterebbe da un certo individuo tramite i dati di persone che sono
+  simili all'individuo da valutare.
+\item
+  Il confronto con dati normativi è fatto per effettuare un'inferenza su
+  un possibile deficit cognitivo (acquisito o evolutivo) o un
+  peggioramento dello stato cognitivo del paziente. Spesso i metodi
+  usati sono uguali, quello che cambia è l'interpretazione
+\item
+  Il cut-off (in senso generale) è definito come il valore che delimita
+  il 5\% dei punteggi più bassi.
+\item
+  Esistono vari modi di calcolare i cut-off
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Aspetti da considerare nell'utilizzo dei dati normativi}
+\phantomsection\label{aspetti-da-considerare-nellutilizzo-dei-dati-normativi}
+Come principio generale, per stimare correttamente la prestazione del
+mio soggetto (e rendere sensato il confronto con i dati normativi), i
+dati normativi devono essere rappresentativi. Di seguito sono esaminate
+alcune comuni domande.
+\end{frame}
+
+\begin{frame}{Aspetti da considerare nell'utilizzo dei dati normativi
+(1)}
+\phantomsection\label{aspetti-da-considerare-nellutilizzo-dei-dati-normativi-1}
+\textbf{1) Utilizzare dati normativi aggiornati} \vspace{2em}
+
+Dati normativi raccolti molti anni fa possono non essere adeguati.
+Questo è legato al cosiddetto Flynn effect (Flynn, 1987; Williams, 2013)
+\end{frame}
+
+\begin{frame}{Aspetti da considerare nell'utilizzo dei dati normativi
+(2)}
+\phantomsection\label{aspetti-da-considerare-nellutilizzo-dei-dati-normativi-2}
+\textbf{2) Specie per inferire un peggioramento è importante che gli
+individui dei campioni normativi siano simili all'individuo da valutare.
+(campione ampio, ma non simile non è utile).} \vspace{2em}
+
+Un campione molto numeroso ma poco rappresentativo non è utile.
+\end{frame}
+
+\begin{frame}{Aspetti da considerare nell'utilizzo dei dati normativi}
+\phantomsection\label{aspetti-da-considerare-nellutilizzo-dei-dati-normativi-3}
+\begin{columns}
+\column{0.8\textwidth}
+\small
+\textbf{3) Utilizzare dati normativi paese-specifici.}
+\vspace{1em}
+
+Non si può stimare la prestazione a partire dai dati di soggetti che provengono da altri paesi. \textbf{Non basta tradurre un test per renderlo utilizzabile.}
+
+Non è solo un fattore di lingua e di adattamento (che già minano la validità del test) ma anche legato ad aspetti socioculturali che possono rendere i dati normativi non adeguati. Non basta avere stessa età e la scolarità a rendere un soggetto comparabile con dati normativi.
+L’iniziale diffusione del \textbf{MoCA} (Nasreddine et al., 2005) in Italia, è un caso lampante di questa prassi profondamente scorretta.
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Aspetti da considerare nell'utilizzo dei dati normativi}
+\phantomsection\label{aspetti-da-considerare-nellutilizzo-dei-dati-normativi-4}
+\begin{columns}
+\column{0.8\textwidth}
+\small
+\textbf{3) Utilizzare dati normativi paese-specifici.}
+\vspace{1em}
+
+Il razionale di uso dati normativi è quello di confrontare la prestazione con prestazione di persone “simili alla persona che intendiamo valutare”. 
+
+Usare norme da altri paesi è già in sé una grande differenza. Confrontando Norme esistenti tra paesi questo può essere verificato empiricamente. Spesso hanno valori di soglia (e cut-offs) molto diversi.
+
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Riassunto}
+\phantomsection\label{riassunto}
+In neuropsicologia clinica e forense spesso siamo chiamati valutare due
+aspetti:
+
+C'è un \textbf{deficit cognitivo} o dobbiamo stimare il livello di
+abilità cognitiva generale del paziente? \emph{Questo è fatto
+confrontando con dati normativi e classificando (spesso con percentuali
+o sopra/sotto norma)}
+
+C'è stato un \textbf{peggioramento cognitivo} (compromissione o
+declino)? Anche questo viene fatto con i dati normativi, ma con una
+serie di assunzioni aggiuntive nell'\underline{interpretazione}.
+
+Ci sono vari metodi matematici (con pro e contro e più o meno robusti),
+per definire i cut-off ed eventuali altre soglie.
+\end{frame}
+
+\section{Riferimenti}\label{riferimenti}
+
+\begin{frame}{Riferimenti}
+\phantomsection\label{riferimenti-1}
+\footnotesize
+
+\begin{itemize}
+\tightlist
+\item
+  Arcara, G. \emph{Oltre i punteggi. Elementi di psicometria e
+  statistica per la neuropsicologia clinica} (cap. ``Dati normativi,
+  deficit e peggioramento''). https://giorgioarcara.github.io/oip-book/
+\item
+  Capitani, E., \& Laiacona, M. (2007). I Punteggi Equivalenti.
+\item
+  Crawford, J. R., \& Garthwaite, P. H. (2006). Comparing single case
+  with normative samples.
+\item
+  Crawford, J. R., \& Howell, D. C. (1998). Comparing an individual's
+  test score with normative samples.
+\item
+  Flynn, J. R. (1987). Massive IQ gains in 14 nations (Flynn effect).
+\item
+  Lezak, M. D., et al.~(2014). \emph{Neuropsychological Assessment.}
+\item
+  Mondini, S., Mapelli, D., \& Arcara, G. (2022). \emph{Semeiotica e
+  diagnosi neuropsicologica.}
+\item
+  Williams, J. (2013). Secular trends in cognitive test performance.
+\item
+  World Health Organization (2013). \emph{How to use the ICF: A
+  practical manual for using the International Classification of
+  Functioning, Disability and Health.}
+\item
+  World Health Organization (2013). \emph{ICF: A practical manual.}
+\end{itemize}
+\end{frame}
+
+
+
+
+\end{document}

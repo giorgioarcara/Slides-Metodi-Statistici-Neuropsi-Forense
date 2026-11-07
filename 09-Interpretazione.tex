@@ -1,0 +1,946 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+  aspectratio=169,
+]{beamer}
+\newif\ifbibliography
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% remove section numbering
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{section title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{subsection title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+% nf-macros.tex — visual building blocks for "Metodi Statistici per la Neuropsicologia Forense"
+% Adapted from the Time Management deck (tm-macros.tex); loads unipdwarsawstyle.sty first.
+
+% ---------------------------------------------------------
+% FONTS, ICONS, LIBRARIES
+% ---------------------------------------------------------
+\usepackage{unipdwarsawstyle}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{fontawesome5}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds,shapes.geometric}
+
+% ---------------------------------------------------------
+% IMAGE HEIGHT CAP — 16:9 frames are shorter than the old 4:3 ones, so images sized
+% by width can run off the bottom. Every \includegraphics taller than \nfmaxheight
+% is scaled down (aspect ratio kept); unsized markdown images use the same limit.
+% ---------------------------------------------------------
+\newlength{\nfmaxheight}
+\AtBeginDocument{\setlength{\nfmaxheight}{0.74\textheight}}
+\makeatletter
+\newsavebox\nf@imgbox
+\let\nf@includegraphics\includegraphics
+\renewcommand*\includegraphics[2][]{%
+  \sbox\nf@imgbox{\nf@includegraphics[#1]{#2}}%
+  \ifdim\dimexpr\ht\nf@imgbox+\dp\nf@imgbox\relax>\nfmaxheight
+    \resizebox{!}{\nfmaxheight}{\usebox\nf@imgbox}%
+  \else\usebox\nf@imgbox\fi}
+% unsized markdown images: fit within \linewidth and \nfmaxheight
+\renewcommand*\pandocbounded[1]{%
+  \sbox\nf@imgbox{#1}%
+  \Gscale@div\@tempa{\nfmaxheight}{\dimexpr\ht\nf@imgbox+\dp\nf@imgbox\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\nf@imgbox}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\nf@imgbox}\else\usebox\nf@imgbox\fi}
+\makeatother
+
+% ---------------------------------------------------------
+% PALETTE — structure is UniPD crimson/gold (from the style file)
+% ---------------------------------------------------------
+\definecolor{nfInk}{HTML}{243447}      % dark text
+\definecolor{nfPoll}{HTML}{5B3F9E}     % Wooclap
+\definecolor{nfPadlet}{HTML}{B8860B}   % Padlet
+\definecolor{nfGrey}{HTML}{8A94A0}
+
+% ---------------------------------------------------------
+% GLOBAL LOOK
+% ---------------------------------------------------------
+\hyphenpenalty=10000 \exhyphenpenalty=10000
+\setbeamertemplate{headline}{}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{normal text}{fg=nfInk}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+\setbeamertemplate{footline}{%
+  \hfill{\color{nfGrey}\tiny\insertframenumber}\hspace*{4mm}\vspace*{2mm}}
+\setbeamertemplate{itemize item}{\color{unipdCrimson}\raisebox{0.15ex}{\scriptsize\faCircle}}
+
+% ---------------------------------------------------------
+% ICON ROW — icon in a crimson disc + text
+%   \iconrow{\faVideo}{Text}
+% ---------------------------------------------------------
+\newcommand{\iconrow}[2]{%
+  \par\noindent
+  \begin{minipage}[c]{0.9cm}\centering
+    \tikz\node[circle, fill=unipdCrimson, text=white, minimum size=7mm, inner sep=0pt]{\small #1};
+  \end{minipage}%
+  \begin{minipage}[c]{\dimexpr\linewidth-0.9cm\relax}\small #2\end{minipage}\par\vspace{5pt}}
+
+% ---------------------------------------------------------
+% ACTIVITIES — real QR code and join code
+% ---------------------------------------------------------
+\newcommand{\timer}[1]{%
+  \tikz[baseline=(t.base)]\node[fill=unipdCrimson, text=white, rounded corners=6pt,
+    font=\scriptsize\bfseries, inner sep=3pt] (t) {\faIcon{stopwatch}\ #1};}
+
+%   \qrbox{colour}{Figures/qr.png}{code or empty}
+\newcommand{\qrbox}[3]{%
+  \begin{tikzpicture}
+    \node[draw=#1, line width=1.2pt, rounded corners=5pt, inner sep=5pt, fill=white] (q)
+      {\includegraphics[width=3.4cm]{#2}};
+    \if\relax\detokenize{#3}\relax\else
+      \node[below=3pt of q, font=\small\bfseries\color{#1}] {codice: #3};
+    \fi
+  \end{tikzpicture}}
+
+%   \wooclapslot{tipo}{domanda}{istruzioni}{minuti o vuoto}{Figures/qr.png}{codice}
+\newcommand{\wooclapslot}[6]{%
+  \begin{columns}[c]
+    \begin{column}{0.56\textwidth}
+      {\color{nfPoll}\small\faPoll\ \textbf{WOOCLAP}\,·\,#1}%
+      \if\relax\detokenize{#4}\relax\else\hfill\timer{#4}\fi\par\vspace{8pt}
+      {\LARGE\bfseries\color{nfInk}#2\par}\vspace{10pt}
+      {\small\color{nfInk}#3\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering\qrbox{nfPoll}{#5}{#6}\end{column}
+  \end{columns}}
+
+%   \padletslot{tipo}{domanda}{istruzioni}{minuti o vuoto}{Figures/qr.png}
+\newcommand{\padletslot}[5]{%
+  \begin{columns}[c]
+    \begin{column}{0.56\textwidth}
+      {\color{nfPadlet}\small\faStickyNote\ \textbf{PADLET}\,·\,#1}%
+      \if\relax\detokenize{#4}\relax\else\hfill\timer{#4}\fi\par\vspace{8pt}
+      {\LARGE\bfseries\color{nfInk}#2\par}\vspace{10pt}
+      {\small\color{nfInk}#3\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering\qrbox{nfPadlet}{#5}{}\end{column}
+  \end{columns}}
+
+% ---------------------------------------------------------
+% TITLE SLIDE — use on a  ## {.plain}  frame:   \nftitleslide{2 · Cornice teorica}
+% ---------------------------------------------------------
+\newcommand{\nftitleslide}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[unipdCrimson] (current page.north west) rectangle ([xshift=0.58\paperwidth]current page.south west);
+    \fill[unipdGold] ([xshift=0.58\paperwidth]current page.north west) rectangle ([xshift=0.585\paperwidth]current page.south west);
+  \end{tikzpicture}%
+  \begin{columns}[c]
+    \begin{column}{0.55\textwidth}
+      \color{white}
+      {\small\color{unipdGold}\MakeUppercase{#1}\par}\vspace{6pt}
+      {\fontsize{22}{27}\selectfont\bfseries Metodi Statistici per la Neuropsicologia Forense\par}\vspace{22pt}
+      {\small\bfseries Giorgio Arcara\par}
+      {\scriptsize Università di Padova\\ IRCCS San Camillo, Venezia\par}
+    \end{column}
+    \begin{column}{0.40\textwidth}\centering
+      \includegraphics[width=0.85\linewidth]{Figures/LogoSanCamilloIRCCS_Unipd_alpha.png}\par\vspace{14pt}
+      \includegraphics[height=0.55cm]{Figures/CC_license_3_0.png}
+    \end{column}
+  \end{columns}}
+
+% ---------------------------------------------------------
+% SECTION DIVIDER — built automatically from each "# Section" heading
+% (YAML: section-titles: false, so Quarto does not add its own)
+% ---------------------------------------------------------
+\AtBeginSection{%
+  \begin{frame}[plain]
+    \begin{tikzpicture}[remember picture, overlay]
+      \fill[unipdCrimson] (current page.north west) rectangle ([xshift=3mm]current page.south west);
+      \fill[unipdGold] ([xshift=3mm]current page.north west) rectangle ([xshift=3.6mm]current page.south west);
+      \node[anchor=north west, font=\scriptsize\color{nfGrey}, inner sep=0pt]
+        at ([xshift=8mm,yshift=-5mm]current page.north west)
+        {METODI STATISTICI PER LA NEUROPSICOLOGIA FORENSE};
+    \end{tikzpicture}
+    \vfill
+    \begin{center}
+      {\fontsize{26}{32}\selectfont\bfseries\color{unipdCrimson}\insertsectionhead\par}
+    \end{center}
+    \vfill
+  \end{frame}}
+
+% ---------------------------------------------------------
+% TAKEAWAY strip at the bottom of the slide
+% ---------------------------------------------------------
+\newcommand{\takeaway}[1]{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \node[anchor=south west, fill=unipdCream!70, text=nfInk, font=\scriptsize,
+          inner xsep=6pt, inner ysep=3pt, rounded corners=2pt, text width=0.84\paperwidth]
+      at ([xshift=5mm,yshift=4mm]current page.south west)
+      {\textcolor{unipdCrimson}{\faKey}\ \textbf{In sintesi:} #1};
+  \end{tikzpicture}}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={Giorgio Arcara},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+
+\author{Giorgio Arcara}
+\date{}
+
+\begin{document}
+
+
+\begin{frame}[plain]{}
+\phantomsection\label{section}
+\nftitleslide{9 · Interpretazione dei test}
+\end{frame}
+
+\section{Interpretazione dei test}\label{interpretazione-dei-test}
+
+\begin{frame}{Premessa}
+\phantomsection\label{premessa}
+\small
+
+Quando si studiano gli aspetti statistici dei test in neuropsicologia
+forense, emerge una criticità.
+
+Molto spesso aspetti statistici (es. Validità, Affidabilità, ma anche
+Errore di 1° Tipo, 2° Tipo), ci dicono informazioni sui test in generale
+oppure su che percentuali di errore ci aspetteremmo se facessimo
+infinite ripetizioni e con specifiche assunzioni.
+
+Nella pratica di neuropsicologia clinica e forense, l'interesse è però
+nel dare una risposta specifica, spesso puntuale relativamente ad uno
+specifico individuo, con il massimo di accuratezza o precisione
+possibile: ha un deficit cognitivo? Sta simulando un deficit?
+
+L'aspetto chiave che tratteremo è che rispondere a queste domande non
+può prescindere da un'interpretazione del dato, che tenga conto non solo
+delle evidenze del test, ma dalle altre evidenze a disposizione.
+\end{frame}
+
+\begin{frame}{L'Interpretative Approach}
+\phantomsection\label{linterpretative-approach}
+Anche se molto del materiale discusso proviene da testi di metodologia
+generale, non ci sono (ancora) testi specifici di metodologia nella
+neuropsicologia, tantomeno di forense.
+
+L'approccio metodologico che descriverò in questa lezione, che abbiamo
+chiamato ``Interpretative Approach'' permette di rispondere in maniera
+coerente a queste e a molte altre domande.
+
+L'approccio che proponiamo mette al centro della valutazione
+neuropsicologica la neuropsicologa/il neuropsicologo, non i test.
+\end{frame}
+
+\begin{frame}{L'Interpretative Approach e la neuropsicologia forense}
+\phantomsection\label{linterpretative-approach-e-la-neuropsicologia-forense}
+Per mettere al centro il neuropsicologo si parte da un approfondimento
+di tutti quegli aspetti medotologici e statistici proprio per vedere fin
+dove arrivano, dove si fermano e dove è che comincia realmente
+l'intervento dello psicologo/neuropsicologo e la sua
+\underline{interpretazione}.
+
+Queste conoscenze vi aiuteranno non solo a conoscere meglio l'utilizzo
+dei test, ma anche a capire bene tutte le altre evidenze che
+raccoglierete per giungere ad un'interpretazione degli stessi (e a come
+farlo attivamente), secondo basi statistiche.
+\end{frame}
+
+\begin{frame}{L'Interpretative Approach}
+\phantomsection\label{linterpretative-approach-1}
+Con la definizione dell'Interpretative approarch abbiamo cercato di
+mettere ordine e più rigore a quella che è la regolare pratica clinica
+in neuropsicologia (è applicabile alla pratica comune) e i più diffusi e
+condivisi principi della psicometria applicati alla neuropsicologia
+
+Attenzione: che ve ne rendiate conto o meno, comunque adotterete dei
+principi nell'utilizzare i test.
+\end{frame}
+
+\begin{frame}{I 6 principi}
+\phantomsection\label{i-6-principi}
+L'interpretative approach si sviluppa a partire da 6 principi cardine
+
+Molte delle spiegazioni saranno delle conseguenze logiche (o razionali)
+a partire da questi principi cardine
+
+Questi principi perlopiù cercando di esplicitare la common knowledge in
+neuropsicologia clinica.
+\end{frame}
+
+\begin{frame}{Interpretative Approach - Principio 1}
+\phantomsection\label{interpretative-approach---principio-1}
+Il neuropsicologo svolge un ruolo attivo in ogni aspetto della
+valutazione neuropsicologica.
+\end{frame}
+
+\begin{frame}{Interpretative Approach - Principio 2}
+\phantomsection\label{interpretative-approach---principio-2}
+La valutazione neuropsicologica è un processo razionale di raccolta di
+informazioni sullo stato cognitivo di un soggetto esaminato e di
+elaborazione di una conclusione.
+\end{frame}
+
+\begin{frame}{Interpretative Approach - Principio 3}
+\phantomsection\label{interpretative-approach---principio-3}
+In ogni valutazione neuropsicologica, il neuropsicologo deve integrare e
+interpretare tutte le informazioni disponibili per trarre una
+conclusione.
+\end{frame}
+
+\begin{frame}{Interpretative Approach - Principio 4}
+\phantomsection\label{interpretative-approach---principio-4}
+L'uso dei risultati dei test neuropsicologici implica sempre
+un'interpretazione attiva da parte del neuropsicologo.
+\end{frame}
+
+\begin{frame}{Interpretative Approach - Principio 5}
+\phantomsection\label{interpretative-approach---principio-5}
+Il neuropsicologo deve essere consapevole delle inferenze implicite
+quando interpreta le prove disponibili.
+\end{frame}
+
+\begin{frame}{Interpretative Approach - Principio 6}
+\phantomsection\label{interpretative-approach---principio-6}
+Una valutazione neuropsicologica può essere considerata tale solo quando
+c'è stata un'osservazione diretta (di persona o a distanza) del
+comportamento degli esaminati e un'\underline{interazione} diretta con
+loro.
+\end{frame}
+
+\begin{frame}{Perchè è importante la consapevolezza dell'approccio?}
+\phantomsection\label{perchuxe8-uxe8-importante-la-consapevolezza-dellapproccio}
+Analogia con posizione filosofica
+
+\begin{center}
+\includegraphics[width=\linewidth,height=0.7\textheight,keepaspectratio]{Figures/Ross_Twitter.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{L' ``Interpretative Approach'' alla neuropsicologia
+clinica e forense}
+\phantomsection\label{l-interpretative-approach-alla-neuropsicologia-clinica-e-forense}
+A volte potrebbe sembrare che l'Interpretative approach ``giustifichi''
+alcune arbitrarietà perchè deleghi inferenze e interpretazioni al
+Neuropsicologo.
+
+Questo è un errore. L'Interpretative approach, piuttosto, ha come
+obiettivo far \emph{rendere consapevoli di una serie di intepretazioni}
+da parte del Neuropsicologo, che comunque avvengono durante la
+valutazione neuropsicologica e l'utilizzo dei test.
+
+Conoscere quando queste avvengono porta ad una maggiore controllo di ciò
+che avviene nella valutazione e quindi a fare migliori valutazioni.
+\end{frame}
+
+\begin{frame}{L' ``Interpretative Approach'' alla neuropsicologia
+clinica e forense}
+\phantomsection\label{l-interpretative-approach-alla-neuropsicologia-clinica-e-forense-1}
+\textbf{Alcune interpretazioni sono migliori di altre}
+
+Sottolineare interpretazioni non significa che ogni interpretazione va
+bene. Le interpretazioni maggiormente supportate da evidenze (test,
+aspetti qualitativi, anamnesi, etc.) sono migliori di quelle che non
+sono supportate.
+\end{frame}
+
+\begin{frame}{L'Interpretative Approach alla neuropsicologia clinica e
+forense}
+\phantomsection\label{linterpretative-approach-alla-neuropsicologia-clinica-e-forense}
+L'Interpretative approach nasce da esperienza di insegnamento di
+neuropsicologia clinica (condiviso con Sara Mondini, Unipd e Marinella
+Cappelletti, Goldsmiths London)
+
+Spesso studentesse e studenti sono attratti dalla neuropsicologia
+proprio per il rigore dei test rispetto, ad esempio, ad un semplice
+colloquio o valutazione qualitativa. Questo può portare ad un'eccessiva
+fiducia verso questi strumenti, oppure al dimenticarsi l'effettivo ruolo
+più importante del neuropsicologo in vari aspetti dell'utilizzo dei
+test.
+\end{frame}
+
+\begin{frame}{Interpretazione}
+\phantomsection\label{interpretazione}
+\begin{center}
+\begin{tikzpicture}
+    % Include your image
+    \node[anchor=south west, inner sep=0] (image) at (0,0)
+        {\includegraphics[width=0.8\textwidth]{Figures/Test_Methodology_transp.png}};
+
+    % Set coordinate system to match the image
+    \begin{scope}[x={(image.south east)}, y={(image.north west)}]
+        
+        % Draw a red rectangle (thin border)
+        %\draw[red, thick, rounded corners] (0.25,0.3) rectangle (0.45,0.5);
+        % Optional label
+        %\node[red, font=\bfseries, above] at (0.35,0.5) {Region 1};
+        
+        %\pause
+        % a red rectangle (thicker border)
+        \draw[red, ultra thick] (0.2, 0.01) rectangle (0.75,0.32);
+
+
+        
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+\begin{frame}{Interpretazione non vuol dire che va bene tutto}
+\phantomsection\label{interpretazione-non-vuol-dire-che-va-bene-tutto}
+Si potrebbe pensare che un accento sull' ``interpretazione'' vuol dire
+un accento sulla soggettività del valutatore.
+
+\begin{center}
+\Large
+\pause
+\textbf{SBAGLIATO}
+\end{center}
+\pause
+\normalsize
+Per interpretazione si intende \underline{integrazione di tutte le evidenze disponibili} per raggiungere una conclusione sullo stato cognitivo del paziente.
+Quello che si intende è dunque che non si può usare una serie di sillogismi per desumere deficit (se punteggio sotto cut-off → deficit), ma che anche il concludere un deficit è un'interpretazione delle evidenze. I punteggi ai test rappresentano parte delle evidenze.
+\end{frame}
+
+\begin{frame}{Interpretazioni}
+\phantomsection\label{interpretazioni}
+Alcune interpretazioni sono migliori di altre.
+
+Le interpretazioni più adeguate sono quelle che integrano tutte le
+informazioni disponibili.
+\end{frame}
+
+\begin{frame}{Perché «interpretazione» e non ``lettura'' dei risultati?}
+\phantomsection\label{perchuxe9-interpretazione-e-non-lettura-dei-risultati}
+\small
+
+Se un test possiede dati a sostegno di validità che misuri un certo
+costrutto, possiamo ragionevolmente credere che tramite il test
+misureremo quel costrutto e dovremmo sempre partire con questo
+presupposto. Al contempo dobbiamo essere consapevoli che ci sono varie
+occasioni in cui il numero non riflette ciò che dovrebbe riflettere.
+Inoltre è noto che ogni comportamento è il frutto dell'interazione di
+più funzioni cognitive (Lezak, 2000)
+
+Ci sono però numerosi casi in cui il test potrebbe perdere la validità e
+misurare altro.
+
+\begin{itemize}
+\tightlist
+\item
+  Il contesto della misurazione neuropsicologica è particolare proprio
+  perché indaga un sistema che è potenzialmente danneggiato in maniera
+  complessa.\\
+\item
+  nei casi di valutazione forense si aggiunge la complessità della
+  possibile simulazione di deficit cognitivi.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Un esempio di interpretazione (1/2)}
+\phantomsection\label{un-esempio-di-interpretazione-12}
+\small
+
+\emph{GH (si veda esempio), effettua una serie di test su comprensione
+di linguaggio figurato in cui va effettivamente al sotto della norma (10
+su 15).}
+
+\emph{Scenario 1: studiando la storia personale di GH, emerge che GH è
+noto tra gli amici per il suo spiccato senso di umorismo, tanto che
+spesso al bar si ferma per raccontare anche barzellette agli amici.
+Varie persone che lo conoscono confermano questa voce sostenendo che
+nonostante non fosse molto colto, a GH piaceva molto prendere gli altri
+in giro usando giochi di parole. Ad una serie di test aggiuntivi per la
+simulazione GH va ad un punteggio proprio sulla soglia che segnala
+simulazione.}
+\end{frame}
+
+\begin{frame}{Un esempio di interpretazione (2/2)}
+\phantomsection\label{un-esempio-di-interpretazione-22}
+\small
+
+\emph{GH (si veda esempio), effettua una serie di test su comprensione
+di linguaggio figurato in cui va effettivamente al sotto della norma (10
+su 15).}
+
+\emph{Scenario 2: studiando la storia personale di GH emerge che i suoi
+problemi di comprensione del linguaggio erano molto comuni e noti. Al
+bar spesso gli amici lo prendevano in giro proprio perché sembrava
+spesso non capire cosa gli dicevano e spesso per questa ragione perdeva
+la pazienza. A test di simulazione non emergono evidenze di
+simulazione.}
+\end{frame}
+
+\begin{frame}{Esempi di interpretazione}
+\phantomsection\label{esempi-di-interpretazione}
+\small
+
+L'accento sull'interpretazione indica che bisogna considerare le
+evidenze a disposizione al di là del punteggio al test.
+
+Nello scenario 2 difficilmente un'interpretazione sensata potrà
+suggerire che ci sono evidenze di simulazione. Lo scenario 1 invece
+sembra in qualche modo suggerirlo. È compito del neuropsicologo
+raccogliere in maniera attiva le evidenze rilevanti e raggiungere una
+conclusione.
+
+Spesso (se non sempre) la conclusione comporterà l'aggiungere qualcosa,
+non il dedurre, che rappresenta appunto l' \emph{interpretazione} fatta
+dalla/dal neuropsicologa/o.
+\end{frame}
+
+\begin{frame}{Non tutte le evidenze sono uguali}
+\phantomsection\label{non-tutte-le-evidenze-sono-uguali}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+
+Dire che è importante raccogliere evidenze non vuol dire che tutte le
+evidenze hanno lo stesso peso e sono uguali.
+
+\textbf{Saranno sempre più forti (e convincenti) quelle evidenze basate
+su dati oggettivi}, su test, su misurazioni, rispetto ad aspetti
+qualitativi e opinioni personali (es. ``secondo me sta comunque
+fingendo'')
+\end{frame}
+
+\begin{frame}{Non tutte le evidenze sono uguali}
+\phantomsection\label{non-tutte-le-evidenze-sono-uguali-1}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+
+Per ogni insieme di evidenze sono possibili più interpretazioni.
+
+Non esiste una formula matematica per dire come combinarle, ma esistono
+interpretazioni peggiori ed interpretazioni migliori che dipendono da
+come sono correttamente considerate le evidenze disponibili.
+
+In molti casi (specie forensi) non sarà facile dire che si ha
+un'interpretazione ``giusta'' in mano, ma solo un'interpretazione
+supportata dalle evidenze.
+\end{frame}
+
+\begin{frame}{Alcune interpretazioni}
+\phantomsection\label{alcune-interpretazioni}
+Nelle slides che seguono saranno portati alcuni esempi di
+interpretazioni di aspetti che sono molto comuni.
+
+\begin{itemize}
+\tightlist
+\item
+  Interpretazione di un risultato sotto cut-off come deficit cognitivo
+\item
+  Interpretare pattern di risultati di diversi test al di sotto della
+  norma
+\item
+  Integrare le informazioni per interpretare i test
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\normalsize Interpretazione di un risultato sotto cut-off
+come deficit cognitivo}
+\phantomsection\label{interpretazione-di-un-risultato-sotto-cut-off-come-deficit-cognitivo}
+\small
+
+Se il mio soggetto va sotto cut-off in un test di memoria a breve
+termine e concludo che è presente un danno cognitivo non è semplice
+«lettura» dei risultati, ma è già \textbf{diagnosi descrittiva}.
+
+Il neuropsicologo sta assumendo:
+
+\begin{itemize}
+\tightlist
+\item
+  Che il test abbia misurato ciò che intendeva misurare \pause
+\item
+  Che l'ansia abbia avuto un ruolo trascurabile \pause
+\item
+  Che il soggetto era sufficientemente motivato e non ha finto un
+  deficit. \pause
+\item
+  Che eventuali danni ad altre funzioni cognitive non hanno avuto un
+  ruolo cruciale. \pause
+\item
+  Che i dati normativi erano adeguati per stimare la prestazione del
+  soggetto. \pause
+\end{itemize}
+
+Molte di queste assunzioni sono ``implicite'' e un buon neuropsicologo
+(si veda principio 5 dell'Interpretative Approach), ne è consapevole
+\end{frame}
+
+\begin{frame}{\normalsize Interpretazione di un risultato sotto cut-off
+come deficit cognitivo}
+\phantomsection\label{interpretazione-di-un-risultato-sotto-cut-off-come-deficit-cognitivo-1}
+\small
+
+È importante sottolineare che il fare attenzioni alle assunzioni
+implicite non significa dubitare di tutto.
+
+Significa non sottovalutare quelle assunzioni che sono particolarmente
+critiche perché potrebbero non essere valide.
+
+Esempi: \pause
+
+\begin{itemize}
+\tightlist
+\item
+  in contesto forense non possiamo dare per scontato che il paziente non
+  stia simulando.\pause
+\item
+  in vari casi non possiamo dare per scontato che i dati normativi siano
+  adeguati.\pause
+\item
+  non possiamo dare per scontato che altre funzioni cognitive non di
+  interesse non abbiano influenzato la performance in un paziente con
+  sospetto danno cerebrale.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\normalsize Interpretazione di un risultato sotto cut-off
+come deficit cognitivo}
+\phantomsection\label{interpretazione-di-un-risultato-sotto-cut-off-come-deficit-cognitivo-2}
+L'interpretazione di un test dovrebbe essere fatta al termine della
+valutazione, quando tutte le altre informazioni (anche provenienti da
+altri test) sono disponibili
+
+Uno degli errori più comuni è quello di interpretare già come
+\emph{definitiva}, l'evidenza di un deficit già al primo risultato
+ottenuto. Questo non vale solo per deficit, ma per qualsiasi altro tipo
+di informazione raccolta.
+\end{frame}
+
+\begin{frame}{\normalsize Interpretare pattern di risultati di diversi
+test al di sotto della norma}
+\phantomsection\label{interpretare-pattern-di-risultati-di-diversi-test-al-di-sotto-della-norma}
+Cosa concludere se più test sono sotto il cut-off di normalità?
+
+Più test deficitari possono essere legati ad un singolo deficit
+cognitivo (es. attenzione) o a deficit multipli. \pause
+
+È difficile trovare dei principi logici per rispondere a come
+interpretare queste situazioni. \pause
+
+La/Il neuropsicologa/o deve integrare le informazioni a sua disposizione
+in maniera sensata.
+\end{frame}
+
+\begin{frame}{\normalsize Integrare l'interpretazione di risultati a
+test su costrutti a diversi livelli}
+\phantomsection\label{integrare-linterpretazione-di-risultati-a-test-su-costrutti-a-diversi-livelli}
+Attenzione all'integrazione di costrutti su diversi livelli. Devono
+essere fatte in maniera sensata, tenendo conto della diversa gerarchia
+dei costrutti misurati.
+
+Può non avere senso concludere che il soggetto abbia un deficit in un
+costrutto più generico se si hanno altre informazioni più dettagliate.
+
+\pause
+
+\emph{Esempio: in APACS, il paziente ha un deficit nel punteggio di Comprensione Pragmatica, ma ha fatto errori solamente nel test di Umorismo, non ha senso concludere generalmente che c’è un deficit di Comprensione. Abbiamo già elementi per un’interpretazione più specifica.}
+\end{frame}
+
+\begin{frame}{Integrare le informazioni per interpretare i test}
+\phantomsection\label{integrare-le-informazioni-per-interpretare-i-test}
+\begin{center}
+\includegraphics[width=0.15\linewidth,height=\textheight,keepaspectratio]{Figures/triangle.png}
+\end{center}
+
+I punteggi ai test, il risultato del confronto con dati normativi e
+cut-off sono \textbf{informazioni} che vanno interpretate con le altre
+informazioni disponibili.
+\end{frame}
+
+\begin{frame}{Integrare le informazioni per interpretare i test}
+\phantomsection\label{integrare-le-informazioni-per-interpretare-i-test-1}
+\begin{itemize}
+\tightlist
+\item
+  Risultati ai test
+\item
+  Informazioni dall'Intervista preliminare
+\item
+  Dati qualitativi emersi durante la valutazione
+\item
+  Informazioni dai familiari
+\end{itemize}
+
+Sono tutti elementi da integrare per raggiungere una \textbf{diagnosi
+descrittiva} (quali deficit) sullo stato cognitivo del paziente e la
+\textbf{diagnosi di compatibilità con un'eziologia} (quale eziologia)
+dell'eventuale disturbo neuropsicologico.
+
+In ambito forense occorre inoltre fare ipotesi su presunta
+\textbf{causalità} rispetto all'evento rilevante.
+\end{frame}
+
+\begin{frame}{Informazioni nella valutazione neuropsicologica}
+\phantomsection\label{informazioni-nella-valutazione-neuropsicologica}
+Considerando tutte le evidenze raccolte nella valutazione, informazioni
+che possono aiutare nella diagnosi sia i test, sia l' \emph{osservazione
+clinica} hanno grande rilevanza e devono essere integrate per
+raggiungere conclusioni sensate. Aspetti psicometrici dei test (loro
+affidabilità, validità, etc.)
+\end{frame}
+
+\begin{frame}{Interpretare casi ambigui}
+\phantomsection\label{interpretare-casi-ambigui}
+Caso 1: Prestazioni ai limiti della norma. \pause \emph{Come
+interpretare questi risultati?} \pause
+
+Dipende. Non esiste una regola per interpretare i risultati ai limiti
+della norma. L'interpretazione dipende dall'integrazione con tutte le
+altre informazioni disponibili. Ricordarsi che i cut-off ci servono per
+stimare la prestazione del soggetto
+\end{frame}
+
+\begin{frame}{Interpretare casi ambigui}
+\phantomsection\label{interpretare-casi-ambigui-1}
+Caso 2: Soggetto che ha età o scolarità al limite tra due fasce.
+
+\emph{Come interpretare questi risultati, con che fascia confrontare?}
+
+Il confronto con i dati normativi ci serve per stimare la prestazione
+del soggetto. Se il soggetto ha età o scolarità (o altre variabili) a
+cavallo tra due fasce probabilmente la cosa migliore è confrontare la
+prestazione con entrambi i cut-off. La/Il neuropsicologa/o dovrà
+integrare questa informazione con le altre disponibili per giungere ad
+una conclusione.
+\end{frame}
+
+\begin{frame}{Esempio (1/2)}
+\phantomsection\label{esempio-12}
+\scriptsize
+
+Siete consulenti tecnici per il caso di un individuo che lamenta un
+deficit cognitivo in seguito ad un incidente sul lavoro che gli
+impedisce di continuare a lavorare. Lamenta un'importante invalidità e
+vorrebbe essere risarcito dall'assicurazione. Siete consulenti per
+l'assicurazione per valutare rischio di simulazione.
+
+Il protagonista è un uomo di 26 anni che lavorava come magazziniere.
+Mentre lavorava su un muletto, una grossa scatola è caduta e lo ha
+colpito alla testa. Nell'impatto è caduto, ha perso il casco di
+protezione e battuto la testa a terra, perdendo conoscenza. Portato al
+pronto soccorso è stato confermato un trauma cranico e una serie di
+fratture. Il paziente è stato sotto osservazione per alcuni giorni per
+le fratture e poi dimesso.
+
+Nei giorni successivi ha cominciato a lamentare disturbi di memoria e si
+è rivolto alla sua assicurazione (che aveva stipulato 3 mesi prima) per
+un risarcimento per potenziale invalidità.
+\end{frame}
+
+\begin{frame}{Risultati Valutazione Forense}
+\phantomsection\label{risultati-valutazione-forense}
+\tiny
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.3099}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2047}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1404}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1345}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2105}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Test Neuropsicologico
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Dominio Valutato
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Punteggio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Cut-off
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interpretazione
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+Trail Making Test -- Parte B & Flessibilità cognitiva & 240 sec & 180
+sec & deficitario \\
+WCST -- Errori perseverativi & Problem solving / astrazione & 32 & 20 &
+deficitario \\
+Torre di Londra -- Totale & Pianificazione & 5 & 18 & Deficitario \\
+RAVLT -- Rich. immed. & Memoria verbale & 47 & 38 & Nella norma \\
+Boston Naming Test (BNT) & Linguaggio & 49/60 & 48/60 & deficitario \\
+SIMS -- Totale & Validità del profilo & 15 & 16 & No rischio
+simulazione \\
+\bottomrule\noalign{}
+\end{longtable}
+\end{frame}
+
+\begin{frame}{}
+\phantomsection\label{section-1}
+\emph{Quali altre informazioni raccogliereste?}
+\end{frame}
+
+\begin{frame}{Approfondimenti vari nell'esempio}
+\phantomsection\label{approfondimenti-vari-nellesempio}
+Il paziente da quando ha smesso di lavorare ha cominciato a passare gran
+parte del tempo a giocare a videogiochi e a giocare d'azzardo (online)
+in camera. Soprattutto sembra passare gran parte del tempo giocando a
+poker, vincendo e perdendo a seconda delle giornate.
+
+Il paziente ha punteggi molto bassi anche quando corretti per età e
+scolarità.
+\end{frame}
+
+\section{Conclusioni}\label{conclusioni}
+
+\begin{frame}{Il ruolo della/del neuropsicologa/o nella valutazione}
+\phantomsection\label{il-ruolo-delladel-neuropsicologao-nella-valutazione}
+Vista la rilevanza delle interpretazioni nell'utilizzo dei test la/il
+neuropsicologa/o ha un ruolo chiave.
+
+\begin{itemize}
+\item
+  Deve conoscere le proprietà dei test che utilizza per interpretarli in
+  maniera sensata
+\item
+  Deve avere un solido background in neuropsicologia clinica,
+  neuroanatomia, per poter raccogliere informazioni durante la
+  valutazione (in filosofia, ``teoreticità dell'osservazione'')
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Valutazione e ruolo attivo}
+\phantomsection\label{valutazione-e-ruolo-attivo}
+\pandocbounded{\includegraphics[keepaspectratio]{Figures/Active_collection_2.png}}
+\end{frame}
+
+
+
+
+\end{document}

@@ -1,0 +1,200 @@
+---
+title: "La correlazione"
+subtitle: "Approfondimento — Metodi Statistici per la Neuropsicologia Forense"
+author: "Giorgio Arcara"
+lang: it
+bibliography: references.bib
+csl: apa-6th-edition.csl
+execute:
+  echo: false
+  warning: false
+  message: false
+format:
+  pdf:
+    pdf-engine: xelatex
+    toc: false
+    number-sections: true
+    fig-pos: "H"
+    geometry: margin=2.5cm
+    colorlinks: true
+---
+
+::: {.callout-note}
+## Nota sull'uso dell'intelligenza artificiale
+
+Questo approfondimento è stato redatto con l'assistenza di **Claude** (Anthropic), un modello di
+intelligenza artificiale, su indicazioni del docente, come materiale complementare alle lezioni su
+validità e affidabilità (3a–3c). Il testo può contenere imprecisioni: in caso di dubbio fanno fede
+le slide, il libro del corso [@arcara2025oip] e quanto detto a lezione.
+
+Materiale distribuito con licenza CC BY-NC 3.0, come le slide del corso.
+:::
+
+# Che cos'è la correlazione
+
+La correlazione è una misura dell'**associazione tra due variabili numeriche** rilevate sulle stesse
+persone: per esempio il punteggio a due test diversi, oppure il punteggio allo stesso test in due
+momenti diversi. Risponde alla domanda: quando una variabile è alta, l'altra tende a essere alta
+anche lei (o bassa)?
+
+Il coefficiente di correlazione varia tra $-1$ e $+1$. Il **segno** indica la direzione
+dell'associazione: positivo se le due variabili crescono insieme, negativo se al crescere dell'una
+l'altra diminuisce. Il **valore assoluto** indica la forza: $\pm 1$ corrisponde a un'associazione
+perfetta, $0$ all'assenza di associazione lineare.
+
+::: {.callout-tip}
+## Definizione: coefficiente di correlazione di Pearson
+
+$$
+r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}
+{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
+$$
+
+dove $x_i$ e $y_i$ sono i valori delle due variabili per la persona $i$, e $\bar{x}$ e $\bar{y}$ le
+rispettive medie. Il numeratore misura quanto le due variabili si discostano *insieme* dalla
+propria media (la covarianza); il denominatore lo rende indipendente dall'unità di misura,
+dividendo per la variabilità di ciascuna variabile.
+:::
+
+Il coefficiente di Pearson misura l'associazione **lineare**: descrive bene quanto i punti si
+dispongono lungo una retta, ma non coglie relazioni di altra forma.
+
+# Come appare una correlazione
+
+La @fig-scatter mostra sette nuvole di punti (100 persone ciascuna) con correlazioni da $+1$ a $-1$.
+Più la correlazione è forte, più i punti si stringono attorno a una retta; il segno decide se la
+retta sale o scende. Con $r = 0$ non si vede alcuna tendenza.
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: "Diagrammi di dispersione (scatterplot) di 100 osservazioni simulate per sette valori del coefficiente di correlazione. Correlazioni della stessa forza ma di segno opposto producono nuvole speculari."
+#| fig-width: 7.5
+#| fig-height: 4.6
+#| out-width: "100%"
+
+library(ggplot2)
+library(MASS)
+
+set.seed(1)
+rs <- c(1, 0.8, 0.3, 0, -0.3, -0.8, -1)
+sim <- do.call(rbind, lapply(rs, function(r) {
+  if (abs(r) == 1) {
+    x <- as.numeric(scale(rnorm(100)))
+    d <- data.frame(x = x, y = r * x)
+  } else {
+    m <- mvrnorm(100, mu = c(0, 0), Sigma = matrix(c(1, r, r, 1), 2), empirical = TRUE)
+    d <- data.frame(x = m[, 1], y = m[, 2])
+  }
+  d$lab <- sprintf("r = %g", r)
+  d
+}))
+sim$lab <- factor(sim$lab, levels = sprintf("r = %g", rs))
+
+ggplot(sim, aes(x, y)) +
+  geom_point(size = 1, alpha = 0.6, colour = "#2E5E8C") +
+  facet_wrap(~ lab, nrow = 2) +
+  coord_equal(xlim = c(-3.2, 3.2), ylim = c(-3.2, 3.2)) +
+  labs(x = "Variabile X (punti z)", y = "Variabile Y (punti z)") +
+  theme_minimal(base_size = 10) +
+  theme(strip.text = element_text(face = "bold", size = 10),
+        panel.grid.minor = element_blank())
+```
+
+# Come interpretare il valore
+
+Una classificazione molto diffusa della forza di una correlazione, valida per valori positivi e
+negativi (si considera il valore assoluto), è quella di @evans1996straightforward:
+
+| Valore assoluto di $r$ | Forza dell'associazione |
+|:--|:--|
+| $0.80 - 1.00$ | molto forte |
+| $0.60 - 0.79$ | forte |
+| $0.40 - 0.59$ | moderata |
+| $0.20 - 0.39$ | debole |
+| $0.00 - 0.19$ | molto debole o assente |
+
+: Classificazione indicativa della forza di una correlazione [@evans1996straightforward].
+
+Questa tabella è solo un orientamento: se un certo valore sia "buono" o meno dipende sempre da che
+cosa si sta correlando e da che cosa ci si aspetta. È esattamente il caso degli usi della
+correlazione in psicometria, descritti di seguito.
+
+Un modo utile per leggere un coefficiente è il suo quadrato, $r^2$, che indica la proporzione di
+varianza condivisa dalle due variabili: con $r = 0.5$ le due variabili condividono il 25% della
+varianza.
+
+# La correlazione nella validità
+
+## Validità convergente/divergente
+
+La correlazione è lo strumento più comune per la validità **convergente** (il test correla con
+misure dello stesso costrutto) e **divergente** (il test correla poco con misure di costrutti
+distinti). Per queste validità **non esistono soglie minime** [@arcara2025oip], perché il valore
+atteso dipende da diversi fattori: quanto sono vicini i costrutti dei due test, quanto sono
+affidabili i due test (l'errore di misura abbassa le correlazioni osservabili) e il fatto che i test
+neuropsicologici tendono a essere tutti un po' correlati tra loro. Quello che conta è il
+**confronto**: le correlazioni con test dello stesso costrutto dovrebbero essere più alte di quelle
+con test di costrutti diversi.
+
+La tabella seguente mostra correlazioni verosimili (ipotetiche) per un nuovo test di memoria verbale.
+
+| Test di confronto | $r$ ipotetico | Lettura |
+|:-----------------------------|:---------:|:------------------------------------------|
+| Altro test di memoria verbale | 0.65 | convergente: stesso costrutto |
+| Test di memoria visuospaziale | 0.40 | costrutto vicino: correlazione intermedia |
+| Test di attenzione | 0.30 | costrutto diverso, ma correlato |
+| Scala di depressione (es. GDS) | 0.05 | divergente: costrutto distinto |
+
+: Esempio ipotetico di correlazioni per un nuovo test di memoria verbale.
+
+Nel caso della validità **divergente** l'attesa è una correlazione **molto bassa, prossima allo
+zero**: un valore come 0.05 con una scala di depressione è a favore della validità del test, perché
+mostra che il test non sta misurando il tono dell'umore. Si noti che lo stesso valore, letto con la
+tabella di Evans, sarebbe "molto debole": in questo contesto è proprio il risultato desiderato.
+
+## Validità di criterio
+
+Quando il criterio è una **variabile numerica** (per esempio il punteggio alla versione lunga di un
+test, considerata il riferimento per una nuova versione breve), la validità di criterio si valuta
+anch'essa con una correlazione. Qui ci si attende valori alti: come riferimento indicativo,
+correlazioni pari o superiori a 0.70–0.80 sono considerate elevate in molti contesti applicativi,
+senza che questo sia un requisito universale.
+
+## Validità ecologica
+
+La correlazione si usa anche per la validità ecologica, mettendo in relazione il punteggio al test
+con scale o questionari sul funzionamento nella vita quotidiana. Anche qui **non esistono soglie**:
+il comportamento quotidiano dipende da molti fattori oltre al costrutto misurato dal test, quindi
+anche correlazioni modeste possono essere informative, se motivate in modo convincente.
+
+# La correlazione nell'affidabilità
+
+## Affidabilità test-retest
+
+L'affidabilità test-retest è spesso espressa con la correlazione tra i punteggi alla prima e alla
+seconda somministrazione. La correlazione però misura solo la *consistenza relativa*, cioè quanto le
+persone mantengono lo stesso ordinamento: **non vede gli spostamenti sistematici**. Se tutti
+migliorano al retest per effetto pratica, la correlazione può restare altissima. Per questo andrebbe
+affiancata dal confronto tra le medie, oppure sostituita da un'ICC basata sull'accordo assoluto (si
+veda l'handout sulle formule dell'affidabilità).
+
+## Affidabilità split-half
+
+Nell'affidabilità split-half si divide il test in due metà (per esempio item pari e dispari) e si
+correlano i punteggi delle due metà. Poiché ciascuna metà è più corta del test intero, questa
+correlazione **sottostima** l'affidabilità del test completo e va corretta con la formula di
+Spearman-Brown:
+
+$$
+r_{SB} = \frac{2\, r_{hh}}{1 + r_{hh}}
+$$
+
+dove $r_{hh}$ è la correlazione tra le due metà. Per esempio, una correlazione tra le metà di 0.70
+corrisponde a un'affidabilità stimata del test intero di $2 \times 0.70 / 1.70 \approx 0.82$. Come
+soglia indicativa, l'affidabilità split-half dovrebbe essere pari o superiore a 0.70–0.80
+[@slick2006psychometrics].
+
+# Riferimenti {.unnumbered}
+
+::: {#refs}
+:::
