@@ -110,7 +110,7 @@ Come principio generale, si costruiscono test in maniera tale che la performance
 ```{=latex}
 \vfill
 {\center
-$\text{si trovi}\ x\ \text{tale che}\ P(o < x | R) = k_s$
+$\text{si trovi}\ x\ \text{tale che}\ P(o < x | R) \leq k_s$
 \vfill
 }
 ```
@@ -157,7 +157,7 @@ es. su 50 item anche rispondendo in maniera totalmente casuale ci sono meno del 
 ```{=latex}
 \vfill
 {\center
-$\text{si trovi}\ x\ \text{tale che}\ P(o < x | D) = k_s$
+$\text{si trovi}\ x\ \text{tale che}\ P(o < x | D) \leq k_s$
 \vfill
 }
 ```
