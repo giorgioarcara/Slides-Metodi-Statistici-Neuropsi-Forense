@@ -853,192 +853,6 @@ Per un neuropsicologo clinico forense, laddove sia possibile a partire dai metod
 
 Es. una performance che delimita è al 5.1% del campione/popolazione di riferimento, sarebbe comunque sopra cut-off (esattamente come una al 95%). 
 
-## Come si calcolano i cut-offs?
-
-- Metodi parametrici (Media, deviazione standard e Z score)
-- Metodi non parametrici
-- Altri metodi (regressioni)
-
-## Confronto con dati normativi
-
-\begin{center}
-  \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
-\end{center}
-
-1) **Media e deviazione standard**. Se la distribuzione è normale possiamo calcolare il cut-off del 5% dei punteggi più bassi, come 1.64 deviazioni standard sotto la media.
-
-2) **Z-score**. Metodo analogo al precendete. Se trasformiamo i dati in punti $Z$, un punteggio pari a -1.64 indica il cut-off dei 5% dei punteggi più bassi.
-
-$$
-Z = \frac{X - M}{SD}
-$$
-$$
-\small
-\begin{aligned}
-X & = \text{punteggio ottenuto dal soggetto} \\
-M & = \text{media del gruppo di riferimento} \\
-SD & = \text{deviazione standard del gruppo di riferimento} \\
-\end{aligned}
-$$
-
-## Confronto con dati normativi
-
-\begin{center}
-  \textbf{Metodi parametrici (base) per il calcolo dei cut-off}
-\end{center}
-\vspace{1em}
-
-![](Figures/gaussiana.png){width="58%" fig-align="center"}
-\small
-*NOTA*: riferirci alla curva normale e alla trasformazione in punti $Z$ ci aiuta ad identificare percentili, cioè valori che delimitano percentuali di dati.
-
-*I metodi parametrici possono essere usati con sicurezza solo se la distribuzione è normale (gaussiana)*
-
-
-## Confronto con dati normativi
-
-```{=latex}
-\begin{columns}
-\column{0.5\textwidth}
-
-\begin{center}
-\textbf{distribuzione normale}
-\end{center}
-\vspace{1em}
-\begin{figure}
-\includegraphics[scale=0.25]{Figures/distr_norm.png}
-\end{figure}
-\textbf{ }
-
-\column{0.5\textwidth}
-
-\begin{center}
-\textbf{distribuzione non-normale}
-\end{center}
-\vspace{1em}
-\begin{figure}
-\includegraphics[scale=0.25]{Figures/distr_nonnorm.png}
-\end{figure}
-
-\begin{center}
-test con \textbf{effetto soffitto}
-\end{center}
-
-\end{columns}
-```
-
-## Confronto con dati normativi
-
-```{=latex}
-\begin{columns}
-\column{0.8\textwidth}
-Se si usano i punti z con distribuzioni non normali, la corrispondenza tra specifici punteggi z e percentuali può non essere rispettata.
-\vspace{2em}
-
-Ad esempio -1.64 può non corrispondere al valore che delimita 5\% dei punteggi più bassi, portando al calcolo di cut-off sbagliati.
-\column{0.2\textwidth}
-
-\begin{figure}
-\includegraphics[scale=0.05]{Figures/triangle.png}
-\end{figure}
-\end{columns}
-```
-
-## Confronto con dati normativi
-
-\begin{center}
-  \textbf{PARENTESI}
-  
-  \textbf{Standardizzare (trasformare in z-score) a volte è anche detto "normalizzare", ma non rende la distribuzione \textit{normale}!}
-\end{center}
-
-![](Figures/distribuzioni_normalizzate.png){width="100%" fig-align="center"}
-
-## Confronto con dati normativi
-
-\begin{center}
-  \textbf{Metodi non parametrici (base) per il calcolo dei cut-off}
-\end{center}
-\vspace{2em}
-
-I **percentili non parametrici** sono il metodo più diffuso di calcolo dei cut-off nel caso di distribuzioni non normali.
-
-Lo svantaggio dell’utilizzo di percentili è che non è possibile usare formule rapide per ricavare cut-off a diverse percentili (ad esempio il 20% dei punteggi peggiori) ma è necessario avere a disposizione tutti i dati.
-
-## Confronto con dati normativi
-
-\begin{center}
-  \textbf{Altri metodi (avanzati) per il calcolo dei cut-off}
-\end{center}
-\vspace{1em}
-
-Esistono altri metodi per il calcolo dei cut-off. La maggior parte prevedono l’uso di regressioni.
-
-Il vantaggio, rispetto a metodi che prevedono la divisione in fasce è che con questi metodi **non avviene una stratificazione arbitraria**.
-
-Esempi:
-
-- metodo dei Punteggi Equivalenti (Capitani & Laiacona, 2007)
-
-- Alcuni metodi di Crawford (Crawford & Howell, 1998; Crawford & Garthwaite, 2006)
-
-## Campione e Popolazione nei dati normativi
-
-I dati normativi sono i dati raccolti da un **campione** proveniente da una **popolazione**.
-
-L’interesse è però sempre confrontare la prestazione osservata con i dati della popolazione. Alcuni metodi tengono conto di questa differenza, fornendo dei cut-off che sono una stima di quelli che si osserverebbero nella popolazione.
-
-**Questi cut-off sono spesso più bassi** (meno restrittivi).
-
-Il metodo dei **Punteggi Equivalenti** (Capitani e Laiacona, 2007) e il metodo di **Crawford** (Crawford \& Howell, 1998; Crawford \& Garthwaite, 2006) tengono conto di questa differenza. Tali metodi sono da considerarsi più corretti.
-
-## Variabili demografiche nei dati normativi
-
-I dati normativi sono spesso calcolati separatamente per età e scolarità o altre variabili demografiche, per poter confrontare adeguatamente la prestazione di un determinato individuo.
-
-I metodi che utilizzano regressioni cercano di modellare l’effetto di età e scolarità e tenerne conto.
-
-## Variabili demografiche nei dati normativi
-
-
-I metodi «base» descritti di solito dividono il campione in vari sotto-campioni e calcolano diversi cut-off per ciascun sotto-campione.
-
-- In genere sono forniti valori separati per diverse combinazioni di età e scolarità, suddivise in fasce.
-
-- Possono essere fornite (ma raramente) tabelle di correzioni, o a volte singole correzioni (ad esempio +2 per scolarità <= 8).
-
-## Variabili demografiche nei dati normativi
-
-I metodi che utilizzano regressioni non suddividono il campione totale. In genere forniscono i cut-off in diverse modalità.
-
-- Un singolo cut-off e tabelle di correzione.
-
-- Un singolo cut-off e formule incomprensibili per calcolare la correzione.
-
-- Tabelle con diversi cut-off, per le varie combinazioni di età, scolarità o sesso.
-
-## Variabili demografiche nei dati normativi
-
-![](Figures/cutoff_humor.png){width="80%" fig-align="center"}
-
-$$
-\scalebox{0.85}{$
-sd_{Y_i-\hat{Y_i}} = \frac{SE_{Y-\hat{Y}}}{\sqrt{n}}\sqrt{n+1+\frac{z_{i,age}^2}{1-R_{age}^2}+\frac{z_{i,education}^2}{1-R_{i,education}^2}-2\frac{\beta_{education,age}z_{i,age}z_{i,education}}{1-R_{education}^2}}
-$}
-$$
-
-## Quale è il metodo migliore per il calcolo dei cut-off?
-
-\pause
-Dipende.
-
-\pause
-Metodi che utilizzano distinizione campione/popolazione sono preferibili.
-
-Attenzione all’uso indiscriminato dei punti-z (se non è nota la distribuzione punteggi)
-
-Attenzione ai test che usano metodi basati su regressioni. Talvolta possono portare a stime distorte, specie per valori delle variabili (età e scolarità) che sono estremi (es. bassa scolarità o alta età).
-
 ## Riepilogo su dati normativi e cut-off
 
 \small
@@ -1048,7 +862,7 @@ Attenzione ai test che usano metodi basati su regressioni. Talvolta possono port
 
 - Il cut-off (in senso generale) è definito come il valore che delimita il 5% dei punteggi più bassi.
 
-- Esistono vari modi di calcolare i cut-off
+- Esistono vari modi di calcolare i cut-off (metodi parametrici, non parametrici, basati su regressioni): vedi slides *Confronto con dati normativi - Formule*.
 
 ## Aspetti da considerare nell’utilizzo dei dati normativi
 
@@ -1122,7 +936,7 @@ C’è un **deficit cognitivo** o dobbiamo stimare il livello di abilità cognit
 
 C’è stato un **peggioramento cognitivo** (compromissione o declino)? Anche questo viene fatto con i dati normativi, ma con una serie di assunzioni aggiuntive nell’\underline{interpretazione}.
 
-Ci sono vari metodi matematici (con pro e contro e più o meno robusti), per definire i cut-off ed eventuali altre soglie.
+Ci sono vari metodi matematici (con pro e contro e più o meno robusti), per definire i cut-off ed eventuali altre soglie (vedi slides *Confronto con dati normativi - Formule*).
 
 # Riferimenti
 
@@ -1131,11 +945,8 @@ Ci sono vari metodi matematici (con pro e contro e più o meno robusti), per def
 \footnotesize
 
 - Arcara, G. *Oltre i punteggi. Elementi di psicometria e statistica per la neuropsicologia clinica* (cap. "Dati normativi, deficit e peggioramento"). https://giorgioarcara.github.io/oip-book/
-- Capitani, E., \& Laiacona, M. (2007). I Punteggi Equivalenti.
 - Colombo, L., Sartori, G., \& Brivio, C. (2002). Stima del quoziente intellettivo tramite l'applicazione del TIB (Test Breve di Intelligenza). *Giornale Italiano di Psicologia, 29*(3), 613--637.
 - Crawford, J. R., Deary, I. J., Starr, J., \& Whalley, L. J. (2001). The NART as an index of prior intellectual functioning: a retrospective validity study covering a 66-year interval. *Psychological Medicine, 31*(3), 451--458.
-- Crawford, J. R., \& Garthwaite, P. H. (2006). Comparing single case with normative samples.
-- Crawford, J. R., \& Howell, D. C. (1998). Comparing an individual's test score with normative samples.
 - Flynn, J. R. (1987). Massive IQ gains in 14 nations (Flynn effect).
 - Lezak, M. D., et al. (2014). *Neuropsychological Assessment.*
 - Mondini, S., Mapelli, D., \& Arcara, G. (2022). *Semeiotica e diagnosi neuropsicologica.*

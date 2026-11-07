@@ -25,7 +25,7 @@ incremental: false
 
 1. Il concetto di soglie per percentuali o probabilità
 2. Punti z e probabilità
-3. Percentili
+3. Distribuzioni non normali e percentili non parametrici
 4. Campione vs Popolazione
 5. test per il caso singolo (t di Crawford)
 6. Metodi di regressione per correzione punteggi
@@ -66,6 +66,12 @@ Si usa $\leq$ perché i punteggi sono in genere discreti: una probabilità esatt
 
 \textcolor{red}{La soglia del 5\% è completamente arbitraria.}
 
+## Come si calcolano i cut-off?
+
+- Metodi parametrici (media, deviazione standard e punti z)
+- Metodi non parametrici (percentili non parametrici)
+- Altri metodi (regressioni, es. Punteggi Equivalenti, metodi di Crawford)
+
 ## I percentili
 
 Questa definizione è sovrapponibile a quella che si usa in statistica di “percentili”, in riferimento a una distribuzione.
@@ -78,13 +84,25 @@ L’uso di punti z non è altro che un metodo (parametrico) che semplifica l’i
 
 Ricordiamo che l’utilizzo della curva normale (e **della trasformazione in punti z**) ha senso in quanto ci aiuta ad identificare percentili e cioè valori che delimitano porzioni note della distribuzione.
 
-![](Figures/gaussiana.png){width="80%" fig-align="center"}
+![](Figures/gaussiana.png){width="70%" fig-align="center"}
+
+\small
+*I metodi parametrici possono essere usati con sicurezza solo se la distribuzione è normale (gaussiana).*
 
 ## Trasformazione in punti z
 
 $$
 Z = \frac{X - M}{SD}
 $$
+$$
+\small
+\begin{aligned}
+X & = \text{punteggio ottenuto dal soggetto} \\
+M & = \text{media del gruppo di riferimento} \\
+SD & = \text{deviazione standard del gruppo di riferimento} \\
+\end{aligned}
+$$
+\small
 Ricordiamo che questa formula è utile perché ci aiuta a definire percentili (parametrici).
 
 Possiamo usarla in due modi: 
@@ -111,11 +129,72 @@ Se i punteggi sono **standardizzati** (punti z con Media = 0 e SD = 1):
 
 A volte si trova “2 deviazioni standard”. Non è altro che un altro numero (sempre arbitrario) per delimitare una performance bassa, sempre arbitraria (ma più facile da ricordare).
 
+## Distribuzioni normali e non normali
+
+```{=latex}
+\begin{columns}
+\column{0.5\textwidth}
+
+\begin{center}
+\textbf{distribuzione normale}
+\end{center}
+\vspace{1em}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/distr_norm.png}
+\end{figure}
+\textbf{ }
+
+\column{0.5\textwidth}
+
+\begin{center}
+\textbf{distribuzione non-normale}
+\end{center}
+\vspace{1em}
+\begin{figure}
+\includegraphics[scale=0.25]{Figures/distr_nonnorm.png}
+\end{figure}
+
+\begin{center}
+test con \textbf{effetto soffitto}
+\end{center}
+
+\end{columns}
+```
+
+## Punti z con distribuzioni non normali
+
+```{=latex}
+\begin{columns}
+\column{0.8\textwidth}
+Se si usano i punti z con distribuzioni non normali, la corrispondenza tra specifici punteggi z e percentuali può non essere rispettata.
+\vspace{2em}
+
+Ad esempio -1.64 può non corrispondere al valore che delimita 5\% dei punteggi più bassi, portando al calcolo di cut-off sbagliati.
+\column{0.2\textwidth}
+
+\begin{figure}
+\includegraphics[scale=0.05]{Figures/triangle.png}
+\end{figure}
+\end{columns}
+```
+
+## Standardizzare non è normalizzare
+
+\begin{center}
+  \textbf{PARENTESI}
+
+  \textbf{Standardizzare (trasformare in z-score) a volte è anche detto "normalizzare", ma non rende la distribuzione \textit{normale}!}
+\end{center}
+
+![](Figures/distribuzioni_normalizzate.png){width="100%" fig-align="center"}
+
 ## I percentili non parametrici
 
 E nel caso di distribuzione non normali?
 
-Si possono utilizzare **percentili non parametrici**.
+I **percentili non parametrici** sono il metodo più diffuso di calcolo dei cut-off nel caso di distribuzioni non normali.
+
+Lo svantaggio è che non è possibile usare formule rapide per ricavare cut-off a diverse percentuali (ad esempio il 20% dei punteggi peggiori): è necessario avere a disposizione tutti i dati.
 
 (per esempi vedere codice R associato per potenziale impatto di non normalità, specie con un marcato effetto soffitto.)
 
@@ -315,6 +394,14 @@ In realtà è da riconoscere che con campioni sufficientemente ampi (>100) e se 
 
 (Questa è una considerazione da prendere *cum grano salis*, a partire da simulazioni dello script 10 associato a queste slides)
 
+## Metodi che distinguono campione e popolazione
+
+Alcuni metodi tengono conto della differenza tra campione e popolazione, fornendo cut-off che sono una **stima di quelli che si osserverebbero nella popolazione**.
+
+**Questi cut-off sono spesso più bassi** (meno restrittivi) di quelli calcolati direttamente sul campione.
+
+Il metodo di **Crawford** (Crawford \& Howell, 1998; Crawford \& Garthwaite, 2006) e il metodo dei **Punteggi Equivalenti** (Capitani \& Laiacona, 2007) tengono conto di questa differenza: sono da considerarsi più corretti.
+
 ## t-test di Crawford e Howell
 
 Il t-test di Crawford & Howell (1998)[^1] è una modificazione del t-test che permette di confrontare un caso singolo rispetto con una media di un campione.
@@ -404,9 +491,35 @@ Supponiamo debba testare un paziente con 70 anni. Vuol dire che nella distribuzi
 
 **La stratificazione arbitraria in campioni per le variabili rilevanti (età, scolarità, sesso), ha sempre problemi sulla composizione del campione normativo e la sua rappresentatività.**
 
+## Come vengono forniti i cut-off: fasce o regressioni
+
+\small
+I metodi «base» (z, percentili, t di Crawford) **dividono il campione** in sotto-campioni e calcolano un cut-off per ciascuno:
+
+- valori separati per diverse combinazioni di età e scolarità, suddivise in fasce;
+- più raramente, tabelle di correzione o singole correzioni (es. +2 per scolarità $\leq$ 8).
+
+I metodi che usano **regressioni** non suddividono il campione totale, ma modellano l'effetto di età e scolarità (e sesso). In genere forniscono:
+
+- un singolo cut-off e tabelle di correzione;
+- un singolo cut-off e formule (spesso incomprensibili) per calcolare la correzione;
+- tabelle con diversi cut-off per le varie combinazioni di età, scolarità o sesso.
+
+## Formule incomprensibili
+
+![](Figures/cutoff_humor.png){width="80%" fig-align="center"}
+
+$$
+\scalebox{0.85}{$
+sd_{Y_i-\hat{Y_i}} = \frac{SE_{Y-\hat{Y}}}{\sqrt{n}}\sqrt{n+1+\frac{z_{i,age}^2}{1-R_{age}^2}+\frac{z_{i,education}^2}{1-R_{i,education}^2}-2\frac{\beta_{education,age}z_{i,age}z_{i,education}}{1-R_{education}^2}}
+$}
+$$
+
 ## Metodi di regressione
 
-In alternativa ai metodi che usano un semplice campione di riferimento, esistono metodi che invece usano metodi basati su regressione.
+In alternativa ai metodi che usano un semplice campione di riferimento, esistono metodi che invece usano metodi basati su regressione. Il vantaggio è che **non avviene una stratificazione arbitraria** in fasce.
+
+Esempi: metodo dei Punteggi Equivalenti (Capitani \& Laiacona, 2007); alcuni metodi di Crawford (Crawford \& Garthwaite, 2006).
 
 Il razionale di questi metodi è il seguente:
 
@@ -753,7 +866,7 @@ Questo è un problema perché test con affidabilità diversa sono trattati allo 
 
 Affidabilità, Validità e cut-off/trasformazioni in percentili sono dunque combinate solo tramite interpretazione dei risultati e non tramite formule matematiche che tengono in considerazione entrambe.
 
-## Riassunto finale (1/2)
+## Riassunto finale (1/3)
 
 Siamo partiti dal problema di definire deficit e peggioramento.
 
@@ -761,7 +874,7 @@ Il metodo più diffuso è basato sull’improbabilità di osservare quella prest
 
 Spesso c’è necessità di una soglia, ed essa è arbitrariamente messa al 5% delle prestazioni più basse. Da notare che entrambe le scelte ricordano il rifiuto dell’ipotesi nulla che c’è per i test statistici.
 
-## Riassunto finale (1/2)
+## Riassunto finale (2/3)
 
 \begin{center}
 PROBLEMA: cosa si intende per 5\%? 
@@ -773,11 +886,13 @@ In generale esistono vari metodi per calcolare soglie e probabilità, e sarebbe 
 
 a) usare quelli che tengono effettivamente conto di distinzione campione/popolazione
 
-b) avere campioni numerosi (almeno n > 100).
+b) avere campioni numerosi (almeno n > 100);
+
+c) non usare indiscriminatamente i punti z, se non è nota la distribuzione dei punteggi.
 
 Anche usando metodi non ottimali, avere campioni ampi migliora.
 
-## Riassunto finale (2/2)
+## Riassunto finale (3/3)
 
 I metodi che si basano su campioni hanno però problemi dei “gradini” che si vengono a creare per ogni gruppo in cui abbiamo trasformato una variabile continua (es. Età) in gruppi separati.
 
@@ -807,3 +922,14 @@ Il cut-off per una persona con 68 anni di età e 5 di scolarità è 12. Consider
 Se GH ottenesse meno 12 potremmo concludere che è una prestazione insolita se fosse sano, ma non possiamo dire se è un deficit pre-esistente, o un peggioramento legato al trauma cranico (I metodi per inferire deficit o peggioramento sono analoghi).
 
 Andando a vedere le tabelle di APACS, possiamo vedere che però nel gruppo di sani usati, sono 40 rientrano nel gruppo di età e scolarità di GH. Le stime sono quindi abbastanza solide.
+
+# Riferimenti
+
+## Riferimenti
+
+\footnotesize
+
+- Arcara, G. *Oltre i punteggi. Elementi di psicometria e statistica per la neuropsicologia clinica* (cap. "Dati normativi, deficit e peggioramento"). https://giorgioarcara.github.io/oip-book/
+- Capitani, E., \& Laiacona, M. (2007). I Punteggi Equivalenti.
+- Crawford, J. R., \& Garthwaite, P. H. (2006). Comparing single case with normative samples.
+- Crawford, J. R., \& Howell, D. C. (1998). Comparing an individual's test score with normative samples.
