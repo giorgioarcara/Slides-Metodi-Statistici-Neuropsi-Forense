@@ -1177,9 +1177,9 @@ valutato.}
 \begin{columns}
 \column{0.8\textwidth}
 
-A livello di operazioni da svolgere, la stima di un deficit vs la stima di un peggioramento sono simili a livello statistico: entrambe implicano il confrontare la prestazione con i dati normativi (vedi slides precedente per scelta appropriata del confronto).
+Stimare un deficit o stimare un peggioramento richiede \textbf{la stessa operazione}: confrontare la prestazione con i dati normativi (vedi slide precedente per la scelta appropriata del confronto).
 
-Quello che cambia è l’\textbf{interpretazione} (vedi slides su Interpretazione) che in un caso può essere quella di un deficit, in un caso quella di un peggioramento.
+Cambia solo l’\textbf{interpretazione}, che dipende dall’ipotesi che stiamo valutando: in un caso concluderemo per un deficit, nell’altro per un peggioramento (vedi slide su Interpretazione).
 
 \column{0.2\textwidth}
 
@@ -1204,6 +1204,69 @@ Questo è molto importante a livello forense, perché la performance del test co
 \includegraphics[scale=0.05]{Figures/triangle.png}
 \end{figure}
 \end{columns}
+\end{frame}
+
+\begin{frame}{Un confronto, due interpretazioni}
+\phantomsection\label{un-confronto-due-interpretazioni}
+\begin{center}
+\begin{tikzpicture}[
+  passo/.style={draw=nfInk, thick, rounded corners, fill=unipdCream!50, align=center, font=\small},
+  lettura/.style={draw=unipdCrimson, thick, rounded corners, fill=unipdCrimson!8, align=center,
+                  text width=3.3cm, minimum height=1.3cm, font=\scriptsize},
+  freccia/.style={-{Stealth}, nfInk, line width=1pt},
+  domanda/.style={fill=white, inner sep=1.5pt, font=\scriptsize\itshape, text=unipdCrimson}]
+
+\useasboundingbox (-7,-2.5) rectangle (7,2.5);
+
+% 1. lo stesso atto
+\node[passo, text width=2.1cm, minimum height=1.2cm] (punt) at (-5.6, 1.45) {Punteggio\\del cliente};
+\node[passo, text width=2.9cm, minimum height=1.2cm] (conf) at (-2.1, 1.45)
+  {Confronto con la soglia\\del campione normativo\\[2pt]{\scriptsize\itshape\color{nfGrey} lo stesso atto, sempre}};
+\draw[freccia] (punt) -- (conf);
+
+% 2. il dato statistico: un punteggio così basso è improbabile
+\only<2->{
+\draw[unipdGold, very thick, rounded corners, fill=unipdGold!12] (0.4, 0.45) rectangle (6.9, 2.45);
+\draw[freccia] (conf) -- (0.4, 1.45);
+\fill[unipdCrimson!75] (0.8, 0.75)
+  -- plot[domain=-2.6:-1.645, samples=20] ({1.95 + 0.44*\x}, {0.75 + 1.25*exp(-\x*\x/2)})
+  -- (1.226, 0.75) -- cycle;
+\draw[nfInk, thick] plot[domain=-2.6:2.6, samples=60] ({1.95 + 0.44*\x}, {0.75 + 1.25*exp(-\x*\x/2)});
+\draw[nfInk] (0.7, 0.75) -- (3.2, 0.75);
+\draw[unipdCrimson, thick, dashed] (1.226, 0.75) -- (1.226, 2.25);
+\node[font=\tiny, text=unipdCrimson, anchor=east] at (1.2, 1.15) {5\%};
+\node[anchor=west, text width=3.5cm, font=\scriptsize, text=nfInk] at (3.25, 1.45)
+  {\textbf{Il dato:} un punteggio così basso (o più basso) è \textbf{improbabile}: nel campione normativo lo ottengono poche persone.};
+}
+
+% 3. due ipotesi, due interpretazioni
+\only<3->{
+\node[lettura, anchor=north] (def) at (1.6, -0.95)
+  {{\normalsize\bfseries\color{unipdCrimson} Deficit}\\[2pt]
+   la prestazione è bassa rispetto a un gruppo di riferimento};
+\node[lettura, anchor=north] (pegg) at (5.3, -0.95)
+  {{\normalsize\bfseries\color{unipdCrimson} Peggioramento}\\[2pt]
+   la prestazione è più bassa di prima (assumendo che prima fosse \textit{simile} al campione normativo)};
+\node[domanda, anchor=south] (qdef) at (def.north) {Com'è rispetto agli altri?};
+\node[domanda, anchor=south] (qpegg) at (pegg.north) {È cambiato rispetto a prima?};
+\draw[freccia] (3.65, 0.45) -- (qdef.north);
+\draw[freccia] (3.65, 0.45) -- (qpegg.north);
+}
+
+% 4. legenda: dato vs interpretazione
+\only<4->{
+\fill[unipdGold!12, draw=unipdGold, very thick, rounded corners=1pt] (-6.6, -0.75) rectangle (-6.2, -0.4);
+\node[anchor=west, text width=4.6cm, font=\scriptsize] at (-6.05, -0.575)
+  {\textbf{dato statistico}: uguale qualunque sia la domanda};
+\fill[unipdCrimson!8, draw=unipdCrimson, thick, rounded corners=1pt] (-6.6, -1.6) rectangle (-6.2, -1.25);
+\node[anchor=west, text width=4.6cm, font=\scriptsize] at (-6.05, -1.425)
+  {\textbf{interpretazione}: dipende dall'ipotesi che stiamo valutando};
+}
+
+\end{tikzpicture}
+\end{center}
+
+\only<4->{\takeaway{un solo dato, due letture: deficit e peggioramento non si leggono nel punteggio, ma nella domanda che gli poniamo.}}
 \end{frame}
 
 \begin{frame}{Uno o più cut-off? 1/2}
