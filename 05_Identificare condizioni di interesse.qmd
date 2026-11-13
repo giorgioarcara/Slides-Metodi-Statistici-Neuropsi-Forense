@@ -426,7 +426,7 @@ $$
 
 _dove_
 
-**Prevalenza (o base rate)** =  Veri Positivi / Popolazione Totale = $(VP + FN) / (VP + FP + VN + FN)$
+**Prevalenza (o base rate)** = Positivi reali (al gold standard) / Popolazione Totale = $(VP + FN) / (VP + FP + VN + FN)$
 
 
 
