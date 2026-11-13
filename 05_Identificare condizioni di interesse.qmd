@@ -153,7 +153,7 @@ A partire dai risultati della matrice di confusione possiamo calcolare delle imp
 \emph{Sensibilità è influenzata dai risultati dei soggetti patologici?\\ (Condizione di Interesse PRESENTE)}
 \pause
 
-\emph{Specificità è influenzata dai risultati dei soggetti patologici?\\ (Condizione di Interesse ASSENTE)}
+\emph{Specificità è influenzata dai risultati dei soggetti sani?\\ (Condizione di Interesse ASSENTE)}
 :::
 ::::
 
@@ -361,7 +361,7 @@ $P(\text{patologia} | \text{punteggio sotto cut-off}) = \frac{P(\text{punteggio 
 
 Al di là dell’aspetto matematico, il teorema di Bayes ci dice in sostanza una cosa:
 Per calcolare le probabilità che a noi veramente interessa dovremmo conoscere altre
-Probabilità che di fatto non potremo sapere mai (cioè Probabilità a Priori, che è anche associata a Prevalenza, se si far riferimento ai concetti di PPV e PPN, si vedano prossime slides).
+Probabilità che di fatto non potremo sapere mai (cioè Probabilità a Priori, che è anche associata a Prevalenza, se si far riferimento ai concetti di PPV e NPV, si vedano prossime slides).
 
 Per questa ragione i test ci danno informazioni “indicative” sulle probabilità di avere una malattia o presenza di una condizione di interesse. Ma sta al neuropsicologo clinico giungere alla sua diagnosi, anche ignorando il risultato di un test, se ci sono elementi che suggeriscono che probabilità a priori (o base rate) possano alterare i valori. Questo verrà approfondito nella sezione sull' _interpretazione_.
 
@@ -413,7 +413,7 @@ La PPV ha però senso solo se la proporzione tra sani e patologici (o tra veri n
 
 ## PPV e NPV - approfondimento
 
-Le formule di PPV e PPN possono (tramite semplice algebra rispetto a formule precedenti) essere riscritte nella seguente maniera
+Le formule di PPV e NPV possono (tramite semplice algebra rispetto a formule precedenti) essere riscritte nella seguente maniera
 
 \small
 $$
@@ -549,7 +549,7 @@ Notare come un cut-off di 5 per una serie di scenari di prevalence (base rate) r
 
 È importante notare che queste considerazioni (così come per Sensibilità e Specificità) si applicano al gruppo e al test, ma mai alla specifica misurazione
 
-Sono probabilità riferite al test (Sensibilità e Specificità) o al test in combinazione al contesto (PPV e PPN).
+Sono probabilità riferite al test (Sensibilità e Specificità) o al test in combinazione al contesto (PPV e NPV).
 
 Infatti per una specifica misurazione, a meno che non si voglia indagare qualcosa che avverrà nel futuro (es. probabilità di sviluppare entro 1 anno l’Alzheimer) , per una specifica persona c’è una verità (es. per l’Alzheimer quella persona o ce l’ha, o non ce l’ha). 
 
