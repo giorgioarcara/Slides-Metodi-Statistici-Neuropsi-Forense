@@ -1116,18 +1116,26 @@ un'informazione corretta nella specifica misurazione.
 
 \begin{frame}{Sensibilità, Specificità e probabilità}
 \phantomsection\label{sensibilituxe0-specificituxe0-e-probabilituxe0}
-Se volessimo esprimere le soglie associate a specifiche sensibilità e
-specificità in termini di probabilità (come fatto per il cut-off di
-normalità). Potremmo usare una denotazione come quella che segue.
+Fissato un cut-off di discriminazione \(y\), sensibilità e specificità
+si possono scrivere come probabilità condizionate (sono funzioni della
+soglia \(y\) scelta):
 
-\(\text{Sensibilità}: P(o < y | C)\)
+\(\text{Sensibilità}(y) = P(o < y | C)\)
 
-\(\text{Specificità}: P(o \geq  y | NC)\)
+\(\text{Specificità}(y) = P(o \geq  y | NC)\)
 
 Dove \(y\) è il cut-off di discriminazione, \(o\) è il punteggio
 osservato. \(C\) è l'appartenenza al gruppo di persone con Condizione di
 interesse (es. patologia) e \(NC\) l'appartenenza al gruppo di persone
 senza condizione di interesse (es. sani).
+
+\small
+
+A differenza del cut-off di normalità, qui le probabilità non
+\emph{definiscono} la soglia: è la soglia (scelta, es. con la curva ROC)
+a determinare sensibilità e specificità. Il cut-off di normalità \(x\),
+definito da \(P(o < x | N) \leq k\), garantisce invece una specificità
+rispetto ai sani \(P(o \geq x | N) \geq 1-k\) (es. \(\geq\) 95\%).
 \end{frame}
 
 \begin{frame}{Un rischio di interpretazione}
