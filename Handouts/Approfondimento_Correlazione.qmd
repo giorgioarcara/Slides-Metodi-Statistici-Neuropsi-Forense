@@ -27,7 +27,8 @@ intelligenza artificiale, su indicazioni del docente, come materiale complementa
 validità e affidabilità (3a–3c). Il testo può contenere imprecisioni: in caso di dubbio fanno fede
 le slide, il libro del corso [@arcara2025oip] e quanto detto a lezione.
 
-Materiale distribuito con licenza CC BY-NC 3.0, come le slide del corso.
+Materiale distribuito con licenza Creative Commons Attribuzione – Non commerciale 4.0 Internazionale
+(CC BY-NC 4.0, <https://creativecommons.org/licenses/by-nc/4.0/deed.it>).
 :::
 
 # Che cos'è la correlazione

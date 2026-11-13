@@ -25,7 +25,8 @@ di riscrivere in forma discorsiva il contenuto delle slide, integrandone le figu
 nuovo materiale**. Il testo può comunque contenere imprecisioni: in caso di dubbio fanno fede le
 slide, il libro e quanto detto a lezione.
 
-Materiale distribuito con licenza CC BY-NC 3.0, come le slide del corso.
+Materiale distribuito con licenza Creative Commons Attribuzione – Non commerciale 4.0 Internazionale
+(CC BY-NC 4.0, <https://creativecommons.org/licenses/by-nc/4.0/deed.it>).
 :::
 
 # Affidabilità/precisione
