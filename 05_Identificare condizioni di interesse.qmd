@@ -496,7 +496,7 @@ Esempio COVID
 - tamponi routinari in struttura non a rischio speciale (es. Ospedale di riabilitazione)
 - tamponi in farmacia 
 \pause
-Anche con test con altissima sensibilità e specificità in caso di test massivi c’è un certo rischio di veri positivi (con conseguenti problemi), che varia a seconda del contesto.
+Anche con test con altissima sensibilità e specificità in caso di test massivi c’è un certo rischio di falsi positivi (con conseguenti problemi), che varia a seconda del contesto.
 
 È probabilmente più facile che un tampone sia un falso positivo in ospedale rispetto che in farmacia. Questo perché in ospedale ci sono numerosi test fatti senza un quesito diagnostico, mentre chi arriva a fare valutazione in farmacia verosimilmente ha sintomi o ha avuto contatto con persone positive al COVID.
 
