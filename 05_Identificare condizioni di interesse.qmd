@@ -109,31 +109,31 @@ I possibili risultati di una classificazione sono spesso riportati in quella che
 
 A partire dai risultati della matrice di confusione possiamo calcolare delle importanti misure.
 
-**Sensibilità (Recall)**: VP / VP + FN 
+**Sensibilità (Recall)**: $VP / (VP + FN)$ 
 
 È la stima della probabilità di identificare correttamente un caso positivo, se la persona è positiva al gold standard.
 
-**Specificità**: VN / VN + FP
+**Specificità**: $VN / (VN + FP)$
 
 È la stima della probabilità di identificare correttamente un caso negativo, se la persona è negativa al gold standard.
 
 ## Sensibilità e Specificità (Un esempio neuropsicologico)
 
-**Sensibilità (Recall)**: VP / VP + FN
+**Sensibilità (Recall)**: $VP / (VP + FN)$
 
 È la stima probabilità di identificare correttamente un paziente con demenza, se la persona ha la demenza secondo il gold-standard.
 
-**Specificità**: VN / VN + FP
+**Specificità**: $VN / (VN + FP)$
 
 È la stima probabilità di identificare correttamente un sano se la persona è sana (i.e. no demenza) secondo il gold standard.
 
 ## Sensibilità e Specificità (Un esempio forense)
 
-**Sensibilità (Recall)**: VP / VP + FN 
+**Sensibilità (Recall)**: $VP / (VP + FN)$ 
 
 È la probabilità di identificare correttamente un simulatore, se la persona è un simulatore secondo il gold-standard.
 
-**Specificità**: VN / VN + FP
+**Specificità**: $VN / (VN + FP)$
 
 È la probabilità di identificare correttamente un NON simulatore, se la persona è un NON simulatore secondo il gold-standard.
 
@@ -144,9 +144,9 @@ A partire dai risultati della matrice di confusione possiamo calcolare delle imp
 ![](Figures/matrice_confusione.png)
 :::
 ::: {.column width="40%"}
-**Sensibilità**: VP / VP + FN
+**Sensibilità**: $VP / (VP + FN)$
 
-**Specificità**: VN / VN + FP
+**Specificità**: $VN / (VN + FP)$
 
 \small
 \pause
@@ -372,9 +372,9 @@ Altre due misure molto rilevanti che si possono ottenere dalla matrice di confus
 **Positive Predictive Value** e **Negative Predictive Value** (vedi anche [\underline{qui}](https://epidemiology.sruc.ac.uk/shiny/apps/predictive_values/))
 \vfill
 
-**Positive Predictive Value (PPV)** = TP / (TP + FP)
+**Positive Predictive Value (PPV)** = $VP / (VP + FP)$
 
-**Negative Predictive Value (NPV)** = TN / (TN + FN)
+**Negative Predictive Value (NPV)** = $VN / (VN + FN)$
 \pause
 
 \emph{Riflessione: su che campioni sono ottenuti PPV ed NPV?}
@@ -415,24 +415,27 @@ La PPV ha però senso solo se la proporzione tra sani e patologici (o tra veri n
 
 Le formule di PPV e PPN possono (tramite semplice algebra rispetto a formule precedenti) essere riscritte nella seguente maniera
 
-**Positive Predictive Value** = Sensibilità x Prevalenza / (Sensibilità x Prevalenza) + (1-Specificità)  x (1- Prevalenza) 
+\small
+$$
+PPV = \frac{\text{Sensibilità} \times \text{Prevalenza}}{(\text{Sensibilità} \times \text{Prevalenza}) + (1-\text{Specificità}) \times (1-\text{Prevalenza})}
+$$
 
-**Negative Predictive Value** = Specificità x (1 - Prevalenza) / Specificità x (1 – Prevalenza) + (1 - Sensibilità)  x Prevalenza
+$$
+NPV = \frac{\text{Specificità} \times (1-\text{Prevalenza})}{\text{Specificità} \times (1-\text{Prevalenza}) + (1-\text{Sensibilità}) \times \text{Prevalenza}}
+$$
 
 _dove_
 
-**Prevalenza (o base rate)** =  Veri Positivi / Popolazione Totale = 
-
-(TP + FN) / (TP + FP + TN + FN) 
+**Prevalenza (o base rate)** =  Veri Positivi / Popolazione Totale = $(VP + FN) / (VP + FP + VN + FN)$
 
 
 
 ## Altre misure
 Esistono anche misure che potreste trovare e che sono a volte rilevanti.
 
-**Accuratezza**: (TN + TP) / (TN+TP+FN+FP)
+**Accuratezza**: $(VN + VP) / (VN + VP + FN + FP)$
 
-**Precision**: TP / (TP+FP)
+**Precision**: $VP / (VP + FP)$
 
 La precision è spesso considerata particolarmente utile quando Positivi e Negativi sono sbilanciati nella popolazione (vedi anche [\underline{questo articolo}](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118432))
 

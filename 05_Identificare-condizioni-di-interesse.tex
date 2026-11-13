@@ -461,12 +461,12 @@ quella che è nota come \textbf{matrice di confusione}
 A partire dai risultati della matrice di confusione possiamo calcolare
 delle importanti misure.
 
-\textbf{Sensibilità (Recall)}: VP / VP + FN
+\textbf{Sensibilità (Recall)}: \(VP / (VP + FN)\)
 
 È la stima della probabilità di identificare correttamente un caso
 positivo, se la persona è positiva al gold standard.
 
-\textbf{Specificità}: VN / VN + FP
+\textbf{Specificità}: \(VN / (VN + FP)\)
 
 È la stima della probabilità di identificare correttamente un caso
 negativo, se la persona è negativa al gold standard.
@@ -474,12 +474,12 @@ negativo, se la persona è negativa al gold standard.
 
 \begin{frame}{Sensibilità e Specificità (Un esempio neuropsicologico)}
 \phantomsection\label{sensibilituxe0-e-specificituxe0-un-esempio-neuropsicologico}
-\textbf{Sensibilità (Recall)}: VP / VP + FN
+\textbf{Sensibilità (Recall)}: \(VP / (VP + FN)\)
 
 È la stima probabilità di identificare correttamente un paziente con
 demenza, se la persona ha la demenza secondo il gold-standard.
 
-\textbf{Specificità}: VN / VN + FP
+\textbf{Specificità}: \(VN / (VN + FP)\)
 
 È la stima probabilità di identificare correttamente un sano se la
 persona è sana (i.e.~no demenza) secondo il gold standard.
@@ -487,12 +487,12 @@ persona è sana (i.e.~no demenza) secondo il gold standard.
 
 \begin{frame}{Sensibilità e Specificità (Un esempio forense)}
 \phantomsection\label{sensibilituxe0-e-specificituxe0-un-esempio-forense}
-\textbf{Sensibilità (Recall)}: VP / VP + FN
+\textbf{Sensibilità (Recall)}: \(VP / (VP + FN)\)
 
 È la probabilità di identificare correttamente un simulatore, se la
 persona è un simulatore secondo il gold-standard.
 
-\textbf{Specificità}: VN / VN + FP
+\textbf{Specificità}: \(VN / (VN + FP)\)
 
 È la probabilità di identificare correttamente un NON simulatore, se la
 persona è un NON simulatore secondo il gold-standard.
@@ -506,9 +506,9 @@ persona è un NON simulatore secondo il gold-standard.
 \end{column}
 
 \begin{column}{0.4\linewidth}
-\textbf{Sensibilità}: VP / VP + FN
+\textbf{Sensibilità}: \(VP / (VP + FN)\)
 
-\textbf{Specificità}: VN / VN + FP
+\textbf{Specificità}: \(VN / (VN + FP)\)
 
 \small
 \pause
@@ -841,9 +841,9 @@ di confusione sono: \textbf{Positive Predictive Value} e
 \href{https://epidemiology.sruc.ac.uk/shiny/apps/predictive_values/}{\underline{qui}})
 \vfill
 
-\textbf{Positive Predictive Value (PPV)} = TP / (TP + FP)
+\textbf{Positive Predictive Value (PPV)} = \(VP / (VP + FP)\)
 
-\textbf{Negative Predictive Value (NPV)} = TN / (TN + FN) \pause
+\textbf{Negative Predictive Value (NPV)} = \(VN / (VN + FN)\) \pause
 
 \emph{Riflessione: su che campioni sono ottenuti PPV ed NPV?}
 \end{frame}
@@ -907,26 +907,29 @@ popolazione.
 Le formule di PPV e PPN possono (tramite semplice algebra rispetto a
 formule precedenti) essere riscritte nella seguente maniera
 
-\textbf{Positive Predictive Value} = Sensibilità x Prevalenza /
-(Sensibilità x Prevalenza) + (1-Specificità) x (1- Prevalenza)
+\small
 
-\textbf{Negative Predictive Value} = Specificità x (1 - Prevalenza) /
-Specificità x (1 -- Prevalenza) + (1 - Sensibilità) x Prevalenza
+\[
+PPV = \frac{\text{Sensibilità} \times \text{Prevalenza}}{(\text{Sensibilità} \times \text{Prevalenza}) + (1-\text{Specificità}) \times (1-\text{Prevalenza})}
+\]
+
+\[
+NPV = \frac{\text{Specificità} \times (1-\text{Prevalenza})}{\text{Specificità} \times (1-\text{Prevalenza}) + (1-\text{Sensibilità}) \times \text{Prevalenza}}
+\]
 
 \emph{dove}
 
 \textbf{Prevalenza (o base rate)} = Veri Positivi / Popolazione Totale =
-
-(TP + FN) / (TP + FP + TN + FN)
+\((VP + FN) / (VP + FP + VN + FN)\)
 \end{frame}
 
 \begin{frame}{Altre misure}
 \phantomsection\label{altre-misure}
 Esistono anche misure che potreste trovare e che sono a volte rilevanti.
 
-\textbf{Accuratezza}: (TN + TP) / (TN+TP+FN+FP)
+\textbf{Accuratezza}: \((VN + VP) / (VN + VP + FN + FP)\)
 
-\textbf{Precision}: TP / (TP+FP)
+\textbf{Precision}: \(VP / (VP + FP)\)
 
 La precision è spesso considerata particolarmente utile quando Positivi
 e Negativi sono sbilanciati nella popolazione (vedi anche
