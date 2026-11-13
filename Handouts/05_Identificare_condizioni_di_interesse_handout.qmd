@@ -492,18 +492,23 @@ correttezza dell'informazione nella specifica misurazione.
 
 # Notazione probabilistica e un rischio di interpretazione
 
-Se volessimo esprimere le soglie associate a una certa sensibilità e specificità in termini di
-probabilità, come abbiamo fatto per il cut-off di normalità, potremmo scrivere:
+Fissato un cut-off di discriminazione $y$, sensibilità e specificità si possono scrivere come
+probabilità condizionate, che sono funzioni della soglia scelta:
 
 $$
-\text{Sensibilità}: P(o < y \mid C)
+\text{Sensibilità}(y) = P(o < y \mid C)
 \qquad\qquad
-\text{Specificità}: P(o \geq y \mid NC)
+\text{Specificità}(y) = P(o \geq y \mid NC)
 $$
 
 dove $y$ è il cut-off di discriminazione, $o$ il punteggio osservato, $C$ l'appartenenza al gruppo con
 la condizione di interesse (per esempio la patologia) e $NC$ l'appartenenza al gruppo senza la
 condizione (per esempio i sani).
+
+A differenza del cut-off di normalità, qui le probabilità non *definiscono* la soglia: è la soglia,
+scelta per esempio con la curva ROC, a determinare sensibilità e specificità. Il cut-off di normalità
+$x$, definito da $P(o < x \mid N) \leq k$, garantisce invece una specificità rispetto ai sani
+$P(o \geq x \mid N) \geq 1 - k$ (per esempio almeno il 95%).
 
 Il confronto tra sensibilità e PPV (si vedano anche le simulazioni del codice allegato) mostra come
 l'intuizione possa portare a errori. Sarebbe spontaneo interpretare la sensibilità come se indicasse
