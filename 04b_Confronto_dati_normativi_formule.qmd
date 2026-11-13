@@ -229,12 +229,12 @@ $$
 P(T \leq t_{\mathrm{crit}} \mid H_0) = \alpha
 $$
 
-* Se il valore osservato soddisfa $t_{\mathrm{obs}} \geq t_{\mathrm{crit}}$, il risultato cade nella **regione critica** e si rifiuta ($H_0$).
+* Se il valore osservato soddisfa $t_{\mathrm{obs}} \leq t_{\mathrm{crit}}$, il risultato cade nella **regione critica** e si rifiuta ($H_0$).
 
 * Il p-value è invece la probabilità, assumendo vera ($H_0$), di ottenere un valore almeno altrettanto estremo di quello osservato:
 
 $$
-p = P(T \geq t_{\mathrm{obs}} \mid H_0)
+p = P(T \leq t_{\mathrm{obs}} \mid H_0)
 $$
 
 Nel t-test per due campioni indipendenti, l’ipotesi nulla è generalmente:
