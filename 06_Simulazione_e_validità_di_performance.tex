@@ -323,11 +323,11 @@
 
 \begin{frame}[plain]{}
 \phantomsection\label{section}
-\nftitleslide{7 · Simulazione e validità di performance}
+\nftitleslide{6 · Simulazione e validità di performance}
 \end{frame}
 
-\section{\texorpdfstring{\large 7. Simulazione e validità di
-performance}{7. Simulazione e validità di performance}}\label{simulazione-e-validituxe0-di-performance}
+\section{\texorpdfstring{\large 6. Simulazione e validità di
+performance}{6. Simulazione e validità di performance}}\label{simulazione-e-validituxe0-di-performance}
 
 \begin{frame}{Validità di performance}
 \phantomsection\label{validituxe0-di-performance}
@@ -450,11 +450,12 @@ normativi ottenuti da popolazioni cliniche per mostrare che persino in
 popolazioni cliniche anche molto gravi, la performance attesa non è così
 bassa.
 
-\textbf{3) Test sviluppati con validità di criterio}: con gruppi di
-persone a cui era chiesto esplicitamente di fingere un deficit, per
+\textbf{3) Test sviluppati per distinguere tra gruppi noti}: con gruppi
+di persone a cui era chiesto esplicitamente di fingere un deficit, per
 avere una condizione di interesse di ``simulazione''. Queste persone
 possono essere sani oppure pazienti/categoria target (es. popolazioni
-psichiatriche).
+psichiatriche). Questo è anche legato al concetto di \emph{validità di
+criterio} (o di \emph{validità di gruppi noti/known-group validity}).
 \end{frame}
 
 \begin{frame}{\small 1) Pattern di risposte inverosimili, anche
@@ -473,12 +474,13 @@ random (50\% per ciascuna possibilità) \(k_s\) indica un valore soglia
 di probabilità molto piccolo (in genere è il solito 5\%).
 \end{frame}
 
-\begin{frame}{1) Il Test of Memory Malingering (TOMM)}
-\phantomsection\label{il-test-of-memory-malingering-tomm}
-Il test of Memory Malingering è il test più comune con cui è possibile
-identificare questo tipo di disturbi. Si basa su un assunto molto
-semplice. Nel caso di una scelta multipla a due possibilità è molto
-facile modellare la probabilità di un certo numero di risposte casuali.
+\begin{frame}{1) Pattern di risposte inverosimili}
+\phantomsection\label{pattern-di-risposte-inverosimili}
+Il \textbf{Test of Memory Malingering} (TOMM) è il test più comune con
+cui è possibile identificare questo tipo di disturbi. Si basa su un
+assunto molto semplice. Nel caso di una scelta multipla a due
+possibilità è molto facile modellare la probabilità di un certo numero
+di risposte casuali.
 
 Consiste di due fasi: in una fase si fanno riconoscere degli item per
 ricordarli (questa viene ripetuta due volte nella versione originale del
@@ -490,7 +492,7 @@ deve indicare quale era l'item che aveva visto in precedenza.
 \end{frame}
 
 \begin{frame}{1) Il Test of Memory Malingering (TOMM)}
-\phantomsection\label{il-test-of-memory-malingering-tomm-1}
+\phantomsection\label{il-test-of-memory-malingering-tomm}
 \begin{center}
 \includegraphics[width=0.8\linewidth,height=\textheight,keepaspectratio]{Figures/TOMM.png}
 \end{center}
@@ -498,7 +500,7 @@ deve indicare quale era l'item che aveva visto in precedenza.
 \end{frame}
 
 \begin{frame}{1) Il Test of Memory Malingering (TOMM)}
-\phantomsection\label{il-test-of-memory-malingering-tomm-2}
+\phantomsection\label{il-test-of-memory-malingering-tomm-1}
 \small
 
 L'assunto è semplice. Un simulatore tenderà ad indicare volontariamente
@@ -517,8 +519,8 @@ casualmente.
 \emph{Vedi codice per esempio}
 \end{frame}
 
-\begin{frame}{1) Il Test of Memory Malingering (TOMM)}
-\phantomsection\label{il-test-of-memory-malingering-tomm-3}
+\begin{frame}{1) Pattern di risposte inverosimili}
+\phantomsection\label{pattern-di-risposte-inverosimili-1}
 \small
 
 \textbf{Vantaggi}
@@ -586,8 +588,8 @@ una persona con deficit avrebbe una performance bassa (quando in realtà
 non è vero).}
 \end{frame}
 
-\begin{frame}{Il Word Memory Test}
-\phantomsection\label{il-word-memory-test-1}
+\begin{frame}{2) Test molto facili per pazienti deteriorati}
+\phantomsection\label{test-molto-facili-per-pazienti-deteriorati-1}
 \textbf{Vantaggi}
 
 \begin{itemize}
@@ -603,11 +605,12 @@ ragione praticamente tutti i test, (incluso il WMT) sono anche
 sviluppati utilizzando validità di criterio (vedi slides successive).
 \end{frame}
 
-\begin{frame}{3) Test sviluppati con validità di criterio}
-\phantomsection\label{test-sviluppati-con-validituxe0-di-criterio}
+\begin{frame}{3) Test sviluppati per distinguere tra gruppi}
+\phantomsection\label{test-sviluppati-per-distinguere-tra-gruppi}
 Molti test per identificare simulatori in ambito forense seguono
-principi di validità di criterio. Dove la condizione di interesse è
-\emph{essere verosimilmente un simulatore}.
+principi per distinguere tra gruppi stabiliti a priori (vedi anche
+validità di criterio/gruppi noti). In questi casi la condizione di
+interesse è \emph{essere verosimilmente un simulatore}.
 
 \(\text{Sensibilità}: P(o < y | S)\)
 
@@ -661,15 +664,20 @@ dove \(S\) indica l'essere un simulatore secondo gold standard, mentre
   deficit cognitivi lamentati molto gravi rispetto a funzionamento
   quotidiano apparentemente alto (altra probabilità di essere
   simulatori). In tal caso, l'appartenenza a un gruppo rispetto a questi
-  criteri è il gold standard.
+  criteri è considerata come ``ground truth''.
 \end{enumerate}
+\end{frame}
+
+\begin{frame}{Attività (Padlet)}
+\phantomsection\label{attivituxe0-padlet}
+\padletslot{Attività}{Quali sono i possibili problemi e limiti di questo approccio? E come potrebbero essere risolti?}{Immaginate un esperimento per sviluppare un test cognitivo per identificare simulatori. Sono arruolati studenti universitari. A metà viene chiesto di simulare, all'altra metà viene chiesto di non simulare.\par\vspace{6pt}\footnotesize Inquadrate il QR code e scrivete la vostra risposta sul Padlet.}{}{Figures/padlet_qr_code.png}
 \end{frame}
 
 \begin{frame}{definizione di ``verosimile simulatore''}
 \phantomsection\label{definizione-di-verosimile-simulatore}
 \small
 
-Da punto 3) di slide precedente
+Da punto 3) di slide ``come definire un simulatore? 3/3''
 
 Slick et al.~(1999), definisce dei criteri per identificare diverse
 probabilità di simulatori (franco, probabile, possibile) sulla base di
@@ -698,9 +706,8 @@ Digit Span Indietro.
 
 La sua utilità in ambito forense si basa sul fatto che le persone
 possono sovrastimare la difficoltà di questo test e avere una
-performance di fatto molto (troppo bassa). Spesso però si riporta
-validità di criterio rispetto alla possibilità di distinguere tra gruppi
-di pazienti.
+performance di fatto molto (troppo bassa). Spesso però si riporta la
+capacità di distinguere tra gruppi di pazienti.
 \end{frame}
 
 \begin{frame}{Reliable Digit Span}
@@ -765,8 +772,8 @@ Avere questi valori può aiutarci nell’interpretare i risultati.
 Es. se individuo ottiene valore < 5. Potremmo dire “anche ipotizzando un base rate basso pari a .1 (cioè 10\% di simulatori nella popolazione). Una performance inferiore a 5  ha 100\% sensibilità e 92\% specificità”
 \end{frame}
 
-\begin{frame}{3) Test sviluppati con validità di criterio.}
-\phantomsection\label{test-sviluppati-con-validituxe0-di-criterio.}
+\begin{frame}{3) Test sviluppati per distinguere tra gruppi noti}
+\phantomsection\label{test-sviluppati-per-distinguere-tra-gruppi-noti}
 \small
 
 \textbf{Vantaggi}:
@@ -774,7 +781,7 @@ Es. se individuo ottiene valore < 5. Potremmo dire “anche ipotizzando un base 
 \begin{itemize}
 \tightlist
 \item
-  Test sviluppati con validità di criterio permettono di avere valori di
+  Test sviluppati in questa maniera permettono di avere valori di
   sensibilità/specificità PPV e NPV che aiutano molto
   nell'interpretazione dei risultati.
 \end{itemize}
@@ -828,9 +835,9 @@ sintomi ``impossibili''.
 
 \begin{frame}{Lo Structured Inventory of Malingered Symptoms (SIMS) 4/4}
 \phantomsection\label{lo-structured-inventory-of-malingered-symptoms-sims-44}
-Nello studio originale SIMS ha evidenza di validità di criterio usando
-una serie di gruppi di partecipanti a cui era chiesto di fingere
-specifici deficit (es. Psichiatrici, cognitivi, etc.)
+Nello studio originale SIMS ha evidenza di validità di distinguere tra
+gruppi noti usando una serie di gruppi di partecipanti a cui era chiesto
+di fingere specifici deficit (es. Psichiatrici, cognitivi, etc.)
 
 In particolare elevata sensibilità, specificità etc. (Smith \& Burger
 1997)

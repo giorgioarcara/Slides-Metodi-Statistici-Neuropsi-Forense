@@ -36,8 +36,8 @@ i capitoli 4–11 sono ancora abbozzati o assenti in `oltre-i-punteggi-elementi/
 |---|---|---|
 | `04b_Confronto_dati_normativi_formule.qmd` (ex 05b, ex `04b_Valutare_deficit_e_danni_formule.qmd`) | Cap.3, parte formule (percentili, z-score, t-test di Crawford, regressioni, Punteggi Equivalenti) | verificato leggendo `Dati-Normativi.qmd` per intero: da "L'utilità pragmatica delle soglie" in avanti sono **solo titoli di sezione vuoti**, nessuna prosa pubblicata — spostato qui da Livello 1 il 2026-09-14. (Refuso "Sokhal e Rohlf" → Sokal e Rohlf già corretto nel giro di pulizia typo del 2026-09-14.) |
 | `05_Identificare condizioni di interesse.qmd` (ex 06) | Cap.4 (gold standard/sensibilità-specificità/ROC) + Cap.9 (Bayes) | da scrivere |
-| `06_altri_utilizzi_test.qmd` (ex 08) | Cap.5 (cambiamenti nel tempo) + Cap.6 (confronto punteggi) | outline + bozza Cap.5 in `Diario di Sviluppo/...CAP 5...qmd`; Cap.6 da scrivere |
-| `07_Simulazione_e_validità_di_performance.qmd` | Cap.7 Valutazioni forensi e simulazione | da scrivere |
+| `06_Simulazione_e_validità_di_performance.qmd` | Cap.7 Valutazioni forensi e simulazione | da scrivere |
+| `07_altri_utilizzi_test.qmd` (ex 08) | Cap.5 (cambiamenti nel tempo) + Cap.6 (confronto punteggi) | outline + bozza Cap.5 in `Diario di Sviluppo/...CAP 5...qmd`; Cap.6 da scrivere |
 | `08a-Scelta_dei_test.qmd` (ex 03) + `08b-Scelta_dei_test_valutazione.qmd` (ex 09) | Cap.8 Scegliere i test neuropsicologici (8a = cassetta degli attrezzi, 8b = specifica valutazione) | outline + bozza in `Diario di Sviluppo/APPROFONDIMENTI-TECNICI/PARAGRAPHS/CAP 8...qmd`, non definitivo |
 | `09-Interpretazione.qmd` (ex 10) | Cap.10 Interpretare i risultati | da scrivere |
 

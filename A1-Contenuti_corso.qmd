@@ -21,8 +21,8 @@ incremental: false
 3. Le principali qualità dei test: Validità e Affidabilità
 4. Utilizzare i test per identificare deficit/danni cognitivi (l’utilizzo di dati normativi)
 5. Capacità di identificare condizioni di interesse (sensibilità e specificità)
-6. Altri utilizzi dei test (cambiamenti nel tempo e confrontare test diversi)
-7. Simulazione e altri casi specifici di uso dei test in forense
+6. Simulazione e altri casi specifici di uso dei test in forense
+7. Altri utilizzi dei test (cambiamenti nel tempo e confrontare test diversi)
 8. La scelta dei test: (a) per la propria cassetta degli attrezzi; (b) nella valutazione neuropsicologica.
 9. L’interpretazione dei test
 
