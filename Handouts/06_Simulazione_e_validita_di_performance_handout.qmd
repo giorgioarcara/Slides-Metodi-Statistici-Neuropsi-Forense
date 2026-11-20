@@ -253,7 +253,8 @@ Ogni diagnosi di simulazione richiede la presenza di un incentivo esterno (crite
 
 ## Il Reliable Digit Span
 
-Il **Reliable Digit Span** (RDS) è la somma del Digit Span avanti e del Digit Span indietro. La sua
+Il **Reliable Digit Span** (RDS) è la somma delle sequenze più lunghe ripetute correttamente in entrambe
+le prove, nel Digit Span avanti e nel Digit Span indietro. La sua
 utilità in ambito forense si basa sul fatto che le persone possono sovrastimare la difficoltà di
 questo test e ottenere quindi una performance molto (troppo) bassa. Spesso però se ne riporta la
 capacità di distinguere tra gruppi di pazienti.
