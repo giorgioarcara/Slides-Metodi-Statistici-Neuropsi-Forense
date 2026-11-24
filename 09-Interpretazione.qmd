@@ -347,6 +347,56 @@ Il paziente da quando ha smesso di lavorare ha cominciato a passare gran parte d
 
 Il paziente ha punteggi molto bassi anche quando corretti per età e scolarità.
 
+# Presupposti: metodologia ed epistemologia
+
+## Interpretazione e presupposti
+\small
+In questa lezione abbiamo sostenuto che **l'interpretazione c'è sempre**.
+
+Ma anche questa affermazione è, di fatto, un **presupposto**: la sto ponendo come punto di partenza, non la sto discutendo.
+
+\pause
+**Presupposto**: un'assunzione che, all'interno di un ragionamento, si accetta senza metterla in discussione.
+
+I presupposti non riguardano solo l'interpretazione: sono nascosti in molte scelte metodologiche viste nel corso.
+
+## Esempio 1: i criteri di Slick
+\small
+- Identificare un simulatore è un problema: non esiste un gold standard diretto (vedi slide *Simulazione e validità di performance*).
+- Slick et al. (1999) propongono criteri per classificare la simulazione (franca, probabile, possibile), ampiamente riconosciuti.
+- Ogni volta che valuto se un metodo funziona rispetto ai criteri di Slick, **presuppongo** che quella sia una buona classificazione (la tratto come *ground truth*).
+\pause
+- Se metto in discussione quei criteri, diventano discutibili anche le stime di sensibilità e specificità ottenute rispetto a essi.
+
+## Esempio 2: ragionare sulla popolazione
+\small
+- Nel corso vi ho proposto un presupposto: **ragionare in termini di popolazione è meglio che ragionare in termini di campione**, con delle motivazioni (vedi slide *Confronto con dati normativi - Formule*, "Campione o popolazione").
+- È un presupposto che vale per tutta la statistica inferenziale.
+\pause
+- Molte considerazioni del corso hanno senso **solo a partire da questo presupposto** (es. preferire il t-test di Crawford a z-score o percentili calcolati su piccoli campioni).
+- Se a qualcuno interessasse solo il livello del campione, allora z-score o percentili su piccoli gruppi andrebbero bene.
+
+## Presupposti e presupposti
+\small
+Non tutti i presupposti sono uguali.
+
+- **Presupposti ampiamente riconosciuti** dalla comunità scientifica: per metterli in discussione serve un reale sforzo concettuale e argomentativo.
+\pause
+- **Presupposti impliciti**: non dichiarati, spesso non motivati. Sono quelli a cui prestare più attenzione.
+
+\pause
+Per un metodologo è importante che i presupposti siano **esplicitati e motivati** (vedi Principio 5 dell'Interpretative Approach).
+
+## Non "giusto" o "sbagliato" in assoluto
+\small
+Il rischio è leggere il corso come un elenco di cose *giuste* e cose *sbagliate*.
+
+In realtà molte indicazioni sono adeguate **dati certi presupposti**: alcune cose sono presupposti, altre no.
+
+Normalmente non serve interrogarsi su ogni presupposto, ma è importante sapere quali si stanno adottando.
+
+\takeaway{un metodo non è giusto o sbagliato in sé: è adeguato o meno rispetto ai presupposti che accettiamo.}
+
 
 # Conclusioni
 
