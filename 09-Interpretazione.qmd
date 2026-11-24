@@ -376,6 +376,19 @@ I presupposti non riguardano solo l'interpretazione: sono nascosti in molte scel
 - Molte considerazioni del corso hanno senso **solo a partire da questo presupposto** (es. preferire il t-test di Crawford a z-score o percentili calcolati su piccoli campioni).
 - Se a qualcuno interessasse solo il livello del campione, allora z-score o percentili su piccoli gruppi andrebbero bene.
 
+## Esempio 3: l'oggettività dei test
+\small
+Ricordate la citazione sull'oggettività (vedi slide *Cornice teorica*, "Oggettività"):
+
+> \footnotesize "L'esame neuropsicologico forense viene spesso considerato un esame oggettivo del funzionamento cognitivo. In un'ideale gerarchia delle sorgenti d'evidenza, tale esame si collocherebbe molto più in alto rispetto alle evidenze cliniche [...]" (Stracciari, Bianchi & Sartori, 2010)
+
+\pause
+\small
+
+- Collocare i test in alto nella gerarchia delle evidenze **presuppone** che siano oggettivi, cioè indipendenti dal giudizio dell'esaminatore.
+- Ma l'oggettività è una proprietà **graduale**, non assoluta (vedi *inter-rater agreement*): il presupposto è più o meno sostenibile a seconda del test.
+- Anche in questa lezione ("Non tutte le evidenze sono uguali") abbiamo adottato questo presupposto.
+
 ## Presupposti e presupposti
 \small
 Non tutti i presupposti sono uguali.
