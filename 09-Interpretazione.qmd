@@ -386,8 +386,7 @@ Ricordate la citazione sull'oggettività (vedi slide *Cornice teorica*, "Oggetti
 \small
 
 - Collocare i test in alto nella gerarchia delle evidenze **presuppone** che siano oggettivi, cioè indipendenti dal giudizio dell'esaminatore.
-- Ma l'oggettività è una proprietà **graduale**, non assoluta (vedi *inter-rater agreement*): il presupposto è più o meno sostenibile a seconda del test.
-- Anche in questa lezione ("Non tutte le evidenze sono uguali") abbiamo adottato questo presupposto.
+- Ho dato come presupposto che questa è una definizione adeguata di oggettività e che questa sia quantificabile con *inter-rater agreement*.
 
 ## Presupposti e presupposti
 \small
