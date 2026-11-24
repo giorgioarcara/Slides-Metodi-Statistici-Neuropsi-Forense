@@ -43,7 +43,7 @@ Dipende molto da fattori pratici: il tipo di realtà clinica o forense nella qua
 
 \underline{Possibili fonti:}
 
-**Kit del Neuropsicologo**: un libro prodotto dalla Società Italiana di Neuropsicologia (per i Soci) che contiene riferimenti a quasi tutti i test disponibili in Italiano (non è però aggiornatissimo ed è difficile da trovare).
+**Kit del Neuropsicologo Italiano** (Barletta-Rodolfi, Gasparini & Ghidoni, 2011): un libro prodotto dalla Società Italiana di Neuropsicologia (per i Soci) che contiene riferimenti a quasi tutti i test disponibili in Italiano (non è però aggiornatissimo ed è difficile da trovare). *Novità*: è in corso una recente iniziativa di **Airalzh** per aggiornarlo.
 
 **Libro “L’esame neuropsicologico dell’Adulto”** (a cura di Bianchi A.): contiene un capitolo che include una lista piuttosto ampia di test neuropsicologici adattati in Italiano.
 
@@ -56,6 +56,12 @@ Dipende molto da fattori pratici: il tipo di realtà clinica o forense nella qua
 \underline{Possibili fonti:}
 
 **Case editrici di test (Organizzazioni Speciali, Erickson)**: sono test a pagamento che garantiscono un certo standard di qualità.
+
+\underline{Iniziative recenti:}
+
+**Progetto NEMO – Ordine degli Psicologi del Veneto**: il Gruppo di lavoro sulla Neuropsicologia (2025–2029) sta mappando buone prassi e strumenti neuropsicologici: test tradizionali aggiornati, strumenti digitali e approcci validati in chiave transculturale.
+
+**DIMP – Database Italiano delle Misure Psicologiche** (Associazione Italiana di Psicologia, \href{https://aipass.org/home-dimp/}{\underline{aipass.org/home-dimp}}): schede strutturate per strumento (costrutto, affidabilità, validità, norme, riferimenti). È ancora agli inizi: pochi strumenti pubblicati e, per ora, nessun test neuropsicologico.
 
 
 ## \small La scelta dei test da inserire nella propria «cassetta degli attrezzi»
