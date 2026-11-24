@@ -350,6 +350,18 @@ Il paziente ha punteggi molto bassi anche quando corretti per età e scolarità.
 
 # Conclusioni
 
+## Riepilogo del corso
+\small
+
+- **Cornice teorica**: misurazione, costrutti, cosa sono i test e teorie dei test
+- **Qualità dei test**: validità (di contenuto, di criterio, ecologica) e affidabilità (test-retest, inter-rater, consistenza interna)
+- **Confronto con dati normativi**: cut-off di normalità, deficit e peggioramento, stima del funzionamento premorboso
+- **Identificare condizioni di interesse**: sensibilità e specificità, curve ROC, PPV e NPV, prevalenza e teorema di Bayes
+- **Simulazione e validità di performance**: strategie e test (TOMM, Word Memory Test, Reliable Digit Span, SIMS)
+- **Altri utilizzi dei test**: cambiamenti nel tempo, forme parallele, confronto tra punteggi di test diversi
+- **Scelta dei test**: per la propria «cassetta degli attrezzi» e per la singola valutazione (batteria fissa o flessibile)
+- **Interpretazione**: l'Interpretative Approach e l'integrazione di tutte le evidenze disponibili
+
 ## Il ruolo della/del neuropsicologa/o nella valutazione
 
 Vista la rilevanza delle interpretazioni nell’utilizzo dei test la/il neuropsicologa/o ha un ruolo chiave.
