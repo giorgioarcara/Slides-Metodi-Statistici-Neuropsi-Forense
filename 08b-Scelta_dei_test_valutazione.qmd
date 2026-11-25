@@ -48,7 +48,7 @@ Alcune domande guida:
 \pause
 - Nella scelta dei test per la propria «cassetta degli attrezzi» il criterio era avere test adeguati alle **potenziali** domande; qui si parte dalla domanda **reale** di questa valutazione.
 \pause
-- In ambito forense la domanda viene spesso dal quesito posto (es. presenza di un deficit, simulazione, compatibilità con l'evento) e va tradotta in **costrutti misurabili**.
+- In ambito forense la domanda viene spesso dal quesito posto (es. presenza di un deficit, simulazione, compatibilità con l'evento) e va tradotta in costrutti o domande di classificazione più specifiche.
 
 ## La scelta dei test per una specifica valutazione
 
