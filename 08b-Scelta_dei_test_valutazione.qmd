@@ -29,6 +29,27 @@ Due momenti di scelta dei test:
 
 2. **Scelta dei test da utilizzare con uno specifico individuo per uno specifico scopo.**
 
+## Prima di tutto: la domanda
+\small
+La scelta dei test per una specifica valutazione dipende **innanzitutto dalla domanda** a cui la valutazione deve rispondere.
+
+\pause
+Alcune domande guida:
+
+- **Qual è il costrutto di interesse?**
+- **C'è un sospetto di simulazione?** Se sì, vanno inclusi strumenti per la validità di performance (vedi slide *Simulazione e validità di performance*).
+- **Quale funzione cognitiva dobbiamo indagare?** (es. memoria, attenzione, linguaggio, funzioni esecutive)
+
+\takeaway{la domanda della valutazione è il criterio primario per scegliere i test.}
+
+## La domanda come criterio primario
+\small
+- La domanda viene **prima** della strategia (batteria fissa, flessibile o screening più test ad hoc) e prima delle proprietà psicometriche: un test eccellente che non misura il costrutto di interesse non aiuta a rispondere.
+\pause
+- Nella scelta dei test per la propria «cassetta degli attrezzi» il criterio era avere test adeguati alle **potenziali** domande; qui si parte dalla domanda **reale** di questa valutazione.
+\pause
+- In ambito forense la domanda viene spesso dal quesito posto (es. presenza di un deficit, simulazione, compatibilità con l'evento) e va tradotta in **costrutti misurabili**.
+
 ## La scelta dei test per una specifica valutazione
 
 Per la neuropsicologia clinica esistono tre principali approcci (chiamati in molti modi in letteratura)
